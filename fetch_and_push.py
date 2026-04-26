@@ -17,6 +17,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 import requests
@@ -66,32 +67,36 @@ def format_views(v):
     return str(n)
 
 
-def fetch_youtube_views(channel_id):
-    """Fetch view counts from YouTube RSS feed for a channel."""
+def fetch_youtube_data(channel_id):
+    """Fetch view counts AND publish dates per surname from YouTube RSS."""
     try:
         req = urllib.request.Request(
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
         entries = re.findall(
-            r'<entry>.*?<title>(.*?)</title>.*?<media:statistics views="(\d+)"',
+            r'<entry>.*?<title>(.*?)</title>.*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
-        views_map = {}
-        for title, views in entries:
+        views_map = {}     # surname -> view count string
+        date_map = {}      # surname -> ISO date string (YYYY-MM-DD)
+        for title, pub, views in entries:
             title = title.replace('&amp;', '&').replace('&#39;', "'")
+            iso_date = pub[:10]
             for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
                 if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground', 'order'):
                     views_map.setdefault(w.lower(), format_views(views))
+                    date_map.setdefault(w.lower(), iso_date)
             m = re.search(r'\(([^)]+)\)', title)
             if m:
                 for w in m.group(1).split():
                     w = w.strip('.,')
                     if len(w) > 3:
                         views_map.setdefault(w.lower(), format_views(views))
-        return views_map
+                        date_map.setdefault(w.lower(), iso_date)
+        return views_map, date_map
     except Exception as e:
         print(f"YouTube error for {channel_id}: {e}", file=sys.stderr)
-        return {}
+        return {}, {}
 
 
 def fetch_instagram_clips():
@@ -134,15 +139,20 @@ def fetch_instagram_clips():
         return {}
 
 
-async def fetch_x_views(handle, surname):
-    """Fetch X tweet views for surname using saved cookies."""
+async def fetch_x_views(handle, surname, since_date=None):
+    """Fetch X tweet views for surname. If since_date given (YYYY-MM-DD), only count tweets on/after that date."""
+    # Use X's built-in date filter so collisions with older same-surname guests are excluded
+    query = f'from:{handle} {surname}'
+    if since_date:
+        query += f' since:{since_date}'
+    encoded = urllib.parse.quote(query)
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         try:
             ctx = await browser.new_context()
             await ctx.add_cookies(X_COOKIES)
             page = await ctx.new_page()
-            url = f'https://x.com/search?q=from%3A{handle}%20{surname}&f=live'
+            url = f'https://x.com/search?q={encoded}&f=live'
             await page.goto(url, wait_until="domcontentloaded", timeout=20000)
             await page.wait_for_timeout(4000)
             for _ in range(5):
@@ -175,17 +185,19 @@ async def update_show(show, ig_clips):
         cache = json.load(f)
 
     print(f"\n=== {show['name']} ===")
-    yt = fetch_youtube_views(show['yt_channel_id'])
+    yt, yt_dates = fetch_youtube_data(show['yt_channel_id'])
 
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
             continue
+        # Use the YouTube publish date as a filter to exclude older same-surname guests
+        since = yt_dates.get(surname)
         try:
-            total, count = await fetch_x_views(show['x_handle'], surname)
+            total, count = await fetch_x_views(show['x_handle'], surname, since_date=since)
             if total > 0:
                 v['x_views'] = format_views(total)
-                print(f"  {v['surname']}: {count} tweets, X:{v['x_views']}")
+                print(f"  {v['surname']}: {count} tweets since {since or 'any'}, X:{v['x_views']}")
         except Exception as e:
             print(f"  {v['surname']}: X error {e}", file=sys.stderr)
         if surname in yt:
