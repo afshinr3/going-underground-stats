@@ -187,12 +187,25 @@ async def update_show(show, ig_clips):
     print(f"\n=== {show['name']} ===")
     yt, yt_dates = fetch_youtube_data(show['yt_channel_id'])
 
+    # Helper: convert "25 Apr" or "21 Mar" to ISO YYYY-MM-DD using current year
+    from datetime import datetime
+    def short_to_iso(short):
+        if not short: return None
+        try:
+            d = datetime.strptime(short, '%d %b').replace(year=datetime.now().year)
+            # If date is in the future, it must be last year
+            if d > datetime.now():
+                d = d.replace(year=datetime.now().year - 1)
+            return d.strftime('%Y-%m-%d')
+        except Exception:
+            return None
+
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
             continue
-        # Use the YouTube publish date as a filter to exclude older same-surname guests
-        since = yt_dates.get(surname)
+        # Use YouTube publish date as a filter; fallback to stored cache date for older episodes
+        since = yt_dates.get(surname) or short_to_iso(v.get('date', ''))
         try:
             total, count = await fetch_x_views(show['x_handle'], surname, since_date=since)
             if total > 0:
