@@ -1,0 +1,40 @@
+name: Update GU Stats
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes
+  workflow_dispatch: {}       # allow manual run
+
+permissions:
+  contents: write             # to commit videos.json
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright requests Pillow
+          playwright install --with-deps chromium
+
+      - name: Run fetch + push
+        env:
+          X_COOKIES_JSON: ${{ secrets.X_COOKIES_JSON }}
+          IG_COOKIES_JSON: ${{ secrets.IG_COOKIES_JSON }}
+          TIDBYT_KEY_1: ${{ secrets.TIDBYT_KEY_1 }}
+          TIDBYT_KEY_2: ${{ secrets.TIDBYT_KEY_2 }}
+        run: python3 fetch_and_push.py
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "GU Stats Bot"
+          git config user.email "bot@github.com"
+          git add videos.json
+          git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
+          git push
