@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-Cloud-based GU stats fetcher — runs on GitHub Actions every 15 minutes.
-Fetches X/YT/IG view counts using saved cookies, then pushes to:
-  - videos.json in the repo (commit) → public raw URL for iOS/Android apps
-  - Tidbyt devices via API
-  - LaMetric devices via local API (skipped in cloud — only works on home WiFi)
+Cloud-based stats fetcher — runs on GitHub Actions every 15 minutes.
+Fetches X / YT / IG view counts for both Going Underground and New Order shows.
+
+Outputs:
+  videos.json            — Going Underground (15 latest, X handle GUnderground_TV, YT UCjY51YgQzYxD5kX-BNobpxA)
+  videos_neworder.json   — New Order (latest, X handle NewOrder_TV, YT UC7FXwSQPOlq-eqXjpS3TL8g)
+
+Pushes the GU animation to both Tidbyts.
 """
 
 import asyncio
@@ -15,16 +18,13 @@ import os
 import re
 import sys
 import urllib.request
-from datetime import datetime
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
 from playwright.async_api import async_playwright
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(ROOT, "videos.json")
 
-# Secrets from GitHub Actions environment
 X_COOKIES = json.loads(os.environ.get("X_COOKIES_JSON", "[]"))
 IG_COOKIES = json.loads(os.environ.get("IG_COOKIES_JSON", "[]"))
 
@@ -35,8 +35,20 @@ TIDBYT_DEVICES = [
      "key": os.environ.get("TIDBYT_KEY_2", "")},
 ]
 
-YOUTUBE_CHANNEL_ID = "UCjY51YgQzYxD5kX-BNobpxA"
-SKIP_GUESTS = ["ben-menashe"]
+SHOWS = [
+    {
+        "name": "Going Underground",
+        "data_file": os.path.join(ROOT, "videos.json"),
+        "x_handle": "GUnderground_TV",
+        "yt_channel_id": "UCjY51YgQzYxD5kX-BNobpxA",
+    },
+    {
+        "name": "New Order",
+        "data_file": os.path.join(ROOT, "videos_neworder.json"),
+        "x_handle": "NewOrder_TV",
+        "yt_channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+    },
+]
 
 
 def parse_count(v):
@@ -54,26 +66,22 @@ def format_views(v):
     return str(n)
 
 
-def fetch_youtube_views():
-    """Fetch view counts from YouTube RSS feed."""
+def fetch_youtube_views(channel_id):
+    """Fetch view counts from YouTube RSS feed for a channel."""
     try:
         req = urllib.request.Request(
-            f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBE_CHANNEL_ID}",
+            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
-        # Extract title + views per entry
         entries = re.findall(
             r'<entry>.*?<title>(.*?)</title>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
-        # Build surname → views map
         views_map = {}
         for title, views in entries:
             title = title.replace('&amp;', '&').replace('&#39;', "'")
-            # Try various ways to get a guest surname from title
             for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
-                if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground'):
+                if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground', 'order'):
                     views_map.setdefault(w.lower(), format_views(views))
-            # Also check parenthesised name
             m = re.search(r'\(([^)]+)\)', title)
             if m:
                 for w in m.group(1).split():
@@ -82,12 +90,12 @@ def fetch_youtube_views():
                         views_map.setdefault(w.lower(), format_views(views))
         return views_map
     except Exception as e:
-        print(f"YouTube error: {e}", file=sys.stderr)
+        print(f"YouTube error for {channel_id}: {e}", file=sys.stderr)
         return {}
 
 
 def fetch_instagram_clips():
-    """Fetch IG play counts from afshinrattansi profile."""
+    """Fetch IG play counts from afshinrattansi profile (shared by both shows)."""
     if not IG_COOKIES:
         return {}
     try:
@@ -98,12 +106,10 @@ def fetch_instagram_clips():
             'X-CSRFToken': cookies.get('csrftoken', ''),
             'Cookie': '; '.join(f'{k}={v}' for k, v in cookies.items()),
         }
-        # Get user ID
         r = requests.get(
             'https://i.instagram.com/api/v1/users/web_profile_info/?username=afshinrattansi',
             headers=headers, timeout=15)
         user_id = r.json()['data']['user']['id']
-        # Fetch feed pages
         clips = {}
         max_id = ''
         for _ in range(5):
@@ -115,7 +121,6 @@ def fetch_instagram_clips():
             for item in data.get('items', []):
                 caption = (item.get('caption') or {}).get('text', '') or ''
                 play_count = item.get('play_count') or item.get('view_count') or item.get('like_count', 0)
-                # Look for surnames in caption
                 for word in re.findall(r'\b[A-Z][a-z]{3,}\b', caption):
                     clips[word.lower()] = clips.get(word.lower(), 0) + play_count
             if not data.get('more_available'):
@@ -129,7 +134,7 @@ def fetch_instagram_clips():
         return {}
 
 
-async def fetch_x_views(surname):
+async def fetch_x_views(handle, surname):
     """Fetch X tweet views for surname using saved cookies."""
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -137,7 +142,7 @@ async def fetch_x_views(surname):
             ctx = await browser.new_context()
             await ctx.add_cookies(X_COOKIES)
             page = await ctx.new_page()
-            url = f'https://x.com/search?q=from%3AGUnderground_TV%20{surname}&f=live'
+            url = f'https://x.com/search?q=from%3A{handle}%20{surname}&f=live'
             await page.goto(url, wait_until="domcontentloaded", timeout=20000)
             await page.wait_for_timeout(4000)
             for _ in range(5):
@@ -161,48 +166,50 @@ async def fetch_x_views(surname):
             await browser.close()
 
 
-async def main_fetch():
-    """Load cache, refresh X/YT/IG, save."""
-    if not os.path.exists(DATA_FILE):
-        print("No videos.json — exiting", file=sys.stderr)
+async def update_show(show, ig_clips):
+    """Refresh a single show's data file."""
+    if not os.path.exists(show['data_file']):
+        print(f"No {show['data_file']} — skipping", file=sys.stderr)
         return
-    with open(DATA_FILE) as f:
+    with open(show['data_file']) as f:
         cache = json.load(f)
 
-    # YouTube views
-    print("Fetching YouTube views...")
-    yt = fetch_youtube_views()
+    print(f"\n=== {show['name']} ===")
+    yt = fetch_youtube_views(show['yt_channel_id'])
 
-    # Instagram clips
-    print("Fetching Instagram clips...")
-    ig = fetch_instagram_clips()
-
-    # X views for each guest
-    print("Fetching X views...")
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
             continue
         try:
-            total, count = await fetch_x_views(surname)
+            total, count = await fetch_x_views(show['x_handle'], surname)
             if total > 0:
                 v['x_views'] = format_views(total)
                 print(f"  {v['surname']}: {count} tweets, X:{v['x_views']}")
         except Exception as e:
             print(f"  {v['surname']}: X error {e}", file=sys.stderr)
-
         if surname in yt:
             v['yt_views'] = yt[surname]
-        if surname in ig:
-            v['ig_likes'] = ig[surname]
+        if surname in ig_clips:
+            v['ig_likes'] = ig_clips[surname]
 
-    with open(DATA_FILE, 'w') as f:
+    with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
-    print(f"Saved {len(cache)} entries to {DATA_FILE}")
+    print(f"Saved {len(cache)} entries to {show['data_file']}")
 
 
-def push_to_tidbyt(cache):
-    """Build animation and push to both Tidbyts."""
+async def main_fetch():
+    ig_clips = fetch_instagram_clips()
+    print(f"IG clips found for {len(ig_clips)} surnames")
+    for show in SHOWS:
+        await update_show(show, ig_clips)
+
+
+def push_to_tidbyt():
+    """Build animation from Going Underground data and push to both Tidbyts."""
+    with open(SHOWS[0]['data_file']) as f:
+        cache = json.load(f)
+
     sorted_eps = []
     for v in cache[:15]:
         total = sum(parse_count(v.get(k)) for k in ['rumble_views','x_views','yt_views','ig_likes'])
@@ -264,9 +271,7 @@ def push_to_tidbyt(cache):
 
 def main():
     asyncio.run(main_fetch())
-    with open(DATA_FILE) as f:
-        cache = json.load(f)
-    push_to_tidbyt(cache)
+    push_to_tidbyt()
 
 
 if __name__ == "__main__":
