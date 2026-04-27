@@ -139,6 +139,115 @@ def fetch_instagram_clips():
         return {}
 
 
+def extract_guest(title):
+    """Extract guest name from episode title."""
+    # Check for name in parentheses first
+    paren = re.search(r'\(([^)]+)\)\s*$', title)
+    if paren:
+        guest = paren.group(1).strip()
+        guest = re.sub(
+            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
+            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
+            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
+            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
+            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
+            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
+            '', guest, flags=re.I
+        ).strip()
+        if guest and len(guest) > 3:
+            return guest
+        return paren.group(1).strip()
+    # "Name on Topic" pattern
+    name_on = re.match(r'^(?:\S+\'s\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z-]+)+)\s+on\s+', title)
+    if name_on:
+        return name_on.group(1)
+    # Split on dash separators
+    dash_match = re.split(r'\s*[–—]\s*|\s+-\s+|-\s+(?=[A-Z](?:[a-z]|x-|ormer))', title)
+    if len(dash_match) >= 2:
+        guest = dash_match[-1].strip()
+        guest = re.sub(
+            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
+            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
+            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
+            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
+            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
+            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
+            '', guest, flags=re.I
+        ).strip()
+        if guest and len(guest) > 3:
+            return guest
+        return dash_match[-1].strip()
+    return title[:30]
+
+
+def extract_surname(guest_name):
+    """Get just the surname from a guest name."""
+    name = guest_name.replace('(Jim) ', '').replace('Lt. Col. ', '').replace('Dr. ', '').replace('Prof. ', '').replace('Sgt. ', '')
+    parts = name.strip().split()
+    if not parts:
+        return guest_name
+    last = parts[-1]
+    if len(parts) >= 2 and parts[-2].endswith('-'):
+        return parts[-2] + last
+    if len(parts) >= 2 and '-' in parts[-1] and parts[-2][0].isupper():
+        return last
+    return last
+
+
+def discover_new_episodes(channel_id, data_file):
+    """Use YouTube RSS to discover new episodes not yet in the data file."""
+    from datetime import datetime as dt
+
+    existing_surnames = set()
+    if os.path.exists(data_file):
+        with open(data_file) as f:
+            cached = json.load(f)
+        for c in cached:
+            s = c.get('surname', '').lower()
+            if s:
+                existing_surnames.add(s)
+    else:
+        cached = []
+
+    try:
+        rss = urllib.request.urlopen(
+            urllib.request.Request(
+                f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
+                headers={"User-Agent": "Mozilla/5.0"}),
+            timeout=15).read().decode()
+        entries = re.findall(
+            r'<entry>.*?<title>(.*?)</title>.*?<published>(.*?)</published>',
+            rss, re.DOTALL)
+        new_eps = []
+        for title_raw, pub in entries:
+            title = title_raw.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
+            if len(title) < 20:
+                continue
+            guest = extract_guest(title)
+            surname = extract_surname(guest)
+            if surname.lower() in existing_surnames:
+                continue
+            try:
+                d = dt.strptime(pub[:10], '%Y-%m-%d')
+                short_date = d.strftime('%-d %b')
+            except Exception:
+                short_date = ''
+            new_eps.append({
+                "guest": guest, "surname": surname, "title": title,
+                "rumble_views": "?", "x_views": "?", "date": short_date,
+                "yt_views": "?", "ig_likes": "?",
+            })
+            existing_surnames.add(surname.lower())
+            print(f"  NEW: {guest} ({short_date})")
+        if new_eps:
+            cached = new_eps + cached
+            with open(data_file, 'w') as f:
+                json.dump(cached, f, indent=2)
+            print(f"  Added {len(new_eps)} new episode(s)")
+    except Exception as e:
+        print(f"  Discovery error: {e}", file=sys.stderr)
+
+
 async def fetch_x_views(handle, surname, since_date=None):
     """Fetch X tweet views for surname. If since_date given (YYYY-MM-DD), only count tweets on/after that date."""
     # Use X's built-in date filter so collisions with older same-surname guests are excluded
@@ -178,13 +287,17 @@ async def fetch_x_views(handle, surname, since_date=None):
 
 async def update_show(show, ig_clips):
     """Refresh a single show's data file."""
+    print(f"\n=== {show['name']} ===")
+
+    # Auto-discover new episodes from YouTube RSS
+    print(f"Discovering new episodes...")
+    discover_new_episodes(show['yt_channel_id'], show['data_file'])
+
     if not os.path.exists(show['data_file']):
         print(f"No {show['data_file']} — skipping", file=sys.stderr)
         return
     with open(show['data_file']) as f:
         cache = json.load(f)
-
-    print(f"\n=== {show['name']} ===")
     yt, yt_dates = fetch_youtube_data(show['yt_channel_id'])
 
     # Helper: convert "25 Apr" or "21 Mar" to ISO YYYY-MM-DD using current year
