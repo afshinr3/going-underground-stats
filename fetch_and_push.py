@@ -141,6 +141,8 @@ def fetch_instagram_clips():
 
 def extract_guest(title):
     """Extract guest name from episode title."""
+    # Normalise curly quotes/apostrophes to ASCII
+    title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
     # Check for name in parentheses first
     paren = re.search(r'\(([^)]+)\)\s*$', title)
     if paren:
@@ -209,6 +211,13 @@ def discover_new_episodes(channel_id, data_file):
     else:
         cached = []
 
+    # Also track existing titles to avoid near-duplicate detection
+    existing_titles = set()
+    for c in cached:
+        t = c.get('title', '').lower()[:40]
+        if t:
+            existing_titles.add(t)
+
     try:
         rss = urllib.request.urlopen(
             urllib.request.Request(
@@ -221,10 +230,21 @@ def discover_new_episodes(channel_id, data_file):
         new_eps = []
         for title_raw, pub in entries:
             title = title_raw.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
+            title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
             if len(title) < 20:
+                continue
+            # Skip if title already tracked
+            if title.lower()[:40] in existing_titles:
                 continue
             guest = extract_guest(title)
             surname = extract_surname(guest)
+            # Validate: surname must be >1 char and not a common English word
+            SKIP_WORDS = {'failure','decline','war','iran','israel','trump','target',
+                          'hegemony','loser','crisis','threat','risk','end','new',
+                          'order','going','underground','episode','interview',
+                          'heated','challenge','relation','join','control'}
+            if len(surname) <= 1 or surname.lower() in SKIP_WORDS:
+                continue
             if surname.lower() in existing_surnames:
                 continue
             try:
@@ -238,6 +258,7 @@ def discover_new_episodes(channel_id, data_file):
                 "yt_views": "?", "ig_likes": "?",
             })
             existing_surnames.add(surname.lower())
+            existing_titles.add(title.lower()[:40])
             print(f"  NEW: {guest} ({short_date})")
         if new_eps:
             cached = new_eps + cached
