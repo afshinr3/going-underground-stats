@@ -273,39 +273,68 @@ def discover_new_episodes(channel_id, data_file):
         print(f"  Discovery error: {e}", file=sys.stderr)
 
 
-async def fetch_x_views(handle, surname, since_date=None):
-    """Fetch X tweet views for surname. If since_date given (YYYY-MM-DD), only count tweets on/after that date."""
-    # Use X's built-in date filter so collisions with older same-surname guests are excluded
-    query = f'from:{handle} {surname}'
-    if since_date:
-        query += f' since:{since_date}'
+async def _scrape_x_search(ctx, query):
+    """Run a single X search query and return list of view counts."""
     encoded = urllib.parse.quote(query)
+    page = await ctx.new_page()
+    try:
+        await page.goto(f'https://x.com/search?q={encoded}&f=live',
+                        wait_until="domcontentloaded", timeout=20000)
+        await page.wait_for_timeout(4000)
+        for _ in range(5):
+            await page.evaluate("window.scrollBy(0, 2000)")
+            await page.wait_for_timeout(1500)
+        return await page.evaluate(r"""
+            () => {
+                var out = [];
+                document.querySelectorAll('article[data-testid="tweet"]').forEach(t => {
+                    var a = t.querySelector('a[href*="/analytics"]');
+                    if (a) {
+                        var m = (a.getAttribute('aria-label') || a.textContent || '').match(/([\d,.]+)\s*(?:view|View)/i);
+                        if (m) out.push(parseInt(m[1].replace(/,/g,'')));
+                    }
+                });
+                return out;
+            }
+        """)
+    finally:
+        await page.close()
+
+
+async def fetch_x_views(handle, surname, since_date=None, extra_keywords=None):
+    """Fetch X tweet views by searching surname + optional title keywords.
+    Deduplicates by combining all searches and taking the max total."""
+    queries = []
+    base = f'from:{handle}'
+    date_filter = f' since:{since_date}' if since_date else ''
+
+    # Primary: search by surname
+    queries.append(f'{base} {surname}{date_filter}')
+
+    # Secondary: search by unique title keywords (catches clips that don't mention the name)
+    if extra_keywords:
+        for kw in extra_keywords[:2]:  # max 2 extra searches to avoid rate limiting
+            queries.append(f'{base} {kw}{date_filter}')
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         try:
             ctx = await browser.new_context()
             await ctx.add_cookies(X_COOKIES)
-            page = await ctx.new_page()
-            url = f'https://x.com/search?q={encoded}&f=live'
-            await page.goto(url, wait_until="domcontentloaded", timeout=20000)
-            await page.wait_for_timeout(4000)
-            for _ in range(5):
-                await page.evaluate("window.scrollBy(0, 2000)")
-                await page.wait_for_timeout(1500)
-            views = await page.evaluate(r"""
-                () => {
-                    var out = [];
-                    document.querySelectorAll('article[data-testid="tweet"]').forEach(t => {
-                        var a = t.querySelector('a[href*="/analytics"]');
-                        if (a) {
-                            var m = (a.getAttribute('aria-label') || a.textContent || '').match(/([\d,.]+)\s*(?:view|View)/i);
-                            if (m) out.push(parseInt(m[1].replace(/,/g,'')));
-                        }
-                    });
-                    return out;
-                }
-            """)
-            return sum(views), len(views)
+
+            # Run all searches, collect unique view counts (dedup by value to avoid double-counting)
+            all_views = set()
+            total_tweets = 0
+            for q in queries:
+                try:
+                    views = await _scrape_x_search(ctx, q)
+                    for v in views:
+                        all_views.add(v)
+                    total_tweets += len(views)
+                except Exception:
+                    pass
+
+            return sum(all_views), len(all_views)
         finally:
             await browser.close()
 
@@ -338,17 +367,32 @@ async def update_show(show, ig_clips):
         except Exception:
             return None
 
+    # Extract unique title keywords for broader X search
+    NOISE = {'war','iran','israel','trump','the','and','for','with','from','this','that',
+             'going','underground','new','order','about','could','would','into','been',
+             'will','have','show','what','how','why','not','our','its','his','her',
+             'are','was','has','had','can','all','but','who','may','get','one','two'}
+
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
             continue
-        # Use YouTube publish date as a filter; fallback to stored cache date for older episodes
+        # Extract 1-2 distinctive keywords from the title for broader X search
+        title = v.get('title', '')
+        title_words = [w.strip("'\"(),-.:!?") for w in title.split()
+                       if len(w.strip("'\"(),-.:!?")) > 4 and w.strip("'\"(),-.:!?").lower() not in NOISE
+                       and w.strip("'\"(),-.:!?").lower() != surname]
+        # Pick the most distinctive words (ALL CAPS words are likely distinctive)
+        caps = [w for w in title_words if w.isupper() and len(w) > 3]
+        extra_kw = (caps or title_words)[:2]
+
         since = yt_dates.get(surname) or short_to_iso(v.get('date', ''))
         try:
-            total, count = await fetch_x_views(show['x_handle'], surname, since_date=since)
+            total, count = await fetch_x_views(show['x_handle'], surname,
+                                                since_date=since, extra_keywords=extra_kw)
             if total > 0:
                 v['x_views'] = format_views(total)
-                print(f"  {v['surname']}: {count} tweets since {since or 'any'}, X:{v['x_views']}")
+                print(f"  {v['surname']}: {count} tweets ({'+'.join([surname]+extra_kw)}), X:{v['x_views']}")
         except Exception as e:
             print(f"  {v['surname']}: X error {e}", file=sys.stderr)
         if surname in yt:
