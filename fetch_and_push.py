@@ -246,7 +246,8 @@ def discover_new_episodes(channel_id, data_file):
                           'russia','china','hit','indi','rick','strait','hormuz',
                           'could','only','about','into','from','with','that',
                           'this','have','been','were','will','would','should',
-                          'massacre','troops','pentagon','nuclear','bases','gulf'}
+                          'massacre','troops','pentagon','nuclear','bases','gulf',
+                          'commander','challenged','former','centcom'}
             if len(surname) <= 1 or surname.lower() in SKIP_WORDS:
                 continue
             if surname.lower() in existing_surnames:
