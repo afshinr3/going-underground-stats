@@ -406,11 +406,31 @@ async def update_show(show, ig_clips):
     print(f"Saved {len(cache)} entries to {show['data_file']}")
 
 
+BAD_SURNAMES = {'Co', 'C', 'J', 'Relation', 'Hit', 'Indi', 'a', 'Rick',
+                'Iran', 'Russia', 'China', 'Commander', 'Former', 'Centcom'}
+
+
+def cleanup_json(data_file):
+    """Remove entries with known bad surnames from a JSON data file."""
+    if not os.path.exists(data_file):
+        return
+    with open(data_file) as f:
+        data = json.load(f)
+    before = len(data)
+    data = [v for v in data if v.get('surname', '') not in BAD_SURNAMES
+            and len(v.get('surname', '')) > 1]
+    if len(data) < before:
+        with open(data_file, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"  Cleaned {before - len(data)} bad entries from {os.path.basename(data_file)}")
+
+
 async def main_fetch():
     ig_clips = fetch_instagram_clips()
     print(f"IG clips found for {len(ig_clips)} surnames")
     for show in SHOWS:
         await update_show(show, ig_clips)
+        cleanup_json(show['data_file'])
 
 
 def push_to_tidbyt():
