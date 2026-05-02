@@ -425,12 +425,67 @@ def cleanup_json(data_file):
         print(f"  Cleaned {before - len(data)} bad entries from {os.path.basename(data_file)}")
 
 
+async def fetch_x_followers(handles):
+    """Fetch follower counts for the given X handles. Returns dict handle -> int."""
+    out = {}
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        try:
+            ctx = await browser.new_context()
+            await ctx.add_cookies(X_COOKIES)
+            for handle in handles:
+                page = await ctx.new_page()
+                try:
+                    await page.goto(f'https://x.com/{handle}',
+                                    wait_until='domcontentloaded', timeout=20000)
+                    await page.wait_for_timeout(4000)
+                    raw = await page.evaluate(r"""
+                        () => {
+                            var els = document.querySelectorAll('a[href$="/verified_followers"], a[href$="/followers"]');
+                            for (var i=0; i<els.length; i++) {
+                                var label = els[i].getAttribute('aria-label') || '';
+                                var m = label.match(/([\d,.]+\s*[KMB]?)\s*Follower/i);
+                                if (m) return m[1];
+                                var txt = els[i].innerText;
+                                var m2 = txt.match(/([\d,.]+[KMB]?)\s*Followers?/i);
+                                if (m2) return m2[1];
+                            }
+                            return null;
+                        }
+                    """)
+                    if raw:
+                        out[handle] = parse_count(raw.replace(' ', ''))
+                        print(f"  @{handle} followers: {raw} ({out[handle]:,})")
+                    else:
+                        print(f"  @{handle} followers: not found", file=sys.stderr)
+                except Exception as e:
+                    print(f"  @{handle} error: {e}", file=sys.stderr)
+                finally:
+                    await page.close()
+        finally:
+            await browser.close()
+    return out
+
+
 async def main_fetch():
     ig_clips = fetch_instagram_clips()
     print(f"IG clips found for {len(ig_clips)} surnames")
     for show in SHOWS:
         await update_show(show, ig_clips)
         cleanup_json(show['data_file'])
+
+    # Fetch X follower counts for all three accounts
+    print("\nFetching X follower counts...")
+    followers = await fetch_x_followers(['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV'])
+    total = sum(followers.values())
+    out = {
+        "accounts": {h: followers.get(h) for h in ['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV']},
+        "total": total,
+        "updated": __import__('datetime').datetime.utcnow().isoformat() + 'Z',
+    }
+    with open(os.path.join(ROOT, 'followers.json'), 'w') as f:
+        json.dump(out, f, indent=2)
+    print(f"Total X followers: {total:,}")
 
 
 def push_to_tidbyt():
@@ -464,7 +519,27 @@ def push_to_tidbyt():
         overlay = Image.new("RGB", img.size, color)
         img.paste(overlay, mask=mask)
 
+    # First frame: combined X follower count header
+    followers_total_str = ""
+    try:
+        with open(os.path.join(ROOT, 'followers.json')) as f:
+            ft = json.load(f).get('total', 0)
+        if ft >= 1_000_000: followers_total_str = f"{ft/1_000_000:.2f}M"
+        elif ft >= 1_000: followers_total_str = f"{ft/1_000:.1f}K"
+        else: followers_total_str = str(ft)
+    except Exception:
+        pass
+
     frames = []
+    if followers_total_str:
+        hdr = Image.new("RGB", (WIDTH, HEIGHT), (10, 0, 0))
+        lbl = "X FOLLOWERS"
+        lw = font_name.getbbox(lbl)[2]
+        draw_crisp(hdr, max(0, (WIDTH - lw) // 2), 0, lbl, (255, 255, 255), font_name)
+        nw = font_num.getbbox(followers_total_str)[2]
+        draw_crisp(hdr, (WIDTH - nw) // 2, 13, followers_total_str, (0, 255, 0), font_num)
+        frames.append(hdr)
+
     for name, total in sorted_eps[:15]:
         img = Image.new("RGB", (WIDTH, HEIGHT), (10, 0, 0))
         d = name[:12]

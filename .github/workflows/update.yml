@@ -35,6 +35,6 @@ jobs:
         run: |
           git config user.name "GU Stats Bot"
           git config user.email "bot@github.com"
-          git add videos.json videos_neworder.json
+          git add videos.json videos_neworder.json followers.json
           git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
           git push
