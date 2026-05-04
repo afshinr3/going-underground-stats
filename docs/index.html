@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GU + NO Live Stats</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root {
+    --bg: #0a0a0a;
+    --panel: #14141a;
+    --gu: #ff3b30;
+    --no: #af52de;
+    --green: #00ff66;
+    --cyan: #00ffff;
+    --text: #fff;
+    --muted: #888;
+    --rumble: #ff8c00;
+    --x: #00bfff;
+    --yt: #ff3b30;
+    --ig: #e91e63;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+header {
+    padding: 20px;
+    background: linear-gradient(180deg, #1a0a0a, #0a0a0a);
+    border-bottom: 1px solid #222;
+}
+header h1 { margin: 0 0 4px 0; font-size: 20px; }
+header .meta { color: var(--muted); font-size: 12px; }
+.followers {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px; background: var(--panel); border-bottom: 1px solid #222;
+}
+.followers .label { color: var(--muted); font-size: 11px; letter-spacing: 2px; font-weight: 600; }
+.followers .value { color: var(--cyan); font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.followers .breakdown { display: flex; gap: 24px; margin-top: 8px; flex-wrap: wrap; }
+.followers .breakdown span { color: var(--muted); font-size: 12px; }
+.followers .breakdown b { color: #ddd; font-weight: 600; }
+
+.alerts { background: #2a0000; padding: 0; }
+.alert {
+    padding: 8px 20px; color: #ff6464; font-size: 13px; font-weight: 600;
+    border-bottom: 1px solid #4a0000;
+}
+main { display: grid; grid-template-columns: 1fr; gap: 20px; padding: 20px; max-width: 1400px; margin: 0 auto; }
+@media (min-width: 1000px) { main { grid-template-columns: 1.4fr 1fr; } }
+.panel {
+    background: var(--panel); border-radius: 12px; padding: 20px;
+    border: 1px solid #1f1f1f;
+}
+.panel h2 { font-size: 13px; letter-spacing: 2px; margin: 0 0 16px 0; color: var(--muted); font-weight: 600; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 10px; letter-spacing: 1.5px; color: var(--muted); padding: 6px 8px; font-weight: 600; }
+td { padding: 10px 8px; border-bottom: 1px solid #222; font-variant-numeric: tabular-nums; vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+td.rank { color: #555; width: 32px; font-size: 13px; }
+td.dot { width: 16px; }
+td.dot span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+td.name { font-weight: 600; font-size: 16px; }
+td.date { color: var(--muted); font-size: 11px; width: 60px; }
+td.total { text-align: right; font-weight: 700; font-size: 17px; }
+.breakdown-row td { padding: 4px 8px 12px; }
+.breakdown-row .pl { font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-right: 8px; display: inline-block; }
+.legend { display: flex; gap: 20px; margin-top: 16px; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.row-clickable { cursor: pointer; }
+.row-clickable:hover td { background: #1c1c22; }
+.chart-container { position: relative; height: 300px; }
+.tab-bar { display: flex; gap: 4px; background: #1a0606; border-radius: 8px; margin-bottom: 16px; padding: 2px; }
+.tab-bar button {
+    flex: 1; padding: 8px; border: 0; background: transparent; color: var(--muted);
+    font-size: 12px; font-weight: 600; cursor: pointer; border-radius: 6px;
+}
+.tab-bar button.active { background: #440000; color: white; }
+footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Going Underground · New Order — live stats</h1>
+    <div class="meta" id="updated">loading…</div>
+</header>
+
+<div class="followers">
+    <div>
+        <div class="label">X FOLLOWERS · COMBINED</div>
+        <div class="breakdown" id="followers-breakdown"></div>
+    </div>
+    <div class="value" id="followers-total">—</div>
+</div>
+
+<div class="alerts" id="alerts"></div>
+
+<main>
+    <div class="panel">
+        <h2>TOTAL REACH</h2>
+        <div class="tab-bar" id="window-bar">
+            <button data-days="-1" class="active">All</button>
+            <button data-days="7">1 Week</button>
+            <button data-days="30">1 Month</button>
+            <button data-days="180">6 Months</button>
+        </div>
+        <table>
+            <thead><tr><th></th><th></th><th></th><th></th><th>NAME</th><th></th><th style="text-align:right">TOTAL</th></tr></thead>
+            <tbody id="leaderboard"></tbody>
+        </table>
+        <div class="legend">
+            <span><i style="background: var(--gu)"></i> Going Underground</span>
+            <span><i style="background: var(--no)"></i> New Order</span>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>BY GUEST · STACKED PLATFORM BREAKDOWN</h2>
+        <div class="chart-container"><canvas id="chart-stacked"></canvas></div>
+    </div>
+
+    <div class="panel" style="grid-column: 1 / -1">
+        <h2>FOLLOWERS OVER TIME</h2>
+        <div class="chart-container"><canvas id="chart-followers"></canvas></div>
+    </div>
+</main>
+
+<footer>
+    Refreshes every 60s · Source data:
+    <a style="color:#666" href="https://github.com/afshinr3/going-underground-stats">github.com/afshinr3/going-underground-stats</a>
+</footer>
+
+<script>
+const REPO = "afshinr3/going-underground-stats";
+const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
+const REFRESH_MS = 60_000;
+
+let windowDays = -1;
+let lastData = null;
+let stackedChart = null;
+let followersChart = null;
+
+function parseCount(s) {
+    if (!s || s === "?" ) return 0;
+    s = ("" + s).replace(/,/g, '').trim();
+    const u = s.toUpperCase();
+    if (u.endsWith('M')) return parseFloat(u) * 1_000_000;
+    if (u.endsWith('K')) return parseFloat(u) * 1_000;
+    return parseFloat(s) || 0;
+}
+function fmt(n) {
+    if (n >= 1_000_000) return (n/1_000_000).toFixed(1) + 'M';
+    if (n >= 1_000) return (n/1_000).toFixed(0) + 'K';
+    return Math.round(n) + '';
+}
+function withinWindow(dateStr, days) {
+    if (days < 0) return true;
+    if (!dateStr) return false;
+    const m = dateStr.match(/^(\d+)\s+(\w+)/);
+    if (!m) return false;
+    const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+    const mn = months[m[2].slice(0,3)];
+    if (mn === undefined) return false;
+    const now = new Date();
+    let d = new Date(now.getFullYear(), mn, parseInt(m[1]));
+    if (d > now) d = new Date(now.getFullYear()-1, mn, parseInt(m[1]));
+    const ageDays = (now - d) / 86_400_000;
+    return ageDays <= days;
+}
+function totalOf(v) {
+    return parseCount(v.rumble_views) + parseCount(v.x_views) +
+           parseCount(v.yt_views) + parseCount(v.ig_likes);
+}
+
+async function fetchAll() {
+    const [gu, no, fol, drops] = await Promise.all([
+        fetch(`${RAW}/videos.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>[]),
+        fetch(`${RAW}/videos_neworder.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>[]),
+        fetch(`${RAW}/followers.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>({})),
+        fetch(`${RAW}/drops_current.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>({drops:[]})),
+    ]);
+    return { gu: gu.map(e=>({...e,_show:'GU'})),
+             no: no.map(e=>({...e,_show:'NO'})),
+             fol, drops: drops.drops || [] };
+}
+
+function renderFollowers(fol) {
+    document.getElementById('followers-total').textContent = fmt(fol.total || 0);
+    const bd = document.getElementById('followers-breakdown');
+    bd.innerHTML = '';
+    const accs = fol.accounts || {};
+    for (const [k,v] of Object.entries(accs)) {
+        if (v == null) continue;
+        const sp = document.createElement('span');
+        sp.innerHTML = `@${k}: <b>${fmt(v)}</b>`;
+        bd.appendChild(sp);
+    }
+}
+
+function renderAlerts(drops) {
+    const el = document.getElementById('alerts');
+    el.innerHTML = '';
+    if (!drops.length) return;
+    drops.forEach(d => {
+        const r = document.createElement('div');
+        r.className = 'alert';
+        r.textContent = `⚠ ${d.guest} ${d.platform} -${Math.round(d.drop_pct)}% from peak ${fmt(d.peak)} (${(d.peak_at||'').slice(0,16)})`;
+        el.appendChild(r);
+    });
+}
+
+function renderLeaderboard(entries) {
+    const filtered = entries.filter(e => withinWindow(e.date, windowDays));
+    filtered.sort((a,b) => totalOf(b) - totalOf(a));
+    const tbody = document.getElementById('leaderboard');
+    tbody.innerHTML = '';
+    filtered.forEach((e,i) => {
+        const tr = document.createElement('tr');
+        tr.className = 'row-clickable';
+        const colour = e._show === 'GU' ? 'var(--gu)' : 'var(--no)';
+        tr.innerHTML = `
+            <td class="rank">${i+1}</td>
+            <td class="dot"><span style="background:${colour}"></span></td>
+            <td></td>
+            <td></td>
+            <td class="name">${e.surname || '?'}</td>
+            <td class="date">${e.date || ''}</td>
+            <td class="total" style="color:${colour}">${fmt(totalOf(e))}</td>
+        `;
+        const breakdown = document.createElement('tr');
+        breakdown.style.display = 'none';
+        breakdown.className = 'breakdown-row';
+        breakdown.innerHTML = `
+            <td colspan="7">
+                <span class="pl" style="background:#3a1700;color:var(--rumble)">RUMBLE ${e.rumble_views || '?'}</span>
+                <span class="pl" style="background:#001f2e;color:var(--x)">X ${e.x_views || '?'}</span>
+                <span class="pl" style="background:#3a0a0a;color:var(--yt)">YT ${e.yt_views || '?'}</span>
+                <span class="pl" style="background:#3a0820;color:var(--ig)">IG ${e.ig_likes || '?'}</span>
+            </td>`;
+        tr.onclick = () => breakdown.style.display = breakdown.style.display === 'none' ? '' : 'none';
+        tbody.appendChild(tr);
+        tbody.appendChild(breakdown);
+    });
+}
+
+function renderStackedChart(entries) {
+    const filtered = entries.filter(e => withinWindow(e.date, windowDays));
+    filtered.sort((a,b) => totalOf(b) - totalOf(a));
+    const labels = filtered.map(e => `${e.surname}${e._show==='NO'?'·NO':''}`);
+    const data = {
+        labels,
+        datasets: [
+            { label: 'X', data: filtered.map(e=>parseCount(e.x_views)), backgroundColor: 'rgba(0,191,255,0.85)' },
+            { label: 'IG', data: filtered.map(e=>parseCount(e.ig_likes)), backgroundColor: 'rgba(233,30,99,0.85)' },
+            { label: 'YT', data: filtered.map(e=>parseCount(e.yt_views)), backgroundColor: 'rgba(255,59,48,0.85)' },
+            { label: 'Rumble', data: filtered.map(e=>parseCount(e.rumble_views)), backgroundColor: 'rgba(255,140,0,0.85)' },
+        ]
+    };
+    const opts = {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: '#aaa', font: { size: 11 } } } },
+        scales: {
+            x: { stacked: true, ticks: { color: '#888', font: { size: 10 }, maxRotation: 70, minRotation: 60 }, grid: { color: '#222' } },
+            y: { stacked: true, ticks: { color: '#888', callback: fmt }, grid: { color: '#222' } }
+        }
+    };
+    if (stackedChart) {
+        stackedChart.data = data; stackedChart.options = opts; stackedChart.update();
+    } else {
+        stackedChart = new Chart(document.getElementById('chart-stacked'), { type: 'bar', data, options: opts });
+    }
+}
+
+async function renderFollowersChart() {
+    // Pull last ~30 commits to followers.json from GitHub API
+    try {
+        const commits = await fetch(`https://api.github.com/repos/${REPO}/commits?path=followers.json&per_page=40&_t=${Date.now()}`).then(r=>r.json());
+        const points = await Promise.all(commits.slice().reverse().map(async c => {
+            try {
+                const file = await fetch(`https://raw.githubusercontent.com/${REPO}/${c.sha}/followers.json`).then(r=>r.json());
+                return { t: c.commit.author.date, total: file.total || null,
+                         afshin: file.accounts?.afshinrattansi, gu: file.accounts?.GUnderground_TV, no: file.accounts?.NewOrder_TV };
+            } catch (e) { return null; }
+        }));
+        const valid = points.filter(p => p && p.total);
+        if (!valid.length) return;
+        const labels = valid.map(p => new Date(p.t).toLocaleString('en-GB', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}));
+        const data = {
+            labels,
+            datasets: [
+                { label: '@afshinrattansi', data: valid.map(p=>p.afshin), borderColor: '#00ffff', backgroundColor: 'rgba(0,255,255,0.1)', tension: 0.2 },
+                { label: '@GUnderground_TV', data: valid.map(p=>p.gu), borderColor: '#ff3b30', backgroundColor: 'rgba(255,59,48,0.1)', tension: 0.2 },
+                { label: '@NewOrder_TV', data: valid.map(p=>p.no), borderColor: '#af52de', backgroundColor: 'rgba(175,82,222,0.1)', tension: 0.2 },
+            ]
+        };
+        const opts = {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#aaa', font: { size: 11 } } } },
+            scales: {
+                x: { ticks: { color: '#888', font: { size: 10 }, maxRotation: 70, minRotation: 50 }, grid: { color: '#222' } },
+                y: { ticks: { color: '#888', callback: fmt }, grid: { color: '#222' } }
+            }
+        };
+        if (followersChart) { followersChart.data = data; followersChart.update(); }
+        else { followersChart = new Chart(document.getElementById('chart-followers'), { type: 'line', data, options: opts }); }
+    } catch (e) { console.warn('followers chart failed', e); }
+}
+
+async function refresh() {
+    try {
+        lastData = await fetchAll();
+        renderFollowers(lastData.fol);
+        renderAlerts(lastData.drops);
+        const all = [...lastData.gu, ...lastData.no];
+        renderLeaderboard(all);
+        renderStackedChart(all);
+        document.getElementById('updated').textContent =
+            `Updated ${new Date().toLocaleString('en-GB')}`;
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+document.querySelectorAll('#window-bar button').forEach(btn => {
+    btn.onclick = () => {
+        document.querySelectorAll('#window-bar button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        windowDays = parseInt(btn.dataset.days);
+        if (lastData) {
+            const all = [...lastData.gu, ...lastData.no];
+            renderLeaderboard(all);
+            renderStackedChart(all);
+        }
+    };
+});
+
+refresh();
+renderFollowersChart();
+setInterval(refresh, REFRESH_MS);
+setInterval(renderFollowersChart, 5 * 60 * 1000);  // every 5 min
+</script>
+</body>
+</html>
