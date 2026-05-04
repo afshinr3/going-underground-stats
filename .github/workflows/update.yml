@@ -23,21 +23,25 @@ jobs:
           pip install playwright requests Pillow
           playwright install --with-deps chromium
 
-      - name: Run fetch + push
+      - name: Fetch fresh data (videos.json + followers.json)
         env:
           X_COOKIES_JSON: ${{ secrets.X_COOKIES_JSON }}
           IG_COOKIES_JSON: ${{ secrets.IG_COOKIES_JSON }}
-          TIDBYT_KEY_1: ${{ secrets.TIDBYT_KEY_1 }}
-          TIDBYT_KEY_2: ${{ secrets.TIDBYT_KEY_2 }}
-        run: python3 fetch_and_push.py
+        run: python3 -c "import asyncio, fetch_and_push; asyncio.run(fetch_and_push.main_fetch())"
 
       - name: Track drops vs peaks
         run: python3 track_drops.py
+
+      - name: Push to Tidbyts (with drop alerts if any)
+        env:
+          TIDBYT_KEY_1: ${{ secrets.TIDBYT_KEY_1 }}
+          TIDBYT_KEY_2: ${{ secrets.TIDBYT_KEY_2 }}
+        run: python3 -c "import fetch_and_push; fetch_and_push.push_to_tidbyt()"
 
       - name: Commit updated JSON
         run: |
           git config user.name "GU Stats Bot"
           git config user.email "bot@github.com"
-          git add videos.json videos_neworder.json followers.json peaks.json drops.md
+          git add videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json
           git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
           git push

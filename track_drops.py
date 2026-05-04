@@ -19,6 +19,7 @@ from datetime import datetime
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PEAKS_FILE = os.path.join(ROOT, "peaks.json")
 DROPS_FILE = os.path.join(ROOT, "drops.md")
+CURRENT_DROPS_FILE = os.path.join(ROOT, "drops_current.json")
 
 PLATFORMS = ["x_views", "yt_views", "ig_likes", "rumble_views"]
 DROP_THRESHOLD_PCT = 15  # only log drops larger than this
@@ -102,7 +103,11 @@ def main():
     with open(PEAKS_FILE, "w") as f:
         json.dump(peaks, f, indent=2)
 
-    # Append to drops log
+    # Always overwrite drops_current.json — apps/devices consume this for alerts
+    with open(CURRENT_DROPS_FILE, "w") as f:
+        json.dump({"updated": now, "drops": drops_today}, f, indent=2)
+
+    # Append to drops log only when there's something
     if drops_today:
         with open(DROPS_FILE, "a") as f:
             f.write(f"\n## {now}\n\n")

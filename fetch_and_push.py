@@ -530,7 +530,25 @@ def push_to_tidbyt():
     except Exception:
         pass
 
+    # Load active drops (if any) — alert frames go first, in red
+    drops = []
+    try:
+        with open(os.path.join(ROOT, 'drops_current.json')) as f:
+            drops = json.load(f).get('drops', [])
+    except Exception:
+        pass
+
     frames = []
+    for d in drops[:5]:  # cap at 5 alert frames so animation isn't too long
+        alert = Image.new("RGB", (WIDTH, HEIGHT), (60, 0, 0))
+        line1 = f"{d['guest'][:9]} {d['platform']}"
+        line2 = f"-{d['drop_pct']:.0f}%"
+        lw = font_name.getbbox(line1)[2]
+        draw_crisp(alert, max(0, (WIDTH - lw) // 2), 0, line1, (255, 60, 60), font_name)
+        nw = font_num.getbbox(line2)[2]
+        draw_crisp(alert, (WIDTH - nw) // 2, 13, line2, (255, 80, 80), font_num)
+        frames.append(alert)
+
     if followers_total_str:
         hdr = Image.new("RGB", (WIDTH, HEIGHT), (10, 0, 0))
         lbl = "X FOLLOWERS"
