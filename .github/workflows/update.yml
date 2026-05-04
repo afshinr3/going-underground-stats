@@ -31,10 +31,13 @@ jobs:
           TIDBYT_KEY_2: ${{ secrets.TIDBYT_KEY_2 }}
         run: python3 fetch_and_push.py
 
+      - name: Track drops vs peaks
+        run: python3 track_drops.py
+
       - name: Commit updated JSON
         run: |
           git config user.name "GU Stats Bot"
           git config user.email "bot@github.com"
-          git add videos.json videos_neworder.json followers.json
+          git add videos.json videos_neworder.json followers.json peaks.json drops.md
           git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
           git push
