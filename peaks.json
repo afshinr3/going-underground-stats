@@ -1,19 +1,23 @@
 {
   "GU:Pyne": {
-    "x_views": 30500,
-    "x_views_at": "2026-05-04T13:05:52Z"
+    "x_views": 134500,
+    "x_views_at": "2026-05-04T15:46:19Z",
+    "yt_views": 1800,
+    "yt_views_at": "2026-05-04T15:46:19Z",
+    "ig_likes": 7500,
+    "ig_likes_at": "2026-05-04T15:46:19Z"
   },
   "GU:Bryant": {
-    "x_views": 87100,
-    "x_views_at": "2026-05-04T13:05:52Z",
+    "x_views": 174800,
+    "x_views_at": "2026-05-04T15:46:19Z",
     "yt_views": 2400,
     "yt_views_at": "2026-05-04T13:05:52Z",
-    "ig_likes": 11500,
-    "ig_likes_at": "2026-05-04T13:05:52Z"
+    "ig_likes": 12000,
+    "ig_likes_at": "2026-05-04T15:46:19Z"
   },
   "GU:Gao": {
-    "x_views": 619700,
-    "x_views_at": "2026-05-04T13:05:52Z",
+    "x_views": 619900,
+    "x_views_at": "2026-05-04T15:46:19Z",
     "yt_views": 47700,
     "yt_views_at": "2026-05-04T13:05:52Z",
     "ig_likes": 30000,
@@ -32,8 +36,8 @@
     "rumble_views_at": "2026-05-04T13:05:52Z"
   },
   "GU:Webb": {
-    "x_views": 213700,
-    "x_views_at": "2026-05-04T13:05:52Z",
+    "x_views": 334400,
+    "x_views_at": "2026-05-04T15:46:19Z",
     "yt_views": 1200,
     "yt_views_at": "2026-05-04T13:05:52Z",
     "ig_likes": 17100,
@@ -52,10 +56,10 @@
     "rumble_views_at": "2026-05-04T13:05:52Z"
   },
   "GU:Burg": {
-    "x_views": 339800,
-    "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 7300,
-    "yt_views_at": "2026-05-04T13:05:52Z",
+    "x_views": 608200,
+    "x_views_at": "2026-05-04T15:46:19Z",
+    "yt_views": 7400,
+    "yt_views_at": "2026-05-04T15:46:19Z",
     "ig_likes": 13600,
     "ig_likes_at": "2026-05-04T13:05:52Z",
     "rumble_views": 2720,
@@ -64,8 +68,8 @@
   "GU:Kanoo": {
     "x_views": 1100000,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 22500,
-    "yt_views_at": "2026-05-04T13:05:52Z",
+    "yt_views": 22600,
+    "yt_views_at": "2026-05-04T15:46:19Z",
     "ig_likes": 139500,
     "ig_likes_at": "2026-05-04T13:05:52Z",
     "rumble_views": 2240,
@@ -150,18 +154,18 @@
   "NO:Bolton": {
     "x_views": 136900,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 86,
-    "yt_views_at": "2026-05-04T13:05:52Z",
-    "ig_likes": 33700,
-    "ig_likes_at": "2026-05-04T13:05:52Z"
+    "yt_views": 93,
+    "yt_views_at": "2026-05-04T15:46:19Z",
+    "ig_likes": 46200,
+    "ig_likes_at": "2026-05-04T15:46:19Z"
   },
   "NO:Rickards": {
     "x_views": 589000,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 24900,
-    "yt_views_at": "2026-05-04T13:05:52Z",
-    "ig_likes": 13900,
-    "ig_likes_at": "2026-05-04T13:05:52Z"
+    "yt_views": 25100,
+    "yt_views_at": "2026-05-04T15:46:19Z",
+    "ig_likes": 14000,
+    "ig_likes_at": "2026-05-04T15:46:19Z"
   },
   "NO:Wilkerson": {
     "x_views": 275100,
@@ -202,7 +206,7 @@
   "NO:Ahmed": {
     "x_views": 935200,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 106,
-    "yt_views_at": "2026-05-04T13:05:52Z"
+    "yt_views": 107,
+    "yt_views_at": "2026-05-04T15:46:19Z"
   }
 }
