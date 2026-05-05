@@ -1,68 +1,38 @@
 {
-  "updated": "2026-05-05T07:44:10Z",
+  "updated": "2026-05-05T12:04:30Z",
   "drops": [
     {
-      "ts": "2026-05-05T07:44:10Z",
+      "ts": "2026-05-05T12:04:30Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "X",
       "peak": 191700,
       "peak_at": "2026-05-04T23:53:05Z",
-      "current": 139300,
-      "drop_pct": 27.3
+      "current": 117700,
+      "drop_pct": 38.6
     },
     {
-      "ts": "2026-05-05T07:44:10Z",
+      "ts": "2026-05-05T12:04:30Z",
       "show": "GU",
       "guest": "Bryant",
       "platform": "X",
       "peak": 175100,
       "peak_at": "2026-05-04T23:53:05Z",
-      "current": 87600,
-      "drop_pct": 50.0
+      "current": 87700,
+      "drop_pct": 49.9
     },
     {
-      "ts": "2026-05-05T07:44:10Z",
+      "ts": "2026-05-05T12:04:30Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 619900,
       "peak_at": "2026-05-04T15:46:19Z",
-      "current": 413500,
+      "current": 413600,
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-05T07:44:10Z",
-      "show": "GU",
-      "guest": "Levy",
-      "platform": "X",
-      "peak": 762700,
-      "peak_at": "2026-05-04T23:53:05Z",
-      "current": 578500,
-      "drop_pct": 24.2
-    },
-    {
-      "ts": "2026-05-05T07:44:10Z",
-      "show": "GU",
-      "guest": "Webb",
-      "platform": "X",
-      "peak": 334400,
-      "peak_at": "2026-05-04T15:46:19Z",
-      "current": 213800,
-      "drop_pct": 36.1
-    },
-    {
-      "ts": "2026-05-05T07:44:10Z",
-      "show": "GU",
-      "guest": "Astore",
-      "platform": "X",
-      "peak": 344800,
-      "peak_at": "2026-05-04T20:56:57Z",
-      "current": 234500,
-      "drop_pct": 32.0
-    },
-    {
-      "ts": "2026-05-05T07:44:10Z",
+      "ts": "2026-05-05T12:04:30Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -72,14 +42,14 @@
       "drop_pct": 21.3
     },
     {
-      "ts": "2026-05-05T07:44:10Z",
+      "ts": "2026-05-05T12:04:30Z",
       "show": "GU",
       "guest": "McGinnis",
       "platform": "X",
       "peak": 224900,
       "peak_at": "2026-05-04T13:05:52Z",
-      "current": 184800,
-      "drop_pct": 17.8
+      "current": 186900,
+      "drop_pct": 16.9
     }
   ]
 }
