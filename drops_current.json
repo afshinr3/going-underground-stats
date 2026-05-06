@@ -1,38 +1,28 @@
 {
-  "updated": "2026-05-06T21:07:29Z",
+  "updated": "2026-05-06T23:51:00Z",
   "drops": [
     {
-      "ts": "2026-05-06T21:07:29Z",
-      "show": "GU",
-      "guest": "Pyne",
-      "platform": "X",
-      "peak": 191700,
-      "peak_at": "2026-05-04T23:53:05Z",
-      "current": 136800,
-      "drop_pct": 28.6
-    },
-    {
-      "ts": "2026-05-06T21:07:29Z",
+      "ts": "2026-05-06T23:51:00Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 620500,
       "peak_at": "2026-05-05T20:58:53Z",
-      "current": 413900,
+      "current": 414000,
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-06T21:07:29Z",
+      "ts": "2026-05-06T23:51:00Z",
       "show": "GU",
-      "guest": "Levy",
+      "guest": "Astore",
       "platform": "X",
-      "peak": 790300,
-      "peak_at": "2026-05-05T23:48:45Z",
-      "current": 603000,
-      "drop_pct": 23.7
+      "peak": 345100,
+      "peak_at": "2026-05-06T21:07:29Z",
+      "current": 234600,
+      "drop_pct": 32.0
     },
     {
-      "ts": "2026-05-06T21:07:29Z",
+      "ts": "2026-05-06T23:51:00Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -40,6 +30,16 @@
       "peak_at": "2026-05-04T13:05:52Z",
       "current": 10700,
       "drop_pct": 21.3
+    },
+    {
+      "ts": "2026-05-06T23:51:00Z",
+      "show": "GU",
+      "guest": "McGinnis",
+      "platform": "X",
+      "peak": 301500,
+      "peak_at": "2026-05-06T16:08:13Z",
+      "current": 184900,
+      "drop_pct": 38.7
     }
   ]
 }
