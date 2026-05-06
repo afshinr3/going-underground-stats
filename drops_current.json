@@ -1,28 +1,48 @@
 {
-  "updated": "2026-05-05T23:48:45Z",
+  "updated": "2026-05-06T16:08:13Z",
   "drops": [
     {
-      "ts": "2026-05-05T23:48:45Z",
+      "ts": "2026-05-06T16:08:13Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "X",
       "peak": 191700,
       "peak_at": "2026-05-04T23:53:05Z",
-      "current": 134300,
-      "drop_pct": 29.9
+      "current": 136400,
+      "drop_pct": 28.8
     },
     {
-      "ts": "2026-05-05T23:48:45Z",
+      "ts": "2026-05-06T16:08:13Z",
+      "show": "GU",
+      "guest": "Bryant",
+      "platform": "X",
+      "peak": 175600,
+      "peak_at": "2026-05-05T23:48:45Z",
+      "current": 87900,
+      "drop_pct": 49.9
+    },
+    {
+      "ts": "2026-05-06T16:08:13Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 620500,
       "peak_at": "2026-05-05T20:58:53Z",
-      "current": 413700,
+      "current": 413900,
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-05T23:48:45Z",
+      "ts": "2026-05-06T16:08:13Z",
+      "show": "GU",
+      "guest": "Levy",
+      "platform": "X",
+      "peak": 790300,
+      "peak_at": "2026-05-05T23:48:45Z",
+      "current": 602500,
+      "drop_pct": 23.8
+    },
+    {
+      "ts": "2026-05-06T16:08:13Z",
       "show": "GU",
       "guest": "Webb",
       "platform": "X",
@@ -32,7 +52,7 @@
       "drop_pct": 38.3
     },
     {
-      "ts": "2026-05-05T23:48:45Z",
+      "ts": "2026-05-06T16:08:13Z",
       "show": "GU",
       "guest": "Astore",
       "platform": "X",
@@ -42,7 +62,7 @@
       "drop_pct": 32.0
     },
     {
-      "ts": "2026-05-05T23:48:45Z",
+      "ts": "2026-05-06T16:08:13Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -50,16 +70,6 @@
       "peak_at": "2026-05-04T13:05:52Z",
       "current": 10700,
       "drop_pct": 21.3
-    },
-    {
-      "ts": "2026-05-05T23:48:45Z",
-      "show": "GU",
-      "guest": "McGinnis",
-      "platform": "X",
-      "peak": 224900,
-      "peak_at": "2026-05-04T13:05:52Z",
-      "current": 187000,
-      "drop_pct": 16.9
     }
   ]
 }
