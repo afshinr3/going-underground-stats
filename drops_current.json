@@ -1,38 +1,38 @@
 {
-  "updated": "2026-05-09T07:37:16Z",
+  "updated": "2026-05-09T14:48:29Z",
   "drops": [
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "X",
       "peak": 249100,
       "peak_at": "2026-05-08T00:20:48Z",
-      "current": 139500,
-      "drop_pct": 44.0
+      "current": 139700,
+      "drop_pct": 43.9
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Bryant",
       "platform": "X",
       "peak": 264300,
       "peak_at": "2026-05-08T11:11:00Z",
-      "current": 88200,
-      "drop_pct": 66.6
+      "current": 176400,
+      "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 621500,
       "peak_at": "2026-05-08T11:11:00Z",
-      "current": 414500,
+      "current": 414700,
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "X",
@@ -42,7 +42,7 @@
       "drop_pct": 23.9
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Astore",
       "platform": "X",
@@ -52,7 +52,7 @@
       "drop_pct": 32.0
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -62,7 +62,7 @@
       "drop_pct": 21.3
     },
     {
-      "ts": "2026-05-09T07:37:16Z",
+      "ts": "2026-05-09T14:48:29Z",
       "show": "GU",
       "guest": "McGinnis",
       "platform": "X",
@@ -70,6 +70,16 @@
       "peak_at": "2026-05-08T06:34:51Z",
       "current": 187100,
       "drop_pct": 45.3
+    },
+    {
+      "ts": "2026-05-09T14:48:29Z",
+      "show": "NO",
+      "guest": "Ahmed",
+      "platform": "X",
+      "peak": 935200,
+      "peak_at": "2026-05-04T13:05:52Z",
+      "current": 490100,
+      "drop_pct": 47.6
     }
   ]
 }
