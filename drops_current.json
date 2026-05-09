@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-09T14:48:29Z",
+  "updated": "2026-05-09T17:51:24Z",
   "drops": [
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "X",
       "peak": 249100,
       "peak_at": "2026-05-08T00:20:48Z",
-      "current": 139700,
-      "drop_pct": 43.9
+      "current": 169300,
+      "drop_pct": 32.0
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
       "guest": "Bryant",
       "platform": "X",
@@ -22,37 +22,37 @@
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 621500,
       "peak_at": "2026-05-08T11:11:00Z",
-      "current": 414700,
+      "current": 414800,
       "drop_pct": 33.3
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
-      "guest": "Levy",
+      "guest": "Webb",
       "platform": "X",
-      "peak": 796000,
-      "peak_at": "2026-05-08T23:55:03Z",
-      "current": 606100,
-      "drop_pct": 23.9
+      "peak": 334600,
+      "peak_at": "2026-05-05T12:04:30Z",
+      "current": 206800,
+      "drop_pct": 38.2
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
       "guest": "Astore",
       "platform": "X",
       "peak": 345300,
       "peak_at": "2026-05-08T16:15:43Z",
-      "current": 234800,
-      "drop_pct": 32.0
+      "current": 235000,
+      "drop_pct": 31.9
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -62,17 +62,7 @@
       "drop_pct": 21.3
     },
     {
-      "ts": "2026-05-09T14:48:29Z",
-      "show": "GU",
-      "guest": "McGinnis",
-      "platform": "X",
-      "peak": 341900,
-      "peak_at": "2026-05-08T06:34:51Z",
-      "current": 187100,
-      "drop_pct": 45.3
-    },
-    {
-      "ts": "2026-05-09T14:48:29Z",
+      "ts": "2026-05-09T17:51:24Z",
       "show": "NO",
       "guest": "Ahmed",
       "platform": "X",
