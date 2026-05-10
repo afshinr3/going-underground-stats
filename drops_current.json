@@ -1,28 +1,58 @@
 {
-  "updated": "2026-05-10T11:29:27Z",
+  "updated": "2026-05-10T14:54:41Z",
   "drops": [
     {
-      "ts": "2026-05-10T11:29:27Z",
+      "ts": "2026-05-10T14:54:41Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "X",
       "peak": 249100,
       "peak_at": "2026-05-08T00:20:48Z",
-      "current": 140400,
+      "current": 140500,
       "drop_pct": 43.6
     },
     {
-      "ts": "2026-05-10T11:29:27Z",
+      "ts": "2026-05-10T14:54:41Z",
       "show": "GU",
-      "guest": "Webb",
+      "guest": "Bryant",
       "platform": "X",
-      "peak": 334600,
-      "peak_at": "2026-05-05T12:04:30Z",
-      "current": 207400,
-      "drop_pct": 38.0
+      "peak": 265000,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 88300,
+      "drop_pct": 66.7
     },
     {
-      "ts": "2026-05-10T11:29:27Z",
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "Gao",
+      "platform": "X",
+      "peak": 623200,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 415400,
+      "drop_pct": 33.3
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "Levy",
+      "platform": "X",
+      "peak": 798300,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 580700,
+      "drop_pct": 27.3
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "Astore",
+      "platform": "X",
+      "peak": 346400,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 235500,
+      "drop_pct": 32.0
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "IG",
@@ -32,7 +62,37 @@
       "drop_pct": 21.3
     },
     {
-      "ts": "2026-05-10T11:29:27Z",
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "McGinnis",
+      "platform": "X",
+      "peak": 418800,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 342100,
+      "drop_pct": 18.3
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "Scaramucci",
+      "platform": "X",
+      "peak": 505200,
+      "peak_at": "2026-05-08T06:34:51Z",
+      "current": 266800,
+      "drop_pct": 47.2
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
+      "show": "GU",
+      "guest": "Sager",
+      "platform": "X",
+      "peak": 627100,
+      "peak_at": "2026-05-04T13:05:52Z",
+      "current": 194300,
+      "drop_pct": 69.0
+    },
+    {
+      "ts": "2026-05-10T14:54:41Z",
       "show": "NO",
       "guest": "Ahmed",
       "platform": "X",
