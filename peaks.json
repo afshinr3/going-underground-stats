@@ -2,16 +2,16 @@
   "GU:Pyne": {
     "x_views": 249100,
     "x_views_at": "2026-05-08T00:20:48Z",
-    "yt_views": 25000,
-    "yt_views_at": "2026-05-10T07:48:28Z",
+    "yt_views": 25100,
+    "yt_views_at": "2026-05-10T11:29:27Z",
     "ig_likes": 11400,
     "ig_likes_at": "2026-05-04T23:53:05Z",
     "rumble_views": 5470,
     "rumble_views_at": "2026-05-09T14:48:29Z"
   },
   "GU:Bryant": {
-    "x_views": 264300,
-    "x_views_at": "2026-05-08T11:11:00Z",
+    "x_views": 265000,
+    "x_views_at": "2026-05-10T11:29:27Z",
     "yt_views": 2600,
     "yt_views_at": "2026-05-06T16:08:13Z",
     "ig_likes": 12200,
@@ -20,8 +20,8 @@
     "rumble_views_at": "2026-05-09T14:48:29Z"
   },
   "GU:Gao": {
-    "x_views": 621500,
-    "x_views_at": "2026-05-08T11:11:00Z",
+    "x_views": 623200,
+    "x_views_at": "2026-05-10T11:29:27Z",
     "yt_views": 51200,
     "yt_views_at": "2026-05-09T14:48:29Z",
     "ig_likes": 30000,
@@ -30,8 +30,8 @@
     "rumble_views_at": "2026-05-09T14:48:29Z"
   },
   "GU:Levy": {
-    "x_views": 798000,
-    "x_views_at": "2026-05-10T07:48:28Z",
+    "x_views": 798300,
+    "x_views_at": "2026-05-10T11:29:27Z",
     "yt_views": 8400,
     "yt_views_at": "2026-05-08T16:15:43Z",
     "ig_likes": 36300,
@@ -50,8 +50,8 @@
     "rumble_views_at": "2026-05-09T14:48:29Z"
   },
   "GU:Astore": {
-    "x_views": 345900,
-    "x_views_at": "2026-05-09T22:41:57Z",
+    "x_views": 346400,
+    "x_views_at": "2026-05-10T11:29:27Z",
     "yt_views": 2200,
     "yt_views_at": "2026-05-04T13:05:52Z",
     "ig_likes": 17300,
@@ -80,8 +80,8 @@
     "rumble_views_at": "2026-05-09T14:48:29Z"
   },
   "GU:McGinnis": {
-    "x_views": 341900,
-    "x_views_at": "2026-05-08T06:34:51Z",
+    "x_views": 418800,
+    "x_views_at": "2026-05-10T11:29:27Z",
     "yt_views": 917,
     "yt_views_at": "2026-05-09T14:48:29Z",
     "ig_likes": 11000,
@@ -158,8 +158,8 @@
   "NO:Bolton": {
     "x_views": 136900,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 129,
-    "yt_views_at": "2026-05-09T14:48:29Z",
+    "yt_views": 130,
+    "yt_views_at": "2026-05-10T11:29:27Z",
     "ig_likes": 49200,
     "ig_likes_at": "2026-05-04T23:53:05Z"
   },
@@ -204,8 +204,8 @@
   "NO:Mearsheimer": {
     "x_views": 517100,
     "x_views_at": "2026-05-04T13:05:52Z",
-    "yt_views": 257,
-    "yt_views_at": "2026-05-10T07:48:28Z"
+    "yt_views": 258,
+    "yt_views_at": "2026-05-10T11:29:27Z"
   },
   "NO:Ahmed": {
     "x_views": 935200,
@@ -214,11 +214,15 @@
     "yt_views_at": "2026-05-08T16:15:43Z"
   },
   "GU:Trenin": {
-    "x_views": 372200,
-    "x_views_at": "2026-05-10T07:48:28Z",
-    "yt_views": 6600,
-    "yt_views_at": "2026-05-10T07:48:28Z",
+    "x_views": 399300,
+    "x_views_at": "2026-05-10T11:29:27Z",
+    "yt_views": 7700,
+    "yt_views_at": "2026-05-10T11:29:27Z",
     "rumble_views": 19400,
     "rumble_views_at": "2026-05-09T14:48:29Z"
+  },
+  "NO:Wolff": {
+    "yt_views": 54,
+    "yt_views_at": "2026-05-10T11:29:27Z"
   }
 }
