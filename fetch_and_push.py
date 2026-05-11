@@ -275,7 +275,12 @@ def discover_new_episodes(channel_id, data_file):
 
 
 async def _scrape_x_search(ctx, query):
-    """Run a single X search query and return list of view counts."""
+    """Run a single X search query and return a list of (tweet_id, views) tuples.
+
+    Tweet IDs are extracted from the /analytics link (the canonical anchor),
+    so dedup by ID is reliable even when scroll-virtualization re-emits a
+    tweet during the scroll loop.
+    """
     encoded = urllib.parse.quote(query)
     page = await ctx.new_page()
     try:
@@ -290,10 +295,13 @@ async def _scrape_x_search(ctx, query):
                 var out = [];
                 document.querySelectorAll('article[data-testid="tweet"]').forEach(t => {
                     var a = t.querySelector('a[href*="/analytics"]');
-                    if (a) {
-                        var m = (a.getAttribute('aria-label') || a.textContent || '').match(/([\d,.]+)\s*(?:view|View)/i);
-                        if (m) out.push(parseInt(m[1].replace(/,/g,'')));
-                    }
+                    if (!a) return;
+                    var href = a.getAttribute('href') || '';
+                    var idMatch = href.match(/\/status\/(\d+)/);
+                    if (!idMatch) return;
+                    var m = (a.getAttribute('aria-label') || a.textContent || '').match(/([\d,.]+)\s*(?:view|View)/i);
+                    if (!m) return;
+                    out.push([idMatch[1], parseInt(m[1].replace(/,/g,''))]);
                 });
                 return out;
             }
@@ -302,40 +310,45 @@ async def _scrape_x_search(ctx, query):
         await page.close()
 
 
-async def fetch_x_views(handle, surname, since_date=None, extra_keywords=None):
-    """Fetch X tweet views by searching surname + optional title keywords.
-    Deduplicates by combining all searches and taking the max total."""
-    queries = []
-    base = f'from:{handle}'
+async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None):
+    """Fetch X tweet views using an existing playwright context (for parallel runs).
+
+    Strategy:
+      - For each handle, search `from:{handle} "{full_name}"` (quoted = exact phrase)
+      - Native retweets stay with original author so no double-count from RTs.
+      - Quote tweets contribute their own distinct view counts (correct).
+      - Dedup by tweet ID across all handles.
+    """
+    if isinstance(handles, str):
+        handles = [handles]
     date_filter = f' since:{since_date}' if since_date else ''
+    phrase = f'"{full_name}"'
+    seen_ids = {}
+    # Run the per-handle queries concurrently within this episode
+    async def one_handle(h):
+        q = f'from:{h} {phrase}{date_filter}'
+        try:
+            return await _scrape_x_search(ctx, q)
+        except Exception:
+            return []
+    results_per_handle = await asyncio.gather(*[one_handle(h) for h in handles])
+    for results in results_per_handle:
+        for tweet_id, views in results:
+            if views > seen_ids.get(tweet_id, 0):
+                seen_ids[tweet_id] = views
+    return sum(seen_ids.values()), len(seen_ids)
 
-    # Primary: search by surname
-    queries.append(f'{base} {surname}{date_filter}')
 
-    # Secondary: search by unique title keywords (catches clips that don't mention the name)
-    if extra_keywords:
-        for kw in extra_keywords[:2]:  # max 2 extra searches to avoid rate limiting
-            queries.append(f'{base} {kw}{date_filter}')
-
+async def fetch_x_views(handles, full_name, since_date=None):
+    """Standalone wrapper — opens its own browser. Used when called outside the
+    shared-context loop. The parallel loop in update_show() uses
+    fetch_x_views_with_ctx() to avoid spinning up a browser per episode."""
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         try:
             ctx = await browser.new_context()
             await ctx.add_cookies(X_COOKIES)
-
-            # Run all searches, collect unique view counts (dedup by value to avoid double-counting)
-            all_views = set()
-            total_tweets = 0
-            for q in queries:
-                try:
-                    views = await _scrape_x_search(ctx, q)
-                    for v in views:
-                        all_views.add(v)
-                    total_tweets += len(views)
-                except Exception:
-                    pass
-
-            return sum(all_views), len(all_views)
+            return await fetch_x_views_with_ctx(ctx, handles, full_name, since_date)
         finally:
             await browser.close()
 
@@ -368,34 +381,44 @@ async def update_show(show, ig_clips):
         except Exception:
             return None
 
-    # Extract unique title keywords for broader X search
-    NOISE = {'war','iran','israel','trump','the','and','for','with','from','this','that',
-             'going','underground','new','order','about','could','would','into','been',
-             'will','have','show','what','how','why','not','our','its','his','her',
-             'are','was','has','had','can','all','but','who','may','get','one','two'}
+    # Parallelize X scraping across episodes using a single shared browser.
+    # Each episode opens its own playwright page via _scrape_x_search; we cap
+    # concurrent pages with a semaphore to avoid OOM on the runner.
+    eligible = [v for v in cache
+                if v.get('surname', '').lower() and (v.get('guest') or '').strip()]
+    handles = [show['x_handle'], 'afshinrattansi']
+    MAX_CONCURRENT_EPISODES = 4
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        try:
+            ctx = await browser.new_context()
+            await ctx.add_cookies(X_COOKIES)
+            sem = asyncio.Semaphore(MAX_CONCURRENT_EPISODES)
+
+            async def process_episode(v):
+                full_name = (v.get('guest') or '').strip()
+                surname = v.get('surname', '').lower()
+                since = yt_dates.get(surname) or short_to_iso(v.get('date', ''))
+                async with sem:
+                    try:
+                        total, count = await fetch_x_views_with_ctx(
+                            ctx, handles, full_name, since_date=since)
+                        if total > 0:
+                            v['x_views'] = format_views(total)
+                            print(f"  {v['surname']}: {count} tweets matching "
+                                  f"\"{full_name}\" across {handles}, X:{v['x_views']}")
+                    except Exception as e:
+                        print(f"  {v['surname']}: X error {e}", file=sys.stderr)
+
+            await asyncio.gather(*[process_episode(v) for v in eligible])
+        finally:
+            await browser.close()
 
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
             continue
-        # Extract 1-2 distinctive keywords from the title for broader X search
-        title = v.get('title', '')
-        title_words = [w.strip("'\"(),-.:!?") for w in title.split()
-                       if len(w.strip("'\"(),-.:!?")) > 4 and w.strip("'\"(),-.:!?").lower() not in NOISE
-                       and w.strip("'\"(),-.:!?").lower() != surname]
-        # Pick the most distinctive words (ALL CAPS words are likely distinctive)
-        caps = [w for w in title_words if w.isupper() and len(w) > 3]
-        extra_kw = (caps or title_words)[:2]
-
-        since = yt_dates.get(surname) or short_to_iso(v.get('date', ''))
-        try:
-            total, count = await fetch_x_views(show['x_handle'], surname,
-                                                since_date=since, extra_keywords=extra_kw)
-            if total > 0:
-                v['x_views'] = format_views(total)
-                print(f"  {v['surname']}: {count} tweets ({'+'.join([surname]+extra_kw)}), X:{v['x_views']}")
-        except Exception as e:
-            print(f"  {v['surname']}: X error {e}", file=sys.stderr)
         if surname in yt:
             v['yt_views'] = yt[surname]
         if surname in ig_clips:
