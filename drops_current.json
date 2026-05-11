@@ -1,28 +1,68 @@
 {
-  "updated": "2026-05-11T11:19:35Z",
+  "updated": "2026-05-11T18:18:39Z",
   "drops": [
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
       "show": "GU",
       "guest": "Trenin",
       "platform": "X",
       "peak": 430600,
       "peak_at": "2026-05-10T14:54:41Z",
-      "current": 360900,
-      "drop_pct": 16.2
+      "current": 311600,
+      "drop_pct": 27.6
     },
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
+      "show": "GU",
+      "guest": "Pyne",
+      "platform": "X",
+      "peak": 249100,
+      "peak_at": "2026-05-08T00:20:48Z",
+      "current": 171200,
+      "drop_pct": 31.3
+    },
+    {
+      "ts": "2026-05-11T18:18:39Z",
       "show": "GU",
       "guest": "Bryant",
       "platform": "X",
       "peak": 265000,
       "peak_at": "2026-05-10T11:29:27Z",
-      "current": 176900,
-      "drop_pct": 33.2
+      "current": 88500,
+      "drop_pct": 66.6
     },
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
+      "show": "GU",
+      "guest": "Gao",
+      "platform": "X",
+      "peak": 624500,
+      "peak_at": "2026-05-11T11:19:35Z",
+      "current": 416300,
+      "drop_pct": 33.3
+    },
+    {
+      "ts": "2026-05-11T18:18:39Z",
+      "show": "GU",
+      "guest": "Levy",
+      "platform": "X",
+      "peak": 798300,
+      "peak_at": "2026-05-10T11:29:27Z",
+      "current": 582200,
+      "drop_pct": 27.1
+    },
+    {
+      "ts": "2026-05-11T18:18:39Z",
+      "show": "GU",
+      "guest": "Webb",
+      "platform": "X",
+      "peak": 334600,
+      "peak_at": "2026-05-05T12:04:30Z",
+      "current": 208300,
+      "drop_pct": 37.7
+    },
+    {
+      "ts": "2026-05-11T18:18:39Z",
       "show": "GU",
       "guest": "McGinnis",
       "platform": "X",
@@ -32,7 +72,7 @@
       "drop_pct": 54.8
     },
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
       "show": "GU",
       "guest": "Scaramucci",
       "platform": "X",
@@ -42,7 +82,7 @@
       "drop_pct": 47.1
     },
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
       "show": "GU",
       "guest": "Sager",
       "platform": "X",
@@ -52,7 +92,7 @@
       "drop_pct": 68.5
     },
     {
-      "ts": "2026-05-11T11:19:35Z",
+      "ts": "2026-05-11T18:18:39Z",
       "show": "NO",
       "guest": "Ahmed",
       "platform": "X",
