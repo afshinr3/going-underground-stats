@@ -44,4 +44,4 @@ jobs:
           git config user.email "bot@github.com"
           git add videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json
           git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
-          git push
+          git pull --rebase && git push
