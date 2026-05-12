@@ -62,7 +62,9 @@ def main():
         peaks = {}
 
     drops_today = []
-    now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    now = datetime.utcnow()
+    now_str = now.isoformat(timespec="seconds") + "Z"
+    twenty_four_hours_ago = now.timestamp() - 86400
 
     for show, data_file in [("GU", "videos.json"), ("NO", "videos_neworder.json")]:
         path = os.path.join(ROOT, data_file)
@@ -82,19 +84,31 @@ def main():
                 if cur <= 0:
                     continue
                 prev_peak = ep_peaks.get(plat, 0)
+                peak_at_str = ep_peaks.get(plat + "_at", "")
+
+                # Check if peak is within last 24 hours
+                peak_recent = False
+                if peak_at_str:
+                    try:
+                        peak_ts = datetime.fromisoformat(peak_at_str.rstrip("Z")).timestamp()
+                        peak_recent = peak_ts >= twenty_four_hours_ago
+                    except Exception:
+                        pass
+
                 if cur > prev_peak:
                     ep_peaks[plat] = cur
-                    ep_peaks[plat + "_at"] = now
-                else:
+                    ep_peaks[plat + "_at"] = now_str
+                elif peak_recent:
+                    # Only flag drops against peaks from the last 24 hours
                     pct_drop = 100.0 * (prev_peak - cur) / prev_peak if prev_peak else 0
                     if pct_drop >= DROP_THRESHOLD_PCT:
                         drops_today.append({
-                            "ts": now,
+                            "ts": now_str,
                             "show": show,
                             "guest": surname,
                             "platform": plat.replace("_views", "").replace("_likes", "").upper(),
                             "peak": prev_peak,
-                            "peak_at": ep_peaks.get(plat + "_at", "?"),
+                            "peak_at": peak_at_str,
                             "current": cur,
                             "drop_pct": round(pct_drop, 1),
                         })
