@@ -119,7 +119,7 @@ def main():
 
     # Always overwrite drops_current.json — apps/devices consume this for alerts
     with open(CURRENT_DROPS_FILE, "w") as f:
-        json.dump({"updated": now, "drops": drops_today}, f, indent=2)
+        json.dump({"updated": now_str, "drops": drops_today}, f, indent=2)
 
     # Append to drops log only when there's something
     if drops_today:
