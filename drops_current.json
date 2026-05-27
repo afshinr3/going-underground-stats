@@ -1,2 +1,15 @@
 {
-  "updated": 
+  "updated": "2026-05-27T06:13:43Z",
+  "drops": [
+    {
+      "ts": "2026-05-27T06:13:43Z",
+      "show": "GU",
+      "guest": "Roberts",
+      "platform": "RUMBLE",
+      "peak": 2700,
+      "peak_at": "2026-05-27T05:56:33Z",
+      "current": 517,
+      "drop_pct": 80.9
+    }
+  ]
+}
