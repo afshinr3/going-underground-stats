@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-27T22:44:03Z",
+  "updated": "2026-05-27T23:03:06Z",
   "drops": [
     {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Trenin",
       "platform": "X",
       "peak": 1700000,
       "peak_at": "2026-05-27T15:18:49Z",
-      "current": 247600,
-      "drop_pct": 85.4
+      "current": 341700,
+      "drop_pct": 79.9
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Trenin",
       "platform": "IG",
@@ -22,7 +22,7 @@
       "drop_pct": 65.3
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Pyne",
       "platform": "IG",
@@ -32,7 +32,7 @@
       "drop_pct": 65.8
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Shlaim",
       "platform": "IG",
@@ -42,17 +42,7 @@
       "drop_pct": 85.0
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
-      "show": "GU",
-      "guest": "Webb",
-      "platform": "X",
-      "peak": 227700,
-      "peak_at": "2026-05-27T15:18:49Z",
-      "current": 129100,
-      "drop_pct": 43.3
-    },
-    {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Weiwei",
       "platform": "IG",
@@ -62,27 +52,7 @@
       "drop_pct": 65.4
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
-      "show": "GU",
-      "guest": "McGinnis",
-      "platform": "X",
-      "peak": 242400,
-      "peak_at": "2026-05-27T15:18:49Z",
-      "current": 193100,
-      "drop_pct": 20.3
-    },
-    {
-      "ts": "2026-05-27T22:44:03Z",
-      "show": "GU",
-      "guest": "Roberts",
-      "platform": "X",
-      "peak": 316600,
-      "peak_at": "2026-05-27T15:18:49Z",
-      "current": 184900,
-      "drop_pct": 41.6
-    },
-    {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Roberts",
       "platform": "IG",
@@ -92,7 +62,7 @@
       "drop_pct": 44.4
     },
     {
-      "ts": "2026-05-27T22:44:03Z",
+      "ts": "2026-05-27T23:03:06Z",
       "show": "GU",
       "guest": "Roberts",
       "platform": "RUMBLE",
