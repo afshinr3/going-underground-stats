@@ -1,15 +1,4 @@
 {
-  "updated": "2026-05-29T05:38:36Z",
-  "drops": [
-    {
-      "ts": "2026-05-29T05:38:36Z",
-      "show": "GU",
-      "guest": "Gao",
-      "platform": "X",
-      "peak": 455200,
-      "peak_at": "2026-05-28T05:52:31Z",
-      "current": 374700,
-      "drop_pct": 17.7
-    }
-  ]
+  "updated": "2026-05-29T05:57:09Z",
+  "drops": []
 }
