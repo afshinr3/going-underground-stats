@@ -1,15 +1,4 @@
 {
-  "updated": "2026-05-30T09:31:55Z",
-  "drops": [
-    {
-      "ts": "2026-05-30T09:31:55Z",
-      "show": "GU",
-      "guest": "McGinnis",
-      "platform": "X",
-      "peak": 243300,
-      "peak_at": "2026-05-30T00:37:54Z",
-      "current": 193900,
-      "drop_pct": 20.3
-    }
-  ]
+  "updated": "2026-05-30T09:43:17Z",
+  "drops": []
 }
