@@ -43,5 +43,10 @@ jobs:
           git config user.name "GU Stats Bot"
           git config user.email "bot@github.com"
           git add videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json
-          git diff --cached --quiet || git commit -m "Update stats $(date -u +%H:%M)"
-          git pull --rebase && git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Update stats $(date -u +%H:%M)"
+          for i in 1 2 3; do
+            git pull --rebase && git push && break
+            echo "Push attempt $i failed, retrying..."
+            sleep 5
+          done
