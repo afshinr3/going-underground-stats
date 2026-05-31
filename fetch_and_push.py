@@ -293,6 +293,11 @@ async def _scrape_x_search(ctx, query):
         await page.goto(f'https://x.com/search?q={encoded}&f=live',
                         wait_until="domcontentloaded", timeout=20000)
         await page.wait_for_timeout(4000)
+        # v2: detect login wall — if X redirected to login, cookies are invalid
+        page_url = page.url
+        page_title = await page.title()
+        if 'login' in page_url.lower() or 'login' in page_title.lower() or 'sign in' in page_title.lower():
+            raise Exception(f"X login wall: {page_title} ({page_url})")
         for _ in range(5):
             await page.evaluate("window.scrollBy(0, 2000)")
             await page.wait_for_timeout(1500)
