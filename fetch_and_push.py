@@ -42,12 +42,14 @@ SHOWS = [
         "data_file": os.path.join(ROOT, "videos.json"),
         "x_handle": "GUnderground_TV",
         "yt_channel_id": "UCjY51YgQzYxD5kX-BNobpxA",
+        "rumble_channel": "GoingUnderground",
     },
     {
         "name": "New Order",
         "data_file": os.path.join(ROOT, "videos_neworder.json"),
         "x_handle": "NewOrder_TV",
         "yt_channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+        "rumble_channel": "NewOrderTV",
     },
 ]
 
@@ -141,6 +143,7 @@ def fetch_instagram_clips():
 
 def extract_guest(title):
     """Extract guest name from episode title."""
+    title = title.strip()
     # Normalise curly quotes/apostrophes to ASCII
     title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
     # Check for name in parentheses first
@@ -247,8 +250,11 @@ def discover_new_episodes(channel_id, data_file):
                           'could','only','about','into','from','with','that',
                           'this','have','been','were','will','would','should',
                           'massacre','troops','pentagon','nuclear','bases','gulf',
-                          'commander','challenged','former','centcom'}
-            if len(surname) <= 1 or surname.lower() in SKIP_WORDS:
+                          'commander','challenged','former','centcom',
+                          'in','of','on','at','by','to','an','is','it','or',
+                          'action','missing','missing','brics','india','warns',
+                          'global','south','west','east','world','power','trump'}
+            if len(surname) <= 2 or surname.lower() in SKIP_WORDS:
                 continue
             if surname.lower() in existing_surnames:
                 continue
@@ -339,6 +345,65 @@ async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None):
     return sum(seen_ids.values()), len(seen_ids)
 
 
+async def fetch_rumble_channel_views(ctx, channel_slug):
+    """Scrape view counts from a Rumble channel page. Returns {surname_lower: formatted_views}."""
+    page = await ctx.new_page()
+    results = {}
+    try:
+        await page.goto(f'https://rumble.com/c/{channel_slug}',
+                        wait_until='networkidle', timeout=30000)
+        await page.wait_for_timeout(3000)
+        items = await page.evaluate(r"""
+            () => {
+                var out = [];
+                // Try article/li elements with video data
+                var cards = document.querySelectorAll('article, li[class*="video"], div[class*="videostream"]');
+                cards.forEach(function(card) {
+                    var titleEl = card.querySelector('h3, h4, [class*="title"]');
+                    var viewEl = card.querySelector('[class*="view"], [class*="count"]');
+                    if (!titleEl) return;
+                    var title = (titleEl.textContent || '').trim();
+                    var views = viewEl ? (viewEl.textContent || '').trim() : '';
+                    if (title.length > 5) out.push([title, views]);
+                });
+                return out;
+            }
+        """)
+        for title, views_raw in items:
+            # Parse view count like "12,345 Views" or "1.2K"
+            m = re.search(r'([\d,.]+)\s*[KkMmBb]?', views_raw.replace(',', ''))
+            if not m:
+                continue
+            num_str = views_raw.replace(',', '').strip()
+            # Extract just the numeric part
+            m2 = re.search(r'([\d.]+\s*[KkMmBb]?)', num_str)
+            if not m2:
+                continue
+            # Match title to episode by surname (words > 3 chars, capitalised)
+            for word in re.findall(r'\b[A-Z][a-z]{3,}\b', title):
+                if word.lower() not in ('iran', 'israel', 'trump', 'order', 'going',
+                                         'underground', 'brics', 'india', 'warns'):
+                    raw = m2.group(1).strip()
+                    if raw.upper().endswith('K'):
+                        val = int(float(raw[:-1]) * 1000)
+                    elif raw.upper().endswith('M'):
+                        val = int(float(raw[:-1]) * 1_000_000)
+                    else:
+                        try:
+                            val = int(float(raw))
+                        except ValueError:
+                            continue
+                    existing = results.get(word.lower(), 0)
+                    if val > existing:
+                        results[word.lower()] = val
+        print(f"  Rumble {channel_slug}: {len(results)} surname matches from {len(items)} cards")
+    except Exception as e:
+        print(f"  Rumble {channel_slug} error: {e}", file=sys.stderr)
+    finally:
+        await page.close()
+    return {k: format_views(v) for k, v in results.items()}
+
+
 async def fetch_x_views(handles, full_name, since_date=None):
     """Standalone wrapper — opens its own browser. Used when called outside the
     shared-context loop. The parallel loop in update_show() uses
@@ -415,6 +480,18 @@ async def update_show(show, ig_clips):
         finally:
             await browser.close()
 
+    # Fetch Rumble views via Playwright
+    rumble_views = {}
+    rumble_slug = show.get('rumble_channel')
+    if rumble_slug:
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            try:
+                ctx = await browser.new_context()
+                rumble_views = await fetch_rumble_channel_views(ctx, rumble_slug)
+            finally:
+                await browser.close()
+
     for v in cache:
         surname = v.get('surname', '').lower()
         if not surname:
@@ -423,6 +500,8 @@ async def update_show(show, ig_clips):
             v['yt_views'] = yt[surname]
         if surname in ig_clips:
             v['ig_likes'] = ig_clips[surname]
+        if surname in rumble_views and v.get('rumble_views', '?') == '?':
+            v['rumble_views'] = rumble_views[surname]
 
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
