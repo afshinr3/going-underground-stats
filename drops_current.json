@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-31T18:07:46Z",
+  "updated": "2026-05-31T18:17:08Z",
   "drops": [
     {
-      "ts": "2026-05-31T18:07:46Z",
+      "ts": "2026-05-31T18:17:08Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 474300,
       "peak_at": "2026-05-30T22:41:32Z",
-      "current": 396100,
+      "current": 396200,
       "drop_pct": 16.5
     },
     {
-      "ts": "2026-05-31T18:07:46Z",
+      "ts": "2026-05-31T18:17:08Z",
       "show": "GU",
       "guest": "McGinnis",
       "platform": "X",
