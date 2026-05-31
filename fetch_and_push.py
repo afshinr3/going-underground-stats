@@ -435,18 +435,21 @@ async def update_show(show, ig_clips):
                         if total == 0 and surname and len(surname) > 3:
                             total, count = await fetch_x_views_with_ctx(
                                 ctx, handles, surname, since_date=since)
-                        # Fallback 2 (x_date_window shows): sum all handle tweets in episode date window
+                        # Fallback 2 (x_date_window shows): sum handle tweets in episode date window
                         if total == 0 and use_date_window:
                             win_since, win_until = date_windows.get(surname, (since, None))
                             if win_since:
-                                q = f'from:{show["x_handle"]} since:{win_since}'
-                                if win_until:
-                                    q += f' until:{win_until}'
-                                results = await _scrape_x_search(ctx, q)
-                                if results:
-                                    total = sum(vv for _, vv in results)
-                                    count = len(results)
-                                    print(f"  {surname}: date-window {win_since}→{win_until or 'now'}, {count} tweets")
+                                # Try show handle first, then afshinrattansi mentioning show name
+                                for fb_q in [
+                                    f'from:{show["x_handle"]} since:{win_since}' + (f' until:{win_until}' if win_until else ''),
+                                    f'from:afshinrattansi "{show["name"]}" since:{win_since}' + (f' until:{win_until}' if win_until else ''),
+                                ]:
+                                    results = await _scrape_x_search(ctx, fb_q)
+                                    if results:
+                                        total = sum(vv for _, vv in results)
+                                        count = len(results)
+                                        print(f"  {surname}: date-window fallback ({count} tweets, q={fb_q[:60]})")
+                                        break
                         if total > 0:
                             v['x_views'] = format_views(total)
                             print(f"  {surname}: {count} tweets, X:{v['x_views']}")
