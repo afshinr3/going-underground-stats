@@ -405,16 +405,19 @@ async def update_show(show, ig_clips):
 
             async def process_episode(v):
                 full_name = (v.get('guest') or '').strip()
-                surname = v.get('surname', '').lower()
-                since = yt_dates.get(surname) or short_to_iso(v.get('date', ''))
+                surname = v.get('surname', '').strip()
+                since = yt_dates.get(surname.lower()) or short_to_iso(v.get('date', ''))
                 async with sem:
                     try:
                         total, count = await fetch_x_views_with_ctx(
                             ctx, handles, full_name, since_date=since)
+                        # Fallback: search by surname only if full-name search finds nothing
+                        if total == 0 and surname and len(surname) > 3:
+                            total, count = await fetch_x_views_with_ctx(
+                                ctx, handles, surname, since_date=since)
                         if total > 0:
                             v['x_views'] = format_views(total)
-                            print(f"  {v['surname']}: {count} tweets matching "
-                                  f"\"{full_name}\" across {handles}, X:{v['x_views']}")
+                            print(f"  {v['surname']}: {count} tweets, X:{v['x_views']}")
                     except Exception as e:
                         print(f"  {v['surname']}: X error {e}", file=sys.stderr)
 
