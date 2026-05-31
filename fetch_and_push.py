@@ -50,6 +50,7 @@ SHOWS = [
         "x_handle": "NewOrder_TV",
         "yt_channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
         "rumble_channel": "NewOrderTV",
+        "x_date_window": True,  # account too small for name search; use date-window fallback
     },
 ]
 
@@ -400,6 +401,20 @@ async def update_show(show, ig_clips):
                 if v.get('surname', '').lower() and (v.get('guest') or '').strip()]
     handles = [show['x_handle'], 'afshinrattansi']
     MAX_CONCURRENT_EPISODES = 4
+    use_date_window = show.get('x_date_window', False)
+
+    # Build per-episode date windows (for small-account shows: since=episode_date, until=next_episode_date)
+    date_windows = {}
+    if use_date_window:
+        sorted_ep = sorted(eligible,
+                           key=lambda v: yt_dates.get(v.get('surname','').lower()) or short_to_iso(v.get('date','')) or '9999')
+        for i, v in enumerate(sorted_ep):
+            s = yt_dates.get(v.get('surname','').lower()) or short_to_iso(v.get('date',''))
+            u = None
+            if i + 1 < len(sorted_ep):
+                nxt = sorted_ep[i + 1]
+                u = yt_dates.get(nxt.get('surname','').lower()) or short_to_iso(nxt.get('date',''))
+            date_windows[v.get('surname','')] = (s, u)
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -416,15 +431,27 @@ async def update_show(show, ig_clips):
                     try:
                         total, count = await fetch_x_views_with_ctx(
                             ctx, handles, full_name, since_date=since)
-                        # Fallback: search by surname only if full-name search finds nothing
+                        # Fallback 1: search by surname only
                         if total == 0 and surname and len(surname) > 3:
                             total, count = await fetch_x_views_with_ctx(
                                 ctx, handles, surname, since_date=since)
+                        # Fallback 2 (x_date_window shows): sum all handle tweets in episode date window
+                        if total == 0 and use_date_window:
+                            win_since, win_until = date_windows.get(surname, (since, None))
+                            if win_since:
+                                q = f'from:{show["x_handle"]} since:{win_since}'
+                                if win_until:
+                                    q += f' until:{win_until}'
+                                results = await _scrape_x_search(ctx, q)
+                                if results:
+                                    total = sum(vv for _, vv in results)
+                                    count = len(results)
+                                    print(f"  {surname}: date-window {win_since}→{win_until or 'now'}, {count} tweets")
                         if total > 0:
                             v['x_views'] = format_views(total)
-                            print(f"  {v['surname']}: {count} tweets, X:{v['x_views']}")
+                            print(f"  {surname}: {count} tweets, X:{v['x_views']}")
                     except Exception as e:
-                        print(f"  {v['surname']}: X error {e}", file=sys.stderr)
+                        print(f"  {surname}: X error {e}", file=sys.stderr)
 
             await asyncio.gather(*[process_episode(v) for v in eligible])
         finally:
