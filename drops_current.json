@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-02T08:09:43Z",
+  "updated": "2026-06-02T08:28:33Z",
   "drops": [
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "world?",
       "platform": "YT",
@@ -12,7 +12,7 @@
       "drop_pct": 96.1
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Administration",
       "platform": "YT",
@@ -22,7 +22,7 @@
       "drop_pct": 89.1
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Shlaim",
       "platform": "X",
@@ -32,7 +32,7 @@
       "drop_pct": 62.5
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
@@ -42,7 +42,7 @@
       "drop_pct": 34.6
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "X",
@@ -52,7 +52,7 @@
       "drop_pct": 60.2
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Webb",
       "platform": "YT",
@@ -62,7 +62,7 @@
       "drop_pct": 95.8
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "GU",
       "guest": "Burg",
       "platform": "X",
@@ -72,7 +72,7 @@
       "drop_pct": 97.3
     },
     {
-      "ts": "2026-06-02T08:09:43Z",
+      "ts": "2026-06-02T08:28:33Z",
       "show": "NO",
       "guest": "Prof_R10May",
       "platform": "YT",
