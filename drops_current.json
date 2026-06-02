@@ -1,25 +1,55 @@
 {
-  "updated": "2026-06-02T03:14:22Z",
+  "updated": "2026-06-02T03:33:05Z",
   "drops": [
     {
-      "ts": "2026-06-02T03:14:22Z",
+      "ts": "2026-06-02T03:33:05Z",
       "show": "GU",
-      "guest": "world?",
-      "platform": "YT",
-      "peak": 6300,
-      "peak_at": "2026-06-02T01:04:31Z",
-      "current": 245,
-      "drop_pct": 96.1
+      "guest": "Shlaim",
+      "platform": "X",
+      "peak": 490100,
+      "peak_at": "2026-06-02T01:23:11Z",
+      "current": 93700,
+      "drop_pct": 80.9
     },
     {
-      "ts": "2026-06-02T03:14:22Z",
+      "ts": "2026-06-02T03:33:05Z",
       "show": "GU",
-      "guest": "Administration",
-      "platform": "YT",
-      "peak": 2300,
-      "peak_at": "2026-06-02T01:04:31Z",
-      "current": 251,
-      "drop_pct": 89.1
+      "guest": "Gao",
+      "platform": "X",
+      "peak": 609000,
+      "peak_at": "2026-06-02T01:23:11Z",
+      "current": 111700,
+      "drop_pct": 81.7
+    },
+    {
+      "ts": "2026-06-02T03:33:05Z",
+      "show": "GU",
+      "guest": "Burg",
+      "platform": "X",
+      "peak": 1200000,
+      "peak_at": "2026-06-02T01:23:11Z",
+      "current": 32900,
+      "drop_pct": 97.3
+    },
+    {
+      "ts": "2026-06-02T03:33:05Z",
+      "show": "GU",
+      "guest": "McGinnis",
+      "platform": "X",
+      "peak": 920400,
+      "peak_at": "2026-06-02T01:23:11Z",
+      "current": 244500,
+      "drop_pct": 73.4
+    },
+    {
+      "ts": "2026-06-02T03:33:05Z",
+      "show": "GU",
+      "guest": "Roberts",
+      "platform": "RUMBLE",
+      "peak": 2900,
+      "peak_at": "2026-06-02T01:23:11Z",
+      "current": 517,
+      "drop_pct": 82.2
     }
   ]
 }
