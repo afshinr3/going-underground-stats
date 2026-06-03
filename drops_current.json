@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-03T17:53:39Z",
-  "drops": [
-    {
-      "ts": "2026-06-03T17:53:39Z",
-      "show": "GU",
-      "guest": "Pyne",
-      "platform": "X",
-      "peak": 211800,
-      "peak_at": "2026-06-02T17:59:31Z",
-      "current": 157800,
-      "drop_pct": 25.5
-    }
-  ]
+  "updated": "2026-06-03T18:10:31Z",
+  "drops": []
 }
