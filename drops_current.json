@@ -1,8 +1,18 @@
 {
-  "updated": "2026-06-05T21:52:42Z",
+  "updated": "2026-06-05T22:01:08Z",
   "drops": [
     {
-      "ts": "2026-06-05T21:52:42Z",
+      "ts": "2026-06-05T22:01:08Z",
+      "show": "GU",
+      "guest": "Astore",
+      "platform": "X",
+      "peak": 211000,
+      "peak_at": "2026-06-05T13:14:06Z",
+      "current": 164900,
+      "drop_pct": 21.8
+    },
+    {
+      "ts": "2026-06-05T22:01:08Z",
       "show": "GU",
       "guest": "Sager",
       "platform": "X",
