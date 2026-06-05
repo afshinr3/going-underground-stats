@@ -1,25 +1,4 @@
 {
-  "updated": "2026-06-05T23:03:57Z",
-  "drops": [
-    {
-      "ts": "2026-06-05T23:03:57Z",
-      "show": "GU",
-      "guest": "Astore",
-      "platform": "X",
-      "peak": 211000,
-      "peak_at": "2026-06-05T13:14:06Z",
-      "current": 164900,
-      "drop_pct": 21.8
-    },
-    {
-      "ts": "2026-06-05T23:03:57Z",
-      "show": "GU",
-      "guest": "Sager",
-      "platform": "X",
-      "peak": 241300,
-      "peak_at": "2026-06-05T08:33:49Z",
-      "current": 9300,
-      "drop_pct": 96.1
-    }
-  ]
+  "updated": "2026-06-05T23:17:34Z",
+  "drops": []
 }
