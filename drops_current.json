@@ -1,4 +1,15 @@
 {
-  "updated": "2026-06-05T10:21:30Z",
-  "drops": []
+  "updated": "2026-06-05T10:37:53Z",
+  "drops": [
+    {
+      "ts": "2026-06-05T10:37:53Z",
+      "show": "GU",
+      "guest": "Sager",
+      "platform": "X",
+      "peak": 241300,
+      "peak_at": "2026-06-05T08:33:49Z",
+      "current": 203400,
+      "drop_pct": 15.7
+    }
+  ]
 }
