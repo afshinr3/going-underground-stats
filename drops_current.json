@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-07T01:09:06Z",
-  "drops": [
-    {
-      "ts": "2026-06-07T01:09:06Z",
-      "show": "GU",
-      "guest": "Trenin",
-      "platform": "X",
-      "peak": 3100000,
-      "peak_at": "2026-06-06T11:39:33Z",
-      "current": 124100,
-      "drop_pct": 96.0
-    }
-  ]
+  "updated": "2026-06-07T01:26:01Z",
+  "drops": []
 }
