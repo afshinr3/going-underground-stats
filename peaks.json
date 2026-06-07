@@ -30,8 +30,8 @@
     "rumble_views_at": "2026-06-02T04:27:52Z"
   },
   "GU:Bryant": {
-    "x_views": 140000,
-    "x_views_at": "2026-06-02T02:55:35Z",
+    "x_views": 140600,
+    "x_views_at": "2026-06-07T22:21:40Z",
     "yt_views": 2600,
     "yt_views_at": "2026-05-12T11:56:38Z",
     "ig_likes": 12900,
@@ -325,12 +325,12 @@
     "x_views_at": "2026-06-02T02:55:35Z"
   },
   "GU:Shlaim_R18May": {
-    "yt_views": 4500,
-    "yt_views_at": "2026-06-02T01:04:31Z",
+    "yt_views": 4700,
+    "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 2700,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 167500,
-    "x_views_at": "2026-06-02T02:55:35Z"
+    "x_views": 191200,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Weiwei_R16May": {
     "yt_views": 2300,
@@ -341,56 +341,60 @@
     "x_views_at": "2026-06-02T02:55:35Z"
   },
   "GU:Roberts_R11May": {
-    "yt_views": 6300,
-    "yt_views_at": "2026-06-02T01:04:31Z",
+    "yt_views": 6400,
+    "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 2900,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 155500,
-    "x_views_at": "2026-06-02T02:55:35Z"
+    "x_views": 188400,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Trenin_R9May": {
     "yt_views": 10000,
     "yt_views_at": "2026-06-02T01:04:31Z",
-    "rumble_views": 22600,
-    "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 96400,
-    "x_views_at": "2026-06-02T02:55:35Z"
+    "rumble_views": 22700,
+    "rumble_views_at": "2026-06-07T22:21:40Z",
+    "x_views": 255200,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Pyne_R4May": {
     "yt_views": 28600,
     "yt_views_at": "2026-06-02T01:04:31Z",
     "rumble_views": 6100,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 61400,
-    "x_views_at": "2026-06-02T01:23:11Z"
+    "x_views": 161400,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Gao_R27Apr": {
-    "yt_views": 51900,
-    "yt_views_at": "2026-06-02T01:04:31Z",
+    "yt_views": 52000,
+    "yt_views_at": "2026-06-07T22:21:40Z",
     "ig_likes": 1300,
     "ig_likes_at": "2026-06-02T01:04:31Z",
     "rumble_views": 98100,
-    "rumble_views_at": "2026-06-02T01:04:31Z"
+    "rumble_views_at": "2026-06-02T01:04:31Z",
+    "x_views": 403500,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Levy_R25Apr": {
     "yt_views": 8500,
     "yt_views_at": "2026-06-02T01:04:31Z",
     "rumble_views": 5600,
-    "rumble_views_at": "2026-06-02T01:04:31Z"
+    "rumble_views_at": "2026-06-02T01:04:31Z",
+    "x_views": 444900,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Webb_R20Apr": {
     "yt_views": 28300,
     "yt_views_at": "2026-06-02T02:55:35Z",
     "rumble_views": 7300,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 130800,
-    "x_views_at": "2026-06-02T01:23:11Z"
+    "x_views": 133000,
+    "x_views_at": "2026-06-07T22:21:40Z"
   },
   "GU:Astore_R18Apr": {
-    "x_views": 30100,
-    "x_views_at": "2026-06-02T01:04:31Z",
-    "yt_views": 2200,
-    "yt_views_at": "2026-06-02T01:04:31Z",
+    "x_views": 199900,
+    "x_views_at": "2026-06-07T22:21:40Z",
+    "yt_views": 2300,
+    "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 4600,
     "rumble_views_at": "2026-06-02T01:04:31Z"
   },
@@ -405,10 +409,12 @@
   "GU:McGinnis_R6Apr": {
     "x_views": 920400,
     "x_views_at": "2026-06-02T01:04:31Z",
-    "yt_views": 935,
-    "yt_views_at": "2026-06-02T01:04:31Z",
+    "yt_views": 936,
+    "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 4800,
-    "rumble_views_at": "2026-06-02T01:04:31Z"
+    "rumble_views_at": "2026-06-02T01:04:31Z",
+    "ig_likes": 2000,
+    "ig_likes_at": "2026-06-07T22:21:40Z"
   },
   "GU:Scaramucci_R4Apr": {
     "x_views": 248700,
@@ -514,6 +520,14 @@
   },
   "GU:St": {
     "x_views": 1700000,
-    "x_views_at": "2026-06-06T21:27:37Z"
+    "x_views_at": "2026-06-06T21:27:37Z",
+    "yt_views": 1900,
+    "yt_views_at": "2026-06-07T22:21:40Z"
+  },
+  "NO:Kupchan_R7Jun": {
+    "yt_views": 54,
+    "yt_views_at": "2026-06-07T22:21:40Z",
+    "ig_likes": 2100,
+    "ig_likes_at": "2026-06-07T22:21:40Z"
   }
 }
