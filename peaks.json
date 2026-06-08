@@ -329,8 +329,8 @@
     "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 2700,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 191500,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 191600,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Weiwei_R16May": {
     "yt_views": 2300,
@@ -345,24 +345,24 @@
     "yt_views_at": "2026-06-07T22:21:40Z",
     "rumble_views": 2900,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 188700,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 188900,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Trenin_R9May": {
     "yt_views": 10000,
     "yt_views_at": "2026-06-02T01:04:31Z",
     "rumble_views": 22700,
     "rumble_views_at": "2026-06-07T22:21:40Z",
-    "x_views": 255500,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 255600,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Pyne_R4May": {
     "yt_views": 28600,
     "yt_views_at": "2026-06-02T01:04:31Z",
     "rumble_views": 6100,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 161600,
-    "x_views_at": "2026-06-08T07:06:26Z"
+    "x_views": 161800,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Gao_R27Apr": {
     "yt_views": 52000,
@@ -371,24 +371,24 @@
     "ig_likes_at": "2026-06-02T01:04:31Z",
     "rumble_views": 98100,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 403900,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 404100,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Levy_R25Apr": {
     "yt_views": 8500,
     "yt_views_at": "2026-06-02T01:04:31Z",
     "rumble_views": 5600,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 445400,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 445500,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Webb_R20Apr": {
     "yt_views": 28300,
     "yt_views_at": "2026-06-02T02:55:35Z",
     "rumble_views": 7300,
     "rumble_views_at": "2026-06-02T01:04:31Z",
-    "x_views": 133300,
-    "x_views_at": "2026-06-08T12:11:29Z"
+    "x_views": 133400,
+    "x_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:Astore_R18Apr": {
     "x_views": 200200,
@@ -515,8 +515,8 @@
     "rumble_views_at": "2026-06-02T04:27:52Z"
   },
   "NO:Kupchan": {
-    "yt_views": 85,
-    "yt_views_at": "2026-06-08T12:11:29Z"
+    "yt_views": 101,
+    "yt_views_at": "2026-06-08T16:22:11Z"
   },
   "GU:St": {
     "x_views": 1700000,
@@ -529,5 +529,6 @@
     "yt_views_at": "2026-06-07T22:21:40Z",
     "ig_likes": 2100,
     "ig_likes_at": "2026-06-07T22:21:40Z"
-  }
+  },
+  "GU:DES": {}
 }
