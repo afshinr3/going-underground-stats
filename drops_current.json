@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-09T14:08:07Z",
-  "drops": [
-    {
-      "ts": "2026-06-09T14:08:07Z",
-      "show": "GU",
-      "guest": "Levy_R25Apr",
-      "platform": "X",
-      "peak": 446100,
-      "peak_at": "2026-06-09T08:25:54Z",
-      "current": 307100,
-      "drop_pct": 31.2
-    }
-  ]
+  "updated": "2026-06-09T16:50:38Z",
+  "drops": []
 }
