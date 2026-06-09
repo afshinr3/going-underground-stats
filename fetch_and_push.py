@@ -427,6 +427,67 @@ async def update_show(show, ig_clips):
         return
     with open(show['data_file']) as f:
         cache = json.load(f)
+
+    # ──────────────────────────────────────────────────────────────────
+    # Normalise existing entries on load. The _R<date> suffix and any
+    # title[:30]-truncated guest names were written by an older local
+    # scraper (auto_update.py:282,767 in the legacy ~/RumbleMonitor branch).
+    # Defensively clean them here so even if dirty data slips in from
+    # any future writer it gets corrected on the next run.
+    # ──────────────────────────────────────────────────────────────────
+    _normalised = 0
+    for v in cache:
+        orig_surname = v.get('surname', '') or ''
+        clean_surname = re.sub(r'_R\d{1,2}[A-Z][a-z]{2}.*$', '', orig_surname).strip()
+        if clean_surname != orig_surname:
+            v['surname'] = clean_surname
+            _normalised += 1
+        # If guest looks like a title-truncation artefact, re-derive from title
+        guest = v.get('guest', '') or ''
+        title = v.get('title', '') or ''
+        is_truncated = (
+            len(guest) >= 28 and (
+                guest.endswith((':', ',', ' is', ' the', ' on', ' a', ' an', ' DES', ' St'))
+                or (title.startswith(guest) and len(title) > len(guest) + 10)
+            )
+        )
+        if is_truncated and title:
+            new_guest = extract_guest(title)
+            new_surname = extract_surname(new_guest) if new_guest else None
+            if new_guest and new_surname:
+                print(f"  [normalize] guest '{guest[:40]}…' -> '{new_guest}' (surname {new_surname})")
+                v['guest'] = new_guest
+                v['surname'] = new_surname
+                _normalised += 1
+    if _normalised:
+        print(f"  [normalize] cleaned {_normalised} legacy/truncated entries")
+
+    # Dedupe on (guest, date) - merge view counts, keep highest per field
+    def _to_num(x):
+        x = str(x or '').replace(',', '').strip().upper()
+        if not x or x == '?': return -1
+        if x.endswith('K'): return float(x[:-1]) * 1000
+        if x.endswith('M'): return float(x[:-1]) * 1_000_000
+        try: return float(x)
+        except Exception: return -1
+    _seen = {}
+    _deduped_cache = []
+    for v in cache:
+        key = (v.get('guest', ''), v.get('date', ''))
+        if key not in _seen:
+            _seen[key] = v
+            _deduped_cache.append(v)
+            continue
+        prev = _seen[key]
+        for field in ('rumble_views', 'x_views', 'yt_views', 'ig_likes'):
+            if _to_num(v.get(field, '?')) > _to_num(prev.get(field, '?')):
+                prev[field] = v.get(field, '?')
+        if 'show' in v and 'show' not in prev:
+            prev['show'] = v['show']
+    if len(_deduped_cache) != len(cache):
+        print(f"  [normalize] deduped {len(cache) - len(_deduped_cache)} (guest, date) duplicates")
+        cache = _deduped_cache
+
     yt, yt_dates = fetch_youtube_data(show['yt_channel_id'])
 
     # Helper: convert "25 Apr" or "21 Mar" to ISO YYYY-MM-DD using current year
