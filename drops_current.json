@@ -1,4 +1,15 @@
 {
-  "updated": "2026-06-09T20:26:27Z",
-  "drops": []
+  "updated": "2026-06-09T21:18:04Z",
+  "drops": [
+    {
+      "ts": "2026-06-09T21:18:04Z",
+      "show": "GU",
+      "guest": "Weiwei",
+      "platform": "X",
+      "peak": 339600,
+      "peak_at": "2026-06-09T04:37:59Z",
+      "current": 228100,
+      "drop_pct": 32.8
+    }
+  ]
 }
