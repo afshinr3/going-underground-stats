@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-09T19:16:38Z",
-  "drops": [
-    {
-      "ts": "2026-06-09T19:16:38Z",
-      "show": "GU",
-      "guest": "Shlaim_R18May",
-      "platform": "X",
-      "peak": 240600,
-      "peak_at": "2026-06-09T16:50:38Z",
-      "current": 196100,
-      "drop_pct": 18.5
-    }
-  ]
+  "updated": "2026-06-09T20:26:27Z",
+  "drops": []
 }
