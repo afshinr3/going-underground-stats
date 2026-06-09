@@ -183,15 +183,58 @@ def extract_guest(title):
         if guest and len(guest) > 3:
             return guest
         return dash_match[-1].strip()
-    return title[:30]
+    # 4th pattern: "Surname: Title…" or "First Last: Title…" → take the part before the colon
+    # Reject if the candidate is ALL CAPS (e.g. "IRAN'S KNOCKOUT BLOW") or contains words
+    # that suggest a topic phrase rather than a name.
+    colon_match = re.match(r'^([^:]{2,40}):\s+(.*)', title)
+    if colon_match:
+        cand = colon_match.group(1).strip()
+        rest = colon_match.group(2).strip()
+        # strip leading role tokens (Prof./Dr./Ex/Former/etc.)
+        cand = re.sub(
+            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
+            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
+            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
+            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
+            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
+            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
+            '', cand, flags=re.I
+        ).strip()
+        # Reject obviously-not-a-name candidates:
+        #   - ALL CAPS (e.g. "IRAN'S KNOCKOUT BLOW")
+        #   - Contains topic-like phrases (BLOW, ALERT, WAR, etc. in caps)
+        #   - Starts with possessive ("IRAN'S")
+        is_all_caps = cand == cand.upper() and len(cand) > 2
+        looks_like_name = bool(re.match(r"^[A-Z][a-zA-Z\.'\-]+(?:\s+[A-Z][a-zA-Z\.'\-]+){0,3}$", cand))
+        if looks_like_name and not is_all_caps and 3 < len(cand) <= 40:
+            return cand
+        # 4b: "TOPIC: Prof. Name on …" — apply Name-on-Topic to the part after the colon.
+        # Catches "IRAN'S KNOCKOUT BLOW: Prof. Steve Hanke on Looming…"
+        name_on_after = re.match(
+            r'^(?:(?:Prof|Dr|Lt\.?\s*Col|Sgt|Mr|Mrs|Ms|Sir)\.?\s+)?'
+            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,3})\s+on\s+',
+            rest
+        )
+        if name_on_after:
+            return name_on_after.group(1).strip()
+    # All patterns failed — refuse to fabricate a guest name. Returning None
+    # lets the caller skip the entry instead of producing garbage like "DES" or "St".
+    # (Pre-fix behaviour was: `return title[:30]` which gave nonsense surnames.)
+    return None
 
 
 def extract_surname(guest_name):
-    """Get just the surname from a guest name."""
+    """Get just the surname from a guest name. Returns None if guest_name is None/empty."""
+    if not guest_name:
+        return None
     name = guest_name.replace('(Jim) ', '').replace('Lt. Col. ', '').replace('Dr. ', '').replace('Prof. ', '').replace('Sgt. ', '')
+    # Defensive: legacy data may have a "_R<date>" suffix from an older writer (see is_repeat
+    # branch in legacy local auto_update.py). Strip it so downstream consumers (LaMetric,
+    # GitHub Pages, APK) don't display it.
+    name = re.sub(r'_R\d{1,2}[A-Z][a-z]{2}.*$', '', name).strip()
     parts = name.strip().split()
     if not parts:
-        return guest_name
+        return None
     last = parts[-1]
     if len(parts) >= 2 and parts[-2].endswith('-'):
         return parts[-2] + last
@@ -242,6 +285,11 @@ def discover_new_episodes(channel_id, data_file):
                 continue
             guest = extract_guest(title)
             surname = extract_surname(guest)
+            # Skip if extractor couldn't find a clean guest (returns None now instead of
+            # title[:30]) — avoids "DES"/"St" garbage from the legacy truncation fallback.
+            if not guest or not surname:
+                print(f"  SKIP (unparseable): {title[:60]}...")
+                continue
             # Validate: surname must be >1 char and not a common English word
             SKIP_WORDS = {'failure','decline','war','iran','israel','trump','target',
                           'hegemony','loser','crisis','threat','risk','end','new',
