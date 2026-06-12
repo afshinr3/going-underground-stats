@@ -1,4 +1,15 @@
 {
-  "updated": "2026-06-12T05:07:04Z",
-  "drops": []
+  "updated": "2026-06-12T09:16:21Z",
+  "drops": [
+    {
+      "ts": "2026-06-12T09:16:21Z",
+      "show": "GU",
+      "guest": "Hanke",
+      "platform": "X",
+      "peak": 215500,
+      "peak_at": "2026-06-12T05:07:04Z",
+      "current": 170300,
+      "drop_pct": 21.0
+    }
+  ]
 }
