@@ -1,25 +1,15 @@
 {
-  "updated": "2026-06-14T13:22:31Z",
+  "updated": "2026-06-14T15:29:10Z",
   "drops": [
     {
-      "ts": "2026-06-14T13:22:31Z",
+      "ts": "2026-06-14T15:29:10Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 628400,
       "peak_at": "2026-06-14T11:34:00Z",
-      "current": 491000,
-      "drop_pct": 21.9
-    },
-    {
-      "ts": "2026-06-14T13:22:31Z",
-      "show": "NO",
-      "guest": "Kortunov",
-      "platform": "YT",
-      "peak": 15,
-      "peak_at": "2026-06-14T11:34:00Z",
-      "current": 4,
-      "drop_pct": 73.3
+      "current": 491100,
+      "drop_pct": 21.8
     }
   ]
 }
