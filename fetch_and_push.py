@@ -147,6 +147,20 @@ def extract_guest(title):
     title = title.strip()
     # Normalise curly quotes/apostrophes to ASCII
     title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
+    # v4 2026-06-14: strip leading emojis / non-word punctuation (e.g. 🚨 prefix on NO titles)
+    title = re.sub(r'^[\W_]+', '', title).strip()
+    # v4 2026-06-14: "Honorific FirstName LastName …" — catches "Prof. Theodore Postol Explains Why …"
+    # and "Prof. John Mearsheimer: …" patterns that the existing colon/dash/name-on
+    # patterns missed. Lazy 2-3 word name + lookahead stops at common verbs/punctuation
+    # to avoid greedy capture of "Theodore Postol Explains Why" as a 4-word name.
+    honorific_match = re.match(
+        r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord)\.?\s+'
+        r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
+        r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b|[:,.\-——–]|\s*$)',
+        title
+    )
+    if honorific_match:
+        return honorific_match.group(1).strip()
     # Check for name in parentheses first
     paren = re.search(r'\(([^)]+)\)\s*$', title)
     if paren:
@@ -217,6 +231,19 @@ def extract_guest(title):
         )
         if name_on_after:
             return name_on_after.group(1).strip()
+        # v4 2026-06-14 4c: "TOPIC: Prof. Name <verb> …" — covers WAR-ON-IRAN style titles
+        # where the honorific+name appears AFTER the topic colon, followed by a verb other
+        # than "on" (Explains/Says/Argues/Reveals/etc.). Catches "WAR ON IRAN: Prof. John
+        # Mearsheimer explains how the war may BENEFIT BRICS…". re.IGNORECASE so "explains"
+        # (lowercase as YT often capitalises only the first letter of the title) still matches.
+        name_verb_after = re.match(
+            r'^(?:(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|Hon|Rabbi|Imam|Rev|Sgt)\.?\s+)?'
+            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
+            r'(?=\s+(?:explains|says|argues|discusses|talks|reveals|warns|tells|told|shares|gives|will|could|would|should|is|are|was|were|has|have|had)\b)',
+            rest, flags=re.IGNORECASE
+        )
+        if name_verb_after:
+            return name_verb_after.group(1).strip()
     # All patterns failed — refuse to fabricate a guest name. Returning None
     # lets the caller skip the entry instead of producing garbage like "DES" or "St".
     # (Pre-fix behaviour was: `return title[:30]` which gave nonsense surnames.)
