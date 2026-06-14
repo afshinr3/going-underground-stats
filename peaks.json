@@ -30,8 +30,8 @@
     "rumble_views_at": "2026-06-02T04:27:52Z"
   },
   "GU:Bryant": {
-    "x_views": 145200,
-    "x_views_at": "2026-06-13T21:49:02Z",
+    "x_views": 145300,
+    "x_views_at": "2026-06-14T18:18:11Z",
     "yt_views": 2600,
     "yt_views_at": "2026-05-12T11:56:38Z",
     "ig_likes": 12900,
@@ -534,10 +534,10 @@
   },
   "GU:DES": {},
   "GU:Weihua": {
-    "x_views": 168900,
-    "x_views_at": "2026-06-14T15:29:10Z",
-    "yt_views": 547,
-    "yt_views_at": "2026-06-14T15:29:10Z"
+    "x_views": 169000,
+    "x_views_at": "2026-06-14T18:18:11Z",
+    "yt_views": 549,
+    "yt_views_at": "2026-06-14T18:18:11Z"
   },
   "GU:Hanke": {
     "x_views": 235300,
@@ -546,7 +546,13 @@
     "yt_views_at": "2026-06-09T20:26:27Z"
   },
   "NO:Kortunov": {
-    "yt_views": 689,
-    "yt_views_at": "2026-06-14T16:59:34Z"
+    "yt_views": 890,
+    "yt_views_at": "2026-06-14T18:18:11Z"
+  },
+  "GU:Postol": {
+    "x_views": 239800,
+    "x_views_at": "2026-06-14T18:18:11Z",
+    "yt_views": 4100,
+    "yt_views_at": "2026-06-14T18:18:11Z"
   }
 }
