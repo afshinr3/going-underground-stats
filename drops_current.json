@@ -1,25 +1,4 @@
 {
-  "updated": "2026-06-15T20:00:24Z",
-  "drops": [
-    {
-      "ts": "2026-06-15T20:00:24Z",
-      "show": "NO",
-      "guest": "Sachs",
-      "platform": "X",
-      "peak": 833100,
-      "peak_at": "2026-06-14T21:27:13Z",
-      "current": 615800,
-      "drop_pct": 26.1
-    },
-    {
-      "ts": "2026-06-15T20:00:24Z",
-      "show": "NO",
-      "guest": "Mearsheimer",
-      "platform": "YT",
-      "peak": 1400,
-      "peak_at": "2026-06-15T04:21:32Z",
-      "current": 1100,
-      "drop_pct": 21.4
-    }
-  ]
+  "updated": "2026-06-15T22:25:05Z",
+  "drops": []
 }
