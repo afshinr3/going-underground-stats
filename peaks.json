@@ -536,8 +536,8 @@
   },
   "GU:DES": {},
   "GU:Weihua": {
-    "x_views": 169500,
-    "x_views_at": "2026-06-15T04:21:32Z",
+    "x_views": 169800,
+    "x_views_at": "2026-06-15T10:47:49Z",
     "yt_views": 560,
     "yt_views_at": "2026-06-15T04:21:32Z"
   },
@@ -548,15 +548,21 @@
     "yt_views_at": "2026-06-09T20:26:27Z"
   },
   "NO:Kortunov": {
-    "yt_views": 927,
-    "yt_views_at": "2026-06-15T04:21:32Z",
+    "yt_views": 928,
+    "yt_views_at": "2026-06-15T10:47:49Z",
     "x_views": 112000,
     "x_views_at": "2026-06-14T23:54:10Z"
   },
   "GU:Postol": {
-    "x_views": 245900,
-    "x_views_at": "2026-06-15T04:21:32Z",
-    "yt_views": 4900,
-    "yt_views_at": "2026-06-15T04:21:32Z"
+    "x_views": 248000,
+    "x_views_at": "2026-06-15T10:47:49Z",
+    "yt_views": 5100,
+    "yt_views_at": "2026-06-15T10:47:49Z"
+  },
+  "GU:Keen": {
+    "x_views": 15500,
+    "x_views_at": "2026-06-15T10:47:49Z",
+    "yt_views": 118,
+    "yt_views_at": "2026-06-15T10:47:49Z"
   }
 }
