@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-14T23:54:10Z",
+  "updated": "2026-06-15T04:21:32Z",
   "drops": [
     {
-      "ts": "2026-06-14T23:54:10Z",
+      "ts": "2026-06-15T04:21:32Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
       "peak": 628400,
       "peak_at": "2026-06-14T11:34:00Z",
-      "current": 409300,
+      "current": 409400,
       "drop_pct": 34.9
     },
     {
-      "ts": "2026-06-14T23:54:10Z",
+      "ts": "2026-06-15T04:21:32Z",
       "show": "NO",
       "guest": "Sachs",
       "platform": "X",
