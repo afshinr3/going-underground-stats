@@ -1,8 +1,18 @@
 {
-  "updated": "2026-06-18T00:22:53Z",
+  "updated": "2026-06-18T05:20:34Z",
   "drops": [
     {
-      "ts": "2026-06-18T00:22:53Z",
+      "ts": "2026-06-18T05:20:34Z",
+      "show": "GU",
+      "guest": "Keen",
+      "platform": "X",
+      "peak": 325900,
+      "peak_at": "2026-06-18T00:22:53Z",
+      "current": 127400,
+      "drop_pct": 60.9
+    },
+    {
+      "ts": "2026-06-18T05:20:34Z",
       "show": "NO",
       "guest": "Sachs",
       "platform": "YT",
