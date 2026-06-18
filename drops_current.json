@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-17T23:01:30Z",
+  "updated": "2026-06-18T00:22:53Z",
   "drops": [
     {
-      "ts": "2026-06-17T23:01:30Z",
+      "ts": "2026-06-18T00:22:53Z",
       "show": "NO",
       "guest": "Sachs",
       "platform": "YT",
       "peak": 1100,
       "peak_at": "2026-06-17T09:16:53Z",
-      "current": 303,
-      "drop_pct": 72.5
+      "current": 311,
+      "drop_pct": 71.7
     }
   ]
 }
