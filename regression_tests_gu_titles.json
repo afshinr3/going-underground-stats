@@ -1,0 +1,174 @@
+{
+  "schema_version": "v1_2026_06_20",
+  "purpose": "Permanent regression dataset for gu_parser.extract_guest. Every new title pattern that breaks the parser must be added here as part of the fix. Test runner: test_gu_parser.py.",
+  "test_cases": [
+    {
+      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
+      "expected_guest": "Ehud Olmert",
+      "expected_cluster_id_prefix": "olmert_",
+      "category": "ex_role_prefix",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "Olmert incident — silent skip in fetch_and_push.py and episode_cluster.py"
+    },
+    {
+      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
+      "expected_guest": "Steve Keen",
+      "expected_cluster_id_prefix": "keen_",
+      "category": "paren_honorific",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
+      "expected_guest": "Theodore Postol",
+      "expected_cluster_id_prefix": "postol_",
+      "category": "honorific_leading_verb",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Chen Weihua: The US is the DESTROYER of the Global Order, the US Underestimated CHINA'S POWER",
+      "expected_guest": "Chen Weihua",
+      "expected_cluster_id_prefix": "weihua_",
+      "category": "name_colon_topic",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "IRAN'S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
+      "expected_guest": "Steve Hanke",
+      "expected_cluster_id_prefix": "hanke_",
+      "category": "topic_colon_honorific_name_on",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Prof. Avi Shlaim: Trump-Netanyahu War on Iran is the 21st Century's MOST UNJUSTIFIED & FOOLISH WAR",
+      "expected_guest": "Avi Shlaim",
+      "expected_cluster_id_prefix": "shlaim_",
+      "category": "honorific_name_colon",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Trump-Xi Summit: 'China is WINNING the Competition Against the USA'—Prof. Zhang Weiwei",
+      "expected_guest": "Zhang Weiwei",
+      "expected_cluster_id_prefix": "weiwei_",
+      "category": "em_dash_honorific",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "US & Israel HUMILIATED by Iran, Greater Israel Plan MUST be Confronted—Prof. Paul Craig Roberts",
+      "expected_guest": "Paul Craig Roberts",
+      "expected_cluster_id_prefix": "roberts_",
+      "category": "em_dash_honorific_three_word_name",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Trump POWERLESS to End Ukraine Proxy War, Europe is Russia's PRINCIPAL ADVERSARY—Dr. Dmitri Trenin",
+      "expected_guest": "Dmitri Trenin",
+      "expected_cluster_id_prefix": "trenin_",
+      "category": "em_dash_honorific_dr",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "'ISRAELI VASSAL' Trump Fighting A WAR OF LIES Against Iran for GREATER ISRAEL Project- David Pyne",
+      "expected_guest": "David Pyne",
+      "expected_cluster_id_prefix": "pyne_",
+      "category": "ascii_dash_terminal_name",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS Trump Admin's RECKLESS Bombing of Civilians",
+      "expected_guest": "Wes Bryant",
+      "expected_cluster_id_prefix": "bryant_",
+      "category": "colon_generic_descriptor_name_caps_verb",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "Wes Bryant — second silent-skip case in same incident"
+    },
+    {
+      "title": "Victor Gao on Iran: The END of Pax-Americana is Here, US Would Exit War with China a NET LOSER",
+      "expected_guest": "Victor Gao",
+      "expected_cluster_id_prefix": "gao_",
+      "category": "name_on_topic",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "GREATER ISRAEL is About Regional HEGEMONY, Türkiye is Israel's NEXT TARGET (Daniel Levy)",
+      "expected_guest": "Daniel Levy",
+      "expected_cluster_id_prefix": "levy_",
+      "category": "paren_plain_name_terminal",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "WAR ON IRAN: Washington's Systemic Breakdown and Strategic FAILURE- James (Jim) Webb",
+      "expected_guest": "James (Jim) Webb",
+      "expected_cluster_id_prefix": "webb_",
+      "category": "ascii_dash_multi_name_with_nickname",
+      "added_iso": "2026-06-20T15:35Z",
+      "tolerant_match": true
+    },
+    {
+      "title": "US Losing the War on Iran Shows the US Empire is in DECLINE- Lt. Col. William J. Astore",
+      "expected_guest": "William J. Astore",
+      "expected_cluster_id_prefix": "astore_",
+      "category": "ascii_dash_honorific_middle_initial",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "India DOESN'T Want to be Pulled into Any US War on China Over Taiwan— Amb. Kanwal Sibal",
+      "expected_guest": "Kanwal Sibal",
+      "expected_cluster_id_prefix": "sibal_",
+      "category": "em_dash_amb_honorific",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "Prof. John Mearsheimer's advice for India: DON'T GET TOO CLOSE TO THE UNITED STATES",
+      "expected_guest": "John Mearsheimer",
+      "expected_cluster_id_prefix": "mearsheimer_",
+      "category": "honorific_name_possessive",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "possessive 's broke v4 honorific lookahead"
+    },
+    {
+      "title": "🚨 Dr Andrey Kortunov: 'India has positioned itself as a truly GLOBAL POWER.",
+      "expected_guest": "Andrey Kortunov",
+      "expected_cluster_id_prefix": "kortunov_",
+      "category": "emoji_prefix_honorific_name_colon",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "India Has Become a Truly GLOBAL POWER, the Time has Come to STRENGTHEN BRICS—Dr. Andrey Kortunov",
+      "expected_guest": "Andrey Kortunov",
+      "expected_cluster_id_prefix": "kortunov_",
+      "category": "em_dash_honorific_dr",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "🚨WAR ON IRAN: Prof. John Mearsheimer explains how the war may BENEFIT BRICS and multipolarity",
+      "expected_guest": "John Mearsheimer",
+      "expected_cluster_id_prefix": "mearsheimer_",
+      "category": "emoji_topic_colon_honorific_name_verb",
+      "added_iso": "2026-06-20T15:35Z"
+    },
+    {
+      "title": "George Galloway on the West's PROXY WAR against Russia and the COLLAPSE of British politics",
+      "expected_guest": "George Galloway",
+      "expected_cluster_id_prefix": "galloway_",
+      "category": "name_on_topic_hypothetical",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "operator-requested hypothetical regression seed"
+    },
+    {
+      "title": "ISRAEL'S WAR: Ex-US Ambassador Chas Freeman on the BREAKDOWN of Pax-Americana",
+      "expected_guest": "Chas Freeman",
+      "expected_cluster_id_prefix": "freeman_",
+      "category": "topic_colon_ex_role_name_on_hypothetical",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "future-proof hypothetical: Ex-{role} after colon"
+    },
+    {
+      "title": "Prof. Jean-Luc Mélenchon: Why Europe MUST Break with the Atlantic Alliance",
+      "expected_guest": "Jean-Luc Mélenchon",
+      "expected_cluster_id_prefix": "mélenchon_",
+      "category": "honorific_hyphenated_firstname_unicode_surname_hypothetical",
+      "added_iso": "2026-06-20T15:35Z",
+      "added_reason": "future-proof hypothetical: hyphenated + unicode"
+    }
+  ]
+}
