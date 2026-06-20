@@ -142,112 +142,124 @@ def fetch_instagram_clips():
         return {}
 
 
+# v5 2026-06-20 PATCHED — handles Ex-PM titles, possessive, generic-pre-name
 def extract_guest(title):
-    """Extract guest name from episode title."""
     title = title.strip()
-    # Normalise curly quotes/apostrophes to ASCII
     title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
-    # v4 2026-06-14: strip leading emojis / non-word punctuation (e.g. 🚨 prefix on NO titles)
     title = re.sub(r'^[\W_]+', '', title).strip()
-    # v4 2026-06-14: "Honorific FirstName LastName …" — catches "Prof. Theodore Postol Explains Why …"
-    # and "Prof. John Mearsheimer: …" patterns that the existing colon/dash/name-on
-    # patterns missed. Lazy 2-3 word name + lookahead stops at common verbs/punctuation
-    # to avoid greedy capture of "Theodore Postol Explains Why" as a 4-word name.
-    honorific_match = re.match(
-        r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord)\.?\s+'
+
+    # ===== v5 PATCH A: Ex-{Nationality} {Role} {Name} ... =====
+    ex_role_match = re.match(
+        r'^(?:Ex|Former|Fmr)[\s\-]+'
+        r'(?:(?:Israeli|US|UK|British|American|EU|French|German|Russian|Chinese|Iranian|'
+        r'Saudi|Indian|Pakistani|Turkish|Egyptian|Iraqi|Syrian|Palestinian|Lebanese|'
+        r'Jordanian|Greek|Italian|Spanish|Dutch|Brazilian|Mexican|Canadian|Australian|'
+        r'Japanese|Korean|Thai|Filipino|Indonesian|Vietnamese|African|European)\s+)?'
+        r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|Amb|Director|Head|'
+        r'Chief|Senator|Congressman|Congresswoman|MP|General|Admiral|Secretary|Advisor|'
+        r'Adviser|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Captain|Major|'
+        r'Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?|VP|Vice\s+President|Deputy|CEO|CFO|'
+        r'Mayor|Governor|Judge|Justice)\s+'
         r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
-        r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b|[:,.\-——–]|\s*$)',
+        r'(?=\s+(?:[A-Z]{2,}|on|in|of|at|for|with|to|from|by|and|or|but|'
+        r'Explains|Says|Argues|Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|'
+        r'Who|That|Which|will|could|would|should|is|are|was|were|has|have|had|tells|'
+        r'told|shares|gives)\b|[\'\":,.\-——–]|\s*$)',
+        title
+    )
+    if ex_role_match:
+        return ex_role_match.group(1).strip()
+
+    # ===== Existing v4 honorific pattern + PATCH B: ' added to lookahead =====
+    honorific_match = re.match(
+        r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|'
+        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord)\.?\s+'
+        r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
+        r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|'
+        r'Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|'
+        r'could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b'
+        r"|[\'\":,.\-——–]|\s*$)",      # ← added ' for possessive (Mearsheimer's …)
         title
     )
     if honorific_match:
         return honorific_match.group(1).strip()
-    # Check for name in parentheses first
+
+    # ===== Parenthesised guest (unchanged) =====
     paren = re.search(r'\(([^)]+)\)\s*$', title)
     if paren:
         guest = paren.group(1).strip()
-        guest = re.sub(
-            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
-            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
-            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
-            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
-            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
-            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
-            '', guest, flags=re.I
-        ).strip()
+        guest = _strip_role(guest)
         if guest and len(guest) > 3:
             return guest
         return paren.group(1).strip()
-    # "Name on Topic" pattern
+
+    # ===== "Name on Topic" (unchanged) =====
     name_on = re.match(r'^(?:\S+\'s\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z-]+)+)\s+on\s+', title)
     if name_on:
         return name_on.group(1)
-    # Split on dash separators
+
+    # ===== Dash separator + PATCH C: Amb. now stripped =====
     dash_match = re.split(r'\s*[–—]\s*|\s+-\s+|-\s+(?=[A-Z](?:[a-z]|x-|ormer))', title)
     if len(dash_match) >= 2:
         guest = dash_match[-1].strip()
-        guest = re.sub(
-            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
-            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
-            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
-            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
-            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
-            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
-            '', guest, flags=re.I
-        ).strip()
+        guest = _strip_role(guest)
         if guest and len(guest) > 3:
             return guest
         return dash_match[-1].strip()
-    # 4th pattern: "Surname: Title…" or "First Last: Title…" → take the part before the colon
-    # Reject if the candidate is ALL CAPS (e.g. "IRAN'S KNOCKOUT BLOW") or contains words
-    # that suggest a topic phrase rather than a name.
+
+    # ===== Colon-prefixed name (unchanged shape, plus PATCH D below) =====
     colon_match = re.match(r'^([^:]{2,40}):\s+(.*)', title)
     if colon_match:
         cand = colon_match.group(1).strip()
         rest = colon_match.group(2).strip()
-        # strip leading role tokens (Prof./Dr./Ex/Former/etc.)
-        cand = re.sub(
-            r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
-            r'(?:Israeli\s+)?(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
-            r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|'
-            r'Director|Head|Chief|Senator|Congressman|General|Admiral|'
-            r'Secretary|Advisor|Analyst|Spokesperson|Editor|Professor|'
-            r'Commander|Colonel|Captain|Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\s+',
-            '', cand, flags=re.I
-        ).strip()
-        # Reject obviously-not-a-name candidates:
-        #   - ALL CAPS (e.g. "IRAN'S KNOCKOUT BLOW")
-        #   - Contains topic-like phrases (BLOW, ALERT, WAR, etc. in caps)
-        #   - Starts with possessive ("IRAN'S")
+        cand = _strip_role(cand)
         is_all_caps = cand == cand.upper() and len(cand) > 2
         looks_like_name = bool(re.match(r"^[A-Z][a-zA-Z\.'\-]+(?:\s+[A-Z][a-zA-Z\.'\-]+){0,3}$", cand))
         if looks_like_name and not is_all_caps and 3 < len(cand) <= 40:
             return cand
-        # 4b: "TOPIC: Prof. Name on …" — apply Name-on-Topic to the part after the colon.
-        # Catches "IRAN'S KNOCKOUT BLOW: Prof. Steve Hanke on Looming…"
         name_on_after = re.match(
-            r'^(?:(?:Prof|Dr|Lt\.?\s*Col|Sgt|Mr|Mrs|Ms|Sir)\.?\s+)?'
+            r'^(?:(?:Prof|Dr|Lt\.?\s*Col|Sgt|Mr|Mrs|Ms|Sir|Amb)\.?\s+)?'
             r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,3})\s+on\s+',
             rest
         )
         if name_on_after:
             return name_on_after.group(1).strip()
-        # v4 2026-06-14 4c: "TOPIC: Prof. Name <verb> …" — covers WAR-ON-IRAN style titles
-        # where the honorific+name appears AFTER the topic colon, followed by a verb other
-        # than "on" (Explains/Says/Argues/Reveals/etc.). Catches "WAR ON IRAN: Prof. John
-        # Mearsheimer explains how the war may BENEFIT BRICS…". re.IGNORECASE so "explains"
-        # (lowercase as YT often capitalises only the first letter of the title) still matches.
         name_verb_after = re.match(
-            r'^(?:(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|Hon|Rabbi|Imam|Rev|Sgt)\.?\s+)?'
+            r'^(?:(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|'
+            r'Maj|Hon|Rabbi|Imam|Rev|Sgt)\.?\s+)?'
             r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
-            r'(?=\s+(?:explains|says|argues|discusses|talks|reveals|warns|tells|told|shares|gives|will|could|would|should|is|are|was|were|has|have|had)\b)',
+            r'(?=\s+(?:explains|says|argues|discusses|talks|reveals|warns|tells|told|'
+            r'shares|gives|will|could|would|should|is|are|was|were|has|have|had)\b)',
             rest, flags=re.IGNORECASE
         )
         if name_verb_after:
             return name_verb_after.group(1).strip()
-    # All patterns failed — refuse to fabricate a guest name. Returning None
-    # lets the caller skip the entry instead of producing garbage like "DES" or "St".
-    # (Pre-fix behaviour was: `return title[:30]` which gave nonsense surnames.)
+        # ===== PATCH D: "{generic descriptor(s)} {Name} {ALL-CAPS-VERB}..." after colon =====
+        # Handles "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS..." where the
+        # name is preceded by 1–3 descriptor words rather than an honorific.
+        generic_pre_name = re.match(
+            r'^(?:[A-Z][a-zA-Z]+\s+){1,3}'                       # 1–3 descriptor words (Pentagon Whistleblower …)
+            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'        # captured name
+            r'(?=\s+(?:[A-Z]{2,}|explains|says|argues|reveals|warns|tells|on)\b)',
+            rest
+        )
+        if generic_pre_name:
+            return generic_pre_name.group(1).strip()
     return None
+
+
+def _strip_role(name):
+    name = re.sub(
+        r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
+        r'(?:Israeli\s+|US\s+|UK\s+|British\s+|American\s+)?'
+        r'(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
+        r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|Amb|MP|'
+        r'Director|Head|Chief|Senator|Congressman|General|Admiral|Secretary|'
+        r'Advisor|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Captain|'
+        r'Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\.?\s+',
+        '', name, flags=re.I
+    ).strip()
+    return name
 
 
 def extract_surname(guest_name):
