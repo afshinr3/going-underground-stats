@@ -1,4 +1,25 @@
 {
-  "updated": "2026-06-23T15:13:51Z",
-  "drops": []
+  "updated": "2026-06-23T15:28:34Z",
+  "drops": [
+    {
+      "ts": "2026-06-23T15:28:34Z",
+      "show": "GU",
+      "guest": "Weihua",
+      "platform": "X",
+      "peak": 228000,
+      "peak_at": "2026-06-23T15:13:51Z",
+      "current": 175500,
+      "drop_pct": 23.0
+    },
+    {
+      "ts": "2026-06-23T15:28:34Z",
+      "show": "GU",
+      "guest": "Gao",
+      "platform": "X",
+      "peak": 637400,
+      "peak_at": "2026-06-23T05:45:25Z",
+      "current": 498700,
+      "drop_pct": 21.8
+    }
+  ]
 }
