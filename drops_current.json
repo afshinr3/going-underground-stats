@@ -1,8 +1,18 @@
 {
-  "updated": "2026-06-23T16:10:34Z",
+  "updated": "2026-06-23T16:29:24Z",
   "drops": [
     {
-      "ts": "2026-06-23T16:10:34Z",
+      "ts": "2026-06-23T16:29:24Z",
+      "show": "GU",
+      "guest": "Olmert",
+      "platform": "X",
+      "peak": 177200,
+      "peak_at": "2026-06-23T15:28:34Z",
+      "current": 39300,
+      "drop_pct": 77.8
+    },
+    {
+      "ts": "2026-06-23T16:29:24Z",
       "show": "GU",
       "guest": "Gao",
       "platform": "X",
