@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-25T13:53:02Z",
+  "updated": "2026-06-25T14:11:28Z",
   "drops": [
     {
-      "ts": "2026-06-25T13:53:02Z",
+      "ts": "2026-06-25T14:11:28Z",
       "show": "GU",
       "guest": "Weiwei",
       "platform": "X",
@@ -10,16 +10,6 @@
       "peak_at": "2026-06-24T18:26:06Z",
       "current": 335500,
       "drop_pct": 17.6
-    },
-    {
-      "ts": "2026-06-25T13:53:02Z",
-      "show": "GU",
-      "guest": "Olmert",
-      "platform": "X",
-      "peak": 209500,
-      "peak_at": "2026-06-25T06:11:50Z",
-      "current": 136000,
-      "drop_pct": 35.1
     }
   ]
 }
