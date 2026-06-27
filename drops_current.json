@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-27T15:44:57Z",
-  "drops": [
-    {
-      "ts": "2026-06-27T15:44:57Z",
-      "show": "GU",
-      "guest": "Bryant",
-      "platform": "X",
-      "peak": 199700,
-      "peak_at": "2026-06-26T15:45:43Z",
-      "current": 146100,
-      "drop_pct": 26.8
-    }
-  ]
+  "updated": "2026-06-27T16:06:08Z",
+  "drops": []
 }
