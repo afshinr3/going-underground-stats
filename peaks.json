@@ -60,8 +60,8 @@
     "rumble_views_at": "2026-06-02T01:23:11Z"
   },
   "GU:Webb": {
-    "x_views": 237500,
-    "x_views_at": "2026-06-27T09:43:47Z",
+    "x_views": 237600,
+    "x_views_at": "2026-06-27T14:35:26Z",
     "yt_views": 28300,
     "yt_views_at": "2026-06-02T04:27:52Z",
     "ig_likes": 17100,
@@ -602,12 +602,13 @@
     "yt_views_at": "2026-06-27T12:27:44Z"
   },
   "GU:SLAM": {
-    "x_views": 39800,
-    "x_views_at": "2026-06-26T22:24:38Z"
+    "x_views": 39900,
+    "x_views_at": "2026-06-27T14:35:26Z"
   },
   "GU:Explains": {
     "x_views": 446900,
     "x_views_at": "2026-06-23T16:10:34Z"
   },
-  "NO:Bhaskar": {}
+  "NO:Bhaskar": {},
+  "GU:DEF": {}
 }
