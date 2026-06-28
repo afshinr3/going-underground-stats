@@ -1,28 +1,48 @@
 {
-  "updated": "2026-06-28T08:19:56Z",
+  "updated": "2026-06-28T08:25:27Z",
   "drops": [
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
+      "show": "GU",
+      "guest": "Ben-Menashe",
+      "platform": "X",
+      "peak": 415300,
+      "peak_at": "2026-06-27T17:37:44Z",
+      "current": 174000,
+      "drop_pct": 58.1
+    },
+    {
+      "ts": "2026-06-28T08:25:27Z",
       "show": "GU",
       "guest": "Weiwei",
       "platform": "X",
       "peak": 503600,
       "peak_at": "2026-06-27T17:37:44Z",
-      "current": 337100,
-      "drop_pct": 33.1
+      "current": 337200,
+      "drop_pct": 33.0
     },
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
+      "show": "GU",
+      "guest": "Roberts",
+      "platform": "X",
+      "peak": 426200,
+      "peak_at": "2026-06-27T20:48:34Z",
+      "current": 236200,
+      "drop_pct": 44.6
+    },
+    {
+      "ts": "2026-06-28T08:25:27Z",
       "show": "GU",
       "guest": "Shlaim",
       "platform": "X",
       "peak": 639900,
       "peak_at": "2026-06-27T17:37:44Z",
-      "current": 212300,
+      "current": 212400,
       "drop_pct": 66.8
     },
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "RUMBLE",
@@ -32,7 +52,7 @@
       "drop_pct": 23.1
     },
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
@@ -42,7 +62,7 @@
       "drop_pct": 19.9
     },
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
       "show": "NO",
       "guest": "Kortunov",
       "platform": "X",
@@ -52,7 +72,7 @@
       "drop_pct": 45.2
     },
     {
-      "ts": "2026-06-28T08:19:56Z",
+      "ts": "2026-06-28T08:25:27Z",
       "show": "NO",
       "guest": "Wolff",
       "platform": "X",
