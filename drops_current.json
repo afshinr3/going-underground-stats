@@ -1,48 +1,48 @@
 {
-  "updated": "2026-06-28T15:43:37Z",
+  "updated": "2026-06-28T15:53:25Z",
   "drops": [
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "GU",
       "guest": "Ben-Menashe",
       "platform": "X",
       "peak": 415300,
       "peak_at": "2026-06-27T17:37:44Z",
-      "current": 174200,
-      "drop_pct": 58.1
+      "current": 187300,
+      "drop_pct": 54.9
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "GU",
       "guest": "Weiwei",
       "platform": "X",
       "peak": 503600,
       "peak_at": "2026-06-27T17:37:44Z",
-      "current": 337300,
+      "current": 337400,
       "drop_pct": 33.0
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "GU",
       "guest": "Roberts",
       "platform": "X",
       "peak": 426200,
       "peak_at": "2026-06-27T20:48:34Z",
-      "current": 271600,
-      "drop_pct": 36.3
+      "current": 236400,
+      "drop_pct": 44.5
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "GU",
       "guest": "Shlaim",
       "platform": "X",
       "peak": 639900,
       "peak_at": "2026-06-27T17:37:44Z",
-      "current": 190700,
-      "drop_pct": 70.2
+      "current": 212500,
+      "drop_pct": 66.8
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "RUMBLE",
@@ -52,7 +52,17 @@
       "drop_pct": 23.1
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
+      "show": "GU",
+      "guest": "Webb",
+      "platform": "X",
+      "peak": 272200,
+      "peak_at": "2026-06-28T13:52:47Z",
+      "current": 142600,
+      "drop_pct": 47.6
+    },
+    {
+      "ts": "2026-06-28T15:53:25Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
@@ -62,7 +72,7 @@
       "drop_pct": 19.9
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "NO",
       "guest": "Kortunov",
       "platform": "X",
@@ -72,7 +82,7 @@
       "drop_pct": 45.2
     },
     {
-      "ts": "2026-06-28T15:43:37Z",
+      "ts": "2026-06-28T15:53:25Z",
       "show": "NO",
       "guest": "Wolff",
       "platform": "X",
