@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-28T17:15:53Z",
+  "updated": "2026-06-28T17:35:38Z",
   "drops": [
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Ben-Menashe",
       "platform": "X",
@@ -12,7 +12,7 @@
       "drop_pct": 54.9
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Weiwei",
       "platform": "X",
@@ -22,7 +22,7 @@
       "drop_pct": 33.0
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Roberts",
       "platform": "X",
@@ -32,7 +32,7 @@
       "drop_pct": 44.5
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Shlaim",
       "platform": "X",
@@ -42,7 +42,7 @@
       "drop_pct": 66.8
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "RUMBLE",
@@ -52,7 +52,7 @@
       "drop_pct": 23.1
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "GU",
       "guest": "Webb",
       "platform": "X",
@@ -62,17 +62,7 @@
       "drop_pct": 47.6
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
-      "show": "NO",
-      "guest": "Bhaskar",
-      "platform": "YT",
-      "peak": 28,
-      "peak_at": "2026-06-28T16:40:16Z",
-      "current": 23,
-      "drop_pct": 17.9
-    },
-    {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
@@ -82,7 +72,7 @@
       "drop_pct": 19.9
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "NO",
       "guest": "Kortunov",
       "platform": "X",
@@ -92,7 +82,7 @@
       "drop_pct": 45.2
     },
     {
-      "ts": "2026-06-28T17:15:53Z",
+      "ts": "2026-06-28T17:35:38Z",
       "show": "NO",
       "guest": "Wolff",
       "platform": "X",
