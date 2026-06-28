@@ -1,15 +1,4 @@
 {
-  "updated": "2026-06-28T20:42:40Z",
-  "drops": [
-    {
-      "ts": "2026-06-28T20:42:40Z",
-      "show": "GU",
-      "guest": "Roberts",
-      "platform": "X",
-      "peak": 426200,
-      "peak_at": "2026-06-27T20:48:34Z",
-      "current": 271800,
-      "drop_pct": 36.2
-    }
-  ]
+  "updated": "2026-06-28T21:02:49Z",
+  "drops": []
 }
