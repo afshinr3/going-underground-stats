@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-30T04:24:53Z",
+  "updated": "2026-06-30T04:38:21Z",
   "drops": [
     {
-      "ts": "2026-06-30T04:24:53Z",
+      "ts": "2026-06-30T04:38:21Z",
       "show": "GU",
       "guest": "Postol",
       "platform": "X",
       "peak": 455300,
       "peak_at": "2026-06-29T13:39:52Z",
-      "current": 284200,
-      "drop_pct": 37.6
+      "current": 256500,
+      "drop_pct": 43.7
     }
   ]
 }
