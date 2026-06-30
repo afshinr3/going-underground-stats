@@ -1,9 +1,9 @@
 {
   "accounts": {
     "afshinrattansi": 120000,
-    "GUnderground_TV": 196900,
-    "NewOrder_TV": 4008
+    "GUnderground_TV": null,
+    "NewOrder_TV": null
   },
-  "total": 320908,
-  "updated": "2026-06-30T18:07:18.775810Z"
+  "total": 120000,
+  "updated": "2026-06-30T18:18:29.384114Z"
 }
