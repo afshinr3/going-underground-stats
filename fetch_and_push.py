@@ -245,6 +245,20 @@ def extract_guest(title):
         )
         if generic_pre_name:
             return generic_pre_name.group(1).strip()
+    # EXTRACT_GUEST_NAME_VERB_V1_2026_07_04 — GU title pattern "<Guest Full Name> <Verb> ..."
+    # Handles: "Max Blumenthal Reveals Why ...", "Steve Keen Warns ...", etc.
+    name_verb_leading = re.match(
+        r"^([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-']+){1,3}?)\s+"
+        r"(?:Reveals|Explains|Says|Argues|Discusses|Talks|Warns|Slams|Analyses|Analyzes|"
+        r"Tells|Shares|Challenges|Confirms|Predicts|Claims|Believes|Uncovers|Exposes|"
+        r"Details|Describes|Debates|Comments|Reports|Breaks)\b",
+        title
+    )
+    if name_verb_leading:
+        _cand = name_verb_leading.group(1).strip()
+        # Skip host name (Afshin Rattansi)
+        if _cand.lower() not in ("afshin rattansi", "afshin"):
+            return _cand
     return None
 
 
@@ -731,6 +745,16 @@ async def update_show(show, ig_clips):
     if _guard_ok is False:
         print(f"  [PUBLISH_GUARD] BLOCKED write for {_show_code} — bad tokens detected", file=sys.stderr)
         return
+    # GU_STATS_SHOW_ATTRIBUTION_V1_2026_07_04 — normalize show field per-entry
+    # so downstream 1-week filter and Android tab attribution are reliable.
+    _norm_count = 0
+    if _show_code in ("GU", "NO"):
+        for _v in cache:
+            if _v.get("show") != _show_code:
+                _v["show"] = _show_code
+                _norm_count += 1
+    if _norm_count:
+        print(f"  [SHOW_NORMALIZE] set show={_show_code!r} on {_norm_count} entries")
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
