@@ -289,6 +289,27 @@ def _looks_valid_surname(s):
 
 
 
+# GU_UPCOMING_EPISODE_MERGE_V1_2026_07_03 -----------------------------------
+# Reads /Users/afshin/going-underground-stats/upcoming.json (list of entries).
+# Prepends show-matching entries with is_upcoming=true to output list.
+# Fail-open: if file missing or malformed, output is unchanged.
+def _load_upcoming_for(show):
+    try:
+        p = os.path.join(ROOT, "upcoming.json")
+        if not os.path.exists(p): return []
+        with open(p) as _f: raw = json.load(_f)
+        if not isinstance(raw, list): return []
+        out = []
+        for it in raw:
+            if not isinstance(it, dict): continue
+            if str(it.get("show","")).upper() != show.upper(): continue
+            it = dict(it)
+            it["is_upcoming"] = True
+            out.append(it)
+        return out
+    except Exception:
+        return []
+
 # PUBLISH_GUARD_V1_2026_07_03 — refuse to publish videos.json if bad surname tokens present.
 # Defense-in-depth on top of _looks_valid_surname. Called before writing any feed JSON.
 _GU_PUBLISH_GUARD_BAD_LITERALS = {"Tru", "DEF", "DES", "St", "IRAN", "WAR", "NEWS",
@@ -690,9 +711,30 @@ async def update_show(show, ig_clips):
         if surname in ig_clips:
             v['ig_likes'] = ig_clips[surname]
 
+    # GU_UPCOMING_WIRE_V2_2026_07_03 -----------------------------------------
+    # 1. Strip stale upcoming (they get re-prepended fresh each cycle)
+    cache = [v for v in cache if not v.get("is_upcoming")]
+    # 2. Compute show_code from data_file basename
+    _basename = os.path.basename(show['data_file'])
+    _show_code = "GU" if _basename == "videos.json" else ("NO" if _basename == "videos_neworder.json" else "?")
+    # 3. Prepend fresh upcoming for this show
+    _upcoming = _load_upcoming_for(_show_code)
+    if _upcoming:
+        cache = _upcoming + cache
+        print(f"  [UPCOMING] prepended {len(_upcoming)} entry/entries for {_show_code}")
+    # 4. PUBLISH_GUARD_V1 active — refuse write on bad tokens
+    try:
+        _guard_ok = _publish_guard_scan(cache, _show_code)
+    except NameError:
+        _guard_ok = True  # guard fn missing → fail-open with warning
+        print(f"  [PUBLISH_GUARD] fn missing — fail-open", file=sys.stderr)
+    if _guard_ok is False:
+        print(f"  [PUBLISH_GUARD] BLOCKED write for {_show_code} — bad tokens detected", file=sys.stderr)
+        return
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
+    # ---- end GU_UPCOMING_WIRE_V2 ----
 
 
 BAD_SURNAMES = {'Co', 'C', 'J', 'Relation', 'Hit', 'Indi', 'a', 'Rick',
