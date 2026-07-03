@@ -831,10 +831,13 @@ def _generate_weekly_stats():
     import datetime as _dt2, re as _re2
     _MONS = {"jan":1,"feb":2,"mar":3,"apr":4,"may":5,"jun":6,
              "jul":7,"aug":8,"sep":9,"oct":10,"nov":11,"dec":12}
+    # GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04 — rolling 7d per show
     _today = _dt2.date.today()
-    _monday_this_week = _today - _dt2.timedelta(days=_today.weekday())
-    _monday_last_week = _monday_this_week - _dt2.timedelta(days=7)
-    _sunday_last_week = _monday_last_week + _dt2.timedelta(days=6)
+    _window_start = _today - _dt2.timedelta(days=7)
+    _window_end   = _today
+    # Legacy names kept for compat with downstream refs in the same function
+    _monday_last_week = _window_start
+    _sunday_last_week = _window_end
 
     def _parse_dmy(dstr):
         m = _re2.match(r"(\d+)\s+([A-Za-z]+)", dstr or "")
@@ -872,20 +875,23 @@ def _generate_weekly_stats():
             _filtered.append(_v)
         _payload = {
             "show": _code,
-            "window": "last_completed_week",
-            "window_start_mon": _monday_last_week.isoformat(),
-            "window_end_sun":   _sunday_last_week.isoformat(),
+            "window": "rolling_last_7d",
+            "window_start": _window_start.isoformat(),
+            "window_end":   _window_end.isoformat(),
+            # legacy field names for backward compat
+            "window_start_mon": _window_start.isoformat(),
+            "window_end_sun":   _window_end.isoformat(),
             "generated_at":     _dt2.datetime.utcnow().isoformat() + "Z",
             "n": len(_filtered),
             "entries": _filtered,
             "source_feed":      _src,
             "rejected_count":   len(_rejected),
             "rejected_sample":  _rejected[:5],
-            "_marker": "GU_WEEKLY_STATS_V1_2026_07_04",
+            "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04",
         }
         try:
             with open(_outp, "w") as _f: json.dump(_payload, _f, indent=2)
-            print(f"[WEEKLY_STATS] {_out} n={len(_filtered)} window={_monday_last_week} to {_sunday_last_week}")
+            print(f"[WEEKLY_STATS] {_out} n={len(_filtered)} window={_window_start} to {_window_end} (rolling 7d)")
         except Exception as _e:
             print(f"[WEEKLY_STATS_ERR] {_out}: {_e}")
 
