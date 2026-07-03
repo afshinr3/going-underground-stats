@@ -822,6 +822,73 @@ async def fetch_x_followers(handles):
     return out
 
 
+
+# GU_WEEKLY_STATS_V1_2026_07_04 -----------------------------------------------
+# Generate stats_1week_gu.json + stats_1week_no.json with last-completed-week
+# semantics. Runs at end of main_fetch(). Fail-open: if source unreadable,
+# still publish payload with n=0 and reason field.
+def _generate_weekly_stats():
+    import datetime as _dt2, re as _re2
+    _MONS = {"jan":1,"feb":2,"mar":3,"apr":4,"may":5,"jun":6,
+             "jul":7,"aug":8,"sep":9,"oct":10,"nov":11,"dec":12}
+    _today = _dt2.date.today()
+    _monday_this_week = _today - _dt2.timedelta(days=_today.weekday())
+    _monday_last_week = _monday_this_week - _dt2.timedelta(days=7)
+    _sunday_last_week = _monday_last_week + _dt2.timedelta(days=6)
+
+    def _parse_dmy(dstr):
+        m = _re2.match(r"(\d+)\s+([A-Za-z]+)", dstr or "")
+        if not m: return None
+        try:
+            d = int(m.group(1))
+            mon = _MONS.get(m.group(2)[:3].lower())
+            if not mon: return None
+            c = _dt2.date(_today.year, mon, d)
+            if c > _today: c = _dt2.date(_today.year - 1, mon, d)
+            return c
+        except Exception:
+            return None
+
+    for _src, _out, _code in [("videos.json", "stats_1week_gu.json", "GU"),
+                               ("videos_neworder.json", "stats_1week_no.json", "NO")]:
+        _srcp = os.path.join(ROOT, _src); _outp = os.path.join(ROOT, _out)
+        _entries = []
+        try:
+            with open(_srcp) as _f: _entries = json.load(_f)
+        except Exception: _entries = []
+        _filtered = []
+        _rejected = []
+        for _v in _entries:
+            _s = _v.get("show")
+            if _s != _code:
+                _rejected.append({"surname": _v.get("surname"), "reason": "show_mismatch", "got": _s})
+                continue
+            _pd = _parse_dmy(_v.get("date"))
+            if not _pd:
+                _rejected.append({"surname": _v.get("surname"), "reason": "date_unparseable"})
+                continue
+            if not (_monday_last_week <= _pd <= _sunday_last_week):
+                continue
+            _filtered.append(_v)
+        _payload = {
+            "show": _code,
+            "window": "last_completed_week",
+            "window_start_mon": _monday_last_week.isoformat(),
+            "window_end_sun":   _sunday_last_week.isoformat(),
+            "generated_at":     _dt2.datetime.utcnow().isoformat() + "Z",
+            "n": len(_filtered),
+            "entries": _filtered,
+            "source_feed":      _src,
+            "rejected_count":   len(_rejected),
+            "rejected_sample":  _rejected[:5],
+            "_marker": "GU_WEEKLY_STATS_V1_2026_07_04",
+        }
+        try:
+            with open(_outp, "w") as _f: json.dump(_payload, _f, indent=2)
+            print(f"[WEEKLY_STATS] {_out} n={len(_filtered)} window={_monday_last_week} to {_sunday_last_week}")
+        except Exception as _e:
+            print(f"[WEEKLY_STATS_ERR] {_out}: {_e}")
+
 async def main_fetch():
     ig_clips = fetch_instagram_clips()
     print(f"IG clips found for {len(ig_clips)} surnames")
@@ -841,6 +908,12 @@ async def main_fetch():
     with open(os.path.join(ROOT, 'followers.json'), 'w') as f:
         json.dump(out, f, indent=2)
     print(f"Total X followers: {total:,}")
+
+    # GU_WEEKLY_STATS_V1_2026_07_04 — publish per-show last-completed-week stats
+    try:
+        _generate_weekly_stats()
+    except Exception as _e_ws:
+        print(f"[WEEKLY_STATS_ERR] {_e_ws}")
 
 
 def push_to_tidbyt():
