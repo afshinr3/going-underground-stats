@@ -1,0 +1,36 @@
+{
+  "show": "GU",
+  "window": "rolling_last_7d",
+  "window_start": "2026-06-27",
+  "window_end": "2026-07-04",
+  "window_start_mon": "2026-06-27",
+  "window_end_sun": "2026-07-04",
+  "generated_at": "2026-07-03T23:42:09.571962Z",
+  "n": 2,
+  "entries": [
+    {
+      "show": "GU",
+      "date": "4 Jul",
+      "guest": "Dennis Kucinich",
+      "surname": "Kucinich",
+      "title": "Saturday\u2019s July 4th US\ud83c\uddfa\ud83c\uddf8 Independence Day special episode of Going Underground:",
+      "is_upcoming": true,
+      "_source_tweet_id": "2073037090934362609"
+    },
+    {
+      "guest": "Max Blumenthal",
+      "surname": "Blumenthal",
+      "title": "Max Blumenthal Reveals Why Trump's MoU with Iran Will FAIL and What Israel Will Do Next",
+      "rumble_views": "?",
+      "x_views": "186.5K",
+      "date": "29 Jun",
+      "yt_views": "14.6K",
+      "ig_likes": "?",
+      "show": "GU"
+    }
+  ],
+  "source_feed": "videos.json",
+  "rejected_count": 0,
+  "rejected_sample": [],
+  "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04"
+}

@@ -1,0 +1,71 @@
+{
+  "show": "NO",
+  "window": "rolling_last_7d",
+  "window_start": "2026-06-27",
+  "window_end": "2026-07-04",
+  "window_start_mon": "2026-06-27",
+  "window_end_sun": "2026-07-04",
+  "generated_at": "2026-07-03T23:42:09.572550Z",
+  "n": 5,
+  "entries": [
+    {
+      "guest": "John Bolton",
+      "surname": "Bolton",
+      "title": "\ud83d\udea8John Bolton: Donald Trump FAILED to make the case to the American people #usiran #india",
+      "rumble_views": "?",
+      "x_views": "0",
+      "date": "30 Jun",
+      "yt_views": "1.2K",
+      "ig_likes": "?",
+      "show": "NO"
+    },
+    {
+      "guest": "Kanwal Sibal",
+      "surname": "Sibal",
+      "title": "\ud83d\udea8 Ambassador Kanwal Sibal: India will BUY Iran's oil after sanctions are lifted, #india #indiairan",
+      "rumble_views": "?",
+      "x_views": "0",
+      "date": "29 Jun",
+      "yt_views": "912",
+      "ig_likes": "?",
+      "show": "NO"
+    },
+    {
+      "guest": "Commodore C. Uday Bhaskar",
+      "surname": "Bhaskar",
+      "title": "\ud83d\udea8 Commodore C. Uday Bhaskar: India-UAE security ties have STRENGTHENED under Modi and BRICS umbrella",
+      "rumble_views": "?",
+      "x_views": "0",
+      "date": "29 Jun",
+      "yt_views": "1.4K",
+      "ig_likes": "?",
+      "show": "NO"
+    },
+    {
+      "guest": "C. Uday Bhaskar",
+      "surname": "Bhaskar",
+      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS \u2018UP & RUNNING\u2019: How India Will Navigate US-Iran Conflict & Tensions With Trump\u2014C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
+      "date": "28 Jun",
+      "rumble_views": "490",
+      "x_views": "388.2K",
+      "yt_views": "1.4K",
+      "ig_likes": "?",
+      "show": "NO"
+    },
+    {
+      "guest": "Andrey Kortunov",
+      "surname": "Kortunov",
+      "title": "Dr Andrey Kortunov: There is NO WAY for the US to get Russia OFF the global oil market. #indiarussia",
+      "date": "2 Jul",
+      "rumble_views": "?",
+      "x_views": "0",
+      "yt_views": "828",
+      "ig_likes": "?",
+      "show": "NO"
+    }
+  ],
+  "source_feed": "videos_neworder.json",
+  "rejected_count": 0,
+  "rejected_sample": [],
+  "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04"
+}
