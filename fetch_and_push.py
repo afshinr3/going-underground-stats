@@ -262,6 +262,31 @@ def _strip_role(name):
     return name
 
 
+# GU_SURNAME_HARDENING_V1_2026_07_03
+# Ported from /Users/afshin/RumbleMonitor/totals_pusher.py.
+# Purpose: stop junk tokens like "Tru", "DEF" and "_R<date>" suffixes
+# reaching the Android app via videos.json / videos_neworder.json.
+_GU_JUNK_TOKENS = {"DEF", "TRU", "IRAN", "WAR", "NEWS", "LIVE", "WATCH",
+                   "GU", "NO", "USA", "UN", "EU", "PM", "US", "UK",
+                   "DES", "ST", "POWER", "LACKS"}
+
+def _strip_r_date_suffix(s):
+    """Strip cache-key suffixes like _R22Jun / _R8May. Broader than
+    the legacy _R\\d{1,2}[A-Z][a-z]{2} regex."""
+    if not s: return s
+    return re.sub(r"_R[A-Za-z0-9]{2,10}$", "", str(s))
+
+def _looks_valid_surname(s):
+    """True iff s is a plausible surname. Rejects underscore/digit
+    poisoning, ALL-CAPS junk fragments (DEF), and short truncations (Tru)."""
+    if not s: return False
+    s = s.strip().rstrip(".,?!:;’‘\"'")
+    if "_" in s or any(ch.isdigit() for ch in s): return False
+    if s.upper() in _GU_JUNK_TOKENS: return False
+    return (len(s) >= 3 and s[0].isalpha()
+            and not (s.isupper() and len(s) <= 4))
+
+
 def extract_surname(guest_name):
     """Get just the surname from a guest name. Returns None if guest_name is None/empty."""
     if not guest_name:
@@ -270,7 +295,8 @@ def extract_surname(guest_name):
     # Defensive: legacy data may have a "_R<date>" suffix from an older writer (see is_repeat
     # branch in legacy local auto_update.py). Strip it so downstream consumers (LaMetric,
     # GitHub Pages, APK) don't display it.
-    name = re.sub(r'_R\d{1,2}[A-Z][a-z]{2}.*$', '', name).strip()
+    # GU_SURNAME_HARDENING_V1_2026_07_03 - broader regex catches _R<alnum2..10>.
+    name = _strip_r_date_suffix(name).strip()
     parts = name.strip().split()
     if not parts:
         return None
@@ -279,6 +305,10 @@ def extract_surname(guest_name):
         return parts[-2] + last
     if len(parts) >= 2 and '-' in parts[-1] and parts[-2][0].isupper():
         return last
+    # GU_SURNAME_HARDENING_V1_2026_07_03 - reject junk-token surnames outright,
+    # signalling to caller (discover_new_episodes) to skip this episode.
+    if not _looks_valid_surname(last):
+        return None
     return last
 
 
@@ -342,7 +372,9 @@ def discover_new_episodes(channel_id, data_file):
                           'in','of','on','at','by','to','an','is','it','or',
                           'action','missing','missing','brics','india','warns',
                           'global','south','west','east','world','power','trump'}
-            if len(surname) <= 2 or surname.lower() in SKIP_WORDS:
+            # GU_SURNAME_HARDENING_V1_2026_07_03 - extra validity gate on top of SKIP_WORDS.
+            if (len(surname) <= 2 or surname.lower() in SKIP_WORDS
+                    or not _looks_valid_surname(surname)):
                 continue
             if surname.lower() in existing_surnames:
                 continue
@@ -477,10 +509,13 @@ async def update_show(show, ig_clips):
     _normalised = 0
     for v in cache:
         orig_surname = v.get('surname', '') or ''
-        clean_surname = re.sub(r'_R\d{1,2}[A-Z][a-z]{2}.*$', '', orig_surname).strip()
+        # GU_SURNAME_HARDENING_V1_2026_07_03 - broader suffix strip.
+        clean_surname = _strip_r_date_suffix(orig_surname).strip()
         if clean_surname != orig_surname:
             v['surname'] = clean_surname
             _normalised += 1
+        # GU_SURNAME_HARDENING_V1_2026_07_03 - flag junk-token surnames for re-derive.
+        _needs_rederive = not _looks_valid_surname(v.get('surname', ''))
         # If guest looks like a title-truncation artefact, re-derive from title
         guest = v.get('guest', '') or ''
         title = v.get('title', '') or ''
@@ -490,13 +525,19 @@ async def update_show(show, ig_clips):
                 or (title.startswith(guest) and len(title) > len(guest) + 10)
             )
         )
-        if is_truncated and title:
+        if (is_truncated or _needs_rederive) and title:
             new_guest = extract_guest(title)
             new_surname = extract_surname(new_guest) if new_guest else None
             if new_guest and new_surname:
                 print(f"  [normalize] guest '{guest[:40]}…' -> '{new_guest}' (surname {new_surname})")
                 v['guest'] = new_guest
                 v['surname'] = new_surname
+                _normalised += 1
+            elif _needs_rederive:
+                # GU_SURNAME_HARDENING_V1_2026_07_03 - safe fallback: blank the surname
+                # (Android falls back to guest/title) rather than shipping "Tru" / "DEF".
+                print(f"  [normalize] blanking junk surname; title={title[:50]}")
+                v['surname'] = ''
                 _normalised += 1
     if _normalised:
         print(f"  [normalize] cleaned {_normalised} legacy/truncated entries")
