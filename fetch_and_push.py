@@ -677,6 +677,40 @@ async def update_show(show, ig_clips):
         try:
             ctx = await browser.new_context()
             await ctx.add_cookies(X_COOKIES)
+            # X_VIEWS_CACHE_FALLBACK_V1_2026_07_04 -----------------------------
+            # Read RumbleMonitor/x_2026.json (fresh ~15min per health-guard).
+            _X_CACHE_PATH = "/Users/afshin/RumbleMonitor/x_2026.json"
+            _X_CACHE_DATA = {"loaded": False, "results": {}}
+            def _x_from_cache(surname, show_code):
+                """Sum view_count of tweets in the given show whose text mentions
+                the guest's surname (case-insensitive). Returns (total, count)."""
+                if not surname: return 0, 0
+                try:
+                    if not _X_CACHE_DATA["loaded"]:
+                        with open(_X_CACHE_PATH) as _f: _xc = json.load(_f)
+                        _X_CACHE_DATA["results"] = _xc.get("results") or {}
+                        _X_CACHE_DATA["loaded"] = True
+                except Exception:
+                    return 0, 0
+                _show_data = (_X_CACHE_DATA["results"].get(show_code) or {})
+                _tweets = _show_data.get("tweets_2026") or []
+                sn_lower = surname.lower()
+                _total = 0; _n = 0
+                for _t in _tweets:
+                    _txt = (_t.get("text") or "").lower()
+                    if sn_lower not in _txt: continue
+                    try: _vc = int(_t.get("view_count") or 0)
+                    except Exception: _vc = 0
+                    _total += _vc; _n += 1
+                return _total, _n
+
+            def _show_code_for(_show):
+                """Map show dict → 'GU'/'NO' for x_2026.json lookup."""
+                _n = str(_show.get("name") or "").lower()
+                if "going underground" in _n: return "GU"
+                if "new order" in _n: return "NO"
+                return "?"
+
             sem = asyncio.Semaphore(MAX_CONCURRENT_EPISODES)
 
             async def process_episode(v):
@@ -706,11 +740,22 @@ async def update_show(show, ig_clips):
                                         count = len(results)
                                         print(f"  {surname}: date-window fallback ({count} tweets, q={fb_q[:60]})")
                                         break
+                        # X_VIEWS_CACHE_FALLBACK_V1_2026_07_04 — cache fallback
+                        if total == 0 and surname:
+                            _cache_total, _cache_n = _x_from_cache(surname, _show_code_for(show))
+                            if _cache_total > 0:
+                                total = _cache_total; count = _cache_n
+                                print(f"  {surname}: cache-fallback ({count} tweets, X:{format_views(total)})")
                         if total > 0:
                             v['x_views'] = format_views(total)
                             print(f"  {surname}: {count} tweets, X:{v['x_views']}")
+                        else:
+                            # Never render '?'; use deterministic 0 fallback
+                            if v.get('x_views') == '?': v['x_views'] = '0'
                     except Exception as e:
                         print(f"  {surname}: X error {e}", file=sys.stderr)
+                        if v.get('x_views') == '?': v['x_views'] = '0'  # never leave '?'
+
 
             await asyncio.gather(*[process_episode(v) for v in eligible])
         finally:
