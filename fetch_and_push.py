@@ -287,6 +287,38 @@ def _looks_valid_surname(s):
             and not (s.isupper() and len(s) <= 4))
 
 
+
+
+# PUBLISH_GUARD_V1_2026_07_03 — refuse to publish videos.json if bad surname tokens present.
+# Defense-in-depth on top of _looks_valid_surname. Called before writing any feed JSON.
+_GU_PUBLISH_GUARD_BAD_LITERALS = {"Tru", "DEF", "DES", "St", "IRAN", "WAR", "NEWS",
+                                   "LIVE", "WATCH", "GU", "NO", "USA", "UN", "EU",
+                                   "PM", "US", "UK", "POWER", "LACKS"}
+
+def _publish_guard_scan(videos_list, label):
+    """Raise SystemExit(3) if any surname is a known bad token. Returns list of
+    offenders (empty on clean)."""
+    import re as _re_pg
+    bad = []
+    for v in videos_list or []:
+        s = (v.get("surname") or "").strip()
+        if not s:
+            continue
+        if s in _GU_PUBLISH_GUARD_BAD_LITERALS:
+            bad.append((v.get("guest") or "", s, "literal_bad_token"))
+            continue
+        if _re_pg.search(r"_R[A-Za-z0-9]{2,10}$", s):
+            bad.append((v.get("guest") or "", s, "R_date_suffix"))
+            continue
+        if s.isupper() and len(s) <= 4:
+            bad.append((v.get("guest") or "", s, "allcaps_short"))
+            continue
+    if bad:
+        print("[PUBLISH_GUARD_V1_FAILURE] label=" + label + " bad=" + repr(bad[:10]) + " n_total=" + str(len(bad)))
+        raise SystemExit(3)
+    print("[PUBLISH_GUARD_V1_OK] label=" + label + " n_checked=" + str(len(videos_list or [])))
+    return []
+
 def extract_surname(guest_name):
     """Get just the surname from a guest name. Returns None if guest_name is None/empty."""
     if not guest_name:
