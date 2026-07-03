@@ -189,9 +189,9 @@ def _format_upcoming_entry(c):
     ep_date = c["ep_date"]
     mon_names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
     date_str = f"{ep_date.day} {mon_names[ep_date.month-1]}"
-    # Surname: last-name of guest
-    surname_first = c["guest"].split()[-1]  # simplistic; matches R<date> pattern
-    surname_field = f"{surname_first}_R{ep_date.day}{mon_names[ep_date.month-1]}"
+    # GU_AUTO_SURNAME_CLEAN_V1_2026_07_04 — no _R<date> suffix (triggers PUBLISH_GUARD reject)
+    surname_first = c["guest"].split()[-1]
+    surname_field = surname_first
     # Title: extract first meaningful sentence of tweet, strip URLs
     text = c["text"]
     text = re.sub(r"https?://\S+", "", text).strip()
