@@ -1,8 +1,18 @@
 {
-  "updated": "2026-07-04T07:15:32Z",
+  "updated": "2026-07-04T07:18:53Z",
   "drops": [
     {
-      "ts": "2026-07-04T07:15:32Z",
+      "ts": "2026-07-04T07:18:53Z",
+      "show": "GU",
+      "guest": "Blumenthal",
+      "platform": "X",
+      "peak": 186800,
+      "peak_at": "2026-07-04T04:15:08Z",
+      "current": 127100,
+      "drop_pct": 32.0
+    },
+    {
+      "ts": "2026-07-04T07:18:53Z",
       "show": "GU",
       "guest": "Ben-Menashe",
       "platform": "X",
