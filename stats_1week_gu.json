@@ -5,8 +5,8 @@
   "window_end": "2026-07-04",
   "window_start_mon": "2026-06-27",
   "window_end_sun": "2026-07-04",
-  "generated_at": "2026-07-04T20:21:46.759703Z",
-  "n": 2,
+  "generated_at": "2026-07-04T21:32:37.956635Z",
+  "n": 3,
   "entries": [
     {
       "show": "GU",
@@ -18,15 +18,25 @@
       "_source_tweet_id": "2073037090934362609"
     },
     {
-      "guest": "Max Blumenthal",
-      "surname": "Blumenthal",
-      "title": "Max Blumenthal Reveals Why Trump's MoU with Iran Will FAIL and What Israel Will Do Next",
+      "guest": "Dennis Kucinich SLAMS Integrat",
+      "surname": "Integrat",
+      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
+      "date": "4 Jul",
       "rumble_views": "?",
-      "x_views": "187.7K",
-      "date": "29 Jun",
-      "yt_views": "14.8K",
+      "x_views": "0",
       "ig_likes": "?",
       "show": "GU"
+    },
+    {
+      "guest": "Max Blumenthal",
+      "surname": "Blumenthal",
+      "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
+      "date": "29 Jun",
+      "rumble_views": "?",
+      "x_views": "187.8K",
+      "ig_likes": "?",
+      "show": "GU",
+      "yt_views": "14.8K"
     }
   ],
   "source_feed": "videos.json",
