@@ -1,14 +1,14 @@
 {
-  "updated": "2026-07-04T16:34:28Z",
+  "updated": "2026-07-04T16:47:04Z",
   "drops": [
     {
-      "ts": "2026-07-04T16:34:28Z",
+      "ts": "2026-07-04T16:47:04Z",
       "show": "GU",
       "guest": "Ben-Menashe",
       "platform": "X",
       "peak": 421700,
       "peak_at": "2026-07-03T21:40:00Z",
-      "current": 176300,
+      "current": 176400,
       "drop_pct": 58.2
     }
   ]
