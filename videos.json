@@ -1,53 +1,31 @@
 [
   {
-    "show": "GU",
-    "date": "4 Jul",
-    "guest": "Dennis Kucinich",
-    "surname": "Kucinich",
-    "title": "Saturday\u2019s July 4th US\ud83c\uddfa\ud83c\uddf8 Independence Day special episode of Going Underground:",
-    "is_upcoming": true,
-    "_source_tweet_id": "2073037090934362609"
-  },
-  {
-    "guest": "Max Blumenthal",
-    "surname": "Blumenthal",
-    "title": "Max Blumenthal Reveals Why Trump's MoU with Iran Will FAIL and What Israel Will Do Next",
-    "rumble_views": "?",
-    "x_views": "188.2K",
-    "date": "29 Jun",
-    "yt_views": "14.8K",
-    "ig_likes": "?",
-    "show": "GU"
-  },
-  {
-    "guest": "Ari Ben-Menashe",
-    "surname": "Ben-Menashe",
-    "title": "Trump's LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
-    "rumble_views": "?",
-    "x_views": "176.5K",
-    "date": "22 Jun",
-    "yt_views": "1.7K",
-    "ig_likes": "?",
-    "show": "GU"
-  },
-  {
-    "guest": "Steve Hanke",
-    "surname": "Hanke",
-    "title": "IRAN'S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
-    "rumble_views": "?",
-    "x_views": "220.0K",
-    "date": "6 Jun",
-    "yt_views": "2.4K",
-    "ig_likes": "?",
-    "show": "GU"
-  },
-  {
     "guest": "Dennis Kucinich SLAMS Integrat",
     "surname": "Integrat",
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "?",
-    "x_views": "0",
+    "x_views": "?",
+    "ig_likes": "?",
+    "show": "GU"
+  },
+  {
+    "guest": "Max Blumenthal Reveals Why Tru",
+    "surname": "Tru",
+    "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
+    "date": "29 Jun",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
+    "show": "GU"
+  },
+  {
+    "guest": "\u2018The US LACKS THE POWER TO DEF",
+    "surname": "DEF",
+    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+    "date": "27 Jun",
+    "rumble_views": "?",
+    "x_views": "?",
     "ig_likes": "?",
     "show": "GU"
   },
@@ -59,19 +37,17 @@
     "rumble_views": "?",
     "x_views": "292.3K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "2.3K"
+    "show": "GU"
   },
   {
-    "guest": "Ehud Olmert",
-    "surname": "Olmert",
+    "guest": "Ex-Israeli PM Ehud Olmert SLAM",
+    "surname": "SLAM",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
     "rumble_views": "?",
     "x_views": "40.9K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "6.9K"
+    "show": "GU"
   },
   {
     "guest": "Steve Keen",
@@ -81,8 +57,7 @@
     "rumble_views": "?",
     "x_views": "344.5K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "1.9K"
+    "show": "GU"
   },
   {
     "guest": "Paul Craig Roberts",
@@ -92,30 +67,27 @@
     "rumble_views": "?",
     "x_views": "313.5K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "6.5K"
+    "show": "GU"
   },
   {
-    "guest": "Wes Bryant",
-    "surname": "Bryant",
+    "guest": "War on Iran: Pentagon Whistleb",
+    "surname": "Whistleb",
     "title": "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS Trump Admin\u2019s RECKLESS Bombing of Civilians",
     "date": "2 May",
     "rumble_views": "?",
-    "x_views": "0",
+    "x_views": "?",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "2.6K"
+    "show": "GU"
   },
   {
-    "guest": "Theodore Postol",
-    "surname": "Postol",
+    "guest": "Prof. Theodore Postol Explains",
+    "surname": "Explains",
     "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
     "date": "13 Jun",
     "rumble_views": "?",
     "x_views": "341.3K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "7.2K"
+    "show": "GU"
   },
   {
     "guest": "Chen Weihua",
@@ -123,10 +95,19 @@
     "title": "Chen Weihua: The US is the DESTROYER of the Global Order, the US Underestimated CHINA\u2019S POWER",
     "date": "8 Jun",
     "rumble_views": "?",
-    "x_views": "211.1K",
+    "x_views": "211.2K",
     "ig_likes": "?",
-    "show": "GU",
-    "yt_views": "635"
+    "show": "GU"
+  },
+  {
+    "guest": "IRAN\u2019S KNOCKOUT BLOW: Prof. St",
+    "surname": "St",
+    "title": "IRAN\u2019S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
+    "date": "6 Jun",
+    "rumble_views": "?",
+    "x_views": "867.6K",
+    "ig_likes": "?",
+    "show": "GU"
   },
   {
     "guest": "Dmitri Trenin",
@@ -136,8 +117,7 @@
     "rumble_views": "?",
     "x_views": "3.1M",
     "ig_likes": "10.3K",
-    "show": "GU",
-    "yt_views": "10.1K"
+    "show": "GU"
   },
   {
     "guest": "David Pyne",
@@ -147,8 +127,7 @@
     "rumble_views": "?",
     "x_views": "141.3K",
     "ig_likes": "8.9K",
-    "show": "GU",
-    "yt_views": "28.6K"
+    "show": "GU"
   },
   {
     "guest": "Avi Shlaim",
@@ -158,8 +137,7 @@
     "rumble_views": "?",
     "x_views": "194.0K",
     "ig_likes": "12.4K",
-    "show": "GU",
-    "yt_views": "4.9K"
+    "show": "GU"
   },
   {
     "guest": "Victor Gao",
