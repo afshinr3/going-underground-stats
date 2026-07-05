@@ -1,11 +1,11 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-06-27",
-  "window_end": "2026-07-04",
-  "window_start_mon": "2026-06-27",
-  "window_end_sun": "2026-07-04",
-  "generated_at": "2026-07-04T23:40:40.832022Z",
+  "window_start": "2026-06-28",
+  "window_end": "2026-07-05",
+  "window_start_mon": "2026-06-28",
+  "window_end_sun": "2026-07-05",
+  "generated_at": "2026-07-05T01:29:25.798608Z",
   "n": 6,
   "entries": [
     {
