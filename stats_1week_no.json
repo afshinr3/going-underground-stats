@@ -1,12 +1,12 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-06-28",
-  "window_end": "2026-07-05",
-  "window_start_mon": "2026-06-28",
-  "window_end_sun": "2026-07-05",
-  "generated_at": "2026-07-05T23:23:21.074238Z",
-  "n": 6,
+  "window_start": "2026-06-29",
+  "window_end": "2026-07-06",
+  "window_start_mon": "2026-06-29",
+  "window_end_sun": "2026-07-06",
+  "generated_at": "2026-07-06T01:20:00.293376Z",
+  "n": 5,
   "entries": [
     {
       "guest": "Ex-Indian Foreign Intel. Chief",
@@ -15,7 +15,7 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "2 Jul",
-      "yt_views": "896",
+      "yt_views": "908",
       "ig_likes": "?",
       "show": "NO"
     },
@@ -48,17 +48,6 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "29 Jun",
-      "yt_views": "1.4K",
-      "ig_likes": "?",
-      "show": "NO"
-    },
-    {
-      "guest": "C. Uday Bhaskar",
-      "surname": "Bhaskar",
-      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS \u2018UP & RUNNING\u2019: How India Will Navigate US-Iran Conflict & Tensions With Trump\u2014C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
-      "date": "28 Jun",
-      "rumble_views": "490",
-      "x_views": "388.2K",
       "yt_views": "1.4K",
       "ig_likes": "?",
       "show": "NO"
