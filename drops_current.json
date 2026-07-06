@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-06T19:28:52Z",
+  "updated": "2026-07-06T19:48:34Z",
   "drops": [
     {
-      "ts": "2026-07-06T19:28:52Z",
+      "ts": "2026-07-06T19:48:34Z",
       "show": "GU",
       "guest": "Olmert",
       "platform": "X",
@@ -12,14 +12,14 @@
       "drop_pct": 35.0
     },
     {
-      "ts": "2026-07-06T19:28:52Z",
+      "ts": "2026-07-06T19:48:34Z",
       "show": "NO",
       "guest": "Chief",
       "platform": "YT",
       "peak": 938,
       "peak_at": "2026-07-06T12:33:38Z",
-      "current": 671,
-      "drop_pct": 28.5
+      "current": 681,
+      "drop_pct": 27.4
     }
   ]
 }
