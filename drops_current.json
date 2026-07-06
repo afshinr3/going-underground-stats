@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-06T15:58:46Z",
+  "updated": "2026-07-06T16:16:43Z",
   "drops": [
     {
-      "ts": "2026-07-06T15:58:46Z",
+      "ts": "2026-07-06T16:16:43Z",
       "show": "GU",
       "guest": "Tobias",
       "platform": "X",
@@ -12,14 +12,14 @@
       "drop_pct": 67.1
     },
     {
-      "ts": "2026-07-06T15:58:46Z",
+      "ts": "2026-07-06T16:16:43Z",
       "show": "NO",
       "guest": "Chief",
       "platform": "YT",
       "peak": 938,
       "peak_at": "2026-07-06T12:33:38Z",
-      "current": 404,
-      "drop_pct": 56.9
+      "current": 549,
+      "drop_pct": 41.5
     }
   ]
 }
