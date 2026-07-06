@@ -1,4 +1,15 @@
 {
-  "updated": "2026-07-06T12:33:38Z",
-  "drops": []
+  "updated": "2026-07-06T13:08:59Z",
+  "drops": [
+    {
+      "ts": "2026-07-06T13:08:59Z",
+      "show": "NO",
+      "guest": "Chief",
+      "platform": "YT",
+      "peak": 938,
+      "peak_at": "2026-07-06T12:33:38Z",
+      "current": 5,
+      "drop_pct": 99.5
+    }
+  ]
 }
