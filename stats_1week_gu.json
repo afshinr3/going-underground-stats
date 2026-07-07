@@ -1,12 +1,12 @@
 {
   "show": "GU",
   "window": "rolling_last_7d",
-  "window_start": "2026-06-29",
-  "window_end": "2026-07-06",
-  "window_start_mon": "2026-06-29",
-  "window_end_sun": "2026-07-06",
-  "generated_at": "2026-07-06T23:37:29.034931Z",
-  "n": 4,
+  "window_start": "2026-06-30",
+  "window_end": "2026-07-07",
+  "window_start_mon": "2026-06-30",
+  "window_end_sun": "2026-07-07",
+  "generated_at": "2026-07-07T01:29:21.014761Z",
+  "n": 3,
   "entries": [
     {
       "show": "GU",
@@ -18,26 +18,15 @@
       "_source_tweet_id": "2073037090934362609"
     },
     {
-      "guest": "Max Blumenthal",
-      "surname": "Blumenthal",
-      "title": "Max Blumenthal Reveals Why Trump's MoU with Iran Will FAIL and What Israel Will Do Next",
-      "rumble_views": "?",
-      "x_views": "190.1K",
-      "date": "29 Jun",
-      "yt_views": "15.1K",
-      "ig_likes": "?",
-      "show": "GU"
-    },
-    {
       "guest": "Ex-UK Defence Minister Tobias ",
       "surname": "Tobias",
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "rumble_views": "?",
-      "x_views": "103.1K",
+      "x_views": "108.6K",
       "ig_likes": "?",
       "show": "GU",
-      "yt_views": "535"
+      "yt_views": "560"
     },
     {
       "guest": "Dennis Kucinich SLAMS Integrat",
