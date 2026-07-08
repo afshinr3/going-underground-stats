@@ -1,12 +1,12 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-06-30",
-  "window_end": "2026-07-07",
-  "window_start_mon": "2026-06-30",
-  "window_end_sun": "2026-07-07",
-  "generated_at": "2026-07-07T23:34:58.553083Z",
-  "n": 4,
+  "window_start": "2026-07-01",
+  "window_end": "2026-07-08",
+  "window_start_mon": "2026-07-01",
+  "window_end_sun": "2026-07-08",
+  "generated_at": "2026-07-08T01:09:03.021767Z",
+  "n": 3,
   "entries": [
     {
       "guest": "Lawrence Wilkerson",
@@ -15,7 +15,7 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "6 Jul",
-      "yt_views": "532",
+      "yt_views": "545",
       "ig_likes": "?",
       "show": "NO"
     },
@@ -26,18 +26,7 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "2 Jul",
-      "yt_views": "963",
-      "ig_likes": "?",
-      "show": "NO"
-    },
-    {
-      "guest": "John Bolton",
-      "surname": "Bolton",
-      "title": "\ud83d\udea8John Bolton: Donald Trump FAILED to make the case to the American people #usiran #india",
-      "rumble_views": "?",
-      "x_views": "0",
-      "date": "30 Jun",
-      "yt_views": "1.2K",
+      "yt_views": "974",
       "ig_likes": "?",
       "show": "NO"
     },
