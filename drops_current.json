@@ -1,15 +1,4 @@
 {
-  "updated": "2026-07-09T22:19:47Z",
-  "drops": [
-    {
-      "ts": "2026-07-09T22:19:47Z",
-      "show": "GU",
-      "guest": "Tobias",
-      "platform": "X",
-      "peak": 405000,
-      "peak_at": "2026-07-09T12:41:00Z",
-      "current": 247200,
-      "drop_pct": 39.0
-    }
-  ]
+  "updated": "2026-07-09T22:39:37Z",
+  "drops": []
 }
