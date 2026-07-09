@@ -1,11 +1,11 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-01",
-  "window_end": "2026-07-08",
-  "window_start_mon": "2026-07-01",
-  "window_end_sun": "2026-07-08",
-  "generated_at": "2026-07-08T23:55:52.839549Z",
+  "window_start": "2026-07-02",
+  "window_end": "2026-07-09",
+  "window_start_mon": "2026-07-02",
+  "window_end_sun": "2026-07-09",
+  "generated_at": "2026-07-09T03:22:01.928261Z",
   "n": 3,
   "entries": [
     {
@@ -26,7 +26,7 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "2 Jul",
-      "yt_views": "628",
+      "yt_views": "631",
       "ig_likes": "?",
       "show": "NO"
     },

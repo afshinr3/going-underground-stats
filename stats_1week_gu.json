@@ -1,11 +1,11 @@
 {
   "show": "GU",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-01",
-  "window_end": "2026-07-08",
-  "window_start_mon": "2026-07-01",
-  "window_end_sun": "2026-07-08",
-  "generated_at": "2026-07-08T23:55:52.839090Z",
+  "window_start": "2026-07-02",
+  "window_end": "2026-07-09",
+  "window_start_mon": "2026-07-02",
+  "window_end_sun": "2026-07-09",
+  "generated_at": "2026-07-09T03:22:01.927953Z",
   "n": 3,
   "entries": [
     {
@@ -23,7 +23,7 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "rumble_views": "?",
-      "x_views": "147.4K",
+      "x_views": "147.6K",
       "ig_likes": "?",
       "show": "GU",
       "yt_views": "1.2K"
