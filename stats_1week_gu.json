@@ -5,7 +5,7 @@
   "window_end": "2026-07-10",
   "window_start_mon": "2026-07-03",
   "window_end_sun": "2026-07-10",
-  "generated_at": "2026-07-10T13:40:22.593084Z",
+  "generated_at": "2026-07-10T16:11:16.633309Z",
   "n": 3,
   "entries": [
     {
@@ -15,28 +15,31 @@
       "surname": "Kucinich",
       "title": "Saturday\u2019s July 4th US\ud83c\uddfa\ud83c\uddf8 Independence Day special episode of Going Underground:",
       "is_upcoming": true,
-      "_source_tweet_id": "2073037090934362609"
+      "_source_tweet_id": "2073037090934362609",
+      "canonical_guest_full_name": "Dennis Kucinich"
     },
     {
-      "guest": "Ex-UK Defence Minister Tobias ",
+      "guest": "Tobias Ellwood",
       "surname": "Tobias",
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "rumble_views": "?",
-      "x_views": "150.2K",
+      "x_views": "150.4K",
       "ig_likes": "?",
       "show": "GU",
-      "yt_views": "1.4K"
+      "yt_views": "1.4K",
+      "canonical_guest_full_name": "Tobias Ellwood"
     },
     {
-      "guest": "Dennis Kucinich SLAMS Integrat",
+      "guest": "Dennis Kucinich",
       "surname": "Integrat",
       "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
       "date": "4 Jul",
       "rumble_views": "?",
       "x_views": "0",
       "ig_likes": "?",
-      "show": "GU"
+      "show": "GU",
+      "canonical_guest_full_name": "Dennis Kucinich"
     }
   ],
   "source_feed": "videos.json",

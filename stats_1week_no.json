@@ -5,7 +5,7 @@
   "window_end": "2026-07-10",
   "window_start_mon": "2026-07-03",
   "window_end_sun": "2026-07-10",
-  "generated_at": "2026-07-10T13:40:22.593375Z",
+  "generated_at": "2026-07-10T16:11:16.633688Z",
   "n": 1,
   "entries": [
     {
@@ -17,7 +17,8 @@
       "date": "6 Jul",
       "yt_views": "858",
       "ig_likes": "?",
-      "show": "NO"
+      "show": "NO",
+      "canonical_guest_full_name": "Lawrence Wilkerson"
     }
   ],
   "source_feed": "videos_neworder.json",
