@@ -8,7 +8,8 @@
     "date": "6 Jul",
     "yt_views": "858",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Ex-Indian Foreign Intel. Chief",
@@ -19,7 +20,8 @@
     "date": "2 Jul",
     "yt_views": "269",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "John Bolton",
@@ -30,7 +32,8 @@
     "date": "30 Jun",
     "yt_views": "1.2K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Kanwal Sibal",
@@ -41,7 +44,8 @@
     "date": "29 Jun",
     "yt_views": "914",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Commodore C. Uday Bhaskar",
@@ -52,7 +56,8 @@
     "date": "29 Jun",
     "yt_views": "1.4K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Dennis Kucinich",
@@ -63,7 +68,8 @@
     "date": "26 Jun",
     "yt_views": "1.2K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Jeffrey Sachs",
@@ -74,7 +80,8 @@
     "date": "22 Jun",
     "yt_views": "7.0K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Richard Wolff",
@@ -85,7 +92,8 @@
     "x_views": "25.3K",
     "yt_views": "?",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Andrey Kortunov",
@@ -96,7 +104,8 @@
     "x_views": "698.9K",
     "yt_views": "642",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Amb. Kanwal Sibal",
@@ -107,7 +116,8 @@
     "x_views": "310.8K",
     "yt_views": "914",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -118,7 +128,8 @@
     "x_views": "9.7K",
     "yt_views": "1.4K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Andrey Kortunov",
@@ -129,7 +140,8 @@
     "x_views": "698.9K",
     "yt_views": "642",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Former US Congressman Dennis Kucinich",
@@ -140,7 +152,8 @@
     "x_views": "7.2K",
     "yt_views": "1.2K",
     "ig_likes": "2.2K",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   },
   {
     "guest": "Jeffrey Sachs",
@@ -151,6 +164,7 @@
     "x_views": "31.0K",
     "yt_views": "7.0K",
     "ig_likes": "?",
-    "show": "NO"
+    "show": "NO",
+    "canonical_guest_full_name": null
   }
 ]
