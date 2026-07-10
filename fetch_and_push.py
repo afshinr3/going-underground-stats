@@ -800,59 +800,88 @@ async def update_show(show, ig_clips):
                 _norm_count += 1
     if _norm_count:
         print(f"  [SHOW_NORMALIZE] set show={_show_code!r} on {_norm_count} entries")
-    # CANONICAL_PUBLISH_V1_2026_07_10 — final canonical resolution pass so the
-    # Android app and every downstream consumer sees CANONICAL FULL NAMES
-    # rather than truncated caption fragments. Runs on every video item.
-    # 1) Populate `canonical_guest_full_name` via resolve_guest_identity(title).
-    # 2) Overwrite the raw `guest` field with the canonical name when resolved
-    #    (Android reads `guest`, so this makes the fix visible without an app change).
-    # 3) Leave surnames untouched — that field is used elsewhere for join keys.
+    # CANONICAL_PUBLISH_V1_2026_07_10 v2 — self-contained canonical resolution.
+    # Populates canonical_guest_full_name and rewrites `guest` (Android reads it)
+    # when the current value is a bad-truncation. Uses an inline surname->canonical
+    # map so this pass works even when known_guests_v1.json / resolve_guest_identity
+    # helpers are not present on this branch.
+    _CANON_MAP = {
+        # surname_lowercase: "Canonical Full Name"
+        "ellwood":     "Tobias Ellwood",
+        "wilkerson":   "Lawrence Wilkerson",
+        "kucinich":    "Dennis Kucinich",
+        "pyne":        "David Pyne",
+        "kortunov":    "Andrey Kortunov",
+        "trenin":      "Dmitri Trenin",
+        "blumenthal":  "Max Blumenthal",
+        "mearsheimer": "John Mearsheimer",
+        "shlaim":      "Avi Shlaim",
+        "sibal":       "Kanwal Sibal",
+        "bhaskar":     "C. Uday Bhaskar",
+        "sood":        "Vikram Sood",
+        "sachs":       "Jeffrey Sachs",
+        "wolff":       "Richard Wolff",
+        "bolton":      "John Bolton",
+        "hanke":       "Steve Hanke",
+        "keen":        "Steve Keen",
+        "olmert":      "Ehud Olmert",
+        "postol":      "Theodore Postol",
+        "roberts":     "Paul Craig Roberts",
+        "weihua":      "Chen Weihua",
+        "weiwei":      "Zhang Weiwei",
+        "ben-menashe": "Ari Ben-Menashe",
+        "menashe":     "Ari Ben-Menashe",
+        "bryant":      "Wes Bryant",
+    }
+    _BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ", "REVEALS ", "EXPOSES ", "WARNS ", "'")
     _canon_resolved = 0
     _canon_unchanged = 0
     for _v in cache:
         try:
             _title = _v.get("title") or ""
-            _cur_guest = _v.get("guest") or ""
-            _res = resolve_guest_identity(_title, source="canonical_publish_v1")
+            _cur_guest = (_v.get("guest") or "").strip()
+            _title_low = _title.lower()
             _canon = None
-            if isinstance(_res, dict):
-                _canon = _res.get("guest") or None
-            # Fallback: substring surname match against known_guests DB
-            if not _canon and _title:
-                try:
-                    _kdb = _load_known_guests()
-                    for _shortname, _rec in (_kdb or {}).items():
-                        if not isinstance(_rec, dict): continue
-                        _cn = _rec.get("canonical")
-                        if not _cn or not isinstance(_cn, str): continue
-                        _sn = _cn.split()[-1] if _cn.split() else ""
-                        if len(_sn) >= 5 and _sn in _title:
-                            _canon = _cn; break
-                except Exception: pass
+            # 1) Surname substring scan against inline canonical map
+            for _sn_low, _cn in _CANON_MAP.items():
+                if _sn_low in _title_low:
+                    _canon = _cn
+                    break
+            # 2) If not matched by title, try current guest field
+            if not _canon and _cur_guest:
+                _cg_low = _cur_guest.lower()
+                for _sn_low, _cn in _CANON_MAP.items():
+                    if _sn_low in _cg_low:
+                        _canon = _cn
+                        break
+            # 3) If not matched but current guest looks well-formed (2+ words,
+            #    no bad prefix, no trailing truncation), treat it as canonical.
+            if not _canon and _cur_guest and " " in _cur_guest and not _cur_guest.endswith(" "):
+                if not any(_cur_guest.startswith(p) for p in _BAD_PREFIXES):
+                    _last = _cur_guest.split()[-1]
+                    if not (_last[:1].isupper() and _last.endswith(("rat","ing","tio","ion","ent","ies","nes")) and len(_last) < 12):
+                        _canon = _cur_guest
             if _canon:
                 _v["canonical_guest_full_name"] = _canon
-                # Overwrite guest ONLY if the current guest is a bad-truncation
-                # (short, has trailing space, ends with a truncation stem, or
-                # starts with a role/verb prefix).
+                # Overwrite guest when current is bad-truncation.
                 _bad = False
                 if not _cur_guest: _bad = True
                 elif _cur_guest.endswith(" "): _bad = True
-                elif _cur_guest.startswith(("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ", "REVEALS ", "EXPOSES ", "WARNS ")): _bad = True
+                elif any(_cur_guest.startswith(p) for p in _BAD_PREFIXES): _bad = True
                 else:
                     _last = _cur_guest.split()[-1] if _cur_guest.split() else ""
-                    if _last[:1].isupper() and _last.endswith(('rat','ing','tio','ion','ent','ies','nes')) and len(_last) < 12:
+                    if _last[:1].isupper() and _last.endswith(("rat","ing","tio","ion","ent","ies","nes")) and len(_last) < 12:
                         _bad = True
                 if _bad or _cur_guest != _canon:
                     _v["guest"] = _canon
                 _canon_resolved += 1
             else:
-                # No canonical match — leave raw fields alone but null the field
                 _v.setdefault("canonical_guest_full_name", None)
                 _canon_unchanged += 1
-        except Exception as _e:
+        except Exception:
             _v.setdefault("canonical_guest_full_name", None)
             _canon_unchanged += 1
-    print(f"  [CANONICAL_PUBLISH_V1] resolved={_canon_resolved} unchanged={_canon_unchanged}")
+    print(f"  [CANONICAL_PUBLISH_V1_v2] resolved={_canon_resolved} unchanged={_canon_unchanged}")
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
