@@ -1,4 +1,15 @@
 {
-  "updated": "2026-07-10T08:54:13Z",
-  "drops": []
+  "updated": "2026-07-10T09:13:00Z",
+  "drops": [
+    {
+      "ts": "2026-07-10T09:13:00Z",
+      "show": "GU",
+      "guest": "Olmert",
+      "platform": "X",
+      "peak": 263300,
+      "peak_at": "2026-07-09T18:21:38Z",
+      "current": 41500,
+      "drop_pct": 84.2
+    }
+  ]
 }
