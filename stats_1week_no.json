@@ -1,12 +1,12 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-02",
-  "window_end": "2026-07-09",
-  "window_start_mon": "2026-07-02",
-  "window_end_sun": "2026-07-09",
-  "generated_at": "2026-07-09T23:21:46.355754Z",
-  "n": 3,
+  "window_start": "2026-07-03",
+  "window_end": "2026-07-10",
+  "window_start_mon": "2026-07-03",
+  "window_end_sun": "2026-07-10",
+  "generated_at": "2026-07-10T01:13:18.327566Z",
+  "n": 1,
   "entries": [
     {
       "guest": "Lawrence Wilkerson",
@@ -16,28 +16,6 @@
       "x_views": "0",
       "date": "6 Jul",
       "yt_views": "851",
-      "ig_likes": "?",
-      "show": "NO"
-    },
-    {
-      "guest": "Ex-Indian Foreign Intel. Chief",
-      "surname": "Chief",
-      "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
-      "rumble_views": "?",
-      "x_views": "0",
-      "date": "2 Jul",
-      "yt_views": "796",
-      "ig_likes": "?",
-      "show": "NO"
-    },
-    {
-      "guest": "Andrey Kortunov",
-      "surname": "Kortunov",
-      "title": "Dr Andrey Kortunov: There is NO WAY for the US to get Russia OFF the global oil market. #indiarussia",
-      "date": "2 Jul",
-      "rumble_views": "?",
-      "x_views": "698.9K",
-      "yt_views": "641",
       "ig_likes": "?",
       "show": "NO"
     }
