@@ -1,43 +1,84 @@
 [
   {
-    "guest": "Ex-UK Defence Minister Tobias ",
+    "show": "GU",
+    "date": "4 Jul",
+    "guest": "Dennis Kucinich",
+    "surname": "Kucinich",
+    "title": "Saturday\u2019s July 4th US\ud83c\uddfa\ud83c\uddf8 Independence Day special episode of Going Underground:",
+    "is_upcoming": true,
+    "_source_tweet_id": "2073037090934362609",
+    "canonical_guest_full_name": "Dennis Kucinich"
+  },
+  {
+    "guest": "James Carden",
+    "surname": "Carden",
+    "title": "Ukraine Proxy War: Europe's Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
+    "rumble_views": "?",
+    "x_views": "0",
+    "date": "11 Jul",
+    "yt_views": "115",
+    "ig_likes": "?",
+    "show": "GU",
+    "canonical_guest_full_name": "James Carden"
+  },
+  {
+    "guest": "Max Blumenthal",
+    "surname": "Blumenthal",
+    "title": "Max Blumenthal Reveals Why Trump's MoU with Iran Will FAIL and What Israel Will Do Next",
+    "rumble_views": "?",
+    "x_views": "0",
+    "date": "29 Jun",
+    "yt_views": "15.2K",
+    "ig_likes": "?",
+    "show": "GU",
+    "canonical_guest_full_name": "Max Blumenthal"
+  },
+  {
+    "guest": "Ari Ben-Menashe",
+    "surname": "Ben-Menashe",
+    "title": "Trump's LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
+    "rumble_views": "?",
+    "x_views": "0",
+    "date": "22 Jun",
+    "yt_views": "1.8K",
+    "ig_likes": "?",
+    "show": "GU",
+    "canonical_guest_full_name": "Ari Ben-Menashe"
+  },
+  {
+    "guest": "Steve Hanke",
+    "surname": "Hanke",
+    "title": "IRAN'S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
+    "rumble_views": "?",
+    "x_views": "1.7M",
+    "date": "6 Jun",
+    "yt_views": "2.4K",
+    "ig_likes": "?",
+    "show": "GU",
+    "canonical_guest_full_name": "Steve Hanke"
+  },
+  {
+    "guest": "Tobias Ellwood",
     "surname": "Tobias",
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
     "rumble_views": "?",
     "x_views": "276.2K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "1.4K",
+    "canonical_guest_full_name": "Tobias Ellwood"
   },
   {
-    "guest": "Dennis Kucinich SLAMS Integrat",
+    "guest": "Dennis Kucinich",
     "surname": "Integrat",
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "?",
-    "x_views": "?",
+    "x_views": "0",
     "ig_likes": "?",
-    "show": "GU"
-  },
-  {
-    "guest": "Max Blumenthal Reveals Why Tru",
-    "surname": "Tru",
-    "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
-    "date": "29 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
-    "show": "GU"
-  },
-  {
-    "guest": "\u2018The US LACKS THE POWER TO DEF",
-    "surname": "DEF",
-    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-    "date": "27 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "canonical_guest_full_name": "Dennis Kucinich"
   },
   {
     "guest": "Zhang Weiwei",
@@ -47,17 +88,21 @@
     "rumble_views": "?",
     "x_views": "210.5K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "2.3K",
+    "canonical_guest_full_name": "Zhang Weiwei"
   },
   {
-    "guest": "Ex-Israeli PM Ehud Olmert SLAM",
-    "surname": "SLAM",
+    "guest": "Ehud Olmert",
+    "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
     "rumble_views": "?",
     "x_views": "41.6K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "6.9K",
+    "canonical_guest_full_name": "Ehud Olmert"
   },
   {
     "guest": "Steve Keen",
@@ -67,7 +112,9 @@
     "rumble_views": "?",
     "x_views": "359.7K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "1.9K",
+    "canonical_guest_full_name": "Steve Keen"
   },
   {
     "guest": "Paul Craig Roberts",
@@ -77,27 +124,32 @@
     "rumble_views": "?",
     "x_views": "436.4K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "6.5K",
+    "canonical_guest_full_name": "Paul Craig Roberts"
   },
   {
-    "guest": "War on Iran: Pentagon Whistleb",
-    "surname": "Whistleb",
+    "guest": "Wes Bryant",
+    "surname": "Bryant",
     "title": "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS Trump Admin\u2019s RECKLESS Bombing of Civilians",
     "date": "2 May",
     "rumble_views": "?",
-    "x_views": "?",
+    "x_views": "0",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "canonical_guest_full_name": "Wes Bryant"
   },
   {
-    "guest": "Prof. Theodore Postol Explains",
-    "surname": "Explains",
+    "guest": "Theodore Postol",
+    "surname": "Postol",
     "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
     "date": "13 Jun",
     "rumble_views": "?",
     "x_views": "342.1K",
     "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "7.2K",
+    "canonical_guest_full_name": "Theodore Postol"
   },
   {
     "guest": "Chen Weihua",
@@ -107,17 +159,9 @@
     "rumble_views": "?",
     "x_views": "215.2K",
     "ig_likes": "?",
-    "show": "GU"
-  },
-  {
-    "guest": "IRAN\u2019S KNOCKOUT BLOW: Prof. St",
-    "surname": "St",
-    "title": "IRAN\u2019S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
-    "date": "6 Jun",
-    "rumble_views": "?",
-    "x_views": "1.7M",
-    "ig_likes": "?",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "637",
+    "canonical_guest_full_name": "Chen Weihua"
   },
   {
     "guest": "Dmitri Trenin",
@@ -127,7 +171,9 @@
     "rumble_views": "?",
     "x_views": "3.1M",
     "ig_likes": "10.3K",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "10.1K",
+    "canonical_guest_full_name": "Dmitri Trenin"
   },
   {
     "guest": "David Pyne",
@@ -137,7 +183,8 @@
     "rumble_views": "?",
     "x_views": "177.6K",
     "ig_likes": "8.9K",
-    "show": "GU"
+    "show": "GU",
+    "canonical_guest_full_name": "David Pyne"
   },
   {
     "guest": "Avi Shlaim",
@@ -147,6 +194,8 @@
     "rumble_views": "?",
     "x_views": "209.5K",
     "ig_likes": "12.4K",
-    "show": "GU"
+    "show": "GU",
+    "yt_views": "4.9K",
+    "canonical_guest_full_name": "Avi Shlaim"
   }
 ]
