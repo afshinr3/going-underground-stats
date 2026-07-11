@@ -1,0 +1,35 @@
+{
+  "marker": "GU_CANONICAL_EPISODE_V1_2026_07_11",
+  "published_iso": "2026-07-11T15:06:46Z",
+  "latest_episode_hash": "6563049d3f8acd15",
+  "canonical_top2_episodes": [
+    {
+      "date_iso": "2026-07-11",
+      "date_short": "11 Jul",
+      "title": "NEW EPISODE OF GOING UNDERGROUND\n\nUkraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014 Ex-State Department Official James Carden\n\nWill Trump\u2019s pivot to the NATO-Russia prox",
+      "canonical_guest_full_name": "James Carden",
+      "surname_upper": "CARDEN",
+      "source_hint": "GU",
+      "episode_id": "ffa9ad29871a"
+    },
+    {
+      "date_iso": "2026-07-06",
+      "date_short": "6 Jul",
+      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
+      "canonical_guest_full_name": "Tobias Ellwood",
+      "surname_upper": "ELLWOOD",
+      "source_hint": "GU",
+      "episode_id": "6ca7f65c75da"
+    }
+  ],
+  "canonical_display_names_upper": [
+    "CARDEN",
+    "ELLWOOD"
+  ],
+  "excluded_x_clips": [],
+  "notes": [
+    "Canonical identity source: Rumble-tagged rows in videos.json.",
+    "X clips (x.com/twitter.com/t.co URLs) demoted to reach-only, never displayed as canonical latest.",
+    "Displayed as: '<SURNAME_1> + <SURNAME_2>' by both Tidbyt and LaMetric consumers; see push84_lametric.clean_guest_name which already reads canonical_guest_full_name first."
+  ]
+}

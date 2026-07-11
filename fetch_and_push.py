@@ -20,11 +20,95 @@ import sys
 import urllib.parse
 import urllib.request
 
+import hashlib
+
 import requests
 from PIL import Image, ImageDraw, ImageFont
 from playwright.async_api import async_playwright
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# CANONICAL_FIELD_EMISSION_V1_2026_07_11 --------------------------------------
+# Source-of-truth CANON_MAP mirrored verbatim from gu_canonical_backfill_v2.py.
+# Every emitted videos.json row carries three canonical fields so downstream
+# consumers (Tidbyt renderer, push84_lametric.py) NEVER read the raw broken
+# `extract_guest()` output (e.g. "Ukraine Proxy War" for Carden ep, or the
+# truncated "Ex-UK Defence Minister Tobias " for Ellwood ep).
+CANON_MAP = {
+    "ellwood":     "Tobias Ellwood",
+    "wilkerson":   "Lawrence Wilkerson",
+    "kucinich":    "Dennis Kucinich",
+    "pyne":        "David Pyne",
+    "kortunov":    "Andrey Kortunov",
+    "trenin":      "Dmitri Trenin",
+    "blumenthal":  "Max Blumenthal",
+    "mearsheimer": "John Mearsheimer",
+    "shlaim":      "Avi Shlaim",
+    "sibal":       "Kanwal Sibal",
+    "bhaskar":     "C. Uday Bhaskar",
+    "sood":        "Vikram Sood",
+    "sachs":       "Jeffrey Sachs",
+    "wolff":       "Richard Wolff",
+    "bolton":      "John Bolton",
+    "hanke":       "Steve Hanke",
+    "keen":        "Steve Keen",
+    "olmert":      "Ehud Olmert",
+    "postol":      "Theodore Postol",
+    "roberts":     "Paul Craig Roberts",
+    "weihua":      "Chen Weihua",
+    "weiwei":      "Zhang Weiwei",
+    "ben-menashe": "Ari Ben-Menashe",
+    "menashe":     "Ari Ben-Menashe",
+    "bryant":      "Wes Bryant",
+    "carden":      "James Carden",
+}
+_CANON_BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ",
+                       "REVEALS ", "EXPOSES ", "WARNS ", "'", "\u2018", "\u2019")
+
+
+def _canonical_from_title(title, cur_guest, cur_surname):
+    """Return (canonical_full_name_or_None, canonical_surname_upper_or_None, episode_id).
+
+    episode_id is ALWAYS returned — a deterministic 12-hex hash of the title
+    (falls back to a hash of surname if title empty). Full name / surname
+    are returned only when a CANON_MAP hit or a "clean-looking" current guest
+    is available. Downstream consumers can then unambiguously choose canonical
+    values over the broken extractor output.
+    """
+    t = (title or "").strip()
+    tl = t.lower()
+    canon = None
+    # 1) Surname-substring scan on title
+    for _sn, _cn in CANON_MAP.items():
+        if _sn in tl:
+            canon = _cn
+            break
+    # 2) Current guest field
+    if not canon and cur_guest:
+        cgl = cur_guest.lower()
+        for _sn, _cn in CANON_MAP.items():
+            if _sn in cgl:
+                canon = _cn
+                break
+    # 3) Clean-looking current guest passes through as canonical
+    if not canon and cur_guest and " " in cur_guest and not cur_guest.endswith(" "):
+        if not any(cur_guest.startswith(p) for p in _CANON_BAD_PREFIXES):
+            last = cur_guest.split()[-1]
+            if not (last[:1].isupper() and last.endswith(
+                    ("rat", "ing", "tio", "ion", "ent", "ies", "nes")) and len(last) < 12):
+                canon = cur_guest
+    # Deterministic episode id: 12 hex chars of sha1(title) — stable across runs.
+    hash_src = t if t else (cur_guest or cur_surname or "")
+    episode_id = hashlib.sha1(hash_src.encode("utf-8")).hexdigest()[:12]
+    if canon:
+        cs_upper = canon.split()[-1].upper()
+    elif cur_surname:
+        cs_upper = cur_surname.upper()
+        canon = None  # do not fabricate a full name we do not know
+    else:
+        cs_upper = None
+    return (canon, cs_upper, episode_id)
+# ---------------------------------------------------------------------------
 
 X_COOKIES = json.loads(os.environ.get("X_COOKIES_JSON", "[]"))
 IG_COOKIES = json.loads(os.environ.get("IG_COOKIES_JSON", "[]"))
@@ -450,14 +534,28 @@ def discover_new_episodes(channel_id, data_file):
                 short_date = d.strftime('%-d %b')
             except Exception:
                 short_date = ''
+            # CANONICAL_FIELD_EMISSION_V1_2026_07_11 — canonicalise BEFORE emit.
+            cfn, csu, ceid = _canonical_from_title(title, guest, surname)
+            # Prefer canonical surname over extractor output when CANON_MAP hits.
+            emit_guest = cfn or guest
+            emit_surname = (csu or (surname.upper() if surname else None))
+            # store the display-cased surname in `surname` for backward-compat
+            # (Android reads `surname`); Tidbyt/LaMetric readers now prefer
+            # canonical_surname_upper.
+            surname_display = cfn.split()[-1] if cfn else surname
             new_eps.append({
-                "guest": guest, "surname": surname, "title": title,
+                "guest": emit_guest,
+                "surname": surname_display,
+                "title": title,
                 "rumble_views": "?", "x_views": "?", "date": short_date,
                 "yt_views": "?", "ig_likes": "?",
+                "canonical_guest_full_name": cfn or emit_guest,
+                "canonical_surname_upper": emit_surname,
+                "canonical_episode_id": ceid,
             })
-            existing_surnames.add(surname.lower())
+            existing_surnames.add((surname_display or "").lower())
             existing_titles.add(title.lower()[:40])
-            print(f"  NEW: {guest} ({short_date})")
+            print(f"  NEW: {emit_guest} ({short_date}) [canon={csu} id={ceid}]")
         if new_eps:
             cached = new_eps + cached
             with open(data_file, 'w') as f:
@@ -832,6 +930,7 @@ async def update_show(show, ig_clips):
         "ben-menashe": "Ari Ben-Menashe",
         "menashe":     "Ari Ben-Menashe",
         "bryant":      "Wes Bryant",
+        "carden":      "James Carden",
     }
     _BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ", "REVEALS ", "EXPOSES ", "WARNS ", "'")
     _canon_resolved = 0
@@ -874,14 +973,31 @@ async def update_show(show, ig_clips):
                         _bad = True
                 if _bad or _cur_guest != _canon:
                     _v["guest"] = _canon
+                    # Rewrite surname too so downstream extractors don't re-read stale
+                    # value like "War" (Carden) or "Minister" (Ellwood).
+                    _v["surname"] = _canon.split()[-1]
                 _canon_resolved += 1
             else:
                 _v.setdefault("canonical_guest_full_name", None)
                 _canon_unchanged += 1
+            # CANONICAL_FIELD_EMISSION_V1_2026_07_11 — always populate
+            # canonical_surname_upper and canonical_episode_id so the Tidbyt
+            # renderer and push84_lametric.py never fall back to raw `surname`.
+            _cs_source = _canon or _v.get("canonical_guest_full_name") or _v.get("surname") or ""
+            if _cs_source:
+                _last_word = _cs_source.split()[-1] if " " in _cs_source else _cs_source
+                _v["canonical_surname_upper"] = _last_word.upper()
+            else:
+                _v.setdefault("canonical_surname_upper", None)
+            _hash_src = _title if _title else _cs_source
+            _v["canonical_episode_id"] = hashlib.sha1(
+                _hash_src.encode("utf-8")).hexdigest()[:12]
         except Exception:
             _v.setdefault("canonical_guest_full_name", None)
+            _v.setdefault("canonical_surname_upper", None)
+            _v.setdefault("canonical_episode_id", None)
             _canon_unchanged += 1
-    print(f"  [CANONICAL_PUBLISH_V1_v2] resolved={_canon_resolved} unchanged={_canon_unchanged}")
+    print(f"  [CANONICAL_PUBLISH_V1_v2 + CANONICAL_FIELD_EMISSION_V1_2026_07_11] resolved={_canon_resolved} unchanged={_canon_unchanged}")
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
@@ -1057,7 +1173,10 @@ def push_to_tidbyt():
     sorted_eps = []
     for v in cache[:15]:
         total = sum(parse_count(v.get(k)) for k in ['rumble_views','x_views','yt_views','ig_likes'])
-        name = v.get('surname', '?')
+        # TIDBYT_CANONICAL_PREF_V1_2026_07_11 — prefer canonical_surname_upper so
+        # broken extractor output (e.g. "War" for Carden ep, "Minister" for
+        # Ellwood ep) never reaches the Tidbyt pixmap.
+        name = v.get('canonical_surname_upper') or v.get('surname', '?')
         date = v.get('date', '')
         label = f"{name} {date}" if date else name
         if total >= 1_000_000: t = f"{total/1_000_000:.1f}M"
