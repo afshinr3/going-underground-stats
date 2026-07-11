@@ -7,7 +7,9 @@
     "title": "Saturday\u2019s July 4th US\ud83c\uddfa\ud83c\uddf8 Independence Day special episode of Going Underground:",
     "is_upcoming": true,
     "_source_tweet_id": "2073037090934362609",
-    "canonical_guest_full_name": "Dennis Kucinich"
+    "canonical_guest_full_name": "Dennis Kucinich",
+    "canonical_surname_upper": "KUCINICH",
+    "canonical_episode_id": "72583b895a7d"
   },
   {
     "guest": "James Carden",
@@ -16,10 +18,12 @@
     "rumble_views": "?",
     "x_views": "198.4K",
     "date": "11 Jul",
-    "yt_views": "216",
+    "yt_views": "227",
     "ig_likes": "?",
     "show": "GU",
-    "canonical_guest_full_name": "James Carden"
+    "canonical_guest_full_name": "James Carden",
+    "canonical_surname_upper": "CARDEN",
+    "canonical_episode_id": "a0bd191575b1"
   },
   {
     "guest": "Max Blumenthal",
@@ -31,7 +35,9 @@
     "yt_views": "15.2K",
     "ig_likes": "?",
     "show": "GU",
-    "canonical_guest_full_name": "Max Blumenthal"
+    "canonical_guest_full_name": "Max Blumenthal",
+    "canonical_surname_upper": "BLUMENTHAL",
+    "canonical_episode_id": "5004dfa78258"
   },
   {
     "guest": "Ari Ben-Menashe",
@@ -43,7 +49,9 @@
     "yt_views": "1.8K",
     "ig_likes": "?",
     "show": "GU",
-    "canonical_guest_full_name": "Ari Ben-Menashe"
+    "canonical_guest_full_name": "Ari Ben-Menashe",
+    "canonical_surname_upper": "BEN-MENASHE",
+    "canonical_episode_id": "bb189b2eaa3c"
   },
   {
     "guest": "Steve Hanke",
@@ -55,7 +63,9 @@
     "yt_views": "2.4K",
     "ig_likes": "?",
     "show": "GU",
-    "canonical_guest_full_name": "Steve Hanke"
+    "canonical_guest_full_name": "Steve Hanke",
+    "canonical_surname_upper": "HANKE",
+    "canonical_episode_id": "4feac9d593e5"
   },
   {
     "guest": "Tobias Ellwood",
@@ -67,7 +77,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "1.4K",
-    "canonical_guest_full_name": "Tobias Ellwood"
+    "canonical_guest_full_name": "Tobias Ellwood",
+    "canonical_surname_upper": "ELLWOOD",
+    "canonical_episode_id": "6ca7f65c75da"
   },
   {
     "guest": "Zhang Weiwei",
@@ -79,7 +91,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "2.3K",
-    "canonical_guest_full_name": "Zhang Weiwei"
+    "canonical_guest_full_name": "Zhang Weiwei",
+    "canonical_surname_upper": "WEIWEI",
+    "canonical_episode_id": "c4c132417e12"
   },
   {
     "guest": "Ehud Olmert",
@@ -91,7 +105,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "6.9K",
-    "canonical_guest_full_name": "Ehud Olmert"
+    "canonical_guest_full_name": "Ehud Olmert",
+    "canonical_surname_upper": "OLMERT",
+    "canonical_episode_id": "2d6e9913fb1c"
   },
   {
     "guest": "Steve Keen",
@@ -103,7 +119,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "1.9K",
-    "canonical_guest_full_name": "Steve Keen"
+    "canonical_guest_full_name": "Steve Keen",
+    "canonical_surname_upper": "KEEN",
+    "canonical_episode_id": "cbe40066aa0d"
   },
   {
     "guest": "Paul Craig Roberts",
@@ -115,7 +133,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "6.5K",
-    "canonical_guest_full_name": "Paul Craig Roberts"
+    "canonical_guest_full_name": "Paul Craig Roberts",
+    "canonical_surname_upper": "ROBERTS",
+    "canonical_episode_id": "af8fbfb4e7d4"
   },
   {
     "guest": "Wes Bryant",
@@ -126,7 +146,9 @@
     "x_views": "147.8K",
     "ig_likes": "?",
     "show": "GU",
-    "canonical_guest_full_name": "Wes Bryant"
+    "canonical_guest_full_name": "Wes Bryant",
+    "canonical_surname_upper": "BRYANT",
+    "canonical_episode_id": "1179eedd7374"
   },
   {
     "guest": "Theodore Postol",
@@ -138,7 +160,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "7.2K",
-    "canonical_guest_full_name": "Theodore Postol"
+    "canonical_guest_full_name": "Theodore Postol",
+    "canonical_surname_upper": "POSTOL",
+    "canonical_episode_id": "8014ccd61339"
   },
   {
     "guest": "Chen Weihua",
@@ -150,7 +174,9 @@
     "ig_likes": "?",
     "show": "GU",
     "yt_views": "637",
-    "canonical_guest_full_name": "Chen Weihua"
+    "canonical_guest_full_name": "Chen Weihua",
+    "canonical_surname_upper": "WEIHUA",
+    "canonical_episode_id": "11119819091b"
   },
   {
     "guest": "Dmitri Trenin",
@@ -162,7 +188,9 @@
     "ig_likes": "10.3K",
     "show": "GU",
     "yt_views": "10.1K",
-    "canonical_guest_full_name": "Dmitri Trenin"
+    "canonical_guest_full_name": "Dmitri Trenin",
+    "canonical_surname_upper": "TRENIN",
+    "canonical_episode_id": "672837cf524f"
   },
   {
     "guest": "David Pyne",
@@ -173,7 +201,9 @@
     "x_views": "140.5K",
     "ig_likes": "8.9K",
     "show": "GU",
-    "canonical_guest_full_name": "David Pyne"
+    "canonical_guest_full_name": "David Pyne",
+    "canonical_surname_upper": "PYNE",
+    "canonical_episode_id": "b554d162167a"
   },
   {
     "guest": "Avi Shlaim",
@@ -185,6 +215,8 @@
     "ig_likes": "12.4K",
     "show": "GU",
     "yt_views": "4.9K",
-    "canonical_guest_full_name": "Avi Shlaim"
+    "canonical_guest_full_name": "Avi Shlaim",
+    "canonical_surname_upper": "SHLAIM",
+    "canonical_episode_id": "3954f2c42a12"
   }
 ]

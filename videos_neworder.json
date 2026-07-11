@@ -9,7 +9,9 @@
     "yt_views": "0",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "John Perkins"
+    "canonical_guest_full_name": "John Perkins",
+    "canonical_surname_upper": "PERKINS",
+    "canonical_episode_id": "dd4587daf2dc"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -21,7 +23,9 @@
     "yt_views": "865",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Lawrence Wilkerson"
+    "canonical_guest_full_name": "Lawrence Wilkerson",
+    "canonical_surname_upper": "WILKERSON",
+    "canonical_episode_id": "87bfb59db264"
   },
   {
     "guest": "Ex-Indian Foreign Intel. Chief",
@@ -33,7 +37,9 @@
     "yt_views": "955",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": null
+    "canonical_guest_full_name": null,
+    "canonical_surname_upper": "CHIEF",
+    "canonical_episode_id": "20eb6739a4af"
   },
   {
     "guest": "John Bolton",
@@ -45,7 +51,9 @@
     "yt_views": "1.2K",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "John Bolton"
+    "canonical_guest_full_name": "John Bolton",
+    "canonical_surname_upper": "BOLTON",
+    "canonical_episode_id": "05d4ff9d5220"
   },
   {
     "guest": "Kanwal Sibal",
@@ -57,7 +65,9 @@
     "yt_views": "914",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Kanwal Sibal"
+    "canonical_guest_full_name": "Kanwal Sibal",
+    "canonical_surname_upper": "SIBAL",
+    "canonical_episode_id": "ef637b282dd1"
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -69,7 +79,9 @@
     "yt_views": "1.4K",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "C. Uday Bhaskar"
+    "canonical_guest_full_name": "C. Uday Bhaskar",
+    "canonical_surname_upper": "BHASKAR",
+    "canonical_episode_id": "1ba0ef1c1d9f"
   },
   {
     "guest": "Dennis Kucinich",
@@ -81,7 +93,9 @@
     "yt_views": "1.2K",
     "ig_likes": "2.2K",
     "show": "NO",
-    "canonical_guest_full_name": "Dennis Kucinich"
+    "canonical_guest_full_name": "Dennis Kucinich",
+    "canonical_surname_upper": "KUCINICH",
+    "canonical_episode_id": "67d22fc34e62"
   },
   {
     "guest": "Jeffrey Sachs",
@@ -93,7 +107,9 @@
     "yt_views": "7.0K",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Jeffrey Sachs"
+    "canonical_guest_full_name": "Jeffrey Sachs",
+    "canonical_surname_upper": "SACHS",
+    "canonical_episode_id": "f244a1abc87e"
   },
   {
     "guest": "Richard Wolff",
@@ -105,7 +121,9 @@
     "yt_views": "?",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Richard Wolff"
+    "canonical_guest_full_name": "Richard Wolff",
+    "canonical_surname_upper": "WOLFF",
+    "canonical_episode_id": "f0d514146df4"
   },
   {
     "guest": "Andrey Kortunov",
@@ -117,7 +135,9 @@
     "yt_views": "644",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Andrey Kortunov"
+    "canonical_guest_full_name": "Andrey Kortunov",
+    "canonical_surname_upper": "KORTUNOV",
+    "canonical_episode_id": "e2f89e5f07ea"
   },
   {
     "guest": "Kanwal Sibal",
@@ -129,7 +149,9 @@
     "yt_views": "914",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Kanwal Sibal"
+    "canonical_guest_full_name": "Kanwal Sibal",
+    "canonical_surname_upper": "SIBAL",
+    "canonical_episode_id": "ff78fb20fdb5"
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -141,7 +163,9 @@
     "yt_views": "1.4K",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "C. Uday Bhaskar"
+    "canonical_guest_full_name": "C. Uday Bhaskar",
+    "canonical_surname_upper": "BHASKAR",
+    "canonical_episode_id": "e35a16f2cfd4"
   },
   {
     "guest": "Andrey Kortunov",
@@ -153,7 +177,9 @@
     "yt_views": "644",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Andrey Kortunov"
+    "canonical_guest_full_name": "Andrey Kortunov",
+    "canonical_surname_upper": "KORTUNOV",
+    "canonical_episode_id": "1d7db7638999"
   },
   {
     "guest": "Jeffrey Sachs",
@@ -165,6 +191,8 @@
     "yt_views": "7.0K",
     "ig_likes": "?",
     "show": "NO",
-    "canonical_guest_full_name": "Jeffrey Sachs"
+    "canonical_guest_full_name": "Jeffrey Sachs",
+    "canonical_surname_upper": "SACHS",
+    "canonical_episode_id": "49b2e5748b4d"
   }
 ]
