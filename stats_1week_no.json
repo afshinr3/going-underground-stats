@@ -5,7 +5,7 @@
   "window_end": "2026-07-11",
   "window_start_mon": "2026-07-04",
   "window_end_sun": "2026-07-11",
-  "generated_at": "2026-07-11T14:58:42.506268Z",
+  "generated_at": "2026-07-11T16:00:41.804229Z",
   "n": 2,
   "entries": [
     {
@@ -18,7 +18,9 @@
       "yt_views": "0",
       "ig_likes": "?",
       "show": "NO",
-      "canonical_guest_full_name": "John Perkins"
+      "canonical_guest_full_name": "John Perkins",
+      "canonical_surname_upper": "PERKINS",
+      "canonical_episode_id": "dd4587daf2dc"
     },
     {
       "guest": "Lawrence Wilkerson",
@@ -30,7 +32,9 @@
       "yt_views": "865",
       "ig_likes": "?",
       "show": "NO",
-      "canonical_guest_full_name": "Lawrence Wilkerson"
+      "canonical_guest_full_name": "Lawrence Wilkerson",
+      "canonical_surname_upper": "WILKERSON",
+      "canonical_episode_id": "87bfb59db264"
     }
   ],
   "source_feed": "videos_neworder.json",
