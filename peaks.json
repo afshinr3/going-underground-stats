@@ -574,8 +574,8 @@
     "rumble_views_at": "2026-06-21T16:19:50Z"
   },
   "GU:Keen": {
-    "x_views": 476300,
-    "x_views_at": "2026-07-10T19:56:05Z",
+    "x_views": 477600,
+    "x_views_at": "2026-07-11T23:31:52Z",
     "yt_views": 1900,
     "yt_views_at": "2026-06-23T16:29:24Z",
     "rumble_views": 2900,
@@ -637,7 +637,12 @@
     "x_views": 346000,
     "x_views_at": "2026-07-11T19:22:45Z"
   },
-  "GU:Kucinich": {},
+  "GU:Kucinich": {
+    "x_views": 230100,
+    "x_views_at": "2026-07-11T23:31:52Z",
+    "yt_views": 901,
+    "yt_views_at": "2026-07-11T23:31:52Z"
+  },
   "NO:Chief": {
     "yt_views": 1000,
     "yt_views_at": "2026-07-08T10:13:35Z"
@@ -653,11 +658,13 @@
   "GU:Carden": {
     "x_views": 315300,
     "x_views_at": "2026-07-11T21:27:41Z",
-    "yt_views": 492,
-    "yt_views_at": "2026-07-11T22:27:18Z"
+    "yt_views": 518,
+    "yt_views_at": "2026-07-11T23:31:52Z"
   },
   "GU:Ellwood": {
-    "x_views": 230400,
-    "x_views_at": "2026-07-11T22:54:45Z"
+    "x_views": 230500,
+    "x_views_at": "2026-07-11T23:31:52Z",
+    "yt_views": 1400,
+    "yt_views_at": "2026-07-11T23:31:52Z"
   }
 }
