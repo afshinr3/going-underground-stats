@@ -654,12 +654,15 @@
     "yt_views": 1400,
     "yt_views_at": "2026-07-10T12:44:38Z"
   },
-  "NO:Perkins": {},
+  "NO:Perkins": {
+    "yt_views": 1,
+    "yt_views_at": "2026-07-12T06:37:31Z"
+  },
   "GU:Carden": {
     "x_views": 414200,
     "x_views_at": "2026-07-12T04:43:48Z",
-    "yt_views": 598,
-    "yt_views_at": "2026-07-12T06:19:32Z"
+    "yt_views": 600,
+    "yt_views_at": "2026-07-12T06:37:31Z"
   },
   "GU:Ellwood": {
     "x_views": 414200,
