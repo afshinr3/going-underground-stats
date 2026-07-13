@@ -146,13 +146,37 @@ let lastData = null;
 let stackedChart = null;
 let followersChart = null;
 
+// GU_HEALTH_MIGRATION_V1_2026_07_13 -----------------------------------------
+// Dashboard now tolerates BOTH raw scrape strings ("10.1K", "?") AND structured
+// health objects from videos_health_v1.json ({status:"N/A", reason:"..."}).
+// It NEVER renders a bare "?" anywhere on the page.
+function isHealthNA(v)    { return v && typeof v === 'object' && v.status === 'N/A'; }
+function isHealthERR(v)   { return v && typeof v === 'object' && v.status === 'ERROR'; }
+function isMissing(v)     { return v == null || v === '' || v === '?'; }
+function healthReason(v)  { return (v && typeof v === 'object' && (v.source_reason || v.reason)) || ''; }
 function parseCount(s) {
-    if (!s || s === "?" ) return 0;
+    // Structured health objects (N/A or ERROR) count as 0 for sorting/totals.
+    if (isHealthNA(s) || isHealthERR(s) || isMissing(s)) return 0;
+    if (typeof s === 'number') return s;
     s = ("" + s).replace(/,/g, '').trim();
     const u = s.toUpperCase();
     if (u.endsWith('M')) return parseFloat(u) * 1_000_000;
     if (u.endsWith('K')) return parseFloat(u) * 1_000;
     return parseFloat(s) || 0;
+}
+// Display formatter for per-platform breakdown badges. Rules (P0 2026-07-13):
+//   numeric      -> comma-formatted count (e.g. "10,100")
+//   0 / missing  -> literal "0"
+//   {status:N/A} -> "N/A" with title attribute exposing reason as tooltip
+//   {status:ERR} -> "ERR" (warning color handled by caller CSS)
+//   "?"          -> "N/A" (defense-in-depth; never emit bare ?)
+function fmtCell(v) {
+    if (isHealthNA(v))  return `<em title="${healthReason(v).replace(/"/g,'&quot;')}" style="color:#888;font-style:normal">N/A</em>`;
+    if (isHealthERR(v)) return `<em title="${healthReason(v).replace(/"/g,'&quot;')}" style="color:#ff6464;font-style:normal">ERR</em>`;
+    if (isMissing(v))   return `<em style="color:#888;font-style:normal">N/A</em>`;
+    // Numeric-ish. If it's a plain number use thousands sep; if scrape-string ("10.1K") keep it.
+    if (typeof v === 'number') return v.toLocaleString('en-GB');
+    return ("" + v);
 }
 function fmt(n) {
     if (n >= 1_000_000) return (n/1_000_000).toFixed(1) + 'M';
@@ -178,16 +202,40 @@ function totalOf(v) {
            parseCount(v.yt_views) + parseCount(v.ig_likes);
 }
 
+// GU_HEALTH_MIGRATION_V1_2026_07_13 -----------------------------------------
+// Prefer videos_health_v1.json (structured schema; no "?"). Fall back to
+// legacy videos.json (scrape strings with "?"). Same downstream renderer
+// handles both because fmtCell() and parseCount() are polymorphic.
+function healthToEntries(h) {
+    // Convert {episodes:[{guest,date,title,show,metrics:{...}}]} -> flat list
+    // matching the legacy videos.json row shape used by the leaderboard.
+    if (!h || !Array.isArray(h.episodes)) return [];
+    return h.episodes.map(ep => ({
+        guest: ep.guest,
+        surname: (ep.guest || '').split(' ').slice(-1)[0] || '',
+        title: ep.title,
+        date: ep.date,
+        show: ep.show,
+        rumble_views: ep.metrics && ep.metrics.rumble_views,
+        yt_views:     ep.metrics && ep.metrics.yt_views,
+        x_views:      ep.metrics && ep.metrics.x_views,
+        ig_likes:     ep.metrics && ep.metrics.ig_likes,
+    }));
+}
 async function fetchAll() {
-    const [gu, no, fol, drops] = await Promise.all([
-        fetch(`${RAW}/videos.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>[]),
-        fetch(`${RAW}/videos_neworder.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>[]),
-        fetch(`${RAW}/followers.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>({})),
-        fetch(`${RAW}/drops_current.json?_t=${Date.now()}`).then(r=>r.json()).catch(()=>({drops:[]})),
-    ]);
-    return { gu: gu.map(e=>({...e,_show:'GU'})),
-             no: no.map(e=>({...e,_show:'NO'})),
-             fol, drops: drops.drops || [] };
+    const t = Date.now();
+    // GU: try health-first, fall back to legacy.
+    const guHealth  = await fetch(`${RAW}/videos_health_v1.json?_t=${t}`).then(r=>r.ok?r.json():null).catch(()=>null);
+    const guLegacy  = await fetch(`${RAW}/videos.json?_t=${t}`).then(r=>r.json()).catch(()=>[]);
+    const guEntries = guHealth ? healthToEntries(guHealth) : guLegacy;
+    // NO: (health for NO not yet emitted — remains legacy)
+    const noLegacy  = await fetch(`${RAW}/videos_neworder.json?_t=${t}`).then(r=>r.json()).catch(()=>[]);
+    const fol       = await fetch(`${RAW}/followers.json?_t=${t}`).then(r=>r.json()).catch(()=>({}));
+    const drops     = await fetch(`${RAW}/drops_current.json?_t=${t}`).then(r=>r.json()).catch(()=>({drops:[]}));
+    return { gu: guEntries.map(e=>({...e,_show:'GU'})),
+             no: noLegacy.map(e=>({...e,_show:'NO'})),
+             fol, drops: drops.drops || [],
+             _health_iso: guHealth && guHealth.iso || null };
 }
 
 function renderFollowers(fol) {
@@ -229,19 +277,22 @@ function renderLeaderboard(entries) {
             <td class="dot"><span style="background:${colour}"></span></td>
             <td></td>
             <td></td>
-            <td class="name">${e.surname || '?'}</td>
+            <td class="name">${e.surname || '<em style="color:#888;font-style:normal">N/A</em>'}</td>
             <td class="date">${e.date || ''}</td>
             <td class="total" style="color:${colour}">${fmt(totalOf(e))}</td>
         `;
         const breakdown = document.createElement('tr');
         breakdown.style.display = 'none';
         breakdown.className = 'breakdown-row';
+        // GU_HEALTH_MIGRATION_V1_2026_07_13: use fmtCell to render each metric.
+        // Numeric -> comma-formatted count; N/A -> tooltip; ERROR -> warning;
+        // never emit bare "?".
         breakdown.innerHTML = `
             <td colspan="7">
-                <span class="pl" style="background:#3a1700;color:var(--rumble)">RUMBLE ${e.rumble_views || '?'}</span>
-                <span class="pl" style="background:#001f2e;color:var(--x)">X ${e.x_views || '?'}</span>
-                <span class="pl" style="background:#3a0a0a;color:var(--yt)">YT ${e.yt_views || '?'}</span>
-                <span class="pl" style="background:#3a0820;color:var(--ig)">IG ${e.ig_likes || '?'}</span>
+                <span class="pl" style="background:#3a1700;color:var(--rumble)">RUMBLE ${fmtCell(e.rumble_views)}</span>
+                <span class="pl" style="background:#001f2e;color:var(--x)">X ${fmtCell(e.x_views)}</span>
+                <span class="pl" style="background:#3a0a0a;color:var(--yt)">YT ${fmtCell(e.yt_views)}</span>
+                <span class="pl" style="background:#3a0820;color:var(--ig)">IG ${fmtCell(e.ig_likes)}</span>
             </td>`;
         tr.onclick = () => breakdown.style.display = breakdown.style.display === 'none' ? '' : 'none';
         tbody.appendChild(tr);
@@ -252,7 +303,7 @@ function renderLeaderboard(entries) {
 function renderStackedChart(entries) {
     const filtered = entries.filter(e => withinWindow(e.date, windowDays));
     filtered.sort((a,b) => totalOf(b) - totalOf(a));
-    const labels = filtered.map(e => `${e.surname}${e._show==='NO'?'·NO':''}`);
+    const labels = filtered.map(e => `${e.surname || 'N/A'}${e._show==='NO'?'·NO':''}`);
     const data = {
         labels,
         datasets: [

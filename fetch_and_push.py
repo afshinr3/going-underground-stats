@@ -997,6 +997,20 @@ async def update_show(show, ig_clips):
             _v.setdefault("canonical_surname_upper", None)
             _v.setdefault("canonical_episode_id", None)
             _canon_unchanged += 1
+    # GU_NO_QUESTION_MARK_V1_2026_07_13 --------------------------------
+    # Defense-in-depth: never leave literal '?' in rumble_views/yt_views/ig_likes/x_views.
+    # Mirrors the existing X pattern (line 852/855). The dashboard (docs/index.html)
+    # ALSO defensively renders '?' as 'N/A' as of GU_HEALTH_MIGRATION_V1_2026_07_13
+    # -- belt-and-braces so downstream Android / Tidbyt / LaMetric consumers that lack
+    # the client-side renderer do not display '?' either.
+    _qm_normalized = 0
+    for _v in cache:
+        for _f in ('rumble_views', 'yt_views', 'ig_likes', 'x_views'):
+            if _v.get(_f) == '?':
+                _v[_f] = '0'
+                _qm_normalized += 1
+    if _qm_normalized:
+        print(f"  [GU_NO_QUESTION_MARK_V1] normalized {_qm_normalized} '?' -> '0' fields")
     print(f"  [CANONICAL_PUBLISH_V1_v2 + CANONICAL_FIELD_EMISSION_V1_2026_07_11] resolved={_canon_resolved} unchanged={_canon_unchanged}")
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
