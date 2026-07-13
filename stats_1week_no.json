@@ -1,11 +1,11 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-05",
-  "window_end": "2026-07-12",
-  "window_start_mon": "2026-07-05",
-  "window_end_sun": "2026-07-12",
-  "generated_at": "2026-07-12T23:31:05.046325Z",
+  "window_start": "2026-07-06",
+  "window_end": "2026-07-13",
+  "window_start_mon": "2026-07-06",
+  "window_end_sun": "2026-07-13",
+  "generated_at": "2026-07-13T01:10:04.027246Z",
   "n": 2,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "?",
       "x_views": "0",
       "date": "9 Jul",
-      "yt_views": "405",
+      "yt_views": "415",
       "ig_likes": "?",
       "show": "NO",
       "canonical_guest_full_name": "John Perkins",
