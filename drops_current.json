@@ -1,35 +1,15 @@
 {
-  "updated": "2026-07-13T13:55:00Z",
+  "updated": "2026-07-13T14:03:48Z",
   "drops": [
     {
-      "ts": "2026-07-13T13:55:00Z",
+      "ts": "2026-07-13T14:03:48Z",
       "show": "GU",
-      "guest": "Carden",
+      "guest": "Olmert",
       "platform": "X",
-      "peak": 533300,
-      "peak_at": "2026-07-13T08:21:40Z",
-      "current": 213000,
-      "drop_pct": 60.1
-    },
-    {
-      "ts": "2026-07-13T13:55:00Z",
-      "show": "GU",
-      "guest": "Kucinich",
-      "platform": "X",
-      "peak": 678100,
-      "peak_at": "2026-07-13T04:51:08Z",
-      "current": 255700,
-      "drop_pct": 62.3
-    },
-    {
-      "ts": "2026-07-13T13:55:00Z",
-      "show": "GU",
-      "guest": "Bryant",
-      "platform": "X",
-      "peak": 258000,
-      "peak_at": "2026-07-13T01:10:04Z",
-      "current": 147900,
-      "drop_pct": 42.7
+      "peak": 297400,
+      "peak_at": "2026-07-13T13:55:00Z",
+      "current": 41800,
+      "drop_pct": 85.9
     }
   ]
 }
