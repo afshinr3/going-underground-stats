@@ -1,12 +1,12 @@
 {
   "show": "NO",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-06",
-  "window_end": "2026-07-13",
-  "window_start_mon": "2026-07-06",
-  "window_end_sun": "2026-07-13",
-  "generated_at": "2026-07-13T23:18:00.171849Z",
-  "n": 2,
+  "window_start": "2026-07-07",
+  "window_end": "2026-07-14",
+  "window_start_mon": "2026-07-07",
+  "window_end_sun": "2026-07-14",
+  "generated_at": "2026-07-14T00:13:41.988276Z",
+  "n": 1,
   "entries": [
     {
       "guest": "John Perkins",
@@ -21,20 +21,6 @@
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
       "canonical_episode_id": "dd4587daf2dc"
-    },
-    {
-      "guest": "Lawrence Wilkerson",
-      "surname": "Wilkerson",
-      "title": "\ud83d\udea8Col. Lawrence Wilkerson: Xi Jinping's plan to dethrone the dollar #china #uschina #chinaindia",
-      "rumble_views": "0",
-      "x_views": "23.0K",
-      "date": "6 Jul",
-      "yt_views": "865",
-      "ig_likes": "0",
-      "show": "NO",
-      "canonical_guest_full_name": "Lawrence Wilkerson",
-      "canonical_surname_upper": "WILKERSON",
-      "canonical_episode_id": "87bfb59db264"
     }
   ],
   "source_feed": "videos_neworder.json",
