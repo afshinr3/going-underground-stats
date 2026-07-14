@@ -1,8 +1,18 @@
 {
-  "updated": "2026-07-14T14:03:46Z",
+  "updated": "2026-07-14T14:20:54Z",
   "drops": [
     {
-      "ts": "2026-07-14T14:03:46Z",
+      "ts": "2026-07-14T14:20:54Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "X",
+      "peak": 277500,
+      "peak_at": "2026-07-14T11:49:46Z",
+      "current": 175600,
+      "drop_pct": 36.7
+    },
+    {
+      "ts": "2026-07-14T14:20:54Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "YT",
