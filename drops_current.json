@@ -1,28 +1,18 @@
 {
-  "updated": "2026-07-15T17:07:26Z",
+  "updated": "2026-07-15T17:22:08Z",
   "drops": [
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "X",
       "peak": 291200,
       "peak_at": "2026-07-14T20:16:31Z",
-      "current": 178800,
-      "drop_pct": 38.6
+      "current": 117600,
+      "drop_pct": 59.6
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
-      "show": "GU",
-      "guest": "Carden",
-      "platform": "X",
-      "peak": 542000,
-      "peak_at": "2026-07-14T20:16:31Z",
-      "current": 429500,
-      "drop_pct": 20.8
-    },
-    {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
@@ -32,37 +22,37 @@
       "drop_pct": 44.0
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Blumenthal",
       "platform": "X",
       "peak": 360500,
       "peak_at": "2026-07-15T14:13:51Z",
-      "current": 305100,
-      "drop_pct": 15.4
+      "current": 112900,
+      "drop_pct": 68.7
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Olmert",
       "platform": "X",
       "peak": 297700,
       "peak_at": "2026-07-14T21:20:30Z",
-      "current": 182800,
-      "drop_pct": 38.6
+      "current": 214600,
+      "drop_pct": 27.9
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Roberts",
       "platform": "X",
       "peak": 463600,
       "peak_at": "2026-07-15T14:13:51Z",
-      "current": 344400,
-      "drop_pct": 25.7
+      "current": 268800,
+      "drop_pct": 42.0
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "GU",
       "guest": "Bryant",
       "platform": "X",
@@ -72,7 +62,7 @@
       "drop_pct": 21.7
     },
     {
-      "ts": "2026-07-15T17:07:26Z",
+      "ts": "2026-07-15T17:22:08Z",
       "show": "NO",
       "guest": "Wilkerson",
       "platform": "YT",
