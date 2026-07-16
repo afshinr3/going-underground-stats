@@ -1,11 +1,11 @@
 {
   "show": "GU",
   "window": "rolling_last_7d",
-  "window_start": "2026-07-08",
-  "window_end": "2026-07-15",
-  "window_start_mon": "2026-07-08",
-  "window_end_sun": "2026-07-15",
-  "generated_at": "2026-07-15T23:17:24.042585Z",
+  "window_start": "2026-07-09",
+  "window_end": "2026-07-16",
+  "window_start_mon": "2026-07-09",
+  "window_end_sun": "2026-07-16",
+  "generated_at": "2026-07-16T00:16:08.341496Z",
   "n": 2,
   "entries": [
     {
@@ -27,7 +27,7 @@
       "surname": "Carden",
       "title": "Ukraine Proxy War: Europe's Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
       "rumble_views": "0",
-      "x_views": "430.6K",
+      "x_views": "401.8K",
       "date": "11 Jul",
       "yt_views": "917",
       "ig_likes": "0",
