@@ -1,14 +1,14 @@
 {
-  "updated": "2026-07-16T07:28:00Z",
+  "updated": "2026-07-16T07:47:25Z",
   "drops": [
     {
-      "ts": "2026-07-16T07:28:00Z",
+      "ts": "2026-07-16T07:47:25Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
       "peak": 451900,
       "peak_at": "2026-07-15T12:07:47Z",
-      "current": 226300,
+      "current": 226400,
       "drop_pct": 49.9
     }
   ]
