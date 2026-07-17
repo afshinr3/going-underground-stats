@@ -1,44 +1,15 @@
 {
   "show": "GU",
-  "window": "rolling_last_7d",
-  "window_start": "2026-07-10",
-  "window_end": "2026-07-17",
-  "window_start_mon": "2026-07-10",
-  "window_end_sun": "2026-07-17",
-  "generated_at": "2026-07-17T08:33:53.051062Z",
-  "n": 2,
-  "entries": [
-    {
-      "guest": "CMSGT. Dennis Fritz",
-      "surname": "Fritz",
-      "title": "CMSGT. Dennis Fritz: Israel's Influence Over Trump's Pentagon Is EVEN WORSE Than Under Bush!",
-      "rumble_views": "0",
-      "x_views": "194.9K",
-      "date": "13 Jul",
-      "yt_views": "912",
-      "ig_likes": "0",
-      "canonical_guest_full_name": "CMSGT. Dennis Fritz",
-      "canonical_surname_upper": "FRITZ",
-      "canonical_episode_id": "a34aff8a6180",
-      "show": "GU"
-    },
-    {
-      "guest": "James Carden",
-      "surname": "Carden",
-      "title": "Ukraine Proxy War: Europe's Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
-      "rumble_views": "0",
-      "x_views": "0",
-      "date": "11 Jul",
-      "yt_views": "1.1K",
-      "ig_likes": "0",
-      "canonical_guest_full_name": "James Carden",
-      "canonical_surname_upper": "CARDEN",
-      "canonical_episode_id": "a0bd191575b1",
-      "show": "GU"
-    }
-  ],
+  "window": "fri_to_mon_broadcast_week",
+  "window_start": "2026-07-17",
+  "window_end": "2026-07-20",
+  "window_start_mon": "2026-07-17",
+  "window_end_sun": "2026-07-20",
+  "generated_at": "2026-07-17T10:24:58.385592Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
-  "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04"
+  "_marker": "GU_WEEKLY_STATS_FRI_MON_V3_2026_07_17"
 }

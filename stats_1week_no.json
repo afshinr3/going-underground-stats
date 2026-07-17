@@ -1,15 +1,30 @@
 {
   "show": "NO",
-  "window": "rolling_last_7d",
-  "window_start": "2026-07-10",
-  "window_end": "2026-07-17",
-  "window_start_mon": "2026-07-10",
-  "window_end_sun": "2026-07-17",
-  "generated_at": "2026-07-17T08:33:53.051401Z",
-  "n": 0,
-  "entries": [],
+  "window": "fri_to_mon_broadcast_week",
+  "window_start": "2026-07-17",
+  "window_end": "2026-07-20",
+  "window_start_mon": "2026-07-17",
+  "window_end_sun": "2026-07-20",
+  "generated_at": "2026-07-17T10:24:58.385856Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Richard Sakwa",
+      "surname": "Sakwa",
+      "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.",
+      "rumble_views": "0",
+      "x_views": "0",
+      "date": "17 Jul",
+      "yt_views": "5",
+      "ig_likes": "0",
+      "canonical_guest_full_name": "Richard Sakwa",
+      "canonical_surname_upper": "SAKWA",
+      "canonical_episode_id": "37c79c36b714",
+      "show": "NO"
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
-  "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04"
+  "_marker": "GU_WEEKLY_STATS_FRI_MON_V3_2026_07_17"
 }
