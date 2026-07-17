@@ -161,29 +161,34 @@ def fetch_youtube_data(channel_id):
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
-        # YT_SHORTS_FILTER_V1_2026_07_17 — capture <link href> to detect Shorts and skip them.
+        # YT_CONTENT_TYPE_V2_2026_07_17 — capture <link href> to detect content type.
+        # Views CONTRIBUTE from every URL type (Shorts count for the parent's
+        # engagement metrics). Date is ONLY taken from full-episode URLs so a
+        # Short's upload date cannot override the parent's production date.
         entries = re.findall(
             r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
         views_map = {}     # surname -> view count string
         date_map = {}      # surname -> ISO date string (YYYY-MM-DD)
         for title, link_href, pub, views in entries:
-            # YT_SHORTS_FILTER_V1_2026_07_17 — Shorts are re-posted clips, not new productions
-            if "/shorts/" in link_href:
-                continue
+            _is_short = "/shorts/" in link_href
+            # Views contribute regardless of content type
             title = title.replace('&amp;', '&').replace('&#39;', "'")
             iso_date = pub[:10]
             for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
                 if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground', 'order'):
                     views_map.setdefault(w.lower(), format_views(views))
-                    date_map.setdefault(w.lower(), iso_date)
+                    # YT_CONTENT_TYPE_V2_2026_07_17 — Short must not set parent's canonical date
+                    if not _is_short:
+                        date_map.setdefault(w.lower(), iso_date)
             m = re.search(r'\(([^)]+)\)', title)
             if m:
                 for w in m.group(1).split():
                     w = w.strip('.,')
                     if len(w) > 3:
                         views_map.setdefault(w.lower(), format_views(views))
-                        date_map.setdefault(w.lower(), iso_date)
+                        if not _is_short:
+                            date_map.setdefault(w.lower(), iso_date)
         return views_map, date_map
     except Exception as e:
         print(f"YouTube error for {channel_id}: {e}", file=sys.stderr)
@@ -495,15 +500,18 @@ def discover_new_episodes(channel_id, data_file):
                 f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
                 headers={"User-Agent": "Mozilla/5.0"}),
             timeout=15).read().decode()
-        # YT_SHORTS_FILTER_V1_2026_07_17 — capture <link href> to detect Shorts.
+        # YT_CONTENT_TYPE_V2_2026_07_17 — capture <link href> to detect content type.
+        # New-production creation is restricted to full-episode URLs.
+        # Shorts still contribute views via fetch_youtube_data (parser 1);
+        # they must not create phantom production entries or set dates.
         entries = re.findall(
             r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>',
             rss, re.DOTALL)
         new_eps = []
         for title_raw, link_href, pub in entries:
-            # YT_SHORTS_FILTER_V1_2026_07_17 — Shorts are re-posted clips, not new productions
+            # YT_CONTENT_TYPE_V2_2026_07_17 — content-type discrimination
             if "/shorts/" in link_href:
-                continue
+                continue  # Short: views only; do not create new production
             title = title_raw.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
             title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
             if len(title) < 20:
