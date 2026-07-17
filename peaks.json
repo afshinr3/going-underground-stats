@@ -578,16 +578,16 @@
     "x_views_at": "2026-07-17T03:44:28Z",
     "yt_views": 1900,
     "yt_views_at": "2026-06-23T16:29:24Z",
-    "rumble_views": 2900,
-    "rumble_views_at": "2026-07-03T21:40:00Z"
+    "rumble_views": 3000,
+    "rumble_views_at": "2026-07-17T14:29:30Z"
   },
   "NO:Sibal": {
     "yt_views": 916,
     "yt_views_at": "2026-07-14T18:11:23Z",
     "rumble_views": 492,
     "rumble_views_at": "2026-07-03T21:40:00Z",
-    "x_views": 310800,
-    "x_views_at": "2026-07-03T21:40:00Z"
+    "x_views": 327200,
+    "x_views_at": "2026-07-17T14:29:30Z"
   },
   "GU:Olmert": {
     "x_views": 298100,
@@ -602,8 +602,8 @@
     "x_views_at": "2026-07-03T21:40:00Z",
     "yt_views": 1800,
     "yt_views_at": "2026-07-10T00:34:32Z",
-    "rumble_views": 9700,
-    "rumble_views_at": "2026-07-03T21:40:00Z"
+    "rumble_views": 10200,
+    "rumble_views_at": "2026-07-17T14:29:30Z"
   },
   "GU:SLAM": {
     "x_views": 79200,
@@ -635,17 +635,23 @@
     "yt_views": 15200,
     "yt_views_at": "2026-07-11T00:46:14Z",
     "x_views": 361800,
-    "x_views_at": "2026-07-16T14:27:32Z"
+    "x_views_at": "2026-07-16T14:27:32Z",
+    "ig_likes": 11300,
+    "ig_likes_at": "2026-07-17T14:29:30Z"
   },
   "GU:Kucinich": {
     "x_views": 678100,
     "x_views_at": "2026-07-13T04:51:08Z",
     "yt_views": 915,
-    "yt_views_at": "2026-07-17T13:06:51Z"
+    "yt_views_at": "2026-07-17T13:06:51Z",
+    "ig_likes": 4000,
+    "ig_likes_at": "2026-07-17T14:29:30Z"
   },
   "NO:Chief": {
     "yt_views": 1000,
-    "yt_views_at": "2026-07-08T10:13:35Z"
+    "yt_views_at": "2026-07-08T10:13:35Z",
+    "ig_likes": 470,
+    "ig_likes_at": "2026-07-17T14:29:30Z"
   },
   "GU:Integrat": {},
   "GU:Tobias": {
@@ -658,13 +664,17 @@
     "yt_views": 976,
     "yt_views_at": "2026-07-15T07:30:23Z",
     "x_views": 188800,
-    "x_views_at": "2026-07-13T22:14:30Z"
+    "x_views_at": "2026-07-13T22:14:30Z",
+    "rumble_views": 840,
+    "rumble_views_at": "2026-07-17T14:29:30Z"
   },
   "GU:Carden": {
     "x_views": 548500,
     "x_views_at": "2026-07-16T14:27:32Z",
     "yt_views": 1100,
-    "yt_views_at": "2026-07-16T16:47:06Z"
+    "yt_views_at": "2026-07-16T16:47:06Z",
+    "ig_likes": 12200,
+    "ig_likes_at": "2026-07-17T14:29:30Z"
   },
   "GU:Ellwood": {
     "x_views": 451900,
@@ -681,5 +691,11 @@
   "GU:Israel\u2019s": {
     "x_views": 194900,
     "x_views_at": "2026-07-17T06:56:50Z"
+  },
+  "NO:Sood": {
+    "x_views": 402200,
+    "x_views_at": "2026-07-17T14:29:30Z",
+    "yt_views": 1100,
+    "yt_views_at": "2026-07-17T14:29:30Z"
   }
 }
