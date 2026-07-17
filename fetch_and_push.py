@@ -66,6 +66,41 @@ _CANON_BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ",
                        "REVEALS ", "EXPOSES ", "WARNS ", "'", "\u2018", "\u2019")
 
 
+
+# YT_CONTENT_TYPE_V3_2026_07_17 — richer YT content-type classifier per operator directive.
+def _yt_classify_content(link_href, title, description=""):
+    """Return (content_type, confidence) using URL + title + description signals.
+    Never returns "EPISODE" without a positive episode marker; the safe default
+    is EPISODE_UNCLASSIFIED (still creates a new production but flags for audit)."""
+    t = (title or "").upper()
+    desc = (description or "").upper()
+    lh = link_href or ""
+    # SHORT — definitive URL
+    if "/shorts/" in lh:
+        return ("SHORT", "HIGH")
+    # SHORT — hashtag markers
+    if "#SHORTS" in t or "#SHORT" in t or "#SHORTS" in desc or "#SHORT" in desc:
+        return ("SHORT", "HIGH")
+    # EPISODE — canonical show markers
+    for m in ("NEW EPISODE OF GOING UNDERGROUND",
+              "NEW EPISODE OF NEW ORDER",
+              "SPECIAL EPISODE OF",
+              "SEASON FINALE EPISODE OF",
+              "SEASON PREMIERE EPISODE OF"):
+        if m in t or m in desc:
+            return ("EPISODE", "HIGH")
+    # CLIP — explicit markers
+    if any(t.startswith(p) for p in ("CLIP:", "HIGHLIGHT:", "EXCERPT:")):
+        return ("CLIP", "HIGH")
+    for w in ("HIGHLIGHT REEL", "EXCERPT FROM", "CUT FROM", "PART 1 OF", "PART 2 OF"):
+        if w in t:
+            return ("CLIP", "HIGH")
+    # Ambiguous — /watch?v= without positive markers; default to
+    # EPISODE_UNCLASSIFIED so downstream can audit false negatives.
+    return ("EPISODE_UNCLASSIFIED", "LOW")
+
+
+
 def _canonical_from_title(title, cur_guest, cur_surname):
     """Return (canonical_full_name_or_None, canonical_surname_upper_or_None, episode_id).
 
@@ -161,25 +196,31 @@ def fetch_youtube_data(channel_id):
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
-        # YT_CONTENT_TYPE_V2_2026_07_17 — capture <link href> to detect content type.
-        # Views CONTRIBUTE from every URL type (Shorts count for the parent's
-        # engagement metrics). Date is ONLY taken from full-episode URLs so a
-        # Short's upload date cannot override the parent's production date.
+        # YT_CONTENT_TYPE_V3_2026_07_17 — richer classifier; capture description too.
+        # Views contribute from every content type; DATE only from EPISODE (any
+        # confidence level). Both SHORT and CLIP are excluded from date override.
         entries = re.findall(
-            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
+            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:description[^>]*>(.*?)</media:description>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
+        # Fallback: entries where <media:description> is absent — retry with old regex
+        if len(entries) == 0:
+            _old_entries = re.findall(
+                r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
+                rss, re.DOTALL)
+            entries = [(t, l, p, "", v) for (t, l, p, v) in _old_entries]
         views_map = {}     # surname -> view count string
         date_map = {}      # surname -> ISO date string (YYYY-MM-DD)
-        for title, link_href, pub, views in entries:
-            _is_short = "/shorts/" in link_href
+        for title, link_href, pub, description, views in entries:
+            _content_type, _confidence = _yt_classify_content(link_href, title, description)
+            _is_episode_class = _content_type in ("EPISODE", "EPISODE_UNCLASSIFIED")
             # Views contribute regardless of content type
             title = title.replace('&amp;', '&').replace('&#39;', "'")
             iso_date = pub[:10]
             for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
                 if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground', 'order'):
                     views_map.setdefault(w.lower(), format_views(views))
-                    # YT_CONTENT_TYPE_V2_2026_07_17 — Short must not set parent's canonical date
-                    if not _is_short:
+                    # YT_CONTENT_TYPE_V3_2026_07_17 — date only from EPISODE-class content
+                    if _is_episode_class:
                         date_map.setdefault(w.lower(), iso_date)
             m = re.search(r'\(([^)]+)\)', title)
             if m:
@@ -187,7 +228,7 @@ def fetch_youtube_data(channel_id):
                     w = w.strip('.,')
                     if len(w) > 3:
                         views_map.setdefault(w.lower(), format_views(views))
-                        if not _is_short:
+                        if _is_episode_class:
                             date_map.setdefault(w.lower(), iso_date)
         return views_map, date_map
     except Exception as e:
@@ -500,18 +541,24 @@ def discover_new_episodes(channel_id, data_file):
                 f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
                 headers={"User-Agent": "Mozilla/5.0"}),
             timeout=15).read().decode()
-        # YT_CONTENT_TYPE_V2_2026_07_17 — capture <link href> to detect content type.
-        # New-production creation is restricted to full-episode URLs.
-        # Shorts still contribute views via fetch_youtube_data (parser 1);
+        # YT_CONTENT_TYPE_V3_2026_07_17 — richer classifier + capture description.
+        # New-production creation is restricted to EPISODE / EPISODE_UNCLASSIFIED.
+        # SHORT / CLIP contribute views via fetch_youtube_data (parser 1);
         # they must not create phantom production entries or set dates.
         entries = re.findall(
-            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>',
+            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:description[^>]*>(.*?)</media:description>',
             rss, re.DOTALL)
+        if len(entries) == 0:
+            _old = re.findall(
+                r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>',
+                rss, re.DOTALL)
+            entries = [(t, l, p, "") for (t, l, p) in _old]
         new_eps = []
-        for title_raw, link_href, pub in entries:
-            # YT_CONTENT_TYPE_V2_2026_07_17 — content-type discrimination
-            if "/shorts/" in link_href:
-                continue  # Short: views only; do not create new production
+        for title_raw, link_href, pub, description in entries:
+            # YT_CONTENT_TYPE_V3_2026_07_17 — content-type discrimination
+            _content_type, _confidence = _yt_classify_content(link_href, title_raw, description)
+            if _content_type in ("SHORT", "CLIP"):
+                continue  # views-only; do not create new production
             title = title_raw.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
             title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
             if len(title) < 20:
@@ -568,6 +615,9 @@ def discover_new_episodes(channel_id, data_file):
                 "canonical_guest_full_name": cfn or emit_guest,
                 "canonical_surname_upper": emit_surname,
                 "canonical_episode_id": ceid,
+                # YT_CONTENT_TYPE_V3_2026_07_17 — additive classifier metadata for audit
+                "_yt_content_type": _content_type,
+                "_yt_class_confidence": _confidence,
             })
             existing_surnames.add((surname_display or "").lower())
             existing_titles.add(title.lower()[:40])
