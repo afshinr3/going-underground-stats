@@ -1088,10 +1088,22 @@ def _generate_weekly_stats():
     import datetime as _dt2, re as _re2
     _MONS = {"jan":1,"feb":2,"mar":3,"apr":4,"may":5,"jun":6,
              "jul":7,"aug":8,"sep":9,"oct":10,"nov":11,"dec":12}
-    # GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04 — rolling 7d per show
+    # GU_WEEKLY_STATS_FRI_MON_V3_2026_07_17 — operator directive: each week
+    # should include the most recent shows in the Fri→Mon broadcast window,
+    # which matches Going Underground's actual publishing cadence better than
+    # a rolling 7-day arithmetic window. Behaviour:
+    #   - Today is Fri..Sun  → window = THIS Friday through the following Monday
+    #   - Today is Mon       → window = LAST Friday through today (Monday)
+    #   - Today is Tue..Thu  → window = LAST Fri through LAST Mon (most-recent complete Fri-Mon)
     _today = _dt2.date.today()
-    _window_start = _today - _dt2.timedelta(days=7)
-    _window_end   = _today
+    _dow = _today.weekday()   # 0=Mon .. 6=Sun
+    if _dow >= 4:             # Fri (4), Sat (5), Sun (6)
+        _window_start = _today - _dt2.timedelta(days=_dow - 4)   # this Friday
+    elif _dow == 0:           # Mon
+        _window_start = _today - _dt2.timedelta(days=3)          # last Friday
+    else:                     # Tue..Thu → last complete Fri..Mon
+        _window_start = _today - _dt2.timedelta(days=_dow + 3)   # last Friday
+    _window_end = _window_start + _dt2.timedelta(days=3)         # +3 days = Monday
     # Legacy names kept for compat with downstream refs in the same function
     _monday_last_week = _window_start
     _sunday_last_week = _window_end
@@ -1132,10 +1144,10 @@ def _generate_weekly_stats():
             _filtered.append(_v)
         _payload = {
             "show": _code,
-            "window": "rolling_last_7d",
+            "window": "fri_to_mon_broadcast_week",
             "window_start": _window_start.isoformat(),
             "window_end":   _window_end.isoformat(),
-            # legacy field names for backward compat
+            # legacy field names for backward compat (now Fri/Mon in name AND semantics)
             "window_start_mon": _window_start.isoformat(),
             "window_end_sun":   _window_end.isoformat(),
             "generated_at":     _dt2.datetime.utcnow().isoformat() + "Z",
@@ -1144,11 +1156,11 @@ def _generate_weekly_stats():
             "source_feed":      _src,
             "rejected_count":   len(_rejected),
             "rejected_sample":  _rejected[:5],
-            "_marker": "GU_WEEKLY_STATS_ROLLING7D_V2_2026_07_04",
+            "_marker": "GU_WEEKLY_STATS_FRI_MON_V3_2026_07_17",
         }
         try:
             with open(_outp, "w") as _f: json.dump(_payload, _f, indent=2)
-            print(f"[WEEKLY_STATS] {_out} n={len(_filtered)} window={_window_start} to {_window_end} (rolling 7d)")
+            print(f"[WEEKLY_STATS] {_out} n={len(_filtered)} window={_window_start} (Fri) to {_window_end} (Mon) fri_to_mon")
         except Exception as _e:
             print(f"[WEEKLY_STATS_ERR] {_out}: {_e}")
 
