@@ -161,12 +161,16 @@ def fetch_youtube_data(channel_id):
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
+        # YT_SHORTS_FILTER_V1_2026_07_17 — capture <link href> to detect Shorts and skip them.
         entries = re.findall(
-            r'<entry>.*?<title>(.*?)</title>.*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
+            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
         views_map = {}     # surname -> view count string
         date_map = {}      # surname -> ISO date string (YYYY-MM-DD)
-        for title, pub, views in entries:
+        for title, link_href, pub, views in entries:
+            # YT_SHORTS_FILTER_V1_2026_07_17 — Shorts are re-posted clips, not new productions
+            if "/shorts/" in link_href:
+                continue
             title = title.replace('&amp;', '&').replace('&#39;', "'")
             iso_date = pub[:10]
             for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
@@ -491,11 +495,15 @@ def discover_new_episodes(channel_id, data_file):
                 f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
                 headers={"User-Agent": "Mozilla/5.0"}),
             timeout=15).read().decode()
+        # YT_SHORTS_FILTER_V1_2026_07_17 — capture <link href> to detect Shorts.
         entries = re.findall(
-            r'<entry>.*?<title>(.*?)</title>.*?<published>(.*?)</published>',
+            r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>',
             rss, re.DOTALL)
         new_eps = []
-        for title_raw, pub in entries:
+        for title_raw, link_href, pub in entries:
+            # YT_SHORTS_FILTER_V1_2026_07_17 — Shorts are re-posted clips, not new productions
+            if "/shorts/" in link_href:
+                continue
             title = title_raw.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
             title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
             if len(title) < 20:
