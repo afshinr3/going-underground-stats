@@ -100,6 +100,58 @@ def _yt_classify_content(link_href, title, description=""):
     return ("EPISODE_UNCLASSIFIED", "LOW")
 
 
+# YT_CONTENT_TYPE_V4B_2026_07_17 — EPISODE_UNCLASSIFIED gating helper.
+# EPISODE/HIGH creates automatically. SHORT/CLIP never create.
+# EPISODE_UNCLASSIFIED matches to existing canonical episode ceid; if none,
+# routes to audit queue and skips creation.
+def _v4_gate_unclassified(ceid, title, link_href, pub, description,
+                            cfn, emit_surname, emit_guest, surname_display,
+                            short_date, root_dir):
+    """Return True to allow emission, False to skip. Side-effect: writes to
+    audit queue when unmatched. Never raises."""
+    import json as _j, os as _o, datetime as _dt
+    try:
+        # Load known canonical episode IDs from both production files
+        known = set()
+        for _fname in ("videos.json", "videos_neworder.json"):
+            _fp = _o.path.join(root_dir, _fname)
+            if _o.path.exists(_fp):
+                try:
+                    for _e in _j.load(open(_fp)) or []:
+                        _c = (_e or {}).get("canonical_episode_id")
+                        if _c: known.add(_c)
+                except Exception: pass
+        if ceid and ceid in known:
+            # Existing canonical episode; views attach via surname map elsewhere
+            print("  V4_UNCLASSIFIED_MATCHED_EXISTING_CANONICAL ceid=" + str(ceid))
+            return False
+        # Route to audit queue
+        row = {
+            "iso_flagged": _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "marker": "YT_CONTENT_TYPE_V4B_2026_07_17",
+            "reason": "EPISODE_UNCLASSIFIED_no_canonical_match",
+            "title": title, "link_href": link_href, "pub": pub,
+            "description": (description or "")[:500],
+            "canonical_episode_id": ceid,
+            "canonical_guest_full_name": cfn,
+            "canonical_surname_upper": emit_surname,
+            "extractor_guest": emit_guest,
+            "extractor_surname": surname_display,
+            "date_short": short_date,
+        }
+        _adir = _o.path.join(root_dir, "docs")
+        try: _o.makedirs(_adir, exist_ok=True)
+        except Exception: pass
+        with open(_o.path.join(_adir, "audit_queue_unclassified_v1.jsonl"), "a") as _af:
+            _af.write(_j.dumps(row, ensure_ascii=False) + "\n")
+        print("  V4_UNCLASSIFIED_HELD_FOR_AUDIT title=" + title[:60])
+    except Exception as _e:
+        print("  V4_HELPER_ERR: " + str(_e))
+    return False
+
+
+
+
 
 def _canonical_from_title(title, cur_guest, cur_surname):
     """Return (canonical_full_name_or_None, canonical_surname_upper_or_None, episode_id).
@@ -606,6 +658,14 @@ def discover_new_episodes(channel_id, data_file):
             # (Android reads `surname`); Tidbyt/LaMetric readers now prefer
             # canonical_surname_upper.
             surname_display = cfn.split()[-1] if cfn else surname
+            # YT_CONTENT_TYPE_V4B_2026_07_17 — gate EPISODE_UNCLASSIFIED before creation
+            if _content_type == "EPISODE_UNCLASSIFIED":
+                _allow = _v4_gate_unclassified(ceid, title, link_href, pub,
+                                                 description, cfn, emit_surname,
+                                                 emit_guest, surname_display,
+                                                 short_date, ROOT)
+                if not _allow:
+                    continue
             new_eps.append({
                 "guest": emit_guest,
                 "surname": surname_display,
@@ -615,7 +675,7 @@ def discover_new_episodes(channel_id, data_file):
                 "canonical_guest_full_name": cfn or emit_guest,
                 "canonical_surname_upper": emit_surname,
                 "canonical_episode_id": ceid,
-                # YT_CONTENT_TYPE_V3_2026_07_17 — additive classifier metadata for audit
+                # YT_CONTENT_TYPE_V3_2026_07_17 / YT_CONTENT_TYPE_V4B_2026_07_17 — classifier metadata
                 "_yt_content_type": _content_type,
                 "_yt_class_confidence": _confidence,
             })
