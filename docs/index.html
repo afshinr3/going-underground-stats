@@ -106,7 +106,7 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
         <h2>TOTAL REACH</h2>
         <div class="tab-bar" id="window-bar">
             <button data-days="-1" class="active">All</button>
-            <button data-days="7">1 Week</button>
+            <button data-days="7">1 Week (last Sat-Mon)</button>
             <button data-days="30">1 Month</button>
             <button data-days="180">6 Months</button>
         </div>
@@ -194,6 +194,18 @@ function withinWindow(dateStr, days) {
     const now = new Date();
     let d = new Date(now.getFullYear(), mn, parseInt(m[1]));
     if (d > now) d = new Date(now.getFullYear()-1, mn, parseInt(m[1]));
+    // WIN_LAST_SAT_MON_AND_SHOW_BADGE_V1_2026_07_17 — "1 Week" tab = LAST completed Sat-Sun-Mon window
+    // (operator directive 2026-07-17). JS getDay(): 0=Sun..6=Sat.
+    if (days === 7) {
+        const dow = now.getDay();
+        let n;
+        if (dow === 1) n = 7;
+        else if (dow === 0) n = 6;
+        else n = dow - 1;
+        const lastMon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - n, 23, 59, 59);
+        const lastSat = new Date(lastMon.getFullYear(), lastMon.getMonth(), lastMon.getDate() - 2, 0, 0, 0);
+        return d >= lastSat && d <= lastMon;
+    }
     const ageDays = (now - d) / 86_400_000;
     return ageDays <= days;
 }
@@ -277,7 +289,7 @@ function renderLeaderboard(entries) {
             <td class="dot"><span style="background:${colour}"></span></td>
             <td></td>
             <td></td>
-            <td class="name">${e.surname || '<em style="color:#888;font-style:normal">N/A</em>'}</td>
+            <td class="name"><span style="display:inline-block;padding:1px 5px;margin-right:6px;border-radius:3px;font-size:10px;font-weight:700;background:${colour};color:#fff;letter-spacing:0.5px">${e._show}</span>${e.surname || '<em style="color:#888;font-style:normal">N/A</em>'}</td>
             <td class="date">${e.date || ''}</td>
             <td class="total" style="color:${colour}">${fmt(totalOf(e))}</td>
         `;
