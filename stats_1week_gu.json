@@ -5,7 +5,7 @@
   "window_end": "2026-07-20",
   "window_start_mon": "2026-07-17",
   "window_end_sun": "2026-07-20",
-  "generated_at": "2026-07-20T09:49:32.893355Z",
+  "generated_at": "2026-07-20T10:21:10.883815Z",
   "n": 1,
   "entries": [
     {
@@ -14,13 +14,23 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "rumble_views": "0",
-      "x_views": "447.0K",
+      "x_views": "388.2K",
       "ig_likes": "0",
       "show": "GU",
       "canonical_guest_full_name": "Lawrence Wilkerson",
       "canonical_surname_upper": "WILKERSON",
       "canonical_episode_id": "40f99fc9eb05",
-      "yt_views": "4.0K"
+      "yt_views": "4.0K",
+      "canonical_video_id": "WlIY7-ovBd8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "pub_iso": "2026-07-18T11:32:42Z",
+      "canonical_episode_id_v2": "4a4b17f0a7877200",
+      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "source_platform_ids": {
+        "youtube": [
+          "WlIY7-ovBd8"
+        ]
+      }
     }
   ],
   "source_feed": "videos.json",

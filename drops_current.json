@@ -1,58 +1,38 @@
 {
-  "updated": "2026-07-20T09:49:32Z",
+  "updated": "2026-07-20T10:21:10Z",
   "drops": [
     {
-      "ts": "2026-07-20T09:49:32Z",
+      "ts": "2026-07-20T10:21:10Z",
       "show": "GU",
       "guest": "Wilkerson",
       "platform": "X",
       "peak": 680400,
       "peak_at": "2026-07-20T06:38:03Z",
-      "current": 447000,
-      "drop_pct": 34.3
+      "current": 388200,
+      "drop_pct": 42.9
     },
     {
-      "ts": "2026-07-20T09:49:32Z",
+      "ts": "2026-07-20T10:21:10Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "X",
       "peak": 585500,
       "peak_at": "2026-07-20T05:14:10Z",
-      "current": 331800,
-      "drop_pct": 43.3
+      "current": 441800,
+      "drop_pct": 24.5
     },
     {
-      "ts": "2026-07-20T09:49:32Z",
-      "show": "GU",
-      "guest": "Roberts",
-      "platform": "X",
-      "peak": 494500,
-      "peak_at": "2026-07-19T10:57:26Z",
-      "current": 361000,
-      "drop_pct": 27.0
-    },
-    {
-      "ts": "2026-07-20T09:49:32Z",
+      "ts": "2026-07-20T10:21:10Z",
       "show": "GU",
       "guest": "Postol",
       "platform": "X",
       "peak": 473400,
       "peak_at": "2026-07-20T04:22:50Z",
-      "current": 260399,
-      "drop_pct": 45.0
+      "current": 33800,
+      "drop_pct": 92.9
     },
     {
-      "ts": "2026-07-20T09:49:32Z",
-      "show": "NO",
-      "guest": "Sood",
-      "platform": "X",
-      "peak": 835100,
-      "peak_at": "2026-07-19T10:57:26Z",
-      "current": 253100,
-      "drop_pct": 69.7
-    },
-    {
-      "ts": "2026-07-20T09:49:32Z",
+      "ts": "2026-07-20T10:21:10Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "X",
@@ -60,26 +40,6 @@
       "peak_at": "2026-07-19T10:57:26Z",
       "current": 299400,
       "drop_pct": 40.9
-    },
-    {
-      "ts": "2026-07-20T09:49:32Z",
-      "show": "NO",
-      "guest": "Perkins",
-      "platform": "X",
-      "peak": 506700,
-      "peak_at": "2026-07-19T10:57:26Z",
-      "current": 299400,
-      "drop_pct": 40.9
-    },
-    {
-      "ts": "2026-07-20T09:49:32Z",
-      "show": "NO",
-      "guest": "Perkins",
-      "platform": "X",
-      "peak": 506700,
-      "peak_at": "2026-07-19T10:57:26Z",
-      "current": 286700,
-      "drop_pct": 43.4
     }
   ]
 }

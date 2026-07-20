@@ -5,24 +5,9 @@
   "window_end": "2026-07-20",
   "window_start_mon": "2026-07-17",
   "window_end_sun": "2026-07-20",
-  "generated_at": "2026-07-20T09:49:32.893640Z",
-  "n": 1,
-  "entries": [
-    {
-      "guest": "Richard Sakwa",
-      "surname": "Sakwa",
-      "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.",
-      "date": "17 Jul",
-      "rumble_views": "0",
-      "x_views": "32.2K",
-      "yt_views": "865",
-      "ig_likes": "0",
-      "show": "NO",
-      "canonical_guest_full_name": "Richard Sakwa",
-      "canonical_surname_upper": "SAKWA",
-      "canonical_episode_id": "37c79c36b714"
-    }
-  ],
+  "generated_at": "2026-07-20T10:21:10.884317Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],

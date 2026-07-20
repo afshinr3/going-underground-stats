@@ -1,6 +1,6 @@
 {
-  "iso": "2026-07-20T09:49:32Z",
-  "last_updated": "2026-07-20T09:49:32Z",
+  "iso": "2026-07-20T10:21:10Z",
+  "last_updated": "2026-07-20T10:21:10Z",
   "episodes": [
     {
       "guest": "Lawrence Wilkerson",
@@ -8,27 +8,21 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
       "canonical_episode_id": "40f99fc9eb05",
+      "canonical_video_id": "WlIY7-ovBd8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "canonical_episode_id_v2": "4a4b17f0a7877200",
+      "pub_iso": "2026-07-18T11:32:42Z",
+      "source_platform_ids": {
+        "youtube": [
+          "WlIY7-ovBd8"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "4.0K",
-        "x_views": "447.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Avi Shlaim",
-      "surname": "SHLAIM",
-      "title": "Prof. Avi Shlaim: Trump-Netanyahu War on Iran is the 21st Century's MOST UNJUSTIFIED & FOOLISH WAR",
-      "date": "18 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "3954f2c42a12",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "4.9K",
-        "x_views": "319.8K",
+        "x_views": "388.2K",
         "ig_likes": "0"
       }
     },
@@ -38,8 +32,17 @@
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
       "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": "grMo8SmAQpU",
+      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+      "canonical_episode_id_v2": "af16e80c488f7ef0",
+      "pub_iso": "2026-07-13T16:25:30Z",
+      "source_platform_ids": {
+        "youtube": [
+          "grMo8SmAQpU"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "968",
@@ -53,12 +56,21 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
       "canonical_episode_id": "6ca7f65c75da",
+      "canonical_video_id": "SmH-aEMZyqg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "canonical_episode_id_v2": "e5c307d186579b5a",
+      "pub_iso": "2026-07-06T10:38:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "SmH-aEMZyqg"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "1.4K",
-        "x_views": "374.9K",
+        "yt_views": "4.9K",
+        "x_views": "224.7K",
         "ig_likes": "0"
       }
     },
@@ -68,27 +80,21 @@
       "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
       "date": "29 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
       "canonical_episode_id": "437b917e580d",
+      "canonical_video_id": "-c_7WNHYTEE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
+      "canonical_episode_id_v2": "c887d6373249acbe",
+      "pub_iso": "2026-06-29T11:38:52Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-c_7WNHYTEE"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "219.1K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Zhang Weiwei",
-      "surname": "WEIWEI",
-      "title": "Trump-Xi Summit: ‘China🇨🇳 is WINNING the Competition Against the USA🇺🇸’—Prof. Zhang Weiwei",
-      "date": "16 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "c4c132417e12",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "2.3K",
-        "x_views": "382.0K",
+        "x_views": "193.5K",
         "ig_likes": "0"
       }
     },
@@ -98,12 +104,21 @@
       "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
       "date": "20 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
       "canonical_episode_id": "2d6e9913fb1c",
+      "canonical_video_id": "55zQJ3W6M7w",
+      "canonical_video_url": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+      "canonical_episode_id_v2": "97d493ba3a1d75a6",
+      "pub_iso": "2026-06-20T09:24:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "55zQJ3W6M7w"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "6.9K",
-        "x_views": "264.9K",
+        "x_views": "215.1K",
         "ig_likes": "0"
       }
     },
@@ -113,42 +128,21 @@
       "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
       "date": "15 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=0ChukxIewy4",
       "canonical_episode_id": "cbe40066aa0d",
+      "canonical_video_id": "0ChukxIewy4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=0ChukxIewy4",
+      "canonical_episode_id_v2": "0050b454fc129cad",
+      "pub_iso": "2026-06-15T09:30:08Z",
+      "source_platform_ids": {
+        "youtube": [
+          "0ChukxIewy4"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.9K",
-        "x_views": "331.8K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Paul Craig Roberts",
-      "surname": "ROBERTS",
-      "title": "US & Israel HUMILIATED by Iran, Greater Israel Plan MUST be Confronted—Prof. Paul Craig Roberts",
-      "date": "11 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "af8fbfb4e7d4",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "361.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Wes Bryant",
-      "surname": "BRYANT",
-      "title": "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS Trump Admin’s RECKLESS Bombing of Civilians",
-      "date": "2 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "1179eedd7374",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "202.6K",
+        "x_views": "441.8K",
         "ig_likes": "0"
       }
     },
@@ -158,12 +152,21 @@
       "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
       "date": "13 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=duEMg_ThxzU",
       "canonical_episode_id": "8014ccd61339",
+      "canonical_video_id": "duEMg_ThxzU",
+      "canonical_video_url": "https://www.youtube.com/watch?v=duEMg_ThxzU",
+      "canonical_episode_id_v2": "ee155eb4a4662cd0",
+      "pub_iso": "2026-06-13T15:21:51Z",
+      "source_platform_ids": {
+        "youtube": [
+          "duEMg_ThxzU"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "7.2K",
-        "x_views": "260.4K",
+        "x_views": "33.8K",
         "ig_likes": "0"
       }
     },
@@ -173,8 +176,17 @@
       "title": "Chen Weihua: The US is the DESTROYER of the Global Order, the US Underestimated CHINA’S POWER",
       "date": "8 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=-UeuS3MjgPE",
       "canonical_episode_id": "11119819091b",
+      "canonical_video_id": "-UeuS3MjgPE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-UeuS3MjgPE",
+      "canonical_episode_id_v2": "71b44b5856a3db6c",
+      "pub_iso": "2026-06-08T14:49:29Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-UeuS3MjgPE"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "645",
@@ -183,32 +195,74 @@
       }
     },
     {
-      "guest": "Steve Hanke",
-      "surname": "HANKE",
-      "title": "IRAN’S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
-      "date": "6 Jun",
+      "guest": "Zhang Weiwei",
+      "surname": "WEIWEI",
+      "title": "Trump-Xi Summit: ‘China🇨🇳 is WINNING the Competition Against the USA🇺🇸’—Prof. Zhang Weiwei",
+      "date": "16 May",
       "show": "GU",
-      "link": "",
-      "canonical_episode_id": "c8474b95f509",
+      "link": "https://www.youtube.com/watch?v=l0CLKTqHQdk",
+      "canonical_episode_id": "c4c132417e12",
+      "canonical_video_id": "l0CLKTqHQdk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=l0CLKTqHQdk",
+      "canonical_episode_id_v2": "dc22a1550ac2f27b",
+      "pub_iso": "2026-05-16T15:37:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "l0CLKTqHQdk"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "2.4K",
-        "x_views": "222.0K",
+        "yt_views": "2.3K",
+        "x_views": "382.0K",
         "ig_likes": "0"
       }
     },
     {
-      "guest": "Kanwal Sibal",
-      "surname": "SIBAL",
-      "title": "NEW EPISODE OF NEW ORDER \n\nIndia DOESN'T Want to be Pulled into Any US War on China Over Taiwan —Amb. Kanwal Sibal\n\nHow will India navigate attempts to drag it into the US’ coming war on China?\n\nWhat",
-      "date": "21 Jun",
+      "guest": "John Perkins",
+      "surname": "PERKINS",
+      "title": "John Perkins: Trump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
+      "date": "12 Jul",
       "show": "NO",
-      "link": "",
-      "canonical_episode_id": "ff78fb20fdb5",
+      "link": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
+      "canonical_episode_id": "a9e5ed31ad67",
+      "canonical_video_id": "O3jo1u4MhPY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
+      "canonical_episode_id_v2": "c66ee5b72fdbf0f3",
+      "pub_iso": "2026-07-12T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "O3jo1u4MhPY"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "0",
-        "x_views": "245.7K",
+        "yt_views": "631",
+        "x_views": "299.4K",
+        "ig_likes": "0"
+      }
+    },
+    {
+      "guest": "Vikram Sood",
+      "surname": "SOOD",
+      "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
+      "date": "5 Jul",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
+      "canonical_episode_id": "20eb6739a4af",
+      "canonical_video_id": "U_7Y7bkSXfk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
+      "canonical_episode_id_v2": "7a16c7c3ba5b9b1a",
+      "pub_iso": "2026-07-05T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "U_7Y7bkSXfk"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "1.1K",
+        "x_views": "752.2K",
         "ig_likes": "0"
       }
     },
@@ -220,115 +274,35 @@
       "show": "NO",
       "link": "",
       "canonical_episode_id": "e35a16f2cfd4",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "0",
         "yt_views": "0",
-        "x_views": "322.5K",
+        "x_views": "291.6K",
         "ig_likes": "0"
       }
     },
     {
-      "guest": "Vikram Sood",
-      "surname": "SOOD",
-      "title": "NEW EPISODE OF NEW ORDER \n\nRussia, China & India Acting Together Would be a FORMIDABLE Bloc—Ex-Indian Foreign Intelligence Chief Vikram Sood\n\nWhy is the US targeting India for buying Russian oil but n",
-      "date": "5 Jul",
+      "guest": "Kanwal Sibal",
+      "surname": "SIBAL",
+      "title": "NEW EPISODE OF NEW ORDER \n\nIndia DOESN'T Want to be Pulled into Any US War on China Over Taiwan —Amb. Kanwal Sibal\n\nHow will India navigate attempts to drag it into the US’ coming war on China?\n\nWhat",
+      "date": "21 Jun",
       "show": "NO",
       "link": "",
-      "canonical_episode_id": "b9f4aae080ab",
+      "canonical_episode_id": "ff78fb20fdb5",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "1.1K",
-        "x_views": "253.1K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "John Perkins",
-      "surname": "PERKINS",
-      "title": "NEW EPISODE OF NEW ORDER \n\nTrump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines—John Perkins\n\nHow has Trump turned the economic hitman strategy into the economic hitm",
-      "date": "12 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "8d894b29d4c7",
-      "metrics": {
-        "rumble_views": "840",
-        "yt_views": "631",
-        "x_views": "299.4K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Richard Sakwa",
-      "surname": "SAKWA",
-      "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.",
-      "date": "17 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "37c79c36b714",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "865",
-        "x_views": "32.2K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "John Perkins",
-      "surname": "PERKINS",
-      "title": "Former Economic Hitman John Perkins: India escaped the IMF DEBT TRAP, a very WISE decision #india",
-      "date": "15 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "cc3ef3e77f9b",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "631",
-        "x_views": "299.4K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "John Perkins",
-      "surname": "PERKINS",
-      "title": "Former Economic Hitman John Perkins: Don't fall for the US’🇺🇸 DEBT, DIVIDE & CONQUER Strategy",
-      "date": "14 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "f603b43873fb",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "631",
-        "x_views": "286.7K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Jim Rickards",
-      "surname": "RICKARDS",
-      "title": "Former Pentagon Advisor Jim Rickards: MASS STARVATION & INDUSTRIAL COLLAPSE Are Next",
-      "date": "14 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "708b73436403",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "38",
-        "x_views": "12.2K",
-        "ig_likes": "502"
-      }
-    },
-    {
-      "guest": "Andrey Kortunov",
-      "surname": "KORTUNOV",
-      "title": "Dr Andrey Kortunov: There is NO WAY for the US to get Russia OFF the global oil market. #indiarussia",
-      "date": "2 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "1d7db7638999",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "649",
-        "x_views": "8.8K",
+        "yt_views": "0",
+        "x_views": "245.7K",
         "ig_likes": "0"
       }
     }
@@ -340,27 +314,21 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
       "canonical_episode_id": "40f99fc9eb05",
+      "canonical_video_id": "WlIY7-ovBd8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "canonical_episode_id_v2": "4a4b17f0a7877200",
+      "pub_iso": "2026-07-18T11:32:42Z",
+      "source_platform_ids": {
+        "youtube": [
+          "WlIY7-ovBd8"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "4.0K",
-        "x_views": "447.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Avi Shlaim",
-      "surname": "SHLAIM",
-      "title": "Prof. Avi Shlaim: Trump-Netanyahu War on Iran is the 21st Century's MOST UNJUSTIFIED & FOOLISH WAR",
-      "date": "18 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "3954f2c42a12",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "4.9K",
-        "x_views": "319.8K",
+        "x_views": "388.2K",
         "ig_likes": "0"
       }
     },
@@ -370,8 +338,17 @@
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
       "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": "grMo8SmAQpU",
+      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+      "canonical_episode_id_v2": "af16e80c488f7ef0",
+      "pub_iso": "2026-07-13T16:25:30Z",
+      "source_platform_ids": {
+        "youtube": [
+          "grMo8SmAQpU"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "968",
@@ -385,12 +362,21 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
       "canonical_episode_id": "6ca7f65c75da",
+      "canonical_video_id": "SmH-aEMZyqg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "canonical_episode_id_v2": "e5c307d186579b5a",
+      "pub_iso": "2026-07-06T10:38:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "SmH-aEMZyqg"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "1.4K",
-        "x_views": "374.9K",
+        "yt_views": "4.9K",
+        "x_views": "224.7K",
         "ig_likes": "0"
       }
     },
@@ -400,29 +386,95 @@
       "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
       "date": "29 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
       "canonical_episode_id": "437b917e580d",
+      "canonical_video_id": "-c_7WNHYTEE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
+      "canonical_episode_id_v2": "c887d6373249acbe",
+      "pub_iso": "2026-06-29T11:38:52Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-c_7WNHYTEE"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "219.1K",
+        "x_views": "193.5K",
+        "ig_likes": "0"
+      }
+    },
+    {
+      "guest": "Ehud Olmert",
+      "surname": "OLMERT",
+      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
+      "date": "20 Jun",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+      "canonical_episode_id": "2d6e9913fb1c",
+      "canonical_video_id": "55zQJ3W6M7w",
+      "canonical_video_url": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+      "canonical_episode_id_v2": "97d493ba3a1d75a6",
+      "pub_iso": "2026-06-20T09:24:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "55zQJ3W6M7w"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "6.9K",
+        "x_views": "215.1K",
         "ig_likes": "0"
       }
     }
   ],
   "no": [
     {
-      "guest": "Kanwal Sibal",
-      "surname": "SIBAL",
-      "title": "NEW EPISODE OF NEW ORDER \n\nIndia DOESN'T Want to be Pulled into Any US War on China Over Taiwan —Amb. Kanwal Sibal\n\nHow will India navigate attempts to drag it into the US’ coming war on China?\n\nWhat",
-      "date": "21 Jun",
+      "guest": "John Perkins",
+      "surname": "PERKINS",
+      "title": "John Perkins: Trump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
+      "date": "12 Jul",
       "show": "NO",
-      "link": "",
-      "canonical_episode_id": "ff78fb20fdb5",
+      "link": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
+      "canonical_episode_id": "a9e5ed31ad67",
+      "canonical_video_id": "O3jo1u4MhPY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
+      "canonical_episode_id_v2": "c66ee5b72fdbf0f3",
+      "pub_iso": "2026-07-12T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "O3jo1u4MhPY"
+        ]
+      },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "0",
-        "x_views": "245.7K",
+        "yt_views": "631",
+        "x_views": "299.4K",
+        "ig_likes": "0"
+      }
+    },
+    {
+      "guest": "Vikram Sood",
+      "surname": "SOOD",
+      "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
+      "date": "5 Jul",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
+      "canonical_episode_id": "20eb6739a4af",
+      "canonical_video_id": "U_7Y7bkSXfk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
+      "canonical_episode_id_v2": "7a16c7c3ba5b9b1a",
+      "pub_iso": "2026-07-05T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "U_7Y7bkSXfk"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "1.1K",
+        "x_views": "752.2K",
         "ig_likes": "0"
       }
     },
@@ -434,55 +486,35 @@
       "show": "NO",
       "link": "",
       "canonical_episode_id": "e35a16f2cfd4",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "0",
         "yt_views": "0",
-        "x_views": "322.5K",
+        "x_views": "291.6K",
         "ig_likes": "0"
       }
     },
     {
-      "guest": "Vikram Sood",
-      "surname": "SOOD",
-      "title": "NEW EPISODE OF NEW ORDER \n\nRussia, China & India Acting Together Would be a FORMIDABLE Bloc—Ex-Indian Foreign Intelligence Chief Vikram Sood\n\nWhy is the US targeting India for buying Russian oil but n",
-      "date": "5 Jul",
+      "guest": "Kanwal Sibal",
+      "surname": "SIBAL",
+      "title": "NEW EPISODE OF NEW ORDER \n\nIndia DOESN'T Want to be Pulled into Any US War on China Over Taiwan —Amb. Kanwal Sibal\n\nHow will India navigate attempts to drag it into the US’ coming war on China?\n\nWhat",
+      "date": "21 Jun",
       "show": "NO",
       "link": "",
-      "canonical_episode_id": "b9f4aae080ab",
+      "canonical_episode_id": "ff78fb20fdb5",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "1.1K",
-        "x_views": "253.1K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "John Perkins",
-      "surname": "PERKINS",
-      "title": "NEW EPISODE OF NEW ORDER \n\nTrump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines—John Perkins\n\nHow has Trump turned the economic hitman strategy into the economic hitm",
-      "date": "12 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "8d894b29d4c7",
-      "metrics": {
-        "rumble_views": "840",
-        "yt_views": "631",
-        "x_views": "299.4K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Richard Sakwa",
-      "surname": "SAKWA",
-      "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.",
-      "date": "17 Jul",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "37c79c36b714",
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "865",
-        "x_views": "32.2K",
+        "yt_views": "0",
+        "x_views": "245.7K",
         "ig_likes": "0"
       }
     }
