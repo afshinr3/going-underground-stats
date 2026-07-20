@@ -1,16 +1,8 @@
 name: Update GU Stats
 
 on:
-  # WORKFLOW_TRIGGER_ON_PUSH_V1_2026_07_20 — push trigger added so fixes deploy immediately (cron */15 has multi-hour delays)
   schedule:
     - cron: '*/15 * * * *'   # every 15 minutes
-  push:
-    branches: [main]
-    paths:
-      - 'fetch_and_push.py'
-      - 'gu_parser.py'
-      - '.github/workflows/update.yml'
-      - 'regression_tests_gu_titles.json'
   workflow_dispatch: {}       # allow manual run
 
 permissions:
@@ -50,20 +42,20 @@ jobs:
         run: |
           git config user.name "GU Stats Bot"
           git config user.email "bot@github.com"
-          git add videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json docs/audit_queue_unclassified_v1.jsonl
+          git add videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json
           git diff --cached --quiet && exit 0
           # v2: robust push - save files, fetch+reset to latest remote, restore, recommit
-          for f in videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
+          for f in videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
             [ -f "$f" ] && cp "$f" "/tmp/gu_${f//./_}"
           done
           for attempt in 1 2 3; do
             git rebase --abort 2>/dev/null || true
             git fetch origin main
             git reset --hard origin/main
-            for f in videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
+            for f in videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
               [ -f "/tmp/gu_${f//./_}" ] && cp "/tmp/gu_${f//./_}" "$f"
             done
-            git add videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json docs/audit_queue_unclassified_v1.jsonl
+            git add videos.json videos_neworder.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json
             git diff --cached --quiet && exit 0
             git commit -m "Update stats $(date -u +%H:%M)"
             git push && exit 0

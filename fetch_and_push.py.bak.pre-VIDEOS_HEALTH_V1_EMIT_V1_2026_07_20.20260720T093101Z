@@ -1565,57 +1565,6 @@ def _generate_weekly_stats():
         except Exception as _e:
             print(f"[WEEKLY_STATS_ERR] {_out}: {_e}")
 
-
-
-def _emit_videos_health_v1():
-    """VIDEOS_HEALTH_V1_EMIT_V1_2026_07_20 — first-class artefact for dashboard
-    + downstream LaMetric consumers. Schema is BOTH the dashboard-consumed shape
-    ({iso, episodes:[...]} with metrics{}) AND additive {gu:[top5], no:[top5],
-    last_updated} preferred by the operator's prompt. Both live in the same JSON
-    (additive keys). Never raises."""
-    import datetime as _dt
-    try:
-        _iso = _dt.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-        _out = {'iso': _iso, 'last_updated': _iso, 'episodes': [], 'gu': [], 'no': []}
-        for _fname, _show_code, _bucket in [('videos.json', 'GU', 'gu'),
-                                             ('videos_neworder.json', 'NO', 'no')]:
-            _fp = os.path.join(ROOT, _fname)
-            if not os.path.exists(_fp):
-                continue
-            try:
-                with open(_fp) as _f:
-                    _rows = json.load(_f) or []
-            except Exception:
-                _rows = []
-            _clean = []
-            for _r in _rows:
-                if not isinstance(_r, dict):
-                    continue
-                _guest = (_r.get('canonical_guest_full_name') or _r.get('guest') or '').strip()
-                _clean.append({
-                    'guest': _guest,
-                    'surname': (_r.get('canonical_surname_upper') or _r.get('surname') or '').strip(),
-                    'title': (_r.get('title') or '').strip(),
-                    'date': (_r.get('date') or '').strip(),
-                    'show': _show_code,
-                    'link': (_r.get('link') or '').strip(),
-                    'canonical_episode_id': _r.get('canonical_episode_id'),
-                    'metrics': {
-                        'rumble_views': _r.get('rumble_views'),
-                        'yt_views':     _r.get('yt_views'),
-                        'x_views':      _r.get('x_views'),
-                        'ig_likes':     _r.get('ig_likes'),
-                    },
-                })
-            _out['episodes'].extend(_clean)
-            _out[_bucket] = _clean[:5]
-        with open(os.path.join(ROOT, 'videos_health_v1.json'), 'w') as _f:
-            json.dump(_out, _f, indent=2, ensure_ascii=False)
-        print(f"[VIDEOS_HEALTH_V1] emitted iso={_iso} gu_top5={len(_out['gu'])} no_top5={len(_out['no'])} total_episodes={len(_out['episodes'])}")
-    except Exception as _e:
-        print(f"[VIDEOS_HEALTH_V1_ERR] {_e}")
-
-
 async def main_fetch():
     # METRIC_ATTRIB_V1_2026_07_20 — build the union of known surnames across
     # both shows before scraping IG, so attribution is anchored to real guests.
@@ -1655,13 +1604,6 @@ async def main_fetch():
         _generate_weekly_stats()
     except Exception as _e_ws:
         print(f"[WEEKLY_STATS_ERR] {_e_ws}")
-
-
-    # VIDEOS_HEALTH_V1_EMIT_V1_2026_07_20 — first-class artefact for dashboard + LaMetric
-    try:
-        _emit_videos_health_v1()
-    except Exception as _e_vh:
-        print(f"[VIDEOS_HEALTH_V1_CALL_ERR] {_e_vh}")
 
 
 def push_to_tidbyt():
