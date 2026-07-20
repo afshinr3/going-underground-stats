@@ -61,19 +61,6 @@ CANON_MAP = {
     "menashe":     "Ari Ben-Menashe",
     "bryant":      "Wes Bryant",
     "carden":      "James Carden",
-    # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — surnames appearing in current
-    # feeds without a CANON_MAP entry; adds full canonical name so the scrub
-    # can restore "Former Economic Hitman John Perkins" -> "John Perkins".
-    "perkins":     "John Perkins",
-    "rickards":    "Jim Rickards",
-    "sakwa":       "Richard Sakwa",
-    "macgregor":   "Douglas Macgregor",
-    "fritz":       "Dennis Fritz",
-    "freeman":     "Chas Freeman",
-    "flynn":       "Michael Flynn",
-    "clark":       "Wesley Clark",
-    "vallely":     "Paul Vallely",
-    "astore":      "William J. Astore",
 }
 _CANON_BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ",
                        "REVEALS ", "EXPOSES ", "WARNS ", "'", "\u2018", "\u2019")
@@ -254,49 +241,16 @@ def format_views(v):
     return str(n)
 
 
-def fetch_youtube_data(channel_id, known_surnames=None):
-    """Fetch view counts AND publish dates per surname from YouTube RSS.
-
-    METRIC_ATTRIB_V1_2026_07_20 — hardened attribution logic.
-    Previously this function walked EVERY capitalised token in EVERY RSS
-    title and did views_map.setdefault(word.lower(), views). Consequences:
-      1. First entry in feed (often a Short) established the view count
-         for that surname; later main-episode data never overrode (setdefault).
-      2. Any capitalised word longer than 3 chars (including topic words like
-         "Ukraine", "Russia", "Pentagon") became a phantom "surname key".
-      3. Shorts and Clips containing the guest's surname inherited THAT short's
-         view count and attributed it to the main episode — cross-post
-         inflation (July 2026 Perkins/Rickards incident).
-
-    New rules (canonical-content-classification skill compliant):
-      * Views attach to a surname ONLY when the title contains the surname
-        as an isolated whole-word token.
-      * When multiple entries mention the same surname, we sum the view counts
-        for classified EPISODE entries and, SEPARATELY, sum views for
-        SHORT/CLIP entries. `views_map[surname]` returns the EPISODE sum when
-        available, else the SHORT/CLIP sum (metrics-only, per skill rule that
-        SHORT/CLIP contribute METRICS but never chronology).
-      * `date_map[surname]` is set ONLY from EPISODE-class entries.
-      * If `known_surnames` is supplied, we restrict attribution to those.
-        Otherwise we fall back to the old capitalised-word heuristic BUT still
-        require whole-word match and skip topic stopwords.
-    """
-    _TOPIC_STOP = {
-        'iran', 'israel', 'going', 'underground', 'order', 'ukraine', 'russia',
-        'china', 'india', 'trump', 'biden', 'putin', 'netanyahu', 'gaza',
-        'pentagon', 'nato', 'brics', 'centcom', 'hormuz', 'palestine', 'lebanon',
-        'saudi', 'yemen', 'iraq', 'syria', 'europe', 'america', 'washington',
-        'moscow', 'beijing', 'tehran', 'jerusalem', 'kyiv', 'nuclear', 'war',
-        'peace', 'trade', 'economy', 'markets', 'sanctions', 'tariffs',
-        'special', 'episode', 'clip', 'short', 'part', 'live', 'watch',
-    }
-    known_surnames = set(s.lower() for s in (known_surnames or []) if s)
+def fetch_youtube_data(channel_id):
+    """Fetch view counts AND publish dates per surname from YouTube RSS."""
     try:
         req = urllib.request.Request(
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
             headers={"User-Agent": "Mozilla/5.0"})
         rss = urllib.request.urlopen(req, timeout=15).read().decode()
         # YT_CONTENT_TYPE_V3_2026_07_17 — richer classifier; capture description too.
+        # Views contribute from every content type; DATE only from EPISODE (any
+        # confidence level). Both SHORT and CLIP are excluded from date override.
         entries = re.findall(
             r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:description[^>]*>(.*?)</media:description>.*?<media:statistics views="(\d+)"',
             rss, re.DOTALL)
@@ -306,84 +260,36 @@ def fetch_youtube_data(channel_id, known_surnames=None):
                 r'<entry>.*?<title>(.*?)</title>.*?<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>.*?<media:statistics views="(\d+)"',
                 rss, re.DOTALL)
             entries = [(t, l, p, "", v) for (t, l, p, v) in _old_entries]
-        episode_views = {}      # surname -> summed views across EPISODE entries
-        short_clip_views = {}   # surname -> summed views across SHORT / CLIP entries
-        date_map = {}           # surname -> ISO date (EPISODE only)
+        views_map = {}     # surname -> view count string
+        date_map = {}      # surname -> ISO date string (YYYY-MM-DD)
         for title, link_href, pub, description, views in entries:
             _content_type, _confidence = _yt_classify_content(link_href, title, description)
             _is_episode_class = _content_type in ("EPISODE", "EPISODE_UNCLASSIFIED")
-            _is_short_or_clip = _content_type in ("SHORT", "CLIP")
+            # Views contribute regardless of content type
             title = title.replace('&amp;', '&').replace('&#39;', "'")
             iso_date = pub[:10]
-            try:
-                _v = int(views)
-            except Exception:
-                _v = 0
-            # METRIC_ATTRIB_V1_2026_07_20 — extract whole-word tokens ONLY.
-            _tokens = set(w.lower() for w in re.findall(r'\b[A-Z][a-zA-Z\-]{3,}\b', title))
-            # Parenthesised aliases (e.g. "(Prof. Steve Keen)") — split words.
-            for pm in re.finditer(r'\(([^)]+)\)', title):
-                for pw in pm.group(1).split():
-                    pw = pw.strip('.,').lower()
-                    if len(pw) > 3:
-                        _tokens.add(pw)
-            # Attribute to KNOWN surnames only when known list is supplied.
-            _candidates = _tokens & known_surnames if known_surnames else {
-                w for w in _tokens if w not in _TOPIC_STOP
-            }
-            for sn in _candidates:
-                if _is_episode_class:
-                    episode_views[sn] = episode_views.get(sn, 0) + _v
-                    date_map.setdefault(sn, iso_date)
-                elif _is_short_or_clip:
-                    short_clip_views[sn] = short_clip_views.get(sn, 0) + _v
-                else:
-                    # Uncategorised — treat like episode for view attribution
-                    # but do NOT set date (avoids date-drift from ambiguous items).
-                    episode_views[sn] = episode_views.get(sn, 0) + _v
-        # METRIC_ATTRIB_V1_2026_07_20 — final views_map prefers EPISODE totals;
-        # falls back to SHORT/CLIP totals ONLY when the surname has no EPISODE
-        # entry. This prevents the July-2026 Perkins/Rickards incident where
-        # a Short containing "Perkins" set yt_views on the main NO episode.
-        views_map = {}
-        for sn, v in episode_views.items():
-            views_map[sn] = format_views(v)
-        for sn, v in short_clip_views.items():
-            if sn not in views_map:
-                views_map[sn] = format_views(v)
+            for w in re.findall(r'\b[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b', title):
+                if len(w) > 3 and w.lower() not in ('iran', 'israel', 'going', 'underground', 'order'):
+                    views_map.setdefault(w.lower(), format_views(views))
+                    # YT_CONTENT_TYPE_V3_2026_07_17 — date only from EPISODE-class content
+                    if _is_episode_class:
+                        date_map.setdefault(w.lower(), iso_date)
+            m = re.search(r'\(([^)]+)\)', title)
+            if m:
+                for w in m.group(1).split():
+                    w = w.strip('.,')
+                    if len(w) > 3:
+                        views_map.setdefault(w.lower(), format_views(views))
+                        if _is_episode_class:
+                            date_map.setdefault(w.lower(), iso_date)
         return views_map, date_map
     except Exception as e:
         print(f"YouTube error for {channel_id}: {e}", file=sys.stderr)
         return {}, {}
 
 
-def fetch_instagram_clips(known_surnames=None):
-    """Fetch IG play counts from afshinrattansi profile (shared by both shows).
-
-    METRIC_ATTRIB_V1_2026_07_20 — attribution hardened.
-    Previously any capitalised 4+ char word in ANY caption was accumulated as
-    a phantom "surname key", inflating IG numbers on unrelated episodes
-    (July 2026 same 502 likes across Perkins short + Rickards short + R&AW
-    Chief cross-contamination).
-
-    New rules:
-      * If `known_surnames` supplied, only accumulate to surnames that appear
-        as a whole word in the caption AND are in the known list.
-      * Otherwise apply a topic-stopword blocklist (broad geopolitical nouns).
-      * A single IG post's play_count is attributed to AT MOST ONE surname
-        (the first known-list match by position in caption). This prevents
-        one clip's views inflating five different guest scores.
-    """
-    _TOPIC_STOP = {
-        'iran', 'israel', 'going', 'underground', 'order', 'ukraine', 'russia',
-        'china', 'india', 'trump', 'biden', 'putin', 'netanyahu', 'gaza',
-        'pentagon', 'nato', 'brics', 'centcom', 'hormuz', 'palestine', 'lebanon',
-        'saudi', 'yemen', 'iraq', 'syria', 'europe', 'america', 'washington',
-        'moscow', 'beijing', 'tehran', 'jerusalem', 'kyiv', 'nuclear', 'war',
-        'peace', 'trade', 'economy', 'markets', 'sanctions', 'tariffs',
-        'special', 'episode', 'clip', 'short', 'part', 'live', 'watch',
-    }
-    known_surnames = set(s.lower() for s in (known_surnames or []) if s)
+def fetch_instagram_clips():
+    """Fetch IG play counts from afshinrattansi profile (shared by both shows)."""
     if not IG_COOKIES:
         return {}
     try:
@@ -409,20 +315,8 @@ def fetch_instagram_clips(known_surnames=None):
             for item in data.get('items', []):
                 caption = (item.get('caption') or {}).get('text', '') or ''
                 play_count = item.get('play_count') or item.get('view_count') or item.get('like_count', 0)
-                # METRIC_ATTRIB_V1_2026_07_20 — pick a SINGLE surname per clip.
-                _picked = None
                 for word in re.findall(r'\b[A-Z][a-z]{3,}\b', caption):
-                    wl = word.lower()
-                    if known_surnames:
-                        if wl in known_surnames:
-                            _picked = wl
-                            break
-                    else:
-                        if wl not in _TOPIC_STOP:
-                            _picked = wl
-                            break
-                if _picked:
-                    clips[_picked] = clips.get(_picked, 0) + play_count
+                    clips[word.lower()] = clips.get(word.lower(), 0) + play_count
             if not data.get('more_available'):
                 break
             max_id = data.get('next_max_id', '')
@@ -463,20 +357,10 @@ def extract_guest(title):
         return ex_role_match.group(1).strip()
 
     # ===== Existing v4 honorific pattern + PATCH B: ' added to lookahead =====
-    # RANK_STRIP_V1_2026_07_20 — added US enlisted ranks + Ret. so "CMSGT. Dennis
-    # Fritz: ..." and "Ret. Col. Douglas Macgregor: ..." capture only the name.
     honorific_match = re.match(
         r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|'
-        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord|'
-        r'CMSGT|MSGT|SFC|SSG|SGM|CSM|SMA|CPL|PFC|PVT|SPC|'
-        r'MSgt|GySgt|SSgt|TSgt|SrA|A1C|'
-        r'PO1|PO2|PO3|CPO|SCPO|MCPO|ENS|LTJG|CDR|LCDR|RADM|VADM|'
-        r'CWO|CW2|CW3|CW4|CW5|WO1|WO2|WO3|WO4|WO5|'
-        r'Ret|Retired)\.?\s+'
-        # RANK_STRIP_V1_2026_07_20 — first token may itself be a nested rank
-        # like "Gen." / "Col." (Ret. Gen. Wesley Clark). Allow trailing dot
-        # inside the token, then _strip_role peels it.
-        r'([A-Z][a-z]+\.?(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
+        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord)\.?\s+'
+        r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
         r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|'
         r'Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|'
         r'could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b'
@@ -484,9 +368,7 @@ def extract_guest(title):
         title
     )
     if honorific_match:
-        # RANK_STRIP_V1_2026_07_20 — post-strip so double-honorifics
-        # like "Ret. Col." peel down to just the name.
-        return _strip_role(honorific_match.group(1).strip()) or honorific_match.group(1).strip()
+        return honorific_match.group(1).strip()
 
     # ===== Parenthesised guest (unchanged) =====
     paren = re.search(r'\(([^)]+)\)\s*$', title)
@@ -567,29 +449,14 @@ def extract_guest(title):
 
 
 def _strip_role(name):
-    # RANK_STRIP_V1_2026_07_20 — strip "Ret." / "Retired" then enlisted ranks first.
-    name = re.sub(r'^(?:Ret|Retired)\.?\s+', '', name, flags=re.I).strip()
-    name = re.sub(
-        r'^(?:CMSGT|CSM|SGM|SMA|MSGT|MSG|SFC|SSG|SGT|CPL|PFC|PVT|SPC|'
-        r'MSgt|GySgt|SSgt|TSgt|SrA|A1C|Amn|'
-        r'PO1|PO2|PO3|CPO|SCPO|MCPO|ENS|LTJG|CDR|LCDR|RADM|VADM|'
-        r'CW[0-9]|CWO|WO[0-9])\.?\s+',
-        '', name).strip()
-    # RANK_STRIP_V1_2026_07_20 — order matters: longer compound ranks first
-    # (Lt. Col., Lt. Gen., Maj. Gen., Brig. Gen.) so "Lt. Col." isn't shredded to "Col.".
-    name = re.sub(
-        r'^(?:Lt\.?\s*Col\.?|Lt\.?\s*Gen\.?|Maj\.?\s*Gen\.?|Brig\.?\s*Gen\.?|'
-        r'Vice\s+Adm\.?|Rear\s+Adm\.?)\s+',
-        '', name, flags=re.I
-    ).strip()
     name = re.sub(
         r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
         r'(?:Israeli\s+|US\s+|UK\s+|British\s+|American\s+)?'
         r'(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
         r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|Amb|MP|'
-        r'Director|Head|Chief|Senator|Congressman|General|Gen|Admiral|Adm|Secretary|'
-        r'Advisor|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Col|'
-        r'Captain|Capt|Major|Maj|Lt|Sgt|Dr|Prof)\.?\s+',
+        r'Director|Head|Chief|Senator|Congressman|General|Admiral|Secretary|'
+        r'Advisor|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Captain|'
+        r'Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\.?\s+',
         '', name, flags=re.I
     ).strip()
     return name
@@ -627,43 +494,15 @@ def _looks_valid_surname(s):
 # Prepends show-matching entries with is_upcoming=true to output list.
 # Fail-open: if file missing or malformed, output is unchanged.
 def _load_upcoming_for(show):
-    """UPCOMING_STALE_FILTER_V1_2026_07_20 — drop entries whose date is more
-    than STALE_DAYS in the past. Root cause of the 2026-07-20 dashboard bug
-    where a 4-Jul Kucinich special was still labelled "UPCOMING" on 20-Jul
-    because upcoming.json was never regenerated (gu_upcoming_auto_v1.py has
-    a hardcoded M2-Pro-only path and never runs on GitHub Actions runner).
-    """
-    STALE_DAYS = 3
     try:
         p = os.path.join(ROOT, "upcoming.json")
         if not os.path.exists(p): return []
         with open(p) as _f: raw = json.load(_f)
         if not isinstance(raw, list): return []
-        import datetime as _dt
-        now = _dt.datetime.utcnow()
         out = []
         for it in raw:
             if not isinstance(it, dict): continue
             if str(it.get("show","")).upper() != show.upper(): continue
-            # UPCOMING_STALE_FILTER_V1_2026_07_20 — parse "4 Jul" / "18 May"
-            # against current year; if parsed date is > STALE_DAYS in the
-            # past, treat as stale and skip.
-            _date_short = str(it.get("date") or "").strip()
-            if _date_short:
-                try:
-                    _d = _dt.datetime.strptime(_date_short, '%d %b').replace(year=now.year)
-                    # If far in the future (>60d), likely wrong year — subtract.
-                    if _d > now + _dt.timedelta(days=60):
-                        _d = _d.replace(year=now.year - 1)
-                    _age_days = (now - _d).days
-                    if _age_days > STALE_DAYS:
-                        print(f"  [UPCOMING_STALE] dropping {show} {_date_short!r} "
-                              f"({_age_days}d old, > {STALE_DAYS}d)")
-                        continue
-                except Exception:
-                    # Unparseable date — treat as stale to avoid pinning a permanent entry.
-                    print(f"  [UPCOMING_STALE] dropping {show} unparseable date {_date_short!r}")
-                    continue
             it = dict(it)
             it["is_upcoming"] = True
             out.append(it)
@@ -958,69 +797,16 @@ async def update_show(show, ig_clips):
     # Defensively clean them here so even if dirty data slips in from
     # any future writer it gets corrected on the next run.
     # ──────────────────────────────────────────────────────────────────
-    # LEGACY_ROLE_SURNAME_SCRUB_V1_2026_07_20 — surnames that are actually
-    # role words (Chief, Officer, Advisor, Minister, Hitman, Whistleblower,
-    # Ambassador, President, Commander, General, Admiral, Analyst) are
-    # ALWAYS wrong. Force re-derive from title via extract_guest + CANON_MAP;
-    # if still bad, mark for drop. Root cause: 2026-07-18 initial import
-    # carried "Former R&AW Chief" / "Former Economic Hitman John Perkins" /
-    # "Former Pentagon Advisor Jim Rickards" whose extract_guest returns None
-    # and normal `is_truncated` heuristic doesn't fire.
-    _ROLE_SURNAMES = {
-        'chief', 'officer', 'advisor', 'adviser', 'minister', 'hitman',
-        'whistleblower', 'ambassador', 'president', 'commander', 'general',
-        'admiral', 'analyst', 'director', 'secretary', 'senator', 'governor',
-        'mayor', 'attorney', 'spokesperson', 'spokesman', 'spokeswoman',
-        'strategist', 'economist', 'journalist', 'academic', 'professor',
-    }
-    # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — even when surname is a real
-    # last name (Perkins/Rickards), the guest field may carry a bad role
-    # prefix ("Former Economic Hitman John Perkins"). Rewrite via _strip_role
-    # + CANON_MAP so consumers see "John Perkins" not "Former Economic Hitman
-    # John Perkins". Also fix canonical_guest_full_name if it matches.
-    _BAD_GUEST_PREFIX_RE = re.compile(
-        r'^(?:Former|Ex|Fmr)\s+(?:[A-Z][A-Za-z\-]+\s+){0,3}',
-        re.IGNORECASE,
-    )
-    _to_drop_idx = []
     _normalised = 0
-    for _idx, v in enumerate(cache):
+    for v in cache:
         orig_surname = v.get('surname', '') or ''
         # GU_SURNAME_HARDENING_V1_2026_07_03 - broader suffix strip.
         clean_surname = _strip_r_date_suffix(orig_surname).strip()
         if clean_surname != orig_surname:
             v['surname'] = clean_surname
             _normalised += 1
-        # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — strip role prefix from
-        # guest / canonical_guest_full_name when the last word matches surname.
-        # Prefer CANON_MAP full name over lossy prefix strip so "Former
-        # Economic Hitman John Perkins" -> "John Perkins", not "Perkins".
-        _cur_guest = v.get('guest', '') or ''
-        _cur_canon = v.get('canonical_guest_full_name', '') or ''
-        _sn_now = (v.get('surname') or '').strip()
-        _canon_full = CANON_MAP.get(_sn_now.lower()) if _sn_now else None
-        for _field_name, _val in (('guest', _cur_guest), ('canonical_guest_full_name', _cur_canon)):
-            if not _val or not _sn_now:
-                continue
-            if _BAD_GUEST_PREFIX_RE.match(_val) and _val.split()[-1].lower() == _sn_now.lower():
-                # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — prefer canonical
-                # full name from CANON_MAP; fallback to stripped tail.
-                if _canon_full:
-                    _clean = _canon_full
-                else:
-                    # Try to keep first name + surname: strip the "Former "
-                    # + 1-2 role words but leave the last 2 capitalised tokens.
-                    _stripped = _BAD_GUEST_PREFIX_RE.sub('', _val).strip()
-                    _parts = _stripped.split()
-                    _clean = ' '.join(_parts[-2:]) if len(_parts) >= 2 else _stripped
-                if _clean and _clean != _val:
-                    v[_field_name] = _clean
-                    _normalised += 1
-                    print(f"  [GUEST_PREFIX_SCRUB] {_field_name}: {_val[:50]!r} -> {_clean!r}")
-        # LEGACY_ROLE_SURNAME_SCRUB_V1_2026_07_20 - detect role-word surnames.
-        _is_role_surname = (v.get('surname', '') or '').lower() in _ROLE_SURNAMES
         # GU_SURNAME_HARDENING_V1_2026_07_03 - flag junk-token surnames for re-derive.
-        _needs_rederive = not _looks_valid_surname(v.get('surname', '')) or _is_role_surname
+        _needs_rederive = not _looks_valid_surname(v.get('surname', ''))
         # If guest looks like a title-truncation artefact, re-derive from title
         guest = v.get('guest', '') or ''
         title = v.get('title', '') or ''
@@ -1033,38 +819,17 @@ async def update_show(show, ig_clips):
         if (is_truncated or _needs_rederive) and title:
             new_guest = extract_guest(title)
             new_surname = extract_surname(new_guest) if new_guest else None
-            # LEGACY_ROLE_SURNAME_SCRUB_V1_2026_07_20 — try CANON_MAP by title
-            # ONLY (do not pass current guest — it may itself be junk that the
-            # canonical helper would legitimise via its clean-looking-passthrough
-            # branch, e.g. "R&AW Chief"). Only accept a canonical match backed
-            # by CANON_MAP (positive canon full name).
-            if not (new_guest and new_surname):
-                _cfn, _cs_upper, _ = _canonical_from_title(title, "", "")
-                if _cfn and _cs_upper:
-                    new_guest = _cfn
-                    new_surname = _cfn.split()[-1]
             if new_guest and new_surname:
-                print(f"  [normalize] guest '{guest[:40]}...' -> '{new_guest}' (surname {new_surname})")
+                print(f"  [normalize] guest '{guest[:40]}…' -> '{new_guest}' (surname {new_surname})")
                 v['guest'] = new_guest
                 v['surname'] = new_surname
                 _normalised += 1
-            elif _is_role_surname:
-                # LEGACY_ROLE_SURNAME_SCRUB_V1_2026_07_20 — role-word survivor
-                # with no canonical match is legacy junk; drop it entirely.
-                # We log the drop so operator can audit.
-                print(f"  [ROLE_SURNAME_DROP] surname={orig_surname!r} guest={guest[:40]!r} "
-                      f"title={title[:60]!r}")
-                _to_drop_idx.append(_idx)
             elif _needs_rederive:
                 # GU_SURNAME_HARDENING_V1_2026_07_03 - safe fallback: blank the surname
                 # (Android falls back to guest/title) rather than shipping "Tru" / "DEF".
                 print(f"  [normalize] blanking junk surname; title={title[:50]}")
                 v['surname'] = ''
                 _normalised += 1
-    if _to_drop_idx:
-        cache = [v for _i, v in enumerate(cache) if _i not in set(_to_drop_idx)]
-        print(f"  [ROLE_SURNAME_DROP] removed {len(_to_drop_idx)} legacy role-word entries")
-        _normalised += len(_to_drop_idx)
     if _normalised:
         print(f"  [normalize] cleaned {_normalised} legacy/truncated entries")
 
@@ -1094,14 +859,7 @@ async def update_show(show, ig_clips):
         print(f"  [normalize] deduped {len(cache) - len(_deduped_cache)} (guest, date) duplicates")
         cache = _deduped_cache
 
-    # METRIC_ATTRIB_V1_2026_07_20 — pass known surnames so YT views attach
-    # only to real guests. Falls back to topic-stopword heuristic if empty.
-    _known = {
-        (v.get('canonical_surname_upper') or v.get('surname') or '').lower()
-        for v in cache if (v.get('surname') or v.get('canonical_surname_upper'))
-    }
-    _known.discard('')
-    yt, yt_dates = fetch_youtube_data(show['yt_channel_id'], known_surnames=_known)
+    yt, yt_dates = fetch_youtube_data(show['yt_channel_id'])
 
     # Helper: convert "25 Apr" or "21 Mar" to ISO YYYY-MM-DD using current year
     from datetime import datetime
@@ -1227,36 +985,14 @@ async def update_show(show, ig_clips):
         finally:
             await browser.close()
 
-    # METRIC_ATTRIB_V1_2026_07_20 — attribute using canonical surname first,
-    # fall back to raw surname. Only OVERWRITE when the new value is
-    # non-null AND non-'0' (avoid regressing a real number to null when the
-    # scraper misses one cycle — root cause of the 2026-07-20 yt_views wipe).
     for v in cache:
-        _sn_candidates = [
-            (v.get('canonical_surname_upper') or '').lower(),
-            (v.get('surname') or '').lower(),
-        ]
-        for surname in _sn_candidates:
-            if not surname:
-                continue
-            if surname in yt:
-                _new = yt[surname]
-                _cur = v.get('yt_views')
-                # Only overwrite if new is a positive number OR the current is
-                # missing/empty. Preserves a real number when scraper misses.
-                if _new and _new not in ('0', 0, '?', None):
-                    v['yt_views'] = _new
-                elif _cur in (None, '?', '', 0):
-                    v['yt_views'] = _new
-            if surname in ig_clips:
-                _new = ig_clips[surname]
-                _cur = v.get('ig_likes')
-                if _new and _new not in ('0', 0, '?', None):
-                    v['ig_likes'] = _new
-                elif _cur in (None, '?', '', 0):
-                    v['ig_likes'] = _new
-            # Only need to attribute once per entry.
-            break
+        surname = v.get('surname', '').lower()
+        if not surname:
+            continue
+        if surname in yt:
+            v['yt_views'] = yt[surname]
+        if surname in ig_clips:
+            v['ig_likes'] = ig_clips[surname]
 
     # GU_UPCOMING_WIRE_V2_2026_07_03 -----------------------------------------
     # 1. Strip stale upcoming (they get re-prepended fresh each cycle)
@@ -1321,17 +1057,6 @@ async def update_show(show, ig_clips):
         "menashe":     "Ari Ben-Menashe",
         "bryant":      "Wes Bryant",
         "carden":      "James Carden",
-        # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — kept in sync with top-level CANON_MAP.
-        "perkins":     "John Perkins",
-        "rickards":    "Jim Rickards",
-        "sakwa":       "Richard Sakwa",
-        "macgregor":   "Douglas Macgregor",
-        "fritz":       "Dennis Fritz",
-        "freeman":     "Chas Freeman",
-        "flynn":       "Michael Flynn",
-        "clark":       "Wesley Clark",
-        "vallely":     "Paul Vallely",
-        "astore":      "William J. Astore",
     }
     _BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ", "REVEALS ", "EXPOSES ", "WARNS ", "'")
     _canon_resolved = 0
@@ -1566,22 +1291,8 @@ def _generate_weekly_stats():
             print(f"[WEEKLY_STATS_ERR] {_out}: {_e}")
 
 async def main_fetch():
-    # METRIC_ATTRIB_V1_2026_07_20 — build the union of known surnames across
-    # both shows before scraping IG, so attribution is anchored to real guests.
-    _known_union = set()
-    for _show in SHOWS:
-        _dpath = _show['data_file']
-        if os.path.exists(_dpath):
-            try:
-                with open(_dpath) as _f:
-                    for _v in json.load(_f) or []:
-                        _sn = (_v.get('canonical_surname_upper') or _v.get('surname') or '').lower()
-                        if _sn:
-                            _known_union.add(_sn)
-            except Exception:
-                pass
-    ig_clips = fetch_instagram_clips(known_surnames=_known_union)
-    print(f"IG clips found for {len(ig_clips)} surnames (from {len(_known_union)} known)")
+    ig_clips = fetch_instagram_clips()
+    print(f"IG clips found for {len(ig_clips)} surnames")
     for show in SHOWS:
         await update_show(show, ig_clips)
         cleanup_json(show['data_file'])

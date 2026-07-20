@@ -1,5 +1,5 @@
 {
-  "schema_version": "v2_2026_07_20",
+  "schema_version": "v1_2026_06_20",
   "purpose": "Permanent regression dataset for gu_parser.extract_guest. Every new title pattern that breaks the parser must be added here as part of the fix. Test runner: test_gu_parser.py.",
   "test_cases": [
     {
@@ -169,102 +169,6 @@
       "category": "honorific_hyphenated_firstname_unicode_surname_hypothetical",
       "added_iso": "2026-06-20T15:35Z",
       "added_reason": "future-proof hypothetical: hyphenated + unicode"
-    },
-    {
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "expected_guest": "Dennis Fritz",
-      "expected_cluster_id_prefix": "fritz_",
-      "category": "enlisted_rank_cmsgt_colon",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — CMSGT prefix was leaking into guest name"
-    },
-    {
-      "title": "MSGT. Jane Doe on rising tensions in the Pacific",
-      "expected_guest": "Jane Doe",
-      "expected_cluster_id_prefix": "doe_",
-      "category": "enlisted_rank_msgt_name_on",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — MSGT prefix stripping"
-    },
-    {
-      "title": "SFC. John Smith Explains Why NATO Is DIVIDED Over Ukraine",
-      "expected_guest": "John Smith",
-      "expected_cluster_id_prefix": "smith_",
-      "category": "enlisted_rank_sfc_name_verb",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — SFC prefix stripping"
-    },
-    {
-      "title": "Ret. Col. Douglas Macgregor: US Losing Its Grip on Middle East",
-      "expected_guest": "Douglas Macgregor",
-      "expected_cluster_id_prefix": "macgregor_",
-      "category": "retired_double_honorific",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — Ret. Col. compound stripping"
-    },
-    {
-      "title": "Ret. Gen. Wesley Clark on Iran and NATO Escalation",
-      "expected_guest": "Wesley Clark",
-      "expected_cluster_id_prefix": "clark_",
-      "category": "retired_double_honorific_gen",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — Ret. Gen. compound stripping"
-    },
-    {
-      "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.",
-      "expected_guest": "Richard Sakwa",
-      "expected_cluster_id_prefix": "sakwa_",
-      "category": "sakwa_regression_2026_07_17",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "Sakwa incident 2026-07-17 — YouTube Short of an old episode was being treated as a new production; parser must still extract clean guest name from the canonical episode title"
-    },
-    {
-      "title": "MSgt. Alice Wong: How Guam Is Being Militarised",
-      "expected_guest": "Alice Wong",
-      "expected_cluster_id_prefix": "wong_",
-      "category": "enlisted_rank_msgt_mixed_case",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — MSgt mixed-case (USAF style)"
-    },
-    {
-      "title": "GySgt. Tom Reed on Marine Corps deployment tempo",
-      "expected_guest": "Tom Reed",
-      "expected_cluster_id_prefix": "reed_",
-      "category": "enlisted_rank_gysgt",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — GySgt (USMC style)"
-    },
-    {
-      "title": "Lt. Gen. Michael Flynn Warns Of Deep-State Backlash",
-      "expected_guest": "Michael Flynn",
-      "expected_cluster_id_prefix": "flynn_",
-      "category": "double_honorific_lt_gen",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — Lt. Gen. compound"
-    },
-    {
-      "title": "Maj. Gen. Paul Vallely: Deep-State War on Trump",
-      "expected_guest": "Paul Vallely",
-      "expected_cluster_id_prefix": "vallely_",
-      "category": "double_honorific_maj_gen",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — Maj. Gen. compound"
-    },
-    {
-      "title": "Prof. Andrey Kortunov: There is NO WAY for the US to get Russia OFF the global oil market. #indiarussia",
-      "expected_guest": "Andrey Kortunov",
-      "expected_cluster_id_prefix": "kortunov_",
-      "category": "honorific_hashtag_suffix",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "Do not regress trailing-hashtag titles from NO scraper"
-    },
-    {
-      "title": "CMSGT. Dennis Fritz’s take on nuclear posture in South Asia",
-      "expected_guest": "Dennis Fritz",
-      "expected_cluster_id_prefix": "fritz_",
-      "category": "enlisted_rank_possessive",
-      "added_iso": "2026-07-20T08:23Z",
-      "added_reason": "RANK_STRIP_V1_2026_07_20 — CMSGT + possessive lookahead"
     }
   ]
 }

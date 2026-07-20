@@ -51,39 +51,15 @@ def _emit_rejection(title, paths_tried, source):
 
 
 def _strip_role(name):
-    """Strip leading role/honorific tokens from a candidate name.
-
-    RANK_STRIP_V1_2026_07_20 — added US enlisted ranks (CMSGT, MSGT, SFC, SSG,
-    SGM, CSM, PFC, CPL, MSgt, GySgt, SSgt, TSgt, SrA, A1C, Amn, PO1, PO2, PO3,
-    CPO, SCPO, MCPO, ENS, LTJG, CDR, LCDR, RADM, VADM) and "Ret." prefix.
-    Fixes CMSGT-Fritz name leak (2026-07-13 episode → guest="CMSGT. Dennis Fritz").
-    """
-    # RANK_STRIP_V1_2026_07_20 — strip "Ret." / "Retired" leading token first.
-    name = re.sub(r'^(?:Ret|Retired)\.?\s+', '', name, flags=re.I).strip()
-    # RANK_STRIP_V1_2026_07_20 — enlisted-rank strip runs first (dedicated pass).
-    # These are ALL-CAPS abbreviations that were slipping through the officer-only
-    # honorific list (which knew Col/Gen/Lt/Capt/Maj but not enlisted ranks).
-    name = re.sub(
-        r'^(?:CMSGT|CSM|SGM|SMA|MSGT|MSG|SFC|SSG|SGT|CPL|PFC|PVT|SPC|'
-        r'MSgt|GySgt|SSgt|TSgt|SrA|A1C|Amn|'
-        r'PO1|PO2|PO3|CPO|SCPO|MCPO|ENS|LTJG|CDR|LCDR|RADM|VADM|'
-        r'CW[0-9]|CWO|WO[0-9])\.?\s+',
-        '', name).strip()
-    # RANK_STRIP_V1_2026_07_20 — order matters: longer compound ranks first
-    # (Lt. Col., Lt. Gen., Maj. Gen., Brig. Gen.) so "Lt. Col." isn't shredded to "Col.".
-    name = re.sub(
-        r'^(?:Lt\.?\s*Col\.?|Lt\.?\s*Gen\.?|Maj\.?\s*Gen\.?|Brig\.?\s*Gen\.?|'
-        r'Vice\s+Adm\.?|Rear\s+Adm\.?)\s+',
-        '', name, flags=re.I
-    ).strip()
+    """Strip leading role/honorific tokens from a candidate name."""
     name = re.sub(
         r'^(?:(?:Ex|Former|Fmr|Acting|Deputy|Senior|Chief|Head)[\s.-]*)*'
         r'(?:Israeli\s+|US\s+|UK\s+|British\s+|American\s+)?'
         r'(?:Intel\s+|Intelligence\s+)?(?:Acting\s+)?'
         r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|Amb|MP|'
-        r'Director|Head|Chief|Senator|Congressman|General|Gen|Admiral|Adm|Secretary|'
-        r'Advisor|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Col|'
-        r'Captain|Capt|Major|Maj|Lt|Sgt|Dr|Prof)\.?\s+',
+        r'Director|Head|Chief|Senator|Congressman|General|Admiral|Secretary|'
+        r'Advisor|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Captain|'
+        r'Major|Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?)\.?\s+',
         '', name, flags=re.I
     ).strip()
     return name
@@ -126,22 +102,11 @@ def extract_guest(title, source="unknown"):
         return ex_role_match.group(1).strip()
 
     # Honorific {Name} {verb-or-terminator} — possessive ' supported in lookahead.
-    # RANK_STRIP_V1_2026_07_20 — added enlisted ranks to the leading honorific list
-    # so "CMSGT. Dennis Fritz: ..." captures "Dennis Fritz" instead of falling
-    # through to the colon branch (which used to keep "CMSGT. Dennis Fritz").
     paths_tried.append("honorific")
     honorific_match = re.match(
         r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|'
-        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord|'
-        r'CMSGT|MSGT|SFC|SSG|SGM|CSM|SMA|CPL|PFC|PVT|SPC|'
-        r'MSgt|GySgt|SSgt|TSgt|SrA|A1C|'
-        r'PO1|PO2|PO3|CPO|SCPO|MCPO|ENS|LTJG|CDR|LCDR|RADM|VADM|'
-        r'CWO|CW2|CW3|CW4|CW5|WO1|WO2|WO3|WO4|WO5|'
-        r'Ret|Retired)\.?\s+'
-        # RANK_STRIP_V1_2026_07_20 — first token may itself be a nested rank
-        # like "Gen." / "Col." (Ret. Gen. Wesley Clark). Allow trailing dot
-        # inside the token, then _strip_role peels it.
-        r'([A-Z][a-zA-ZÀ-ÿ\-]+\.?(?:\s+[A-Z][a-zA-ZÀ-ÿ\-]+){1,2}?)'
+        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord)\.?\s+'
+        r'([A-Z][a-zA-ZÀ-ÿ\-]+(?:\s+[A-Z][a-zA-ZÀ-ÿ\-]+){1,2}?)'
         r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|'
         r'Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|'
         r'could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b'
@@ -149,9 +114,7 @@ def extract_guest(title, source="unknown"):
         title
     )
     if honorific_match:
-        # RANK_STRIP_V1_2026_07_20 — post-strip so double-honorifics
-        # like "Ret. Col." peel down to just the name.
-        return _strip_role(honorific_match.group(1).strip()) or honorific_match.group(1).strip()
+        return honorific_match.group(1).strip()
 
     paths_tried.append("paren")
     paren = re.search(r'\(([^)]+)\)\s*$', title)
