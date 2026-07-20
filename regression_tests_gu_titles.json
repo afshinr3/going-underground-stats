@@ -266,5 +266,67 @@
       "added_iso": "2026-07-20T08:23Z",
       "added_reason": "RANK_STRIP_V1_2026_07_20 — CMSGT + possessive lookahead"
     }
+  ],
+  "canonical_url_bind_test_cases": [
+    {
+      "name": "sakwa_real_date_not_17_jul",
+      "added_iso": "2026-07-20T10:15Z",
+      "marker": "CANONICAL_URL_BIND_V1_2026_07_20",
+      "reason": "Sakwa's real New Order full-length episode was uploaded 2026-05-17T06:30:06Z (video_id BS9TmtR_Ehw, ~28min). A Short of that episode (T5Bg1fRYchU, 65s) uploaded 2026-07-17 must NEVER create a phantom Sakwa production dated 17 Jul.",
+      "channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+      "synthetic_rss_entries": [
+        {"video_id": "BS9TmtR_Ehw", "title": "Prof. Richard Sakwa: We Are Witnessing the TWILIGHT of US Unipolarity and the Political West", "link": "https://www.youtube.com/watch?v=BS9TmtR_Ehw", "pub_iso": "2026-05-17T06:30:06Z", "url_kind": "EPISODE"},
+        {"video_id": "T5Bg1fRYchU", "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.", "link": "https://www.youtube.com/shorts/T5Bg1fRYchU", "pub_iso": "2026-07-17T09:12:12Z", "url_kind": "SHORT"}
+      ],
+      "expected_sakwa_row_date": "17 May",
+      "expected_sakwa_row_canonical_video_id": "BS9TmtR_Ehw",
+      "expected_no_phantom_17_jul_row": true
+    },
+    {
+      "name": "true_17_jul_guest_present",
+      "added_iso": "2026-07-20T10:15Z",
+      "marker": "CANONICAL_URL_BIND_V1_2026_07_20",
+      "reason": "Given a synthetic RSS with an actual 17 Jul EPISODE full-length upload for hypothetical guest 'Alex Ryder', assert videos_neworder.json shows that guest on 17 Jul.",
+      "channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+      "synthetic_rss_entries": [
+        {"video_id": "TESTFULL17JUL", "title": "NEW EPISODE OF NEW ORDER — Alex Ryder on the Coming Multipolar Order", "link": "https://www.youtube.com/watch?v=TESTFULL17JUL", "pub_iso": "2026-07-17T06:30:06Z", "url_kind": "EPISODE"}
+      ],
+      "expected_row_date": "17 Jul",
+      "expected_row_guest": "Alex Ryder",
+      "expected_row_canonical_video_id": "TESTFULL17JUL"
+    },
+    {
+      "name": "short_does_not_inherit_date",
+      "added_iso": "2026-07-20T10:15Z",
+      "marker": "CANONICAL_URL_BIND_V1_2026_07_20",
+      "reason": "A Sakwa Short uploaded 2026-07-17 referencing the old May Sakwa episode must not override the parent's canonical May date, must not create a new row, and its views must attach to the parent via URL_BIND (short_clip_views bucket in fetch_youtube_data), NOT to any new row and NOT to another guest's row.",
+      "channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+      "synthetic_rss_entries": [
+        {"video_id": "BS9TmtR_Ehw", "title": "Prof. Richard Sakwa: We Are Witnessing the TWILIGHT of US Unipolarity and the Political West", "link": "https://www.youtube.com/watch?v=BS9TmtR_Ehw", "pub_iso": "2026-05-17T06:30:06Z", "url_kind": "EPISODE"},
+        {"video_id": "SAKSHORTID17", "title": "Prof. Richard Sakwa: The US-led Unipolar Order is in TWILIGHT, the West is going BESERK.", "link": "https://www.youtube.com/shorts/SAKSHORTID17", "pub_iso": "2026-07-17T09:12:12Z", "url_kind": "SHORT"}
+      ],
+      "expected_parent_date_short": "17 May",
+      "expected_no_row_with_date": "17 Jul",
+      "expected_short_metrics_do_not_overwrite_parent_canonical_video_id": true
+    },
+    {
+      "name": "cross_production_metric_isolation",
+      "added_iso": "2026-07-20T10:15Z",
+      "marker": "CANONICAL_URL_BIND_V1_2026_07_20",
+      "reason": "Two independent productions: Perkins full episode (video_id PERKINSFULL12) with high X views, and a Sakwa full episode (BS9TmtR_Ehw). Perkins's x_views MUST NOT be inherited by Sakwa's row and vice versa. Canonical dedupe is keyed by canonical_video_id — different video_ids = different canonicals = metrics kept isolated.",
+      "channel_id": "UC7FXwSQPOlq-eqXjpS3TL8g",
+      "synthetic_rss_entries": [
+        {"video_id": "PERKINSFULL12", "title": "NEW EPISODE OF NEW ORDER — John Perkins on Economic Empire", "link": "https://www.youtube.com/watch?v=PERKINSFULL12", "pub_iso": "2026-07-12T06:30:06Z", "url_kind": "EPISODE"},
+        {"video_id": "BS9TmtR_Ehw", "title": "Prof. Richard Sakwa: We Are Witnessing the TWILIGHT of US Unipolarity and the Political West", "link": "https://www.youtube.com/watch?v=BS9TmtR_Ehw", "pub_iso": "2026-05-17T06:30:06Z", "url_kind": "EPISODE"}
+      ],
+      "seeded_metrics": {
+        "PERKINSFULL12": {"x_views": "299.4K", "yt_views": "631"},
+        "BS9TmtR_Ehw":   {"x_views": "45.0K",  "yt_views": "120"}
+      },
+      "expected_perkins_x_views": "299.4K",
+      "expected_sakwa_x_views":   "45.0K",
+      "expected_perkins_yt_views": "631",
+      "expected_sakwa_yt_views":   "120"
+    }
   ]
 }

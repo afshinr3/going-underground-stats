@@ -166,8 +166,6 @@ def _v4_gate_unclassified(ceid, title, link_href, pub, description,
 
 
 
-
-
 def _canonical_from_title(title, cur_guest, cur_surname):
     """Return (canonical_full_name_or_None, canonical_surname_upper_or_None, episode_id).
 
@@ -211,320 +209,6 @@ def _canonical_from_title(title, cur_guest, cur_surname):
         cs_upper = None
     return (canon, cs_upper, episode_id)
 # ---------------------------------------------------------------------------
-
-# CANONICAL_URL_BIND_V1_2026_07_20 --------------------------------------------
-# URL-identity binding for videos_neworder.json / videos.json rows.
-# A "canonical production" is identified by (channel_id, video_id) of its
-# full-length EPISODE upload. Shorts and clips must NEVER establish a new
-# production or override a production's canonical date. This block provides
-# helpers to fetch the current RSS EPISODE-class set and bind rows to them.
-
-import hashlib as _hashlib_v1  # already imported at module top; safe alias
-_URL_BIND_CACHE = {}  # channel_id -> {video_id: metadata}
-
-
-def _canonical_episode_id_v2(channel_id, video_id):
-    """Stable 16-hex-char SHA-256 hash of (channel_id + ':' + video_id).
-    Cross-run stable; independent of title mutations or SHORT vs full URL.
-    """
-    if not channel_id or not video_id:
-        return None
-    return _hashlib_v1.sha256(
-        f"{channel_id}:{video_id}".encode("utf-8")).hexdigest()[:16]
-
-
-_VIDEO_ID_RE = re.compile(r"(?:watch\?v=|/shorts/|youtu\.be/|/embed/)([A-Za-z0-9_-]{11})")
-
-
-def _extract_video_id(link_href):
-    if not link_href:
-        return None
-    m = _VIDEO_ID_RE.search(link_href)
-    return m.group(1) if m else None
-
-
-def _iso_to_short(iso_str):
-    """'2026-07-19T06:30:06+00:00' -> '19 Jul'. Returns '' on failure."""
-    if not iso_str or len(iso_str) < 10:
-        return ""
-    try:
-        from datetime import datetime as _dt
-        d = _dt.strptime(iso_str[:10], "%Y-%m-%d")
-        return d.strftime("%-d %b")
-    except Exception:
-        return ""
-
-
-def _iso_normalise(iso_str):
-    """Return ISO in 'YYYY-MM-DDTHH:MM:SSZ' form (UTC). Passes-through if
-    already Z; strips '+00:00' offset."""
-    if not iso_str:
-        return ""
-    s = str(iso_str)
-    # RFC3339 with +00:00 -> replace with Z; leave other TZ offsets alone
-    # (the RSS emits +00:00 for all Google-hosted channels).
-    if s.endswith("+00:00"):
-        s = s[:-6] + "Z"
-    return s
-
-
-def _fetch_youtube_full_episodes(channel_id):
-    """Return dict {video_id: {title, pub_iso, link, channel_id, ceid_v2,
-    content_type, confidence}} of the last 15 RSS entries whose classifier
-    result is EPISODE or EPISODE_UNCLASSIFIED (i.e. NOT SHORT / NOT CLIP).
-
-    In-process cached per channel_id so the URL-bind cleanup, metric
-    attribution and discover paths all agree on the same source of truth
-    within one main_fetch run.
-    """
-    if channel_id in _URL_BIND_CACHE:
-        return _URL_BIND_CACHE[channel_id]
-    out = {}
-    try:
-        req = urllib.request.Request(
-            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
-            headers={"User-Agent": "Mozilla/5.0"})
-        rss = urllib.request.urlopen(req, timeout=15).read().decode()
-        entries = re.findall(
-            r"<entry>.*?<yt:videoId>(.*?)</yt:videoId>.*?<title>(.*?)</title>.*?"
-            r'<link rel="alternate" href="([^"]*)".*?<published>(.*?)</published>'
-            r'(?:.*?<media:description[^>]*>(.*?)</media:description>)?',
-            rss, re.DOTALL)
-        for vid, title, link, pub, desc in entries:
-            title = (title.replace("&amp;", "&")
-                          .replace("&#39;", "'")
-                          .replace("&quot;", '"'))
-            ct, conf = _yt_classify_content(link, title, desc or "")
-            if ct in ("SHORT", "CLIP"):
-                continue
-            out[vid] = {
-                "video_id": vid,
-                "title": title,
-                "pub_iso": _iso_normalise(pub),
-                "link": f"https://www.youtube.com/watch?v={vid}",
-                "channel_id": channel_id,
-                "canonical_episode_id_v2": _canonical_episode_id_v2(channel_id, vid),
-                "content_type": ct,
-                "confidence": conf,
-            }
-    except Exception as _e:
-        print(f"  [URL_BIND] RSS fetch err channel={channel_id[-6:]}: {_e}",
-              file=sys.stderr)
-        # Empty dict => URL_BIND acts fail-open (no drops). Explicit fail-open
-        # policy: never delete rows on transient network failure.
-    _URL_BIND_CACHE[channel_id] = out
-    return out
-
-
-def _url_bind_title_match(row_title, ep_title):
-    """Fuzzy title match — token-set overlap on words length>=4.
-    Returns True if >= 3 shared long tokens or 60% token overlap.
-    Used to backfill canonical_video_id for pre-V1 rows whose only anchor
-    is the RSS title."""
-    if not row_title or not ep_title:
-        return False
-    def _toks(s):
-        return set(w.lower() for w in re.findall(r"[A-Za-z]{4,}", s or ""))
-    a = _toks(row_title); b = _toks(ep_title)
-    if not a or not b:
-        return False
-    inter = a & b
-    if len(inter) >= 3:
-        return True
-    small = min(len(a), len(b))
-    return len(inter) / max(small, 1) >= 0.6
-
-
-def _url_bind_cleanup_and_backfill(cache, channel_id, root_dir, data_file_name):
-    """CANONICAL_URL_BIND_V1_2026_07_20 — for each row in `cache`:
-      (a) if row already has a canonical_video_id AND it exists in RSS episodes,
-          just backfill any missing fields (pub_iso, canonical_video_url,
-          canonical_episode_id_v2) from RSS episode metadata (RSS wins).
-      (b) if row lacks canonical_video_id, try fuzzy title-match against RSS
-          episodes; on hit, populate URL_BIND fields. On no hit AND row is
-          older than STALE_DAYS days AND the RSS returned a non-empty set,
-          DROP the row (audit-queue trail written).
-      (c) SHORT/CLIP-titled rows that fuzzy-match no full-length episode are
-          ALWAYS dropped, regardless of age (protects against pre-V3 phantoms).
-    Returns (n_bound_backfill, n_dropped, dropped_rows) tuple.
-    """
-    import datetime as _dt, json as _j, os as _o
-    STALE_DAYS_DROP_UNBOUND = 45   # rows older than 45d with no RSS match => drop
-    rss = _fetch_youtube_full_episodes(channel_id)
-    if not rss:
-        # Fail-open: no RSS data, do nothing (never drop rows on transient failure)
-        return (0, 0, [])
-    # Index by video_id
-    by_vid = rss  # already keyed by video_id
-    kept = []
-    dropped = []
-    n_bound = 0
-    now = _dt.datetime.utcnow()
-    for row in cache:
-        # UPCOMING rows are exempt; they get regenerated fresh each cycle
-        if row.get("is_upcoming"):
-            kept.append(row); continue
-        rvid = row.get("canonical_video_id")
-        title = row.get("title") or ""
-        matched_ep = None
-        if rvid and rvid in by_vid:
-            matched_ep = by_vid[rvid]
-        else:
-            # Fuzzy title match
-            for _vid, _ep in by_vid.items():
-                if _url_bind_title_match(title, _ep["title"]):
-                    matched_ep = _ep; break
-        if matched_ep is not None:
-            # Bind / backfill
-            row["canonical_video_id"] = matched_ep["video_id"]
-            row["canonical_video_url"] = matched_ep["link"]
-            row["pub_iso"] = matched_ep["pub_iso"]
-            row["canonical_episode_id_v2"] = matched_ep["canonical_episode_id_v2"]
-            # CANONICAL_URL_BIND_V1_2026_07_20 — overwrite date + title from canonical
-            # RSS entry so a phantom Short-derived row picks up the parent full
-            # episodes date instead of the Shorts upload date. Root cause of the
-            # Sakwa 17 Jul phantom that persisted post-V3 classifier.
-            row["date"] = _iso_to_short(matched_ep["pub_iso"]) or row.get("date", "")
-            row["title"] = matched_ep["title"]
-            row["link"] = matched_ep["link"]
-            # source_platform_ids — additive
-            _spid = row.get("source_platform_ids") or {}
-            if not isinstance(_spid, dict):
-                _spid = {}
-            _yt_ids = list(_spid.get("youtube") or [])
-            if matched_ep["video_id"] not in _yt_ids:
-                _yt_ids.append(matched_ep["video_id"])
-            _spid["youtube"] = _yt_ids
-            row["source_platform_ids"] = _spid
-            n_bound += 1
-            kept.append(row)
-            continue
-        # No match. Decide to drop.
-        # Rule 1: title obviously indicates SHORT/CLIP -> always drop.
-        _ct_guess, _ = _yt_classify_content(
-            row.get("link") or row.get("canonical_video_url") or "",
-            title, "")
-        # If title starts with common non-episode Short/clip prefixes, drop
-        _shorts_prefix_re = re.compile(
-            r"^(?:Prof\.?|Dr\.?|Amb\.?|Sen\.?|Col\.?|Gen\.?|Fmr|Former|"
-            r"Ex[\s\-]|Retired|Ret\.?)\s+", re.I)
-        _looks_short_titled = (
-            _ct_guess in ("SHORT", "CLIP")
-            or bool(_shorts_prefix_re.match(title)) and " on " not in title
-            and " for " not in title and " Says " not in title.replace(",", "")
-        )
-        # Rule 2: age gate for anything else
-        _date_short = row.get("date") or ""
-        _age_days = 9999
-        try:
-            _d = _dt.datetime.strptime(_date_short, "%d %b").replace(year=now.year)
-            if _d > now:
-                _d = _d.replace(year=now.year - 1)
-            _age_days = (now - _d).days
-        except Exception:
-            pass
-        _drop = _looks_short_titled or (_age_days > STALE_DAYS_DROP_UNBOUND)
-        if _drop:
-            dropped.append({
-                "iso_flagged": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "marker": "CANONICAL_URL_BIND_V1_2026_07_20",
-                "reason": ("SHORT_or_CLIP_titled_phantom"
-                           if _looks_short_titled
-                           else f"no_url_match_and_older_than_{STALE_DAYS_DROP_UNBOUND}d"),
-                "channel_id": channel_id,
-                "data_file": data_file_name,
-                "row_guest": row.get("guest"),
-                "row_surname": row.get("surname"),
-                "row_date": _date_short,
-                "row_title": title,
-                "row_canonical_episode_id": row.get("canonical_episode_id"),
-                "row_yt_content_type": row.get("_yt_content_type"),
-            })
-            continue
-        # Otherwise keep (e.g. legacy real episode that's rolled off the 15-entry
-        # RSS window and is <45d old). Do NOT hallucinate URL_BIND fields.
-        kept.append(row)
-    # Persist audit
-    if dropped:
-        try:
-            _adir = _o.path.join(root_dir, "docs")
-            _o.makedirs(_adir, exist_ok=True)
-            _apath = _o.path.join(_adir, "audit_queue_url_bind_v1.jsonl")
-            with open(_apath, "a") as _af:
-                for _r in dropped:
-                    _af.write(_j.dumps(_r, ensure_ascii=False) + "\n")
-        except Exception as _e:
-            print(f"  [URL_BIND] audit write err: {_e}", file=sys.stderr)
-        print(f"  [URL_BIND] dropped {len(dropped)} phantom/stale row(s) from "
-              f"{data_file_name}")
-    return (n_bound, len(dropped), dropped)
-
-
-def _url_bind_dedupe_by_canonical(cache):
-    """CANONICAL_URL_BIND_V1_2026_07_20 — dedupe rows preferring stable
-    canonical_video_id / canonical_episode_id_v2 keys. Metrics from
-    duplicate rows keyed by same canonical are merged with last-writer-wins
-    per platform, NEVER max-across-different-canonicals.
-    Falls back to (canonical_episode_id, guest, date) for legacy rows lacking
-    the new fields.
-    """
-    def _key(v):
-        vid = v.get("canonical_video_id") or v.get("canonical_episode_id_v2")
-        if vid: return ("v", vid)
-        ceid = v.get("canonical_episode_id")
-        if ceid: return ("c", ceid)
-        return ("gd", v.get("guest",""), v.get("date",""))
-    seen = {}
-    order = []
-    for v in cache:
-        k = _key(v)
-        if k not in seen:
-            seen[k] = v
-            order.append(k)
-            continue
-        prev = seen[k]
-        # LAST-WRITER-WINS per platform metric (this is called after sort desc
-        # by pub_iso, so the fresher row's metrics dominate).
-        for field in ("rumble_views", "x_views", "yt_views", "ig_likes"):
-            _new = v.get(field)
-            if _new not in (None, "", "?"):
-                prev[field] = _new
-        # Preserve show / classifier metadata from later entries too
-        for field in ("show", "_yt_content_type", "_yt_class_confidence",
-                      "canonical_video_id", "canonical_video_url", "pub_iso",
-                      "canonical_episode_id_v2", "source_platform_ids"):
-            if not prev.get(field) and v.get(field):
-                prev[field] = v[field]
-    return [seen[k] for k in order]
-
-
-def _url_bind_sort_by_pub_iso(cache):
-    """CANONICAL_URL_BIND_V1_2026_07_20 — stable sort DESCENDING by pub_iso.
-    Rows without pub_iso fall back to parsing short 'dd Mon' with current
-    year; still no pub_iso => sink to the bottom of the ORDER of their
-    original slot (preserve prior ordering for pre-V1 rows).
-    """
-    import datetime as _dt
-    now = _dt.datetime.utcnow()
-    def _sort_key(v):
-        piso = v.get("pub_iso") or ""
-        if piso and len(piso) >= 10:
-            return piso
-        d = v.get("date") or ""
-        try:
-            _d = _dt.datetime.strptime(d, "%d %b").replace(year=now.year)
-            if _d > now:
-                _d = _d.replace(year=now.year - 1)
-            return _d.strftime("%Y-%m-%dT00:00:00Z")
-        except Exception:
-            # Anything unparseable sorts to the bottom (empty string < any date)
-            return ""
-    cache.sort(key=_sort_key, reverse=True)
-    return cache
-
-
-# --- end CANONICAL_URL_BIND_V1_2026_07_20 helpers ----------------------------
-
 
 X_COOKIES = json.loads(os.environ.get("X_COOKIES_JSON", "[]"))
 IG_COOKIES = json.loads(os.environ.get("IG_COOKIES_JSON", "[]"))
@@ -1143,9 +827,6 @@ def discover_new_episodes(channel_id, data_file):
                                                  short_date, ROOT)
                 if not _allow:
                     continue
-            # CANONICAL_URL_BIND_V1_2026_07_20 — capture stable YT URL identity.
-            _video_id = _extract_video_id(link_href)
-            _ceid_v2 = _canonical_episode_id_v2(channel_id, _video_id) if _video_id else None
             new_eps.append({
                 "guest": emit_guest,
                 "surname": surname_display,
@@ -1158,15 +839,6 @@ def discover_new_episodes(channel_id, data_file):
                 # YT_CONTENT_TYPE_V3_2026_07_17 / YT_CONTENT_TYPE_V4B_2026_07_17 — classifier metadata
                 "_yt_content_type": _content_type,
                 "_yt_class_confidence": _confidence,
-                # CANONICAL_URL_BIND_V1_2026_07_20 — url-based identity fields
-                "canonical_video_id":  _video_id,
-                "canonical_video_url": (f"https://www.youtube.com/watch?v={_video_id}"
-                                         if _video_id else None),
-                "pub_iso":             _iso_normalise(pub),
-                "canonical_episode_id_v2": _ceid_v2,
-                "source_platform_ids": {"youtube": [_video_id]} if _video_id else {},
-                "link":                (f"https://www.youtube.com/watch?v={_video_id}"
-                                         if _video_id else link_href),
             })
             existing_surnames.add((surname_display or "").lower())
             existing_titles.add(title.lower()[:40])
@@ -1396,59 +1068,6 @@ async def update_show(show, ig_clips):
     if _normalised:
         print(f"  [normalize] cleaned {_normalised} legacy/truncated entries")
 
-    # CANONICAL_URL_BIND_V1_2026_07_20 — clean up phantom Shorts-as-productions
-    # rows and backfill canonical URL identity fields BEFORE dedupe.
-    try:
-        _channel_id = show.get('yt_channel_id') or ''
-        _data_basename = os.path.basename(show['data_file'])
-        _n_bound, _n_drop, _ = _url_bind_cleanup_and_backfill(
-            cache, _channel_id, ROOT, _data_basename)
-        # Filter out the dropped rows: reconstruct cache preserving order after
-        # the audit trail was already persisted. _url_bind_cleanup_and_backfill
-        # mutates rows in-place with new fields and returns dropped meta only.
-        # Rebuild cache by keeping rows still present after re-checking.
-        # The helper doesn't remove from cache directly (avoids re-index bugs);
-        # we re-filter here using the same drop criteria — matched-any-ep gate.
-        _rss = _fetch_youtube_full_episodes(_channel_id)
-        if _rss:
-            _by_vid = _rss
-            def _keeps(row):
-                if row.get('is_upcoming'):
-                    return True
-                if (row.get('canonical_video_id') or '') in _by_vid:
-                    return True
-                # Try title match against remaining episodes
-                _t = row.get('title') or ''
-                for _ep in _by_vid.values():
-                    if _url_bind_title_match(_t, _ep['title']):
-                        return True
-                # Fall back to age + short/clip-titled gates
-                import datetime as _dt2
-                now2 = _dt2.datetime.utcnow()
-                _ds = row.get('date') or ''
-                _age = 9999
-                try:
-                    _d = _dt2.datetime.strptime(_ds, '%d %b').replace(year=now2.year)
-                    if _d > now2: _d = _d.replace(year=now2.year - 1)
-                    _age = (now2 - _d).days
-                except Exception:
-                    pass
-                _ct_g, _ = _yt_classify_content(
-                    row.get('link') or row.get('canonical_video_url') or '',
-                    _t, '')
-                _shorts_prefix_re2 = re.compile(
-                    r"^(?:Prof\.?|Dr\.?|Amb\.?|Sen\.?|Col\.?|Gen\.?|Fmr|Former|"
-                    r"Ex[\s\-]|Retired|Ret\.?)\s+", re.I)
-                _looks = (_ct_g in ('SHORT','CLIP')
-                          or bool(_shorts_prefix_re2.match(_t)))
-                if _looks or _age > 45:
-                    return False
-                return True
-            cache = [r for r in cache if _keeps(r)]
-        print(f"  [URL_BIND] bound/backfilled {_n_bound}, dropped {_n_drop} row(s)")
-    except Exception as _e:
-        print(f"  [URL_BIND] cleanup err (fail-open): {_e}", file=sys.stderr)
-
     # Dedupe on (guest, date) - merge view counts, keep highest per field
     def _to_num(x):
         x = str(x or '').replace(',', '').strip().upper()
@@ -1457,21 +1076,9 @@ async def update_show(show, ig_clips):
         if x.endswith('M'): return float(x[:-1]) * 1_000_000
         try: return float(x)
         except Exception: return -1
-    # CANONICAL_URL_BIND_V1_2026_07_20 — dedupe by canonical URL identity
-    # (canonical_video_id or canonical_episode_id_v2) when present. Metrics
-    # merge as last-writer-wins per platform WITHIN a canonical, so a Short
-    # cannot inflate the full episode's metrics across canonical boundaries.
-    _pre_len = len(cache)
-    cache = _url_bind_dedupe_by_canonical(cache)
-    if len(cache) != _pre_len:
-        print(f"  [URL_BIND_DEDUPE] deduped {_pre_len - len(cache)} canonical duplicates")
-    # Legacy (guest, date) fallback dedupe for any rows still lacking canonical
-    # fields (safety net; should be rare after URL_BIND cleanup).
     _seen = {}
     _deduped_cache = []
     for v in cache:
-        if v.get('canonical_video_id') or v.get('canonical_episode_id_v2'):
-            _deduped_cache.append(v); continue
         key = (v.get('guest', ''), v.get('date', ''))
         if key not in _seen:
             _seen[key] = v
@@ -1484,7 +1091,7 @@ async def update_show(show, ig_clips):
         if 'show' in v and 'show' not in prev:
             prev['show'] = v['show']
     if len(_deduped_cache) != len(cache):
-        print(f"  [normalize] deduped {len(cache) - len(_deduped_cache)} legacy (guest, date) duplicates")
+        print(f"  [normalize] deduped {len(cache) - len(_deduped_cache)} (guest, date) duplicates")
         cache = _deduped_cache
 
     # METRIC_ATTRIB_V1_2026_07_20 — pass known surnames so YT views attach
@@ -1806,11 +1413,6 @@ async def update_show(show, ig_clips):
     if _qm_normalized:
         print(f"  [GU_NO_QUESTION_MARK_V1] normalized {_qm_normalized} '?' -> '0' fields")
     print(f"  [CANONICAL_PUBLISH_V1_v2 + CANONICAL_FIELD_EMISSION_V1_2026_07_11] resolved={_canon_resolved} unchanged={_canon_unchanged}")
-    # CANONICAL_URL_BIND_V1_2026_07_20 — sort by pub_iso desc (freshest first)
-    try:
-        cache = _url_bind_sort_by_pub_iso(cache)
-    except Exception as _e_sort:
-        print(f"  [URL_BIND_SORT] fail-open: {_e_sort}", file=sys.stderr)
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
@@ -1996,14 +1598,8 @@ def _emit_videos_health_v1():
                     'title': (_r.get('title') or '').strip(),
                     'date': (_r.get('date') or '').strip(),
                     'show': _show_code,
-                    'link': (_r.get('link') or _r.get('canonical_video_url') or '').strip(),
+                    'link': (_r.get('link') or '').strip(),
                     'canonical_episode_id': _r.get('canonical_episode_id'),
-                    # CANONICAL_URL_BIND_V1_2026_07_20 — additive URL_BIND fields
-                    'canonical_video_id':      _r.get('canonical_video_id'),
-                    'canonical_video_url':     _r.get('canonical_video_url'),
-                    'canonical_episode_id_v2': _r.get('canonical_episode_id_v2'),
-                    'pub_iso':                 _r.get('pub_iso'),
-                    'source_platform_ids':     _r.get('source_platform_ids') or {},
                     'metrics': {
                         'rumble_views': _r.get('rumble_views'),
                         'yt_views':     _r.get('yt_views'),
