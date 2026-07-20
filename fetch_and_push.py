@@ -1415,6 +1415,10 @@ async def update_show(show, ig_clips):
             def _keeps(row):
                 if row.get('is_upcoming'):
                     return True
+                # CANONICAL_URL_BIND_V1_2026_07_20 — never drop rows that
+                # already have any canonical_video_id (rolled-off-RSS preserve).
+                if row.get('canonical_video_id'):
+                    return True
                 if (row.get('canonical_video_id') or '') in _by_vid:
                     return True
                 # Try title match against remaining episodes
