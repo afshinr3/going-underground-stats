@@ -1,6 +1,6 @@
 {
-  "iso": "2026-07-20T10:41:29Z",
-  "last_updated": "2026-07-20T10:41:29Z",
+  "iso": "2026-07-20T12:17:54Z",
+  "last_updated": "2026-07-20T12:17:54Z",
   "episodes": [
     {
       "guest": "Lawrence Wilkerson",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "4.0K",
-        "x_views": "355.4K",
+        "yt_views": "4.1K",
+        "x_views": "356.1K",
         "ig_likes": "0"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "968",
-        "x_views": "187.2K",
+        "x_views": "167.6K",
         "ig_likes": "0"
       }
     },
@@ -70,7 +70,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.4K",
-        "x_views": "224.7K",
+        "x_views": "399.5K",
         "ig_likes": "0"
       }
     },
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "193.5K",
+        "x_views": "271.3K",
         "ig_likes": "0"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "6.9K",
-        "x_views": "215.1K",
+        "x_views": "183.2K",
         "ig_likes": "0"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.9K",
-        "x_views": "441.8K",
+        "x_views": "365.1K",
         "ig_likes": "0"
       }
     },
@@ -166,7 +166,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "7.2K",
-        "x_views": "33.8K",
+        "x_views": "351.7K",
         "ig_likes": "0"
       }
     },
@@ -190,47 +190,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "645",
-        "x_views": "191.7K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Steve Hanke",
-      "surname": "HANKE",
-      "title": "IRAN’S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
-      "date": "6 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "c8474b95f509",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "2.4K",
-        "x_views": "222.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Avi Shlaim",
-      "surname": "SHLAIM",
-      "title": "Prof. Avi Shlaim: Trump-Netanyahu War on Iran is the 21st Century's MOST UNJUSTIFIED & FOOLISH WAR",
-      "date": "18 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "3954f2c42a12",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "4.9K",
-        "x_views": "319.8K",
+        "x_views": "402.9K",
         "ig_likes": "0"
       }
     },
@@ -254,47 +214,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "2.3K",
-        "x_views": "382.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Paul Craig Roberts",
-      "surname": "ROBERTS",
-      "title": "US & Israel HUMILIATED by Iran, Greater Israel Plan MUST be Confronted—Prof. Paul Craig Roberts",
-      "date": "11 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "af8fbfb4e7d4",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "361.0K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Wes Bryant",
-      "surname": "BRYANT",
-      "title": "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS Trump Admin’s RECKLESS Bombing of Civilians",
-      "date": "2 May",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "1179eedd7374",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "202.6K",
+        "x_views": "351.9K",
         "ig_likes": "0"
       }
     },
@@ -318,7 +238,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "631",
-        "x_views": "299.4K",
+        "x_views": "299.5K",
         "ig_likes": "0"
       }
     },
@@ -342,7 +262,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.1K",
-        "x_views": "752.2K",
+        "x_views": "253.2K",
         "ig_likes": "0"
       }
     },
@@ -362,7 +282,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "0",
-        "x_views": "291.6K",
+        "x_views": "322.6K",
         "ig_likes": "0"
       }
     },
@@ -407,8 +327,8 @@
       },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "4.0K",
-        "x_views": "355.4K",
+        "yt_views": "4.1K",
+        "x_views": "356.1K",
         "ig_likes": "0"
       }
     },
@@ -432,7 +352,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "968",
-        "x_views": "187.2K",
+        "x_views": "167.6K",
         "ig_likes": "0"
       }
     },
@@ -456,7 +376,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.4K",
-        "x_views": "224.7K",
+        "x_views": "399.5K",
         "ig_likes": "0"
       }
     },
@@ -480,7 +400,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "193.5K",
+        "x_views": "271.3K",
         "ig_likes": "0"
       }
     },
@@ -504,7 +424,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "6.9K",
-        "x_views": "215.1K",
+        "x_views": "183.2K",
         "ig_likes": "0"
       }
     }
@@ -530,7 +450,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "631",
-        "x_views": "299.4K",
+        "x_views": "299.5K",
         "ig_likes": "0"
       }
     },
@@ -554,7 +474,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.1K",
-        "x_views": "752.2K",
+        "x_views": "253.2K",
         "ig_likes": "0"
       }
     },
@@ -574,7 +494,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "0",
-        "x_views": "291.6K",
+        "x_views": "322.6K",
         "ig_likes": "0"
       }
     },
