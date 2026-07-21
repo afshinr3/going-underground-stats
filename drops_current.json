@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-21T14:29:26Z",
+  "updated": "2026-07-21T14:54:26Z",
   "drops": [
     {
-      "ts": "2026-07-21T14:29:26Z",
+      "ts": "2026-07-21T14:54:26Z",
       "show": "GU",
       "guest": "Weihua",
       "platform": "X",
@@ -12,7 +12,7 @@
       "drop_pct": 60.9
     },
     {
-      "ts": "2026-07-21T14:29:26Z",
+      "ts": "2026-07-21T14:54:26Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "X",
@@ -22,7 +22,7 @@
       "drop_pct": 58.9
     },
     {
-      "ts": "2026-07-21T14:29:26Z",
+      "ts": "2026-07-21T14:54:26Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
