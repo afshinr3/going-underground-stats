@@ -576,8 +576,8 @@
   "GU:Keen": {
     "x_views": 585500,
     "x_views_at": "2026-07-20T05:14:10Z",
-    "yt_views": 1900,
-    "yt_views_at": "2026-06-23T16:29:24Z",
+    "yt_views": 2400,
+    "yt_views_at": "2026-07-21T21:30:46Z",
     "rumble_views": 3000,
     "rumble_views_at": "2026-07-17T14:29:30Z"
   },
@@ -642,8 +642,8 @@
   "GU:Kucinich": {
     "x_views": 678100,
     "x_views_at": "2026-07-13T04:51:08Z",
-    "yt_views": 929,
-    "yt_views_at": "2026-07-20T00:01:41Z",
+    "yt_views": 934,
+    "yt_views_at": "2026-07-21T21:30:46Z",
     "ig_likes": 4000,
     "ig_likes_at": "2026-07-17T14:29:30Z"
   },
@@ -708,6 +708,8 @@
   },
   "GU:Bandow": {
     "x_views": 262000,
-    "x_views_at": "2026-07-21T21:12:32Z"
+    "x_views_at": "2026-07-21T21:12:32Z",
+    "yt_views": 1300,
+    "yt_views_at": "2026-07-21T21:30:46Z"
   }
 }
