@@ -275,8 +275,33 @@ function renderAlerts(drops) {
     });
 }
 
+// DASHBOARD_1WEEK_LATEST_PRODUCTIONS_V1_20260722 — 1-Week tab (windowDays===7)
+// now shows three most recent productions: latest GU, previous GU, latest NO.
+function _parseDateToTs(dateStr) {
+    if (!dateStr) return 0;
+    const m = dateStr.match(/^(\d+)\s+(\w+)/);
+    if (!m) return 0;
+    const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+    const mn = months[m[2].slice(0,3)];
+    if (mn === undefined) return 0;
+    const now = new Date();
+    let d = new Date(now.getFullYear(), mn, parseInt(m[1]));
+    if (d > now) d = new Date(now.getFullYear()-1, mn, parseInt(m[1]));
+    return d.getTime();
+}
+function pick1WeekEntries(entries) {
+    const gu = entries.filter(e => e._show === 'GU')
+                      .sort((a,b) => _parseDateToTs(b.date) - _parseDateToTs(a.date));
+    const no = entries.filter(e => e._show === 'NO')
+                      .sort((a,b) => _parseDateToTs(b.date) - _parseDateToTs(a.date));
+    const seen = new Set();
+    const out = [];
+    for (const e of gu.slice(0, 2)) { if (!seen.has(e)) { out.push(e); seen.add(e); } }
+    for (const e of no.slice(0, 1)) { if (!seen.has(e)) { out.push(e); seen.add(e); } }
+    return out;
+}
 function renderLeaderboard(entries) {
-    const filtered = entries.filter(e => withinWindow(e.date, windowDays));
+    const filtered = (windowDays === 7) ? pick1WeekEntries(entries) : entries.filter(e => withinWindow(e.date, windowDays));
     filtered.sort((a,b) => totalOf(b) - totalOf(a));
     const tbody = document.getElementById('leaderboard');
     tbody.innerHTML = '';
@@ -313,7 +338,7 @@ function renderLeaderboard(entries) {
 }
 
 function renderStackedChart(entries) {
-    const filtered = entries.filter(e => withinWindow(e.date, windowDays));
+    const filtered = (windowDays === 7) ? pick1WeekEntries(entries) : entries.filter(e => withinWindow(e.date, windowDays));
     filtered.sort((a,b) => totalOf(b) - totalOf(a));
     const labels = filtered.map(e => `${e.surname || 'N/A'}${e._show==='NO'?'·NO':''}`);
     const data = {
