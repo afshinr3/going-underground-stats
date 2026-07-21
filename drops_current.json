@@ -1,18 +1,28 @@
 {
-  "updated": "2026-07-21T21:30:46Z",
+  "updated": "2026-07-21T21:40:41Z",
   "drops": [
     {
-      "ts": "2026-07-21T21:30:46Z",
+      "ts": "2026-07-21T21:40:41Z",
+      "show": "GU",
+      "guest": "Keen",
+      "platform": "YT",
+      "peak": 2400,
+      "peak_at": "2026-07-21T21:30:46Z",
+      "current": 1900,
+      "drop_pct": 20.8
+    },
+    {
+      "ts": "2026-07-21T21:40:41Z",
       "show": "GU",
       "guest": "Weihua",
       "platform": "X",
       "peak": 412900,
       "peak_at": "2026-07-20T23:42:10Z",
-      "current": 221100,
-      "drop_pct": 46.5
+      "current": 192000,
+      "drop_pct": 53.5
     },
     {
-      "ts": "2026-07-21T21:30:46Z",
+      "ts": "2026-07-21T21:40:41Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",

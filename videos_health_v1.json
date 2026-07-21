@@ -1,7 +1,31 @@
 {
-  "iso": "2026-07-21T20:21:06Z",
-  "last_updated": "2026-07-21T20:21:06Z",
+  "iso": "2026-07-21T21:40:40Z",
+  "last_updated": "2026-07-21T21:40:40Z",
   "episodes": [
+    {
+      "guest": "Doug Bandow",
+      "surname": "BANDOW",
+      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
+      "date": "20 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id": "dfc6afbc2824",
+      "canonical_video_id": "_SVI4UPDX7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id_v2": "3c04f341a327a14e",
+      "pub_iso": "2026-07-20T20:04:05Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_SVI4UPDX7g"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "1.3K",
+        "x_views": "361.6K",
+        "ig_likes": "0"
+      }
+    },
     {
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
@@ -22,7 +46,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "4.1K",
-        "x_views": "395.0K",
+        "x_views": "395.1K",
         "ig_likes": "0"
       }
     },
@@ -70,7 +94,31 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.4K",
-        "x_views": "205.1K",
+        "x_views": "399.9K",
+        "ig_likes": "0"
+      }
+    },
+    {
+      "guest": "Dennis Kucinich",
+      "surname": "KUCINICH",
+      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
+      "date": "4 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "canonical_episode_id": "9702aa6e4b89",
+      "canonical_video_id": "M_KrzyAybFI",
+      "canonical_video_url": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "canonical_episode_id_v2": "495ea447b2ab31cf",
+      "pub_iso": "2026-07-04T10:54:02Z",
+      "source_platform_ids": {
+        "youtube": [
+          "M_KrzyAybFI"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "934",
+        "x_views": "802.8K",
         "ig_likes": "0"
       }
     },
@@ -94,7 +142,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "193.7K",
+        "x_views": "224.9K",
         "ig_likes": "0"
       }
     },
@@ -118,7 +166,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "6.9K",
-        "x_views": "183.3K",
+        "x_views": "265.1K",
         "ig_likes": "0"
       }
     },
@@ -142,7 +190,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.9K",
-        "x_views": "418.0K",
+        "x_views": "497.4K",
         "ig_likes": "0"
       }
     },
@@ -190,31 +238,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "647",
-        "x_views": "219.7K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Zhang Weiwei",
-      "surname": "WEIWEI",
-      "title": "Trump-Xi Summit: ‘China🇨🇳 is WINNING the Competition Against the USA🇺🇸’—Prof. Zhang Weiwei",
-      "date": "16 May",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=l0CLKTqHQdk",
-      "canonical_episode_id": "c4c132417e12",
-      "canonical_video_id": "l0CLKTqHQdk",
-      "canonical_video_url": "https://www.youtube.com/watch?v=l0CLKTqHQdk",
-      "canonical_episode_id_v2": "dc22a1550ac2f27b",
-      "pub_iso": "2026-05-16T15:37:37Z",
-      "source_platform_ids": {
-        "youtube": [
-          "l0CLKTqHQdk"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "2.3K",
-        "x_views": "352.1K",
+        "x_views": "192.0K",
         "ig_likes": "0"
       }
     },
@@ -237,7 +261,7 @@
       },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "631",
+        "yt_views": "632",
         "x_views": "299.9K",
         "ig_likes": "0"
       }
@@ -309,6 +333,30 @@
   ],
   "gu": [
     {
+      "guest": "Doug Bandow",
+      "surname": "BANDOW",
+      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
+      "date": "20 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id": "dfc6afbc2824",
+      "canonical_video_id": "_SVI4UPDX7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id_v2": "3c04f341a327a14e",
+      "pub_iso": "2026-07-20T20:04:05Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_SVI4UPDX7g"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "1.3K",
+        "x_views": "361.6K",
+        "ig_likes": "0"
+      }
+    },
+    {
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
@@ -328,7 +376,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "4.1K",
-        "x_views": "395.0K",
+        "x_views": "395.1K",
         "ig_likes": "0"
       }
     },
@@ -376,55 +424,31 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.4K",
-        "x_views": "205.1K",
+        "x_views": "399.9K",
         "ig_likes": "0"
       }
     },
     {
-      "guest": "Max Blumenthal",
-      "surname": "BLUMENTHAL",
-      "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
-      "date": "29 Jun",
+      "guest": "Dennis Kucinich",
+      "surname": "KUCINICH",
+      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
+      "date": "4 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
-      "canonical_episode_id": "437b917e580d",
-      "canonical_video_id": "-c_7WNHYTEE",
-      "canonical_video_url": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
-      "canonical_episode_id_v2": "c887d6373249acbe",
-      "pub_iso": "2026-06-29T11:38:52Z",
+      "link": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "canonical_episode_id": "9702aa6e4b89",
+      "canonical_video_id": "M_KrzyAybFI",
+      "canonical_video_url": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "canonical_episode_id_v2": "495ea447b2ab31cf",
+      "pub_iso": "2026-07-04T10:54:02Z",
       "source_platform_ids": {
         "youtube": [
-          "-c_7WNHYTEE"
+          "M_KrzyAybFI"
         ]
       },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "15.3K",
-        "x_views": "193.7K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Ehud Olmert",
-      "surname": "OLMERT",
-      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
-      "date": "20 Jun",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
-      "canonical_episode_id": "2d6e9913fb1c",
-      "canonical_video_id": "55zQJ3W6M7w",
-      "canonical_video_url": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
-      "canonical_episode_id_v2": "97d493ba3a1d75a6",
-      "pub_iso": "2026-06-20T09:24:37Z",
-      "source_platform_ids": {
-        "youtube": [
-          "55zQJ3W6M7w"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "6.9K",
-        "x_views": "183.3K",
+        "yt_views": "934",
+        "x_views": "802.8K",
         "ig_likes": "0"
       }
     }
@@ -449,7 +473,7 @@
       },
       "metrics": {
         "rumble_views": "0",
-        "yt_views": "631",
+        "yt_views": "632",
         "x_views": "299.9K",
         "ig_likes": "0"
       }
