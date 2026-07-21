@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-21T23:18:09Z",
+  "updated": "2026-07-21T23:36:19Z",
   "drops": [
     {
-      "ts": "2026-07-21T23:18:09Z",
+      "ts": "2026-07-21T23:36:19Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -12,7 +12,7 @@
       "drop_pct": 20.7
     },
     {
-      "ts": "2026-07-21T23:18:09Z",
+      "ts": "2026-07-21T23:36:19Z",
       "show": "GU",
       "guest": "Kucinich",
       "platform": "X",
@@ -22,7 +22,7 @@
       "drop_pct": 74.6
     },
     {
-      "ts": "2026-07-21T23:18:09Z",
+      "ts": "2026-07-21T23:36:19Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "YT",
@@ -32,7 +32,7 @@
       "drop_pct": 20.8
     },
     {
-      "ts": "2026-07-21T23:18:09Z",
+      "ts": "2026-07-21T23:36:19Z",
       "show": "GU",
       "guest": "Weihua",
       "platform": "X",
@@ -42,7 +42,7 @@
       "drop_pct": 53.5
     },
     {
-      "ts": "2026-07-21T23:18:09Z",
+      "ts": "2026-07-21T23:36:19Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
