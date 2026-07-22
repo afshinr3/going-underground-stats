@@ -1,28 +1,38 @@
 {
-  "updated": "2026-07-22T18:24:09Z",
+  "updated": "2026-07-22T18:36:44Z",
   "drops": [
     {
-      "ts": "2026-07-22T18:24:09Z",
+      "ts": "2026-07-22T18:36:44Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
       "peak": 361600,
       "peak_at": "2026-07-21T21:40:41Z",
-      "current": 272700,
-      "drop_pct": 24.6
+      "current": 240800,
+      "drop_pct": 33.4
     },
     {
-      "ts": "2026-07-22T18:24:09Z",
+      "ts": "2026-07-22T18:36:44Z",
+      "show": "GU",
+      "guest": "Kucinich",
+      "platform": "X",
+      "peak": 802800,
+      "peak_at": "2026-07-21T21:40:41Z",
+      "current": 77600,
+      "drop_pct": 90.3
+    },
+    {
+      "ts": "2026-07-22T18:36:44Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "X",
       "peak": 934400,
       "peak_at": "2026-07-22T07:06:18Z",
-      "current": 356800,
-      "drop_pct": 61.8
+      "current": 214900,
+      "drop_pct": 77.0
     },
     {
-      "ts": "2026-07-22T18:24:09Z",
+      "ts": "2026-07-22T18:36:44Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "YT",
@@ -32,7 +42,7 @@
       "drop_pct": 20.8
     },
     {
-      "ts": "2026-07-22T18:24:09Z",
+      "ts": "2026-07-22T18:36:44Z",
       "show": "GU",
       "guest": "Postol",
       "platform": "X",
