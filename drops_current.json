@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-22T05:56:47Z",
+  "updated": "2026-07-22T06:13:55Z",
   "drops": [
     {
-      "ts": "2026-07-22T05:56:47Z",
+      "ts": "2026-07-22T06:13:55Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -10,26 +10,6 @@
       "peak_at": "2026-07-21T21:40:41Z",
       "current": 269100,
       "drop_pct": 25.6
-    },
-    {
-      "ts": "2026-07-22T05:56:47Z",
-      "show": "GU",
-      "guest": "Kucinich",
-      "platform": "X",
-      "peak": 802800,
-      "peak_at": "2026-07-21T21:40:41Z",
-      "current": 23700,
-      "drop_pct": 97.0
-    },
-    {
-      "ts": "2026-07-22T05:56:47Z",
-      "show": "GU",
-      "guest": "Keen",
-      "platform": "YT",
-      "peak": 2400,
-      "peak_at": "2026-07-21T21:30:46Z",
-      "current": 1900,
-      "drop_pct": 20.8
     }
   ]
 }
