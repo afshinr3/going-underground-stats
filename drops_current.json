@@ -1,28 +1,28 @@
 {
-  "updated": "2026-07-22T01:03:30Z",
+  "updated": "2026-07-22T01:09:13Z",
   "drops": [
     {
-      "ts": "2026-07-22T01:03:30Z",
+      "ts": "2026-07-22T01:09:13Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
       "peak": 361600,
       "peak_at": "2026-07-21T21:40:41Z",
-      "current": 236500,
-      "drop_pct": 34.6
+      "current": 225900,
+      "drop_pct": 37.5
     },
     {
-      "ts": "2026-07-22T01:03:30Z",
+      "ts": "2026-07-22T01:09:13Z",
       "show": "GU",
       "guest": "Kucinich",
       "platform": "X",
       "peak": 802800,
       "peak_at": "2026-07-21T21:40:41Z",
-      "current": 77600,
-      "drop_pct": 90.3
+      "current": 165300,
+      "drop_pct": 79.4
     },
     {
-      "ts": "2026-07-22T01:03:30Z",
+      "ts": "2026-07-22T01:09:13Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "YT",
@@ -32,7 +32,7 @@
       "drop_pct": 20.8
     },
     {
-      "ts": "2026-07-22T01:03:30Z",
+      "ts": "2026-07-22T01:09:13Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
