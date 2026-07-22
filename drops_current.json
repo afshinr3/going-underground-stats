@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-22T06:48:52Z",
+  "updated": "2026-07-22T07:06:18Z",
   "drops": [
     {
-      "ts": "2026-07-22T06:48:52Z",
+      "ts": "2026-07-22T07:06:18Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -10,6 +10,16 @@
       "peak_at": "2026-07-21T21:40:41Z",
       "current": 269100,
       "drop_pct": 25.6
+    },
+    {
+      "ts": "2026-07-22T07:06:18Z",
+      "show": "GU",
+      "guest": "Keen",
+      "platform": "YT",
+      "peak": 2400,
+      "peak_at": "2026-07-21T21:30:46Z",
+      "current": 1900,
+      "drop_pct": 20.8
     }
   ]
 }
