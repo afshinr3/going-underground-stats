@@ -547,7 +547,9 @@
     "yt_views": 650,
     "yt_views_at": "2026-07-23T21:24:26Z",
     "rumble_views": 3400,
-    "rumble_views_at": "2026-06-27T17:37:44Z"
+    "rumble_views_at": "2026-06-27T17:37:44Z",
+    "ig_likes": 489,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "GU:Hanke": {
     "x_views": 1700000,
@@ -570,8 +572,10 @@
     "x_views_at": "2026-07-22T14:56:09Z",
     "yt_views": 7200,
     "yt_views_at": "2026-06-29T19:18:52Z",
-    "rumble_views": 2360,
-    "rumble_views_at": "2026-06-21T16:19:50Z"
+    "rumble_views": 2600,
+    "rumble_views_at": "2026-07-23T23:09:08Z",
+    "ig_likes": 819,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "GU:Keen": {
     "x_views": 934400,
@@ -579,23 +583,29 @@
     "yt_views": 2400,
     "yt_views_at": "2026-07-21T21:30:46Z",
     "rumble_views": 3000,
-    "rumble_views_at": "2026-07-17T14:29:30Z"
+    "rumble_views_at": "2026-07-17T14:29:30Z",
+    "ig_likes": 1900,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "NO:Sibal": {
     "yt_views": 916,
     "yt_views_at": "2026-07-14T18:11:23Z",
-    "rumble_views": 492,
-    "rumble_views_at": "2026-07-03T21:40:00Z",
+    "rumble_views": 525,
+    "rumble_views_at": "2026-07-23T23:09:08Z",
     "x_views": 343700,
-    "x_views_at": "2026-07-21T01:11:18Z"
+    "x_views_at": "2026-07-21T01:11:18Z",
+    "ig_likes": 203,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "GU:Olmert": {
     "x_views": 298900,
     "x_views_at": "2026-07-22T23:42:56Z",
     "yt_views": 6900,
     "yt_views_at": "2026-06-26T23:51:13Z",
-    "rumble_views": 2270,
-    "rumble_views_at": "2026-06-21T16:19:50Z"
+    "rumble_views": 3000,
+    "rumble_views_at": "2026-07-23T23:09:08Z",
+    "ig_likes": 2800,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "GU:Ben-Menashe": {
     "x_views": 421700,
@@ -620,8 +630,8 @@
     "x_views_at": "2026-07-03T21:40:00Z",
     "yt_views": 1400,
     "yt_views_at": "2026-07-01T18:13:01Z",
-    "rumble_views": 490,
-    "rumble_views_at": "2026-07-03T21:40:00Z"
+    "rumble_views": 526,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:DEF": {},
   "GU:Harward": {
@@ -637,7 +647,9 @@
     "x_views": 361800,
     "x_views_at": "2026-07-16T14:27:32Z",
     "ig_likes": 11300,
-    "ig_likes_at": "2026-07-17T14:29:30Z"
+    "ig_likes_at": "2026-07-17T14:29:30Z",
+    "rumble_views": 3800,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:Kucinich": {
     "x_views": 802800,
@@ -645,7 +657,9 @@
     "yt_views": 935,
     "yt_views_at": "2026-07-22T09:39:47Z",
     "ig_likes": 4000,
-    "ig_likes_at": "2026-07-17T14:29:30Z"
+    "ig_likes_at": "2026-07-17T14:29:30Z",
+    "rumble_views": 2300,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "NO:Chief": {
     "yt_views": 1000,
@@ -667,8 +681,10 @@
     "yt_views_at": "2026-07-15T07:30:23Z",
     "x_views": 730800,
     "x_views_at": "2026-07-22T21:17:08Z",
-    "rumble_views": 840,
-    "rumble_views_at": "2026-07-17T14:29:30Z"
+    "rumble_views": 902,
+    "rumble_views_at": "2026-07-23T23:09:08Z",
+    "ig_likes": 233,
+    "ig_likes_at": "2026-07-23T23:09:08Z"
   },
   "GU:Carden": {
     "x_views": 548500,
@@ -682,13 +698,21 @@
     "x_views": 451900,
     "x_views_at": "2026-07-15T12:07:47Z",
     "yt_views": 4900,
-    "yt_views_at": "2026-07-20T10:21:10Z"
+    "yt_views_at": "2026-07-20T10:21:10Z",
+    "ig_likes": 1100,
+    "ig_likes_at": "2026-07-23T23:09:08Z",
+    "rumble_views": 2400,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:Fritz": {
     "x_views": 521500,
     "x_views_at": "2026-07-19T09:31:10Z",
     "yt_views": 980,
-    "yt_views_at": "2026-07-23T20:13:45Z"
+    "yt_views_at": "2026-07-23T20:13:45Z",
+    "ig_likes": 1100,
+    "ig_likes_at": "2026-07-23T23:09:08Z",
+    "rumble_views": 3100,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:Israel\u2019s": {
     "x_views": 511200,
@@ -698,18 +722,30 @@
     "x_views": 835100,
     "x_views_at": "2026-07-19T10:57:26Z",
     "yt_views": 1100,
-    "yt_views_at": "2026-07-17T14:29:30Z"
+    "yt_views_at": "2026-07-17T14:29:30Z",
+    "ig_likes": 462,
+    "ig_likes_at": "2026-07-23T23:09:08Z",
+    "rumble_views": 484,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:Wilkerson": {
     "yt_views": 4200,
     "yt_views_at": "2026-07-21T23:54:06Z",
     "x_views": 680400,
-    "x_views_at": "2026-07-20T06:38:03Z"
+    "x_views_at": "2026-07-20T06:38:03Z",
+    "ig_likes": 1700,
+    "ig_likes_at": "2026-07-23T23:09:08Z",
+    "rumble_views": 3200,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   },
   "GU:Bandow": {
     "x_views": 379600,
     "x_views_at": "2026-07-22T23:42:56Z",
     "yt_views": 2400,
-    "yt_views_at": "2026-07-23T16:47:44Z"
+    "yt_views_at": "2026-07-23T16:47:44Z",
+    "ig_likes": 1500,
+    "ig_likes_at": "2026-07-23T23:09:08Z",
+    "rumble_views": 2400,
+    "rumble_views_at": "2026-07-23T23:09:08Z"
   }
 }
