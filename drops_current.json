@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-23T23:09:08Z",
+  "updated": "2026-07-23T23:26:31Z",
   "drops": [
     {
-      "ts": "2026-07-23T23:09:08Z",
+      "ts": "2026-07-23T23:26:31Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -12,14 +12,14 @@
       "drop_pct": 27.3
     },
     {
-      "ts": "2026-07-23T23:09:08Z",
+      "ts": "2026-07-23T23:26:31Z",
       "show": "GU",
       "guest": "Olmert",
       "platform": "X",
       "peak": 298900,
       "peak_at": "2026-07-22T23:42:56Z",
-      "current": 124900,
-      "drop_pct": 58.2
+      "current": 34800,
+      "drop_pct": 88.4
     }
   ]
 }
