@@ -1,62 +1,13 @@
 {
   "show": "GU",
   "window": "fri_to_mon_broadcast_week",
-  "window_start": "2026-07-17",
-  "window_end": "2026-07-20",
-  "window_start_mon": "2026-07-17",
-  "window_end_sun": "2026-07-20",
-  "generated_at": "2026-07-23T23:40:49.118747Z",
-  "n": 2,
-  "entries": [
-    {
-      "guest": "Doug Bandow",
-      "surname": "Bandow",
-      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION\u2014Doug Bandow",
-      "date": "20 Jul",
-      "rumble_views": "0",
-      "x_views": "243.3K",
-      "ig_likes": "0",
-      "show": "GU",
-      "canonical_guest_full_name": "Doug Bandow",
-      "canonical_surname_upper": "BANDOW",
-      "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": "_SVI4UPDX7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "pub_iso": "2026-07-20T20:04:05Z",
-      "canonical_episode_id_v2": "3c04f341a327a14e",
-      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "source_platform_ids": {
-        "youtube": [
-          "_SVI4UPDX7g"
-        ]
-      },
-      "yt_views": "2.4K"
-    },
-    {
-      "guest": "Lawrence Wilkerson",
-      "surname": "Wilkerson",
-      "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
-      "date": "18 Jul",
-      "rumble_views": "0",
-      "x_views": "149.7K",
-      "ig_likes": "0",
-      "show": "GU",
-      "canonical_guest_full_name": "Lawrence Wilkerson",
-      "canonical_surname_upper": "WILKERSON",
-      "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": "WlIY7-ovBd8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "pub_iso": "2026-07-18T11:32:42Z",
-      "canonical_episode_id_v2": "4a4b17f0a7877200",
-      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "source_platform_ids": {
-        "youtube": [
-          "WlIY7-ovBd8"
-        ]
-      },
-      "yt_views": "4.2K"
-    }
-  ],
+  "window_start": "2026-07-24",
+  "window_end": "2026-07-27",
+  "window_start_mon": "2026-07-24",
+  "window_end_sun": "2026-07-27",
+  "generated_at": "2026-07-24T01:10:42.967258Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
