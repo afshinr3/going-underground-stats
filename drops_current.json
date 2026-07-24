@@ -1,18 +1,8 @@
 {
-  "updated": "2026-07-24T13:08:03Z",
+  "updated": "2026-07-24T13:16:19Z",
   "drops": [
     {
-      "ts": "2026-07-24T13:08:03Z",
-      "show": "GU",
-      "guest": "Blumenthal",
-      "platform": "X",
-      "peak": 364200,
-      "peak_at": "2026-07-24T09:55:51Z",
-      "current": 272100,
-      "drop_pct": 25.3
-    },
-    {
-      "ts": "2026-07-24T13:08:03Z",
+      "ts": "2026-07-24T13:16:19Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "X",
@@ -22,7 +12,7 @@
       "drop_pct": 30.2
     },
     {
-      "ts": "2026-07-24T13:08:03Z",
+      "ts": "2026-07-24T13:16:19Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
