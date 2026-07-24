@@ -1,4 +1,15 @@
 {
-  "updated": "2026-07-24T09:48:28Z",
-  "drops": []
+  "updated": "2026-07-24T09:55:51Z",
+  "drops": [
+    {
+      "ts": "2026-07-24T09:55:51Z",
+      "show": "NO",
+      "guest": "Sibal",
+      "platform": "X",
+      "peak": 344200,
+      "peak_at": "2026-07-24T07:19:36Z",
+      "current": 246200,
+      "drop_pct": 28.5
+    }
+  ]
 }
