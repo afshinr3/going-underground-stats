@@ -5,9 +5,23 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-25T11:45:41.601448Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-07-25T12:30:55.611468Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Daniel Levy",
+      "surname": "Levy",
+      "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
+      "date": "24 Jul",
+      "rumble_views": "1.2K",
+      "show": "GU",
+      "canonical_guest_full_name": "Daniel Levy",
+      "pub_iso": "2026-07-24T11:33:20Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "774"
+    }
+  ],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
