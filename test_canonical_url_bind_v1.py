@@ -273,6 +273,24 @@ def test_cross_production_metric_isolation(fap, tc):
             f"Sakwa yt_views drifted: got {by_vid['BS9TmtR_Ehw']['yt_views']!r}")
 
 
+def test_title_match_no_false_positive(fap):
+    """URL_BIND_TITLE_MATCH_HARDENING_V1_20260725 — two DIFFERENT episodes sharing
+    only a few common topic words (Israel/Iran/Israeli) must NOT fuzzy-match. The
+    old '>=3 shared tokens' shortcut bound one episode's row to the other's YouTube
+    video, corrupting its identity. Same-episode titles must still match."""
+    m = fap._url_bind_title_match
+    levy = ("Iran: Israel is USING UP US Power as the Unipolar World Ends— "
+            "Ex-Israeli Negotiator Daniel Levy")
+    benm = ("Trump's LIFE is in DANGER from Israel After Deal with Iran—"
+            "Ex Israeli Intel Officer Ari Ben-Menashe")
+    _assert(m(levy, benm) is False,
+            "Levy must NOT match Ben-Menashe (only topic words shared)")
+    _assert(m(levy, levy) is True, "identical title must match")
+    _assert(m(levy, "Iran: Israel is Using Up US Power as the Unipolar World "
+                    "Ends - Daniel Levy") is True,
+            "same-episode reformatted title must still bind")
+
+
 TESTS = {
     "sakwa_real_date_not_17_jul": test_sakwa_real_date_not_17_jul,
     "true_17_jul_guest_present": test_true_17_jul_guest_present,
@@ -287,6 +305,12 @@ def main():
     cases = data.get("canonical_url_bind_test_cases") or []
     fap = load_fap()
     n_pass = 0; n_fail = 0
+    # standalone (non-JSON-driven) matcher regression
+    try:
+        test_title_match_no_false_positive(fap)
+        print("  PASS title_match_no_false_positive"); n_pass += 1
+    except Exception as e:
+        print(f"  FAIL title_match_no_false_positive: {e}"); n_fail += 1
     for tc in cases:
         # Reset URL_BIND cache per test to avoid cross-contamination
         fap._URL_BIND_CACHE.clear()

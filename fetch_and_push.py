@@ -329,10 +329,15 @@ def _url_bind_title_match(row_title, ep_title):
     if not a or not b:
         return False
     inter = a & b
-    if len(inter) >= 3:
-        return True
     small = min(len(a), len(b))
-    return len(inter) / max(small, 1) >= 0.6
+    ratio = len(inter) / max(small, 1)
+    # URL_BIND_TITLE_MATCH_HARDENING_V1_20260725 — the bare ">=3 shared tokens"
+    # shortcut false-matched DIFFERENT episodes that merely share 3 common topic
+    # words (e.g. Levy vs Ben-Menashe both carry Israel/Iran/Israeli), which
+    # corrupted one episode's identity by binding it to the other's YouTube video.
+    # A real title match shares most of the shorter title's tokens, so gate the
+    # >=3 shortcut behind a substantial overlap ratio as well.
+    return ratio >= 0.6 or (len(inter) >= 3 and ratio >= 0.5)
 
 
 def _url_bind_cleanup_and_backfill(cache, channel_id, root_dir, data_file_name):
