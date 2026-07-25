@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-25T21:02:36Z",
+  "updated": "2026-07-25T21:29:12Z",
   "drops": [
     {
-      "ts": "2026-07-25T21:02:36Z",
+      "ts": "2026-07-25T21:29:12Z",
       "show": "GU",
       "guest": "Blumenthal",
       "platform": "X",
       "peak": 364300,
       "peak_at": "2026-07-24T23:34:10Z",
-      "current": 307400,
-      "drop_pct": 15.6
+      "current": 194600,
+      "drop_pct": 46.6
     },
     {
-      "ts": "2026-07-25T21:02:36Z",
+      "ts": "2026-07-25T21:29:12Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
