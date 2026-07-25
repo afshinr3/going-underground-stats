@@ -5,7 +5,7 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-25T18:02:37.535228Z",
+  "generated_at": "2026-07-25T19:22:56.092480Z",
   "n": 1,
   "entries": [
     {
@@ -20,7 +20,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "713",
-      "x_views": "65.5K",
+      "x_views": "123.2K",
       "canonical_surname_upper": "LEVY",
       "canonical_episode_id": "fcee2e52ba61",
       "canonical_video_id": "IGlM3ZTHIY8",
@@ -32,7 +32,7 @@
           "IGlM3ZTHIY8"
         ]
       },
-      "yt_views": "543"
+      "yt_views": "714"
     }
   ],
   "source_feed": "videos.json",
