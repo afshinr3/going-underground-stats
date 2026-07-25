@@ -1,9 +1,9 @@
 {
-  "iso": "2026-07-25T19:22:56Z",
-  "last_updated": "2026-07-25T19:22:56Z",
+  "iso": "2026-07-25T20:29:59Z",
+  "last_updated": "2026-07-25T20:29:59Z",
   "episodes": [
     {
-      "guest": "Daniel Levy",
+      "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
@@ -20,9 +20,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.5K",
-        "yt_views": "714",
-        "x_views": "123.2K",
+        "rumble_views": "1.6K",
+        "yt_views": "832",
+        "x_views": "27.3K",
         "ig_likes": "713"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.8K",
-        "x_views": "279.5K",
+        "x_views": "279.6K",
         "ig_likes": "1.5K"
       }
     },
@@ -68,9 +68,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": "3.4K",
         "yt_views": "4.2K",
-        "x_views": "577.4K",
+        "x_views": "150.8K",
         "ig_likes": "1.7K"
       }
     },
@@ -93,8 +93,8 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "987",
-        "x_views": "169.5K",
+        "yt_views": "989",
+        "x_views": "311.1K",
         "ig_likes": "1.1K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "314.8K",
+        "x_views": "327.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "935",
-        "x_views": "642.7K",
+        "x_views": "77.7K",
         "ig_likes": "1.1K"
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "108.2K",
+        "x_views": "111.2K",
         "ig_likes": "819"
       }
     },
@@ -261,9 +261,33 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "650",
+        "yt_views": "651",
         "x_views": "194.4K",
         "ig_likes": "489"
+      }
+    },
+    {
+      "guest": "Steve Hanke",
+      "surname": "HANKE",
+      "title": "IRAN’S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
+      "date": "6 Jun",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Qucvbn88dOI",
+      "canonical_episode_id": "c8474b95f509",
+      "canonical_video_id": "Qucvbn88dOI",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Qucvbn88dOI",
+      "canonical_episode_id_v2": "91fb59e8a673dbb1",
+      "pub_iso": "2026-06-06T16:09:13Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Qucvbn88dOI"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "2.3K",
+        "yt_views": "2.4K",
+        "x_views": "222.2K",
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -285,7 +309,7 @@
       },
       "metrics": {
         "rumble_views": "635",
-        "yt_views": "469",
+        "yt_views": "470",
         "x_views": "362.6K",
         "ig_likes": "348"
       }
@@ -381,7 +405,7 @@
   ],
   "gu": [
     {
-      "guest": "Daniel Levy",
+      "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
@@ -398,9 +422,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.5K",
-        "yt_views": "714",
-        "x_views": "123.2K",
+        "rumble_views": "1.6K",
+        "yt_views": "832",
+        "x_views": "27.3K",
         "ig_likes": "713"
       }
     },
@@ -424,7 +448,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.8K",
-        "x_views": "279.5K",
+        "x_views": "279.6K",
         "ig_likes": "1.5K"
       }
     },
@@ -446,9 +470,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": "3.4K",
         "yt_views": "4.2K",
-        "x_views": "577.4K",
+        "x_views": "150.8K",
         "ig_likes": "1.7K"
       }
     },
@@ -471,8 +495,8 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "987",
-        "x_views": "169.5K",
+        "yt_views": "989",
+        "x_views": "311.1K",
         "ig_likes": "1.1K"
       }
     },
@@ -496,7 +520,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "314.8K",
+        "x_views": "327.3K",
         "ig_likes": "1.1K"
       }
     }
@@ -521,7 +545,7 @@
       },
       "metrics": {
         "rumble_views": "635",
-        "yt_views": "469",
+        "yt_views": "470",
         "x_views": "362.6K",
         "ig_likes": "348"
       }
