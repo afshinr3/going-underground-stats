@@ -613,7 +613,9 @@
     "yt_views": 1800,
     "yt_views_at": "2026-07-10T00:34:32Z",
     "rumble_views": 10200,
-    "rumble_views_at": "2026-07-17T14:29:30Z"
+    "rumble_views_at": "2026-07-17T14:29:30Z",
+    "ig_likes": 774,
+    "ig_likes_at": "2026-07-25T12:24:54Z"
   },
   "GU:SLAM": {
     "x_views": 79200,
@@ -747,5 +749,13 @@
     "ig_likes_at": "2026-07-23T23:09:08Z",
     "rumble_views": 2500,
     "rumble_views_at": "2026-07-24T20:29:33Z"
+  },
+  "NO:Schiff": {
+    "yt_views": 468,
+    "yt_views_at": "2026-07-25T12:24:54Z",
+    "ig_likes": 348,
+    "ig_likes_at": "2026-07-25T12:24:54Z",
+    "rumble_views": 629,
+    "rumble_views_at": "2026-07-25T12:24:54Z"
   }
 }

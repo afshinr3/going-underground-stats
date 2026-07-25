@@ -1,5 +1,30 @@
 [
   {
+    "guest": "Peter Schiff",
+    "surname": "Schiff",
+    "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
+    "date": "19 Jul",
+    "rumble_views": "629",
+    "show": "NO",
+    "canonical_guest_full_name": "Peter Schiff",
+    "pub_iso": "2026-07-19T06:30:06Z",
+    "rumble_only_injected": true,
+    "rumble_prov": "m2_rumble_only_v3",
+    "ig_likes": "348",
+    "canonical_video_id": "rE30fKtk4pk",
+    "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
+    "canonical_episode_id_v2": "e0b569e93071552f",
+    "link": "https://www.youtube.com/watch?v=rE30fKtk4pk",
+    "source_platform_ids": {
+      "youtube": [
+        "rE30fKtk4pk"
+      ]
+    },
+    "yt_views": "468",
+    "canonical_surname_upper": "SCHIFF",
+    "canonical_episode_id": "4d61219d41f9"
+  },
+  {
     "guest": "John Perkins",
     "surname": "Perkins",
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
@@ -74,18 +99,5 @@
     "canonical_guest_full_name": "Kanwal Sibal",
     "canonical_surname_upper": "SIBAL",
     "canonical_episode_id": "ff78fb20fdb5"
-  },
-  {
-    "guest": "Peter Schiff",
-    "surname": "Schiff",
-    "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
-    "date": "19 Jul",
-    "rumble_views": "629",
-    "show": "NO",
-    "canonical_guest_full_name": "Peter Schiff",
-    "pub_iso": "2026-07-19T11:34:22Z",
-    "rumble_only_injected": true,
-    "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "348"
   }
 ]
