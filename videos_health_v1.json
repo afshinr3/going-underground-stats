@@ -1,6 +1,6 @@
 {
-  "iso": "2026-07-26T07:36:59Z",
-  "last_updated": "2026-07-26T07:36:59Z",
+  "iso": "2026-07-26T09:48:45Z",
+  "last_updated": "2026-07-26T09:48:45Z",
   "episodes": [
     {
       "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -20,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
-        "yt_views": "1.5K",
-        "x_views": "38.1K",
-        "ig_likes": "0"
+        "rumble_views": "1.9K",
+        "yt_views": "1.6K",
+        "x_views": "38.7K",
+        "ig_likes": "949"
       }
     },
     {
@@ -44,10 +44,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.5K",
         "yt_views": "3.0K",
-        "x_views": "233.7K",
-        "ig_likes": "0"
+        "x_views": "280.4K",
+        "ig_likes": "1.5K"
       }
     },
     {
@@ -68,10 +68,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.4K",
         "yt_views": "4.2K",
-        "x_views": "416.6K",
-        "ig_likes": "0"
+        "x_views": "150.9K",
+        "ig_likes": "1.7K"
       }
     },
     {
@@ -92,10 +92,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "169.6K",
-        "ig_likes": "0"
+        "rumble_views": "3.1K",
+        "yt_views": "992",
+        "x_views": "189.3K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -116,10 +116,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "244.3K",
-        "ig_likes": "0"
+        "x_views": "349.3K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -140,10 +140,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.3K",
         "yt_views": "935",
-        "x_views": "165.5K",
-        "ig_likes": "0"
+        "x_views": "77.7K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -164,10 +164,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.8K",
         "yt_views": "15.3K",
         "x_views": "307.5K",
-        "ig_likes": "0"
+        "ig_likes": "2.1K"
       }
     },
     {
@@ -188,10 +188,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.0K",
         "yt_views": "6.9K",
-        "x_views": "125.0K",
-        "ig_likes": "0"
+        "x_views": "93.4K",
+        "ig_likes": "2.8K"
       }
     },
     {
@@ -212,10 +212,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.0K",
         "yt_views": "1.9K",
-        "x_views": "443.6K",
-        "ig_likes": "0"
+        "x_views": "443.7K",
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -236,10 +236,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "123.0K",
-        "ig_likes": "0"
+        "x_views": "125.1K",
+        "ig_likes": "819"
       }
     },
     {
@@ -260,10 +260,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.4K",
         "yt_views": "652",
-        "x_views": "194.6K",
-        "ig_likes": "0"
+        "x_views": "407.5K",
+        "ig_likes": "489"
       }
     },
     {
@@ -284,10 +284,34 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.3K",
         "yt_views": "2.4K",
-        "x_views": "242.5K",
-        "ig_likes": "0"
+        "x_views": "222.3K",
+        "ig_likes": "1.9K"
+      }
+    },
+    {
+      "guest": "Hussein Askary",
+      "surname": "ASKARY",
+      "title": "Global South’s Rise Causes PANIC for West’s Elites as US-Led Unipolar World Declines- Hussein Askary",
+      "date": "26 Jul",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=_sA9-4RwI00",
+      "canonical_episode_id": "df26e3c0ad57",
+      "canonical_video_id": "_sA9-4RwI00",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
+      "canonical_episode_id_v2": "9e5a40326e7138df",
+      "pub_iso": "2026-07-26T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_sA9-4RwI00"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "189",
+        "yt_views": "37",
+        "x_views": "14.1K",
+        "ig_likes": "75"
       }
     },
     {
@@ -308,9 +332,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "638",
+        "rumble_views": "640",
         "yt_views": "474",
-        "x_views": "362.9K",
+        "x_views": "781.6K",
         "ig_likes": "350"
       }
     },
@@ -422,10 +446,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
-        "yt_views": "1.5K",
-        "x_views": "38.1K",
-        "ig_likes": "0"
+        "rumble_views": "1.9K",
+        "yt_views": "1.6K",
+        "x_views": "38.7K",
+        "ig_likes": "949"
       }
     },
     {
@@ -446,10 +470,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.5K",
         "yt_views": "3.0K",
-        "x_views": "233.7K",
-        "ig_likes": "0"
+        "x_views": "280.4K",
+        "ig_likes": "1.5K"
       }
     },
     {
@@ -470,10 +494,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "3.4K",
         "yt_views": "4.2K",
-        "x_views": "416.6K",
-        "ig_likes": "0"
+        "x_views": "150.9K",
+        "ig_likes": "1.7K"
       }
     },
     {
@@ -494,10 +518,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
-        "yt_views": null,
-        "x_views": "169.6K",
-        "ig_likes": "0"
+        "rumble_views": "3.1K",
+        "yt_views": "992",
+        "x_views": "189.3K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -518,14 +542,38 @@
         ]
       },
       "metrics": {
-        "rumble_views": "0",
+        "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "244.3K",
-        "ig_likes": "0"
+        "x_views": "349.3K",
+        "ig_likes": "1.1K"
       }
     }
   ],
   "no": [
+    {
+      "guest": "Hussein Askary",
+      "surname": "ASKARY",
+      "title": "Global South’s Rise Causes PANIC for West’s Elites as US-Led Unipolar World Declines- Hussein Askary",
+      "date": "26 Jul",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=_sA9-4RwI00",
+      "canonical_episode_id": "df26e3c0ad57",
+      "canonical_video_id": "_sA9-4RwI00",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
+      "canonical_episode_id_v2": "9e5a40326e7138df",
+      "pub_iso": "2026-07-26T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_sA9-4RwI00"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "189",
+        "yt_views": "37",
+        "x_views": "14.1K",
+        "ig_likes": "75"
+      }
+    },
     {
       "guest": "Peter Schiff",
       "surname": "SCHIFF",
@@ -544,9 +592,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "638",
+        "rumble_views": "640",
         "yt_views": "474",
-        "x_views": "362.9K",
+        "x_views": "781.6K",
         "ig_likes": "350"
       }
     },
@@ -616,26 +664,6 @@
         "yt_views": "0",
         "x_views": "323.4K",
         "ig_likes": "847"
-      }
-    },
-    {
-      "guest": "Kanwal Sibal",
-      "surname": "SIBAL",
-      "title": "NEW EPISODE OF NEW ORDER \n\nIndia DOESN'T Want to be Pulled into Any US War on China Over Taiwan —Amb. Kanwal Sibal\n\nHow will India navigate attempts to drag it into the US’ coming war on China?\n\nWhat",
-      "date": "21 Jun",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "ff78fb20fdb5",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "525",
-        "yt_views": "0",
-        "x_views": "85.7K",
-        "ig_likes": "203"
       }
     }
   ]
