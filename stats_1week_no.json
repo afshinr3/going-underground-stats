@@ -5,9 +5,23 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-26T07:36:59.187703Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-07-26T08:20:02.941096Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Hussein Askary",
+      "surname": "Askary",
+      "title": "Global South\u2019s Rise Causes PANIC for West\u2019s Elites as US-Led Unipolar World Declines- Hussein Askary",
+      "date": "26 Jul",
+      "rumble_views": "160",
+      "show": "NO",
+      "canonical_guest_full_name": "Hussein Askary",
+      "pub_iso": "2026-07-26T06:15:11Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "70"
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
