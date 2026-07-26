@@ -1,6 +1,6 @@
 {
-  "iso": "2026-07-26T09:48:45Z",
-  "last_updated": "2026-07-26T09:48:45Z",
+  "iso": "2026-07-26T11:21:19Z",
+  "last_updated": "2026-07-26T11:21:19Z",
   "episodes": [
     {
       "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.6K",
-        "x_views": "38.7K",
+        "x_views": "38.9K",
         "ig_likes": "949"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "3.0K",
-        "x_views": "280.4K",
+        "x_views": "280.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "992",
-        "x_views": "189.3K",
+        "x_views": "169.6K",
         "ig_likes": "1.1K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "349.3K",
+        "x_views": "244.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "935",
-        "x_views": "77.7K",
+        "x_views": "622.8K",
         "ig_likes": "1.1K"
       }
     },
@@ -214,7 +214,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "1.9K",
-        "x_views": "443.7K",
+        "x_views": "521.4K",
         "ig_likes": "1.9K"
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "125.1K",
+        "x_views": "61.7K",
         "ig_likes": "819"
       }
     },
@@ -262,7 +262,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "652",
-        "x_views": "407.5K",
+        "x_views": "319.3K",
         "ig_likes": "489"
       }
     },
@@ -308,9 +308,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "189",
-        "yt_views": "37",
-        "x_views": "14.1K",
+        "rumble_views": "214",
+        "yt_views": "56",
+        "x_views": "30.3K",
         "ig_likes": "75"
       }
     },
@@ -332,9 +332,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "640",
+        "rumble_views": "641",
         "yt_views": "474",
-        "x_views": "781.6K",
+        "x_views": "363.0K",
         "ig_likes": "350"
       }
     },
@@ -357,8 +357,8 @@
       },
       "metrics": {
         "rumble_views": "907",
-        "yt_views": "642",
-        "x_views": "301.2K",
+        "yt_views": "643",
+        "x_views": "511.5K",
         "ig_likes": "233"
       }
     },
@@ -448,7 +448,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.6K",
-        "x_views": "38.7K",
+        "x_views": "38.9K",
         "ig_likes": "949"
       }
     },
@@ -472,7 +472,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "3.0K",
-        "x_views": "280.4K",
+        "x_views": "280.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -520,7 +520,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "992",
-        "x_views": "189.3K",
+        "x_views": "169.6K",
         "ig_likes": "1.1K"
       }
     },
@@ -544,7 +544,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "349.3K",
+        "x_views": "244.5K",
         "ig_likes": "1.1K"
       }
     }
@@ -568,9 +568,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "189",
-        "yt_views": "37",
-        "x_views": "14.1K",
+        "rumble_views": "214",
+        "yt_views": "56",
+        "x_views": "30.3K",
         "ig_likes": "75"
       }
     },
@@ -592,9 +592,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "640",
+        "rumble_views": "641",
         "yt_views": "474",
-        "x_views": "781.6K",
+        "x_views": "363.0K",
         "ig_likes": "350"
       }
     },
@@ -617,8 +617,8 @@
       },
       "metrics": {
         "rumble_views": "907",
-        "yt_views": "642",
-        "x_views": "301.2K",
+        "yt_views": "643",
+        "x_views": "511.5K",
         "ig_likes": "233"
       }
     },
