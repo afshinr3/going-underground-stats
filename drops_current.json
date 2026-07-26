@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-26T07:31:41Z",
+  "updated": "2026-07-26T07:36:59Z",
   "drops": [
     {
-      "ts": "2026-07-26T07:31:41Z",
+      "ts": "2026-07-26T07:36:59Z",
       "show": "NO",
       "guest": "Schiff",
       "platform": "X",
       "peak": 644800,
       "peak_at": "2026-07-26T01:17:32Z",
-      "current": 362800,
+      "current": 362900,
       "drop_pct": 43.7
     },
     {
-      "ts": "2026-07-26T07:31:41Z",
+      "ts": "2026-07-26T07:36:59Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "X",
