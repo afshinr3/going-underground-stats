@@ -5,7 +5,7 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-27T16:20:03.571286Z",
+  "generated_at": "2026-07-27T16:22:57.852771Z",
   "n": 2,
   "entries": [
     {
@@ -13,26 +13,48 @@
       "surname": "Ayalon",
       "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
       "date": "27 Jul",
-      "rumble_views": "1.6K",
-      "x_views": "104.5K",
-      "ig_likes": "2.7K",
+      "rumble_views": "0",
+      "x_views": "40.1K",
+      "ig_likes": "0",
       "show": "GU",
       "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
       "canonical_surname_upper": "AYALON",
-      "canonical_episode_id": "349527d06a1f"
+      "canonical_episode_id": "349527d06a1f",
+      "canonical_video_id": "pzEU7fNiXgc",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+      "pub_iso": "2026-07-27T15:50:41Z",
+      "canonical_episode_id_v2": "86e2d81a08f45d8e",
+      "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+      "source_platform_ids": {
+        "youtube": [
+          "pzEU7fNiXgc"
+        ]
+      },
+      "yt_views": "42"
     },
     {
       "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "Levy",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
-      "rumble_views": "2.2K",
-      "x_views": "583.8K",
-      "ig_likes": "1.7K",
+      "rumble_views": "0",
+      "x_views": "41.3K",
+      "ig_likes": "0",
       "show": "GU",
       "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
       "canonical_surname_upper": "LEVY",
-      "canonical_episode_id": "fcee2e52ba61"
+      "canonical_episode_id": "fcee2e52ba61",
+      "canonical_video_id": "IGlM3ZTHIY8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "pub_iso": "2026-07-25T13:30:22Z",
+      "canonical_episode_id_v2": "4a0e3632a2a01b42",
+      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "source_platform_ids": {
+        "youtube": [
+          "IGlM3ZTHIY8"
+        ]
+      },
+      "yt_views": "2.9K"
     }
   ],
   "source_feed": "videos.json",
