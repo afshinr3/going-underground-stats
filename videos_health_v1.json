@@ -1,7 +1,27 @@
 {
-  "iso": "2026-07-27T00:16:11Z",
-  "last_updated": "2026-07-27T00:16:11Z",
+  "iso": "2026-07-27T04:08:16Z",
+  "last_updated": "2026-07-27T04:08:16Z",
   "episodes": [
+    {
+      "guest": "of Israel's Shin Bet Ami Ayalon",
+      "surname": "AYALON",
+      "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
+      "date": "26 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "349527d06a1f",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-07-26T11:15:20Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "813",
+        "yt_views": null,
+        "x_views": "42.5K",
+        "ig_likes": "1.6K"
+      }
+    },
     {
       "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
@@ -20,9 +40,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.0K",
-        "yt_views": "2.4K",
-        "x_views": "40.5K",
+        "rumble_views": "2.1K",
+        "yt_views": "2.5K",
+        "x_views": "40.8K",
         "ig_likes": "1.4K"
       }
     },
@@ -46,7 +66,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "2.9K",
-        "x_views": "281.2K",
+        "x_views": "281.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -94,7 +114,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.0K",
-        "x_views": "169.8K",
+        "x_views": "189.6K",
         "ig_likes": "1.1K"
       }
     },
@@ -118,7 +138,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "209.6K",
+        "x_views": "257.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -142,7 +162,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "937",
-        "x_views": "165.6K",
+        "x_views": "77.8K",
         "ig_likes": "1.1K"
       }
     },
@@ -190,7 +210,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "6.9K",
-        "x_views": "125.1K",
+        "x_views": "93.4K",
         "ig_likes": "2.8K"
       }
     },
@@ -214,7 +234,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "1.9K",
-        "x_views": "444.4K",
+        "x_views": "474.5K",
         "ig_likes": "1.9K"
       }
     },
@@ -238,7 +258,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "102.3K",
+        "x_views": "134.4K",
         "ig_likes": "819"
       }
     },
@@ -262,7 +282,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "651",
-        "x_views": "195.1K",
+        "x_views": "195.2K",
         "ig_likes": "489"
       }
     },
@@ -286,7 +306,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "2.4K",
-        "x_views": "242.6K",
+        "x_views": "222.4K",
         "ig_likes": "1.9K"
       }
     },
@@ -308,10 +328,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "424",
-        "yt_views": "130",
+        "rumble_views": "432",
+        "yt_views": "159",
         "x_views": "125.6K",
-        "ig_likes": "410"
+        "ig_likes": "424"
       }
     },
     {
@@ -333,7 +353,7 @@
       },
       "metrics": {
         "rumble_views": "660",
-        "yt_views": "476",
+        "yt_views": "477",
         "x_views": "363.3K",
         "ig_likes": "351"
       }
@@ -429,6 +449,26 @@
   ],
   "gu": [
     {
+      "guest": "of Israel's Shin Bet Ami Ayalon",
+      "surname": "AYALON",
+      "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
+      "date": "26 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "349527d06a1f",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-07-26T11:15:20Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "813",
+        "yt_views": null,
+        "x_views": "42.5K",
+        "ig_likes": "1.6K"
+      }
+    },
+    {
       "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
@@ -446,9 +486,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.0K",
-        "yt_views": "2.4K",
-        "x_views": "40.5K",
+        "rumble_views": "2.1K",
+        "yt_views": "2.5K",
+        "x_views": "40.8K",
         "ig_likes": "1.4K"
       }
     },
@@ -472,7 +512,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "2.9K",
-        "x_views": "281.2K",
+        "x_views": "281.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -520,31 +560,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.0K",
-        "x_views": "169.8K",
-        "ig_likes": "1.1K"
-      }
-    },
-    {
-      "guest": "Tobias Ellwood",
-      "surname": "ELLWOOD",
-      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
-      "date": "6 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
-      "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": "SmH-aEMZyqg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
-      "canonical_episode_id_v2": "e5c307d186579b5a",
-      "pub_iso": "2026-07-06T10:38:50Z",
-      "source_platform_ids": {
-        "youtube": [
-          "SmH-aEMZyqg"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.4K",
-        "yt_views": "1.4K",
-        "x_views": "209.6K",
+        "x_views": "189.6K",
         "ig_likes": "1.1K"
       }
     }
@@ -568,10 +584,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "424",
-        "yt_views": "130",
+        "rumble_views": "432",
+        "yt_views": "159",
         "x_views": "125.6K",
-        "ig_likes": "410"
+        "ig_likes": "424"
       }
     },
     {
@@ -593,7 +609,7 @@
       },
       "metrics": {
         "rumble_views": "660",
-        "yt_views": "476",
+        "yt_views": "477",
         "x_views": "363.3K",
         "ig_likes": "351"
       }
