@@ -1,4 +1,15 @@
 {
-  "updated": "2026-07-27T13:13:54Z",
-  "drops": []
+  "updated": "2026-07-27T13:31:34Z",
+  "drops": [
+    {
+      "ts": "2026-07-27T13:31:34Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "IG",
+      "peak": 2800,
+      "peak_at": "2026-07-27T12:37:16Z",
+      "current": 1100,
+      "drop_pct": 60.7
+    }
+  ]
 }
