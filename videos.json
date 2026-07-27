@@ -10,7 +10,9 @@
     "pub_iso": "2026-07-26T11:05:56Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "1.6K"
+    "ig_likes": "1.6K",
+    "canonical_surname_upper": "AYALON",
+    "canonical_episode_id": "349527d06a1f"
   },
   {
     "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -105,7 +107,8 @@
       "youtube": [
         "grMo8SmAQpU"
       ]
-    }
+    },
+    "yt_views": "1.0K"
   },
   {
     "guest": "Tobias Ellwood",
