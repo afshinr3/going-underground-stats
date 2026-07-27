@@ -1,58 +1,8 @@
 {
-  "updated": "2026-07-27T07:54:16Z",
+  "updated": "2026-07-27T08:04:45Z",
   "drops": [
     {
-      "ts": "2026-07-27T07:54:16Z",
-      "show": "GU",
-      "guest": "Kucinich",
-      "platform": "RUMBLE",
-      "peak": 3100,
-      "peak_at": "2026-07-26T12:28:46Z",
-      "current": 2300,
-      "drop_pct": 25.8
-    },
-    {
-      "ts": "2026-07-27T07:54:16Z",
-      "show": "GU",
-      "guest": "Blumenthal",
-      "platform": "RUMBLE",
-      "peak": 10400,
-      "peak_at": "2026-07-26T12:28:46Z",
-      "current": 3800,
-      "drop_pct": 63.5
-    },
-    {
-      "ts": "2026-07-27T07:54:16Z",
-      "show": "GU",
-      "guest": "Olmert",
-      "platform": "RUMBLE",
-      "peak": 10400,
-      "peak_at": "2026-07-26T12:28:46Z",
-      "current": 3000,
-      "drop_pct": 71.2
-    },
-    {
-      "ts": "2026-07-27T07:54:16Z",
-      "show": "GU",
-      "guest": "Keen",
-      "platform": "RUMBLE",
-      "peak": 10400,
-      "peak_at": "2026-07-26T12:28:46Z",
-      "current": 3000,
-      "drop_pct": 71.2
-    },
-    {
-      "ts": "2026-07-27T07:54:16Z",
-      "show": "GU",
-      "guest": "Hanke",
-      "platform": "RUMBLE",
-      "peak": 10400,
-      "peak_at": "2026-07-26T12:28:46Z",
-      "current": 2300,
-      "drop_pct": 77.9
-    },
-    {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Askary",
       "platform": "RUMBLE",
@@ -62,7 +12,7 @@
       "drop_pct": 81.8
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Schiff",
       "platform": "X",
@@ -72,7 +22,7 @@
       "drop_pct": 53.5
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Schiff",
       "platform": "RUMBLE",
@@ -82,7 +32,7 @@
       "drop_pct": 76.3
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "RUMBLE",
@@ -92,7 +42,7 @@
       "drop_pct": 16.6
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Sood",
       "platform": "RUMBLE",
@@ -102,7 +52,7 @@
       "drop_pct": 95.1
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Bhaskar",
       "platform": "RUMBLE",
@@ -112,7 +62,7 @@
       "drop_pct": 81.1
     },
     {
-      "ts": "2026-07-27T07:54:16Z",
+      "ts": "2026-07-27T08:04:45Z",
       "show": "NO",
       "guest": "Sibal",
       "platform": "RUMBLE",
