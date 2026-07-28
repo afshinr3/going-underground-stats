@@ -10,7 +10,18 @@
     "show": "GU",
     "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
     "canonical_surname_upper": "AYALON",
-    "canonical_episode_id": "349527d06a1f"
+    "canonical_episode_id": "349527d06a1f",
+    "canonical_video_id": "pzEU7fNiXgc",
+    "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+    "pub_iso": "2026-07-27T15:50:41Z",
+    "canonical_episode_id_v2": "86e2d81a08f45d8e",
+    "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+    "source_platform_ids": {
+      "youtube": [
+        "pzEU7fNiXgc"
+      ]
+    },
+    "yt_views": "585"
   },
   {
     "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -23,7 +34,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
     "canonical_surname_upper": "LEVY",
-    "canonical_episode_id": "fcee2e52ba61"
+    "canonical_episode_id": "fcee2e52ba61",
+    "canonical_video_id": "IGlM3ZTHIY8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+    "pub_iso": "2026-07-25T13:30:22Z",
+    "canonical_episode_id_v2": "4a0e3632a2a01b42",
+    "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+    "source_platform_ids": {
+      "youtube": [
+        "IGlM3ZTHIY8"
+      ]
+    },
+    "yt_views": "3.1K"
   },
   {
     "guest": "Doug Bandow",
@@ -36,7 +58,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
     "canonical_surname_upper": "BANDOW",
-    "canonical_episode_id": "dfc6afbc2824"
+    "canonical_episode_id": "dfc6afbc2824",
+    "canonical_video_id": "_SVI4UPDX7g",
+    "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+    "pub_iso": "2026-07-20T20:04:05Z",
+    "canonical_episode_id_v2": "3c04f341a327a14e",
+    "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+    "source_platform_ids": {
+      "youtube": [
+        "_SVI4UPDX7g"
+      ]
+    },
+    "yt_views": "2.9K"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -44,25 +77,46 @@
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
     "rumble_views": "3.4K",
-    "x_views": "?",
+    "x_views": "0",
     "ig_likes": "1.7K",
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
-    "canonical_episode_id": "40f99fc9eb05"
+    "canonical_episode_id": "40f99fc9eb05",
+    "canonical_video_id": "WlIY7-ovBd8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "pub_iso": "2026-07-18T11:32:42Z",
+    "canonical_episode_id_v2": "4a4b17f0a7877200",
+    "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "source_platform_ids": {
+      "youtube": [
+        "WlIY7-ovBd8"
+      ]
+    },
+    "yt_views": "4.2K"
   },
   {
-    "guest": "CMSGT. Dennis Fritz: Israel\u2019s ",
-    "surname": "Israel\u2019s",
+    "guest": "Dennis Fritz",
+    "surname": "Fritz",
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
     "date": "13 Jul",
     "rumble_views": "3.1K",
     "x_views": "256.8K",
     "ig_likes": "3.1K",
     "show": "GU",
-    "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
-    "canonical_surname_upper": "ISRAEL\u2019S",
-    "canonical_episode_id": "b8e8126f2b5e"
+    "canonical_guest_full_name": "Dennis Fritz",
+    "canonical_surname_upper": "FRITZ",
+    "canonical_episode_id": "b8e8126f2b5e",
+    "canonical_video_id": "grMo8SmAQpU",
+    "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "pub_iso": "2026-07-13T16:25:30Z",
+    "canonical_episode_id_v2": "af16e80c488f7ef0",
+    "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "source_platform_ids": {
+      "youtube": [
+        "grMo8SmAQpU"
+      ]
+    }
   },
   {
     "guest": "Tobias Ellwood",
@@ -75,7 +129,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
-    "canonical_episode_id": "6ca7f65c75da"
+    "canonical_episode_id": "6ca7f65c75da",
+    "canonical_video_id": "SmH-aEMZyqg",
+    "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+    "pub_iso": "2026-07-06T10:38:50Z",
+    "canonical_episode_id_v2": "e5c307d186579b5a",
+    "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+    "source_platform_ids": {
+      "youtube": [
+        "SmH-aEMZyqg"
+      ]
+    },
+    "yt_views": "1.4K"
   },
   {
     "guest": "Dennis Kucinich",
@@ -83,12 +148,23 @@
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "2.4K",
-    "x_views": "?",
+    "x_views": "0",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
-    "canonical_episode_id": "9702aa6e4b89"
+    "canonical_episode_id": "9702aa6e4b89",
+    "canonical_video_id": "M_KrzyAybFI",
+    "canonical_video_url": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+    "pub_iso": "2026-07-04T10:54:02Z",
+    "canonical_episode_id_v2": "495ea447b2ab31cf",
+    "link": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+    "source_platform_ids": {
+      "youtube": [
+        "M_KrzyAybFI"
+      ]
+    },
+    "yt_views": "937"
   },
   {
     "guest": "Max Blumenthal",
@@ -96,25 +172,23 @@
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
     "rumble_views": "3.9K",
-    "x_views": "?",
+    "x_views": "0",
     "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
-    "canonical_episode_id": "437b917e580d"
-  },
-  {
-    "guest": "\u2018The US LACKS THE POWER TO DEF",
-    "surname": "DEF",
-    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-    "date": "27 Jun",
-    "rumble_views": "2.5K",
-    "x_views": "?",
-    "ig_likes": "4.5K",
-    "show": "GU",
-    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
-    "canonical_surname_upper": "DEF",
-    "canonical_episode_id": "95d519473319"
+    "canonical_episode_id": "437b917e580d",
+    "canonical_video_id": "-c_7WNHYTEE",
+    "canonical_video_url": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
+    "pub_iso": "2026-06-29T11:38:52Z",
+    "canonical_episode_id_v2": "c887d6373249acbe",
+    "link": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
+    "source_platform_ids": {
+      "youtube": [
+        "-c_7WNHYTEE"
+      ]
+    },
+    "yt_views": "15.3K"
   },
   {
     "guest": "Ehud Olmert",
@@ -127,7 +201,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
-    "canonical_episode_id": "2d6e9913fb1c"
+    "canonical_episode_id": "2d6e9913fb1c",
+    "canonical_video_id": "55zQJ3W6M7w",
+    "canonical_video_url": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+    "pub_iso": "2026-06-20T09:24:37Z",
+    "canonical_episode_id_v2": "97d493ba3a1d75a6",
+    "link": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+    "source_platform_ids": {
+      "youtube": [
+        "55zQJ3W6M7w"
+      ]
+    },
+    "yt_views": "6.9K"
   },
   {
     "guest": "Steve Keen",
@@ -140,7 +225,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
-    "canonical_episode_id": "cbe40066aa0d"
+    "canonical_episode_id": "cbe40066aa0d",
+    "canonical_video_id": "0ChukxIewy4",
+    "canonical_video_url": "https://www.youtube.com/watch?v=0ChukxIewy4",
+    "pub_iso": "2026-06-15T09:30:08Z",
+    "canonical_episode_id_v2": "0050b454fc129cad",
+    "link": "https://www.youtube.com/watch?v=0ChukxIewy4",
+    "source_platform_ids": {
+      "youtube": [
+        "0ChukxIewy4"
+      ]
+    },
+    "yt_views": "1.9K"
   },
   {
     "guest": "Theodore Postol",
@@ -153,7 +249,18 @@
     "show": "GU",
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
-    "canonical_episode_id": "8014ccd61339"
+    "canonical_episode_id": "8014ccd61339",
+    "canonical_video_id": "duEMg_ThxzU",
+    "canonical_video_url": "https://www.youtube.com/watch?v=duEMg_ThxzU",
+    "pub_iso": "2026-06-13T15:21:51Z",
+    "canonical_episode_id_v2": "ee155eb4a4662cd0",
+    "link": "https://www.youtube.com/watch?v=duEMg_ThxzU",
+    "source_platform_ids": {
+      "youtube": [
+        "duEMg_ThxzU"
+      ]
+    },
+    "yt_views": "7.2K"
   },
   {
     "guest": "Chen Weihua",
@@ -166,32 +273,17 @@
     "show": "GU",
     "canonical_guest_full_name": "Chen Weihua",
     "canonical_surname_upper": "WEIHUA",
-    "canonical_episode_id": "11119819091b"
-  },
-  {
-    "guest": "Steve Hanke",
-    "surname": "Hanke",
-    "title": "IRAN\u2019S KNOCKOUT BLOW: Prof. Steve Hanke on Looming Economic Disaster as Strait of Hormuz Stays Shut",
-    "date": "6 Jun",
-    "rumble_views": "2.3K",
-    "x_views": "935.1K",
-    "ig_likes": "1.9K",
-    "show": "GU",
-    "canonical_guest_full_name": "Steve Hanke",
-    "canonical_surname_upper": "HANKE",
-    "canonical_episode_id": "c8474b95f509"
-  },
-  {
-    "guest": "Avi Shlaim",
-    "surname": "Shlaim",
-    "title": "Prof. Avi Shlaim: Trump-Netanyahu War on Iran is the 21st Century's MOST UNJUSTIFIED & FOOLISH WAR",
-    "date": "18 May",
-    "rumble_views": "3.3K",
-    "x_views": "122.8K",
-    "ig_likes": "3.6K",
-    "show": "GU",
-    "canonical_guest_full_name": "Avi Shlaim",
-    "canonical_surname_upper": "SHLAIM",
-    "canonical_episode_id": "3954f2c42a12"
+    "canonical_episode_id": "11119819091b",
+    "canonical_video_id": "-UeuS3MjgPE",
+    "canonical_video_url": "https://www.youtube.com/watch?v=-UeuS3MjgPE",
+    "pub_iso": "2026-06-08T14:49:29Z",
+    "canonical_episode_id_v2": "71b44b5856a3db6c",
+    "link": "https://www.youtube.com/watch?v=-UeuS3MjgPE",
+    "source_platform_ids": {
+      "youtube": [
+        "-UeuS3MjgPE"
+      ]
+    },
+    "yt_views": "651"
   }
 ]
