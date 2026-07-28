@@ -1,6 +1,6 @@
 {
-  "iso": "2026-07-28T01:06:18Z",
-  "last_updated": "2026-07-28T01:06:18Z",
+  "iso": "2026-07-28T04:30:22Z",
+  "last_updated": "2026-07-28T04:30:22Z",
   "episodes": [
     {
       "guest": "of Israel’s Shin Bet Ami Ayalon",
@@ -20,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.9K",
-        "yt_views": "508",
-        "x_views": "38.5K",
-        "ig_likes": "3.2K"
+        "rumble_views": "2.0K",
+        "yt_views": "557",
+        "x_views": "129.1K",
+        "ig_likes": "3.5K"
       }
     },
     {
@@ -45,9 +45,9 @@
       },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": "3.0K",
+        "yt_views": "3.1K",
         "x_views": "41.5K",
-        "ig_likes": "1.7K"
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -70,7 +70,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "2.9K",
-        "x_views": "248.9K",
+        "x_views": "412.7K",
         "ig_likes": "1.5K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "210.4K",
+        "x_views": "245.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -166,7 +166,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "937",
-        "x_views": "77.8K",
+        "x_views": "622.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -219,6 +219,30 @@
       }
     },
     {
+      "guest": "Steve Keen",
+      "surname": "KEEN",
+      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
+      "date": "15 Jun",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=0ChukxIewy4",
+      "canonical_episode_id": "cbe40066aa0d",
+      "canonical_video_id": "0ChukxIewy4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=0ChukxIewy4",
+      "canonical_episode_id_v2": "0050b454fc129cad",
+      "pub_iso": "2026-06-15T09:30:08Z",
+      "source_platform_ids": {
+        "youtube": [
+          "0ChukxIewy4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": "1.9K",
+        "x_views": "223.5K",
+        "ig_likes": "1.9K"
+      }
+    },
+    {
       "guest": "Theodore Postol",
       "surname": "POSTOL",
       "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
@@ -238,7 +262,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "141.8K",
+        "x_views": "143.3K",
         "ig_likes": "819"
       }
     },
@@ -284,10 +308,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "490",
+        "rumble_views": "501",
         "yt_views": "180",
-        "x_views": "136.4K",
-        "ig_likes": "453"
+        "x_views": "124.4K",
+        "ig_likes": "454"
       }
     },
     {
@@ -310,7 +334,7 @@
       "metrics": {
         "rumble_views": "666",
         "yt_views": "483",
-        "x_views": "363.7K",
+        "x_views": "645.9K",
         "ig_likes": "353"
       }
     },
@@ -334,7 +358,7 @@
       "metrics": {
         "rumble_views": "926",
         "yt_views": "4.0K",
-        "x_views": "302.0K",
+        "x_views": "138.5K",
         "ig_likes": "233"
       }
     },
@@ -358,7 +382,7 @@
       "metrics": {
         "rumble_views": "513",
         "yt_views": "1.1K",
-        "x_views": "302.5K",
+        "x_views": "528.5K",
         "ig_likes": "462"
       }
     },
@@ -422,10 +446,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.9K",
-        "yt_views": "508",
-        "x_views": "38.5K",
-        "ig_likes": "3.2K"
+        "rumble_views": "2.0K",
+        "yt_views": "557",
+        "x_views": "129.1K",
+        "ig_likes": "3.5K"
       }
     },
     {
@@ -447,9 +471,9 @@
       },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": "3.0K",
+        "yt_views": "3.1K",
         "x_views": "41.5K",
-        "ig_likes": "1.7K"
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -472,7 +496,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "2.9K",
-        "x_views": "248.9K",
+        "x_views": "412.7K",
         "ig_likes": "1.5K"
       }
     },
@@ -544,10 +568,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "490",
+        "rumble_views": "501",
         "yt_views": "180",
-        "x_views": "136.4K",
-        "ig_likes": "453"
+        "x_views": "124.4K",
+        "ig_likes": "454"
       }
     },
     {
@@ -570,7 +594,7 @@
       "metrics": {
         "rumble_views": "666",
         "yt_views": "483",
-        "x_views": "363.7K",
+        "x_views": "645.9K",
         "ig_likes": "353"
       }
     },
@@ -594,7 +618,7 @@
       "metrics": {
         "rumble_views": "926",
         "yt_views": "4.0K",
-        "x_views": "302.0K",
+        "x_views": "138.5K",
         "ig_likes": "233"
       }
     },
@@ -618,7 +642,7 @@
       "metrics": {
         "rumble_views": "513",
         "yt_views": "1.1K",
-        "x_views": "302.5K",
+        "x_views": "528.5K",
         "ig_likes": "462"
       }
     },
