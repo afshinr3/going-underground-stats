@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-28T02:16:05Z",
+  "updated": "2026-07-28T02:34:25Z",
   "drops": [
     {
-      "ts": "2026-07-28T02:16:05Z",
+      "ts": "2026-07-28T02:34:25Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
@@ -12,7 +12,17 @@
       "drop_pct": 50.3
     },
     {
-      "ts": "2026-07-28T02:16:05Z",
+      "ts": "2026-07-28T02:34:25Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "IG",
+      "peak": 2800,
+      "peak_at": "2026-07-27T12:37:16Z",
+      "current": 1100,
+      "drop_pct": 60.7
+    },
+    {
+      "ts": "2026-07-28T02:34:25Z",
       "show": "NO",
       "guest": "Askary",
       "platform": "X",
