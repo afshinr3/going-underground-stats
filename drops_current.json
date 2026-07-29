@@ -1,15 +1,25 @@
 {
-  "updated": "2026-07-29T09:07:25Z",
+  "updated": "2026-07-29T09:23:13Z",
   "drops": [
     {
-      "ts": "2026-07-29T09:07:25Z",
+      "ts": "2026-07-29T09:23:13Z",
       "show": "GU",
-      "guest": "Ayalon",
+      "guest": "Bandow",
       "platform": "X",
-      "peak": 715100,
-      "peak_at": "2026-07-28T20:45:45Z",
-      "current": 257899,
-      "drop_pct": 63.9
+      "peak": 421400,
+      "peak_at": "2026-07-29T06:21:00Z",
+      "current": 250000,
+      "drop_pct": 40.7
+    },
+    {
+      "ts": "2026-07-29T09:23:13Z",
+      "show": "NO",
+      "guest": "Askary",
+      "platform": "X",
+      "peak": 210200,
+      "peak_at": "2026-07-28T16:26:10Z",
+      "current": 125800,
+      "drop_pct": 40.2
     }
   ]
 }
