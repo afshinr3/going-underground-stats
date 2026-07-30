@@ -1,4 +1,25 @@
 {
-  "updated": "2026-07-30T21:01:06Z",
-  "drops": []
+  "updated": "2026-07-30T21:34:31Z",
+  "drops": [
+    {
+      "ts": "2026-07-30T21:34:31Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "IG",
+      "peak": 3300,
+      "peak_at": "2026-07-30T06:24:54Z",
+      "current": 1100,
+      "drop_pct": 66.7
+    },
+    {
+      "ts": "2026-07-30T21:34:31Z",
+      "show": "NO",
+      "guest": "Schiff",
+      "platform": "X",
+      "peak": 795800,
+      "peak_at": "2026-07-30T09:45:59Z",
+      "current": 377100,
+      "drop_pct": 52.6
+    }
+  ]
 }
