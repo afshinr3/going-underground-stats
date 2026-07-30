@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-30T05:27:29Z",
+  "updated": "2026-07-30T05:45:42Z",
   "drops": [
     {
-      "ts": "2026-07-30T05:27:29Z",
+      "ts": "2026-07-30T05:45:42Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
@@ -12,7 +12,7 @@
       "drop_pct": 87.7
     },
     {
-      "ts": "2026-07-30T05:27:29Z",
+      "ts": "2026-07-30T05:45:42Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -22,7 +22,7 @@
       "drop_pct": 32.4
     },
     {
-      "ts": "2026-07-30T05:27:29Z",
+      "ts": "2026-07-30T05:45:42Z",
       "show": "NO",
       "guest": "Askary",
       "platform": "X",
@@ -32,7 +32,7 @@
       "drop_pct": 50.3
     },
     {
-      "ts": "2026-07-30T05:27:29Z",
+      "ts": "2026-07-30T05:45:42Z",
       "show": "NO",
       "guest": "Schiff",
       "platform": "X",
