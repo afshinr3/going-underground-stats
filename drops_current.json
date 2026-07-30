@@ -1,4 +1,15 @@
 {
-  "updated": "2026-07-30T13:11:26Z",
-  "drops": []
+  "updated": "2026-07-30T13:17:39Z",
+  "drops": [
+    {
+      "ts": "2026-07-30T13:17:39Z",
+      "show": "NO",
+      "guest": "Askary",
+      "platform": "X",
+      "peak": 386000,
+      "peak_at": "2026-07-29T13:26:27Z",
+      "current": 224000,
+      "drop_pct": 42.0
+    }
+  ]
 }
