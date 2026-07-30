@@ -5,7 +5,7 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-30T18:28:19.456312Z",
+  "generated_at": "2026-07-30T20:04:36.093213Z",
   "n": 1,
   "entries": [
     {
@@ -32,7 +32,7 @@
       "yt_views": "195",
       "canonical_surname_upper": "ASKARY",
       "canonical_episode_id": "df26e3c0ad57",
-      "x_views": "127.1K"
+      "x_views": "226.2K"
     }
   ],
   "source_feed": "videos_neworder.json",
