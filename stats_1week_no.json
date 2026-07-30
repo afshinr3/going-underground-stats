@@ -5,7 +5,7 @@
   "window_end": "2026-07-27",
   "window_start_mon": "2026-07-24",
   "window_end_sun": "2026-07-27",
-  "generated_at": "2026-07-30T01:05:15.047163Z",
+  "generated_at": "2026-07-30T04:23:11.567377Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,7 @@
       "pub_iso": "2026-07-26T06:30:06Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "544",
+      "ig_likes": "549",
       "canonical_video_id": "_sA9-4RwI00",
       "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
       "canonical_episode_id_v2": "9e5a40326e7138df",
@@ -29,10 +29,10 @@
           "_sA9-4RwI00"
         ]
       },
-      "yt_views": "192",
+      "yt_views": "193",
       "canonical_surname_upper": "ASKARY",
       "canonical_episode_id": "df26e3c0ad57",
-      "x_views": "191.5K"
+      "x_views": "191.7K"
     }
   ],
   "source_feed": "videos_neworder.json",
