@@ -1,8 +1,18 @@
 {
-  "updated": "2026-07-31T03:06:52Z",
+  "updated": "2026-07-31T03:25:13Z",
   "drops": [
     {
-      "ts": "2026-07-31T03:06:52Z",
+      "ts": "2026-07-31T03:25:13Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "IG",
+      "peak": 3300,
+      "peak_at": "2026-07-30T06:24:54Z",
+      "current": 1100,
+      "drop_pct": 66.7
+    },
+    {
+      "ts": "2026-07-31T03:25:13Z",
       "show": "NO",
       "guest": "Schiff",
       "platform": "X",
