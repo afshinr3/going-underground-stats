@@ -1,15 +1,4 @@
 {
-  "updated": "2026-07-31T16:02:31Z",
-  "drops": [
-    {
-      "ts": "2026-07-31T16:02:31Z",
-      "show": "NO",
-      "guest": "Schiff",
-      "platform": "X",
-      "peak": 797800,
-      "peak_at": "2026-07-31T11:50:49Z",
-      "current": 216600,
-      "drop_pct": 72.9
-    }
-  ]
+  "updated": "2026-07-31T16:14:13Z",
+  "drops": []
 }
