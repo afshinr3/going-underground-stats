@@ -5,7 +5,7 @@
   "window_end": "2026-08-03",
   "window_start_mon": "2026-07-31",
   "window_end_sun": "2026-08-03",
-  "generated_at": "2026-08-01T22:02:41.639513Z",
+  "generated_at": "2026-08-01T23:04:53.098592Z",
   "n": 1,
   "entries": [
     {
@@ -22,7 +22,7 @@
       "ig_likes": "1.4K",
       "canonical_surname_upper": "BARNES",
       "canonical_episode_id": "c133da20813e",
-      "x_views": "66.5K",
+      "x_views": "68.4K",
       "canonical_video_id": "N_ysv6Gh9Ac",
       "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "canonical_episode_id_v2": "7edf3af7b8798e44",
@@ -32,7 +32,7 @@
           "N_ysv6Gh9Ac"
         ]
       },
-      "yt_views": "105"
+      "yt_views": "291"
     }
   ],
   "source_feed": "videos.json",
