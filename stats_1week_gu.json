@@ -5,24 +5,34 @@
   "window_end": "2026-08-03",
   "window_start_mon": "2026-07-31",
   "window_end_sun": "2026-08-03",
-  "generated_at": "2026-08-01T21:00:14.199353Z",
+  "generated_at": "2026-08-01T22:02:41.639513Z",
   "n": 1,
   "entries": [
     {
       "guest": "Trump's Ex-Lawyer Robert Barnes",
       "surname": "Barnes",
       "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
-      "date": "31 Jul",
-      "rumble_views": "3.6K",
+      "date": "1 Aug",
+      "rumble_views": "3.7K",
       "show": "GU",
       "canonical_guest_full_name": "Trump's Ex-Lawyer Robert Barnes",
-      "pub_iso": "2026-07-31T10:58:12Z",
+      "pub_iso": "2026-08-01T21:22:19Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "1.2K",
+      "ig_likes": "1.4K",
       "canonical_surname_upper": "BARNES",
       "canonical_episode_id": "c133da20813e",
-      "x_views": "113.3K"
+      "x_views": "66.5K",
+      "canonical_video_id": "N_ysv6Gh9Ac",
+      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "source_platform_ids": {
+        "youtube": [
+          "N_ysv6Gh9Ac"
+        ]
+      },
+      "yt_views": "105"
     }
   ],
   "source_feed": "videos.json",

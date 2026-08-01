@@ -1,25 +1,29 @@
 {
-  "iso": "2026-08-01T21:00:14Z",
-  "last_updated": "2026-08-01T21:00:14Z",
+  "iso": "2026-08-01T22:02:41Z",
+  "last_updated": "2026-08-01T22:02:41Z",
   "episodes": [
     {
       "guest": "Trump's Ex-Lawyer Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "31 Jul",
+      "date": "1 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-07-31T10:58:12Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "N_ysv6Gh9Ac",
+      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "pub_iso": "2026-08-01T21:22:19Z",
+      "source_platform_ids": {
+        "youtube": [
+          "N_ysv6Gh9Ac"
+        ]
+      },
       "metrics": {
-        "rumble_views": "3.6K",
-        "yt_views": null,
-        "x_views": "113.3K",
-        "ig_likes": "1.2K"
+        "rumble_views": "3.7K",
+        "yt_views": "105",
+        "x_views": "66.5K",
+        "ig_likes": "1.4K"
       }
     },
     {
@@ -42,8 +46,8 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "278.9K",
-        "ig_likes": "6.8K"
+        "x_views": "279.0K",
+        "ig_likes": "7.0K"
       }
     },
     {
@@ -90,7 +94,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "3.0K",
-        "x_views": "289.0K",
+        "x_views": "289.1K",
         "ig_likes": "1.6K"
       }
     },
@@ -114,7 +118,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "152.4K",
+        "x_views": "154.9K",
         "ig_likes": "1.8K"
       }
     },
@@ -162,7 +166,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "260.5K",
+        "x_views": "250.7K",
         "ig_likes": "1.1K"
       }
     },
@@ -210,7 +214,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "15.3K",
-        "x_views": "195.9K",
+        "x_views": "227.4K",
         "ig_likes": "2.1K"
       }
     },
@@ -330,8 +334,8 @@
       "metrics": {
         "rumble_views": "592",
         "yt_views": "198",
-        "x_views": "128.5K",
-        "ig_likes": "565"
+        "x_views": "96.2K",
+        "ig_likes": "567"
       }
     },
     {
@@ -354,7 +358,7 @@
       "metrics": {
         "rumble_views": "706",
         "yt_views": "3.4K",
-        "x_views": "13.4K",
+        "x_views": "547.6K",
         "ig_likes": "354"
       }
     },
@@ -452,20 +456,24 @@
       "guest": "Trump's Ex-Lawyer Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "31 Jul",
+      "date": "1 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-07-31T10:58:12Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "N_ysv6Gh9Ac",
+      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "pub_iso": "2026-08-01T21:22:19Z",
+      "source_platform_ids": {
+        "youtube": [
+          "N_ysv6Gh9Ac"
+        ]
+      },
       "metrics": {
-        "rumble_views": "3.6K",
-        "yt_views": null,
-        "x_views": "113.3K",
-        "ig_likes": "1.2K"
+        "rumble_views": "3.7K",
+        "yt_views": "105",
+        "x_views": "66.5K",
+        "ig_likes": "1.4K"
       }
     },
     {
@@ -488,8 +496,8 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "278.9K",
-        "ig_likes": "6.8K"
+        "x_views": "279.0K",
+        "ig_likes": "7.0K"
       }
     },
     {
@@ -536,7 +544,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "3.0K",
-        "x_views": "289.0K",
+        "x_views": "289.1K",
         "ig_likes": "1.6K"
       }
     },
@@ -560,7 +568,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "152.4K",
+        "x_views": "154.9K",
         "ig_likes": "1.8K"
       }
     }
@@ -586,8 +594,8 @@
       "metrics": {
         "rumble_views": "592",
         "yt_views": "198",
-        "x_views": "128.5K",
-        "ig_likes": "565"
+        "x_views": "96.2K",
+        "ig_likes": "567"
       }
     },
     {
@@ -610,7 +618,7 @@
       "metrics": {
         "rumble_views": "706",
         "yt_views": "3.4K",
-        "x_views": "13.4K",
+        "x_views": "547.6K",
         "ig_likes": "354"
       }
     },
