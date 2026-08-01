@@ -1,7 +1,27 @@
 {
-  "iso": "2026-08-01T00:10:20Z",
-  "last_updated": "2026-08-01T00:10:20Z",
+  "iso": "2026-08-01T03:52:48Z",
+  "last_updated": "2026-08-01T03:52:48Z",
   "episodes": [
+    {
+      "guest": "Trump's Ex-Lawyer Robert Barnes",
+      "surname": "BARNES",
+      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
+      "date": "31 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "c133da20813e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-07-31T11:15:18Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "871",
+        "yt_views": null,
+        "x_views": "11.2K",
+        "ig_likes": "945"
+      }
+    },
     {
       "guest": "of Israel’s Shin Bet Ami Ayalon",
       "surname": "AYALON",
@@ -22,8 +42,8 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "277.8K",
-        "ig_likes": "6.3K"
+        "x_views": "247.8K",
+        "ig_likes": "6.4K"
       }
     },
     {
@@ -46,7 +66,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "3.9K",
-        "x_views": "42.6K",
+        "x_views": "196.5K",
         "ig_likes": "2.2K"
       }
     },
@@ -68,9 +88,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.7K",
+        "rumble_views": "2.8K",
         "yt_views": "3.0K",
-        "x_views": "253.6K",
+        "x_views": "253.9K",
         "ig_likes": "1.6K"
       }
     },
@@ -94,7 +114,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "151.8K",
+        "x_views": "471.5K",
         "ig_likes": "1.8K"
       }
     },
@@ -118,7 +138,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.0K",
-        "x_views": "190.8K",
+        "x_views": "190.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -142,7 +162,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "249.8K",
+        "x_views": "214.2K",
         "ig_likes": "1.1K"
       }
     },
@@ -166,7 +186,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "937",
-        "x_views": "78.0K",
+        "x_views": "206.0K",
         "ig_likes": "1.1K"
       }
     },
@@ -214,7 +234,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "6.9K",
-        "x_views": "93.7K",
+        "x_views": "35.5K",
         "ig_likes": "2.8K"
       }
     },
@@ -262,7 +282,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "7.2K",
-        "x_views": "147.9K",
+        "x_views": "255.5K",
         "ig_likes": "819"
       }
     },
@@ -286,7 +306,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "651",
-        "x_views": "198.3K",
+        "x_views": "200.7K",
         "ig_likes": "488"
       }
     },
@@ -311,7 +331,7 @@
         "rumble_views": "578",
         "yt_views": "197",
         "x_views": "196.9K",
-        "ig_likes": "564"
+        "ig_likes": "565"
       }
     },
     {
@@ -332,7 +352,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "693",
+        "rumble_views": "694",
         "yt_views": "488",
         "x_views": "378.0K",
         "ig_likes": "354"
@@ -402,7 +422,7 @@
       "metrics": {
         "rumble_views": "531",
         "yt_views": "0",
-        "x_views": "87.8K",
+        "x_views": "257.8K",
         "ig_likes": "848"
       }
     },
@@ -422,12 +442,32 @@
       "metrics": {
         "rumble_views": "528",
         "yt_views": "0",
-        "x_views": "86.0K",
+        "x_views": "25.5K",
         "ig_likes": "203"
       }
     }
   ],
   "gu": [
+    {
+      "guest": "Trump's Ex-Lawyer Robert Barnes",
+      "surname": "BARNES",
+      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
+      "date": "31 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "c133da20813e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-07-31T11:15:18Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "871",
+        "yt_views": null,
+        "x_views": "11.2K",
+        "ig_likes": "945"
+      }
+    },
     {
       "guest": "of Israel’s Shin Bet Ami Ayalon",
       "surname": "AYALON",
@@ -448,8 +488,8 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "277.8K",
-        "ig_likes": "6.3K"
+        "x_views": "247.8K",
+        "ig_likes": "6.4K"
       }
     },
     {
@@ -472,7 +512,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "3.9K",
-        "x_views": "42.6K",
+        "x_views": "196.5K",
         "ig_likes": "2.2K"
       }
     },
@@ -494,9 +534,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.7K",
+        "rumble_views": "2.8K",
         "yt_views": "3.0K",
-        "x_views": "253.6K",
+        "x_views": "253.9K",
         "ig_likes": "1.6K"
       }
     },
@@ -520,32 +560,8 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "151.8K",
+        "x_views": "471.5K",
         "ig_likes": "1.8K"
-      }
-    },
-    {
-      "guest": "Dennis Fritz",
-      "surname": "FRITZ",
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "date": "13 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
-      "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": "grMo8SmAQpU",
-      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
-      "canonical_episode_id_v2": "af16e80c488f7ef0",
-      "pub_iso": "2026-07-13T16:25:30Z",
-      "source_platform_ids": {
-        "youtube": [
-          "grMo8SmAQpU"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.2K",
-        "yt_views": "1.0K",
-        "x_views": "190.8K",
-        "ig_likes": "1.1K"
       }
     }
   ],
@@ -571,7 +587,7 @@
         "rumble_views": "578",
         "yt_views": "197",
         "x_views": "196.9K",
-        "ig_likes": "564"
+        "ig_likes": "565"
       }
     },
     {
@@ -592,7 +608,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "693",
+        "rumble_views": "694",
         "yt_views": "488",
         "x_views": "378.0K",
         "ig_likes": "354"
@@ -662,7 +678,7 @@
       "metrics": {
         "rumble_views": "531",
         "yt_views": "0",
-        "x_views": "87.8K",
+        "x_views": "257.8K",
         "ig_likes": "848"
       }
     }
