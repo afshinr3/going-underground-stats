@@ -1226,7 +1226,7 @@ async def _scrape_x_search(ctx, query):
         await page.close()
 
 
-async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None):
+async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None, _return_ids=None):
     """Fetch X tweet views using an existing playwright context (for parallel runs).
 
     Strategy:
@@ -1252,6 +1252,13 @@ async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None):
         for tweet_id, views in results:
             if views > seen_ids.get(tweet_id, 0):
                 seen_ids[tweet_id] = views
+    # X_REACH_UNION_V1_20260802: when a caller passes _return_ids, merge into it
+    # (max views per id) so several search terms can be UNIONed across calls
+    # without double-counting a tweet that matches more than one term.
+    if _return_ids is not None:
+        for tweet_id, views in seen_ids.items():
+            if views > _return_ids.get(tweet_id, 0):
+                _return_ids[tweet_id] = views
     return sum(seen_ids.values()), len(seen_ids)
 
 
@@ -1587,12 +1594,36 @@ async def update_show(show, ig_clips):
                 since = yt_dates.get(surname.lower()) or short_to_iso(v.get('date', ''))
                 async with sem:
                     try:
-                        total, count = await fetch_x_views_with_ctx(
-                            ctx, handles, full_name, since_date=since)
-                        # Fallback 1: search by surname only
-                        if total == 0 and surname and len(surname) > 3:
-                            total, count = await fetch_x_views_with_ctx(
-                                ctx, handles, surname, since_date=since)
+                        # X_REACH_UNION_V1_20260802 — ROOT CAUSE OF THE BARNES UNDERCOUNT.
+                        #
+                        # `full_name` is the episode's guest STRING, which carries a role
+                        # prefix: "Trump's Ex-Lawyer Robert Barnes". fetch_x_views_with_ctx
+                        # searches it as an EXACT PHRASE, so it only matches posts
+                        # reproducing that whole literal. For the 2026-08-01 Barnes episode
+                        # exactly 1 of 13 Barnes tweets did.
+                        #
+                        # The surname search existed but was gated on `total == 0`. Because
+                        # the phrase matched something non-zero, the broad search NEVER RAN,
+                        # and 12 tweets carrying ~1.09M of 1.32M views were silently dropped.
+                        # A gate on "did we find anything" cannot detect "did we find
+                        # everything" -- that is the whole defect in one line.
+                        #
+                        # Fix: run BOTH queries always and UNION by tweet id. Dedup is
+                        # already max-views-per-id inside fetch_x_views_with_ctx, so a tweet
+                        # matching both queries is counted once, and native RTs still stay
+                        # with their original author. No totals are patched or hardcoded.
+                        ids = {}
+
+                        async def _accum(term):
+                            if not term:
+                                return
+                            t_, _c = await fetch_x_views_with_ctx(
+                                ctx, handles, term, since_date=since, _return_ids=ids)
+
+                        await _accum(full_name)
+                        if surname and len(surname) > 3:
+                            await _accum(surname)
+                        total, count = sum(ids.values()), len(ids)
                         # Fallback 2 (x_date_window shows): sum handle tweets in episode date window
                         if total == 0 and use_date_window:
                             win_since, win_until = date_windows.get(surname, (since, None))
