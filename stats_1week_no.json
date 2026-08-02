@@ -5,9 +5,23 @@
   "window_end": "2026-08-03",
   "window_start_mon": "2026-07-31",
   "window_end_sun": "2026-08-03",
-  "generated_at": "2026-08-02T06:35:08.466650Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-08-02T08:20:04.187323Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Mohammed Baharoon",
+      "surname": "Baharoon",
+      "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
+      "date": "2 Aug",
+      "rumble_views": "155",
+      "show": "NO",
+      "canonical_guest_full_name": "Mohammed Baharoon",
+      "pub_iso": "2026-08-02T07:17:03Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "175"
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
