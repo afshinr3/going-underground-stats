@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-02T06:35:08Z",
-  "last_updated": "2026-08-02T06:35:08Z",
+  "iso": "2026-08-02T09:01:53Z",
+  "last_updated": "2026-08-02T09:01:53Z",
   "episodes": [
     {
       "guest": "Trump's Ex-Lawyer Robert Barnes",
@@ -20,9 +20,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.1K",
-        "yt_views": "1.3K",
-        "x_views": "79.6K",
+        "rumble_views": "5.3K",
+        "yt_views": "1.5K",
+        "x_views": "82.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "1.5K",
-        "x_views": "279.2K",
+        "x_views": "279.3K",
         "ig_likes": "7.1K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "589.3K",
+        "x_views": "162.0K",
         "ig_likes": "1.8K"
       }
     },
@@ -166,7 +166,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.4K",
-        "x_views": "250.7K",
+        "x_views": "214.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -190,7 +190,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "938",
-        "x_views": "78.1K",
+        "x_views": "166.1K",
         "ig_likes": "1.1K"
       }
     },
@@ -214,7 +214,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "15.3K",
-        "x_views": "195.9K",
+        "x_views": "336.2K",
         "ig_likes": "2.1K"
       }
     },
@@ -315,6 +315,30 @@
       }
     },
     {
+      "guest": "Mohammed Baharoon",
+      "surname": "BAHAROON",
+      "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
+      "date": "2 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+      "canonical_episode_id": "c082946ae2ff",
+      "canonical_video_id": "F8hxaEtl9Y8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+      "canonical_episode_id_v2": "2ad17dd19bd4004d",
+      "pub_iso": "2026-08-02T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "F8hxaEtl9Y8"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "155",
+        "yt_views": "9",
+        "x_views": null,
+        "ig_likes": "175"
+      }
+    },
+    {
       "guest": "Hussein Askary",
       "surname": "ASKARY",
       "title": "Global South’s Rise Causes PANIC for West’s Elites as US-Led Unipolar World Declines- Hussein Askary",
@@ -332,9 +356,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "592",
+        "rumble_views": "596",
         "yt_views": "198",
-        "x_views": "128.6K",
+        "x_views": "198.3K",
         "ig_likes": "567"
       }
     },
@@ -356,7 +380,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "706",
+        "rumble_views": "708",
         "yt_views": "3.4K",
         "x_views": "13.5K",
         "ig_likes": "354"
@@ -380,7 +404,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "939",
+        "rumble_views": "940",
         "yt_views": "3.2K",
         "x_views": "13.4K",
         "ig_likes": "233"
@@ -470,9 +494,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.1K",
-        "yt_views": "1.3K",
-        "x_views": "79.6K",
+        "rumble_views": "5.3K",
+        "yt_views": "1.5K",
+        "x_views": "82.5K",
         "ig_likes": "1.5K"
       }
     },
@@ -496,7 +520,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "1.5K",
-        "x_views": "279.2K",
+        "x_views": "279.3K",
         "ig_likes": "7.1K"
       }
     },
@@ -568,12 +592,36 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "4.2K",
-        "x_views": "589.3K",
+        "x_views": "162.0K",
         "ig_likes": "1.8K"
       }
     }
   ],
   "no": [
+    {
+      "guest": "Mohammed Baharoon",
+      "surname": "BAHAROON",
+      "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
+      "date": "2 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+      "canonical_episode_id": "c082946ae2ff",
+      "canonical_video_id": "F8hxaEtl9Y8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+      "canonical_episode_id_v2": "2ad17dd19bd4004d",
+      "pub_iso": "2026-08-02T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "F8hxaEtl9Y8"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "155",
+        "yt_views": "9",
+        "x_views": null,
+        "ig_likes": "175"
+      }
+    },
     {
       "guest": "Hussein Askary",
       "surname": "ASKARY",
@@ -592,9 +640,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "592",
+        "rumble_views": "596",
         "yt_views": "198",
-        "x_views": "128.6K",
+        "x_views": "198.3K",
         "ig_likes": "567"
       }
     },
@@ -616,7 +664,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "706",
+        "rumble_views": "708",
         "yt_views": "3.4K",
         "x_views": "13.5K",
         "ig_likes": "354"
@@ -640,7 +688,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "939",
+        "rumble_views": "940",
         "yt_views": "3.2K",
         "x_views": "13.4K",
         "ig_likes": "233"
@@ -668,26 +716,6 @@
         "yt_views": "1.1K",
         "x_views": "755.1K",
         "ig_likes": "462"
-      }
-    },
-    {
-      "guest": "C. Uday Bhaskar",
-      "surname": "BHASKAR",
-      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
-      "date": "28 Jun",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "e35a16f2cfd4",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "535",
-        "yt_views": "0",
-        "x_views": "257.8K",
-        "ig_likes": "848"
       }
     }
   ]

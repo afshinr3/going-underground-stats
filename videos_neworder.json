@@ -7,10 +7,22 @@
     "rumble_views": "155",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
-    "pub_iso": "2026-08-02T07:17:03Z",
+    "pub_iso": "2026-08-02T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "175"
+    "ig_likes": "175",
+    "canonical_video_id": "F8hxaEtl9Y8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+    "canonical_episode_id_v2": "2ad17dd19bd4004d",
+    "link": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
+    "source_platform_ids": {
+      "youtube": [
+        "F8hxaEtl9Y8"
+      ]
+    },
+    "yt_views": "9",
+    "canonical_surname_upper": "BAHAROON",
+    "canonical_episode_id": "c082946ae2ff"
   },
   {
     "guest": "Hussein Askary",
@@ -36,7 +48,7 @@
     "yt_views": "198",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "128.6K"
+    "x_views": "198.3K"
   },
   {
     "guest": "Peter Schiff",
