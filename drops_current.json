@@ -1,25 +1,15 @@
 {
-  "updated": "2026-08-02T23:46:00Z",
+  "updated": "2026-08-03T01:20:02Z",
   "drops": [
     {
-      "ts": "2026-08-02T23:46:00Z",
+      "ts": "2026-08-03T01:20:02Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
       "peak": 998200,
       "peak_at": "2026-08-02T15:24:48Z",
-      "current": 92700,
-      "drop_pct": 90.7
-    },
-    {
-      "ts": "2026-08-02T23:46:00Z",
-      "show": "GU",
-      "guest": "Bandow",
-      "platform": "X",
-      "peak": 424600,
-      "peak_at": "2026-08-02T12:05:48Z",
-      "current": 289400,
-      "drop_pct": 31.8
+      "current": 93400,
+      "drop_pct": 90.6
     }
   ]
 }
