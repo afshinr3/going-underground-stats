@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-03T05:07:22Z",
+  "updated": "2026-08-03T08:46:05Z",
   "drops": [
     {
-      "ts": "2026-08-03T05:07:22Z",
+      "ts": "2026-08-03T08:46:05Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
       "peak": 998200,
       "peak_at": "2026-08-02T15:24:48Z",
-      "current": 95700,
-      "drop_pct": 90.4
+      "current": 203400,
+      "drop_pct": 79.6
     },
     {
-      "ts": "2026-08-03T05:07:22Z",
+      "ts": "2026-08-03T08:46:05Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
