@@ -1,7 +1,31 @@
 {
-  "iso": "2026-08-03T23:03:29Z",
-  "last_updated": "2026-08-03T23:03:29Z",
+  "iso": "2026-08-04T00:17:48Z",
+  "last_updated": "2026-08-04T00:17:48Z",
   "episodes": [
+    {
+      "guest": "Gabor Maté",
+      "surname": "MATÉ",
+      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
+      "date": "3 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id": "0d30042528a6",
+      "canonical_video_id": "PUw_r6rI5PY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "PUw_r6rI5PY"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": null,
+        "x_views": "25.8K",
+        "ig_likes": "0"
+      }
+    },
     {
       "guest": "Trump’s Ex-Lawyer Robert Barnes",
       "surname": "BARNES",
@@ -22,7 +46,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "2.7K",
-        "x_views": "99.3K",
+        "x_views": "99.4K",
         "ig_likes": "0"
       }
     },
@@ -46,7 +70,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.5K",
-        "x_views": "280.2K",
+        "x_views": "280.3K",
         "ig_likes": "0"
       }
     },
@@ -70,7 +94,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "3.9K",
-        "x_views": "263.3K",
+        "x_views": "263.4K",
         "ig_likes": "0"
       }
     },
@@ -94,7 +118,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "3.1K",
-        "x_views": "421.2K",
+        "x_views": "421.3K",
         "ig_likes": "0"
       }
     },
@@ -118,7 +142,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "4.3K",
-        "x_views": "200.6K",
+        "x_views": "228.5K",
         "ig_likes": "0"
       }
     },
@@ -147,6 +171,30 @@
       }
     },
     {
+      "guest": "Tobias Ellwood",
+      "surname": "ELLWOOD",
+      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
+      "date": "6 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "canonical_episode_id": "6ca7f65c75da",
+      "canonical_video_id": "SmH-aEMZyqg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "canonical_episode_id_v2": "e5c307d186579b5a",
+      "pub_iso": "2026-07-06T10:38:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "SmH-aEMZyqg"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": "1.4K",
+        "x_views": "260.8K",
+        "ig_likes": "0"
+      }
+    },
+    {
       "guest": "Dennis Kucinich",
       "surname": "KUCINICH",
       "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
@@ -166,7 +214,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "939",
-        "x_views": "623.8K",
+        "x_views": "0",
         "ig_likes": "0"
       }
     },
@@ -190,7 +238,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "15.3K",
-        "x_views": "344.8K",
+        "x_views": "0",
         "ig_likes": "0"
       }
     },
@@ -214,7 +262,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "6.9K",
-        "x_views": "93.8K",
+        "x_views": "35.6K",
         "ig_likes": "0"
       }
     },
@@ -243,30 +291,6 @@
       }
     },
     {
-      "guest": "Theodore Postol",
-      "surname": "POSTOL",
-      "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
-      "date": "13 Jun",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=duEMg_ThxzU",
-      "canonical_episode_id": "8014ccd61339",
-      "canonical_video_id": "duEMg_ThxzU",
-      "canonical_video_url": "https://www.youtube.com/watch?v=duEMg_ThxzU",
-      "canonical_episode_id_v2": "ee155eb4a4662cd0",
-      "pub_iso": "2026-06-13T15:21:51Z",
-      "source_platform_ids": {
-        "youtube": [
-          "duEMg_ThxzU"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "7.2K",
-        "x_views": "41.9K",
-        "ig_likes": "0"
-      }
-    },
-    {
       "guest": "Mohammed Baharoon",
       "surname": "BAHAROON",
       "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
@@ -285,7 +309,7 @@
       },
       "metrics": {
         "rumble_views": "428",
-        "yt_views": "73",
+        "yt_views": "76",
         "x_views": "48.6K",
         "ig_likes": "218"
       }
@@ -429,6 +453,30 @@
   ],
   "gu": [
     {
+      "guest": "Gabor Maté",
+      "surname": "MATÉ",
+      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
+      "date": "3 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id": "0d30042528a6",
+      "canonical_video_id": "PUw_r6rI5PY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "PUw_r6rI5PY"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "0",
+        "yt_views": null,
+        "x_views": "25.8K",
+        "ig_likes": "0"
+      }
+    },
+    {
       "guest": "Trump’s Ex-Lawyer Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
@@ -448,7 +496,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "2.7K",
-        "x_views": "99.3K",
+        "x_views": "99.4K",
         "ig_likes": "0"
       }
     },
@@ -472,7 +520,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "1.5K",
-        "x_views": "280.2K",
+        "x_views": "280.3K",
         "ig_likes": "0"
       }
     },
@@ -496,7 +544,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "3.9K",
-        "x_views": "263.3K",
+        "x_views": "263.4K",
         "ig_likes": "0"
       }
     },
@@ -520,31 +568,7 @@
       "metrics": {
         "rumble_views": "0",
         "yt_views": "3.1K",
-        "x_views": "421.2K",
-        "ig_likes": "0"
-      }
-    },
-    {
-      "guest": "Lawrence Wilkerson",
-      "surname": "WILKERSON",
-      "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
-      "date": "18 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": "WlIY7-ovBd8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "canonical_episode_id_v2": "4a4b17f0a7877200",
-      "pub_iso": "2026-07-18T11:32:42Z",
-      "source_platform_ids": {
-        "youtube": [
-          "WlIY7-ovBd8"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "0",
-        "yt_views": "4.3K",
-        "x_views": "200.6K",
+        "x_views": "421.3K",
         "ig_likes": "0"
       }
     }
@@ -569,7 +593,7 @@
       },
       "metrics": {
         "rumble_views": "428",
-        "yt_views": "73",
+        "yt_views": "76",
         "x_views": "48.6K",
         "ig_likes": "218"
       }
