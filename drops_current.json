@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-04T03:32:43Z",
+  "updated": "2026-08-04T03:44:59Z",
   "drops": [
     {
-      "ts": "2026-08-04T03:32:43Z",
+      "ts": "2026-08-04T03:44:59Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
       "peak": 859000,
       "peak_at": "2026-08-03T23:17:44Z",
-      "current": 25800,
-      "drop_pct": 97.0
+      "current": 41900,
+      "drop_pct": 95.1
     }
   ]
 }
