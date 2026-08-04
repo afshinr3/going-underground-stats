@@ -1,14 +1,14 @@
 {
-  "updated": "2026-08-04T16:22:24Z",
+  "updated": "2026-08-04T16:41:43Z",
   "drops": [
     {
-      "ts": "2026-08-04T16:22:24Z",
+      "ts": "2026-08-04T16:41:43Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
       "peak": 1100000,
       "peak_at": "2026-08-04T09:24:02Z",
-      "current": 345400,
+      "current": 345500,
       "drop_pct": 68.6
     }
   ]
