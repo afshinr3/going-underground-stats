@@ -1,18 +1,8 @@
 {
-  "updated": "2026-08-05T09:06:45Z",
+  "updated": "2026-08-05T09:24:46Z",
   "drops": [
     {
-      "ts": "2026-08-05T09:06:45Z",
-      "show": "GU",
-      "guest": "Barnes",
-      "platform": "X",
-      "peak": 1100000,
-      "peak_at": "2026-08-04T09:24:02Z",
-      "current": 347000,
-      "drop_pct": 68.5
-    },
-    {
-      "ts": "2026-08-05T09:06:45Z",
+      "ts": "2026-08-05T09:24:46Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
