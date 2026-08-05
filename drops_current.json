@@ -1,18 +1,8 @@
 {
-  "updated": "2026-08-05T07:54:03Z",
+  "updated": "2026-08-05T08:12:57Z",
   "drops": [
     {
-      "ts": "2026-08-05T07:54:03Z",
-      "show": "GU",
-      "guest": "Ellwood",
-      "platform": "X",
-      "peak": 623900,
-      "peak_at": "2026-08-04T23:23:01Z",
-      "current": 241600,
-      "drop_pct": 61.3
-    },
-    {
-      "ts": "2026-08-05T07:54:03Z",
+      "ts": "2026-08-05T08:12:57Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
@@ -20,6 +10,16 @@
       "peak_at": "2026-08-04T09:24:02Z",
       "current": 347000,
       "drop_pct": 68.5
+    },
+    {
+      "ts": "2026-08-05T08:12:57Z",
+      "show": "GU",
+      "guest": "Ellwood",
+      "platform": "X",
+      "peak": 623900,
+      "peak_at": "2026-08-04T23:23:01Z",
+      "current": 241600,
+      "drop_pct": 61.3
     }
   ]
 }
