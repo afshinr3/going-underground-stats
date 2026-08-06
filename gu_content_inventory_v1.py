@@ -125,6 +125,54 @@ def _measure(raw):
         return None, "unavailable"
 
 
+# X_MEDIA_EVIDENCE_V1 — verified native-video facts fetched read-only from the
+# TweetDetail payload. A post is promoted to FULL_INTERVIEW only if it has a
+# single native video whose duration matches full-episode length and it is not a
+# repost/quote. Title alone never promotes; duration alone never promotes.
+FULL_EPISODE_MIN, FULL_EPISODE_MAX = 20.0, 45.0
+def _x_evidence():
+    f = HERE / "x_media_evidence_v1.json"
+    try:
+        d = json.loads(f.read_text())
+    except Exception:
+        return {}
+    out = {}
+    for p in d.get("posts", []):
+        if not p.get("fetch_ok") or not p.get("evidence"):
+            continue
+        e = p["evidence"]
+        vids = [m for m in e["media"] if m["type"] == "video"]
+        out[str(p["tweet_id"])] = {
+            "native_video": e["has_native_video"],
+            "n_video": len(vids),
+            "duration_min": vids[0]["duration_min"] if vids else None,
+            "is_repost": bool(e.get("retweeted_status_id")),
+            "is_quote": bool(e.get("quoted_status_id")),
+        }
+    return out
+X_EVIDENCE = _x_evidence()
+
+
+def classify_x_verified(tweet_id):
+    """-> (classification, basis) or (None, None) when no evidence exists."""
+    ev = X_EVIDENCE.get(str(tweet_id))
+    if not ev:
+        return None, None
+    if not ev["native_video"]:
+        return "PROMO", "verified: no native video in payload (link/announcement only)"
+    if ev["is_repost"]:
+        return "PROMO", "verified: repost — the view metric belongs to the source post"
+    d = ev["duration_min"]
+    if d is None:
+        return "AMBIGUOUS", "native video present but duration absent from payload"
+    if ev["n_video"] == 1 and FULL_EPISODE_MIN <= d <= FULL_EPISODE_MAX:
+        return "FULL_INTERVIEW", (
+            f"verified: single native X video, duration {d} min (full-episode length), "
+            "not a repost or quote, canonical account, posted at broadcast. "
+            "NOT established: transcript/frame identity against the episode master")
+    return "CLIP", f"verified: native video of {d} min — excerpt length, not a full episode"
+
+
 def classify_x(text):
     """-> (classification, basis). Native-video presence is NOT in this cache, so
     anything without verifiable excerpt evidence is AMBIGUOUS, never assumed."""
@@ -207,7 +255,9 @@ def build():
                 for ep in EPISODES:
                     if ep["show"] != show or not _matches(tw.get("text"), ep) or not _in_window(dt, ep):
                         continue
-                    cls, basis = classify_x(tw.get("text"))
+                    cls, basis = classify_x_verified(tw.get("id"))
+                    if cls is None:
+                        cls, basis = classify_x(tw.get("text"))
                     add(ep, "x", handle, tw.get("id"),
                         f"https://x.com/{handle}/status/{tw.get('id')}", dt,
                         cls, basis, "view_count", tw.get("view_count"), measured_at)

@@ -1,7 +1,7 @@
 {
   "marker": "GU_CONTENT_INVENTORY_V2",
   "supersedes": "GU_CONTENT_INVENTORY_V1",
-  "generated_iso": "2026-08-06T12:21:18Z",
+  "generated_iso": "2026-08-06T13:14:25Z",
   "metric_scope": "cumulative_to_measurement_timestamp",
   "scope_note": "Cumulative per-post totals. NOT comparable with the dashboard '1 Week' rolling window and must never be summed into it.",
   "url_policy": "URLs composed only from platform IDs present in the caches; none invented.",
@@ -42,12 +42,13 @@
       "n_items": 23,
       "by_classification": {
         "FULL_INTERVIEW": {
-          "n_items": 1,
-          "n_measured": 1,
+          "n_items": 2,
+          "n_measured": 2,
           "n_not_measured": 0,
-          "sum_measured": 18960,
+          "sum_measured": 120856,
           "excluded_reach_not_published": null,
           "platforms": [
+            "x",
             "youtube"
           ]
         },
@@ -73,11 +74,11 @@
           ]
         },
         "AMBIGUOUS": {
-          "n_items": 6,
+          "n_items": 5,
           "n_measured": 0,
-          "n_not_measured": 6,
+          "n_not_measured": 5,
           "sum_measured": 0,
-          "excluded_reach_not_published": 162187,
+          "excluded_reach_not_published": 60301,
           "platforms": [
             "rumble",
             "x"
@@ -86,9 +87,9 @@
       },
       "full_interview_by_platform": {
         "x": {
-          "value": null,
-          "status": "N/A",
-          "reason": "no verified native full interview on this platform"
+          "value": 101896,
+          "status": "measured",
+          "url": "https://x.com/GUnderground_TV/status/2084075450125451546"
         },
         "instagram": {
           "value": null,
@@ -106,9 +107,9 @@
           "reason": "no verified native full interview on this platform"
         }
       },
-      "editorial_total_measured": 637635,
+      "editorial_total_measured": 739531,
       "promo_reach_measured": 826,
-      "excluded_ambiguous_reach": 162187,
+      "excluded_ambiguous_reach": 60301,
       "total_is_partial": true
     },
     "barnes_20260801": {
@@ -119,12 +120,13 @@
       "n_items": 20,
       "by_classification": {
         "FULL_INTERVIEW": {
-          "n_items": 1,
-          "n_measured": 1,
+          "n_items": 2,
+          "n_measured": 2,
           "n_not_measured": 0,
-          "sum_measured": 3012,
+          "sum_measured": 260259,
           "excluded_reach_not_published": null,
           "platforms": [
+            "x",
             "youtube"
           ]
         },
@@ -150,11 +152,11 @@
           ]
         },
         "AMBIGUOUS": {
-          "n_items": 4,
+          "n_items": 3,
           "n_measured": 0,
-          "n_not_measured": 4,
+          "n_not_measured": 3,
           "sum_measured": 0,
-          "excluded_reach_not_published": 291307,
+          "excluded_reach_not_published": 34160,
           "platforms": [
             "rumble",
             "x"
@@ -163,9 +165,9 @@
       },
       "full_interview_by_platform": {
         "x": {
-          "value": null,
-          "status": "N/A",
-          "reason": "no verified native full interview on this platform"
+          "value": 257247,
+          "status": "measured",
+          "url": "https://x.com/GUnderground_TV/status/2083362453744722327"
         },
         "instagram": {
           "value": null,
@@ -183,9 +185,9 @@
           "reason": "no verified native full interview on this platform"
         }
       },
-      "editorial_total_measured": 1193830,
+      "editorial_total_measured": 1451077,
       "promo_reach_measured": 822,
-      "excluded_ambiguous_reach": 291307,
+      "excluded_ambiguous_reach": 34160,
       "total_is_partial": true
     },
     "baharoon_20260802": {
@@ -196,12 +198,13 @@
       "n_items": 15,
       "by_classification": {
         "FULL_INTERVIEW": {
-          "n_items": 1,
-          "n_measured": 1,
+          "n_items": 2,
+          "n_measured": 2,
           "n_not_measured": 0,
-          "sum_measured": 84,
+          "sum_measured": 621621,
           "excluded_reach_not_published": null,
           "platforms": [
+            "x",
             "youtube"
           ]
         },
@@ -225,11 +228,11 @@
           "platforms": []
         },
         "AMBIGUOUS": {
-          "n_items": 8,
+          "n_items": 7,
           "n_measured": 0,
-          "n_not_measured": 8,
+          "n_not_measured": 7,
           "sum_measured": 0,
-          "excluded_reach_not_published": 1034763,
+          "excluded_reach_not_published": 413226,
           "platforms": [
             "rumble",
             "x"
@@ -238,9 +241,9 @@
       },
       "full_interview_by_platform": {
         "x": {
-          "value": null,
-          "status": "N/A",
-          "reason": "no verified native full interview on this platform"
+          "value": 621537,
+          "status": "measured",
+          "url": "https://x.com/neworder_TV/status/2083802685976048113"
         },
         "instagram": {
           "value": null,
@@ -258,9 +261,9 @@
           "reason": "no verified native full interview on this platform"
         }
       },
-      "editorial_total_measured": 207067,
+      "editorial_total_measured": 828604,
       "promo_reach_measured": null,
-      "excluded_ambiguous_reach": 1034763,
+      "excluded_ambiguous_reach": 413226,
       "total_is_partial": true
     }
   },
@@ -273,12 +276,12 @@
       "publishing_account": "GoingUndergroundTV",
       "canonical_url": "https://rumble.com/v7dkb72-between-the-us-and-brics-the-uae-refuses-to-be-made-to-choose-one-or-the-ot.html",
       "platform_content_id": "v7dkb72",
-      "published_iso": "2026-08-02T11:55:53Z",
+      "published_iso": "2026-08-02T12:58:31Z",
       "classification": "AMBIGUOUS",
       "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
       "metric": "views",
       "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
+      "measured_at_iso": "2026-08-06T12:59:14.461982",
       "value": 486,
       "status": "ambiguous"
     },
@@ -297,23 +300,6 @@
       "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 15642,
-      "status": "ambiguous"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083802685976048113",
-      "platform_content_id": "2083802685976048113",
-      "published_iso": "2026-08-02T06:30:50Z",
-      "classification": "AMBIGUOUS",
-      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
-      "metric": "view_count",
-      "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 621537,
       "status": "ambiguous"
     },
     {
@@ -507,6 +493,23 @@
       "episode_key": "baharoon_20260802",
       "episode_guest": "Mohammed Baharoon",
       "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083802685976048113",
+      "platform_content_id": "2083802685976048113",
+      "published_iso": "2026-08-02T06:30:50Z",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "verified: single native X video, duration 27.26 min (full-episode length), not a repost or quote, canonical account, posted at broadcast. NOT established: transcript/frame identity against the episode master",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 621537,
+      "status": "measured"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
       "platform": "youtube",
       "publishing_account": "GoingUndergroundRT",
       "canonical_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
@@ -528,13 +531,13 @@
       "publishing_account": "GoingUndergroundTV",
       "canonical_url": "https://rumble.com/v7diuge-iran-disaster-trump-sees-israel-as-a-tool-to-conquer-the-world-trumps-ex-la.html",
       "platform_content_id": "v7diuge",
-      "published_iso": "2026-07-31T11:54:06Z",
+      "published_iso": "2026-07-31T12:56:50Z",
       "classification": "AMBIGUOUS",
       "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
       "metric": "views",
       "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
-      "value": 12000,
+      "measured_at_iso": "2026-08-06T12:59:14.461982",
+      "value": 12100,
       "status": "ambiguous"
     },
     {
@@ -552,23 +555,6 @@
       "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 4841,
-      "status": "ambiguous"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083362453744722327",
-      "platform_content_id": "2083362453744722327",
-      "published_iso": "2026-08-01T01:21:30Z",
-      "classification": "AMBIGUOUS",
-      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
-      "metric": "view_count",
-      "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 257247,
       "status": "ambiguous"
     },
     {
@@ -830,6 +816,23 @@
       "episode_key": "barnes_20260801",
       "episode_guest": "Robert Barnes",
       "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083362453744722327",
+      "platform_content_id": "2083362453744722327",
+      "published_iso": "2026-08-01T01:21:30Z",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "verified: single native X video, duration 28.46 min (full-episode length), not a repost or quote, canonical account, posted at broadcast. NOT established: transcript/frame identity against the episode master",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 257247,
+      "status": "measured"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
       "platform": "youtube",
       "publishing_account": "GoingUndergroundRT",
       "canonical_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
@@ -868,13 +871,13 @@
       "publishing_account": "GoingUndergroundTV",
       "canonical_url": "https://rumble.com/v7dlvd8-gabor-mat-netanyahu-is-the-most-egregious-expression-of-zionist-dehumanisat.html",
       "platform_content_id": "v7dlvd8",
-      "published_iso": "2026-08-02T11:54:06Z",
+      "published_iso": "2026-08-02T12:56:50Z",
       "classification": "AMBIGUOUS",
       "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
       "metric": "views",
       "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
-      "value": 2860,
+      "measured_at_iso": "2026-08-06T12:59:14.461982",
+      "value": 2870,
       "status": "ambiguous"
     },
     {
@@ -892,23 +895,6 @@
       "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 5616,
-      "status": "ambiguous"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084075450125451546",
-      "platform_content_id": "2084075450125451546",
-      "published_iso": "2026-08-03T00:34:42Z",
-      "classification": "AMBIGUOUS",
-      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
-      "metric": "view_count",
-      "metric_scope": "cumulative_to_measurement",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 101896,
       "status": "ambiguous"
     },
     {
@@ -1181,6 +1167,23 @@
       "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 43292,
+      "status": "measured"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084075450125451546",
+      "platform_content_id": "2084075450125451546",
+      "published_iso": "2026-08-03T00:34:42Z",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "verified: single native X video, duration 27.86 min (full-episode length), not a repost or quote, canonical account, posted at broadcast. NOT established: transcript/frame identity against the episode master",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 101896,
       "status": "measured"
     },
     {

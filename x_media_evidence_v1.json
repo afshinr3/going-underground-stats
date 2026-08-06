@@ -1,0 +1,177 @@
+{
+  "marker": "X_MEDIA_EVIDENCE_V1",
+  "generated_iso": "2026-08-06T13:13:36Z",
+  "read_only": true,
+  "secrets_policy": "no cookies, bearer/CSRF tokens or auth headers are captured or stored",
+  "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)",
+  "posts": [
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083802685976048113",
+      "cached_view_count": 621537,
+      "fetched_at_iso": "2026-08-06T13:13:34Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 06:30:50 +0000 2026",
+        "full_text": "🚨 NEW EPISODE OF NEW ORDER 🌐\n\nBetween the US &amp; BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)\n\nHow is the UAE navigating between the USA and BRICS?\n\nWhy is the UAE’s approach focusing on a networked world order rather than a multipolar order? https://t.co/tCrcfMtAtl",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083534412633997312",
+            "type": "video",
+            "duration_millis": 1635680,
+            "duration_min": 27.26,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083802685976048113/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "621718",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083362453744722327",
+      "cached_view_count": 257247,
+      "fetched_at_iso": "2026-08-06T13:13:35Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 01:21:30 +0000 2026",
+        "full_text": "🚨NEW EPISODE OF GOING UNDERGROUND⚡️\n\nIran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes\n\nWhat is behind Donald Trump continuing to push on with his disastrous war on Iran?\n\nWhat is the state of the Israel lobby’s power in the https://t.co/lSXhYmseFJ",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083150192149151744",
+            "type": "video",
+            "duration_millis": 1707640,
+            "duration_min": 28.46,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083362453744722327/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "257583",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084075450125451546",
+      "cached_view_count": 101896,
+      "fetched_at_iso": "2026-08-06T13:13:36Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 00:34:42 +0000 2026",
+        "full_text": "🚨NEW EPISODE OF GOING UNDERGROUND⚡️\n\nGabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians\n\nHow has dehumanisation been key in the NATO nation-sponsored wars ranging from Ukraine, to Gaza, to Iran?\n\nWhat is the underlying hypocrisy in https://t.co/mtkXvyLlrh",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083871743211368448",
+            "type": "video",
+            "duration_millis": 1671360,
+            "duration_min": 27.86,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084075450125451546/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "102421",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    }
+  ]
+}
