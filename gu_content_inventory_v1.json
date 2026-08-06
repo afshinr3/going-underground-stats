@@ -1,18 +1,18 @@
 {
-  "marker": "GU_CONTENT_INVENTORY_V1",
-  "generated_iso": "2026-08-06T12:01:29Z",
-  "sources": {
-    "x_2026.json": "/Users/afshin/RumbleMonitor/x_2026.json",
-    "ig_2026.json": "/Users/afshin/RumbleMonitor/ig_2026.json",
-    "yt_2026.json": "/Users/afshin/RumbleMonitor/yt_2026.json",
-    "rumble_2026.json": "/Users/afshin/RumbleMonitor/rumble_2026.json"
-  },
+  "marker": "GU_CONTENT_INVENTORY_V2",
+  "supersedes": "GU_CONTENT_INVENTORY_V1",
+  "generated_iso": "2026-08-06T12:21:18Z",
+  "metric_scope": "cumulative_to_measurement_timestamp",
+  "scope_note": "Cumulative per-post totals. NOT comparable with the dashboard '1 Week' rolling window and must never be summed into it.",
   "url_policy": "URLs composed only from platform IDs present in the caches; none invented.",
-  "zero_policy": "unavailable/unmapped/unparseable -> value null + status, never 0.",
-  "match_window": {
-    "before_days": 2,
-    "after_days": 30
-  },
+  "zero_policy": "unavailable/ambiguous/N-A -> value null + status, never 0.",
+  "promo_policy": "PROMO reach reported separately and excluded from the editorial total.",
+  "ambiguous_policy": "excluded from published totals, exposed here, never guessed.",
+  "verification_limits": [
+    "caches carry no media metadata: native-video presence is not directly verifiable on X",
+    "no durations available: platform full-interview identity cannot be duration-verified",
+    "no transcripts or fingerprints available for content-identity matching"
+  ],
   "canonical_accounts": {
     "x": {
       "GU": "GUnderground_TV",
@@ -39,43 +39,77 @@
       "show": "GU",
       "pub_iso": "2026-08-03T22:18:20Z",
       "canonical_video_id": "PUw_r6rI5PY",
-      "n_items": 24,
-      "by_content_type": {
-        "full_interview": {
+      "n_items": 23,
+      "by_classification": {
+        "FULL_INTERVIEW": {
           "n_items": 1,
           "n_measured": 1,
-          "n_unavailable": 0,
-          "sum_measured": 18960
+          "n_not_measured": 0,
+          "sum_measured": 18960,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "youtube"
+          ]
         },
-        "clip": {
-          "n_items": 8,
-          "n_measured": 8,
-          "n_unavailable": 0,
-          "sum_measured": 189040
+        "CLIP": {
+          "n_items": 13,
+          "n_measured": 13,
+          "n_not_measured": 0,
+          "sum_measured": 618675,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "instagram",
+            "x"
+          ]
         },
-        "clip_or_promo": {
-          "n_items": 15,
-          "n_measured": 15,
-          "n_unavailable": 0,
-          "sum_measured": 624650
+        "PROMO": {
+          "n_items": 3,
+          "n_measured": 3,
+          "n_not_measured": 0,
+          "sum_measured": 826,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "x"
+          ]
         },
-        "post": {
-          "n_items": 0,
+        "AMBIGUOUS": {
+          "n_items": 6,
           "n_measured": 0,
-          "n_unavailable": 0,
-          "sum_measured": null
+          "n_not_measured": 6,
+          "sum_measured": 0,
+          "excluded_reach_not_published": 162187,
+          "platforms": [
+            "rumble",
+            "x"
+          ]
         }
       },
-      "sum_measured_all": 832650,
-      "n_unavailable": 0,
-      "total_is_partial": false,
-      "platforms_present": [
-        "instagram",
-        "rumble",
-        "x",
-        "youtube"
-      ],
-      "platforms_absent": []
+      "full_interview_by_platform": {
+        "x": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "instagram": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "youtube": {
+          "value": 18960,
+          "status": "measured",
+          "url": "https://www.youtube.com/watch?v=PUw_r6rI5PY"
+        },
+        "rumble": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        }
+      },
+      "editorial_total_measured": 637635,
+      "promo_reach_measured": 826,
+      "excluded_ambiguous_reach": 162187,
+      "total_is_partial": true
     },
     "barnes_20260801": {
       "guest": "Robert Barnes",
@@ -83,42 +117,76 @@
       "pub_iso": "2026-08-01T21:22:19Z",
       "canonical_video_id": "N_ysv6Gh9Ac",
       "n_items": 20,
-      "by_content_type": {
-        "full_interview": {
+      "by_classification": {
+        "FULL_INTERVIEW": {
           "n_items": 1,
           "n_measured": 1,
-          "n_unavailable": 0,
-          "sum_measured": 3012
+          "n_not_measured": 0,
+          "sum_measured": 3012,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "youtube"
+          ]
         },
-        "clip": {
-          "n_items": 7,
-          "n_measured": 7,
-          "n_unavailable": 0,
-          "sum_measured": 24728
+        "CLIP": {
+          "n_items": 14,
+          "n_measured": 14,
+          "n_not_measured": 0,
+          "sum_measured": 1190818,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "instagram",
+            "x"
+          ]
         },
-        "clip_or_promo": {
-          "n_items": 12,
-          "n_measured": 12,
-          "n_unavailable": 0,
-          "sum_measured": 1458219
+        "PROMO": {
+          "n_items": 1,
+          "n_measured": 1,
+          "n_not_measured": 0,
+          "sum_measured": 822,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "x"
+          ]
         },
-        "post": {
-          "n_items": 0,
+        "AMBIGUOUS": {
+          "n_items": 4,
           "n_measured": 0,
-          "n_unavailable": 0,
-          "sum_measured": null
+          "n_not_measured": 4,
+          "sum_measured": 0,
+          "excluded_reach_not_published": 291307,
+          "platforms": [
+            "rumble",
+            "x"
+          ]
         }
       },
-      "sum_measured_all": 1485959,
-      "n_unavailable": 0,
-      "total_is_partial": false,
-      "platforms_present": [
-        "instagram",
-        "rumble",
-        "x",
-        "youtube"
-      ],
-      "platforms_absent": []
+      "full_interview_by_platform": {
+        "x": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "instagram": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "youtube": {
+          "value": 3012,
+          "status": "measured",
+          "url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac"
+        },
+        "rumble": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        }
+      },
+      "editorial_total_measured": 1193830,
+      "promo_reach_measured": 822,
+      "excluded_ambiguous_reach": 291307,
+      "total_is_partial": true
     },
     "baharoon_20260802": {
       "guest": "Mohammed Baharoon",
@@ -126,45 +194,213 @@
       "pub_iso": "2026-08-02T06:30:06Z",
       "canonical_video_id": "F8hxaEtl9Y8",
       "n_items": 15,
-      "by_content_type": {
-        "full_interview": {
+      "by_classification": {
+        "FULL_INTERVIEW": {
           "n_items": 1,
           "n_measured": 1,
-          "n_unavailable": 0,
-          "sum_measured": 84
+          "n_not_measured": 0,
+          "sum_measured": 84,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "youtube"
+          ]
         },
-        "clip": {
-          "n_items": 4,
-          "n_measured": 4,
-          "n_unavailable": 0,
-          "sum_measured": 5878
+        "CLIP": {
+          "n_items": 6,
+          "n_measured": 6,
+          "n_not_measured": 0,
+          "sum_measured": 206983,
+          "excluded_reach_not_published": null,
+          "platforms": [
+            "instagram",
+            "x"
+          ]
         },
-        "clip_or_promo": {
-          "n_items": 10,
-          "n_measured": 10,
-          "n_unavailable": 0,
-          "sum_measured": 1235868
-        },
-        "post": {
+        "PROMO": {
           "n_items": 0,
           "n_measured": 0,
-          "n_unavailable": 0,
-          "sum_measured": null
+          "n_not_measured": 0,
+          "sum_measured": null,
+          "excluded_reach_not_published": null,
+          "platforms": []
+        },
+        "AMBIGUOUS": {
+          "n_items": 8,
+          "n_measured": 0,
+          "n_not_measured": 8,
+          "sum_measured": 0,
+          "excluded_reach_not_published": 1034763,
+          "platforms": [
+            "rumble",
+            "x"
+          ]
         }
       },
-      "sum_measured_all": 1241830,
-      "n_unavailable": 0,
-      "total_is_partial": false,
-      "platforms_present": [
-        "instagram",
-        "rumble",
-        "x",
-        "youtube"
-      ],
-      "platforms_absent": []
+      "full_interview_by_platform": {
+        "x": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "instagram": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        },
+        "youtube": {
+          "value": 84,
+          "status": "measured",
+          "url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8"
+        },
+        "rumble": {
+          "value": null,
+          "status": "N/A",
+          "reason": "no verified native full interview on this platform"
+        }
+      },
+      "editorial_total_measured": 207067,
+      "promo_reach_measured": null,
+      "excluded_ambiguous_reach": 1034763,
+      "total_is_partial": true
     }
   },
   "items": [
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "rumble",
+      "publishing_account": "GoingUndergroundTV",
+      "canonical_url": "https://rumble.com/v7dkb72-between-the-us-and-brics-the-uae-refuses-to-be-made-to-choose-one-or-the-ot.html",
+      "platform_content_id": "v7dkb72",
+      "published_iso": "2026-08-02T11:55:53Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
+      "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T11:56:31.948939",
+      "value": 486,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083531586033877006",
+      "platform_content_id": "2083531586033877006",
+      "published_iso": "2026-08-01T12:33:34Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 15642,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083802685976048113",
+      "platform_content_id": "2083802685976048113",
+      "published_iso": "2026-08-02T06:30:50Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 621537,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083846978392535463",
+      "platform_content_id": "2083846978392535463",
+      "published_iso": "2026-08-02T09:26:50Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 25211,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083870718773891314",
+      "platform_content_id": "2083870718773891314",
+      "published_iso": "2026-08-02T11:01:10Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 166536,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083891285090541903",
+      "platform_content_id": "2083891285090541903",
+      "published_iso": "2026-08-02T12:22:53Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 80825,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083933786279194927",
+      "platform_content_id": "2083933786279194927",
+      "published_iso": "2026-08-02T15:11:46Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 31024,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "episode_guest": "Mohammed Baharoon",
+      "show": "NO",
+      "platform": "x",
+      "publishing_account": "neworder_TV",
+      "canonical_url": "https://x.com/neworder_TV/status/2083950310092054556",
+      "platform_content_id": "2083950310092054556",
+      "published_iso": "2026-08-02T16:17:26Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 93502,
+      "status": "ambiguous"
+    },
     {
       "episode_key": "baharoon_20260802",
       "episode_guest": "Mohammed Baharoon",
@@ -174,8 +410,10 @@
       "canonical_url": "https://www.instagram.com/p/DbgEALiKunZ/",
       "platform_content_id": "3954178077401737689_34163031",
       "published_iso": "2026-08-01T14:34:39Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2914,
       "status": "measured"
@@ -189,8 +427,10 @@
       "canonical_url": "https://www.instagram.com/p/DbgTd4JKrg0/",
       "platform_content_id": "3954246088863168564_34163031",
       "published_iso": "2026-08-01T16:49:28Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 1542,
       "status": "measured"
@@ -204,55 +444,12 @@
       "canonical_url": "https://www.instagram.com/p/Dbiqf77Kwp_/",
       "platform_content_id": "3954910335385406079_34163031",
       "published_iso": "2026-08-02T14:49:29Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 936,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "rumble",
-      "publishing_account": "GoingUndergroundTV",
-      "canonical_url": "https://rumble.com/v7dkb72-between-the-us-and-brics-the-uae-refuses-to-be-made-to-choose-one-or-the-ot.html",
-      "platform_content_id": "v7dkb72",
-      "published_iso": "2026-08-02T11:55:53Z",
-      "content_type": "clip",
-      "metric": "views",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
-      "value": 486,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083531586033877006",
-      "platform_content_id": "2083531586033877006",
-      "published_iso": "2026-08-01T12:33:34Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 15642,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083802685976048113",
-      "platform_content_id": "2083802685976048113",
-      "published_iso": "2026-08-02T06:30:50Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 621537,
       "status": "measured"
     },
     {
@@ -264,55 +461,12 @@
       "canonical_url": "https://x.com/neworder_TV/status/2083816889625809259",
       "platform_content_id": "2083816889625809259",
       "published_iso": "2026-08-02T07:27:16Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 68 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 37453,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083846978392535463",
-      "platform_content_id": "2083846978392535463",
-      "published_iso": "2026-08-02T09:26:50Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 25211,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083870718773891314",
-      "platform_content_id": "2083870718773891314",
-      "published_iso": "2026-08-02T11:01:10Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 166536,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083891285090541903",
-      "platform_content_id": "2083891285090541903",
-      "published_iso": "2026-08-02T12:22:53Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 80825,
       "status": "measured"
     },
     {
@@ -324,40 +478,12 @@
       "canonical_url": "https://x.com/neworder_TV/status/2083912494020698235",
       "platform_content_id": "2083912494020698235",
       "published_iso": "2026-08-02T13:47:10Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 68 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 104810,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083933786279194927",
-      "platform_content_id": "2083933786279194927",
-      "published_iso": "2026-08-02T15:11:46Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 31024,
-      "status": "measured"
-    },
-    {
-      "episode_key": "baharoon_20260802",
-      "episode_guest": "Mohammed Baharoon",
-      "show": "NO",
-      "platform": "x",
-      "publishing_account": "neworder_TV",
-      "canonical_url": "https://x.com/neworder_TV/status/2083950310092054556",
-      "platform_content_id": "2083950310092054556",
-      "published_iso": "2026-08-02T16:17:26Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 93502,
       "status": "measured"
     },
     {
@@ -369,8 +495,10 @@
       "canonical_url": "https://x.com/neworder_TV/status/2083966704900870527",
       "platform_content_id": "2083966704900870527",
       "published_iso": "2026-08-02T17:22:35Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 89 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 59328,
       "status": "measured"
@@ -384,11 +512,81 @@
       "canonical_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
       "platform_content_id": "F8hxaEtl9Y8",
       "published_iso": "2026-08-02T00:00:00Z",
-      "content_type": "full_interview",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "canonical account + platform content ID + publication timing",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:15:20.971394",
       "value": 84,
       "status": "measured"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
+      "platform": "rumble",
+      "publishing_account": "GoingUndergroundTV",
+      "canonical_url": "https://rumble.com/v7diuge-iran-disaster-trump-sees-israel-as-a-tool-to-conquer-the-world-trumps-ex-la.html",
+      "platform_content_id": "v7diuge",
+      "published_iso": "2026-07-31T11:54:06Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
+      "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T11:56:31.948939",
+      "value": 12000,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083152913472569660",
+      "platform_content_id": "2083152913472569660",
+      "published_iso": "2026-07-31T11:28:52Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 4841,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083362453744722327",
+      "platform_content_id": "2083362453744722327",
+      "published_iso": "2026-08-01T01:21:30Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 257247,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083617574236069920",
+      "platform_content_id": "2083617574236069920",
+      "published_iso": "2026-08-01T18:15:16Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 17219,
+      "status": "ambiguous"
     },
     {
       "episode_key": "barnes_20260801",
@@ -399,8 +597,10 @@
       "canonical_url": "https://www.instagram.com/p/DbdLvp2uCmJ/",
       "platform_content_id": "3953367701169645961_34163031",
       "published_iso": "2026-07-31T11:43:40Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 1122,
       "status": "measured"
@@ -414,8 +614,10 @@
       "canonical_url": "https://www.instagram.com/p/DbdORfhOXGh/",
       "platform_content_id": "3953378822626832801_34163031",
       "published_iso": "2026-07-31T12:06:28Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2192,
       "status": "measured"
@@ -429,8 +631,10 @@
       "canonical_url": "https://www.instagram.com/p/DbfuDKMuDRz/",
       "platform_content_id": "3954081525103342707_34163031",
       "published_iso": "2026-08-01T11:22:13Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2473,
       "status": "measured"
@@ -444,8 +648,10 @@
       "canonical_url": "https://www.instagram.com/p/DbfubqZu_rr/",
       "platform_content_id": "3954083208948873963_34163031",
       "published_iso": "2026-08-01T11:25:29Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 1795,
       "status": "measured"
@@ -459,8 +665,10 @@
       "canonical_url": "https://www.instagram.com/p/Dbfun9BOSXi/",
       "platform_content_id": "3954084053572462050_34163031",
       "published_iso": "2026-08-01T11:27:21Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2420,
       "status": "measured"
@@ -474,25 +682,12 @@
       "canonical_url": "https://www.instagram.com/p/DbgB-_3KB9e/",
       "platform_content_id": "3954169200056475486_34163031",
       "published_iso": "2026-08-01T14:16:56Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2726,
-      "status": "measured"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "rumble",
-      "publishing_account": "GoingUndergroundTV",
-      "canonical_url": "https://rumble.com/v7diuge-iran-disaster-trump-sees-israel-as-a-tool-to-conquer-the-world-trumps-ex-la.html",
-      "platform_content_id": "v7diuge",
-      "published_iso": "2026-07-31T11:54:06Z",
-      "content_type": "clip",
-      "metric": "views",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
-      "value": 12000,
       "status": "measured"
     },
     {
@@ -504,55 +699,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083151356773409082",
       "platform_content_id": "2083151356773409082",
       "published_iso": "2026-07-31T11:22:41Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 111 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 15227,
-      "status": "measured"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083152913472569660",
-      "platform_content_id": "2083152913472569660",
-      "published_iso": "2026-07-31T11:28:52Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 4841,
-      "status": "measured"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083155640843907104",
-      "platform_content_id": "2083155640843907104",
-      "published_iso": "2026-07-31T11:39:42Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 822,
-      "status": "measured"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083362453744722327",
-      "platform_content_id": "2083362453744722327",
-      "published_iso": "2026-08-01T01:21:30Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 257247,
       "status": "measured"
     },
     {
@@ -564,8 +716,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083364857336991868",
       "platform_content_id": "2083364857336991868",
       "published_iso": "2026-08-01T01:31:03Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 69 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 46478,
       "status": "measured"
@@ -579,8 +733,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083481437731537056",
       "platform_content_id": "2083481437731537056",
       "published_iso": "2026-08-01T09:14:18Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 73 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 30020,
       "status": "measured"
@@ -594,8 +750,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083498211939897851",
       "platform_content_id": "2083498211939897851",
       "published_iso": "2026-08-01T10:20:57Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 128 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 23815,
       "status": "measured"
@@ -609,8 +767,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083508243901645276",
       "platform_content_id": "2083508243901645276",
       "published_iso": "2026-08-01T11:00:49Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 108 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 47576,
       "status": "measured"
@@ -624,8 +784,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083537273233059908",
       "platform_content_id": "2083537273233059908",
       "published_iso": "2026-08-01T12:56:10Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 109 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 108399,
       "status": "measured"
@@ -639,25 +801,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083563023491563849",
       "platform_content_id": "2083563023491563849",
       "published_iso": "2026-08-01T14:38:30Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 142 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 884493,
-      "status": "measured"
-    },
-    {
-      "episode_key": "barnes_20260801",
-      "episode_guest": "Robert Barnes",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083617574236069920",
-      "platform_content_id": "2083617574236069920",
-      "published_iso": "2026-08-01T18:15:16Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 17219,
       "status": "measured"
     },
     {
@@ -669,8 +818,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083650663419187574",
       "platform_content_id": "2083650663419187574",
       "published_iso": "2026-08-01T20:26:45Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 142 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 22082,
       "status": "measured"
@@ -684,11 +835,132 @@
       "canonical_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "platform_content_id": "N_ysv6Gh9Ac",
       "published_iso": "2026-08-01T00:00:00Z",
-      "content_type": "full_interview",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "canonical account + platform content ID + publication timing",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:15:20.971394",
       "value": 3012,
       "status": "measured"
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "episode_guest": "Robert Barnes",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083155640843907104",
+      "platform_content_id": "2083155640843907104",
+      "published_iso": "2026-07-31T11:39:42Z",
+      "classification": "PROMO",
+      "classification_basis": "repost (RT) of already-counted content",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 822,
+      "status": "measured"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "rumble",
+      "publishing_account": "GoingUndergroundTV",
+      "canonical_url": "https://rumble.com/v7dlvd8-gabor-mat-netanyahu-is-the-most-egregious-expression-of-zionist-dehumanisat.html",
+      "platform_content_id": "v7dlvd8",
+      "published_iso": "2026-08-02T11:54:06Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "native upload but duration/transcript unavailable to verify full vs excerpt",
+      "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T11:56:31.948939",
+      "value": 2860,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083869239073792383",
+      "platform_content_id": "2083869239073792383",
+      "published_iso": "2026-08-02T10:55:17Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 5616,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084075450125451546",
+      "platform_content_id": "2084075450125451546",
+      "published_iso": "2026-08-03T00:34:42Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "candidate platform full interview (episode-release post on canonical account); duration/transcript unavailable to verify",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 101896,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084212432545714519",
+      "platform_content_id": "2084212432545714519",
+      "published_iso": "2026-08-03T09:39:01Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 14922,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084245962218975489",
+      "platform_content_id": "2084245962218975489",
+      "published_iso": "2026-08-03T11:52:15Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 21620,
+      "status": "ambiguous"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084287102116663641",
+      "platform_content_id": "2084287102116663641",
+      "published_iso": "2026-08-03T14:35:43Z",
+      "classification": "AMBIGUOUS",
+      "classification_basis": "no quoted excerpt and native media not verifiable from cache",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 15273,
+      "status": "ambiguous"
     },
     {
       "episode_key": "mate_20260803",
@@ -699,8 +971,10 @@
       "canonical_url": "https://www.instagram.com/p/DbiZ0OtOGSV/",
       "platform_content_id": "3954836963151340693_34163031",
       "published_iso": "2026-08-02T12:23:19Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 589,
       "status": "measured"
@@ -714,8 +988,10 @@
       "canonical_url": "https://www.instagram.com/p/DbiaPvHuIrJ/",
       "platform_content_id": "3954838853381556937_34163031",
       "published_iso": "2026-08-02T12:26:39Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 3165,
       "status": "measured"
@@ -729,8 +1005,10 @@
       "canonical_url": "https://www.instagram.com/p/DbkzXw_OpzS/",
       "platform_content_id": "3955512306258582738_34163031",
       "published_iso": "2026-08-03T10:45:06Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 2585,
       "status": "measured"
@@ -744,8 +1022,10 @@
       "canonical_url": "https://www.instagram.com/p/Dbkzr33uwQJ/",
       "platform_content_id": "3955513688038507529_34163031",
       "published_iso": "2026-08-03T10:47:31Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 175192,
       "status": "measured"
@@ -759,8 +1039,10 @@
       "canonical_url": "https://www.instagram.com/p/Dbk0fEhO4nB/",
       "platform_content_id": "3955517206313011649_34163031",
       "published_iso": "2026-08-03T10:54:49Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 970,
       "status": "measured"
@@ -774,8 +1056,10 @@
       "canonical_url": "https://www.instagram.com/p/DblL_bXKqtl/",
       "platform_content_id": "3955620584933206885_34163031",
       "published_iso": "2026-08-03T14:19:42Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 1910,
       "status": "measured"
@@ -789,25 +1073,12 @@
       "canonical_url": "https://www.instagram.com/p/DbmCPfouXie/",
       "platform_content_id": "3955859183545972894_34163031",
       "published_iso": "2026-08-03T22:13:56Z",
-      "content_type": "clip",
+      "classification": "CLIP",
+      "classification_basis": "native video reel (media_type=2, product_type=clips)",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:16:48.795828+00:00",
       "value": 1769,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "rumble",
-      "publishing_account": "GoingUndergroundTV",
-      "canonical_url": "https://rumble.com/v7dlvd8-gabor-mat-netanyahu-is-the-most-egregious-expression-of-zionist-dehumanisat.html",
-      "platform_content_id": "v7dlvd8",
-      "published_iso": "2026-08-02T11:54:06Z",
-      "content_type": "clip",
-      "metric": "views",
-      "measured_at_iso": "2026-08-06T11:56:31.948939",
-      "value": 2860,
       "status": "measured"
     },
     {
@@ -819,70 +1090,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2083866700584473084",
       "platform_content_id": "2083866700584473084",
       "published_iso": "2026-08-02T10:45:12Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 72 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 14095,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083869239073792383",
-      "platform_content_id": "2083869239073792383",
-      "published_iso": "2026-08-02T10:55:17Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 5616,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083871196022800545",
-      "platform_content_id": "2083871196022800545",
-      "published_iso": "2026-08-02T11:03:04Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 826,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2083876290147606646",
-      "platform_content_id": "2083876290147606646",
-      "published_iso": "2026-08-02T11:23:18Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 32002,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084075450125451546",
-      "platform_content_id": "2084075450125451546",
-      "published_iso": "2026-08-03T00:34:42Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 101896,
       "status": "measured"
     },
     {
@@ -894,25 +1107,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2084076503906808183",
       "platform_content_id": "2084076503906808183",
       "published_iso": "2026-08-03T00:38:53Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 130 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 50732,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084212432545714519",
-      "platform_content_id": "2084212432545714519",
-      "published_iso": "2026-08-03T09:39:01Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 14922,
       "status": "measured"
     },
     {
@@ -924,25 +1124,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2084230461363249332",
       "platform_content_id": "2084230461363249332",
       "published_iso": "2026-08-03T10:50:39Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 129 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 14095,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084245962218975489",
-      "platform_content_id": "2084245962218975489",
-      "published_iso": "2026-08-03T11:52:15Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 21620,
       "status": "measured"
     },
     {
@@ -954,40 +1141,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2084263618514673742",
       "platform_content_id": "2084263618514673742",
       "published_iso": "2026-08-03T13:02:25Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 102 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 62479,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084287102116663641",
-      "platform_content_id": "2084287102116663641",
-      "published_iso": "2026-08-03T14:35:43Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 15273,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084293483586805823",
-      "platform_content_id": "2084293483586805823",
-      "published_iso": "2026-08-03T15:01:05Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 0,
       "status": "measured"
     },
     {
@@ -999,8 +1158,10 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2084304600971333861",
       "platform_content_id": "2084304600971333861",
       "published_iso": "2026-08-03T15:45:16Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 164 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 247802,
       "status": "measured"
@@ -1014,25 +1175,12 @@
       "canonical_url": "https://x.com/GUnderground_TV/status/2084325455826768129",
       "platform_content_id": "2084325455826768129",
       "published_iso": "2026-08-03T17:08:08Z",
-      "content_type": "clip_or_promo",
+      "classification": "CLIP",
+      "classification_basis": "quoted dialogue, 81 chars",
       "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
       "value": 43292,
-      "status": "measured"
-    },
-    {
-      "episode_key": "mate_20260803",
-      "episode_guest": "Gabor Maté",
-      "show": "GU",
-      "platform": "x",
-      "publishing_account": "GUnderground_TV",
-      "canonical_url": "https://x.com/GUnderground_TV/status/2084400257107112025",
-      "platform_content_id": "2084400257107112025",
-      "published_iso": "2026-08-03T22:05:22Z",
-      "content_type": "clip_or_promo",
-      "metric": "view_count",
-      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
-      "value": 0,
       "status": "measured"
     },
     {
@@ -1044,10 +1192,63 @@
       "canonical_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
       "platform_content_id": "PUw_r6rI5PY",
       "published_iso": "2026-08-03T00:00:00Z",
-      "content_type": "full_interview",
+      "classification": "FULL_INTERVIEW",
+      "classification_basis": "canonical account + platform content ID + publication timing",
       "metric": "views",
+      "metric_scope": "cumulative_to_measurement",
       "measured_at_iso": "2026-08-06T09:15:20.971394",
       "value": 18960,
+      "status": "measured"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2083871196022800545",
+      "platform_content_id": "2083871196022800545",
+      "published_iso": "2026-08-02T11:03:04Z",
+      "classification": "PROMO",
+      "classification_basis": "repost (RT) of already-counted content",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 826,
+      "status": "measured"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084293483586805823",
+      "platform_content_id": "2084293483586805823",
+      "published_iso": "2026-08-03T15:01:05Z",
+      "classification": "PROMO",
+      "classification_basis": "repost (RT) of already-counted content",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 0,
+      "status": "measured"
+    },
+    {
+      "episode_key": "mate_20260803",
+      "episode_guest": "Gabor Maté",
+      "show": "GU",
+      "platform": "x",
+      "publishing_account": "GUnderground_TV",
+      "canonical_url": "https://x.com/GUnderground_TV/status/2084400257107112025",
+      "platform_content_id": "2084400257107112025",
+      "published_iso": "2026-08-03T22:05:22Z",
+      "classification": "PROMO",
+      "classification_basis": "repost (RT) of already-counted content",
+      "metric": "view_count",
+      "metric_scope": "cumulative_to_measurement",
+      "measured_at_iso": "2026-08-06T09:13:14.903255+00:00",
+      "value": 0,
       "status": "measured"
     }
   ]
