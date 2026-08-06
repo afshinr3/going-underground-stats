@@ -34,6 +34,7 @@ only from real platform IDs. Unavailable -> null + status, never 0.
 """
 import json
 import re
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -63,9 +64,82 @@ EPISODES = [
 WINDOW_BEFORE = timedelta(days=2)
 WINDOW_AFTER = timedelta(days=30)
 
-# Substantive excerpt: attributed dialogue in typographic or straight quotes,
-# long enough not to be a strapline.
-QUOTE_RE = re.compile(r"[‘'\"“]([^’'\"”]{40,})[’'\"”]")
+# ---------------------------------------------------------------------------
+# GU_QUOTE_PARSER_V2_2026_08_06 — supersedes the closing-quote-anchored regex.
+#
+# The old pattern was [‘'"“]([^’'"”]{40,})[’'"”] and it failed on the entire
+# neworder_TV set for TWO independent reasons, both visible in the raw text:
+#   1. TRUNCATION (the decisive one). The stored tweet text is cut mid-sentence
+#      ("...There h", "...This is why t"), so the closing quote does not exist in
+#      the string at all. No closing-anchored pattern can ever match it.
+#   2. APOSTROPHES. [^’'"”] forbids a straight apostrophe inside the quote, so
+#      "It's again resilience..." terminated the class after two characters.
+# Maté/Barnes items happened to match because their quotes closed within the
+# stored length and avoided a straight apostrophe — luck, not correctness.
+#
+# The fix models what the text actually is: an OPENED quotation that may be
+# truncated. We require an opening quote mark preceded by a speaker attribution,
+# followed by a substantive run of prose. Apostrophes are allowed inside; a
+# closing quote is optional.
+#
+# This is deliberately NOT a broad ".*quote.*" rule, and quoted text alone never
+# promotes anything: classify_x_verified() still requires an independent media
+# signal before any CLIP is emitted.
+OPEN_QUOTES = "\u2018\u201c'\""
+# Attribution appears in two shapes on these accounts, both legitimate:
+#   before: "Donald Trump's Former Lawyer Robert Barnes:\n\n'The Deep State..."
+#   after:  "'Trump sees Israel as a TOOL...'\n\n—Trump's former lawyer Robert Barnes"
+# The name can run long ("Holocaust Survivor & Trauma Specialist Dr. Gabor Maté"),
+# so the prefix form allows up to 8 words rather than 5.
+# Not anchored to end-of-line: neworder_TV writes "Name: <headline>\n\n'quote",
+# where the colon is followed by a headline, while GU writes "Name:\n\n'quote".
+_SPEAKER_RE = re.compile(r"[A-Z][\w.\-'&]*(?:\s+[\w.\-'&]*[A-Za-z][\w.\-'&]*){0,7}\s*:")
+_ATTRIB_AFTER_RE = re.compile(r"[\u2014\u2013-]\s*[A-Z][\w.\-'&]*(?:\s+[\w.\-'&]+){0,7}")
+_QUOTE_OPEN_RE = re.compile(
+    r"[" + OPEN_QUOTES + r"]"          # an opening quote mark
+    r"(?=\s*[A-Z0-9])"                 # dialogue starts with a capital/number
+    r"([^\u2018\u201c\"]{40,})"        # >=40 chars; straight ' allowed (contractions)
+)
+# Promotional slogans that can appear in quotes but are not interview dialogue.
+_SLOGAN_RE = re.compile(
+    r"\b(subscribe|follow us|watch (the )?full|link in bio|out now|new episode|"
+    r"don'?t miss|coming (up|soon)|premieres?)\b", re.I)
+
+
+def normalise_text(t):
+    """NFKC + whitespace collapse. Retains nothing destructive; the ORIGINAL text
+    is what gets stored for audit — this is used only for matching."""
+    if not t:
+        return ""
+    t = unicodedata.normalize("NFKC", str(t))
+    t = t.replace("\u00a0", " ").replace("\u200b", "")
+    return re.sub(r"[ \t]+", " ", t)
+
+
+def quoted_dialogue(text):
+    """-> (bool, evidence_str). Substantive attributed interview dialogue, which
+    may be truncated. Promotional slogans do not count."""
+    n = normalise_text(text)
+    m = _QUOTE_OPEN_RE.search(n)
+    if not m:
+        return False, None
+    body = m.group(1).strip()
+    if _SLOGAN_RE.search(body):
+        return False, None
+    before, after = n[:m.start()], n[m.end():]
+    if _SPEAKER_RE.search(before):
+        how = "speaker prefix before quote"
+    # NOTE: the body match is greedy, so `after` is usually empty — the dash
+    # attribution must be looked for across the whole normalised text.
+    elif _ATTRIB_AFTER_RE.search(n):
+        how = "dash attribution after quote"
+    else:
+        return False, None
+    return True, f"attributed quotation ({how}), {len(body)} chars (truncation-tolerant)"
+
+
+# Retained so existing call sites keep working; no longer the classifier's basis.
+QUOTE_RE = _QUOTE_OPEN_RE
 # Future-tense / announcement -> the interview has not aired or is being trailed.
 PROMO_RE = re.compile(
     r"\b(we'?ll be joined|will be joined|coming (up|soon)|tomorrow|tonight|"
@@ -148,20 +222,28 @@ def _x_evidence():
             "duration_min": vids[0]["duration_min"] if vids else None,
             "is_repost": bool(e.get("retweeted_status_id")),
             "is_quote": bool(e.get("quoted_status_id")),
+            "quotes_id": e.get("quoted_status_id"),
         }
     return out
 X_EVIDENCE = _x_evidence()
 
 
-def classify_x_verified(tweet_id):
-    """-> (classification, basis) or (None, None) when no evidence exists."""
+def classify_x_verified(tweet_id, text=""):
+    """-> (classification, basis) or (None, None) when no media evidence exists.
+
+    A CLIP is emitted ONLY on two independent signals:
+      (a) native X video whose duration is excerpt-length, AND
+      (b) speaker-attributed substantive quotation in the post text.
+    Either alone leaves the item AMBIGUOUS. Quoted text can be promotional copy;
+    a native video alone does not establish that it is interview content.
+    """
     ev = X_EVIDENCE.get(str(tweet_id))
     if not ev:
         return None, None
-    if not ev["native_video"]:
-        return "PROMO", "verified: no native video in payload (link/announcement only)"
     if ev["is_repost"]:
         return "PROMO", "verified: repost — the view metric belongs to the source post"
+    if not ev["native_video"]:
+        return "PROMO", "verified: no native video in payload (link/announcement/still only)"
     d = ev["duration_min"]
     if d is None:
         return "AMBIGUOUS", "native video present but duration absent from payload"
@@ -170,7 +252,15 @@ def classify_x_verified(tweet_id):
             f"verified: single native X video, duration {d} min (full-episode length), "
             "not a repost or quote, canonical account, posted at broadcast. "
             "NOT established: transcript/frame identity against the episode master")
-    return "CLIP", f"verified: native video of {d} min — excerpt length, not a full episode"
+    if d > FULL_EPISODE_MAX:
+        return "AMBIGUOUS", f"native video of {d} min exceeds episode length — unclassified"
+    # Excerpt-length native video. Needs the second signal.
+    has_quote, qev = quoted_dialogue(text)
+    if has_quote:
+        return "CLIP", (f"verified: native X video {d} min (excerpt length) + {qev}"
+                        + (f"; quotes episode post {ev['quotes_id']}" if ev.get("quotes_id") else ""))
+    return "AMBIGUOUS", (f"native X video {d} min (excerpt length) but no speaker-attributed "
+                         "quotation — interview content not established")
 
 
 def classify_x(text):
@@ -191,10 +281,13 @@ def classify_x(text):
     if re.search(r"\bnew episode of\b", t, re.I):
         return "AMBIGUOUS", ("candidate platform full interview (episode-release post on "
                              "canonical account); duration/transcript unavailable to verify")
-    m = QUOTE_RE.search(t)
-    if m:
-        return "CLIP", f"quoted dialogue, {len(m.group(1))} chars"
-    return "AMBIGUOUS", "no quoted excerpt and native media not verifiable from cache"
+    has_quote, qev = quoted_dialogue(t)
+    if has_quote:
+        # Quotation is only ONE signal. Without media evidence there is no second
+        # signal, so this cannot be published as a CLIP.
+        return "AMBIGUOUS", (f"{qev}, but no media evidence fetched — second signal "
+                             "(native video / duration) absent")
+    return "AMBIGUOUS", "no speaker-attributed quotation and no media evidence"
 
 
 def classify_ig(post):
@@ -255,7 +348,7 @@ def build():
                 for ep in EPISODES:
                     if ep["show"] != show or not _matches(tw.get("text"), ep) or not _in_window(dt, ep):
                         continue
-                    cls, basis = classify_x_verified(tw.get("id"))
+                    cls, basis = classify_x_verified(tw.get("id"), tw.get("text") or "")
                     if cls is None:
                         cls, basis = classify_x(tw.get("text"))
                     add(ep, "x", handle, tw.get("id"),

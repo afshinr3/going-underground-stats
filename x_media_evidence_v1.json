@@ -1,10 +1,1722 @@
 {
   "marker": "X_MEDIA_EVIDENCE_V1",
-  "generated_iso": "2026-08-06T13:13:36Z",
+  "generated_iso": "2026-08-06T13:37:53Z",
   "read_only": true,
   "secrets_policy": "no cookies, bearer/CSRF tokens or auth headers are captured or stored",
   "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)",
   "posts": [
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083816889625809259",
+      "cached_view_count": 37453,
+      "fetched_at_iso": "2026-08-06T13:37:32Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 07:27:16 +0000 2026",
+        "full_text": "Mohammed Baharoon: 100% tariff talk on India🇮🇳 Will BACKFIRE on the USA\n\n'There are possibly people who think that this is the solution, but I'm sure there are others who think that this is going to exacerbate the situation. India's products are very important to the US, and if https://t.co/b7ZsJd6DSG",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083816239403835392",
+            "type": "video",
+            "duration_millis": 113960,
+            "duration_min": 1.9,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083816889625809259/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "37473",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083912494020698235",
+      "cached_view_count": 104810,
+      "fetched_at_iso": "2026-08-06T13:37:33Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 13:47:10 +0000 2026",
+        "full_text": "Mohammed Baharoon: Ukraine Proxy War showed military power is NOT ENOUGH\n\n'There is a major effect out of this war, possibly a change in Russia's view that traditional power, military power, is not going to be enough alone. This is why, and even that was part of the Alaska summit https://t.co/byrubHT7Lm",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083910327192920064",
+            "type": "video",
+            "duration_millis": 92760,
+            "duration_min": 1.55,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083912494020698235/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "104920",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083966704900870527",
+      "cached_view_count": 59328,
+      "fetched_at_iso": "2026-08-06T13:37:33Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 17:22:35 +0000 2026",
+        "full_text": "Mohammed Baharoon: 'If the dollar becomes too difficult to use, people will simply switch to OTHER currencies'\n\n'Even China is one of the biggest investors in US bonds. The US dollar continues to be a trusted currency by many people in the markets.\n\nWhen I said it's a two-way https://t.co/SmyqrkGB8u",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083966402172739584",
+            "type": "video",
+            "duration_millis": 108960,
+            "duration_min": 1.82,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083966704900870527/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "59365",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083152913472569660",
+      "cached_view_count": 4841,
+      "fetched_at_iso": "2026-08-06T13:37:34Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Fri Jul 31 11:28:52 +0000 2026",
+        "full_text": "SATURDAY’S GOING UNDERGROUND:\n\nWe’re joined by Donald Trump’s former lawyer Robert Barnes. \n\nWhat is behind Donald Trump continuing to push on with his disastrous war on Iran?\n\nWhat is the state of the Israel lobby’s power in the United States?\n\nWhat are Trump’s delusions https://t.co/iZQKtMGDR5",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083152750293254144",
+            "type": "video",
+            "duration_millis": 61283,
+            "duration_min": 1.02,
+            "aspect_ratio": [
+              9,
+              16
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 632000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 950000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/afshinrattansi/status/2083152913472569660/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083151356773409082",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "4844",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083617574236069920",
+      "cached_view_count": 17219,
+      "fetched_at_iso": "2026-08-06T13:37:35Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 18:15:16 +0000 2026",
+        "full_text": "‘It’s like a new EPSTEIN OLIGARCH ISLAND to run to in case their insanity unleashes nuclear war.’\n\n—Donald Trump’s former lawyer Robert Barnes on the new oligarch private island in Albania🇦🇱\n\n‘It’s the billionaire’s dream island, the oligarch dream island, because in case you https://t.co/ZLQHEuOZkK",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083617419390820352",
+            "type": "video",
+            "duration_millis": 145240,
+            "duration_min": 2.42,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083617574236069920/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "17246",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083151356773409082",
+      "cached_view_count": 15227,
+      "fetched_at_iso": "2026-08-06T13:37:36Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Fri Jul 31 11:22:41 +0000 2026",
+        "full_text": "‘The only person who could compete with Lindsey Graham for causing MASS DEATH around the world is ANTHONY FAUCI.’ \n\n—Trump’s Former Lawyer Robert Barnes\n\n‘Fauci was running a bioweapons lab operation around the globe, including in China, including in Ukraine, over 100 different https://t.co/EvzK7Uv9ZO",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083151145305034752",
+            "type": "video",
+            "duration_millis": 203840,
+            "duration_min": 3.4,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083151356773409082/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "15248",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083364857336991868",
+      "cached_view_count": 46478,
+      "fetched_at_iso": "2026-08-06T13:37:36Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 01:31:03 +0000 2026",
+        "full_text": "Donald Trump’s Former Lawyer Robert Barnes:\n\n‘The Deep State is DEEPLY INTERTWINED with the Israel Lobby.\n\nAnd that's a great success of the Israel Lobby in the United States, was to sort of marry it practically.\n\nNow they're trying to marry it legally with various bills through https://t.co/mOs7EYW9Rq",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083364773236985856",
+            "type": "video",
+            "duration_millis": 58080,
+            "duration_min": 0.97,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083364857336991868/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "46499",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083481437731537056",
+      "cached_view_count": 30020,
+      "fetched_at_iso": "2026-08-06T13:37:37Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 09:14:18 +0000 2026",
+        "full_text": "‘Trump sees Israel as a TOOL for him to become the CONQUERER of the world.’\n\n—Donald Trump’s former lawyer Robert Barnes \n\n‘He really did tell Vance and everybody the strait would never be closed, Iran would never hit the Gulf, Iran’s weapons would collapse overnight, they https://t.co/ZdpMlIFaLb",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083481292495368192",
+            "type": "video",
+            "duration_millis": 137200,
+            "duration_min": 2.29,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083481437731537056/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "30047",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083498211939897851",
+      "cached_view_count": 23815,
+      "fetched_at_iso": "2026-08-06T13:37:38Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 10:20:57 +0000 2026",
+        "full_text": "‘The US going after Iran, Russia🇷🇺, and China🇨🇳 at the same time shows the HUBRIS of Europe, the US deep state, and Israel lobby.’\n\n—Donald Trump’s former lawyer Robert Barnes\n\n‘Instead of pulling out of the Middle East and telling Israel to stand down, it looks like Trump https://t.co/MK8tRhMO2x",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083498093820133376",
+            "type": "video",
+            "duration_millis": 90440,
+            "duration_min": 1.51,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083498211939897851/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "23841",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083508243901645276",
+      "cached_view_count": 47576,
+      "fetched_at_iso": "2026-08-06T13:37:39Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 11:00:49 +0000 2026",
+        "full_text": "‘MI6 &amp; CIA are using Ukrainians to create a permanent deep state TERROR ARMY like the anti-Castro Cubans.’\n\n—Donald Trump’s Former Lawyer Robert Barnes\n\n‘Ukraine is being used the way the US used the Cubans, or ex-Nazis after World War II, recruited in Operation Gladio to be https://t.co/bPmeU5c280",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083507570057310208",
+            "type": "video",
+            "duration_millis": 93160,
+            "duration_min": 1.55,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083508243901645276/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "47648",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083537273233059908",
+      "cached_view_count": 108399,
+      "fetched_at_iso": "2026-08-06T13:37:40Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 12:56:10 +0000 2026",
+        "full_text": "‘Trump tried to FIRE J.D. Vance after everything that Vance said was proven right about the Iran war.‘\n\n—Trump’s Former Lawyer Robert Barnes\n\n‘This was about in April and May, after everything that Vance had said would happen happened in Iran, and everything Trump pretended was https://t.co/NkhG9kTCqA",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083536945326563328",
+            "type": "video",
+            "duration_millis": 160680,
+            "duration_min": 2.68,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083537273233059908/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "108457",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083563023491563849",
+      "cached_view_count": 884493,
+      "fetched_at_iso": "2026-08-06T13:37:41Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 14:38:30 +0000 2026",
+        "full_text": "‘The West will be SHOCKED at how quickly the Donbass falls to Russia🇷🇺, Anchorage was the last chance to avoid Ukraine🇺🇦 becoming a RUMP STATE.’\n\n—Donald Trump’s Former Lawyer Robert Barnes\n\n‘They've interpreted Putin's self-restraint as a sign of weakness when it was always a https://t.co/0i82RaKEQZ",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083562819581366272",
+            "type": "video",
+            "duration_millis": 198880,
+            "duration_min": 3.31,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083563023491563849/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "885249",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083650663419187574",
+      "cached_view_count": 22082,
+      "fetched_at_iso": "2026-08-06T13:37:42Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 20:26:45 +0000 2026",
+        "full_text": "‘Every American life lost is an American life that was not only unnecessarily lost, but was unconstitutionally sacrificed at the altar of Trump's ego.’\n\n—Donald Trump’s former lawyer Robert Barnes\n\n‘Our founders were deeply concerned that any one person, no matter how https://t.co/hpen0xkhBT",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083650583119138816",
+            "type": "video",
+            "duration_millis": 55280,
+            "duration_min": 0.92,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083650663419187574/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083362453744722327",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "22131",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "barnes_20260801",
+      "guest": "Robert Barnes",
+      "tweet_id": "2083155640843907104",
+      "cached_view_count": 822,
+      "fetched_at_iso": "2026-08-06T13:37:42Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Fri Jul 31 11:39:42 +0000 2026",
+        "full_text": "RT @afshinrattansi: SATURDAY’S GOING UNDERGROUND:\n\nWe’re joined by Donald Trump’s former lawyer Robert Barnes. \n\nWhat is behind Donald Trum…",
+        "account_screen_name": null,
+        "media": [],
+        "has_native_video": false,
+        "quoted_status_id": "2083151356773409082",
+        "retweeted_status_id": "2083152913472569660",
+        "is_quote_status": true,
+        "view_count": "823",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2083869239073792383",
+      "cached_view_count": 5616,
+      "fetched_at_iso": "2026-08-06T13:37:43Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 10:55:17 +0000 2026",
+        "full_text": "MONDAY’S GOING UNDERGROUND:\n\nWe’ll be joined by Holocaust survivor and world-renowned trauma specialist Dr. Gabor Maté\n\nHow has dehumanisation been key in the NATO nation-sponsored wars ranging from Ukraine, to Gaza, to Iran?\n\nWhat is the underlying hypocrisy in NATO nation https://t.co/4B815EoEHG",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083869037604577280",
+            "type": "video",
+            "duration_millis": 98350,
+            "duration_min": 1.64,
+            "aspect_ratio": [
+              9,
+              16
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 632000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 950000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/afshinrattansi/status/2083869239073792383/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083866700584473084",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "5623",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084212432545714519",
+      "cached_view_count": 14922,
+      "fetched_at_iso": "2026-08-06T13:37:44Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 09:39:01 +0000 2026",
+        "full_text": "Holocaust Survivor and Trauma Specialist Dr. Gabor Maté: \n\n‘It’s rather impressive because American Jews are opposing Israel in the face of propaganda that has enveloped them all their lives.\n\nAnd not just the upbringing within the Jewish communities, which have been completely https://t.co/svBAtYXtFc",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084212316200128512",
+            "type": "video",
+            "duration_millis": 107560,
+            "duration_min": 1.79,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084212432545714519/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "14950",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084245962218975489",
+      "cached_view_count": 21620,
+      "fetched_at_iso": "2026-08-06T13:37:45Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 11:52:15 +0000 2026",
+        "full_text": "Holocaust Survivor &amp; Trauma Socialist Dr. Gabor Maté on selective empathy in Western media: Ukrainians🇺🇦 vs Palestinians🇵🇸\n\n‘There’s such a thing as selective empathy, so that people are encouraged to empathise with some people but not with everybody.\n\nPeople are encouraged to https://t.co/JyEYYkHHDU",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084245811475722240",
+            "type": "video",
+            "duration_millis": 144600,
+            "duration_min": 2.41,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084245962218975489/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "21767",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084287102116663641",
+      "cached_view_count": 15273,
+      "fetched_at_iso": "2026-08-06T13:37:46Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 14:35:43 +0000 2026",
+        "full_text": "Holocaust Survivor &amp; Trauma Specialist Dr. Gabor Maté on why Miami Cubans and pro-Pahlavi diaspora Iranians support US attacks on their own countries:\n\n‘Usually the Cubans who support the anti-Cuban measures of the American government that are destroying their country come from https://t.co/cMscekGwdq",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084286956964597760",
+            "type": "video",
+            "duration_millis": 108160,
+            "duration_min": 1.8,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084287102116663641/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "15332",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2083866700584473084",
+      "cached_view_count": 14095,
+      "fetched_at_iso": "2026-08-06T13:37:47Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 10:45:12 +0000 2026",
+        "full_text": "Holocaust Survivor &amp; Trauma Specialist Dr. Gabor Maté on the wars of the last few years and Gaza genocide: \n\n‘I was born during the second World War, I grew up in the Cold War era. I've seen wars, I've seen atrocities committed around the world by all kinds of parties.\n\nThese https://t.co/H6UHn7YUYy",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083866620423024640",
+            "type": "video",
+            "duration_millis": 58360,
+            "duration_min": 0.97,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2083866700584473084/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "14120",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084076503906808183",
+      "cached_view_count": 50732,
+      "fetched_at_iso": "2026-08-06T13:37:47Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 00:38:53 +0000 2026",
+        "full_text": "Holocaust Survivor &amp; World-Renowned Trauma Specialist Dr. Gabor Maté:\n\n‘Benjamin Netanyahu is one of the most dishonest, brutal, hypocritical politicians ever to tread the surface of the earth. And that's saying a lot.\n\nBut he is not by himself the cause or the source of what's https://t.co/fhouX6JkhK",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084076365188603904",
+            "type": "video",
+            "duration_millis": 128960,
+            "duration_min": 2.15,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084076503906808183/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "51187",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084230461363249332",
+      "cached_view_count": 14095,
+      "fetched_at_iso": "2026-08-06T13:37:48Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 10:50:39 +0000 2026",
+        "full_text": "Holocaust Survivor and world-renowned Trauma Specialist Dr. Gabor Maté: \n\n‘A lot of young Jews now are instead of staying silent in the face of the mainstream narrative, are now coming to reject what they've been taught is their sense of entitled victimhood.\n\nAnd they're actually https://t.co/UV7maS4EqH",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084230342664445952",
+            "type": "video",
+            "duration_millis": 103640,
+            "duration_min": 1.73,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084230461363249332/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "14120",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084263618514673742",
+      "cached_view_count": 62479,
+      "fetched_at_iso": "2026-08-06T13:37:49Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 13:02:25 +0000 2026",
+        "full_text": "Holocaust Survivor and World-Renowned Trauma Specialist Dr. Gabor Maté:\n\n‘In the West, the propaganda system is so subtle and so pervasive and so persuasive that the people don't even know they're being propagandised.\n\nSo they'll see that New York Times article about Ukrainian https://t.co/MlLlnnsxZL",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084263538084945921",
+            "type": "video",
+            "duration_millis": 46160,
+            "duration_min": 0.77,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084263618514673742/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "62719",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084304600971333861",
+      "cached_view_count": 247802,
+      "fetched_at_iso": "2026-08-06T13:37:50Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 15:45:16 +0000 2026",
+        "full_text": "🇷🇺🇺🇦 Holocaust Survivor &amp; Trauma Specialist Dr. Gabor Maté: \n\n‘Whatever you think of the Ukraine war, you should at least be able to articulate what the other side says about it.\n\nYou might not agree with that, but when you don't even know, you're not even presented with what is https://t.co/rjpsEiEy9T",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084304457370886145",
+            "type": "video",
+            "duration_millis": 114720,
+            "duration_min": 1.91,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084304600971333861/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "248206",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084325455826768129",
+      "cached_view_count": 43292,
+      "fetched_at_iso": "2026-08-06T13:37:50Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 17:08:08 +0000 2026",
+        "full_text": "Holocaust Survivor &amp; Trauma Expert Dr. Gabor Maté’s advice to survivors of the US-Israeli war on Iran &amp; Minab School Bombing: \n\n‘Well, the first response needs to be just grief. And grief is a human impulse. It's wired into our brains to come to terms with loss.\n\nThe first thing https://t.co/R5mkahmPtU",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2084325337937436672",
+            "type": "video",
+            "duration_millis": 101280,
+            "duration_min": 1.69,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/GUnderground_TV/status/2084325455826768129/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "43384",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2083871196022800545",
+      "cached_view_count": 826,
+      "fetched_at_iso": "2026-08-06T13:37:51Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 11:03:04 +0000 2026",
+        "full_text": "RT @afshinrattansi: MONDAY’S GOING UNDERGROUND:\n\nWe’ll be joined by Holocaust survivor and world-renowned trauma specialist Dr. Gabor Maté…",
+        "account_screen_name": null,
+        "media": [],
+        "has_native_video": false,
+        "quoted_status_id": "2083866700584473084",
+        "retweeted_status_id": "2083869239073792383",
+        "is_quote_status": true,
+        "view_count": "826",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084293483586805823",
+      "cached_view_count": 0,
+      "fetched_at_iso": "2026-08-06T13:37:52Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 15:01:05 +0000 2026",
+        "full_text": "RT @GUnderground_TV: 🚨NEW EPISODE OF GOING UNDERGROUND⚡️\n\nGabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation…",
+        "account_screen_name": null,
+        "media": [],
+        "has_native_video": false,
+        "quoted_status_id": null,
+        "retweeted_status_id": "2084075450125451546",
+        "is_quote_status": false,
+        "view_count": null,
+        "view_count_state": "Enabled",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "mate_20260803",
+      "guest": "Gabor Maté",
+      "tweet_id": "2084400257107112025",
+      "cached_view_count": 0,
+      "fetched_at_iso": "2026-08-06T13:37:53Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Mon Aug 03 22:05:22 +0000 2026",
+        "full_text": "RT @GUnderground_TV: Holocaust Survivor and world-renowned Trauma Specialist Dr. Gabor Maté: \n\n‘A lot of young Jews now are instead of stay…",
+        "account_screen_name": null,
+        "media": [],
+        "has_native_video": false,
+        "quoted_status_id": "2084075450125451546",
+        "retweeted_status_id": "2084230461363249332",
+        "is_quote_status": true,
+        "view_count": null,
+        "view_count_state": "Enabled",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083531586033877006",
+      "cached_view_count": 15642,
+      "fetched_at_iso": "2026-08-06T13:36:37Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sat Aug 01 12:33:34 +0000 2026",
+        "full_text": "Mohammed Baharoon: The world is moving from a POLAR order to a NETWORKED order\n\n'It's again resilience of supply routes, but I think the bilateral relationships cannot achieve their full potential if they remain bilateral. There has been a number of discussions on trilateral https://t.co/nblbmzpAlQ",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083527987362947072",
+            "type": "video",
+            "duration_millis": 125800,
+            "duration_min": 2.1,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083531586033877006/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": null,
+        "retweeted_status_id": null,
+        "is_quote_status": false,
+        "view_count": "15651",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083846978392535463",
+      "cached_view_count": 25211,
+      "fetched_at_iso": "2026-08-06T13:36:38Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 09:26:50 +0000 2026",
+        "full_text": "Mohammed Baharoon: The UAE REFUSES to choose sides between the West and BRICS\n\n'The UAE has been asked to choose before, and it chose not to choose. This is the whole idea of connectivity. It is not polarity anymore. This is why the UAE continues to have a very strong https://t.co/pmXKpZyaEl",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083845935508135936",
+            "type": "video",
+            "duration_millis": 130320,
+            "duration_min": 2.17,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083846978392535463/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "25235",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083870718773891314",
+      "cached_view_count": 166536,
+      "fetched_at_iso": "2026-08-06T13:36:39Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 11:01:10 +0000 2026",
+        "full_text": "Mohammed Baharoon: Was the war on Iran🇮🇷 really about China🇨🇳?\n\n'There are a lot of interpretations of what this war is all about. Many people have thought to link the war on Iran with what happened in Venezuela and focused on the energy aspect, bringing the Iranian energy back https://t.co/SoVxBOAVrF",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083870544613748736",
+            "type": "video",
+            "duration_millis": 137120,
+            "duration_min": 2.29,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083870718773891314/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "166607",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083891285090541903",
+      "cached_view_count": 80825,
+      "fetched_at_iso": "2026-08-06T13:36:39Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 12:22:53 +0000 2026",
+        "full_text": "Mohammed Baharoon: BRICS must bring Global South into the Global Economy\n\n'Talking from my own observations as an analyst, BRICS had a lot of promises, and part of that promise is to create a network of new emerging economies. Because that was the whole concept of the BRICS Plus https://t.co/YlerVrwRFL",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083890371411771392",
+            "type": "video",
+            "duration_millis": 86840,
+            "duration_min": 1.45,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083891285090541903/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "80887",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083933786279194927",
+      "cached_view_count": 31024,
+      "fetched_at_iso": "2026-08-06T13:36:40Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 15:11:46 +0000 2026",
+        "full_text": "Mohammed Baharoon: UAE Connectivity with Russia🇷🇺 does NOT mean polarity, the world must move beyond BINARY relationships\n\n'Policymakers in the EU, who are right now not only discussing a free trade agreement with the GCC, but are actually discussing two other things. One is a https://t.co/pWHdKvwXMw",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083930243866456064",
+            "type": "video",
+            "duration_millis": 89120,
+            "duration_min": 1.49,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083933786279194927/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "31051",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
+    {
+      "episode_key": "baharoon_20260802",
+      "guest": "Mohammed Baharoon",
+      "tweet_id": "2083950310092054556",
+      "cached_view_count": 93502,
+      "fetched_at_iso": "2026-08-06T13:36:41Z",
+      "fetch_ok": true,
+      "blocker": null,
+      "evidence": {
+        "created_at": "Sun Aug 02 16:17:26 +0000 2026",
+        "full_text": "Mohammed Baharoon: The REAL threat to the dollar is CRYPTOCURRENCY, and the US🇺🇸 knows it\n\n'In the GCC we have a country like Kuwait, who has pegged its currency to a basket of currencies. It is pegged to the dollar, the euro, the Japanese yen. So there are examples of this, and https://t.co/r65oCC7rv9",
+        "account_screen_name": null,
+        "media": [
+          {
+            "media_id": "2083949424292810753",
+            "type": "video",
+            "duration_millis": 96120,
+            "duration_min": 1.6,
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "bitrate": null
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 256000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 832000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 2176000
+              },
+              {
+                "content_type": "video/mp4",
+                "bitrate": 10368000
+              }
+            ],
+            "expanded_url": "https://x.com/NewOrder_TV/status/2083950310092054556/video/1"
+          }
+        ],
+        "has_native_video": true,
+        "quoted_status_id": "2083802685976048113",
+        "retweeted_status_id": null,
+        "is_quote_status": true,
+        "view_count": "93650",
+        "view_count_state": "EnabledWithCount",
+        "view_metric_definition": "views.count from the TweetDetail GraphQL payload = X 'Views' (impressions of the post, counted once per user per post; for video posts it is post impressions, NOT video plays or completed views, and NOT unique reach)"
+      }
+    },
     {
       "episode_key": "baharoon_20260802",
       "guest": "Mohammed Baharoon",

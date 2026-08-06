@@ -38,14 +38,22 @@ def _iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def _candidates():
+def _candidates(only_ids=None):
+    """Default: the episode-release candidates. With argv IDs: those exact posts,
+    so AMBIGUOUS items can be given the second signal a CLIP requires."""
     inv = json.loads(INV.read_text())
     out = []
     for i in inv["items"]:
-        if i["platform"] == "x" and "candidate platform full" in i["classification_basis"]:
-            out.append({"episode_key": i["episode_key"], "guest": i["episode_guest"],
-                        "tweet_id": i["platform_content_id"],
-                        "cached_view_count": i["value"]})
+        if i["platform"] != "x":
+            continue
+        if only_ids is not None:
+            if i["platform_content_id"] not in only_ids:
+                continue
+        elif "candidate platform full" not in i["classification_basis"]:
+            continue
+        out.append({"episode_key": i["episode_key"], "guest": i["episode_guest"],
+                    "tweet_id": i["platform_content_id"],
+                    "cached_view_count": i["value"]})
     return out
 
 
@@ -158,8 +166,16 @@ def main():
     cookies = X._load_cookies()
     if not cookies:
         print("NO_LOCAL_X_SESSION"); return 2
+    only = set(sys.argv[1:]) or None
+    # Merge with any previously captured evidence rather than discarding it.
+    prior = {}
+    if OUT.exists():
+        try:
+            prior = {str(p["tweet_id"]): p for p in json.loads(OUT.read_text()).get("posts", [])}
+        except Exception:
+            prior = {}
     results = []
-    for c in _candidates():
+    for c in _candidates(only):
         body, err = _raw_tweet_detail(c["tweet_id"], cookies)
         rec = dict(c)
         rec["fetched_at_iso"] = _iso()
@@ -178,6 +194,10 @@ def main():
             else:
                 rec.update({"fetch_ok": True, "blocker": None, "evidence": _media_evidence(node)})
         results.append(rec)
+
+    for tid, rec in prior.items():
+        if not any(str(r["tweet_id"]) == tid for r in results):
+            results.append(rec)
 
     out = {
         "marker": "X_MEDIA_EVIDENCE_V1",
