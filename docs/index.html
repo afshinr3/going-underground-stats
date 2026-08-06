@@ -120,6 +120,35 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
         </div>
     </div>
 
+    <!-- GU_CUMULATIVE_VIEW_V1_2026_08_06 — a SEPARATE scope from the rolling
+         "1 Week" tab above. Cumulative per-post totals from the classified
+         content inventory. These two scopes are never mixed or summed. -->
+    <div class="panel" style="grid-column: 1 / -1">
+        <h2>CUMULATIVE BY CONTENT ITEM · REPORT SNAPSHOT SCOPE</h2>
+        <div class="legend" style="margin-bottom:10px">
+            <span style="color:var(--muted)">Cumulative per-post totals to the measurement
+            timestamp — <b>not</b> the rolling &ldquo;1 Week&rdquo; window above, and never summed with it.
+            Editorial total = full interviews + clips. Promo is reported separately and excluded.
+            Ambiguous items are excluded and listed.</span>
+        </div>
+        <div id="cumulative-meta" style="color:var(--muted);font-size:12px;margin-bottom:8px"></div>
+        <div style="overflow-x:auto">
+        <table id="cumulative-table">
+            <thead><tr>
+                <th>GUEST</th>
+                <th style="text-align:right">FULL INTERVIEWS</th>
+                <th style="text-align:right">CLIPS</th>
+                <th style="text-align:right">EDITORIAL TOTAL</th>
+                <th style="text-align:right">PROMO (excl.)</th>
+                <th style="text-align:right">AMBIGUOUS (excl.)</th>
+                <th>PLATFORMS MEASURED</th>
+                <th>UNAVAILABLE</th>
+            </tr></thead>
+            <tbody id="cumulative-body"></tbody>
+        </table>
+        </div>
+    </div>
+
     <div class="panel">
         <h2>BY GUEST · STACKED PLATFORM BREAKDOWN</h2>
         <div class="chart-container"><canvas id="chart-stacked"></canvas></div>
@@ -305,10 +334,13 @@ async function fetchAll() {
     const noR    = await loadJSON('videos_neworder.json', []);
     const folR   = await loadJSON('followers.json', {});
     const dropsR = await loadJSON('drops_current.json', { drops: [] });
+    const invR   = await loadJSON('gu_content_inventory_v1.json', null);
     return { gu: guEntries.map(e=>({...e,_show:'GU'})),
              no: (noR.value || []).map(e=>({...e,_show:'NO'})),
              fol: folR.value, drops: (dropsR.value && dropsR.value.drops) || [],
              _health_iso: guHealth && guHealth.iso || null,
+             inventory: invR.ok ? invR.value : null,
+             _inventory_error: invR.ok ? null : 'inventory source failed to load',
              _errors: errors };
 }
 
@@ -336,6 +368,76 @@ function renderSourceErrors(errors, healthIso) {
     el.style.display = 'block';
     el.innerHTML = '<b>Data problems — figures below are not authoritative:</b><br>' +
         msgs.map(m => `• ${m}`).join('<br>');
+}
+// GU_CUMULATIVE_VIEW_V1_2026_08_06 -----------------------------------------
+// Renders the classified content inventory. Hard rules enforced here:
+//   editorial total = FULL_INTERVIEW + CLIP only
+//   PROMO and AMBIGUOUS are shown but NEVER added into it
+//   unavailable/N-A renders N/A, never 0
+//   a partial total is visibly marked and names what is missing
+//   this scope is cumulative and is never mixed into the rolling "1 Week" tab
+const CUMULATIVE_SCOPE = 'cumulative_to_measurement_timestamp';
+function renderCumulative(inv, invError) {
+    const meta = document.getElementById('cumulative-meta');
+    const body = document.getElementById('cumulative-body');
+    if (!meta || !body) return;
+    body.innerHTML = '';
+    if (invError || !inv) {
+        meta.innerHTML = `<span style="color:#ff6464">Content inventory unavailable — ${invError || 'not loaded'}. No cumulative figures shown.</span>`;
+        return;
+    }
+    if (inv.metric_scope !== CUMULATIVE_SCOPE) {
+        meta.innerHTML = `<span style="color:#ff6464">Inventory scope is "${inv.metric_scope}", refusing to render: this panel only shows ${CUMULATIVE_SCOPE}.</span>`;
+        return;
+    }
+    const eps = inv.episodes || {};
+    if (!Object.keys(eps).length) {
+        meta.innerHTML = `<span style="color:#ff6464">Inventory contains no episodes — malformed or empty.</span>`;
+        return;
+    }
+    const snap = inv.generated_iso || 'unknown';
+    const ageH = inv.generated_iso ? (Date.now() - new Date(inv.generated_iso).getTime()) / 3_600_000 : null;
+    const stale = ageH !== null && ageH > STALE_AFTER_HOURS;
+    meta.innerHTML = `Snapshot <b>${snap}</b>` +
+        (stale ? ` <span style="color:#e6a817">· STALE (${ageH.toFixed(1)}h old)</span>` : '') +
+        ` · scope <b>${inv.metric_scope}</b> · locally generated artefact (see REMAINING_GAPS)`;
+
+    const cell = (v, title) => v === null || v === undefined
+        ? `<em title="${title || 'not measured'}" style="color:#888;font-style:normal">N/A</em>`
+        : v.toLocaleString('en-GB');
+
+    for (const [key, e] of Object.entries(eps)) {
+        const b = e.by_classification || {};
+        const full = b.FULL_INTERVIEW ? b.FULL_INTERVIEW.sum_measured : null;
+        const clip = b.CLIP ? b.CLIP.sum_measured : null;
+        // Editorial total is FULL + CLIP only. Promo and ambiguous never enter.
+        const editorial = (full === null && clip === null) ? null : (full || 0) + (clip || 0);
+        const promo = b.PROMO ? b.PROMO.sum_measured : null;
+        const ambN = b.AMBIGUOUS ? b.AMBIGUOUS.n_items : 0;
+        const ambReach = b.AMBIGUOUS ? b.AMBIGUOUS.excluded_reach_not_published : null;
+        const fbp = e.full_interview_by_platform || {};
+        const measured = Object.entries(fbp).filter(([, v]) => v.status !== 'N/A').map(([p]) => p);
+        const unavailable = Object.entries(fbp).filter(([, v]) => v.status === 'N/A').map(([p]) => p);
+        const partial = e.total_is_partial;
+        const tip = [
+            unavailable.length ? `no verified full interview on: ${unavailable.join(', ')}` : '',
+            ambN ? `${ambN} ambiguous item(s) excluded` : '',
+        ].filter(Boolean).join(' · ');
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${e.guest} <span style="color:var(--muted);font-size:11px">${e.show}</span></td>
+            <td style="text-align:right">${cell(full, 'no verified native full interview')}</td>
+            <td style="text-align:right">${cell(clip)}</td>
+            <td style="text-align:right;font-weight:700">${cell(editorial)}${
+                partial ? `<span title="${tip}" style="color:#e6a817"> *partial</span>` : ''}</td>
+            <td style="text-align:right;color:var(--muted)">${cell(promo, 'no promo items measured')}</td>
+            <td style="text-align:right;color:var(--muted)" title="excluded from editorial total">${
+                ambN ? `${ambN} item(s)${ambReach !== null && ambReach !== undefined ? ' · ' + ambReach.toLocaleString('en-GB') : ''}` : '—'}</td>
+            <td style="font-size:12px">${measured.join(', ') || '—'}</td>
+            <td style="font-size:12px;color:#e6a817" title="${tip}">${unavailable.join(', ') || '—'}</td>`;
+        body.appendChild(tr);
+    }
 }
 function renderFollowers(fol) {
     document.getElementById('followers-total').textContent = fmt(fol.total || 0);
@@ -491,6 +593,7 @@ async function refresh() {
     try {
         lastData = await fetchAll();
         renderSourceErrors(lastData._errors, lastData._health_iso);
+        renderCumulative(lastData.inventory, lastData._inventory_error);
         renderFollowers(lastData.fol);
         renderAlerts(lastData.drops);
         const all = [...lastData.gu, ...lastData.no];
