@@ -568,6 +568,52 @@ def parse_count(v):
     return 0
 
 
+# GU_UNKNOWN_IS_NULL_V2_2026_08_06 ------------------------------------------
+# parse_count() maps None/'?'/garbage to 0, which is right for "render something"
+# and wrong for "add it up": an unmeasured platform then contributes a hard 0 and
+# the episode total is understated with no visible signal. These two helpers keep
+# unknown separable from a source-confirmed zero.
+UNKNOWN_METRIC_MARKERS = ('?', 'N/A', 'NA', 'ERR', 'ERROR', '')
+
+
+def parse_count_opt(v):
+    """-> int for a real measurement (including a genuine 0), None for unknown."""
+    if v is None:
+        return None
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return int(v)
+    if isinstance(v, dict):  # structured health object {status: N/A|ERROR, ...}
+        st = str(v.get('status', '')).upper()
+        return None if st in ('N/A', 'NA', 'ERR', 'ERROR', 'MISSING') else None
+    s = str(v).strip()
+    if s.upper() in UNKNOWN_METRIC_MARKERS:
+        return None
+    val = s.replace(',', '')
+    try:
+        if val.upper().endswith('M'):
+            return int(float(val[:-1]) * 1_000_000)
+        if val.upper().endswith('K'):
+            return int(float(val[:-1]) * 1_000)
+        return int(float(val))
+    except (ValueError, TypeError):
+        return None  # unparseable is unknown, never zero
+
+
+def sum_known_metrics(entry, fields=('rumble_views', 'x_views', 'yt_views', 'ig_likes')):
+    """-> (total_of_known, unknown_field_names). Unknown never adds 0 silently;
+    the caller decides how to label a partial total."""
+    total, unknown = 0, []
+    for f in fields:
+        n = parse_count_opt(entry.get(f))
+        if n is None:
+            unknown.append(f)
+        else:
+            total += n
+    return total, unknown
+
+
 def format_views(v):
     n = parse_count(v) if isinstance(v, str) else int(v)
     if n >= 1_000_000: return f"{n/1_000_000:.1f}M"
@@ -1837,14 +1883,27 @@ async def update_show(show, ig_clips):
     # ALSO defensively renders '?' as 'N/A' as of GU_HEALTH_MIGRATION_V1_2026_07_13
     # -- belt-and-braces so downstream Android / Tidbyt / LaMetric consumers that lack
     # the client-side renderer do not display '?' either.
+    # GU_UNKNOWN_IS_NULL_V2_2026_08_06 — supersedes GU_NO_QUESTION_MARK_V1.
+    #
+    # The previous rule rewrote '?' -> '0'. '?' is this pipeline's own marker for
+    # UNKNOWN (see the new-episode defaults ~line 1158), so that rewrite destroyed
+    # the distinction between "the source reported zero" and "we never measured
+    # it". Gabor Maté shipped ig_likes "0" and rumble_views "0" purely because no
+    # Instagram or Rumble content was mapped to that episode -- the dashboard then
+    # rendered a literal 0 and counted it as 0 in the episode total, while
+    # yt_views (which was a real null) correctly rendered N/A. Same condition,
+    # two representations, one of them silently wrong.
+    #
+    # Unknown now stays null all the way through cache -> health -> render.
+    # A source-confirmed 0 is a real int/str 0 and is left untouched.
     _qm_normalized = 0
     for _v in cache:
         for _f in ('rumble_views', 'yt_views', 'ig_likes', 'x_views'):
             if _v.get(_f) == '?':
-                _v[_f] = '0'
+                _v[_f] = None
                 _qm_normalized += 1
     if _qm_normalized:
-        print(f"  [GU_NO_QUESTION_MARK_V1] normalized {_qm_normalized} '?' -> '0' fields")
+        print(f"  [GU_UNKNOWN_IS_NULL_V2] preserved {_qm_normalized} unknown '?' -> null fields")
     print(f"  [CANONICAL_PUBLISH_V1_v2 + CANONICAL_FIELD_EMISSION_V1_2026_07_11] resolved={_canon_resolved} unchanged={_canon_unchanged}")
     # CANONICAL_URL_BIND_V1_2026_07_20 — sort by pub_iso desc (freshest first)
     try:
@@ -2115,7 +2174,11 @@ def push_to_tidbyt():
 
     sorted_eps = []
     for v in cache[:15]:
-        total = sum(parse_count(v.get(k)) for k in ['rumble_views','x_views','yt_views','ig_likes'])
+        # GU_UNKNOWN_IS_NULL_V2 — unknown platforms are excluded, not counted as 0.
+        total, _unknown_fields = sum_known_metrics(v)
+        if _unknown_fields:
+            print(f"  [GU_PARTIAL_TOTAL] {v.get('surname','?')} {v.get('date','')}: "
+                  f"total excludes unmeasured {','.join(_unknown_fields)}")
         # TIDBYT_CANONICAL_PREF_V1_2026_07_11 — prefer canonical_surname_upper so
         # broken extractor output (e.g. "War" for Carden ep, "Minister" for
         # Ellwood ep) never reaches the Tidbyt pixmap.
