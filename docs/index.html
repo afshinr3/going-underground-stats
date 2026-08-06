@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- GU_UI_BUILD_ID:GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -81,6 +82,24 @@ td.total { text-align: right; font-weight: 700; font-size: 17px; }
     font-size: 12px; font-weight: 600; cursor: pointer; border-radius: 6px;
 }
 .tab-bar button.active { background: #440000; color: white; }
+
+/* GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06 --------------------------------------
+   Top-level view switcher. The cumulative scope used to be a panel ~1400px
+   down the page with no navigational affordance, so an operator at the top of
+   the dashboard never saw it. It is now the DEFAULT view and the first thing
+   on screen. This bar switches which scope is shown; it does not change how
+   either scope is computed. */
+.view-bar {
+    display: flex; gap: 6px; padding: 10px 20px 0 20px;
+    max-width: 1400px; margin: 0 auto; flex-wrap: wrap;
+}
+.view-bar button {
+    padding: 12px 22px; border: 1px solid #3a0000; background: #160606;
+    color: var(--muted); font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+    cursor: pointer; border-radius: 8px;
+}
+.view-bar button.active { background: #6a0000; color: #fff; border-color: #a00000; }
+.view-scope-note { max-width: 1400px; margin: 8px auto 0; padding: 0 20px; color: var(--muted); font-size: 12px; }
 footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
 </style>
 </head>
@@ -101,8 +120,18 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
 
 <div class="alerts" id="alerts"></div>
 
+<!-- GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06 — top-level scope switcher.
+     "TOTAL / CUMULATIVE" is the default view. "ROLLING WINDOW" holds the
+     pre-existing All / 1 Week / 1 Month / 6 Months tabs, whose meaning is
+     unchanged. The two scopes are never mixed or summed. -->
+<div class="view-bar" id="view-bar">
+    <button data-view="cumulative" class="active">TOTAL / CUMULATIVE</button>
+    <button data-view="rolling">ROLLING WINDOW</button>
+</div>
+<div class="view-scope-note" id="view-scope-note"></div>
+
 <main>
-    <div class="panel">
+    <div class="panel" data-view="rolling">
         <h2>TOTAL REACH</h2>
         <div class="tab-bar" id="window-bar">
             <button data-days="-1" class="active">All</button>
@@ -123,11 +152,11 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
     <!-- GU_CUMULATIVE_VIEW_V1_2026_08_06 (deploy trigger: r2) — a SEPARATE scope from the rolling
          "1 Week" tab above. Cumulative per-post totals from the classified
          content inventory. These two scopes are never mixed or summed. -->
-    <div class="panel" style="grid-column: 1 / -1">
-        <h2>CUMULATIVE BY CONTENT ITEM · REPORT SNAPSHOT SCOPE</h2>
+    <div class="panel" data-view="cumulative" id="panel-cumulative" style="grid-column: 1 / -1">
+        <h2>TOTAL / CUMULATIVE BY CONTENT ITEM · REPORT SNAPSHOT SCOPE</h2>
         <div class="legend" style="margin-bottom:10px">
             <span style="color:var(--muted)">Cumulative per-post totals to the measurement
-            timestamp — <b>not</b> the rolling &ldquo;1 Week&rdquo; window above, and never summed with it.
+            timestamp — <b>not</b> the rolling &ldquo;1 Week&rdquo; window (see the ROLLING WINDOW tab), and never summed with it.
             Editorial total = full interviews + clips. Promo is reported separately and excluded.
             Ambiguous items are excluded and listed.</span>
         </div>
@@ -149,12 +178,12 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
         </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" data-view="rolling">
         <h2>BY GUEST · STACKED PLATFORM BREAKDOWN</h2>
         <div class="chart-container"><canvas id="chart-stacked"></canvas></div>
     </div>
 
-    <div class="panel" style="grid-column: 1 / -1">
+    <div class="panel" data-view="rolling" style="grid-column: 1 / -1">
         <h2>FOLLOWERS OVER TIME</h2>
         <div class="chart-container"><canvas id="chart-followers"></canvas></div>
     </div>
@@ -169,6 +198,29 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
 const REPO = "afshinr3/going-underground-stats";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
 const REFRESH_MS = 60_000;
+
+// GU_SHELL_FRESHNESS_V1_2026_08_06 -------------------------------------------
+// Root cause of "the operator never saw the new panel": refresh() re-fetches the
+// JSON with a cache-buster every 60s but NEVER reloads index.html, and Pages
+// serves index.html with cache-control: max-age=600 behind a CDN. A dashboard
+// tab left open therefore shows live numbers inside an arbitrarily old HTML
+// shell — forever. The shell now checks its own deployed build id and reloads
+// itself once when a new build is published.
+const UI_BUILD = 'GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06';
+const SHELL_CHECK_MS = 5 * 60_000;
+async function checkShellFreshness() {
+    try {
+        const r = await fetch(`${location.pathname}?_shell=${Date.now()}`, { cache: 'no-store' });
+        if (!r.ok) return;
+        const m = (await r.text()).match(/GU_UI_BUILD_ID:([A-Za-z0-9_.\-]+)/);
+        if (!m || m[1] === UI_BUILD) return;
+        // reload at most once per distinct new build, so a CDN serving a mixed
+        // set of edge copies can never produce a reload loop
+        if (sessionStorage.getItem('gu_shell_reloaded') === m[1]) return;
+        sessionStorage.setItem('gu_shell_reloaded', m[1]);
+        location.reload();
+    } catch (e) { /* offline: keep rendering what we already have */ }
+}
 
 let windowDays = -1;
 let lastData = null;
@@ -620,10 +672,49 @@ document.querySelectorAll('#window-bar button').forEach(btn => {
     };
 });
 
+// GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06 --------------------------------------
+// Top-level scope switcher. "TOTAL / CUMULATIVE" is the default view so the
+// cumulative figures are the first thing on screen rather than a panel two
+// screens below the fold. Switching views only changes what is displayed —
+// windowDays, the Sat-Mon rolling rule and every rolling total are untouched.
+const DEFAULT_VIEW = 'cumulative';
+const VIEW_NOTES = {
+    cumulative: 'Scope: cumulative per-post totals to the inventory measurement timestamp. ' +
+                'Editorial total = full interviews + clips only. Promo and ambiguous items are excluded. ' +
+                'Unmeasured platforms render N/A, never 0.',
+    rolling:    'Scope: rolling reach window (All / 1 Week last Sat-Mon / 1 Month / 6 Months). ' +
+                'This is a different scope from TOTAL / CUMULATIVE and the two are never summed.',
+};
+let currentView = DEFAULT_VIEW;
+function applyView(view) {
+    currentView = view;
+    document.querySelectorAll('#view-bar button').forEach(b =>
+        b.classList.toggle('active', b.dataset.view === view));
+    document.querySelectorAll('main .panel[data-view]').forEach(p =>
+        p.style.display = p.dataset.view === view ? '' : 'none');
+    const note = document.getElementById('view-scope-note');
+    if (note) note.textContent = VIEW_NOTES[view] || '';
+    // Chart.js sizes to a zero-height container while hidden, so redraw on show.
+    if (view === 'rolling') {
+        if (lastData) renderStackedChart([...lastData.gu, ...lastData.no]);
+        renderFollowersChart();
+        requestAnimationFrame(() => {
+            try { stackedChart && stackedChart.resize(); } catch (e) {}
+            try { followersChart && followersChart.resize(); } catch (e) {}
+        });
+    }
+}
+document.querySelectorAll('#view-bar button').forEach(btn => {
+    btn.onclick = () => applyView(btn.dataset.view);
+});
+applyView(DEFAULT_VIEW);
+
 refresh();
 renderFollowersChart();
 setInterval(refresh, REFRESH_MS);
 setInterval(renderFollowersChart, 5 * 60 * 1000);  // every 5 min
+checkShellFreshness();
+setInterval(checkShellFreshness, SHELL_CHECK_MS);
 </script>
 </body>
 </html>
