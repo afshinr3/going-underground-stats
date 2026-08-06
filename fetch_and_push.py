@@ -1732,7 +1732,14 @@ async def update_show(show, ig_clips):
                 _cur = v.get('ig_likes')
                 if _new and _new not in ('0', 0, '?', None):
                     v['ig_likes'] = _new
-                elif _cur in (None, '?', '', 0):
+                # GU_UNKNOWN_IS_NULL_V2_2026_08_06 — string '0' added deliberately.
+                # The old '?' -> '0' scrubber wrote a STRING zero, which did not
+                # match this tuple (int 0 != '0'), so a field corrupted once could
+                # never be refilled: the zero was sticky for the life of the cache.
+                # Treating it as refillable does not invent a value -- it lets the
+                # next cycle RE-MEASURE. If Instagram genuinely reports 0, 0 is
+                # written back; if it cannot be measured, it stays null.
+                elif _cur in (None, '?', '', 0, '0'):
                     v['ig_likes'] = _new
             # Only need to attribute once per entry.
             break

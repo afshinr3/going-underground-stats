@@ -180,3 +180,16 @@ class TestPublishedDataHasNoConflictMarkers(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestStickyZeroIsRefillable(unittest.TestCase):
+    """The string '0' the old scrubber wrote blocked re-measurement forever,
+    because the refill guard tested int 0 and '0' != 0."""
+
+    def test_string_zero_is_now_refillable(self):
+        src = (HERE / "fetch_and_push.py").read_text()
+        self.assertIn("elif _cur in (None, '?', '', 0, '0'):", src)
+
+    def test_python_agrees_string_zero_missed_the_old_guard(self):
+        self.assertNotIn('0', (None, '?', '', 0))       # '0' is not int 0
+        self.assertIn('0', (None, '?', '', 0, '0'))     # now it matches
