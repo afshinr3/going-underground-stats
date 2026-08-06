@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- GU_UI_BUILD_ID:GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06 -->
+<!-- GU_UI_BUILD_ID:GU_TOTAL_CUMULATIVE_TAB_V2_2026_08_06 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -56,6 +56,9 @@ main { display: grid; grid-template-columns: 1fr; gap: 20px; padding: 20px; max-
 .panel {
     background: var(--panel); border-radius: 12px; padding: 20px;
     border: 1px solid #1f1f1f;
+    /* grid items default to min-width:auto, so the wide cumulative table forced
+       the whole page to scroll horizontally and clipped the right-hand columns */
+    min-width: 0;
 }
 .panel h2 { font-size: 13px; letter-spacing: 2px; margin: 0 0 16px 0; color: var(--muted); font-weight: 600; }
 table { width: 100%; border-collapse: collapse; }
@@ -100,6 +103,10 @@ td.total { text-align: right; font-weight: 700; font-size: 17px; }
 }
 .view-bar button.active { background: #6a0000; color: #fff; border-color: #a00000; }
 .view-scope-note { max-width: 1400px; margin: 8px auto 0; padding: 0 20px; color: var(--muted); font-size: 12px; }
+/* .legend is a flex row, so its inline children (including <b>) became flex
+   items and the scope caveat rendered as scrambled columns. Prose needs a
+   normal block. */
+.scope-note { margin-bottom: 10px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
 </style>
 </head>
@@ -154,12 +161,10 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
          content inventory. These two scopes are never mixed or summed. -->
     <div class="panel" data-view="cumulative" id="panel-cumulative" style="grid-column: 1 / -1">
         <h2>TOTAL / CUMULATIVE BY CONTENT ITEM · REPORT SNAPSHOT SCOPE</h2>
-        <div class="legend" style="margin-bottom:10px">
-            <span style="color:var(--muted)">Cumulative per-post totals to the measurement
+        <div class="scope-note">Cumulative per-post totals to the measurement
             timestamp — <b>not</b> the rolling &ldquo;1 Week&rdquo; window (see the ROLLING WINDOW tab), and never summed with it.
             Editorial total = full interviews + clips. Promo is reported separately and excluded.
-            Ambiguous items are excluded and listed.</span>
-        </div>
+            Ambiguous items are excluded and listed.</div>
         <div id="cumulative-meta" style="color:var(--muted);font-size:12px;margin-bottom:8px"></div>
         <div style="overflow-x:auto">
         <table id="cumulative-table">
@@ -206,7 +211,7 @@ const REFRESH_MS = 60_000;
 // tab left open therefore shows live numbers inside an arbitrarily old HTML
 // shell — forever. The shell now checks its own deployed build id and reloads
 // itself once when a new build is published.
-const UI_BUILD = 'GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06';
+const UI_BUILD = 'GU_TOTAL_CUMULATIVE_TAB_V2_2026_08_06';
 const SHELL_CHECK_MS = 5 * 60_000;
 async function checkShellFreshness() {
     try {

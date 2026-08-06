@@ -146,7 +146,11 @@ class TestShellFreshness(unittest.TestCase):
     view could never reach an operator who already had the dashboard open."""
 
     def test_build_id_marker_present(self):
-        self.assertIn("GU_UI_BUILD_ID:GU_TOTAL_CUMULATIVE_TAB_V1_2026_08_06", SRC)
+        # version-agnostic: every deploy bumps the id, but it must always exist
+        # and must sit before <html> so it survives however the shell is parsed
+        m = re.search(r"GU_UI_BUILD_ID:([A-Za-z0-9_.\-]+)", SRC)
+        self.assertIsNotNone(m, "no GU_UI_BUILD_ID marker in the shell")
+        self.assertLess(SRC.index(m.group(0)), SRC.index("<html"))
 
     def test_build_id_marker_matches_the_js_constant(self):
         marker = re.search(r"GU_UI_BUILD_ID:([A-Za-z0-9_.\-]+)", SRC).group(1)
