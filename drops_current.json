@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-07T11:24:18Z",
+  "updated": "2026-08-07T11:25:22Z",
   "drops": [
     {
-      "ts": "2026-08-07T11:24:18Z",
+      "ts": "2026-08-07T11:25:22Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
       "peak": 859500,
       "peak_at": "2026-08-07T08:56:24Z",
-      "current": 51400,
-      "drop_pct": 94.0
+      "current": 114500,
+      "drop_pct": 86.7
     },
     {
-      "ts": "2026-08-07T11:24:18Z",
+      "ts": "2026-08-07T11:25:22Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "IG",
