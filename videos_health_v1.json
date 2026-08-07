@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-07T18:33:42Z",
-  "last_updated": "2026-08-07T18:33:42Z",
+  "iso": "2026-08-07T19:37:35Z",
+  "last_updated": "2026-08-07T19:37:35Z",
   "episodes": [
     {
       "guest": "Gabor Maté",
@@ -20,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": null,
         "x_views": "51.6K",
-        "ig_likes": "3.9K"
+        "ig_likes": null
       }
     },
     {
@@ -44,10 +44,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "12.6K",
+        "rumble_views": null,
         "yt_views": "3.1K",
-        "x_views": "102.0K",
-        "ig_likes": "2.8K"
+        "x_views": "102.1K",
+        "ig_likes": null
       }
     },
     {
@@ -68,10 +68,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "1.6K",
         "x_views": "282.2K",
-        "ig_likes": "9.8K"
+        "ig_likes": null
       }
     },
     {
@@ -92,10 +92,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.7K",
+        "rumble_views": null,
         "yt_views": "4.0K",
-        "x_views": "264.4K",
-        "ig_likes": "2.3K"
+        "x_views": "585.6K",
+        "ig_likes": null
       }
     },
     {
@@ -116,10 +116,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.9K",
+        "rumble_views": null,
         "yt_views": "3.1K",
-        "x_views": "239.3K",
-        "ig_likes": "1.6K"
+        "x_views": "387.9K",
+        "ig_likes": null
       }
     },
     {
@@ -140,10 +140,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.6K",
+        "rumble_views": null,
         "yt_views": "4.3K",
-        "x_views": "166.3K",
-        "ig_likes": "1.8K"
+        "x_views": "202.3K",
+        "ig_likes": null
       }
     },
     {
@@ -164,10 +164,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
-        "yt_views": "1.0K",
+        "rumble_views": null,
+        "yt_views": null,
         "x_views": "192.2K",
-        "ig_likes": "1.1K"
+        "ig_likes": null
       }
     },
     {
@@ -188,10 +188,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": null,
         "yt_views": "1.4K",
-        "x_views": "392.0K",
-        "ig_likes": "1.1K"
+        "x_views": "627.9K",
+        "ig_likes": null
       }
     },
     {
@@ -212,10 +212,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.4K",
+        "rumble_views": null,
         "yt_views": "941",
-        "x_views": "0",
-        "ig_likes": "1.1K"
+        "x_views": "624.0K",
+        "ig_likes": null
       }
     },
     {
@@ -236,10 +236,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": null,
         "yt_views": "15.3K",
-        "x_views": "0",
-        "ig_likes": "2.1K"
+        "x_views": "236.6K",
+        "ig_likes": null
       }
     },
     {
@@ -260,10 +260,34 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "6.9K",
-        "x_views": "35.9K",
-        "ig_likes": "2.8K"
+        "x_views": "36.0K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Steve Keen",
+      "surname": "KEEN",
+      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
+      "date": "15 Jun",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=0ChukxIewy4",
+      "canonical_episode_id": "cbe40066aa0d",
+      "canonical_video_id": "0ChukxIewy4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=0ChukxIewy4",
+      "canonical_episode_id_v2": "0050b454fc129cad",
+      "pub_iso": "2026-06-15T09:30:08Z",
+      "source_platform_ids": {
+        "youtube": [
+          "0ChukxIewy4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "1.9K",
+        "x_views": "361.5K",
+        "ig_likes": null
       }
     },
     {
@@ -426,10 +450,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": null,
         "x_views": "51.6K",
-        "ig_likes": "3.9K"
+        "ig_likes": null
       }
     },
     {
@@ -450,10 +474,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "12.6K",
+        "rumble_views": null,
         "yt_views": "3.1K",
-        "x_views": "102.0K",
-        "ig_likes": "2.8K"
+        "x_views": "102.1K",
+        "ig_likes": null
       }
     },
     {
@@ -474,10 +498,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "1.6K",
         "x_views": "282.2K",
-        "ig_likes": "9.8K"
+        "ig_likes": null
       }
     },
     {
@@ -498,10 +522,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.7K",
+        "rumble_views": null,
         "yt_views": "4.0K",
-        "x_views": "264.4K",
-        "ig_likes": "2.3K"
+        "x_views": "585.6K",
+        "ig_likes": null
       }
     },
     {
@@ -522,10 +546,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.9K",
+        "rumble_views": null,
         "yt_views": "3.1K",
-        "x_views": "239.3K",
-        "ig_likes": "1.6K"
+        "x_views": "387.9K",
+        "ig_likes": null
       }
     }
   ],
