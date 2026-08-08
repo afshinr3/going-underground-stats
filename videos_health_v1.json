@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-08T02:12:34Z",
-  "last_updated": "2026-08-08T02:12:34Z",
+  "iso": "2026-08-08T03:47:02Z",
+  "last_updated": "2026-08-08T03:47:02Z",
   "episodes": [
     {
       "guest": "Gabor Maté",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "380.6K",
+        "x_views": "51.7K",
         "ig_likes": "4.0K"
       }
     },
@@ -44,9 +44,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "12.7K",
+        "rumble_views": "12.8K",
         "yt_views": "3.1K",
-        "x_views": "211.2K",
+        "x_views": "1.1M",
         "ig_likes": "2.8K"
       }
     },
@@ -71,7 +71,7 @@
         "rumble_views": "3.0K",
         "yt_views": "1.6K",
         "x_views": "282.4K",
-        "ig_likes": "9.9K"
+        "ig_likes": "10.0K"
       }
     },
     {
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "292.9K",
+        "x_views": "425.4K",
         "ig_likes": "1.6K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "202.4K",
+        "x_views": "593.5K",
         "ig_likes": "1.8K"
       }
     },
@@ -167,7 +167,7 @@
         "rumble_views": "3.2K",
         "yt_views": "1.0K",
         "x_views": "192.3K",
-        "ig_likes": "1.1K"
+        "ig_likes": "3.4K"
       }
     },
     {
@@ -190,7 +190,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "423.2K",
+        "x_views": "423.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -214,7 +214,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "941",
-        "x_views": "624.0K",
+        "x_views": "78.2K",
         "ig_likes": "1.1K"
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "15.3K",
-        "x_views": "236.6K",
+        "x_views": "196.2K",
         "ig_likes": "2.1K"
       }
     },
@@ -267,30 +267,6 @@
       }
     },
     {
-      "guest": "Steve Keen",
-      "surname": "KEEN",
-      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
-      "date": "15 Jun",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=0ChukxIewy4",
-      "canonical_episode_id": "cbe40066aa0d",
-      "canonical_video_id": "0ChukxIewy4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=0ChukxIewy4",
-      "canonical_episode_id_v2": "0050b454fc129cad",
-      "pub_iso": "2026-06-15T09:30:08Z",
-      "source_platform_ids": {
-        "youtube": [
-          "0ChukxIewy4"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.0K",
-        "yt_views": "1.9K",
-        "x_views": "361.5K",
-        "ig_likes": "1.6K"
-      }
-    },
-    {
       "guest": "Mohammed Baharoon",
       "surname": "BAHAROON",
       "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
@@ -309,7 +285,7 @@
       },
       "metrics": {
         "rumble_views": "494",
-        "yt_views": "84",
+        "yt_views": "85",
         "x_views": "536.1K",
         "ig_likes": "228"
       }
@@ -334,7 +310,7 @@
       "metrics": {
         "rumble_views": "622",
         "yt_views": "217",
-        "x_views": "23.7K",
+        "x_views": "232.5K",
         "ig_likes": "584"
       }
     },
@@ -452,7 +428,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "380.6K",
+        "x_views": "51.7K",
         "ig_likes": "4.0K"
       }
     },
@@ -474,9 +450,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "12.7K",
+        "rumble_views": "12.8K",
         "yt_views": "3.1K",
-        "x_views": "211.2K",
+        "x_views": "1.1M",
         "ig_likes": "2.8K"
       }
     },
@@ -501,7 +477,7 @@
         "rumble_views": "3.0K",
         "yt_views": "1.6K",
         "x_views": "282.4K",
-        "ig_likes": "9.9K"
+        "ig_likes": "10.0K"
       }
     },
     {
@@ -548,7 +524,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "292.9K",
+        "x_views": "425.4K",
         "ig_likes": "1.6K"
       }
     }
@@ -573,7 +549,7 @@
       },
       "metrics": {
         "rumble_views": "494",
-        "yt_views": "84",
+        "yt_views": "85",
         "x_views": "536.1K",
         "ig_likes": "228"
       }
@@ -598,7 +574,7 @@
       "metrics": {
         "rumble_views": "622",
         "yt_views": "217",
-        "x_views": "23.7K",
+        "x_views": "232.5K",
         "ig_likes": "584"
       }
     },
