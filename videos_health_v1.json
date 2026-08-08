@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-08T06:11:03Z",
-  "last_updated": "2026-08-08T06:11:03Z",
+  "iso": "2026-08-08T07:18:45Z",
+  "last_updated": "2026-08-08T07:18:45Z",
   "episodes": [
     {
       "guest": "Gabor Maté",
@@ -8,18 +8,22 @@
       "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
       "date": "3 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
       "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "PUw_r6rI5PY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "PUw_r6rI5PY"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "115.0K",
-        "ig_likes": null
+        "x_views": "51.8K",
+        "ig_likes": "4.0K"
       }
     },
     {
@@ -28,18 +32,22 @@
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "N_ysv6Gh9Ac",
+      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "pub_iso": "2026-08-01T21:22:19Z",
+      "source_platform_ids": {
+        "youtube": [
+          "N_ysv6Gh9Ac"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "12.8K",
+        "yt_views": "3.1K",
         "x_views": "102.3K",
-        "ig_likes": null
+        "ig_likes": "2.8K"
       }
     },
     {
@@ -48,18 +56,22 @@
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
       "canonical_episode_id": "349527d06a1f",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "pzEU7fNiXgc",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+      "canonical_episode_id_v2": "86e2d81a08f45d8e",
+      "pub_iso": "2026-07-27T15:50:41Z",
+      "source_platform_ids": {
+        "youtube": [
+          "pzEU7fNiXgc"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "107.0K",
-        "ig_likes": null
+        "rumble_views": "3.0K",
+        "yt_views": "1.6K",
+        "x_views": "282.5K",
+        "ig_likes": "10.0K"
       }
     },
     {
@@ -68,18 +80,22 @@
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
       "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "IGlM3ZTHIY8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "canonical_episode_id_v2": "4a0e3632a2a01b42",
+      "pub_iso": "2026-07-25T13:30:22Z",
+      "source_platform_ids": {
+        "youtube": [
+          "IGlM3ZTHIY8"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "586.0K",
-        "ig_likes": null
+        "rumble_views": "2.7K",
+        "yt_views": "4.0K",
+        "x_views": "264.6K",
+        "ig_likes": "2.3K"
       }
     },
     {
@@ -88,18 +104,22 @@
       "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
       "date": "20 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
       "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "_SVI4UPDX7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id_v2": "3c04f341a327a14e",
+      "pub_iso": "2026-07-20T20:04:05Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_SVI4UPDX7g"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "293.1K",
-        "ig_likes": null
+        "rumble_views": "2.9K",
+        "yt_views": "3.1K",
+        "x_views": "425.6K",
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -108,18 +128,22 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
       "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "WlIY7-ovBd8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "canonical_episode_id_v2": "4a4b17f0a7877200",
+      "pub_iso": "2026-07-18T11:32:42Z",
+      "source_platform_ids": {
+        "youtube": [
+          "WlIY7-ovBd8"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "593.5K",
-        "ig_likes": null
+        "rumble_views": "3.6K",
+        "yt_views": "4.3K",
+        "x_views": "722.4K",
+        "ig_likes": "1.8K"
       }
     },
     {
@@ -128,18 +152,22 @@
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
       "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "grMo8SmAQpU",
+      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+      "canonical_episode_id_v2": "af16e80c488f7ef0",
+      "pub_iso": "2026-07-13T16:25:30Z",
+      "source_platform_ids": {
+        "youtube": [
+          "grMo8SmAQpU"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "3.2K",
+        "yt_views": "1.0K",
         "x_views": "192.4K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -148,18 +176,22 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
       "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "SmH-aEMZyqg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "canonical_episode_id_v2": "e5c307d186579b5a",
+      "pub_iso": "2026-07-06T10:38:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "SmH-aEMZyqg"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "255.0K",
-        "ig_likes": null
+        "rumble_views": "2.5K",
+        "yt_views": "1.4K",
+        "x_views": "423.5K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -168,18 +200,22 @@
       "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
       "date": "4 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=M_KrzyAybFI",
       "canonical_episode_id": "9702aa6e4b89",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "M_KrzyAybFI",
+      "canonical_video_url": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "canonical_episode_id_v2": "495ea447b2ab31cf",
+      "pub_iso": "2026-07-04T10:54:02Z",
+      "source_platform_ids": {
+        "youtube": [
+          "M_KrzyAybFI"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "2.4K",
+        "yt_views": "941",
         "x_views": "166.3K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -188,18 +224,22 @@
       "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
       "date": "29 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
       "canonical_episode_id": "437b917e580d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "-c_7WNHYTEE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-c_7WNHYTEE",
+      "canonical_episode_id_v2": "c887d6373249acbe",
+      "pub_iso": "2026-06-29T11:38:52Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-c_7WNHYTEE"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "3.9K",
+        "yt_views": "15.3K",
         "x_views": "361.9K",
-        "ig_likes": null
+        "ig_likes": "2.1K"
       }
     },
     {
@@ -208,78 +248,22 @@
       "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
       "date": "20 Jun",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
       "canonical_episode_id": "2d6e9913fb1c",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "55zQJ3W6M7w",
+      "canonical_video_url": "https://www.youtube.com/watch?v=55zQJ3W6M7w",
+      "canonical_episode_id_v2": "97d493ba3a1d75a6",
+      "pub_iso": "2026-06-20T09:24:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "55zQJ3W6M7w"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "3.0K",
+        "yt_views": "6.9K",
         "x_views": "36.0K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Steve Keen",
-      "surname": "KEEN",
-      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
-      "date": "15 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "cbe40066aa0d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "361.7K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Theodore Postol",
-      "surname": "POSTOL",
-      "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
-      "date": "13 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "8014ccd61339",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "312.4K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Chen Weihua",
-      "surname": "WEIHUA",
-      "title": "Chen Weihua: The US is the DESTROYER of the Global Order, the US Underestimated CHINA’S POWER",
-      "date": "8 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "11119819091b",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "203.6K",
-        "ig_likes": null
+        "ig_likes": "2.8K"
       }
     },
     {
@@ -430,18 +414,22 @@
       "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
       "date": "3 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
       "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "PUw_r6rI5PY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "PUw_r6rI5PY"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "115.0K",
-        "ig_likes": null
+        "x_views": "51.8K",
+        "ig_likes": "4.0K"
       }
     },
     {
@@ -450,18 +438,22 @@
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
       "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "N_ysv6Gh9Ac",
+      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "pub_iso": "2026-08-01T21:22:19Z",
+      "source_platform_ids": {
+        "youtube": [
+          "N_ysv6Gh9Ac"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
+        "rumble_views": "12.8K",
+        "yt_views": "3.1K",
         "x_views": "102.3K",
-        "ig_likes": null
+        "ig_likes": "2.8K"
       }
     },
     {
@@ -470,18 +462,22 @@
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
       "canonical_episode_id": "349527d06a1f",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "pzEU7fNiXgc",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+      "canonical_episode_id_v2": "86e2d81a08f45d8e",
+      "pub_iso": "2026-07-27T15:50:41Z",
+      "source_platform_ids": {
+        "youtube": [
+          "pzEU7fNiXgc"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "107.0K",
-        "ig_likes": null
+        "rumble_views": "3.0K",
+        "yt_views": "1.6K",
+        "x_views": "282.5K",
+        "ig_likes": "10.0K"
       }
     },
     {
@@ -490,18 +486,22 @@
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
       "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "IGlM3ZTHIY8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "canonical_episode_id_v2": "4a0e3632a2a01b42",
+      "pub_iso": "2026-07-25T13:30:22Z",
+      "source_platform_ids": {
+        "youtube": [
+          "IGlM3ZTHIY8"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "586.0K",
-        "ig_likes": null
+        "rumble_views": "2.7K",
+        "yt_views": "4.0K",
+        "x_views": "264.6K",
+        "ig_likes": "2.3K"
       }
     },
     {
@@ -510,18 +510,22 @@
       "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
       "date": "20 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
       "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
+      "canonical_video_id": "_SVI4UPDX7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "canonical_episode_id_v2": "3c04f341a327a14e",
+      "pub_iso": "2026-07-20T20:04:05Z",
+      "source_platform_ids": {
+        "youtube": [
+          "_SVI4UPDX7g"
+        ]
+      },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": null,
-        "x_views": "293.1K",
-        "ig_likes": null
+        "rumble_views": "2.9K",
+        "yt_views": "3.1K",
+        "x_views": "425.6K",
+        "ig_likes": "1.6K"
       }
     }
   ],
