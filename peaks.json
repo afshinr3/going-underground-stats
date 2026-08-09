@@ -615,9 +615,9 @@
     "yt_views": 1800,
     "yt_views_at": "2026-07-10T00:34:32Z",
     "rumble_views": 10700,
-    "rumble_views_at": "2026-08-09T11:11:11Z",
+    "rumble_views_at": "2026-08-09T11:15:29Z",
     "ig_likes": 2900,
-    "ig_likes_at": "2026-08-09T11:11:11Z"
+    "ig_likes_at": "2026-08-09T11:15:29Z"
   },
   "GU:SLAM": {
     "x_views": 79200,
@@ -698,7 +698,7 @@
     "ig_likes": 12200,
     "ig_likes_at": "2026-07-17T14:29:30Z",
     "rumble_views": 2700,
-    "rumble_views_at": "2026-08-09T11:11:11Z"
+    "rumble_views_at": "2026-08-09T11:15:29Z"
   },
   "GU:Ellwood": {
     "x_views": 627900,
@@ -810,7 +810,7 @@
     "ig_likes": 4200,
     "ig_likes_at": "2026-08-08T21:25:10Z",
     "rumble_views": 3200,
-    "rumble_views_at": "2026-08-09T11:11:11Z"
+    "rumble_views_at": "2026-08-09T11:15:29Z"
   },
   "NO:Fernandez": {
     "yt_views": 15,
@@ -818,12 +818,14 @@
     "ig_likes": 102,
     "ig_likes_at": "2026-08-09T09:30:36Z",
     "rumble_views": 131,
-    "rumble_views_at": "2026-08-09T11:11:11Z"
+    "rumble_views_at": "2026-08-09T11:15:29Z"
   },
   "GU:\u00dcnal": {
+    "x_views": 385700,
+    "x_views_at": "2026-08-09T11:15:29Z",
     "ig_likes": 1500,
-    "ig_likes_at": "2026-08-09T11:11:11Z",
+    "ig_likes_at": "2026-08-09T11:15:29Z",
     "rumble_views": 2200,
-    "rumble_views_at": "2026-08-09T11:11:11Z"
+    "rumble_views_at": "2026-08-09T11:15:29Z"
   }
 }
