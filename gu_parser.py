@@ -89,6 +89,35 @@ def _strip_role(name):
     return name
 
 
+def _looks_like_name(cand):
+    """Does `cand` look like 1-4 capitalised name tokens?
+
+    NON_ASCII_GUEST_NAME_V1_2026_08_09 — this replaced
+        r"^[A-Z][a-zA-Z\\.'\\-]+(?:\\s+[A-Z][a-zA-Z\\.'\\-]+){0,3}$"
+    whose character classes were ASCII-only, so ANY guest with an accented or
+    non-English letter failed the colon branch and fell through to
+    FALLTHROUGH_NO_MATCH. "Professor Hasan Ünal: ..." and "Gabor Maté: ..." were
+    both dropped as unparseable (the Ünal episode never reached videos.json at
+    all, and the GU week showed n=0 with the episode live and on 5.6k views),
+    while the identical ASCII title "Hasan Unal: ..." parsed fine. Every other
+    pattern in this module already allows À-ÿ; only this one did not.
+
+    str.isupper()/isalpha() are Unicode-aware, so this covers Turkish, Spanish,
+    Nordic and every other alphabet without enumerating codepoint ranges the way
+    a character class would.
+    """
+    parts = cand.split()
+    if not 1 <= len(parts) <= 4:
+        return False
+    for p in parts:
+        core = p.strip(".'-")
+        if not core or not core[0].isupper():
+            return False
+        if not all(ch.isalpha() or ch in ".'-" for ch in p):
+            return False
+    return True
+
+
 def extract_guest(title, source="unknown"):
     """Extract guest name from a YouTube/RSS episode title.
 
@@ -180,7 +209,7 @@ def extract_guest(title, source="unknown"):
         cand = _strip_role(colon_match.group(1).strip())
         rest = colon_match.group(2).strip()
         is_all_caps = cand == cand.upper() and len(cand) > 2
-        looks_like_name = bool(re.match(r"^[A-Z][a-zA-Z\.'\-]+(?:\s+[A-Z][a-zA-Z\.'\-]+){0,3}$", cand))
+        looks_like_name = _looks_like_name(cand)
         if looks_like_name and not is_all_caps and 3 < len(cand) <= 40:
             return cand
         # 4b "topic: Honorific Name on rest"
