@@ -97,7 +97,24 @@ def _yt_classify_content(link_href, title, description=""):
     if "#SHORTS" in t or "#SHORT" in t or "#SHORTS" in desc or "#SHORT" in desc:
         return ("SHORT", "HIGH")
     # EPISODE — canonical show markers
-    for m in ("NEW EPISODE OF GOING UNDERGROUND",
+    #
+    # EPISODE_MARKER_HOUSE_PHRASE_V1_2026_08_09 — the first two markers below are
+    # phrases neither channel has ever actually published. Every real full episode
+    # opens its description with "On this episode of <show>, we speak to ...", so
+    # without that phrase here NO episode ever earned an EPISODE/HIGH verdict: they
+    # all fell through to EPISODE_UNCLASSIFIED, and _v4_gate_unclassified only admits
+    # a video whose canonical episode id is ALREADY in videos.json. A brand-new
+    # episode never is, so the YouTube path could not create one at all — it could
+    # only ever re-recognise episodes some other path had already inserted. The
+    # 7 Aug Hasan Ünal episode sat in the audit queue for two days on that rule.
+    #
+    # Verified against the live feeds before adding: the phrase is present on all
+    # four most recent Going Underground episodes and on the New Order episode of
+    # 9 Aug, and absent from the New Order quote-clips, so it separates full
+    # episodes from clips rather than merely admitting everything.
+    for m in ("ON THIS EPISODE OF GOING UNDERGROUND",
+              "ON THIS EPISODE OF NEW ORDER",
+              "NEW EPISODE OF GOING UNDERGROUND",
               "NEW EPISODE OF NEW ORDER",
               "SPECIAL EPISODE OF",
               "SEASON FINALE EPISODE OF",
