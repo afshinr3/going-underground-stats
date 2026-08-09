@@ -640,6 +640,27 @@ def format_views(v):
     return str(n)
 
 
+def _capitalised_tokens(text, min_len=4):
+    """Lower-cased capitalised word tokens, in order of appearance. Unicode-aware.
+
+    NON_ASCII_NAME_TOKENS_V1_2026_08_09 — replaces two ASCII-only classes:
+    r'\\b[A-Z][a-zA-Z\\-]{3,}\\b' over YouTube titles and r'\\b[A-Z][a-z]{3,}\\b' over
+    Instagram captions. Neither can match "Ünal" or "Maté" — the leading Ü is not in
+    [A-Z], and "até" breaks the ASCII continuation — so those surnames never became
+    tokens, never intersected known_surnames, and their episodes carried no yt_views
+    at all. Ünal showed real Rumble, X and Instagram figures beside an empty YouTube
+    column while its video sat on 5,658 views; every ASCII-named guest measured fine.
+
+    str.isupper() is Unicode-aware, so the capitalisation rule that makes this a NAME
+    filter (rather than an every-word filter) is preserved for every alphabet.
+    """
+    out = []
+    for w in re.findall(r"[^\W\d_](?:[^\W\d_]|-)*", text or ""):
+        if len(w) >= min_len and w[0].isupper():
+            out.append(w.lower())
+    return out
+
+
 def fetch_youtube_data(channel_id, known_surnames=None):
     """Fetch view counts AND publish dates per surname from YouTube RSS.
 
@@ -706,7 +727,7 @@ def fetch_youtube_data(channel_id, known_surnames=None):
             except Exception:
                 _v = 0
             # METRIC_ATTRIB_V1_2026_07_20 — extract whole-word tokens ONLY.
-            _tokens = set(w.lower() for w in re.findall(r'\b[A-Z][a-zA-Z\-]{3,}\b', title))
+            _tokens = set(_capitalised_tokens(title))
             # Parenthesised aliases (e.g. "(Prof. Steve Keen)") — split words.
             for pm in re.finditer(r'\(([^)]+)\)', title):
                 for pw in pm.group(1).split():
@@ -797,8 +818,7 @@ def fetch_instagram_clips(known_surnames=None):
                 play_count = item.get('play_count') or item.get('view_count') or item.get('like_count', 0)
                 # METRIC_ATTRIB_V1_2026_07_20 — pick a SINGLE surname per clip.
                 _picked = None
-                for word in re.findall(r'\b[A-Z][a-z]{3,}\b', caption):
-                    wl = word.lower()
+                for wl in _capitalised_tokens(caption):
                     if known_surnames:
                         if wl in known_surnames:
                             _picked = wl
