@@ -797,8 +797,8 @@
     "yt_views_at": "2026-08-08T03:47:02Z",
     "ig_likes": 229,
     "ig_likes_at": "2026-08-09T04:34:30Z",
-    "rumble_views": 500,
-    "rumble_views_at": "2026-08-09T06:29:35Z",
+    "rumble_views": 502,
+    "rumble_views_at": "2026-08-09T08:24:41Z",
     "x_views": 536100,
     "x_views_at": "2026-08-06T09:12:55Z"
   },
@@ -809,5 +809,13 @@
     "ig_likes_at": "2026-08-08T21:25:10Z",
     "rumble_views": 3100,
     "rumble_views_at": "2026-08-08T16:27:24Z"
+  },
+  "NO:Fernandez": {
+    "yt_views": 10,
+    "yt_views_at": "2026-08-09T08:24:41Z",
+    "ig_likes": 96,
+    "ig_likes_at": "2026-08-09T08:24:41Z",
+    "rumble_views": 115,
+    "rumble_views_at": "2026-08-09T08:24:41Z"
   }
 }
