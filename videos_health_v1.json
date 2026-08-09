@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-09T08:11:20Z",
-  "last_updated": "2026-08-09T08:11:20Z",
+  "iso": "2026-08-09T09:05:39Z",
+  "last_updated": "2026-08-09T09:05:39Z",
   "episodes": [
     {
       "guest": "Gabor Maté",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": null,
-        "x_views": "115.7K",
+        "x_views": "52.3K",
         "ig_likes": "4.2K"
       }
     },
@@ -70,7 +70,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "107.3K",
+        "x_views": "283.0K",
         "ig_likes": "10.3K"
       }
     },
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "243.3K",
+        "x_views": "356.0K",
         "ig_likes": "2.3K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "311.9K",
+        "x_views": "312.5K",
         "ig_likes": "1.6K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "202.8K",
+        "x_views": "14.1K",
         "ig_likes": "1.8K"
       }
     },
@@ -190,7 +190,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "424.9K",
+        "x_views": "219.9K",
         "ig_likes": "1.1K"
       }
     },
@@ -267,6 +267,30 @@
       }
     },
     {
+      "guest": "Marta Fernandez",
+      "surname": "FERNANDEZ",
+      "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America —Prof. Marta Fernandez",
+      "date": "9 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "canonical_episode_id": "b5a688bb5c98",
+      "canonical_video_id": "XnOfgmdAELk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "canonical_episode_id_v2": "127afae570dfe74d",
+      "pub_iso": "2026-08-09T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "XnOfgmdAELk"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "115",
+        "yt_views": "12",
+        "x_views": null,
+        "ig_likes": "96"
+      }
+    },
+    {
       "guest": "Mohammed Baharoon",
       "surname": "BAHAROON",
       "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
@@ -284,7 +308,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "500",
+        "rumble_views": "502",
         "yt_views": "85",
         "x_views": "416.6K",
         "ig_likes": "229"
@@ -308,7 +332,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "623",
+        "rumble_views": "624",
         "yt_views": "217",
         "x_views": "129.0K",
         "ig_likes": "586"
@@ -332,7 +356,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "723",
+        "rumble_views": "724",
         "yt_views": "1.1K",
         "x_views": "561.9K",
         "ig_likes": "354"
@@ -428,7 +452,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": null,
-        "x_views": "115.7K",
+        "x_views": "52.3K",
         "ig_likes": "4.2K"
       }
     },
@@ -476,7 +500,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "107.3K",
+        "x_views": "283.0K",
         "ig_likes": "10.3K"
       }
     },
@@ -500,7 +524,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "243.3K",
+        "x_views": "356.0K",
         "ig_likes": "2.3K"
       }
     },
@@ -524,12 +548,36 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "311.9K",
+        "x_views": "312.5K",
         "ig_likes": "1.6K"
       }
     }
   ],
   "no": [
+    {
+      "guest": "Marta Fernandez",
+      "surname": "FERNANDEZ",
+      "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America —Prof. Marta Fernandez",
+      "date": "9 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "canonical_episode_id": "b5a688bb5c98",
+      "canonical_video_id": "XnOfgmdAELk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "canonical_episode_id_v2": "127afae570dfe74d",
+      "pub_iso": "2026-08-09T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "XnOfgmdAELk"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "115",
+        "yt_views": "12",
+        "x_views": null,
+        "ig_likes": "96"
+      }
+    },
     {
       "guest": "Mohammed Baharoon",
       "surname": "BAHAROON",
@@ -548,7 +596,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "500",
+        "rumble_views": "502",
         "yt_views": "85",
         "x_views": "416.6K",
         "ig_likes": "229"
@@ -572,7 +620,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "623",
+        "rumble_views": "624",
         "yt_views": "217",
         "x_views": "129.0K",
         "ig_likes": "586"
@@ -596,7 +644,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "723",
+        "rumble_views": "724",
         "yt_views": "1.1K",
         "x_views": "561.9K",
         "ig_likes": "354"
@@ -624,30 +672,6 @@
         "yt_views": "1.1K",
         "x_views": "540.3K",
         "ig_likes": "233"
-      }
-    },
-    {
-      "guest": "Vikram Sood",
-      "surname": "SOOD",
-      "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
-      "date": "5 Jul",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
-      "canonical_episode_id": "20eb6739a4af",
-      "canonical_video_id": "U_7Y7bkSXfk",
-      "canonical_video_url": "https://www.youtube.com/watch?v=U_7Y7bkSXfk",
-      "canonical_episode_id_v2": "7a16c7c3ba5b9b1a",
-      "pub_iso": "2026-07-05T06:30:06Z",
-      "source_platform_ids": {
-        "youtube": [
-          "U_7Y7bkSXfk"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "523",
-        "yt_views": "1.1K",
-        "x_views": "529.2K",
-        "ig_likes": "462"
       }
     }
   ]
