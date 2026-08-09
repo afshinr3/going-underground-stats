@@ -1,7 +1,31 @@
 {
-  "iso": "2026-08-09T11:00:27Z",
-  "last_updated": "2026-08-09T11:00:27Z",
+  "iso": "2026-08-09T11:07:13Z",
+  "last_updated": "2026-08-09T11:07:13Z",
   "episodes": [
+    {
+      "guest": "Hasan Ünal",
+      "surname": "ÜNAL",
+      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "date": "7 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": "0",
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Gabor Maté",
       "surname": "MATÉ",
@@ -171,6 +195,30 @@
       }
     },
     {
+      "guest": "James Carden",
+      "surname": "CARDEN",
+      "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
+      "date": "11 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
+      "canonical_episode_id": "bce46f2dc542",
+      "canonical_video_id": "Cc9-pfOYmWQ",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
+      "canonical_episode_id_v2": "4298e576095c64c0",
+      "pub_iso": "2026-07-11T11:47:03Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Cc9-pfOYmWQ"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "1.5K",
+        "x_views": "0",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Tobias Ellwood",
       "surname": "ELLWOOD",
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
@@ -240,6 +288,30 @@
         "yt_views": "15.3K",
         "x_views": "205.2K",
         "ig_likes": "2.1K"
+      }
+    },
+    {
+      "guest": "Ari Ben-Menashe",
+      "surname": "BEN-MENASHE",
+      "title": "Trump’s LIFE is in DANGER from Israel After Deal with Iran—Ex Israeli Intel Officer Ari Ben-Menashe",
+      "date": "22 Jun",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
+      "canonical_episode_id": "c381bd59b05d",
+      "canonical_video_id": "iupt8YyJYn4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=iupt8YyJYn4",
+      "canonical_episode_id_v2": "9598318a10ac13b1",
+      "pub_iso": "2026-06-22T12:51:07Z",
+      "source_platform_ids": {
+        "youtube": [
+          "iupt8YyJYn4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "1.8K",
+        "x_views": "0",
+        "ig_likes": null
       }
     },
     {
@@ -433,6 +505,30 @@
   ],
   "gu": [
     {
+      "guest": "Hasan Ünal",
+      "surname": "ÜNAL",
+      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "date": "7 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": "0",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Gabor Maté",
       "surname": "MATÉ",
       "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
@@ -526,30 +622,6 @@
         "yt_views": "4.0K",
         "x_views": "264.9K",
         "ig_likes": "2.3K"
-      }
-    },
-    {
-      "guest": "Doug Bandow",
-      "surname": "BANDOW",
-      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
-      "date": "20 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": "_SVI4UPDX7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "canonical_episode_id_v2": "3c04f341a327a14e",
-      "pub_iso": "2026-07-20T20:04:05Z",
-      "source_platform_ids": {
-        "youtube": [
-          "_SVI4UPDX7g"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.9K",
-        "yt_views": "3.1K",
-        "x_views": "313.4K",
-        "ig_likes": "1.6K"
       }
     }
   ],

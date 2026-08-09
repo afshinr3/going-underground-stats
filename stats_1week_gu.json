@@ -5,9 +5,36 @@
   "window_end": "2026-08-10",
   "window_start_mon": "2026-08-07",
   "window_end_sun": "2026-08-10",
-  "generated_at": "2026-08-09T11:00:27.507623Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-08-09T11:07:13.367635Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Hasan \u00dcnal",
+      "surname": "\u00dcnal",
+      "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "rumble_views": null,
+      "x_views": "0",
+      "date": "7 Aug",
+      "yt_views": null,
+      "ig_likes": null,
+      "canonical_guest_full_name": "Hasan \u00dcnal",
+      "canonical_surname_upper": "\u00dcNAL",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "_yt_content_type": "EPISODE",
+      "_yt_class_confidence": "HIGH",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "show": "GU"
+    }
+  ],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
