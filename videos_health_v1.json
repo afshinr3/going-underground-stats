@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-09T11:15:29Z",
-  "last_updated": "2026-08-09T11:15:29Z",
+  "iso": "2026-08-09T11:25:17Z",
+  "last_updated": "2026-08-09T11:25:17Z",
   "episodes": [
     {
       "guest": "Hasan Ünal",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": null,
-        "x_views": "385.7K",
+        "yt_views": "5.7K",
+        "x_views": "386.2K",
         "ig_likes": "1.5K"
       }
     },
@@ -45,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": null,
+        "yt_views": "22.7K",
         "x_views": "52.3K",
         "ig_likes": "4.2K"
       }
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "283.0K",
+        "x_views": "107.4K",
         "ig_likes": "10.3K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "43.4K",
+        "x_views": "264.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -166,7 +166,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "712.1K",
+        "x_views": "202.8K",
         "ig_likes": "1.8K"
       }
     },
@@ -523,8 +523,8 @@
       },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": null,
-        "x_views": "385.7K",
+        "yt_views": "5.7K",
+        "x_views": "386.2K",
         "ig_likes": "1.5K"
       }
     },
@@ -547,7 +547,7 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": null,
+        "yt_views": "22.7K",
         "x_views": "52.3K",
         "ig_likes": "4.2K"
       }
@@ -596,7 +596,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "283.0K",
+        "x_views": "107.4K",
         "ig_likes": "10.3K"
       }
     },
@@ -620,7 +620,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "43.4K",
+        "x_views": "264.9K",
         "ig_likes": "2.3K"
       }
     }
