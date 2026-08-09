@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-09T11:25:17Z",
+  "updated": "2026-08-09T11:27:46Z",
   "drops": [
     {
-      "ts": "2026-08-09T11:25:17Z",
+      "ts": "2026-08-09T11:27:46Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
       "peak": 881200,
       "peak_at": "2026-08-08T16:36:23Z",
-      "current": 107400,
-      "drop_pct": 87.8
+      "current": 283000,
+      "drop_pct": 67.9
     }
   ]
 }
