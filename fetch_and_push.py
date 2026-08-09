@@ -23,6 +23,8 @@ import urllib.request
 import hashlib
 
 import requests
+
+import gu_parser
 from PIL import Image, ImageDraw, ImageFont
 from playwright.async_api import async_playwright
 
@@ -803,134 +805,22 @@ def fetch_instagram_clips(known_surnames=None):
 
 # v5 2026-06-20 PATCHED — handles Ex-PM titles, possessive, generic-pre-name
 def extract_guest(title):
-    title = title.strip()
-    title = title.replace('\u2018', "'").replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
-    title = re.sub(r'^[\W_]+', '', title).strip()
+    """Delegates to gu_parser — see GU_PARSER_SINGLE_SOURCE_V1_2026_08_09.
 
-    # ===== v5 PATCH A: Ex-{Nationality} {Role} {Name} ... =====
-    ex_role_match = re.match(
-        r'^(?:Ex|Former|Fmr)[\s\-]+'
-        r'(?:(?:Israeli|US|UK|British|American|EU|French|German|Russian|Chinese|Iranian|'
-        r'Saudi|Indian|Pakistani|Turkish|Egyptian|Iraqi|Syrian|Palestinian|Lebanese|'
-        r'Jordanian|Greek|Italian|Spanish|Dutch|Brazilian|Mexican|Canadian|Australian|'
-        r'Japanese|Korean|Thai|Filipino|Indonesian|Vietnamese|African|European)\s+)?'
-        r'(?:President|PM|Prime\s+Minister|Minister|Officer|Ambassador|Amb|Director|Head|'
-        r'Chief|Senator|Congressman|Congresswoman|MP|General|Admiral|Secretary|Advisor|'
-        r'Adviser|Analyst|Spokesperson|Editor|Professor|Commander|Colonel|Captain|Major|'
-        r'Sgt\.?|Lt\.?\s*Col\.?|Dr\.?|Prof\.?|VP|Vice\s+President|Deputy|CEO|CFO|'
-        r'Mayor|Governor|Judge|Justice)\s+'
-        r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
-        r'(?=\s+(?:[A-Z]{2,}|on|in|of|at|for|with|to|from|by|and|or|but|'
-        r'Explains|Says|Argues|Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|'
-        r'Who|That|Which|will|could|would|should|is|are|was|were|has|have|had|tells|'
-        r'told|shares|gives)\b|[\'\":,.\-——–]|\s*$)',
-        title
-    )
-    if ex_role_match:
-        return ex_role_match.group(1).strip()
+    This module used to carry its own near-identical copy of the parser, and the copy
+    was the one that actually ran: gu_parser.py is the module covered by
+    regression_tests_gu_titles.json and test_gu_parser.py, but nothing here imported
+    it, so the corpus guarded code that was never executed and fixing the tested
+    parser changed nothing in production. That is why the 7 Aug Hasan Unal episode
+    stayed missing from videos.json after its parser bug had already been fixed.
 
-    # ===== Existing v4 honorific pattern + PATCH B: ' added to lookahead =====
-    # RANK_STRIP_V1_2026_07_20 — added US enlisted ranks + Ret. so "CMSGT. Dennis
-    # Fritz: ..." and "Ret. Col. Douglas Macgregor: ..." capture only the name.
-    honorific_match = re.match(
-        r'^(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|Maj|'
-        r'Hon|Rabbi|Imam|Rev|Sgt|Baroness|Lord|'
-        r'CMSGT|MSGT|SFC|SSG|SGM|CSM|SMA|CPL|PFC|PVT|SPC|'
-        r'MSgt|GySgt|SSgt|TSgt|SrA|A1C|'
-        r'PO1|PO2|PO3|CPO|SCPO|MCPO|ENS|LTJG|CDR|LCDR|RADM|VADM|'
-        r'CWO|CW2|CW3|CW4|CW5|WO1|WO2|WO3|WO4|WO5|'
-        r'Ret|Retired)\.?\s+'
-        # RANK_STRIP_V1_2026_07_20 — first token may itself be a nested rank
-        # like "Gen." / "Col." (Ret. Gen. Wesley Clark). Allow trailing dot
-        # inside the token, then _strip_role peels it.
-        r'([A-Z][a-z]+\.?(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
-        r'(?=\s+(?:on|in|of|at|for|with|to|from|by|and|or|but|Explains|Says|Argues|'
-        r'Discusses|Talks|Reveals|Warns|Why|How|What|When|Where|Who|That|Which|will|'
-        r'could|would|should|is|are|was|were|has|have|had|tells|told|shares|gives)\b'
-        r"|[\'\":,.\-——–]|\s*$)",      # ← added ' for possessive (Mearsheimer's …)
-        title
-    )
-    if honorific_match:
-        # RANK_STRIP_V1_2026_07_20 — post-strip so double-honorifics
-        # like "Ret. Col." peel down to just the name.
-        return _strip_role(honorific_match.group(1).strip()) or honorific_match.group(1).strip()
-
-    # ===== Parenthesised guest (unchanged) =====
-    paren = re.search(r'\(([^)]+)\)\s*$', title)
-    if paren:
-        guest = paren.group(1).strip()
-        guest = _strip_role(guest)
-        if guest and len(guest) > 3:
-            return guest
-        return paren.group(1).strip()
-
-    # ===== "Name on Topic" (unchanged) =====
-    name_on = re.match(r'^(?:\S+\'s\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z-]+)+)\s+on\s+', title)
-    if name_on:
-        return name_on.group(1)
-
-    # ===== Dash separator + PATCH C: Amb. now stripped =====
-    dash_match = re.split(r'\s*[–—]\s*|\s+-\s+|-\s+(?=[A-Z](?:[a-z]|x-|ormer))', title)
-    if len(dash_match) >= 2:
-        guest = dash_match[-1].strip()
-        guest = _strip_role(guest)
-        if guest and len(guest) > 3:
-            return guest
-        return dash_match[-1].strip()
-
-    # ===== Colon-prefixed name (unchanged shape, plus PATCH D below) =====
-    colon_match = re.match(r'^([^:]{2,40}):\s+(.*)', title)
-    if colon_match:
-        cand = colon_match.group(1).strip()
-        rest = colon_match.group(2).strip()
-        cand = _strip_role(cand)
-        is_all_caps = cand == cand.upper() and len(cand) > 2
-        looks_like_name = bool(re.match(r"^[A-Z][a-zA-Z\.'\-]+(?:\s+[A-Z][a-zA-Z\.'\-]+){0,3}$", cand))
-        if looks_like_name and not is_all_caps and 3 < len(cand) <= 40:
-            return cand
-        name_on_after = re.match(
-            r'^(?:(?:Prof|Dr|Lt\.?\s*Col|Sgt|Mr|Mrs|Ms|Sir|Amb)\.?\s+)?'
-            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,3})\s+on\s+',
-            rest
-        )
-        if name_on_after:
-            return name_on_after.group(1).strip()
-        name_verb_after = re.match(
-            r'^(?:(?:Prof|Dr|Mr|Mrs|Ms|Sir|Lady|Sen|Rep|Ambassador|Amb|Col|Gen|Lt|Capt|'
-            r'Maj|Hon|Rabbi|Imam|Rev|Sgt)\.?\s+)?'
-            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'
-            r'(?=\s+(?:explains|says|argues|discusses|talks|reveals|warns|tells|told|'
-            r'shares|gives|will|could|would|should|is|are|was|were|has|have|had)\b)',
-            rest, flags=re.IGNORECASE
-        )
-        if name_verb_after:
-            return name_verb_after.group(1).strip()
-        # ===== PATCH D: "{generic descriptor(s)} {Name} {ALL-CAPS-VERB}..." after colon =====
-        # Handles "War on Iran: Pentagon Whistleblower Wes Bryant SLAMS..." where the
-        # name is preceded by 1–3 descriptor words rather than an honorific.
-        generic_pre_name = re.match(
-            r'^(?:[A-Z][a-zA-Z]+\s+){1,3}'                       # 1–3 descriptor words (Pentagon Whistleblower …)
-            r'([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-]+){1,2}?)'        # captured name
-            r'(?=\s+(?:[A-Z]{2,}|explains|says|argues|reveals|warns|tells|on)\b)',
-            rest
-        )
-        if generic_pre_name:
-            return generic_pre_name.group(1).strip()
-    # EXTRACT_GUEST_NAME_VERB_V1_2026_07_04 — GU title pattern "<Guest Full Name> <Verb> ..."
-    # Handles: "Max Blumenthal Reveals Why ...", "Steve Keen Warns ...", etc.
-    name_verb_leading = re.match(
-        r"^([A-Z][a-z]+(?:\s+[A-Z][a-zA-Z\-']+){1,3}?)\s+"
-        r"(?:Reveals|Explains|Says|Argues|Discusses|Talks|Warns|Slams|Analyses|Analyzes|"
-        r"Tells|Shares|Challenges|Confirms|Predicts|Claims|Believes|Uncovers|Exposes|"
-        r"Details|Describes|Debates|Comments|Reports|Breaks)\b",
-        title
-    )
-    if name_verb_leading:
-        _cand = name_verb_leading.group(1).strip()
-        # Skip host name (Afshin Rattansi)
-        if _cand.lower() not in ("afshin rattansi", "afshin"):
-            return _cand
-    return None
+    Checked before switching, across the 68 distinct titles in videos.json,
+    videos_neworder.json, both YouTube feeds and the regression corpus: gu_parser is a
+    strict superset here. It reads 5 titles this copy could not (Unal, Mate, Garcia,
+    Melenchon, Freeman) and regresses none. The single pattern only this copy had,
+    "<Name> <Verb> ..." for Blumenthal/Schiff, was ported into gu_parser first.
+    """
+    return gu_parser.extract_guest(title, source="fetch_and_push")
 
 
 def _strip_role(name):

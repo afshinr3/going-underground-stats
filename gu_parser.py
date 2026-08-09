@@ -252,6 +252,24 @@ def extract_guest(title, source="unknown"):
             rest, flags=re.IGNORECASE)
         if m: return m.group(1).strip()
 
+    # EXTRACT_GUEST_NAME_VERB_V1_2026_07_04 — "<Guest Full Name> <Verb> ...", e.g.
+    # "Max Blumenthal Reveals Why ...", "Peter Schiff Explains ...". Ported here on
+    # 2026-08-09 from the duplicate copy of this parser that had grown inside
+    # fetch_and_push.py: that copy alone could read these two live episodes, so this
+    # module had to gain the pattern before production could be pointed at it.
+    paths_tried.append("name_verb_leading")
+    name_verb_leading = re.match(
+        r"^([A-ZÀ-Þ][a-zà-ÿ]+(?:\s+[A-ZÀ-Þ][a-zA-ZÀ-ÿ\-']+){1,3}?)\s+"
+        r"(?:Reveals|Explains|Says|Argues|Discusses|Talks|Warns|Slams|Analyses|Analyzes|"
+        r"Tells|Shares|Challenges|Confirms|Predicts|Claims|Believes|Uncovers|Exposes|"
+        r"Details|Describes|Debates|Comments|Reports|Breaks)\b",
+        title
+    )
+    if name_verb_leading:
+        cand = name_verb_leading.group(1).strip()
+        if cand.lower() not in ("afshin rattansi", "afshin"):
+            return cand
+
     # All patterns failed — emit structured rejection and return None.
     paths_tried.append("FALLTHROUGH_NO_MATCH")
     _emit_rejection(title, paths_tried, source)
