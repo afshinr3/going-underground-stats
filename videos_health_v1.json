@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-09T09:05:39Z",
-  "last_updated": "2026-08-09T09:05:39Z",
+  "iso": "2026-08-09T09:59:36Z",
+  "last_updated": "2026-08-09T09:59:36Z",
   "episodes": [
     {
       "guest": "Gabor Maté",
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "356.0K",
+        "x_views": "264.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -118,7 +118,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "312.5K",
+        "x_views": "313.0K",
         "ig_likes": "1.6K"
       }
     },
@@ -142,7 +142,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "14.1K",
+        "x_views": "202.8K",
         "ig_likes": "1.8K"
       }
     },
@@ -166,7 +166,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.0K",
-        "x_views": "192.7K",
+        "x_views": "172.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -190,7 +190,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "219.9K",
+        "x_views": "394.1K",
         "ig_likes": "1.1K"
       }
     },
@@ -284,10 +284,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "115",
-        "yt_views": "12",
+        "rumble_views": "122",
+        "yt_views": "15",
         "x_views": null,
-        "ig_likes": "96"
+        "ig_likes": "102"
       }
     },
     {
@@ -524,7 +524,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "4.0K",
-        "x_views": "356.0K",
+        "x_views": "264.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -548,7 +548,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "3.1K",
-        "x_views": "312.5K",
+        "x_views": "313.0K",
         "ig_likes": "1.6K"
       }
     }
@@ -572,10 +572,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "115",
-        "yt_views": "12",
+        "rumble_views": "122",
+        "yt_views": "15",
         "x_views": null,
-        "ig_likes": "96"
+        "ig_likes": "102"
       }
     },
     {
