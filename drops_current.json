@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-10T17:33:04Z",
+  "updated": "2026-08-10T17:40:46Z",
   "drops": [
     {
-      "ts": "2026-08-10T17:33:04Z",
+      "ts": "2026-08-10T17:40:46Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
       "peak": 137400,
       "peak_at": "2026-08-10T14:48:44Z",
-      "current": 44200,
-      "drop_pct": 67.8
+      "current": 87900,
+      "drop_pct": 36.0
     },
     {
-      "ts": "2026-08-10T17:33:04Z",
+      "ts": "2026-08-10T17:40:46Z",
       "show": "GU",
       "guest": "\u00dcnal",
       "platform": "X",
       "peak": 625000,
       "peak_at": "2026-08-09T21:53:54Z",
-      "current": 411500,
-      "drop_pct": 34.2
+      "current": 411700,
+      "drop_pct": 34.1
     },
     {
-      "ts": "2026-08-10T17:33:04Z",
+      "ts": "2026-08-10T17:40:46Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
@@ -32,7 +32,7 @@
       "drop_pct": 93.9
     },
     {
-      "ts": "2026-08-10T17:33:04Z",
+      "ts": "2026-08-10T17:40:46Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
@@ -42,7 +42,7 @@
       "drop_pct": 67.9
     },
     {
-      "ts": "2026-08-10T17:33:04Z",
+      "ts": "2026-08-10T17:40:46Z",
       "show": "NO",
       "guest": "Askary",
       "platform": "YT",
