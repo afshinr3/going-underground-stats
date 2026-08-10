@@ -787,8 +787,8 @@
   "GU:Barnes": {
     "ig_likes": 2900,
     "ig_likes_at": "2026-08-09T15:36:59Z",
-    "rumble_views": 13500,
-    "rumble_views_at": "2026-08-10T02:28:11Z",
+    "rumble_views": 13600,
+    "rumble_views_at": "2026-08-10T13:00:05Z",
     "x_views": 1100000,
     "x_views_at": "2026-08-04T09:24:02Z",
     "yt_views": 3100,
@@ -819,8 +819,8 @@
     "yt_views_at": "2026-08-10T11:17:05Z",
     "ig_likes": 251,
     "ig_likes_at": "2026-08-10T09:23:33Z",
-    "rumble_views": 310,
-    "rumble_views_at": "2026-08-10T12:26:26Z"
+    "rumble_views": 315,
+    "rumble_views_at": "2026-08-10T13:00:05Z"
   },
   "GU:\u00dcnal": {
     "x_views": 625000,
@@ -831,5 +831,11 @@
     "rumble_views_at": "2026-08-10T07:27:22Z",
     "yt_views": 7000,
     "yt_views_at": "2026-08-10T11:03:08Z"
+  },
+  "GU:Mearsheimer": {
+    "ig_likes": 103,
+    "ig_likes_at": "2026-08-10T13:00:05Z",
+    "rumble_views": 1400,
+    "rumble_views_at": "2026-08-10T13:00:05Z"
   }
 }
