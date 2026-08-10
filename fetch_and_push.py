@@ -1400,6 +1400,21 @@ async def update_show(show, ig_clips):
             def _keeps(row):
                 if row.get('is_upcoming'):
                     return True
+                # RUMBLE_FIRST_HONORIFIC_KEEP_V1_2026_08_10 — rows injected by the
+                # local Rumble bridge are NOT YouTube rows: a Rumble-first episode
+                # has no canonical_video_id and cannot match the YT RSS, because it
+                # is not on YouTube yet. So it fell through to the YouTube-Shorts
+                # heuristic below, which drops any title opening with an honorific
+                # ("Prof.", "Dr.", "Col.", "Amb.", "Sen.", "Gen.", "Former", "Ex-").
+                # That silently deleted every Rumble-first episode with an academic
+                # or military guest title — e.g. "Prof. John Mearsheimer Explains Why
+                # Iran War MUST END" (Rumble 2026-08-09), which the hourly bridge
+                # re-injected and this filter re-deleted within minutes, every hour.
+                # YouTube-sourced episodes are unaffected: they keep their own
+                # canonical_video_id and return True on the check below. The bridge
+                # applies its own recency + attribution gates before injecting.
+                if row.get('rumble_only_injected'):
+                    return True
                 # CANONICAL_URL_BIND_V1_2026_07_20 — never drop rows that
                 # already have any canonical_video_id (rolled-off-RSS preserve).
                 if row.get('canonical_video_id'):
