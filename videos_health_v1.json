@@ -1,7 +1,31 @@
 {
-  "iso": "2026-08-10T13:02:19Z",
-  "last_updated": "2026-08-10T13:02:19Z",
+  "iso": "2026-08-10T13:47:40Z",
+  "last_updated": "2026-08-10T13:47:40Z",
   "episodes": [
+    {
+      "guest": "John Mearsheimer",
+      "surname": "MEARSHEIMER",
+      "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
+      "date": "10 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "canonical_episode_id": "e664d5dd55a6",
+      "canonical_video_id": "TuFMmjBU3Vw",
+      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "canonical_episode_id_v2": "dd4cbedfd850395d",
+      "pub_iso": "2026-08-10T13:10:52Z",
+      "source_platform_ids": {
+        "youtube": [
+          "TuFMmjBU3Vw"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "1.4K",
+        "yt_views": "80",
+        "x_views": "97.3K",
+        "ig_likes": "103"
+      }
+    },
     {
       "guest": "Hasan Ünal",
       "surname": "ÜNAL",
@@ -21,8 +45,8 @@
       },
       "metrics": {
         "rumble_views": "2.8K",
-        "yt_views": "7.0K",
-        "x_views": "410.3K",
+        "yt_views": "7.1K",
+        "x_views": "540.9K",
         "ig_likes": "2.0K"
       }
     },
@@ -68,7 +92,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "13.5K",
+        "rumble_views": "13.6K",
         "yt_views": "3.1K",
         "x_views": "103.1K",
         "ig_likes": "2.9K"
@@ -94,7 +118,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "283.5K",
+        "x_views": "283.6K",
         "ig_likes": "10.5K"
       }
     },
@@ -118,7 +142,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.0K",
-        "x_views": "43.5K",
+        "x_views": "265.3K",
         "ig_likes": "2.3K"
       }
     },
@@ -142,7 +166,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "260.5K",
+        "x_views": "280.5K",
         "ig_likes": "1.6K"
       }
     },
@@ -356,7 +380,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "310",
+        "rumble_views": "315",
         "yt_views": "68",
         "x_views": null,
         "ig_likes": "251"
@@ -505,6 +529,30 @@
   ],
   "gu": [
     {
+      "guest": "John Mearsheimer",
+      "surname": "MEARSHEIMER",
+      "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
+      "date": "10 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "canonical_episode_id": "e664d5dd55a6",
+      "canonical_video_id": "TuFMmjBU3Vw",
+      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "canonical_episode_id_v2": "dd4cbedfd850395d",
+      "pub_iso": "2026-08-10T13:10:52Z",
+      "source_platform_ids": {
+        "youtube": [
+          "TuFMmjBU3Vw"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "1.4K",
+        "yt_views": "80",
+        "x_views": "97.3K",
+        "ig_likes": "103"
+      }
+    },
+    {
       "guest": "Hasan Ünal",
       "surname": "ÜNAL",
       "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
@@ -523,8 +571,8 @@
       },
       "metrics": {
         "rumble_views": "2.8K",
-        "yt_views": "7.0K",
-        "x_views": "410.3K",
+        "yt_views": "7.1K",
+        "x_views": "540.9K",
         "ig_likes": "2.0K"
       }
     },
@@ -570,7 +618,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "13.5K",
+        "rumble_views": "13.6K",
         "yt_views": "3.1K",
         "x_views": "103.1K",
         "ig_likes": "2.9K"
@@ -596,32 +644,8 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "1.6K",
-        "x_views": "283.5K",
+        "x_views": "283.6K",
         "ig_likes": "10.5K"
-      }
-    },
-    {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
-      "surname": "LEVY",
-      "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
-      "date": "25 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
-      "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": "IGlM3ZTHIY8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
-      "canonical_episode_id_v2": "4a0e3632a2a01b42",
-      "pub_iso": "2026-07-25T13:30:22Z",
-      "source_platform_ids": {
-        "youtube": [
-          "IGlM3ZTHIY8"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "4.0K",
-        "x_views": "43.5K",
-        "ig_likes": "2.3K"
       }
     }
   ],
@@ -644,7 +668,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "310",
+        "rumble_views": "315",
         "yt_views": "68",
         "x_views": null,
         "ig_likes": "251"
