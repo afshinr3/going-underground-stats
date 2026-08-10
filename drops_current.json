@@ -1,8 +1,18 @@
 {
-  "updated": "2026-08-10T11:53:00Z",
+  "updated": "2026-08-10T12:05:02Z",
   "drops": [
     {
-      "ts": "2026-08-10T11:53:00Z",
+      "ts": "2026-08-10T12:05:02Z",
+      "show": "GU",
+      "guest": "Mat\u00e9",
+      "platform": "X",
+      "peak": 859900,
+      "peak_at": "2026-08-10T11:36:21Z",
+      "current": 52700,
+      "drop_pct": 93.9
+    },
+    {
+      "ts": "2026-08-10T12:05:02Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
