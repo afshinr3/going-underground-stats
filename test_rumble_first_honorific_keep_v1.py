@@ -73,6 +73,28 @@ def test_guard_present_and_ordered_before_the_heuristic():
           "keep-rule is evaluated BEFORE the Shorts heuristic (ordering matters)")
 
 
+def test_BOTH_honorific_sites_are_guarded():
+    """The honorific rule is duplicated. Guarding one site leaves the bug live.
+
+    The first fix guarded only `_keeps()`; the row was still deleted by the copy
+    inside _url_bind_cleanup_and_backfill, which is the site that actually drops.
+    Any future copy of this regex must come with its own exemption.
+    """
+    src = SRC.read_text()
+    n_regex = src.count("Prof\\.?|Dr\\.?|Amb\\.?|Sen\\.?|Col\\.?|Gen\\.?|Fmr|Former|")
+    n_guard = src.count("rumble_only_injected")
+    check(n_regex >= 2, f"honorific rule still duplicated in {n_regex} sites (as shipped)")
+    check(n_guard >= n_regex,
+          f"every honorific site has an exemption (guards={n_guard} >= sites={n_regex})")
+    # the dropper specifically
+    i_fn = src.find("def _url_bind_cleanup_and_backfill")
+    seg = src[i_fn:src.find("def ", i_fn + 10)]
+    check("rumble_only_injected" in seg,
+          "the DROPPING function (_url_bind_cleanup_and_backfill) is guarded")
+    check(seg.find("rumble_only_injected") < seg.find("_shorts_prefix_re"),
+          "guard precedes the honorific drop rule inside the dropping function")
+
+
 def test_keeps_rule_semantics():
     """Reproduce _keeps()'s decision for the four cases that matter."""
     def keeps(row, has_yt_match=False):

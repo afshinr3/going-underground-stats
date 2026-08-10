@@ -388,6 +388,17 @@ def _url_bind_cleanup_and_backfill(cache, channel_id, root_dir, data_file_name):
         # UPCOMING rows are exempt; they get regenerated fresh each cycle
         if row.get("is_upcoming"):
             kept.append(row); continue
+        # RUMBLE_FIRST_HONORIFIC_KEEP_V1_2026_08_10 — SECOND site of this rule.
+        # This function owns the drop that actually removed the row; _keeps() below
+        # carries an identical honorific test, so fixing only one leaves the bug live.
+        # A Rumble-first episode has no canonical_video_id and cannot match the YT RSS
+        # (it is not on YouTube yet), so it reached "Rule 1" and was dropped for opening
+        # with an honorific — e.g. "Prof. John Mearsheimer Explains Why Iran War MUST
+        # END" (Rumble 2026-08-09). The bridge re-injected it hourly; this deleted it
+        # minutes later, every time. Exempt bridge-injected rows: they are not YouTube
+        # rows and the bridge applies its own recency + attribution gates.
+        if row.get("rumble_only_injected"):
+            kept.append(row); continue
         rvid = row.get("canonical_video_id")
         title = row.get("title") or ""
         matched_ep = None
