@@ -5,7 +5,7 @@
   "window_end": "2026-08-10",
   "window_start_mon": "2026-08-07",
   "window_end_sun": "2026-08-10",
-  "generated_at": "2026-08-11T14:36:02.862328Z",
+  "generated_at": "2026-08-11T15:42:17.380661Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,7 @@
       "pub_iso": "2026-08-09T06:30:06Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "268",
+      "ig_likes": "271",
       "canonical_video_id": "XnOfgmdAELk",
       "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
       "canonical_episode_id_v2": "127afae570dfe74d",
@@ -29,7 +29,7 @@
           "XnOfgmdAELk"
         ]
       },
-      "yt_views": "102",
+      "yt_views": "107",
       "canonical_surname_upper": "FERNANDEZ",
       "canonical_episode_id": "b5a688bb5c98",
       "x_views": "674.1K"
