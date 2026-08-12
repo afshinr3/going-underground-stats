@@ -5,7 +5,7 @@
   "window_end": "2026-08-10",
   "window_start_mon": "2026-08-07",
   "window_end_sun": "2026-08-10",
-  "generated_at": "2026-08-12T04:32:22.371896Z",
+  "generated_at": "2026-08-12T06:03:47.165307Z",
   "n": 2,
   "entries": [
     {
@@ -14,12 +14,23 @@
       "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
       "date": "10 Aug",
       "rumble_views": "2.5K",
-      "x_views": "66.4K",
+      "x_views": "66.5K",
       "ig_likes": "699",
       "show": "GU",
       "canonical_guest_full_name": "John Mearsheimer",
       "canonical_surname_upper": "MEARSHEIMER",
-      "canonical_episode_id": "e664d5dd55a6"
+      "canonical_episode_id": "e664d5dd55a6",
+      "canonical_video_id": "TuFMmjBU3Vw",
+      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "pub_iso": "2026-08-10T13:10:52Z",
+      "canonical_episode_id_v2": "dd4cbedfd850395d",
+      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "source_platform_ids": {
+        "youtube": [
+          "TuFMmjBU3Vw"
+        ]
+      },
+      "yt_views": "22.6K"
     },
     {
       "guest": "Hasan \u00dcnal",
@@ -35,7 +46,8 @@
       "ig_likes": "2.1K",
       "canonical_surname_upper": "\u00dcNAL",
       "canonical_episode_id": "c5f74b00a6fa",
-      "x_views": "549.0K"
+      "x_views": "417.1K",
+      "yt_views": "7.4K"
     }
   ],
   "source_feed": "videos.json",
