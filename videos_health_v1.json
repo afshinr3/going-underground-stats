@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-12T11:14:32Z",
-  "last_updated": "2026-08-12T11:14:32Z",
+  "iso": "2026-08-12T12:01:59Z",
+  "last_updated": "2026-08-12T12:01:59Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "23.5K",
-        "x_views": "235.8K",
+        "yt_views": "23.6K",
+        "x_views": "235.9K",
         "ig_likes": "704"
       }
     },
@@ -40,7 +40,7 @@
       "pub_iso": "2026-08-07T04:03:07Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "3.1K",
         "yt_views": "7.5K",
         "x_views": "417.5K",
         "ig_likes": "2.2K"
@@ -138,7 +138,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "265.7K",
+        "x_views": "243.8K",
         "ig_likes": "2.3K"
       }
     },
@@ -162,7 +162,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "317.4K",
+        "x_views": "282.2K",
         "ig_likes": "1.6K"
       }
     },
@@ -186,7 +186,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "594.7K",
+        "x_views": "203.3K",
         "ig_likes": "1.8K"
       }
     },
@@ -352,7 +352,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "392",
+        "rumble_views": "393",
         "yt_views": "123",
         "x_views": "879.5K",
         "ig_likes": "272"
@@ -519,8 +519,8 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "23.5K",
-        "x_views": "235.8K",
+        "yt_views": "23.6K",
+        "x_views": "235.9K",
         "ig_likes": "704"
       }
     },
@@ -538,7 +538,7 @@
       "pub_iso": "2026-08-07T04:03:07Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "3.1K",
         "yt_views": "7.5K",
         "x_views": "417.5K",
         "ig_likes": "2.2K"
@@ -636,7 +636,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "392",
+        "rumble_views": "393",
         "yt_views": "123",
         "x_views": "879.5K",
         "ig_likes": "272"
