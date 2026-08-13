@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T07:49:12Z",
-  "last_updated": "2026-08-13T07:49:12Z",
+  "iso": "2026-08-13T08:59:59Z",
+  "last_updated": "2026-08-13T08:59:59Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -20,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.6K",
         "yt_views": "25.1K",
-        "x_views": "238.8K",
-        "ig_likes": null
+        "x_views": "67.5K",
+        "ig_likes": "762"
       }
     },
     {
@@ -32,22 +32,18 @@
       "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
       "date": "7 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "link": "",
       "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": "6nISoLoPlO4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id_v2": "fb275712144dd36d",
-      "pub_iso": "2026-08-07T12:13:55Z",
-      "source_platform_ids": {
-        "youtube": [
-          "6nISoLoPlO4"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-07T08:14:53Z",
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "7.5K",
-        "x_views": "418.4K",
-        "ig_likes": null
+        "x_views": "418.5K",
+        "ig_likes": "2.2K"
       }
     },
     {
@@ -68,10 +64,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "29.9K",
+        "rumble_views": "3.3K",
+        "yt_views": "30.0K",
         "x_views": "53.5K",
-        "ig_likes": null
+        "ig_likes": "4.6K"
       }
     },
     {
@@ -92,10 +88,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "14.5K",
         "yt_views": "3.2K",
-        "x_views": "358.5K",
-        "ig_likes": null
+        "x_views": "104.0K",
+        "ig_likes": "3.0K"
       }
     },
     {
@@ -116,10 +112,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "284.7K",
-        "ig_likes": null
+        "ig_likes": "11.0K"
       }
     },
     {
@@ -140,10 +136,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "589.9K",
-        "ig_likes": null
+        "x_views": "43.7K",
+        "ig_likes": "2.3K"
       }
     },
     {
@@ -164,10 +160,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "283.1K",
-        "ig_likes": null
+        "x_views": "19.9K",
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -188,10 +184,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "203.4K",
-        "ig_likes": null
+        "x_views": "0",
+        "ig_likes": "1.8K"
       }
     },
     {
@@ -212,10 +208,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "1.0K",
-        "x_views": "193.2K",
-        "ig_likes": null
+        "x_views": "398.7K",
+        "ig_likes": "3.4K"
       }
     },
     {
@@ -238,7 +234,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "1.5K",
-        "x_views": "126.7K",
+        "x_views": "0",
         "ig_likes": null
       }
     },
@@ -260,10 +256,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.5K",
         "yt_views": "1.4K",
         "x_views": "248.5K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -284,10 +280,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.4K",
         "yt_views": "944",
         "x_views": "0",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -308,10 +304,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.9K",
         "yt_views": "15.4K",
         "x_views": "0",
-        "ig_likes": null
+        "ig_likes": "2.1K"
       }
     },
     {
@@ -334,7 +330,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "1.8K",
-        "x_views": "134.7K",
+        "x_views": "0",
         "ig_likes": null
       }
     },
@@ -502,10 +498,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.6K",
         "yt_views": "25.1K",
-        "x_views": "238.8K",
-        "ig_likes": null
+        "x_views": "67.5K",
+        "ig_likes": "762"
       }
     },
     {
@@ -514,22 +510,18 @@
       "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
       "date": "7 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "link": "",
       "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": "6nISoLoPlO4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id_v2": "fb275712144dd36d",
-      "pub_iso": "2026-08-07T12:13:55Z",
-      "source_platform_ids": {
-        "youtube": [
-          "6nISoLoPlO4"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-07T08:14:53Z",
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "7.5K",
-        "x_views": "418.4K",
-        "ig_likes": null
+        "x_views": "418.5K",
+        "ig_likes": "2.2K"
       }
     },
     {
@@ -550,10 +542,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "29.9K",
+        "rumble_views": "3.3K",
+        "yt_views": "30.0K",
         "x_views": "53.5K",
-        "ig_likes": null
+        "ig_likes": "4.6K"
       }
     },
     {
@@ -574,10 +566,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "14.5K",
         "yt_views": "3.2K",
-        "x_views": "358.5K",
-        "ig_likes": null
+        "x_views": "104.0K",
+        "ig_likes": "3.0K"
       }
     },
     {
@@ -598,10 +590,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "284.7K",
-        "ig_likes": null
+        "ig_likes": "11.0K"
       }
     }
   ],

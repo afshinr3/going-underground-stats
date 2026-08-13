@@ -5,7 +5,7 @@
   "window_end": "2026-08-10",
   "window_start_mon": "2026-08-07",
   "window_end_sun": "2026-08-10",
-  "generated_at": "2026-08-13T07:49:12.802499Z",
+  "generated_at": "2026-08-13T08:59:59.090309Z",
   "n": 2,
   "entries": [
     {
@@ -13,9 +13,9 @@
       "surname": "Mearsheimer",
       "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
       "date": "10 Aug",
-      "rumble_views": null,
-      "x_views": "238.8K",
-      "ig_likes": null,
+      "rumble_views": "2.6K",
+      "x_views": "67.5K",
+      "ig_likes": "762",
       "show": "GU",
       "canonical_guest_full_name": "John Mearsheimer",
       "canonical_surname_upper": "MEARSHEIMER",
@@ -36,27 +36,18 @@
       "guest": "Hasan \u00dcnal",
       "surname": "\u00dcnal",
       "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
-      "rumble_views": null,
-      "x_views": "418.4K",
       "date": "7 Aug",
-      "yt_views": "7.5K",
-      "ig_likes": null,
+      "rumble_views": "3.1K",
+      "show": "GU",
       "canonical_guest_full_name": "Hasan \u00dcnal",
+      "pub_iso": "2026-08-07T08:14:53Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "2.2K",
+      "yt_views": "7.5K",
       "canonical_surname_upper": "\u00dcNAL",
       "canonical_episode_id": "c5f74b00a6fa",
-      "_yt_content_type": "EPISODE",
-      "_yt_class_confidence": "HIGH",
-      "canonical_video_id": "6nISoLoPlO4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "pub_iso": "2026-08-07T12:13:55Z",
-      "canonical_episode_id_v2": "fb275712144dd36d",
-      "source_platform_ids": {
-        "youtube": [
-          "6nISoLoPlO4"
-        ]
-      },
-      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "show": "GU"
+      "x_views": "418.5K"
     }
   ],
   "source_feed": "videos.json",
