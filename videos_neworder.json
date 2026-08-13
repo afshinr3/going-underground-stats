@@ -10,7 +10,7 @@
     "pub_iso": "2026-08-09T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "273",
+    "ig_likes": "272",
     "canonical_video_id": "XnOfgmdAELk",
     "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
     "canonical_episode_id_v2": "127afae570dfe74d",
@@ -24,7 +24,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "805.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "_x_passes": 6
   },
   {
@@ -51,8 +51,8 @@
     "yt_views": "86",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "686.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "686.6K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "200.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "379.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "_x_passes": 6
   },
   {
@@ -171,12 +171,12 @@
     "rumble_views": "538",
     "x_views": "87.9K",
     "yt_views": "0",
-    "ig_likes": "847",
+    "ig_likes": "848",
     "show": "NO",
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-13T21:07:47Z",
+    "_carried_forward_iso": "2026-08-13T21:21:54Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
