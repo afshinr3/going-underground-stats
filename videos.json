@@ -21,8 +21,8 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "yt_views": "25.3K",
-    "_x_status": "MEASURED",
+    "yt_views": "25.4K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
     "_x_passes": 3
   },
@@ -42,7 +42,7 @@
     "canonical_surname_upper": "\u00dcNAL",
     "canonical_episode_id": "c5f74b00a6fa",
     "x_views": "418.8K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
     "_x_passes": 6
   },
@@ -68,8 +68,8 @@
         "PUw_r6rI5PY"
       ]
     },
-    "yt_views": "30.4K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "30.5K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
     "_x_passes": 6
   },
@@ -368,7 +368,7 @@
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_measured_iso": "2026-08-13T09:26:46Z",
     "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 7 posts",
     "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
