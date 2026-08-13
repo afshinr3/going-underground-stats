@@ -5,7 +5,7 @@
   "window_end": "2026-08-10",
   "window_start_mon": "2026-08-07",
   "window_end_sun": "2026-08-10",
-  "generated_at": "2026-08-13T08:59:59.090653Z",
+  "generated_at": "2026-08-13T09:34:15.430971Z",
   "n": 1,
   "entries": [
     {
@@ -32,7 +32,8 @@
       "yt_views": "134",
       "canonical_surname_upper": "FERNANDEZ",
       "canonical_episode_id": "b5a688bb5c98",
-      "x_views": "879.5K"
+      "x_views": "879.5K",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND"
     }
   ],
   "source_feed": "videos_neworder.json",
