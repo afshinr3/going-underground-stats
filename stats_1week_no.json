@@ -1,13 +1,42 @@
 {
   "show": "NO",
   "window": "fri_to_mon_broadcast_week",
-  "window_start": "2026-08-14",
-  "window_end": "2026-08-17",
-  "window_start_mon": "2026-08-14",
-  "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-13T23:20:03.454407Z",
-  "n": 0,
-  "entries": [],
+  "window_start": "2026-08-07",
+  "window_end": "2026-08-10",
+  "window_start_mon": "2026-08-07",
+  "window_end_sun": "2026-08-10",
+  "generated_at": "2026-08-13T23:23:38.904833Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Marta Fernandez",
+      "surname": "Fernandez",
+      "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
+      "date": "9 Aug",
+      "rumble_views": "406",
+      "show": "NO",
+      "canonical_guest_full_name": "Marta Fernandez",
+      "pub_iso": "2026-08-09T06:30:06Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "273",
+      "canonical_video_id": "XnOfgmdAELk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "canonical_episode_id_v2": "127afae570dfe74d",
+      "link": "https://www.youtube.com/watch?v=XnOfgmdAELk",
+      "source_platform_ids": {
+        "youtube": [
+          "XnOfgmdAELk"
+        ]
+      },
+      "yt_views": "139",
+      "canonical_surname_upper": "FERNANDEZ",
+      "canonical_episode_id": "b5a688bb5c98",
+      "x_views": "41.0K",
+      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_passes": 6
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
