@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T00:01:51Z",
-  "last_updated": "2026-08-13T00:01:51Z",
+  "iso": "2026-08-13T02:32:54Z",
+  "last_updated": "2026-08-13T02:32:54Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "2.6K",
-        "yt_views": "24.7K",
-        "x_views": "238.1K",
+        "yt_views": "24.8K",
+        "x_views": "238.3K",
         "ig_likes": "757"
       }
     },
@@ -32,13 +32,17 @@
       "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
       "date": "7 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
       "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-07T20:15:19Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "7.5K",
@@ -65,7 +69,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "29.6K",
+        "yt_views": "29.7K",
         "x_views": "53.4K",
         "ig_likes": "4.6K"
       }
@@ -88,7 +92,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "14.3K",
+        "rumble_views": "14.4K",
         "yt_views": "3.2K",
         "x_views": "103.9K",
         "ig_likes": "3.0K"
@@ -138,7 +142,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "265.8K",
+        "x_views": "265.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -162,7 +166,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "318.0K",
+        "x_views": "318.1K",
         "ig_likes": "1.6K"
       }
     },
@@ -210,7 +214,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.0K",
-        "x_views": "398.1K",
+        "x_views": "398.4K",
         "ig_likes": "1.1K"
       }
     },
@@ -258,7 +262,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "248.1K",
+        "x_views": "248.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -352,7 +356,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "398",
+        "rumble_views": "399",
         "yt_views": "129",
         "x_views": "879.5K",
         "ig_likes": "272"
@@ -477,26 +481,6 @@
         "x_views": "529.3K",
         "ig_likes": "462"
       }
-    },
-    {
-      "guest": "C. Uday Bhaskar",
-      "surname": "BHASKAR",
-      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
-      "date": "28 Jun",
-      "show": "NO",
-      "link": "",
-      "canonical_episode_id": "e35a16f2cfd4",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "538",
-        "yt_views": "0",
-        "x_views": "87.9K",
-        "ig_likes": "848"
-      }
     }
   ],
   "gu": [
@@ -519,8 +503,8 @@
       },
       "metrics": {
         "rumble_views": "2.6K",
-        "yt_views": "24.7K",
-        "x_views": "238.1K",
+        "yt_views": "24.8K",
+        "x_views": "238.3K",
         "ig_likes": "757"
       }
     },
@@ -530,13 +514,17 @@
       "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
       "date": "7 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
       "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-07T20:15:19Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "7.5K",
@@ -563,7 +551,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "29.6K",
+        "yt_views": "29.7K",
         "x_views": "53.4K",
         "ig_likes": "4.6K"
       }
@@ -586,7 +574,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "14.3K",
+        "rumble_views": "14.4K",
         "yt_views": "3.2K",
         "x_views": "103.9K",
         "ig_likes": "3.0K"
@@ -636,7 +624,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "398",
+        "rumble_views": "399",
         "yt_views": "129",
         "x_views": "879.5K",
         "ig_likes": "272"
