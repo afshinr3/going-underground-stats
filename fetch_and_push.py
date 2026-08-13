@@ -2170,6 +2170,115 @@ async def fetch_x_followers(handles):
 
 
 # GU_WEEKLY_STATS_V1_2026_07_04 -----------------------------------------------
+# THIS_WEEK_IS_LAST_3_EPISODES_V1_20260814 — "This week" is a COUNT, not a date range.
+#
+# Operator directive: "This week" must mean the 2 most recent Going Underground episodes
+# plus the 1 most recent New Order episode, sorted together by publication date, newest
+# first. The previous Fri->Mon window emptied itself on a date rollover — measured live at
+# 2026-08-14T00:00Z the window advanced to 14-17 Aug and reported n=0 while three perfectly
+# good episodes sat in the inventory. A card that goes blank because the calendar turned
+# over is telling the reader about the clock, not about the programme.
+#
+# Selection is by PUBLICATION DATE from the canonical inventory, never by which file a row
+# happens to sit in, and it carries the measured stats already preserved by
+# METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1 — a failed lookup neither removes an episode nor
+# replaces a measurement.
+#
+# SHORTAGE IS EXPLICIT AND NEVER SUBSTITUTED. If a show has fewer than its quota, the card
+# shows what exists and says which show is short by how many. It never fills a GU slot with
+# a New Order episode: the two programmes are not interchangeable, and quietly padding the
+# count would misreport whose reach it is.
+THIS_WEEK_QUOTA = (("GU", "videos.json", 2), ("NO", "videos_neworder.json", 1))
+
+
+def _generate_this_week():
+    import datetime as _dt3, re as _re3
+    _MONS = {"jan":1,"feb":2,"mar":3,"apr":4,"may":5,"jun":6,
+             "jul":7,"aug":8,"sep":9,"oct":10,"nov":11,"dec":12}
+    _today = _dt3.date.today()
+
+    def _pub_date(v):
+        """Publication date. pub_iso is canonical and unambiguous; the short date is a
+        fallback and its year is inferred, never assumed forward of today."""
+        iso = v.get("pub_iso")
+        if iso:
+            try:
+                return _dt3.date.fromisoformat(str(iso)[:10]), "pub_iso"
+            except Exception:
+                pass
+        m = _re3.match(r"(\d+)\s+([A-Za-z]+)", str(v.get("date") or ""))
+        if not m:
+            return None, "unparseable"
+        try:
+            d, mon = int(m.group(1)), _MONS.get(m.group(2)[:3].lower())
+            if not mon:
+                return None, "unparseable"
+            c = _dt3.date(_today.year, mon, d)
+            if c > _today:
+                c = _dt3.date(_today.year - 1, mon, d)
+            return c, "short_date"
+        except Exception:
+            return None, "unparseable"
+
+    picked, shortages, undated = [], [], []
+    for _code, _src, _want in THIS_WEEK_QUOTA:
+        try:
+            rows = json.load(open(os.path.join(ROOT, _src)))
+        except Exception as e:
+            shortages.append({"show": _code, "wanted": _want, "got": 0,
+                              "reason": f"inventory_unreadable:{type(e).__name__}"})
+            continue
+        dated = []
+        for v in rows:
+            if v.get("is_upcoming"):
+                continue          # not published yet
+            d, how = _pub_date(v)
+            if d is None:
+                undated.append({"show": _code, "surname": v.get("surname")})
+                continue
+            dated.append((d, how, v))
+        dated.sort(key=lambda t: t[0], reverse=True)
+        take = dated[:_want]
+        for d, how, v in take:
+            e = dict(v)
+            e["_this_week_pub_date"] = d.isoformat()
+            e["_this_week_date_source"] = how
+            e["_this_week_show"] = _code
+            picked.append((d, e))
+        if len(take) < _want:
+            shortages.append({"show": _code, "wanted": _want, "got": len(take),
+                              "reason": "fewer_published_episodes_than_quota"})
+
+    picked.sort(key=lambda t: t[0], reverse=True)
+    entries = [e for _d, e in picked]
+    payload = {
+        "_marker": "THIS_WEEK_IS_LAST_3_EPISODES_V1_20260814",
+        "selection": "most_recent_published_episodes_by_quota",
+        "quota": {c: w for c, _s, w in THIS_WEEK_QUOTA},
+        "sort": "publication_date_desc_across_shows",
+        "generated_at": _dt3.datetime.now(_dt3.UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "n": len(entries),
+        "n_expected": sum(w for _c, _s, w in THIS_WEEK_QUOTA),
+        "complete": not shortages,
+        "shortages": shortages,
+        "undated_excluded": undated,
+        "note": ("count-based, not a date window: a calendar rollover cannot empty this. "
+                 "Shortages are reported, never padded from the other programme."),
+        "entries": entries,
+    }
+    try:
+        _tmp = os.path.join(ROOT, "stats_this_week_v1.json.tmp")
+        with open(_tmp, "w") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+        os.replace(_tmp, os.path.join(ROOT, "stats_this_week_v1.json"))
+        _desc = ", ".join(f"{e.get('_this_week_show')}:{e.get('surname')}" for e in entries)
+        print(f"  [THIS_WEEK] {len(entries)}/{payload['n_expected']} episodes -> {_desc}"
+              + (f"  SHORT: {shortages}" if shortages else ""))
+    except Exception as e:
+        print(f"  [THIS_WEEK] write failed: {e}", file=sys.stderr)
+    return payload
+
+
 # Generate stats_1week_gu.json + stats_1week_no.json with last-completed-week
 # semantics. Runs at end of main_fetch(). Fail-open: if source unreadable,
 # still publish payload with n=0 and reason field.
@@ -2371,6 +2480,7 @@ async def main_fetch():
     # GU_WEEKLY_STATS_V1_2026_07_04 — publish per-show last-completed-week stats
     try:
         _generate_weekly_stats()
+        _generate_this_week()
     except Exception as _e_ws:
         print(f"[WEEKLY_STATS_ERR] {_e_ws}")
 

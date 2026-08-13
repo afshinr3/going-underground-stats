@@ -142,7 +142,7 @@ footer { text-align: center; padding: 30px; color: #444; font-size: 11px; }
         <h2>TOTAL REACH</h2>
         <div class="tab-bar" id="window-bar">
             <button data-days="-1" class="active">All</button>
-            <button data-days="7">1 Week (last Sat-Mon)</button>
+            <button data-days="7">This Week (latest 2 GU + 1 NO)</button>
             <button data-days="30">1 Month</button>
             <button data-days="180">6 Months</button>
         </div>
@@ -280,8 +280,20 @@ function withinWindow(dateStr, days) {
     const now = new Date();
     let d = new Date(now.getFullYear(), mn, parseInt(m[1]));
     if (d > now) d = new Date(now.getFullYear()-1, mn, parseInt(m[1]));
-    // WIN_LAST_SAT_MON_AND_SHOW_BADGE_V1_2026_07_17 — "1 Week" tab = LAST completed Sat-Sun-Mon window
-    // (operator directive 2026-07-17). JS getDay(): 0=Sun..6=Sat.
+    // (thisWeekKey is defined below, hoisted as a function declaration)
+    // THIS_WEEK_IS_LAST_3_EPISODES_V1_20260814 — "This Week" is a COUNT, not a range:
+    // the 2 most recent Going Underground episodes plus the 1 most recent New Order,
+    // sorted together by publication date. The old Fri->Mon window emptied itself on a
+    // date rollover — measured at 2026-08-14T00:00Z it advanced to 14-17 Aug and reported
+    // zero while three good episodes sat in the inventory. A card that blanks because the
+    // calendar turned over is reporting the clock, not the programme.
+    //
+    // Membership is decided by the published artefact (see thisWeekKeys), so this
+    // date-based branch is now only a fallback for when that artefact is unavailable.
+    if (days === 7 && window.__thisWeekKeys && window.__thisWeekKeys.size) {
+        return window.__thisWeekKeys.has(thisWeekKey(v));
+    }
+    // WIN_LAST_SAT_MON_AND_SHOW_BADGE_V1_2026_07_17 — legacy fallback window.
     if (days === 7) {
         const dow = now.getDay();
         let n;
@@ -300,6 +312,16 @@ function withinWindow(dateStr, days) {
 // totals: an unmeasured platform silently contributes 0 and the episode total is
 // understated with nothing on screen to say so. countOpt() keeps unknown
 // separable; a source-confirmed 0 is still a real 0.
+// THIS_WEEK_IS_LAST_3_EPISODES_V1_20260814 — identity for membership matching.
+// canonical_video_id first because it survives a title or date correction; the
+// surname|date pair is the fallback for a Rumble-first episode that has no YouTube id yet.
+function thisWeekKey(v) {
+    if (!v) return '';
+    return String(v.canonical_video_id || '').trim()
+        || String(v.canonical_episode_id_v2 || '').trim()
+        || `${String(v.surname || '').toUpperCase()}|${String(v.date || '')}`;
+}
+
 function countOpt(v) {
     if (isHealthNA(v) || isHealthERR(v) || isMissing(v)) return null;
     if (typeof v === 'number') return Number.isFinite(v) ? v : null;
@@ -392,11 +414,17 @@ async function fetchAll() {
     const folR   = await loadJSON('followers.json', {});
     const dropsR = await loadJSON('drops_current.json', { drops: [] });
     const invR   = await loadJSON('gu_content_inventory_v1.json', null);
+    // THIS_WEEK_IS_LAST_3_EPISODES_V1_20260814 — the card is driven by a published
+    // artefact, not recomputed here, so the app and the backing JSON can never disagree
+    // about which three episodes "this week" means.
+    const twR    = await loadJSON('stats_this_week_v1.json', null);
     return { gu: guEntries.map(e=>({...e,_show:'GU'})),
              no: (noR.value || []).map(e=>({...e,_show:'NO'})),
              fol: folR.value, drops: (dropsR.value && dropsR.value.drops) || [],
              _health_iso: guHealth && guHealth.iso || null,
              inventory: invR.ok ? invR.value : null,
+             thisWeek: twR.ok ? twR.value : null,
+             _thisWeek_error: twR.ok ? null : 'this-week source failed to load',
              _inventory_error: invR.ok ? null : 'inventory source failed to load',
              _errors: errors };
 }
@@ -649,6 +677,22 @@ async function renderFollowersChart() {
 async function refresh() {
     try {
         lastData = await fetchAll();
+        // THIS_WEEK: membership comes from the published artefact so the card and the
+        // backing JSON cannot disagree. If it is unavailable the tab falls back to the
+        // legacy window and says so, rather than silently showing a different set.
+        const tw = lastData.thisWeek;
+        window.__thisWeekKeys = new Set((tw && tw.entries || []).map(thisWeekKey));
+        window.__thisWeekMeta = tw || null;
+        if (lastData._thisWeek_error) {
+            lastData._errors.push('this-week selection unavailable — falling back to the legacy date window');
+        } else if (tw && tw.shortages && tw.shortages.length) {
+            for (const sh of tw.shortages) {
+                lastData._errors.push(
+                    `This Week is short: ${sh.show} has ${sh.got} of ${sh.wanted} expected ` +
+                    `episodes (${sh.reason}). Showing what exists — the other programme is ` +
+                    `never substituted.`);
+            }
+        }
         renderSourceErrors(lastData._errors, lastData._health_iso);
         renderCumulative(lastData.inventory, lastData._inventory_error);
         renderFollowers(lastData.fol);
