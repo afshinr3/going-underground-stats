@@ -637,7 +637,12 @@
     "rumble_views": 2800,
     "rumble_views_at": "2026-07-26T12:28:46Z"
   },
-  "GU:DEF": {},
+  "GU:DEF": {
+    "ig_likes": 2400,
+    "ig_likes_at": "2026-08-13T21:42:48Z",
+    "rumble_views": 2500,
+    "rumble_views_at": "2026-08-13T21:42:48Z"
+  },
   "GU:Harward": {
     "x_views": 88400,
     "x_views_at": "2026-06-27T18:07:24Z",
@@ -722,7 +727,11 @@
   },
   "GU:Israel\u2019s": {
     "x_views": 511500,
-    "x_views_at": "2026-07-24T13:33:57Z"
+    "x_views_at": "2026-07-24T13:33:57Z",
+    "ig_likes": 3400,
+    "ig_likes_at": "2026-08-13T21:42:48Z",
+    "rumble_views": 3300,
+    "rumble_views_at": "2026-08-13T21:42:48Z"
   },
   "NO:Sood": {
     "x_views": 835100,
@@ -787,8 +796,8 @@
   "GU:Barnes": {
     "ig_likes": 3000,
     "ig_likes_at": "2026-08-11T15:27:25Z",
-    "rumble_views": 14500,
-    "rumble_views_at": "2026-08-13T06:36:06Z",
+    "rumble_views": 14600,
+    "rumble_views_at": "2026-08-13T21:42:48Z",
     "x_views": 1100000,
     "x_views_at": "2026-08-04T09:24:02Z",
     "yt_views": 3200,
@@ -801,8 +810,8 @@
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 522,
     "rumble_views_at": "2026-08-13T15:07:43Z",
-    "x_views": 686600,
-    "x_views_at": "2026-08-13T21:22:08Z"
+    "x_views": 686500,
+    "x_views_at": "2026-08-13T19:01:50Z"
   },
   "GU:Mat\u00e9": {
     "x_views": 860300,
@@ -812,13 +821,13 @@
     "rumble_views": 3300,
     "rumble_views_at": "2026-08-10T06:37:31Z",
     "yt_views": 31000,
-    "yt_views_at": "2026-08-13T21:29:33Z"
+    "yt_views_at": "2026-08-13T21:42:48Z"
   },
   "NO:Fernandez": {
     "yt_views": 139,
     "yt_views_at": "2026-08-13T20:50:29Z",
-    "ig_likes": 272,
-    "ig_likes_at": "2026-08-12T03:35:45Z",
+    "ig_likes": 273,
+    "ig_likes_at": "2026-08-13T21:42:48Z",
     "rumble_views": 406,
     "rumble_views_at": "2026-08-13T15:07:43Z",
     "x_views": 879500,
@@ -837,11 +846,11 @@
   "GU:Mearsheimer": {
     "yt_views": 25500,
     "yt_views_at": "2026-08-13T19:01:50Z",
-    "ig_likes": 779,
-    "ig_likes_at": "2026-08-13T16:02:55Z",
+    "ig_likes": 784,
+    "ig_likes_at": "2026-08-13T21:42:48Z",
     "rumble_views": 2600,
     "rumble_views_at": "2026-08-12T19:34:21Z",
-    "x_views": 240300,
-    "x_views_at": "2026-08-13T21:22:08Z"
+    "x_views": 240100,
+    "x_views_at": "2026-08-13T20:05:28Z"
   }
 }
