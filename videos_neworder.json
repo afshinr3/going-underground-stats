@@ -20,7 +20,7 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "136",
+    "yt_views": "137",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "686.7K",
@@ -51,8 +51,8 @@
     "yt_views": "86",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "230.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "686.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "129.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "200.7K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -117,7 +117,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "960",
-    "x_views": "141.0K",
+    "x_views": "305.0K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -134,7 +134,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -143,7 +143,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "523",
-    "x_views": "529.4K",
+    "x_views": "756.0K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -160,7 +160,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   }
 ]
