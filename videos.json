@@ -5,7 +5,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "2.6K",
-    "x_views": "239.0K",
+    "x_views": "137.0K",
     "ig_likes": "772",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -22,8 +22,9 @@
       ]
     },
     "yt_views": "25.2K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -40,9 +41,10 @@
     "yt_views": "7.5K",
     "canonical_surname_upper": "\u00dcNAL",
     "canonical_episode_id": "c5f74b00a6fa",
-    "x_views": "418.5K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
+    "x_views": "418.6K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
+    "_x_passes": 6
   },
   {
     "guest": "Gabor Mat\u00e9",
@@ -67,8 +69,9 @@
       ]
     },
     "yt_views": "30.1K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
+    "_x_status": "MEASURED",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
+    "_x_passes": 3
   },
   {
     "guest": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -345,7 +348,7 @@
     "surname": "Ben-Menashe",
     "title": "Trump\u2019s LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
     "rumble_views": "10.8K",
-    "x_views": "174.7K",
+    "x_views": "134.7K",
     "date": "22 Jun",
     "yt_views": "1.8K",
     "ig_likes": "2.9K",
@@ -365,9 +368,10 @@
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_measured_iso": "2026-08-13T09:26:46Z",
     "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 7 posts",
-    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status",
+    "_x_passes": 6
   }
 ]
