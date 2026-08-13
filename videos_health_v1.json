@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T20:46:06Z",
-  "last_updated": "2026-08-13T20:46:06Z",
+  "iso": "2026-08-13T20:50:29Z",
+  "last_updated": "2026-08-13T20:50:29Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "25.5K",
-        "x_views": "240.2K",
+        "x_views": "240.1K",
         "ig_likes": "779"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "7.5K",
-        "x_views": "419.2K",
+        "x_views": "419.1K",
         "ig_likes": "2.2K"
       }
     },
@@ -190,10 +190,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "203.4K",
         "ig_likes": "1.8K"
       }
     },
@@ -265,7 +262,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "248.9K",
+        "x_views": "223.0K",
         "ig_likes": "1.1K"
       }
     },
@@ -289,10 +286,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "944",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "78.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -316,10 +310,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "15.4K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "205.4K",
         "ig_likes": "2.1K"
       }
     },
@@ -343,7 +334,7 @@
       "metrics": {
         "rumble_views": "10.8K",
         "yt_views": "1.8K",
-        "x_views": "44.7K",
+        "x_views": "134.8K",
         "ig_likes": "2.9K"
       }
     },
@@ -367,7 +358,7 @@
       "metrics": {
         "rumble_views": "406",
         "yt_views": "139",
-        "x_views": "805.4K",
+        "x_views": "805.5K",
         "ig_likes": "272"
       }
     },
@@ -415,7 +406,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "200.7K",
+        "x_views": "200.8K",
         "ig_likes": "586"
       }
     },
@@ -490,6 +481,26 @@
         "x_views": "756.0K",
         "ig_likes": "462"
       }
+    },
+    {
+      "guest": "C. Uday Bhaskar",
+      "surname": "BHASKAR",
+      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
+      "date": "28 Jun",
+      "show": "NO",
+      "link": "",
+      "canonical_episode_id": "e35a16f2cfd4",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "538",
+        "yt_views": "0",
+        "x_views": "87.9K",
+        "ig_likes": "848"
+      }
     }
   ],
   "gu": [
@@ -513,7 +524,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "25.5K",
-        "x_views": "240.2K",
+        "x_views": "240.1K",
         "ig_likes": "779"
       }
     },
@@ -537,7 +548,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "7.5K",
-        "x_views": "419.2K",
+        "x_views": "419.1K",
         "ig_likes": "2.2K"
       }
     },
@@ -635,7 +646,7 @@
       "metrics": {
         "rumble_views": "406",
         "yt_views": "139",
-        "x_views": "805.4K",
+        "x_views": "805.5K",
         "ig_likes": "272"
       }
     },
@@ -683,7 +694,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "200.7K",
+        "x_views": "200.8K",
         "ig_likes": "586"
       }
     },
