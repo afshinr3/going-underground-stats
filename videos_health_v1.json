@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T20:05:28Z",
-  "last_updated": "2026-08-13T20:05:28Z",
+  "iso": "2026-08-13T20:26:29Z",
+  "last_updated": "2026-08-13T20:26:29Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -190,10 +190,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "203.4K",
         "ig_likes": "1.8K"
       }
     },
@@ -289,10 +286,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "944",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "78.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -316,10 +310,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "15.4K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "205.4K",
         "ig_likes": "2.1K"
       }
     },
@@ -489,6 +480,26 @@
         "yt_views": "1.1K",
         "x_views": "756.0K",
         "ig_likes": "462"
+      }
+    },
+    {
+      "guest": "C. Uday Bhaskar",
+      "surname": "BHASKAR",
+      "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
+      "date": "28 Jun",
+      "show": "NO",
+      "link": "",
+      "canonical_episode_id": "e35a16f2cfd4",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "538",
+        "yt_views": "0",
+        "x_views": "87.9K",
+        "ig_likes": "848"
       }
     }
   ],

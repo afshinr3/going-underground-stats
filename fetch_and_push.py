@@ -2009,6 +2009,98 @@ async def update_show(show, ig_clips):
         cache = _url_bind_sort_by_pub_iso(cache)
     except Exception as _e_sort:
         print(f"  [URL_BIND_SORT] fail-open: {_e_sort}", file=sys.stderr)
+    # EPISODE_UNION_NEVER_SHRINKS_V1_20260814 — an episode that existed cannot vanish
+    # because ONE upstream fetch came back short.
+    #
+    # Measured from this repo's own commit history: since 2026-08-13T00:07 local, the cloud
+    # run has REPLACED the inventory roughly every few hours, each time losing
+    # {Ünal, Ben-Menashe, Carden, Fritz} and introducing June episodes (Olmert, Keen,
+    # Postol) plus parser debris ("Israel’s", "DEF"). The local Rumble/IG bridge then
+    # restored them on its next pass. So Ünal oscillated in and out of the published stats
+    # all day, and whether it was visible depended purely on which job committed last.
+    #
+    # The trigger is structural: the whole URL_BIND cleanup — including the 45-day age
+    # filter — sits behind `if _rss:`, so a failed or partial YouTube feed skips it and the
+    # run emits a different, older inventory instead of preserving the known one. That is
+    # the same shape as the 38-day-old rates universe: a refresh that can SHRINK coverage
+    # when its source is unavailable.
+    #
+    # The rule is therefore the same one used there: a refresh may ADD, and may UPDATE, but
+    # it may never silently DROP. Any episode present in the previous file and absent from
+    # this run is carried forward with its last known metrics and logged. Genuine removals
+    # (upcoming rows that aired, explicit dedupe) still work because they rewrite or replace
+    # the row rather than omitting it — and anything re-added is visible in the log rather
+    # than happening quietly.
+    try:
+        import datetime as _dt      # local: module scope does not carry this alias
+        _prev_path = show['data_file']
+        _prev = json.load(open(_prev_path)) if os.path.exists(_prev_path) else []
+        def _ep_key(_r):
+            return (str(_r.get('canonical_video_id') or '').strip()
+                    or str(_r.get('canonical_episode_id_v2') or '').strip()
+                    or f"{str(_r.get('surname') or '').upper()}|{str(_r.get('date') or '')}")
+        _now_keys = {_ep_key(r) for r in cache}
+        _readded = []
+        for _r in _prev:
+            if not isinstance(_r, dict):
+                continue
+            if _ep_key(_r) in _now_keys:
+                continue
+            if _r.get('is_upcoming'):
+                continue          # an upcoming row legitimately disappears once it airs
+            _r = dict(_r)
+            _r['_carried_forward_iso'] = _dt.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+            _r['_carried_forward_reason'] = (
+                'absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 '
+                'because a known episode must not disappear on one failed lookup')
+            cache.append(_r)
+            _readded.append(f"{_r.get('surname')}|{_r.get('date')}")
+        # METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1_20260814 — the same rule, one level down.
+        #
+        # GU_UNKNOWN_IS_NULL_V2 correctly stopped a failed lookup becoming a fake ZERO. But
+        # it let a failed lookup overwrite a MEASURED value with null, which destroys
+        # evidence just as effectively. Measured across today's commits, six episodes lost
+        # a real number this way — Ünal 419.0K, Carden 126.8K, Ben-Menashe 134.7K and three
+        # others — each replaced by null on a later run whose X search happened to fail.
+        #
+        # A measurement is a fact that was true when taken. A later failure to reproduce it
+        # is information about the SEARCH, not about the episode. So unknown may fill an
+        # empty field and may never replace a filled one.
+        _prev_by_key = {}
+        for _r in _prev:
+            if isinstance(_r, dict):
+                _prev_by_key[_ep_key(_r)] = _r
+        _restored = []
+        for _r in cache:
+            _old = _prev_by_key.get(_ep_key(_r))
+            if not _old:
+                continue
+            for _f in ('x_views', 'yt_views', 'rumble_views', 'ig_likes'):
+                _new_v, _old_v = _r.get(_f), _old.get(_f)
+                _new_unknown = _new_v in (None, '', '?', 'None')
+                _old_known = _old_v not in (None, '', '?', 'None', '0')
+                if _new_unknown and _old_known:
+                    _r[_f] = _old_v
+                    _r[f'_{_f}_retained_iso'] = _dt.datetime.now(_dt.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
+                    _r[f'_{_f}_retained_reason'] = (
+                        'this run could not measure it; the previous MEASURED value is kept '
+                        'under METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1')
+                    _restored.append(f"{_r.get('surname')}.{_f}={_old_v}")
+        if _restored:
+            print(f"  [METRIC_RETAIN] kept {len(_restored)} measured value(s) a failed "
+                  f"lookup would have erased: {', '.join(_restored[:8])}", file=sys.stderr)
+
+        if _readded:
+            print(f"  [EPISODE_UNION] carried forward {len(_readded)} episode(s) missing "
+                  f"from this run: {', '.join(_readded)}", file=sys.stderr)
+        else:
+            print(f"  [EPISODE_UNION] no episode lost this run ({len(cache)} total)")
+    except Exception as _e_union:
+        # Fail OPEN on the union check itself, but say so — silently shrinking is the
+        # failure this exists to prevent, so a broken guard must be visible.
+        print(f"  [EPISODE_UNION] GUARD FAILED, inventory not protected this run: "
+              f"{_e_union}", file=sys.stderr)
+
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)
     print(f"Saved {len(cache)} entries to {show['data_file']}")
