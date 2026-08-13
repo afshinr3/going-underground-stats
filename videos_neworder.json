@@ -23,8 +23,8 @@
     "yt_views": "136",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "804.6K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "804.7K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -52,8 +52,8 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "686.4K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 2
+    "_x_status": "MEASURED",
+    "_x_passes": 6
   },
   {
     "guest": "Hussein Askary",
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "200.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "379.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "_x_passes": 6
   },
   {
