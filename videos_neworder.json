@@ -20,11 +20,11 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "136",
+    "yt_views": "137",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "804.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "686.7K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -51,8 +51,8 @@
     "yt_views": "86",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "686.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "230.7K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "200.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "129.2K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,8 +107,8 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "379.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "562.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
