@@ -166,7 +166,7 @@
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
     "rumble_views": "3.6K",
-    "x_views": "0",
+    "x_views": null,
     "ig_likes": "1.8K",
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
@@ -182,7 +182,9 @@
         "WlIY7-ovBd8"
       ]
     },
-    "yt_views": "4.3K"
+    "yt_views": "4.3K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_measured_iso": "2026-08-13T09:26:46Z"
   },
   {
     "guest": "Dennis Fritz",
@@ -215,7 +217,7 @@
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
     "rumble_views": "2.7K",
-    "x_views": "0",
+    "x_views": null,
     "date": "11 Jul",
     "yt_views": "1.5K",
     "ig_likes": "522",
@@ -234,7 +236,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "show": "GU"
+    "show": "GU",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_measured_iso": "2026-08-13T09:26:46Z"
   },
   {
     "guest": "Tobias Ellwood",
@@ -266,7 +270,7 @@
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "2.4K",
-    "x_views": "0",
+    "x_views": "584.2K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
@@ -282,7 +286,10 @@
         "M_KrzyAybFI"
       ]
     },
-    "yt_views": "944"
+    "yt_views": "944",
+    "_x_status": "MEASURED",
+    "_x_measured_iso": "2026-08-13T09:26:46Z",
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 4 posts"
   },
   {
     "guest": "Max Blumenthal",
@@ -290,7 +297,7 @@
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
     "rumble_views": "3.9K",
-    "x_views": "0",
+    "x_views": "283.8K",
     "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
@@ -306,14 +313,17 @@
         "-c_7WNHYTEE"
       ]
     },
-    "yt_views": "15.4K"
+    "yt_views": "15.4K",
+    "_x_status": "MEASURED",
+    "_x_measured_iso": "2026-08-13T09:26:46Z",
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 6 posts"
   },
   {
     "guest": "Ari Ben-Menashe",
     "surname": "Ben-Menashe",
     "title": "Trump\u2019s LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
     "rumble_views": "10.8K",
-    "x_views": "0",
+    "x_views": "174.7K",
     "date": "22 Jun",
     "yt_views": "1.8K",
     "ig_likes": "2.9K",
@@ -332,6 +342,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
-    "show": "GU"
+    "show": "GU",
+    "_x_status": "MEASURED",
+    "_x_measured_iso": "2026-08-13T09:26:46Z",
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 7 posts"
   }
 ]

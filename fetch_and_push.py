@@ -1553,18 +1553,43 @@ async def update_show(show, ig_clips):
             await ctx.add_cookies(X_COOKIES)
             # X_VIEWS_CACHE_FALLBACK_V1_2026_07_04 -----------------------------
             # Read RumbleMonitor/x_2026.json (fresh ~15min per health-guard).
-            _X_CACHE_PATH = "/Users/afshin/RumbleMonitor/x_2026.json"
-            _X_CACHE_DATA = {"loaded": False, "results": {}}
+            # X_CACHE_PATH_PORTABILITY_V1_20260813 — this was a single hardcoded path
+            # under /Users/afshin. fetch_and_push.py runs in GITHUB ACTIONS, where that
+            # path cannot exist, so the cache fallback silently returned (0, 0) on every
+            # cloud run and the pipeline then treated "the fallback is unavailable"
+            # identically to "the fallback found nothing". Candidates are tried in order
+            # and the outcome is recorded, so an unavailable cache is visible instead of
+            # looking like a measurement of zero.
+            _X_CACHE_CANDIDATES = [
+                os.environ.get("X_CACHE_PATH"),
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "x_2026.json"),
+                "/Users/afshin/RumbleMonitor/x_2026.json",
+            ]
+            _X_CACHE_DATA = {"loaded": False, "results": {}, "available": None, "path": None}
             def _x_from_cache(surname, show_code):
                 """Sum view_count of tweets in the given show whose text mentions
                 the guest's surname (case-insensitive). Returns (total, count)."""
                 if not surname: return 0, 0
-                try:
-                    if not _X_CACHE_DATA["loaded"]:
-                        with open(_X_CACHE_PATH) as _f: _xc = json.load(_f)
-                        _X_CACHE_DATA["results"] = _xc.get("results") or {}
-                        _X_CACHE_DATA["loaded"] = True
-                except Exception:
+                if not _X_CACHE_DATA["loaded"]:
+                    _X_CACHE_DATA["loaded"] = True
+                    for _cand in _X_CACHE_CANDIDATES:
+                        if not _cand or not os.path.exists(_cand):
+                            continue
+                        try:
+                            with open(_cand) as _f: _xc = json.load(_f)
+                            _X_CACHE_DATA["results"] = _xc.get("results") or {}
+                            _X_CACHE_DATA["available"] = True
+                            _X_CACHE_DATA["path"] = _cand
+                            break
+                        except Exception as _e_cache:
+                            print(f"  [X_CACHE] unreadable {_cand}: {_e_cache}",
+                                  file=sys.stderr)
+                    if _X_CACHE_DATA["available"] is None:
+                        _X_CACHE_DATA["available"] = False
+                        print("  [X_CACHE] UNAVAILABLE — no candidate path exists; the "
+                              "cache fallback contributes nothing this run (this is NOT "
+                              "evidence of zero views)", file=sys.stderr)
+                if not _X_CACHE_DATA["available"]:
                     return 0, 0
                 _show_data = (_X_CACHE_DATA["results"].get(show_code) or {})
                 _tweets = _show_data.get("tweets_2026") or []
@@ -1648,11 +1673,37 @@ async def update_show(show, ig_clips):
                             v['x_views'] = format_views(total)
                             print(f"  {surname}: {count} tweets, X:{v['x_views']}")
                         else:
-                            # Never render '?'; use deterministic 0 fallback
-                            if v.get('x_views') == '?': v['x_views'] = '0'
+                            # X_UNMEASURED_IS_NOT_ZERO_V1_20260813 — ROOT CAUSE OF THE
+                            # BLUMENTHAL "X 0".
+                            #
+                            # This branch used to write the string '0' whenever every X
+                            # query came back empty. That is a claim the pipeline is not
+                            # entitled to make: finding no posts means WE FOUND NOTHING, not
+                            # that the episode reached nobody. Five of fourteen GU episodes
+                            # shipped X "0" on that basis — Blumenthal, Wilkerson, Carden,
+                            # Kucinich, Ben-Menashe — while the authoritative X cache held
+                            # 16 Blumenthal posts totalling 515,643 views. The dashboard then
+                            # summed the fabricated 0 into the episode total, so a 21K total
+                            # was presented as complete when the largest platform was simply
+                            # missing.
+                            #
+                            # GU_UNKNOWN_IS_NULL_V2_2026_08_06 had already established the
+                            # correct rule and applied it to every metric — but it ran LATER
+                            # in the file and only rewrites '?', so this line got there first
+                            # and destroyed the marker it was looking for. The V2 comment
+                            # even says it "mirrors the existing X pattern": the X path was
+                            # the TEMPLATE for the bad rule and was the one place never
+                            # migrated off it.
+                            #
+                            # Unknown now stays unknown all the way to the renderer.
+                            v['_x_status'] = 'UNMEASURED_NO_POSTS_FOUND'
+                            print(f"  {surname}: X UNMEASURED (no posts matched; "
+                                  f"NOT recorded as zero)", file=sys.stderr)
                     except Exception as e:
+                        # A failed retrieval is the clearest possible unknown. It must never
+                        # be able to reach the display as a number.
                         print(f"  {surname}: X error {e}", file=sys.stderr)
-                        if v.get('x_views') == '?': v['x_views'] = '0'  # never leave '?'
+                        v['_x_status'] = f'FETCH_FAILED:{type(e).__name__}'
 
 
             await asyncio.gather(*[process_episode(v) for v in eligible])
@@ -2024,6 +2075,24 @@ def _generate_weekly_stats():
 
 
 
+def _health_metric(value, status=None):
+    """Raw metric -> what the dashboard should render.
+
+    A measured value passes through unchanged. Anything UNKNOWN becomes the structured
+    health object ({status:'N/A', reason}) that docs/index.html already renders as a grey
+    N/A with the reason as a tooltip, and that `totalParts()` already excludes from the
+    episode total while marking it partial.
+
+    The point is that UNKNOWN must be self-describing by the time it leaves this file. A
+    bare null travels fine through JSON and then every downstream consumer — Android,
+    Tidbyt, LaMetric, a spreadsheet — is free to coerce it to 0. A dict cannot be summed
+    by accident.
+    """
+    if value is None or str(value).strip() in ("", "?", "None", "null"):
+        return {"status": "N/A", "reason": status or "UNMEASURED"}
+    return value
+
+
 def _emit_videos_health_v1():
     """VIDEOS_HEALTH_V1_EMIT_V1_2026_07_20 — first-class artefact for dashboard
     + downstream LaMetric consumers. Schema is BOTH the dashboard-consumed shape
@@ -2066,7 +2135,13 @@ def _emit_videos_health_v1():
                     'metrics': {
                         'rumble_views': _r.get('rumble_views'),
                         'yt_views':     _r.get('yt_views'),
-                        'x_views':      _r.get('x_views'),
+                        # X_UNMEASURED_IS_NOT_ZERO_V1_20260813 — an unmeasured platform is
+                        # emitted as the structured health object the dashboard already
+                        # understands ({status:'N/A', reason}), so the reason survives all
+                        # the way to the tooltip instead of being flattened to a bare null
+                        # that every consumer is free to reinterpret as zero.
+                        'x_views':      _health_metric(_r.get('x_views'),
+                                                       _r.get('_x_status')),
                         'ig_likes':     _r.get('ig_likes'),
                     },
                 })
