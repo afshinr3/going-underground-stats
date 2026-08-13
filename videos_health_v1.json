@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T10:11:38Z",
-  "last_updated": "2026-08-13T10:11:38Z",
+  "iso": "2026-08-13T10:36:34Z",
+  "last_updated": "2026-08-13T10:36:34Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -186,7 +186,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": "203.4K",
+        "x_views": "425.4K",
         "ig_likes": "1.8K"
       }
     },
@@ -234,10 +234,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "410.1K",
         "ig_likes": "522"
       }
     },

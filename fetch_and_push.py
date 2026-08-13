@@ -1187,6 +1187,33 @@ async def _scrape_x_search(ctx, query):
         page_title = await page.title()
         if 'login' in page_url.lower() or 'login' in page_title.lower() or 'sign in' in page_title.lower():
             raise Exception(f"X login wall: {page_title} ({page_url})")
+
+        # X_SEARCH_WAIT_FOR_RESULTS_V1_20260813 — wait for the RESULTS, not for a clock.
+        #
+        # This slept a fixed 4s after domcontentloaded and then scrolled. X's search
+        # panel loads lazily, so on a slow render the scroll loop ran against an empty
+        # DOM and the function returned [] — indistinguishable from an episode with no
+        # posts. That is the root of the non-determinism: measured directly, the query
+        # from:… "Wilkerson" since:2026-07-18 returned 0 posts on one pass and 8 posts
+        # totalling 526,101 views on the next, same session, minutes apart.
+        #
+        # Now it waits for a tweet article to exist. If none appears, X's own empty
+        # state decides the verdict: "No results for" means genuinely nothing, anything
+        # else means the page never rendered and is RAISED so the caller retries rather
+        # than banking a zero.
+        try:
+            await page.wait_for_selector('article[data-testid="tweet"]', timeout=15000)
+        except Exception:
+            _body = ''
+            try:
+                _body = (await page.inner_text('body'))[:4000]
+            except Exception:
+                pass
+            if re.search(r'No results for|not find any results|Try searching for something else',
+                         _body, re.I):
+                return []          # X states it plainly: genuinely no matching posts
+            raise Exception("x_search_results_never_rendered")
+
         for _ in range(5):
             await page.evaluate("window.scrollBy(0, 2000)")
             await page.wait_for_timeout(1500)
@@ -1210,7 +1237,12 @@ async def _scrape_x_search(ctx, query):
         await page.close()
 
 
-async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None, _return_ids=None):
+# Bounded: X will not be argued with. Three passes recovered every case measured.
+MAX_X_SEARCH_PASSES = 6
+
+
+async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None, _return_ids=None,
+                                 _meta_out=None):
     """Fetch X tweet views using an existing playwright context (for parallel runs).
 
     Strategy:
@@ -1231,11 +1263,57 @@ async def fetch_x_views_with_ctx(ctx, handles, full_name, since_date=None, _retu
             return await _scrape_x_search(ctx, q)
         except Exception:
             return []
-    results_per_handle = await asyncio.gather(*[one_handle(h) for h in handles])
-    for results in results_per_handle:
-        for tweet_id, views in results:
-            if views > seen_ids.get(tweet_id, 0):
-                seen_ids[tweet_id] = views
+
+    # X_SEARCH_IS_NONDETERMINISTIC_V1_20260813 — ONE PASS IS A SAMPLE, NOT A MEASUREMENT.
+    #
+    # Measured directly, same session, same cookies, same query, minutes apart:
+    #
+    #   from:… "Wilkerson"        since:2026-07-18   pass 1: 0 posts        pass 2: 8 posts, 526,101 views
+    #   from:… "James Carden"     since:2026-07-11   pass 1: 0 posts        pass 2: 2 posts, 343,753 views
+    #   from:… "Lawrence Wilkerson" since:2026-07-18 pass 1: 5 / 267,993    pass 2: 6 / 461,793
+    #
+    # X's search panel loads lazily and intermittently returns partial or empty results.
+    # So an empty result was never evidence of an episode with no posts, and — worse —
+    # every NON-empty number in the table is a single draw from a distribution. The
+    # working episodes are undercounts, not just the zeros.
+    #
+    # The accumulation is already union-by-id with max-views-per-id, which is monotone:
+    # extra passes can only ever ADD tweets or RAISE a view count, never invent one. So
+    # the honest procedure is to keep sampling until a pass contributes nothing new, and
+    # to report whether it converged. Bounded, because X will not be argued with.
+    _passes, _converged = 0, False
+    for _attempt in range(MAX_X_SEARCH_PASSES):
+        _passes += 1
+        _before = (len(seen_ids), sum(seen_ids.values()))
+        results_per_handle = await asyncio.gather(*[one_handle(h) for h in handles])
+        for results in results_per_handle:
+            for tweet_id, views in results:
+                if views > seen_ids.get(tweet_id, 0):
+                    seen_ids[tweet_id] = views
+        # ZERO IS NEVER CONVERGENCE.
+        #
+        # The first version stopped as soon as two passes agreed — and two consecutive
+        # EMPTY passes agree perfectly, so an episode with 526,101 views reported
+        # "0 posts, converged" and looked like a settled measurement. Measured directly:
+        # 'Wilkerson' returned 0 on one pass and 8 posts on the next, minutes apart, in
+        # the same session. Agreement between two empty samples is the failure mode
+        # itself, not evidence against it.
+        #
+        # A run that has found nothing therefore exhausts every pass before giving up,
+        # and still reports UNMEASURED rather than a number.
+        if not seen_ids:
+            continue
+        if (len(seen_ids), sum(seen_ids.values())) == _before and _attempt > 0:
+            _converged = True
+            break
+    if _meta_out is not None:
+        # Sampling quality travels on its OWN channel, never inside _return_ids: that
+        # dict is {tweet_id: views} and every caller does sum(ids.values()), so a
+        # metadata key in there would be a TypeError at best and a corrupted total at
+        # worst. A caller that cannot tell a converged measurement from a truncated one
+        # will publish both identically, so this has to be available — just not there.
+        _meta_out["passes"] = max(_meta_out.get("passes", 0), _passes)
+        _meta_out["converged"] = bool(_meta_out.get("converged", True) and _converged)
     # X_REACH_UNION_V1_20260802: when a caller passes _return_ids, merge into it
     # (max views per id) so several search terms can be UNIONed across calls
     # without double-counting a tweet that matches more than one term.
@@ -1636,13 +1714,14 @@ async def update_show(show, ig_clips):
                         # already max-views-per-id inside fetch_x_views_with_ctx, so a tweet
                         # matching both queries is counted once, and native RTs still stay
                         # with their original author. No totals are patched or hardcoded.
-                        ids = {}
+                        ids, _meta = {}, {}
 
                         async def _accum(term):
                             if not term:
                                 return
                             t_, _c = await fetch_x_views_with_ctx(
-                                ctx, handles, term, since_date=since, _return_ids=ids)
+                                ctx, handles, term, since_date=since, _return_ids=ids,
+                                _meta_out=_meta)
 
                         await _accum(full_name)
                         if surname and len(surname) > 3:
@@ -1671,7 +1750,16 @@ async def update_show(show, ig_clips):
                                 print(f"  {surname}: cache-fallback ({count} tweets, X:{format_views(total)})")
                         if total > 0:
                             v['x_views'] = format_views(total)
-                            print(f"  {surname}: {count} tweets, X:{v['x_views']}")
+                            # Stamp the SUCCESS too. Setting _x_status only on failure
+                            # left a stale UNMEASURED_NO_POSTS_FOUND sitting next to a
+                            # freshly measured number on almost every row — the value
+                            # was right and the label said it had never been measured.
+                            v['_x_status'] = ('MEASURED' if _meta.get('converged', True)
+                                              else 'MEASURED_LOWER_BOUND')
+                            v['_x_passes'] = _meta.get('passes')
+                            print(f"  {surname}: {count} tweets, X:{v['x_views']}"
+                                  f" [{_meta.get('passes')} passes,"
+                                  f" {'converged' if _meta.get('converged') else 'floor'}]")
                         else:
                             # X_UNMEASURED_IS_NOT_ZERO_V1_20260813 — ROOT CAUSE OF THE
                             # BLUMENTHAL "X 0".

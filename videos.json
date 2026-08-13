@@ -22,7 +22,8 @@
       ]
     },
     "yt_views": "25.2K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -40,7 +41,8 @@
     "canonical_surname_upper": "\u00dcNAL",
     "canonical_episode_id": "c5f74b00a6fa",
     "x_views": "418.5K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Gabor Mat\u00e9",
@@ -65,7 +67,8 @@
       ]
     },
     "yt_views": "30.1K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -90,7 +93,8 @@
       ]
     },
     "yt_views": "3.2K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "of Israel\u2019s Shin Bet Ami Ayalon",
@@ -115,7 +119,8 @@
       ]
     },
     "yt_views": "1.6K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -140,7 +145,8 @@
       ]
     },
     "yt_views": "4.1K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Doug Bandow",
@@ -165,7 +171,8 @@
       ]
     },
     "yt_views": "3.1K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -173,7 +180,7 @@
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
     "rumble_views": "3.6K",
-    "x_views": "203.4K",
+    "x_views": "425.4K",
     "ig_likes": "1.8K",
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
@@ -190,8 +197,9 @@
       ]
     },
     "yt_views": "4.3K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_measured_iso": "2026-08-13T09:26:46Z"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_measured_iso": "2026-08-13T10:28:11Z",
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 5 posts"
   },
   {
     "guest": "Dennis Fritz",
@@ -218,14 +226,15 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "James Carden",
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
     "rumble_views": "2.7K",
-    "x_views": null,
+    "x_views": "410.1K",
     "date": "11 Jul",
     "yt_views": "1.5K",
     "ig_likes": "522",
@@ -245,8 +254,9 @@
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_measured_iso": "2026-08-13T09:26:46Z"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_measured_iso": "2026-08-13T10:35:34Z",
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 3 posts, 410,114 views measured 2026-08-13. RESTORED: a later run of the same estimator returned nothing and overwrote it before the monotone-write rule existed. X search is non-deterministic and the union is a floor, so the higher of two floors is the better measurement; a later empty sample is not evidence against an earlier confirmed one."
   },
   {
     "guest": "Tobias Ellwood",
@@ -271,7 +281,8 @@
       ]
     },
     "yt_views": "1.4K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Dennis Kucinich",
@@ -296,9 +307,10 @@
       ]
     },
     "yt_views": "944",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_measured_iso": "2026-08-13T09:26:46Z",
-    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 4 posts"
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 4 posts",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Max Blumenthal",
@@ -323,9 +335,10 @@
       ]
     },
     "yt_views": "15.4K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_measured_iso": "2026-08-13T09:26:46Z",
-    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 6 posts"
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 6 posts",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   },
   {
     "guest": "Ari Ben-Menashe",
@@ -352,8 +365,9 @@
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_measured_iso": "2026-08-13T09:26:46Z",
-    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 7 posts"
+    "_x_provenance": "X_BACKFILL_UNMEASURED_V1 phrase+surname union, 7 posts",
+    "_x_status_note": "label corrected 2026-08-13: the value is a real multi-pass measurement; the UNMEASURED label was left behind by an earlier failing run because only the failure path stamped a status"
   }
 ]

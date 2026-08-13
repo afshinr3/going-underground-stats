@@ -92,6 +92,21 @@ async def main_async(args):
         try:
             ctx = await browser.new_context()
             await ctx.add_cookies(FP.X_COOKIES)
+            # WARM-UP. A cold context loses its first queries: in the probe that first
+            # recovered Wilkerson, one long-lived context returned 0 on its opening
+            # search and 8 posts on a later identical one. Whatever X is doing on first
+            # contact — session establishment, an interstitial, lazy bundle load — it
+            # costs the first episode in every run. One throwaway navigation pays it
+            # once instead of charging it to whichever guest happens to sort first.
+            try:
+                _w = await ctx.new_page()
+                await _w.goto("https://x.com/home", wait_until="domcontentloaded",
+                              timeout=20000)
+                await _w.wait_for_timeout(3000)
+                await _w.close()
+                print("  context warmed")
+            except Exception as _e:
+                print(f"  warm-up failed ({type(_e).__name__}) — continuing")
             for show, _p, v in targets:
                 full_name = (v.get("guest") or "").strip()
                 surname = (v.get("surname") or "").strip()
@@ -119,22 +134,37 @@ async def main_async(args):
                              None)
                 handles = [_show["x_handle"], "afshinrattansi"] if _show \
                     else args.handles.split(",")
-                ids = {}
+                ids, meta = {}, {}
                 try:
                     await FP.fetch_x_views_with_ctx(ctx, handles, full_name,
-                                                    since_date=since, _return_ids=ids)
+                                                    since_date=since, _return_ids=ids,
+                                                    _meta_out=meta)
                     if surname and len(surname) > 3:
                         await FP.fetch_x_views_with_ctx(ctx, handles, surname,
-                                                        since_date=since, _return_ids=ids)
+                                                        since_date=since, _return_ids=ids,
+                                                        _meta_out=meta)
                 except Exception as e:                                    # noqa: BLE001
                     print(f"    {surname}: FETCH_FAILED {type(e).__name__}: {str(e)[:90]}")
                     results[(show, surname)] = ("FETCH_FAILED", 0, 0)
                     continue
                 total, n = sum(ids.values()), len(ids)
-                results[(show, surname)] = ("MEASURED" if total > 0 else
-                                            "UNMEASURED_NO_POSTS_FOUND", total, n)
-                print(f"    {surname}: {n} posts, {total:,} views "
-                      f"({'measured' if total else 'still empty — stays UNKNOWN'})")
+                # A search that never converged is a truncated sample, not a
+                # measurement. It is recorded as such rather than published as a number.
+                if total > 0 and not meta.get("converged", True):
+                    # The union is monotone — extra passes only ADD tweets or RAISE a
+                    # view count — so a non-converged run undercounts and can never
+                    # overcount. That is a floor, which is a real measurement, and far
+                    # more useful than discarding three confirmed posts as "unknown".
+                    # It is labelled so nobody mistakes it for an exact count.
+                    status = "MEASURED_LOWER_BOUND"
+                elif total > 0:
+                    status = "MEASURED"
+                else:
+                    status = "UNMEASURED_NO_POSTS_FOUND"
+                results[(show, surname)] = (status, total, n)
+                print(f"    {surname}: {n} posts, {total:,} views  "
+                      f"[{meta.get('passes')} passes, "
+                      f"{'converged' if meta.get('converged') else 'NOT converged'}] -> {status}")
         finally:
             await browser.close()
 
@@ -148,12 +178,34 @@ async def main_async(args):
             if key not in results:
                 continue
             status, total, n = results[key]
-            if status == "MEASURED":
+            # MONOTONE WRITES ONLY.
+            #
+            # The union across passes is a LOWER BOUND, and X's search is unreliable
+            # enough that consecutive runs disagree about which episode it fails on:
+            # one run measured Carden at 410,114 and Wilkerson at nothing, the next
+            # measured Wilkerson at 425,391 and Carden at nothing. The first version of
+            # this script wrote every result unconditionally, so the second run ERASED
+            # a real 410,114 measurement and replaced it with unknown.
+            #
+            # A floor may only ever be raised. A new sample that is lower than what is
+            # already published carries no information — both are floors, and the higher
+            # one is the better floor. This mirrors METRIC_ATTRIB_V1 in the pipeline,
+            # which for the same reason only overwrites with a non-null, non-zero value.
+            _prev = FP.parse_count_opt(v.get("x_views")) if hasattr(FP, "parse_count_opt") else None
+            if status in ("MEASURED", "MEASURED_LOWER_BOUND") and (
+                    _prev is None or total > _prev):
                 v["x_views"] = FP.format_views(total)
-                v["_x_status"] = "MEASURED"
+                v["_x_status"] = status
                 v["_x_measured_iso"] = iso
                 v["_x_provenance"] = f"X_BACKFILL_UNMEASURED_V1 phrase+surname union, {n} posts"
                 written += 1
+            elif _prev is not None:
+                # A worse sample than what is already published. Keep the better floor
+                # and record that this attempt did not improve it.
+                v["_x_last_attempt_iso"] = iso
+                v["_x_last_attempt_status"] = status
+                print(f"    {v.get('surname')}: kept published {v.get('x_views')} "
+                      f"(this run: {total:,}) — a floor is never lowered")
             else:
                 # STILL UNKNOWN. Explicitly null, never 0 — that is the defect being fixed.
                 v["x_views"] = None
