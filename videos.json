@@ -48,7 +48,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 3,
     "show": "GU"
   },
@@ -227,7 +227,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -254,7 +254,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -357,7 +357,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   }
