@@ -20,11 +20,11 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "134",
+    "yt_views": "135",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "879.5K",
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Mohammed Baharoon",
@@ -51,7 +51,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "230.5K",
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Hussein Askary",
@@ -78,7 +78,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "129.1K",
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Peter Schiff",
@@ -105,7 +105,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "562.1K",
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "John Perkins",
@@ -130,7 +130,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Vikram Sood",
@@ -155,6 +155,6 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-13T09:34:15Z",
-  "last_updated": "2026-08-13T09:34:15Z",
+  "iso": "2026-08-13T10:11:38Z",
+  "last_updated": "2026-08-13T10:11:38Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "25.2K",
-        "x_views": "67.5K",
+        "x_views": "239.0K",
         "ig_likes": "772"
       }
     },
@@ -65,7 +65,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "30.0K",
+        "yt_views": "30.1K",
         "x_views": "53.5K",
         "ig_likes": "4.7K"
       }
@@ -138,7 +138,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "43.7K",
+        "x_views": "265.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -162,7 +162,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "19.9K",
+        "x_views": "318.5K",
         "ig_likes": "1.6K"
       }
     },
@@ -186,10 +186,7 @@
       "metrics": {
         "rumble_views": "3.6K",
         "yt_views": "4.3K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "203.4K",
         "ig_likes": "1.8K"
       }
     },
@@ -359,7 +356,7 @@
       },
       "metrics": {
         "rumble_views": "403",
-        "yt_views": "134",
+        "yt_views": "135",
         "x_views": "879.5K",
         "ig_likes": "272"
       }
@@ -506,7 +503,7 @@
       "metrics": {
         "rumble_views": "2.6K",
         "yt_views": "25.2K",
-        "x_views": "67.5K",
+        "x_views": "239.0K",
         "ig_likes": "772"
       }
     },
@@ -549,7 +546,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "30.0K",
+        "yt_views": "30.1K",
         "x_views": "53.5K",
         "ig_likes": "4.7K"
       }
@@ -623,7 +620,7 @@
       },
       "metrics": {
         "rumble_views": "403",
-        "yt_views": "134",
+        "yt_views": "135",
         "x_views": "879.5K",
         "ig_likes": "272"
       }
