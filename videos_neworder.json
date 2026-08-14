@@ -4,7 +4,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "408",
+    "rumble_views": "407",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -24,7 +24,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "41.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -52,7 +52,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "21.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "23.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "32.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -117,7 +117,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "960",
-    "x_views": "305.2K",
+    "x_views": "305.3K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -134,7 +134,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -143,7 +143,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "523",
-    "x_views": "756.1K",
+    "x_views": "756.2K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -160,7 +160,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -169,15 +169,16 @@
     "title": "NEW EPISODE OF NEW ORDER \n\nBRICS \u2018UP & RUNNING\u2019: How India Will Navigate US-Iran Conflict & Tensions With Trump\u2014C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
     "date": "28 Jun",
     "rumble_views": "538",
-    "x_views": "87.9K",
+    "x_views": "324.6K",
     "yt_views": "0",
     "ig_likes": "847",
     "show": "NO",
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-14T06:12:49Z",
+    "_carried_forward_iso": "2026-08-14T05:02:40Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "FETCH_FAILED:Exception"
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   }
 ]
