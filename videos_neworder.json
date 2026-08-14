@@ -23,8 +23,8 @@
     "yt_views": "146",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "41.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "806.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -51,8 +51,8 @@
     "yt_views": "86",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "21.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "686.7K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "23.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "200.9K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,9 +107,9 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "32.8K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "379.7K",
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "John Perkins",
@@ -176,7 +176,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-14T08:04:45Z",
+    "_carried_forward_iso": "2026-08-14T08:06:13Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 3
