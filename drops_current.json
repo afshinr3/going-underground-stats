@@ -1,18 +1,8 @@
 {
-  "updated": "2026-08-14T07:01:26Z",
+  "updated": "2026-08-14T07:43:50Z",
   "drops": [
     {
-      "ts": "2026-08-14T07:01:26Z",
-      "show": "GU",
-      "guest": "Mat\u00e9",
-      "platform": "X",
-      "peak": 860400,
-      "peak_at": "2026-08-14T03:16:21Z",
-      "current": 53800,
-      "drop_pct": 93.7
-    },
-    {
-      "ts": "2026-08-14T07:01:26Z",
+      "ts": "2026-08-14T07:43:50Z",
       "show": "NO",
       "guest": "Baharoon",
       "platform": "X",
