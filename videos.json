@@ -193,7 +193,7 @@
     "canonical_episode_id": "349527d06a1f",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -218,7 +218,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -236,7 +236,7 @@
     "canonical_episode_id": "fcee2e52ba61",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -261,7 +261,7 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -279,7 +279,7 @@
     "canonical_episode_id": "dfc6afbc2824",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -304,7 +304,7 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.3K",
     "_x_passes": 6
   },
@@ -322,7 +322,7 @@
     "canonical_episode_id": "40f99fc9eb05",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -350,7 +350,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -613,7 +613,7 @@
     "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
     "canonical_surname_upper": "ISRAEL\u2019S",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_carried_forward_iso": "2026-08-15T05:26:11Z",
+    "_carried_forward_iso": "2026-08-15T05:53:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -628,7 +628,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-15T05:26:11Z",
+    "_carried_forward_iso": "2026-08-15T05:53:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
