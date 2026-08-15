@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-15T16:32:07Z",
-  "last_updated": "2026-08-15T16:32:07Z",
+  "iso": "2026-08-15T16:44:51Z",
+  "last_updated": "2026-08-15T16:44:51Z",
   "episodes": [
     {
       "guest": "Branko Milanovic",
@@ -18,8 +18,8 @@
       "metrics": {
         "rumble_views": "1.2K",
         "yt_views": null,
-        "x_views": "17.2K",
-        "ig_likes": "117"
+        "x_views": "17.6K",
+        "ig_likes": "341"
       }
     },
     {
@@ -42,8 +42,8 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "25.9K",
-        "x_views": "68.5K",
-        "ig_likes": "796"
+        "x_views": "244.0K",
+        "ig_likes": "798"
       }
     },
     {
@@ -91,7 +91,7 @@
         "rumble_views": "3.4K",
         "yt_views": "33.5K",
         "x_views": "54.3K",
-        "ig_likes": "4.8K"
+        "ig_likes": "4.9K"
       }
     },
     {
@@ -415,7 +415,7 @@
         "rumble_views": "2.6K",
         "yt_views": null,
         "x_views": "368.2K",
-        "ig_likes": "815"
+        "ig_likes": "716"
       }
     },
     {
@@ -438,7 +438,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "0",
-        "x_views": "4.0K",
+        "x_views": "5.5K",
         "ig_likes": null
       }
     },
@@ -462,7 +462,7 @@
       "metrics": {
         "rumble_views": "414",
         "yt_views": "152",
-        "x_views": "690.4K",
+        "x_views": "810.3K",
         "ig_likes": "273"
       }
     },
@@ -485,8 +485,8 @@
       },
       "metrics": {
         "rumble_views": "526",
-        "yt_views": "87",
-        "x_views": "231.3K",
+        "yt_views": "86",
+        "x_views": "687.8K",
         "ig_likes": "230"
       }
     },
@@ -510,7 +510,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "129.5K",
+        "x_views": "201.7K",
         "ig_likes": "587"
       }
     },
@@ -587,33 +587,6 @@
       }
     },
     {
-      "guest": "Sarang Shidore",
-      "surname": "SHIDORE",
-      "title": "BRICS is a SUPER-COALITION in the Making, America's Missteps Fuel Its Rise (Sarang Shidore)",
-      "date": "13 Aug",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "canonical_episode_id": "ab8e6b132e80",
-      "canonical_video_id": "CfY37_DnbIM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "canonical_episode_id_v2": "51403e831b2b092f",
-      "pub_iso": "2026-08-13T11:12:59Z",
-      "source_platform_ids": {
-        "youtube": [
-          "CfY37_DnbIM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "?",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
-      }
-    },
-    {
       "guest": "C. Uday Bhaskar",
       "surname": "BHASKAR",
       "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
@@ -651,8 +624,8 @@
       "metrics": {
         "rumble_views": "1.2K",
         "yt_views": null,
-        "x_views": "17.2K",
-        "ig_likes": "117"
+        "x_views": "17.6K",
+        "ig_likes": "341"
       }
     },
     {
@@ -675,8 +648,8 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "25.9K",
-        "x_views": "68.5K",
-        "ig_likes": "796"
+        "x_views": "244.0K",
+        "ig_likes": "798"
       }
     },
     {
@@ -724,7 +697,7 @@
         "rumble_views": "3.4K",
         "yt_views": "33.5K",
         "x_views": "54.3K",
-        "ig_likes": "4.8K"
+        "ig_likes": "4.9K"
       }
     },
     {
@@ -773,7 +746,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "0",
-        "x_views": "4.0K",
+        "x_views": "5.5K",
         "ig_likes": null
       }
     },
@@ -797,7 +770,7 @@
       "metrics": {
         "rumble_views": "414",
         "yt_views": "152",
-        "x_views": "690.4K",
+        "x_views": "810.3K",
         "ig_likes": "273"
       }
     },
@@ -820,8 +793,8 @@
       },
       "metrics": {
         "rumble_views": "526",
-        "yt_views": "87",
-        "x_views": "231.3K",
+        "yt_views": "86",
+        "x_views": "687.8K",
         "ig_likes": "230"
       }
     },
@@ -845,7 +818,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "129.5K",
+        "x_views": "201.7K",
         "ig_likes": "587"
       }
     },

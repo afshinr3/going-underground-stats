@@ -5,17 +5,11 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-15T16:32:07.099088Z",
+  "generated_at": "2026-08-15T16:44:51.408536Z",
   "n": 0,
   "entries": [],
   "source_feed": "videos_neworder.json",
-  "rejected_count": 1,
-  "rejected_sample": [
-    {
-      "surname": "Shidore",
-      "reason": "show_mismatch",
-      "got": null
-    }
-  ],
+  "rejected_count": 0,
+  "rejected_sample": [],
   "_marker": "GU_WEEKLY_STATS_FRI_MON_V3_2026_07_17"
 }
