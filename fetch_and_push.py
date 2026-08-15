@@ -242,6 +242,37 @@ import hashlib as _hashlib_v1  # already imported at module top; safe alias
 _URL_BIND_CACHE = {}  # channel_id -> {video_id: metadata}
 
 
+
+# UNKNOWN_IS_NOT_A_VALUE_V1_20260815 — "?" reached the production UI as a rendered placeholder
+# and, worse, behaved like a measurement: a carried-forward Shidore row held x/yt/ig all "?" and
+# those cells were not treated as empty, so they could not be filled from the complete copy.
+# Unknown must be UNAVAILABLE internally, never a value and never zero.
+_BLANK_VALUES = (None, "", "?", "-", "n/a", "N/A")
+
+
+def _is_blank(v):
+    return v in _BLANK_VALUES or (isinstance(v, str) and not v.strip())
+
+
+def _norm_title_id(_r):
+    """sha1 of a NORMALISED title: unicode punctuation folded, whitespace collapsed, casefolded.
+
+    A title differing only by a curly apostrophe must not fork an episode into two identities.
+    """
+    import hashlib as _h
+    import re as _re
+    import unicodedata as _ud
+    t = (_r.get('title') or '').strip()
+    if not t:
+        return ''
+    t = _ud.normalize('NFKD', t)
+    for a, b in (('\u2019', "'"), ('\u2018', "'"), ('\u201c', '"'), ('\u201d', '"'),
+                 ('\u2013', '-'), ('\u2014', '-'), ('\u00a0', ' ')):
+        t = t.replace(a, b)
+    t = _re.sub(r'\s+', ' ', t).strip().casefold()
+    return _h.sha1(t.encode('utf-8')).hexdigest()[:12]
+
+
 def _canonical_episode_id_v2(channel_id, video_id):
     """Stable 16-hex-char SHA-256 hash of (channel_id + ':' + video_id).
     Cross-run stable; independent of title mutations or SHORT vs full URL.
@@ -2049,8 +2080,20 @@ async def update_show(show, ig_clips):
             # It also absorbs parser debris: the bad-surname row "Israel’s" carries the same
             # episode id as the Fritz episode it was mis-parsed from, so keying on it merges
             # the debris away instead of publishing it as a separate guest.
-            return (str(_r.get('canonical_episode_id') or '').strip()
-                    or str(_r.get('canonical_video_id') or '').strip()
+            # STRONGEST_IDENTITY_FIRST_V1_20260815 — canonical_episode_id is sha1(TITLE),
+            # and a title is a MUTABLE STRING. Production proof: the same New Order episode
+            # appeared twice on 13 Aug as 10f843fd1fef and ab8e6b132e80, because one copy
+            # spelled it "America’s Missteps" (U+2019) and the other "America's Missteps"
+            # (U+0027). One character, two identities, two rows on the phone.
+            #
+            # Both copies carried the SAME canonical_video_id (CfY37_DnbIM) and the same
+            # pub_iso. A platform content id is real identity; a hash of a title is a proxy for
+            # it. So the video id leads the chain now, and the title hash — which remains the
+            # fallback for Rumble-first rows that have no video id yet — is taken over a
+            # NORMALISED title so punctuation variants cannot fork an episode again.
+            return (str(_r.get('canonical_video_id') or '').strip()
+                    or _norm_title_id(_r)
+                    or str(_r.get('canonical_episode_id') or '').strip()
                     or str(_r.get('canonical_episode_id_v2') or '').strip()
                     or f"{str(_r.get('surname') or '').upper()}|{str(_r.get('date') or '')}")
         _now_keys = {_ep_key(r) for r in cache}
@@ -2113,8 +2156,12 @@ async def update_show(show, ig_clips):
             if _keep.get('_carried_forward_iso') and not _drop.get('_carried_forward_iso'):
                 _keep, _drop = _drop, _keep
             for _f, _v in _drop.items():
-                if _keep.get(_f) in (None, '', '?') and _v not in (None, '', '?'):
+                if _is_blank(_keep.get(_f)) and not _is_blank(_v):
                     _keep[_f] = _v
+            # never publish a placeholder: an unknown stays absent rather than rendering "?"
+            for _f in list(_keep):
+                if isinstance(_keep[_f], str) and _keep[_f].strip() in ('?', '-', 'n/a', 'N/A'):
+                    _keep[_f] = None
             _collapsed[_seen_idx[_k]] = _keep
         if len(_collapsed) != len(cache):
             print(f"  [EPISODE_COLLAPSE_V1] {len(cache)} rows -> {len(_collapsed)} unique "
