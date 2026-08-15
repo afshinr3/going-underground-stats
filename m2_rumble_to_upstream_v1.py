@@ -277,6 +277,71 @@ def _weekly_entries_sig(path):
         return None
 
 
+
+# BOTH_WRITERS_MUST_COLLAPSE_V1_20260815 — two processes publish these files: the cloud Action
+# (fetch_and_push) and this local bridge. The cloud collapse was fixed and proven — Milanovic
+# went to a single row through a real cycle — while Shidore stayed DOUBLED at 2 rows in
+# videos_neworder.json, both carrying the SAME canonical_video_id CfY37_DnbIM. GU shrank 19->18
+# and NO stayed at 9, which is the signature of a second writer republishing a stale pair after
+# the first writer had merged it.
+#
+# A dedupe that lives in only one of two writers is not a dedupe. The same identity rule is
+# applied here, immediately before the file is written, so whichever process publishes last
+# still publishes one row per episode.
+_BLANKS = (None, "", "?", "-", "n/a", "N/A")
+
+
+def _blankish(v):
+    return v in _BLANKS or (isinstance(v, str) and not v.strip())
+
+
+def _norm_title_id_local(title):
+    import hashlib as _h
+    import re as _re
+    import unicodedata as _ud
+    t = (title or "").strip()
+    if not t:
+        return ""
+    t = _ud.normalize("NFKD", t)
+    for a, b in (("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'), ("\u201d", '"'),
+                 ("\u2013", "-"), ("\u2014", "-"), ("\u00a0", " ")):
+        t = t.replace(a, b)
+    t = _re.sub(r"\s+", " ", t).strip().casefold()
+    return _h.sha1(t.encode("utf-8")).hexdigest()[:12]
+
+
+def _episode_key_local(r):
+    return (str(r.get("canonical_video_id") or "").strip()
+            or _norm_title_id_local(r.get("title"))
+            or str(r.get("canonical_episode_id") or "").strip()
+            or "%s|%s" % (str(r.get("surname") or "").upper(), r.get("date")))
+
+
+def _collapse_local(rows):
+    out, idx = [], {}
+    for r in rows:
+        r = dict(r)
+        k = _episode_key_local(r)
+        if k not in idx:
+            idx[k] = len(out)
+            out.append(r)
+            continue
+        keep, drop = out[idx[k]], r
+        if keep.get("_carried_forward_iso") and not drop.get("_carried_forward_iso"):
+            keep, drop = drop, keep
+        for f, v in drop.items():
+            if _blankish(keep.get(f)) and not _blankish(v):
+                keep[f] = v
+        keep.pop("_carried_forward_iso", None)
+        keep.pop("_carried_forward_reason", None)
+        out[idx[k]] = keep
+    for r in out:
+        for f in list(r):
+            if isinstance(r[f], str) and r[f].strip() in ("?", "-", "n/a", "N/A"):
+                r[f] = None
+    return out
+
+
 def _process_file(path, exact, surname, vids, posts, changes):
     """Inject rumble_views + ig_likes into existing rows AND append recent
     Rumble-only episodes missing from the feed. Returns basename if it changed
@@ -322,6 +387,7 @@ def _process_file(path, exact, surname, vids, posts, changes):
     if len(changes) > n0 and not DRY:
         videos.sort(key=_pub_iso_sort_key, reverse=True)  # surface newest (incl. injected) at top
         with open(path, "w") as fh:
+            videos = _collapse_local(videos)   # see BOTH_WRITERS_MUST_COLLAPSE_V1
             json.dump(videos, fh, indent=2)  # indent=2 + ensure_ascii=True == cloud writer
         return fname
     return fname if len(changes) > n0 else None
