@@ -11,8 +11,8 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "341",
-    "x_views": "30.5K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "x_views": "31.1K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d"
@@ -23,7 +23,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "2.9K",
-    "x_views": "244.3K",
+    "x_views": "68.6K",
     "ig_likes": "798",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -39,9 +39,9 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "26.0K",
-    "_x_passes": 2,
+    "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -69,7 +69,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -95,9 +95,9 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "33.7K",
-    "_x_passes": 3,
+    "_x_passes": 2,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -377,7 +377,7 @@
         "-c_7WNHYTEE"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "15.4K",
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -407,7 +407,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -423,7 +423,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-15T19:58:48Z",
+    "_carried_forward_iso": "2026-08-15T20:01:11Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -439,7 +439,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-15T19:58:48Z",
+    "_carried_forward_iso": "2026-08-15T20:01:11Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -455,7 +455,7 @@
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
     "canonical_episode_id": "8014ccd61339",
-    "_carried_forward_iso": "2026-08-15T19:58:48Z",
+    "_carried_forward_iso": "2026-08-15T20:01:11Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
