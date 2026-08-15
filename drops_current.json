@@ -1,18 +1,48 @@
 {
-  "updated": "2026-08-15T06:05:02Z",
+  "updated": "2026-08-15T06:34:59Z",
   "drops": [
     {
-      "ts": "2026-08-15T06:05:02Z",
+      "ts": "2026-08-15T06:34:59Z",
+      "show": "GU",
+      "guest": "Mearsheimer",
+      "platform": "X",
+      "peak": 242900,
+      "peak_at": "2026-08-15T03:33:48Z",
+      "current": 68300,
+      "drop_pct": 71.9
+    },
+    {
+      "ts": "2026-08-15T06:34:59Z",
+      "show": "GU",
+      "guest": "Mearsheimer",
+      "platform": "X",
+      "peak": 242900,
+      "peak_at": "2026-08-15T03:33:48Z",
+      "current": 68300,
+      "drop_pct": 71.9
+    },
+    {
+      "ts": "2026-08-15T06:34:59Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
-      "peak": 860600,
-      "peak_at": "2026-08-15T05:10:46Z",
+      "peak": 860500,
+      "peak_at": "2026-08-14T12:41:20Z",
+      "current": 54200,
+      "drop_pct": 93.7
+    },
+    {
+      "ts": "2026-08-15T06:34:59Z",
+      "show": "GU",
+      "guest": "Mat\u00e9",
+      "platform": "X",
+      "peak": 860500,
+      "peak_at": "2026-08-14T12:41:20Z",
       "current": 54100,
       "drop_pct": 93.7
     },
     {
-      "ts": "2026-08-15T06:05:02Z",
+      "ts": "2026-08-15T06:34:59Z",
       "show": "NO",
       "guest": "Baharoon",
       "platform": "X",
