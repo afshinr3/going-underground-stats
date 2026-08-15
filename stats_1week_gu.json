@@ -5,8 +5,8 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-15T16:08:19.653443Z",
-  "n": 2,
+  "generated_at": "2026-08-15T16:20:04.088402Z",
+  "n": 1,
   "entries": [
     {
       "guest": "Branko Milanovic",
@@ -19,27 +19,12 @@
       "pub_iso": "2026-08-14T12:22:33Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "117",
-      "x_views": "16.0K",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "ig_likes": "341",
+      "x_views": "11.7K",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_passes": 6,
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d"
-    },
-    {
-      "guest": "Branko Milanovic",
-      "surname": "Milanovic",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "14 Aug",
-      "rumble_views": "1.2K",
-      "show": "GU",
-      "canonical_guest_full_name": "Branko Milanovic",
-      "pub_iso": "2026-08-14T12:22:33Z",
-      "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "117",
-      "_carried_forward_iso": "2026-08-15T16:00:28Z",
-      "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
     }
   ],
   "source_feed": "videos.json",
