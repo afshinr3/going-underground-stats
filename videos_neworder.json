@@ -4,7 +4,7 @@
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "2.8K",
-    "x_views": null,
+    "x_views": "4.0K",
     "date": "13 Aug",
     "yt_views": "0",
     "ig_likes": null,
@@ -23,8 +23,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
-    "show": "NO"
+    "_x_status": "MEASURED",
+    "show": "NO",
+    "_x_passes": 3
   },
   {
     "guest": "Marta Fernandez",
@@ -50,9 +51,9 @@
     "yt_views": "152",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "810.0K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "690.4K",
+    "_x_status": "MEASURED",
+    "_x_passes": 2
   },
   {
     "guest": "Mohammed Baharoon",
@@ -75,12 +76,12 @@
         "F8hxaEtl9Y8"
       ]
     },
-    "yt_views": "86",
+    "yt_views": "87",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "687.7K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "231.3K",
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Hussein Askary",
@@ -106,8 +107,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "201.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "129.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -135,7 +136,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "380.9K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -144,7 +145,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "960",
-    "x_views": "308.8K",
+    "x_views": "308.6K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -161,7 +162,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -187,7 +188,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -214,7 +215,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_carried_forward_iso": "2026-08-15T16:23:38Z",
+    "_carried_forward_iso": "2026-08-15T16:31:53Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -230,7 +231,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-15T16:23:38Z",
+    "_carried_forward_iso": "2026-08-15T16:31:53Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6

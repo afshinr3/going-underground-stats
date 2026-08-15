@@ -11,8 +11,8 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "117",
-    "x_views": "11.7K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "x_views": "17.2K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d"
@@ -23,7 +23,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "2.8K",
-    "x_views": "244.0K",
+    "x_views": "68.5K",
     "ig_likes": "796",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -50,7 +50,7 @@
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": "3.2K",
-    "x_views": "421.9K",
+    "x_views": "422.0K",
     "date": "7 Aug",
     "yt_views": "7.5K",
     "ig_likes": "2.3K",
@@ -69,7 +69,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -95,9 +95,9 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "33.4K",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "33.5K",
+    "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -123,7 +123,7 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.2K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -151,7 +151,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "1.6K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -179,9 +179,9 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.1K",
-    "_x_passes": 6,
+    "_x_passes": 5,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -207,9 +207,9 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
-    "_x_passes": 6,
+    "_x_passes": 5,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -412,21 +412,6 @@
     "show": "GU"
   },
   {
-    "guest": "Branko Milanovic",
-    "surname": "Milanovic",
-    "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-    "date": "14 Aug",
-    "rumble_views": "1.2K",
-    "show": "GU",
-    "canonical_guest_full_name": "Branko Milanovic",
-    "pub_iso": "2026-08-14T12:22:33Z",
-    "rumble_only_injected": true,
-    "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "117",
-    "_carried_forward_iso": "2026-08-15T16:15:53Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
-  },
-  {
     "guest": "Ehud Olmert",
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -438,7 +423,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-15T16:15:53Z",
+    "_carried_forward_iso": "2026-08-15T16:25:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -454,7 +439,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-15T16:15:53Z",
+    "_carried_forward_iso": "2026-08-15T16:25:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -470,7 +455,7 @@
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
     "canonical_episode_id": "8014ccd61339",
-    "_carried_forward_iso": "2026-08-15T16:15:53Z",
+    "_carried_forward_iso": "2026-08-15T16:25:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }

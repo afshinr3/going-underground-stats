@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-15T16:23:53Z",
-  "last_updated": "2026-08-15T16:23:53Z",
+  "iso": "2026-08-15T16:32:07Z",
+  "last_updated": "2026-08-15T16:32:07Z",
   "episodes": [
     {
       "guest": "Branko Milanovic",
@@ -18,7 +18,7 @@
       "metrics": {
         "rumble_views": "1.2K",
         "yt_views": null,
-        "x_views": "11.7K",
+        "x_views": "17.2K",
         "ig_likes": "117"
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "25.9K",
-        "x_views": "244.0K",
+        "x_views": "68.5K",
         "ig_likes": "796"
       }
     },
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "7.5K",
-        "x_views": "421.9K",
+        "x_views": "422.0K",
         "ig_likes": "2.3K"
       }
     },
@@ -89,7 +89,7 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "33.4K",
+        "yt_views": "33.5K",
         "x_views": "54.3K",
         "ig_likes": "4.8K"
       }
@@ -359,29 +359,6 @@
       }
     },
     {
-      "guest": "Branko Milanovic",
-      "surname": "Milanovic",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "14 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-14T12:22:33Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.2K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "117"
-      }
-    },
-    {
       "guest": "Ehud Olmert",
       "surname": "OLMERT",
       "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -461,10 +438,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "0",
-        "x_views": {
-          "status": "N/A",
-          "reason": "FETCH_FAILED:Exception"
-        },
+        "x_views": "4.0K",
         "ig_likes": null
       }
     },
@@ -488,7 +462,7 @@
       "metrics": {
         "rumble_views": "414",
         "yt_views": "152",
-        "x_views": "810.0K",
+        "x_views": "690.4K",
         "ig_likes": "273"
       }
     },
@@ -511,8 +485,8 @@
       },
       "metrics": {
         "rumble_views": "526",
-        "yt_views": "86",
-        "x_views": "687.7K",
+        "yt_views": "87",
+        "x_views": "231.3K",
         "ig_likes": "230"
       }
     },
@@ -536,7 +510,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "201.7K",
+        "x_views": "129.5K",
         "ig_likes": "587"
       }
     },
@@ -584,7 +558,7 @@
       "metrics": {
         "rumble_views": "960",
         "yt_views": "1.1K",
-        "x_views": "308.8K",
+        "x_views": "308.6K",
         "ig_likes": "232"
       }
     },
@@ -677,7 +651,7 @@
       "metrics": {
         "rumble_views": "1.2K",
         "yt_views": null,
-        "x_views": "11.7K",
+        "x_views": "17.2K",
         "ig_likes": "117"
       }
     },
@@ -701,7 +675,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "25.9K",
-        "x_views": "244.0K",
+        "x_views": "68.5K",
         "ig_likes": "796"
       }
     },
@@ -725,7 +699,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "7.5K",
-        "x_views": "421.9K",
+        "x_views": "422.0K",
         "ig_likes": "2.3K"
       }
     },
@@ -748,7 +722,7 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "33.4K",
+        "yt_views": "33.5K",
         "x_views": "54.3K",
         "ig_likes": "4.8K"
       }
@@ -799,10 +773,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "0",
-        "x_views": {
-          "status": "N/A",
-          "reason": "FETCH_FAILED:Exception"
-        },
+        "x_views": "4.0K",
         "ig_likes": null
       }
     },
@@ -826,7 +797,7 @@
       "metrics": {
         "rumble_views": "414",
         "yt_views": "152",
-        "x_views": "810.0K",
+        "x_views": "690.4K",
         "ig_likes": "273"
       }
     },
@@ -849,8 +820,8 @@
       },
       "metrics": {
         "rumble_views": "526",
-        "yt_views": "86",
-        "x_views": "687.7K",
+        "yt_views": "87",
+        "x_views": "231.3K",
         "ig_likes": "230"
       }
     },
@@ -874,7 +845,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "201.7K",
+        "x_views": "129.5K",
         "ig_likes": "587"
       }
     },
