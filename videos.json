@@ -21,7 +21,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "25.9K",
     "_x_passes": 4
   },
@@ -39,7 +39,7 @@
     "canonical_episode_id": "e664d5dd55a6",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -66,7 +66,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -92,7 +92,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "32.7K",
     "_x_passes": 2
   },
@@ -110,7 +110,7 @@
     "canonical_episode_id": "0d30042528a6",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -275,7 +275,7 @@
     "canonical_episode_id": "dfc6afbc2824",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -317,7 +317,7 @@
     "canonical_episode_id": "40f99fc9eb05",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -354,7 +354,7 @@
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
     "date": "13 Jul",
     "rumble_views": null,
-    "x_views": "193.4K",
+    "x_views": "400.4K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Dennis Fritz",
@@ -362,7 +362,7 @@
     "canonical_episode_id": "b8e8126f2b5e",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -433,7 +433,7 @@
     "canonical_episode_id": "6ca7f65c75da",
     "_carried_forward_iso": "2026-08-15T03:27:37Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -602,13 +602,13 @@
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
     "date": "13 Jul",
     "rumble_views": "?",
-    "x_views": "400.4K",
+    "x_views": "400.5K",
     "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
     "canonical_surname_upper": "ISRAEL\u2019S",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_carried_forward_iso": "2026-08-15T04:22:19Z",
+    "_carried_forward_iso": "2026-08-15T04:47:06Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -623,7 +623,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-15T04:22:19Z",
+    "_carried_forward_iso": "2026-08-15T04:47:06Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
