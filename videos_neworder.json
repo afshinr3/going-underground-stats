@@ -4,7 +4,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "412",
+    "rumble_views": "409",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -24,7 +24,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "689.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -32,7 +32,7 @@
     "surname": "Baharoon",
     "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
     "date": "2 Aug",
-    "rumble_views": "524",
+    "rumble_views": "522",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
     "pub_iso": "2026-08-02T06:30:06Z",
@@ -52,8 +52,8 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "231.1K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Hussein Askary",
@@ -79,8 +79,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "129.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "129.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -94,7 +94,7 @@
     "pub_iso": "2026-07-19T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "350",
+    "ig_likes": "351",
     "canonical_video_id": "rE30fKtk4pk",
     "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
     "canonical_episode_id_v2": "e0b569e93071552f",
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "562.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -117,7 +117,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "960",
-    "x_views": "305.6K",
+    "x_views": "141.3K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -134,8 +134,8 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Vikram Sood",
@@ -143,7 +143,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "523",
-    "x_views": "756.3K",
+    "x_views": "529.5K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -160,8 +160,8 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -176,7 +176,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-15T07:05:27Z",
+    "_carried_forward_iso": "2026-08-15T07:25:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
