@@ -10,27 +10,12 @@
     "pub_iso": "2026-08-14T12:22:33Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "341",
+    "ig_likes": "117",
     "x_views": "11.7K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d"
-  },
-  {
-    "guest": "Branko Milanovic",
-    "surname": "Milanovic",
-    "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-    "date": "14 Aug",
-    "rumble_views": "1.2K",
-    "show": "GU",
-    "canonical_guest_full_name": "Branko Milanovic",
-    "pub_iso": "2026-08-14T12:22:33Z",
-    "rumble_only_injected": true,
-    "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "341",
-    "_carried_forward_iso": "2026-08-15T15:04:01Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "John Mearsheimer",
@@ -39,7 +24,7 @@
     "date": "10 Aug",
     "rumble_views": "2.8K",
     "x_views": "68.5K",
-    "ig_likes": "798",
+    "ig_likes": "796",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
@@ -54,7 +39,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "25.9K",
     "_x_passes": 3,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -84,7 +69,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -95,7 +80,7 @@
     "date": "3 Aug",
     "rumble_views": "3.4K",
     "x_views": "54.3K",
-    "ig_likes": "4.9K",
+    "ig_likes": "4.8K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
     "canonical_surname_upper": "MAT\u00c9",
@@ -110,7 +95,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "33.4K",
     "_x_passes": 3,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -138,7 +123,7 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.2K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -166,7 +151,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.6K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -194,9 +179,9 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "4.1K",
-    "_x_passes": 6,
+    "_x_passes": 5,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -206,7 +191,7 @@
     "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION\u2014Doug Bandow",
     "date": "20 Jul",
     "rumble_views": "3.0K",
-    "x_views": "284.9K",
+    "x_views": "285.0K",
     "ig_likes": "1.6K",
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
@@ -222,9 +207,9 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "3.1K",
-    "_x_passes": 6,
+    "_x_passes": 5,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -427,6 +412,21 @@
     "show": "GU"
   },
   {
+    "guest": "Branko Milanovic",
+    "surname": "Milanovic",
+    "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+    "date": "14 Aug",
+    "rumble_views": "1.2K",
+    "show": "GU",
+    "canonical_guest_full_name": "Branko Milanovic",
+    "pub_iso": "2026-08-14T12:22:33Z",
+    "rumble_only_injected": true,
+    "rumble_prov": "m2_rumble_only_v3",
+    "ig_likes": "117",
+    "_carried_forward_iso": "2026-08-15T15:34:09Z",
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+  },
+  {
     "guest": "Ehud Olmert",
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -438,7 +438,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-15T15:04:01Z",
+    "_carried_forward_iso": "2026-08-15T15:34:09Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -454,7 +454,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-15T15:04:01Z",
+    "_carried_forward_iso": "2026-08-15T15:34:09Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -465,12 +465,12 @@
     "date": "13 Jun",
     "rumble_views": "2.6K",
     "x_views": "368.2K",
-    "ig_likes": "716",
+    "ig_likes": "815",
     "show": "GU",
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
     "canonical_episode_id": "8014ccd61339",
-    "_carried_forward_iso": "2026-08-15T15:04:01Z",
+    "_carried_forward_iso": "2026-08-15T15:34:09Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
