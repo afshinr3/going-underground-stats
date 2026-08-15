@@ -2078,6 +2078,28 @@ async def update_show(show, ig_clips):
         # share an episode key, preferring the FRESH row over a carried-forward one and filling
         # each missing metric from the copies being discarded — never letting an absent value
         # overwrite a measured one, which is the METRIC_NEVER_REGRESSES rule one level up.
+        # IDENTITY_BACKFILL_BEFORE_KEYING_V1_20260815 — EPISODE_COLLAPSE_V1 merges on
+        # `_ep_key`, but a CARRIED-FORWARD row has NO canonical_episode_id, so it falls through
+        # the chain to `surname|date` while the fresh copy of the SAME episode keys on its id.
+        # Two keys, so the collapse cannot see one episode and both survive. Measured in
+        # production at 16:01Z: Milanovic id=fd9388b8783d with X 11.7K beside Milanovic
+        # id=None carried-forward with X missing; Shidore doubled the same way on 13 Aug.
+        #
+        # The id is deterministic from the TITLE and every copy of an episode carries the same
+        # title, so it is computed for any row missing one BEFORE keys are taken.
+        #
+        # This patch was written earlier today and LOST TWICE: once to a `git reset --hard`
+        # resolving a merge conflict, once to `git pull --rebase --autostash` in the local
+        # bridge, which stashes uncommitted work. Both times the pipeline was then "verified"
+        # by reading an intermediate JSON that looked clean. It is committed in the same
+        # operation as the edit now.
+        import hashlib as _hashlib_backfill
+        for _r in cache:
+            if isinstance(_r, dict) and not _r.get('canonical_episode_id'):
+                _t = (_r.get('title') or '').strip()
+                if _t:
+                    _r['canonical_episode_id'] = _hashlib_backfill.sha1(
+                        _t.encode('utf-8')).hexdigest()[:12]
         _collapsed, _seen_idx = [], {}
         for _r in cache:
             _k = _ep_key(_r)
