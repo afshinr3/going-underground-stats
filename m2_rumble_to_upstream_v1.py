@@ -171,6 +171,24 @@ def _clean_guest_surname(title):
         return "", ""
 
 
+# RUMBLE_GUEST_OVERRIDE_V1_20260815 — attribution for episodes whose TITLE omits the guest.
+# Keyed on the Rumble video id, which is stable and unique; a title substring is accepted as a
+# fallback. This is deliberately a small explicit table rather than a heuristic: guessing a
+# guest name onto a public feed is the thing the caller refuses to do, and an override is an
+# operator asserting a fact, not the parser inventing one.
+RUMBLE_GUEST_OVERRIDES = {
+    "v7e5t4c": ("Branko Milanovic", "Milanovic"),
+}
+
+
+def _guest_override(url, title):
+    u = str(url or "")
+    for vid, pair in RUMBLE_GUEST_OVERRIDES.items():
+        if vid and vid in u:
+            return pair
+    return None
+
+
 def _inject_rumble_only(videos, show_code, vids, fname, changes):
     """Append recent Rumble-only episodes (present on Rumble, absent from the
     YouTube/X-sourced feed) as well-formed rows. Fail-safe: skips any episode
@@ -200,8 +218,30 @@ def _inject_rumble_only(videos, show_code, vids, fname, changes):
         if (now - dt) > datetime.timedelta(days=RECENCY_DAYS_INJECT):
             continue  # only Rumble-FIRST (recent); do not backfill rolled-off history
         guest, surname = _clean_guest_surname(title)
+        # UNATTRIBUTABLE_RUMBLE_EPISODE_V1_20260815 — the bare `continue` below was a SILENT
+        # drop, and it is how the Branko Milanovic episode went missing from the dashboard on
+        # the day it aired. GU titles do not always name the guest: this one is
+        # "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of
+        # Capitalism" (rumble v7e5t4c, 2026-08-14), which contains no surname at all, so
+        # `_clean_guest_surname` returned "" and the episode vanished with no log line, no
+        # counter and no alert. It is Rumble-FIRST, so YouTube and X had nothing either and
+        # every downstream consumer was blind to it.
+        #
+        # Refusing to publish a guessed name on a public feed is CORRECT and is kept. What was
+        # wrong is doing it invisibly. Two changes: an operator-maintainable override supplies
+        # the attribution where the title cannot, and any remaining unattributable episode is
+        # REPORTED rather than dropped in silence.
         if not surname:
-            continue  # never inject a row we cannot attribute (public feed)
+            _ov = _guest_override(rv.get("url") or "", title)
+            if _ov:
+                guest, surname = _ov
+                print(f"  [{INJECT_MARKER}] attributed via override: {surname} <- {title[:60]}")
+            else:
+                print(f"  [{INJECT_MARKER}] UNATTRIBUTABLE Rumble-first episode, NOT injected: "
+                      f"{dt.date()} {title[:70]} url={rv.get('url')}")
+                changes.append((fname, "?UNATTRIBUTED", "EP?", None,
+                                f"{dt.day} {dt.strftime('%b')} {title[:34]}"))
+                continue
         row = {
             "guest": guest or surname,
             "surname": surname,

@@ -2036,7 +2036,21 @@ async def update_show(show, ig_clips):
         _prev_path = show['data_file']
         _prev = json.load(open(_prev_path)) if os.path.exists(_prev_path) else []
         def _ep_key(_r):
-            return (str(_r.get('canonical_video_id') or '').strip()
+            # EPISODE_KEY_MUST_BE_PRESENT_ON_EVERY_ROW_V1_20260815 — this chain started with
+            # `canonical_video_id`, which a CARRIED-FORWARD row does not carry. So the fresh
+            # copy of an episode keyed on its video id while the carried-forward copy of the
+            # SAME episode fell through to `surname|date`, the two keys never matched, and the
+            # union appended a second copy every run. Measured on the live file: 30 rows for
+            # 18 real episodes, 11 surnames duplicated, which is what put two Mearsheimer and
+            # two Maté rows on the dashboard with different view counts.
+            #
+            # `canonical_episode_id` is present on 30/30 rows and groups every duplicate pair
+            # correctly with ZERO collisions across distinct titles, so it leads the chain.
+            # It also absorbs parser debris: the bad-surname row "Israel’s" carries the same
+            # episode id as the Fritz episode it was mis-parsed from, so keying on it merges
+            # the debris away instead of publishing it as a separate guest.
+            return (str(_r.get('canonical_episode_id') or '').strip()
+                    or str(_r.get('canonical_video_id') or '').strip()
                     or str(_r.get('canonical_episode_id_v2') or '').strip()
                     or f"{str(_r.get('surname') or '').upper()}|{str(_r.get('date') or '')}")
         _now_keys = {_ep_key(r) for r in cache}
@@ -2054,7 +2068,36 @@ async def update_show(show, ig_clips):
                 'absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 '
                 'because a known episode must not disappear on one failed lookup')
             cache.append(_r)
+            _now_keys.add(_ep_key(_r))     # a carried-forward row is now PRESENT; a second
+                                           # copy of the same episode must not also be added
             _readded.append(f"{_r.get('surname')}|{_r.get('date')}")
+
+        # EPISODE_COLLAPSE_V1_20260815 — repair as well as prevent. The key fix above stops new
+        # duplicates being created, but the published file already carried 30 rows for 18
+        # episodes, and those rows arrive here through `_prev`. Collapse any remaining rows that
+        # share an episode key, preferring the FRESH row over a carried-forward one and filling
+        # each missing metric from the copies being discarded — never letting an absent value
+        # overwrite a measured one, which is the METRIC_NEVER_REGRESSES rule one level up.
+        _collapsed, _seen_idx = [], {}
+        for _r in cache:
+            _k = _ep_key(_r)
+            if _k not in _seen_idx:
+                _seen_idx[_k] = len(_collapsed)
+                _collapsed.append(_r)
+                continue
+            _keep = _collapsed[_seen_idx[_k]]
+            _drop = _r
+            # prefer the row that is NOT carried forward; if both or neither, keep the first
+            if _keep.get('_carried_forward_iso') and not _drop.get('_carried_forward_iso'):
+                _keep, _drop = _drop, _keep
+            for _f, _v in _drop.items():
+                if _keep.get(_f) in (None, '', '?') and _v not in (None, '', '?'):
+                    _keep[_f] = _v
+            _collapsed[_seen_idx[_k]] = _keep
+        if len(_collapsed) != len(cache):
+            print(f"  [EPISODE_COLLAPSE_V1] {len(cache)} rows -> {len(_collapsed)} unique "
+                  f"episodes for {os.path.basename(show['data_file'])}")
+        cache = _collapsed
         # METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1_20260814 — the same rule, one level down.
         #
         # GU_UNKNOWN_IS_NULL_V2 correctly stopped a failed lookup becoming a fake ZERO. But
