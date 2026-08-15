@@ -356,7 +356,7 @@
     "date": "13 Jul",
     "rumble_views": "3.3K",
     "x_views": "193.4K",
-    "ig_likes": "3.4K",
+    "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
@@ -365,6 +365,21 @@
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
+  },
+  {
+    "guest": "CMSGT. Dennis Fritz: Israel\u2019s ",
+    "surname": "Israel\u2019s",
+    "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
+    "date": "13 Jul",
+    "rumble_views": "3.3K",
+    "x_views": "400.5K",
+    "ig_likes": "3.4K",
+    "show": "GU",
+    "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
+    "canonical_surname_upper": "ISRAEL\u2019S",
+    "canonical_episode_id": "b8e8126f2b5e",
+    "_carried_forward_iso": "2026-08-15T05:57:28Z",
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "James Carden",
@@ -522,6 +537,21 @@
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
+    "guest": "\u2018The US LACKS THE POWER TO DEF",
+    "surname": "DEF",
+    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+    "date": "27 Jun",
+    "rumble_views": "2.5K",
+    "x_views": "?",
+    "ig_likes": "2.2K",
+    "show": "GU",
+    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
+    "canonical_surname_upper": "DEF",
+    "canonical_episode_id": "95d519473319",
+    "_carried_forward_iso": "2026-08-15T05:57:28Z",
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+  },
+  {
     "guest": "Ari Ben-Menashe",
     "surname": "Ben-Menashe",
     "title": "Trump\u2019s LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
@@ -596,35 +626,5 @@
     "_carried_forward_iso": "2026-08-15T05:08:20Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
-  },
-  {
-    "guest": "CMSGT. Dennis Fritz: Israel\u2019s ",
-    "surname": "Israel\u2019s",
-    "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
-    "date": "13 Jul",
-    "rumble_views": "3.3K",
-    "x_views": "400.5K",
-    "ig_likes": "3.4K",
-    "show": "GU",
-    "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
-    "canonical_surname_upper": "ISRAEL\u2019S",
-    "canonical_episode_id": "b8e8126f2b5e",
-    "_carried_forward_iso": "2026-08-15T05:57:28Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
-  },
-  {
-    "guest": "\u2018The US LACKS THE POWER TO DEF",
-    "surname": "DEF",
-    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-    "date": "27 Jun",
-    "rumble_views": "2.5K",
-    "x_views": "?",
-    "ig_likes": "2.2K",
-    "show": "GU",
-    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
-    "canonical_surname_upper": "DEF",
-    "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-15T05:57:28Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
