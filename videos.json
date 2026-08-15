@@ -10,9 +10,9 @@
     "pub_iso": "2026-08-14T12:22:33Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "411",
-    "x_views": "32.9K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "ig_likes": "341",
+    "x_views": "34.9K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d"
@@ -39,7 +39,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "26.0K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -69,8 +69,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 2,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "show": "GU"
   },
   {
@@ -95,7 +95,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "33.8K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -106,7 +106,7 @@
     "surname": "Barnes",
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
-    "rumble_views": "14.9K",
+    "rumble_views": "14.8K",
     "x_views": "104.6K",
     "ig_likes": "3.0K",
     "show": "GU",
@@ -136,7 +136,7 @@
     "date": "27 Jul",
     "rumble_views": "3.2K",
     "x_views": "285.6K",
-    "ig_likes": "11.4K",
+    "ig_likes": "11.3K",
     "show": "GU",
     "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
     "canonical_surname_upper": "AYALON",
@@ -163,7 +163,7 @@
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
     "rumble_views": "2.8K",
-    "x_views": "266.4K",
+    "x_views": "43.7K",
     "ig_likes": "2.3K",
     "show": "GU",
     "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
@@ -179,7 +179,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "4.1K",
     "_x_passes": 6,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
@@ -207,9 +207,9 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "3.1K",
-    "_x_passes": 6,
+    "_x_passes": 3,
     "_carried_forward_iso": "2026-08-15T11:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
@@ -423,7 +423,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-15T21:24:55Z",
+    "_carried_forward_iso": "2026-08-15T21:35:57Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -439,7 +439,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-15T21:24:55Z",
+    "_carried_forward_iso": "2026-08-15T21:35:57Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
@@ -450,12 +450,12 @@
     "date": "13 Jun",
     "rumble_views": "2.6K",
     "x_views": "368.2K",
-    "ig_likes": "625",
+    "ig_likes": "716",
     "show": "GU",
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
     "canonical_episode_id": "8014ccd61339",
-    "_carried_forward_iso": "2026-08-15T21:24:55Z",
+    "_carried_forward_iso": "2026-08-15T21:35:57Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
