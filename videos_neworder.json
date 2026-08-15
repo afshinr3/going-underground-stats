@@ -4,7 +4,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "409",
+    "rumble_views": "410",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -20,12 +20,12 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "151",
+    "yt_views": "150",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "689.6K",
     "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 2
+    "_x_passes": 6
   },
   {
     "guest": "Mohammed Baharoon",
@@ -53,7 +53,7 @@
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "231.1K",
     "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "_x_passes": 3
   },
   {
     "guest": "Hussein Askary",
@@ -94,7 +94,7 @@
     "pub_iso": "2026-07-19T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "351",
+    "ig_likes": "350",
     "canonical_video_id": "rE30fKtk4pk",
     "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
     "canonical_episode_id_v2": "e0b569e93071552f",
@@ -134,7 +134,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -160,8 +160,8 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -176,9 +176,9 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-15T04:49:11Z",
+    "_carried_forward_iso": "2026-08-15T03:33:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   }
 ]
