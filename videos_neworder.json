@@ -3,7 +3,7 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": null,
+    "rumble_views": "2.8K",
     "x_views": null,
     "date": "13 Aug",
     "yt_views": "0",
@@ -25,6 +25,33 @@
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
     "_x_status": "FETCH_FAILED:Exception",
     "show": "NO"
+  },
+  {
+    "guest": "Sarang Shidore",
+    "surname": "Shidore",
+    "title": "BRICS is a SUPER-COALITION in the Making, America's Missteps Fuel Its Rise (Sarang Shidore)",
+    "rumble_views": "2.8K",
+    "x_views": "?",
+    "date": "13 Aug",
+    "yt_views": "?",
+    "ig_likes": "?",
+    "canonical_guest_full_name": "Sarang Shidore",
+    "canonical_surname_upper": "SHIDORE",
+    "canonical_episode_id": "ab8e6b132e80",
+    "_yt_content_type": "EPISODE",
+    "_yt_class_confidence": "HIGH",
+    "canonical_video_id": "CfY37_DnbIM",
+    "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+    "pub_iso": "2026-08-13T11:12:59Z",
+    "canonical_episode_id_v2": "51403e831b2b092f",
+    "source_platform_ids": {
+      "youtube": [
+        "CfY37_DnbIM"
+      ]
+    },
+    "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+    "_carried_forward_iso": "2026-08-15T14:16:58Z",
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "Marta Fernandez",
@@ -189,33 +216,6 @@
     },
     "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
-  },
-  {
-    "guest": "Sarang Shidore",
-    "surname": "Shidore",
-    "title": "BRICS is a SUPER-COALITION in the Making, America's Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "?",
-    "x_views": "?",
-    "date": "13 Aug",
-    "yt_views": "?",
-    "ig_likes": "?",
-    "canonical_guest_full_name": "Sarang Shidore",
-    "canonical_surname_upper": "SHIDORE",
-    "canonical_episode_id": "ab8e6b132e80",
-    "_yt_content_type": "EPISODE",
-    "_yt_class_confidence": "HIGH",
-    "canonical_video_id": "CfY37_DnbIM",
-    "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "pub_iso": "2026-08-13T11:12:59Z",
-    "canonical_episode_id_v2": "51403e831b2b092f",
-    "source_platform_ids": {
-      "youtube": [
-        "CfY37_DnbIM"
-      ]
-    },
-    "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_carried_forward_iso": "2026-08-15T14:16:58Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "C. Uday Bhaskar",
