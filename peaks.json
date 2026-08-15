@@ -810,8 +810,8 @@
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 524,
     "rumble_views_at": "2026-08-15T08:49:01Z",
-    "x_views": 687600,
-    "x_views_at": "2026-08-15T10:43:23Z"
+    "x_views": 687700,
+    "x_views_at": "2026-08-15T12:36:53Z"
   },
   "GU:Mat\u00e9": {
     "x_views": 860500,
@@ -845,12 +845,20 @@
   },
   "GU:Mearsheimer": {
     "yt_views": 26000,
-    "yt_views_at": "2026-08-15T12:29:18Z",
+    "yt_views_at": "2026-08-15T12:36:53Z",
     "ig_likes": 796,
     "ig_likes_at": "2026-08-15T09:35:51Z",
     "rumble_views": 2800,
     "rumble_views_at": "2026-08-14T16:44:30Z",
     "x_views": 243500,
     "x_views_at": "2026-08-15T10:43:23Z"
+  },
+  "GU:Milanovic": {
+    "ig_likes": 117,
+    "ig_likes_at": "2026-08-15T12:13:36Z",
+    "rumble_views": 1000,
+    "rumble_views_at": "2026-08-15T12:13:36Z",
+    "x_views": 8900,
+    "x_views_at": "2026-08-15T12:36:53Z"
   }
 }
