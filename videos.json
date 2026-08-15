@@ -4,9 +4,9 @@
     "surname": "Mearsheimer",
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
-    "rumble_views": "2.8K",
+    "rumble_views": null,
     "x_views": "91.6K",
-    "ig_likes": "794",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
@@ -28,27 +28,38 @@
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+    "rumble_views": null,
+    "x_views": "421.0K",
     "date": "7 Aug",
-    "rumble_views": "3.1K",
-    "show": "GU",
-    "canonical_guest_full_name": "Hasan \u00dcnal",
-    "pub_iso": "2026-08-07T00:55:55Z",
-    "rumble_only_injected": true,
-    "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "2.3K",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "7.5K",
+    "ig_likes": null,
+    "canonical_guest_full_name": "Hasan \u00dcnal",
     "canonical_surname_upper": "\u00dcNAL",
-    "canonical_episode_id": "c5f74b00a6fa"
+    "canonical_episode_id": "c5f74b00a6fa",
+    "_yt_content_type": "EPISODE",
+    "_yt_class_confidence": "HIGH",
+    "canonical_video_id": "6nISoLoPlO4",
+    "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+    "pub_iso": "2026-08-07T12:13:55Z",
+    "canonical_episode_id_v2": "fb275712144dd36d",
+    "source_platform_ids": {
+      "youtube": [
+        "6nISoLoPlO4"
+      ]
+    },
+    "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
+    "show": "GU"
   },
   {
     "guest": "Gabor Mat\u00e9",
     "surname": "Mat\u00e9",
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
-    "rumble_views": "3.4K",
+    "rumble_views": null,
     "x_views": "860.5K",
-    "ig_likes": "4.8K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
     "canonical_surname_upper": "MAT\u00c9",
@@ -71,9 +82,9 @@
     "surname": "Barnes",
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
-    "rumble_views": "14.8K",
+    "rumble_views": null,
     "x_views": "360.0K",
-    "ig_likes": "3.0K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Trump\u2019s Ex-Lawyer Robert Barnes",
     "canonical_surname_upper": "BARNES",
@@ -96,9 +107,9 @@
     "surname": "Ayalon",
     "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
     "date": "27 Jul",
-    "rumble_views": "3.2K",
+    "rumble_views": null,
     "x_views": "55.2K",
-    "ig_likes": "11.2K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
     "canonical_surname_upper": "AYALON",
@@ -121,9 +132,9 @@
     "surname": "Levy",
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
-    "rumble_views": "2.8K",
+    "rumble_views": null,
     "x_views": "591.2K",
-    "ig_likes": "2.3K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
     "canonical_surname_upper": "LEVY",
@@ -146,9 +157,9 @@
     "surname": "Bandow",
     "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION\u2014Doug Bandow",
     "date": "20 Jul",
-    "rumble_views": "3.0K",
+    "rumble_views": null,
     "x_views": "268.0K",
-    "ig_likes": "1.6K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
     "canonical_surname_upper": "BANDOW",
@@ -171,9 +182,9 @@
     "surname": "Wilkerson",
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
-    "rumble_views": "3.6K",
+    "rumble_views": null,
     "x_views": null,
-    "ig_likes": "1.8K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
@@ -195,11 +206,11 @@
     "guest": "Dennis Fritz",
     "surname": "Fritz",
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
-    "rumble_views": "3.3K",
-    "x_views": "400.4K",
+    "rumble_views": null,
+    "x_views": "193.4K",
     "date": "13 Jul",
     "yt_views": "1.0K",
-    "ig_likes": "3.4K",
+    "ig_likes": null,
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
     "canonical_episode_id": "b8e8126f2b5e",
@@ -216,14 +227,15 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "James Carden",
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "126.8K",
     "date": "11 Jul",
     "yt_views": "1.5K",
     "ig_likes": null,
@@ -242,7 +254,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "show": "GU"
   },
   {
@@ -250,9 +263,9 @@
     "surname": "Ellwood",
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
-    "rumble_views": "2.5K",
-    "x_views": "249.9K",
-    "ig_likes": "1.1K",
+    "rumble_views": null,
+    "x_views": "223.9K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
@@ -267,7 +280,8 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "yt_views": "1.4K"
   },
   {
@@ -275,9 +289,9 @@
     "surname": "Kucinich",
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
-    "rumble_views": "2.4K",
-    "x_views": null,
-    "ig_likes": "1.1K",
+    "rumble_views": null,
+    "x_views": "78.3K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
@@ -292,7 +306,8 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
+    "_x_passes": 4,
     "yt_views": "944"
   },
   {
@@ -300,9 +315,9 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "3.9K",
-    "x_views": null,
-    "ig_likes": "2.1K",
+    "rumble_views": null,
+    "x_views": "196.6K",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
@@ -317,7 +332,8 @@
         "-c_7WNHYTEE"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "yt_views": "15.4K"
   },
   {
@@ -325,7 +341,7 @@
     "surname": "Ben-Menashe",
     "title": "Trump\u2019s LIFE is in DANGER from Israel After Deal with Iran\u2014Ex Israeli Intel Officer Ari Ben-Menashe",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "134.9K",
     "date": "22 Jun",
     "yt_views": "1.8K",
     "ig_likes": null,
@@ -344,7 +360,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=iupt8YyJYn4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
+    "_x_passes": 2,
     "show": "GU"
   },
   {
@@ -359,7 +376,7 @@
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -374,7 +391,7 @@
     "canonical_guest_full_name": "Doug Bandow",
     "canonical_surname_upper": "BANDOW",
     "canonical_episode_id": "dfc6afbc2824",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -389,7 +406,7 @@
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
     "canonical_episode_id": "40f99fc9eb05",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -404,7 +421,7 @@
     "canonical_guest_full_name": "Gabor Mat\u00e9",
     "canonical_surname_upper": "MAT\u00c9",
     "canonical_episode_id": "0d30042528a6",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -419,7 +436,7 @@
     "canonical_guest_full_name": "CMSGT. Dennis Fritz: Israel\u2019s ",
     "canonical_surname_upper": "ISRAEL\u2019S",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -434,7 +451,7 @@
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -449,7 +466,7 @@
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -464,7 +481,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -479,7 +496,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -494,7 +511,7 @@
     "canonical_guest_full_name": "Trump\u2019s Ex-Lawyer Robert Barnes",
     "canonical_surname_upper": "BARNES",
     "canonical_episode_id": "c133da20813e",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -509,7 +526,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -524,7 +541,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -539,7 +556,7 @@
     "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
     "canonical_surname_upper": "AYALON",
     "canonical_episode_id": "349527d06a1f",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -554,7 +571,7 @@
     "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
     "canonical_surname_upper": "LEVY",
     "canonical_episode_id": "fcee2e52ba61",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -569,7 +586,7 @@
     "canonical_guest_full_name": "Theodore Postol",
     "canonical_surname_upper": "POSTOL",
     "canonical_episode_id": "8014ccd61339",
-    "_carried_forward_iso": "2026-08-15T01:27:02Z",
+    "_carried_forward_iso": "2026-08-15T01:25:25Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
