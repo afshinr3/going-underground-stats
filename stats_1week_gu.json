@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-15T13:51:36.676443Z",
+  "generated_at": "2026-08-15T14:17:13.064025Z",
   "n": 2,
   "entries": [
     {
@@ -21,7 +21,7 @@
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "117",
       "x_views": "9.0K",
-      "_x_status": "MEASURED",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_passes": 3,
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d"
@@ -38,7 +38,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "117",
-      "_carried_forward_iso": "2026-08-15T13:43:21Z",
+      "_carried_forward_iso": "2026-08-15T14:09:21Z",
       "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
     }
   ],
