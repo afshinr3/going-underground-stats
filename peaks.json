@@ -809,7 +809,7 @@
     "ig_likes": 230,
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 526,
-    "rumble_views_at": "2026-08-15T13:33:18Z",
+    "rumble_views_at": "2026-08-15T13:51:36Z",
     "x_views": 687700,
     "x_views_at": "2026-08-15T12:36:53Z"
   },
@@ -821,7 +821,7 @@
     "rumble_views": 3400,
     "rumble_views_at": "2026-08-14T00:43:50Z",
     "yt_views": 33300,
-    "yt_views_at": "2026-08-15T13:33:18Z"
+    "yt_views_at": "2026-08-15T13:51:36Z"
   },
   "NO:Fernandez": {
     "yt_views": 153,
@@ -829,7 +829,7 @@
     "ig_likes": 273,
     "ig_likes_at": "2026-08-13T21:42:48Z",
     "rumble_views": 414,
-    "rumble_views_at": "2026-08-15T13:33:18Z",
+    "rumble_views_at": "2026-08-15T13:51:36Z",
     "x_views": 879500,
     "x_views_at": "2026-08-11T16:38:59Z"
   },
@@ -857,8 +857,9 @@
     "ig_likes": 117,
     "ig_likes_at": "2026-08-15T12:13:36Z",
     "rumble_views": 1100,
-    "rumble_views_at": "2026-08-15T13:33:18Z",
-    "x_views": 8900,
-    "x_views_at": "2026-08-15T12:36:53Z"
-  }
+    "rumble_views_at": "2026-08-15T13:51:36Z",
+    "x_views": 9000,
+    "x_views_at": "2026-08-15T13:51:36Z"
+  },
+  "NO:Shidore": {}
 }

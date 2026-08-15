@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-15T13:14:50Z",
-  "last_updated": "2026-08-15T13:14:50Z",
+  "iso": "2026-08-15T13:51:36Z",
+  "last_updated": "2026-08-15T13:51:36Z",
   "episodes": [
     {
       "guest": "Branko Milanovic",
@@ -16,9 +16,9 @@
       "pub_iso": "2026-08-14T12:22:33Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.0K",
+        "rumble_views": "1.1K",
         "yt_views": null,
-        "x_views": "8.9K",
+        "x_views": "9.0K",
         "ig_likes": "117"
       }
     },
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "7.5K",
-        "x_views": "421.8K",
+        "x_views": "421.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -89,7 +89,7 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "33.2K",
+        "yt_views": "33.3K",
         "x_views": "54.3K",
         "ig_likes": "4.8K"
       }
@@ -372,7 +372,7 @@
       "pub_iso": "2026-08-14T12:22:33Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.0K",
+        "rumble_views": "1.1K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -442,6 +442,33 @@
       }
     },
     {
+      "guest": "Sarang Shidore",
+      "surname": "SHIDORE",
+      "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
+      "date": "13 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id": "10f843fd1fef",
+      "canonical_video_id": "CfY37_DnbIM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id_v2": "51403e831b2b092f",
+      "pub_iso": "2026-08-13T11:12:59Z",
+      "source_platform_ids": {
+        "youtube": [
+          "CfY37_DnbIM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Marta Fernandez",
       "surname": "FERNANDEZ",
       "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America —Prof. Marta Fernandez",
@@ -459,9 +486,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "412",
+        "rumble_views": "414",
         "yt_views": "153",
-        "x_views": "809.9K",
+        "x_views": "810.0K",
         "ig_likes": "273"
       }
     },
@@ -483,7 +510,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "524",
+        "rumble_views": "526",
         "yt_views": "86",
         "x_views": "687.7K",
         "ig_likes": "230"
@@ -509,7 +536,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "201.6K",
+        "x_views": "201.7K",
         "ig_likes": "587"
       }
     },
@@ -586,6 +613,33 @@
       }
     },
     {
+      "guest": "Sarang Shidore",
+      "surname": "SHIDORE",
+      "title": "BRICS is a SUPER-COALITION in the Making, America's Missteps Fuel Its Rise (Sarang Shidore)",
+      "date": "13 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id": "ab8e6b132e80",
+      "canonical_video_id": "CfY37_DnbIM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id_v2": "51403e831b2b092f",
+      "pub_iso": "2026-08-13T11:12:59Z",
+      "source_platform_ids": {
+        "youtube": [
+          "CfY37_DnbIM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": "?",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "C. Uday Bhaskar",
       "surname": "BHASKAR",
       "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
@@ -621,9 +675,9 @@
       "pub_iso": "2026-08-14T12:22:33Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.0K",
+        "rumble_views": "1.1K",
         "yt_views": null,
-        "x_views": "8.9K",
+        "x_views": "9.0K",
         "ig_likes": "117"
       }
     },
@@ -671,7 +725,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "7.5K",
-        "x_views": "421.8K",
+        "x_views": "421.9K",
         "ig_likes": "2.3K"
       }
     },
@@ -694,7 +748,7 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "33.2K",
+        "yt_views": "33.3K",
         "x_views": "54.3K",
         "ig_likes": "4.8K"
       }
@@ -726,6 +780,33 @@
   ],
   "no": [
     {
+      "guest": "Sarang Shidore",
+      "surname": "SHIDORE",
+      "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
+      "date": "13 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id": "10f843fd1fef",
+      "canonical_video_id": "CfY37_DnbIM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "canonical_episode_id_v2": "51403e831b2b092f",
+      "pub_iso": "2026-08-13T11:12:59Z",
+      "source_platform_ids": {
+        "youtube": [
+          "CfY37_DnbIM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Marta Fernandez",
       "surname": "FERNANDEZ",
       "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America —Prof. Marta Fernandez",
@@ -743,9 +824,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "412",
+        "rumble_views": "414",
         "yt_views": "153",
-        "x_views": "809.9K",
+        "x_views": "810.0K",
         "ig_likes": "273"
       }
     },
@@ -767,7 +848,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "524",
+        "rumble_views": "526",
         "yt_views": "86",
         "x_views": "687.7K",
         "ig_likes": "230"
@@ -793,7 +874,7 @@
       "metrics": {
         "rumble_views": "633",
         "yt_views": "133",
-        "x_views": "201.6K",
+        "x_views": "201.7K",
         "ig_likes": "587"
       }
     },
@@ -819,30 +900,6 @@
         "yt_views": "1.1K",
         "x_views": "380.7K",
         "ig_likes": "350"
-      }
-    },
-    {
-      "guest": "John Perkins",
-      "surname": "PERKINS",
-      "title": "John Perkins: Trump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
-      "date": "12 Jul",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
-      "canonical_episode_id": "a9e5ed31ad67",
-      "canonical_video_id": "O3jo1u4MhPY",
-      "canonical_video_url": "https://www.youtube.com/watch?v=O3jo1u4MhPY",
-      "canonical_episode_id_v2": "c66ee5b72fdbf0f3",
-      "pub_iso": "2026-07-12T06:30:06Z",
-      "source_platform_ids": {
-        "youtube": [
-          "O3jo1u4MhPY"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "960",
-        "yt_views": "1.1K",
-        "x_views": "305.8K",
-        "ig_likes": "232"
       }
     }
   ]
