@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-16T06:23:35Z",
-  "last_updated": "2026-08-16T06:23:35Z",
+  "iso": "2026-08-16T07:20:18Z",
+  "last_updated": "2026-08-16T07:20:18Z",
   "episodes": [
     {
       "guest": "John Mearsheimer",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "26.1K",
-        "x_views": "91.6K",
+        "x_views": "245.1K",
         "ig_likes": null
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "7.5K",
-        "x_views": "422.8K",
+        "x_views": "422.9K",
         "ig_likes": null
       }
     },
@@ -69,8 +69,8 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "34.3K",
-        "x_views": "860.7K",
+        "yt_views": "34.4K",
+        "x_views": "183.2K",
         "ig_likes": null
       }
     },
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "3.2K",
-        "x_views": "360.9K",
+        "x_views": "344.9K",
         "ig_likes": null
       }
     },
@@ -217,7 +217,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "1.0K",
-        "x_views": "193.6K",
+        "x_views": "532.5K",
         "ig_likes": null
       }
     },
@@ -265,7 +265,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "1.4K",
-        "x_views": "224.7K",
+        "x_views": "250.7K",
         "ig_likes": null
       }
     },
@@ -633,14 +633,14 @@
       "guest": "Sarang Shidore",
       "surname": "SHIDORE",
       "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
-      "date": "13 Aug",
+      "date": "16 Aug",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
       "canonical_episode_id": "10f843fd1fef",
       "canonical_video_id": "CfY37_DnbIM",
       "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
       "canonical_episode_id_v2": "51403e831b2b092f",
-      "pub_iso": "2026-08-13T11:12:59Z",
+      "pub_iso": "2026-08-16T06:30:06Z",
       "source_platform_ids": {
         "youtube": [
           "CfY37_DnbIM"
@@ -648,8 +648,8 @@
       },
       "metrics": {
         "rumble_views": "2.8K",
-        "yt_views": "0",
-        "x_views": "11.6K",
+        "yt_views": "6",
+        "x_views": "611",
         "ig_likes": "92"
       }
     },
@@ -673,7 +673,7 @@
       "metrics": {
         "rumble_views": "418",
         "yt_views": "152",
-        "x_views": "811.7K",
+        "x_views": "811.8K",
         "ig_likes": "273"
       }
     },
@@ -697,7 +697,7 @@
       "metrics": {
         "rumble_views": "528",
         "yt_views": "87",
-        "x_views": "688.1K",
+        "x_views": "688.2K",
         "ig_likes": "230"
       }
     },
@@ -721,7 +721,7 @@
       "metrics": {
         "rumble_views": "635",
         "yt_views": "133",
-        "x_views": "201.9K",
+        "x_views": "202.0K",
         "ig_likes": "587"
       }
     },
@@ -745,7 +745,7 @@
       "metrics": {
         "rumble_views": "731",
         "yt_views": "1.1K",
-        "x_views": "563.0K",
+        "x_views": "381.1K",
         "ig_likes": "350"
       }
     },
@@ -769,7 +769,7 @@
       "metrics": {
         "rumble_views": "960",
         "yt_views": "1.1K",
-        "x_views": "146.7K",
+        "x_views": "312.1K",
         "ig_likes": "232"
       }
     },
@@ -839,7 +839,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "26.1K",
-        "x_views": "91.6K",
+        "x_views": "245.1K",
         "ig_likes": null
       }
     },
@@ -863,7 +863,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "7.5K",
-        "x_views": "422.8K",
+        "x_views": "422.9K",
         "ig_likes": null
       }
     },
@@ -886,8 +886,8 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "34.3K",
-        "x_views": "860.7K",
+        "yt_views": "34.4K",
+        "x_views": "183.2K",
         "ig_likes": null
       }
     },
@@ -911,7 +911,7 @@
       "metrics": {
         "rumble_views": null,
         "yt_views": "3.2K",
-        "x_views": "360.9K",
+        "x_views": "344.9K",
         "ig_likes": null
       }
     },
@@ -945,14 +945,14 @@
       "guest": "Sarang Shidore",
       "surname": "SHIDORE",
       "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
-      "date": "13 Aug",
+      "date": "16 Aug",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
       "canonical_episode_id": "10f843fd1fef",
       "canonical_video_id": "CfY37_DnbIM",
       "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
       "canonical_episode_id_v2": "51403e831b2b092f",
-      "pub_iso": "2026-08-13T11:12:59Z",
+      "pub_iso": "2026-08-16T06:30:06Z",
       "source_platform_ids": {
         "youtube": [
           "CfY37_DnbIM"
@@ -960,8 +960,8 @@
       },
       "metrics": {
         "rumble_views": "2.8K",
-        "yt_views": "0",
-        "x_views": "11.6K",
+        "yt_views": "6",
+        "x_views": "611",
         "ig_likes": "92"
       }
     },
@@ -985,7 +985,7 @@
       "metrics": {
         "rumble_views": "418",
         "yt_views": "152",
-        "x_views": "811.7K",
+        "x_views": "811.8K",
         "ig_likes": "273"
       }
     },
@@ -1009,7 +1009,7 @@
       "metrics": {
         "rumble_views": "528",
         "yt_views": "87",
-        "x_views": "688.1K",
+        "x_views": "688.2K",
         "ig_likes": "230"
       }
     },
@@ -1033,7 +1033,7 @@
       "metrics": {
         "rumble_views": "635",
         "yt_views": "133",
-        "x_views": "201.9K",
+        "x_views": "202.0K",
         "ig_likes": "587"
       }
     },
@@ -1057,7 +1057,7 @@
       "metrics": {
         "rumble_views": "731",
         "yt_views": "1.1K",
-        "x_views": "563.0K",
+        "x_views": "381.1K",
         "ig_likes": "350"
       }
     }
