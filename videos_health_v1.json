@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-16T14:13:35Z",
-  "last_updated": "2026-08-16T14:13:35Z",
+  "iso": "2026-08-16T14:45:31Z",
+  "last_updated": "2026-08-16T14:45:31Z",
   "episodes": [
     {
       "guest": "Branko Milanovic",
@@ -16,9 +16,9 @@
       "pub_iso": "2026-08-14T11:20:44Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.7K",
+        "rumble_views": "1.8K",
         "yt_views": null,
-        "x_views": "108.8K",
+        "x_views": "110.6K",
         "ig_likes": "454"
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "26.2K",
-        "x_views": "68.9K",
+        "x_views": "245.7K",
         "ig_likes": "801"
       }
     },
@@ -138,7 +138,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
-        "x_views": "285.9K",
+        "x_views": "285.7K",
         "ig_likes": "11.5K"
       }
     },
@@ -162,7 +162,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "266.5K",
+        "x_views": "592.1K",
         "ig_likes": "2.3K"
       }
     },
@@ -186,7 +186,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "285.7K",
+        "x_views": "285.3K",
         "ig_likes": "1.6K"
       }
     },
@@ -234,7 +234,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.0K",
-        "x_views": "193.7K",
+        "x_views": "532.5K",
         "ig_likes": "3.4K"
       }
     },
@@ -664,9 +664,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "168",
-        "yt_views": "24",
-        "x_views": "65.8K",
+        "rumble_views": "212",
+        "yt_views": "27",
+        "x_views": "74.9K",
         "ig_likes": "97"
       }
     },
@@ -688,9 +688,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "426",
+        "rumble_views": "431",
         "yt_views": "153",
-        "x_views": "812.5K",
+        "x_views": "812.6K",
         "ig_likes": "273"
       }
     },
@@ -712,9 +712,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "528",
+        "rumble_views": "531",
         "yt_views": "87",
-        "x_views": "688.4K",
+        "x_views": "688.5K",
         "ig_likes": "230"
       }
     },
@@ -850,9 +850,9 @@
       "pub_iso": "2026-08-14T11:20:44Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.7K",
+        "rumble_views": "1.8K",
         "yt_views": null,
-        "x_views": "108.8K",
+        "x_views": "110.6K",
         "ig_likes": "454"
       }
     },
@@ -876,7 +876,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "26.2K",
-        "x_views": "68.9K",
+        "x_views": "245.7K",
         "ig_likes": "801"
       }
     },
@@ -972,9 +972,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "168",
-        "yt_views": "24",
-        "x_views": "65.8K",
+        "rumble_views": "212",
+        "yt_views": "27",
+        "x_views": "74.9K",
         "ig_likes": "97"
       }
     },
@@ -996,9 +996,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "426",
+        "rumble_views": "431",
         "yt_views": "153",
-        "x_views": "812.5K",
+        "x_views": "812.6K",
         "ig_likes": "273"
       }
     },
@@ -1020,9 +1020,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "528",
+        "rumble_views": "531",
         "yt_views": "87",
-        "x_views": "688.4K",
+        "x_views": "688.5K",
         "ig_likes": "230"
       }
     },
