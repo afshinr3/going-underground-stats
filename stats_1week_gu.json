@@ -5,23 +5,9 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-16T11:20:03.513206Z",
-  "n": 1,
-  "entries": [
-    {
-      "guest": "Branko Milanovic",
-      "surname": "Milanovic",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "14 Aug",
-      "rumble_views": "1.7K",
-      "show": "GU",
-      "canonical_guest_full_name": "Branko Milanovic",
-      "pub_iso": "2026-08-14T10:18:01Z",
-      "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "454"
-    }
-  ],
+  "generated_at": "2026-08-16T11:20:33.121550Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
