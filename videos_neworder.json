@@ -3,11 +3,11 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "147",
-    "x_views": "26.0K",
+    "rumble_views": "2.8K",
+    "x_views": "29.4K",
     "date": "16 Aug",
     "yt_views": "15",
-    "ig_likes": "97",
+    "ig_likes": "92",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
     "canonical_episode_id": "10f843fd1fef",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -32,7 +32,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "426",
+    "rumble_views": "418",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -51,8 +51,8 @@
     "yt_views": "152",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "812.0K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "812.1K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "688.3K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "202.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-16T10:17:28Z",
+    "_carried_forward_iso": "2026-08-16T10:21:33Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
