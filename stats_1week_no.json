@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-16T21:43:05.953288Z",
+  "generated_at": "2026-08-16T22:06:27.692172Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "300",
       "x_views": "119.4K",
       "date": "16 Aug",
-      "yt_views": "53",
+      "yt_views": "57",
       "ig_likes": "180",
       "canonical_guest_full_name": "Sarang Shidore",
       "canonical_surname_upper": "SHIDORE",
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "FETCH_FAILED:Exception",
       "show": "NO",
       "_x_passes": 6
     }

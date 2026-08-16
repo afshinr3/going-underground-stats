@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-16T21:51:37Z",
+  "updated": "2026-08-16T22:06:27Z",
   "drops": [
     {
-      "ts": "2026-08-16T21:51:37Z",
+      "ts": "2026-08-16T22:06:27Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -12,7 +12,17 @@
       "drop_pct": 62.8
     },
     {
-      "ts": "2026-08-16T21:51:37Z",
+      "ts": "2026-08-16T22:06:27Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "X",
+      "peak": 532500,
+      "peak_at": "2026-08-16T05:40:34Z",
+      "current": 193800,
+      "drop_pct": 63.6
+    },
+    {
+      "ts": "2026-08-16T22:06:27Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
