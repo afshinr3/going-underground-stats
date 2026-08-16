@@ -60,7 +60,7 @@
     "surname": "Baharoon",
     "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
     "date": "2 Aug",
-    "rumble_views": "532",
+    "rumble_views": "531",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
     "pub_iso": "2026-08-02T06:30:06Z",
@@ -116,7 +116,7 @@
     "surname": "Schiff",
     "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
     "date": "19 Jul",
-    "rumble_views": "732",
+    "rumble_views": "731",
     "show": "NO",
     "canonical_guest_full_name": "Peter Schiff",
     "pub_iso": "2026-07-19T06:30:06Z",
@@ -135,9 +135,9 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "381.3K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "x_views": "381.4K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "John Perkins",
@@ -145,7 +145,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "961",
-    "x_views": "314.5K",
+    "x_views": "314.6K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -162,8 +162,8 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Vikram Sood",
@@ -188,7 +188,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-16T17:35:15Z",
+    "_carried_forward_iso": "2026-08-16T17:40:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
