@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-16T03:52:40.381298Z",
+  "generated_at": "2026-08-16T04:44:07.319772Z",
   "n": 1,
   "entries": [
     {
@@ -23,7 +23,7 @@
       "_x_status": "MEASURED_LOWER_BOUND",
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d",
-      "x_views": "64.8K",
+      "x_views": "67.5K",
       "_x_passes": 6
     }
   ],
