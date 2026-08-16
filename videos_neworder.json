@@ -3,8 +3,8 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "250",
-    "x_views": "108.6K",
+    "rumble_views": "238",
+    "x_views": "60.7K",
     "date": "16 Aug",
     "yt_views": "35",
     "ig_likes": "180",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6
   },
@@ -32,7 +32,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "436",
+    "rumble_views": "434",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -51,16 +51,16 @@
     "yt_views": "154",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "813.1K",
-    "_x_status": "MEASURED",
-    "_x_passes": 2
+    "x_views": "692.1K",
+    "_x_status": "FETCH_FAILED:Exception",
+    "_x_passes": 6
   },
   {
     "guest": "Mohammed Baharoon",
     "surname": "Baharoon",
     "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
     "date": "2 Aug",
-    "rumble_views": "534",
+    "rumble_views": "531",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
     "pub_iso": "2026-08-02T06:30:06Z",
@@ -79,8 +79,8 @@
     "yt_views": "87",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "688.6K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "x_views": "231.6K",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -88,7 +88,7 @@
     "surname": "Askary",
     "title": "Global South\u2019s Rise Causes PANIC for West\u2019s Elites as US-Led Unipolar World Declines- Hussein Askary",
     "date": "26 Jul",
-    "rumble_views": "637",
+    "rumble_views": "635",
     "show": "NO",
     "canonical_guest_full_name": "Hussein Askary",
     "pub_iso": "2026-07-26T06:30:06Z",
@@ -107,8 +107,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "202.4K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "x_views": "129.7K",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -116,7 +116,7 @@
     "surname": "Schiff",
     "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
     "date": "19 Jul",
-    "rumble_views": "732",
+    "rumble_views": "731",
     "show": "NO",
     "canonical_guest_full_name": "Peter Schiff",
     "pub_iso": "2026-07-19T06:30:06Z",
@@ -136,7 +136,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "381.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -145,7 +145,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "961",
-    "x_views": "314.6K",
+    "x_views": "314.7K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -162,7 +162,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -188,7 +188,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-16T19:02:31Z",
+    "_carried_forward_iso": "2026-08-16T19:25:09Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
