@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-16T02:20:03.961402Z",
+  "generated_at": "2026-08-16T03:03:29.266530Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,12 @@
       "pub_iso": "2026-08-14T02:15:14Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "411"
+      "ig_likes": "411",
+      "_x_status": "MEASURED_LOWER_BOUND",
+      "canonical_surname_upper": "MILANOVIC",
+      "canonical_episode_id": "fd9388b8783d",
+      "x_views": "61.6K",
+      "_x_passes": 6
     }
   ],
   "source_feed": "videos.json",
