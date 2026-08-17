@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T06:23:59.465462Z",
+  "generated_at": "2026-08-17T07:33:06.556251Z",
   "n": 2,
   "entries": [
     {
@@ -23,8 +23,8 @@
       "_x_status": "MEASURED",
       "canonical_surname_upper": "PILKINGTON",
       "canonical_episode_id": "93ad76c313d1",
-      "x_views": "37.8K",
-      "_x_passes": 4
+      "x_views": "38.9K",
+      "_x_passes": 2
     },
     {
       "guest": "Branko Milanovic",
@@ -38,7 +38,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "577",
-      "x_views": "146.2K",
+      "x_views": "147.5K",
       "_x_status": "MEASURED_LOWER_BOUND",
       "_x_passes": 6,
       "canonical_surname_upper": "MILANOVIC",

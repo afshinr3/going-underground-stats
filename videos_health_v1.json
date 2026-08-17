@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-17T06:23:59Z",
-  "last_updated": "2026-08-17T06:23:59Z",
+  "iso": "2026-08-17T07:33:06Z",
+  "last_updated": "2026-08-17T07:33:06Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -18,7 +18,7 @@
       "metrics": {
         "rumble_views": "958",
         "yt_views": null,
-        "x_views": "37.8K",
+        "x_views": "38.9K",
         "ig_likes": "187"
       }
     },
@@ -38,7 +38,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": null,
-        "x_views": "146.2K",
+        "x_views": "147.5K",
         "ig_likes": "577"
       }
     },
@@ -61,8 +61,8 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "26.4K",
-        "x_views": "246.6K",
+        "yt_views": "26.5K",
+        "x_views": "69.2K",
         "ig_likes": "807"
       }
     },
@@ -109,7 +109,7 @@
       },
       "metrics": {
         "rumble_views": "3.7K",
-        "yt_views": "36.0K",
+        "yt_views": "36.1K",
         "x_views": "860.9K",
         "ig_likes": "5.0K"
       }
@@ -492,14 +492,14 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "1.8K"
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -555,7 +555,7 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "1.1K"
       }
@@ -578,30 +578,7 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "2.1K"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "693",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "2.1K"
       }
@@ -686,7 +663,7 @@
       "metrics": {
         "rumble_views": "346",
         "yt_views": "85",
-        "x_views": "139.5K",
+        "x_views": "96.3K",
         "ig_likes": "191"
       }
     },
@@ -710,7 +687,7 @@
       "metrics": {
         "rumble_views": "443",
         "yt_views": "154",
-        "x_views": "814.1K",
+        "x_views": "692.8K",
         "ig_likes": "273"
       }
     },
@@ -734,7 +711,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "87",
-        "x_views": "689.0K",
+        "x_views": "231.8K",
         "ig_likes": "230"
       }
     },
@@ -758,7 +735,7 @@
       "metrics": {
         "rumble_views": "639",
         "yt_views": "133",
-        "x_views": "202.7K",
+        "x_views": "129.9K",
         "ig_likes": "587"
       }
     },
@@ -872,7 +849,7 @@
       "metrics": {
         "rumble_views": "958",
         "yt_views": null,
-        "x_views": "37.8K",
+        "x_views": "38.9K",
         "ig_likes": "187"
       }
     },
@@ -892,7 +869,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": null,
-        "x_views": "146.2K",
+        "x_views": "147.5K",
         "ig_likes": "577"
       }
     },
@@ -915,8 +892,8 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "26.4K",
-        "x_views": "246.6K",
+        "yt_views": "26.5K",
+        "x_views": "69.2K",
         "ig_likes": "807"
       }
     },
@@ -963,7 +940,7 @@
       },
       "metrics": {
         "rumble_views": "3.7K",
-        "yt_views": "36.0K",
+        "yt_views": "36.1K",
         "x_views": "860.9K",
         "ig_likes": "5.0K"
       }
@@ -990,7 +967,7 @@
       "metrics": {
         "rumble_views": "346",
         "yt_views": "85",
-        "x_views": "139.5K",
+        "x_views": "96.3K",
         "ig_likes": "191"
       }
     },
@@ -1014,7 +991,7 @@
       "metrics": {
         "rumble_views": "443",
         "yt_views": "154",
-        "x_views": "814.1K",
+        "x_views": "692.8K",
         "ig_likes": "273"
       }
     },
@@ -1038,7 +1015,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "87",
-        "x_views": "689.0K",
+        "x_views": "231.8K",
         "ig_likes": "230"
       }
     },
@@ -1062,7 +1039,7 @@
       "metrics": {
         "rumble_views": "639",
         "yt_views": "133",
-        "x_views": "202.7K",
+        "x_views": "129.9K",
         "ig_likes": "587"
       }
     },
