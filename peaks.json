@@ -784,8 +784,8 @@
     "x_views_at": "2026-07-29T13:26:27Z"
   },
   "GU:Ayalon": {
-    "ig_likes": 11600,
-    "ig_likes_at": "2026-08-16T15:43:57Z",
+    "ig_likes": 11700,
+    "ig_likes_at": "2026-08-17T04:36:43Z",
     "rumble_views": 10800,
     "rumble_views_at": "2026-08-12T16:31:51Z",
     "x_views": 882500,
@@ -820,8 +820,8 @@
     "ig_likes_at": "2026-08-17T01:46:20Z",
     "rumble_views": 3500,
     "rumble_views_at": "2026-08-16T02:29:24Z",
-    "yt_views": 35900,
-    "yt_views_at": "2026-08-17T03:22:38Z"
+    "yt_views": 36000,
+    "yt_views_at": "2026-08-17T04:36:43Z"
   },
   "NO:Fernandez": {
     "yt_views": 154,
@@ -838,24 +838,24 @@
     "x_views_at": "2026-08-10T23:38:25Z",
     "ig_likes": 2300,
     "ig_likes_at": "2026-08-15T00:46:52Z",
-    "rumble_views": 3200,
-    "rumble_views_at": "2026-08-15T08:49:01Z",
+    "rumble_views": 3300,
+    "rumble_views_at": "2026-08-17T04:36:43Z",
     "yt_views": 7600,
     "yt_views_at": "2026-08-16T07:59:20Z"
   },
   "GU:Mearsheimer": {
     "yt_views": 26400,
     "yt_views_at": "2026-08-17T01:46:20Z",
-    "ig_likes": 806,
-    "ig_likes_at": "2026-08-17T01:46:20Z",
+    "ig_likes": 807,
+    "ig_likes_at": "2026-08-17T04:36:43Z",
     "rumble_views": 2900,
     "rumble_views_at": "2026-08-15T19:39:52Z",
     "x_views": 246500,
     "x_views_at": "2026-08-17T04:19:46Z"
   },
   "GU:Milanovic": {
-    "ig_likes": 572,
-    "ig_likes_at": "2026-08-17T01:46:20Z",
+    "ig_likes": 577,
+    "ig_likes_at": "2026-08-17T04:36:43Z",
     "rumble_views": 1900,
     "rumble_views_at": "2026-08-16T20:44:48Z",
     "x_views": 143500,
@@ -866,9 +866,15 @@
     "rumble_views_at": "2026-08-15T14:42:24Z",
     "x_views": 135100,
     "x_views_at": "2026-08-17T04:19:46Z",
-    "ig_likes": 186,
-    "ig_likes_at": "2026-08-17T01:46:20Z",
+    "ig_likes": 191,
+    "ig_likes_at": "2026-08-17T04:36:43Z",
     "yt_views": 80,
     "yt_views_at": "2026-08-17T02:28:59Z"
+  },
+  "GU:Pilkington": {
+    "ig_likes": 187,
+    "ig_likes_at": "2026-08-17T04:36:43Z",
+    "rumble_views": 904,
+    "rumble_views_at": "2026-08-17T04:36:43Z"
   }
 }
