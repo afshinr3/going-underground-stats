@@ -4,9 +4,9 @@
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "363",
-    "x_views": "149.4K",
+    "x_views": "102.8K",
     "date": "16 Aug",
-    "yt_views": "93",
+    "yt_views": "90",
     "ig_likes": "196",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -51,8 +51,8 @@
     "yt_views": "156",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "814.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "693.1K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "689.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "231.9K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,9 +107,9 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "203.1K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "x_views": "130.0K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Peter Schiff",
@@ -135,7 +135,7 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "563.2K",
+    "x_views": "381.5K",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
@@ -145,7 +145,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "962",
-    "x_views": "150.2K",
+    "x_views": "149.9K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -171,7 +171,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "524",
-    "x_views": "529.7K",
+    "x_views": "757.0K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-17T17:32:15Z",
+    "_carried_forward_iso": "2026-08-17T17:42:53Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
