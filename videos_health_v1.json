@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-17T16:11:26Z",
-  "last_updated": "2026-08-17T16:11:26Z",
+  "iso": "2026-08-17T16:49:53Z",
+  "last_updated": "2026-08-17T16:49:53Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -20,9 +20,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.7K",
-        "yt_views": "551",
-        "x_views": "103.0K",
+        "rumble_views": "1.8K",
+        "yt_views": "610",
+        "x_views": "112.5K",
         "ig_likes": "448"
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": null,
-        "x_views": "156.2K",
+        "x_views": "156.6K",
         "ig_likes": "578"
       }
     },
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "26.7K",
-        "x_views": "247.2K",
+        "x_views": "247.3K",
         "ig_likes": "809"
       }
     },
@@ -113,8 +113,8 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "36.7K",
-        "x_views": "860.9K",
+        "yt_views": "36.8K",
+        "x_views": "657.4K",
         "ig_likes": "5.0K"
       }
     },
@@ -138,7 +138,7 @@
       "metrics": {
         "rumble_views": "14.9K",
         "yt_views": "3.2K",
-        "x_views": "362.0K",
+        "x_views": "1.5M",
         "ig_likes": "3.0K"
       }
     },
@@ -162,7 +162,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
-        "x_views": "285.7K",
+        "x_views": "1.1M",
         "ig_likes": "11.8K"
       }
     },
@@ -186,7 +186,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "592.8K",
+        "x_views": "1.4M",
         "ig_likes": "2.3K"
       }
     },
@@ -210,7 +210,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "285.3K",
+        "x_views": "745.6K",
         "ig_likes": "1.6K"
       }
     },
@@ -234,10 +234,7 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "4.3K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "1.6M",
         "ig_likes": "1.8K"
       }
     },
@@ -261,8 +258,8 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.0K",
-        "x_views": "402.8K",
-        "ig_likes": "3.5K"
+        "x_views": "536.8K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -285,7 +282,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "127.0K",
+        "x_views": "717.2K",
         "ig_likes": "522"
       }
     },
@@ -309,7 +306,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "251.9K",
+        "x_views": "691.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -333,7 +330,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "944",
-        "x_views": "78.4K",
+        "x_views": "1.9M",
         "ig_likes": "1.1K"
       }
     },
@@ -358,255 +355,6 @@
         "rumble_views": "3.9K",
         "yt_views": "15.4K",
         "x_views": "206.0K",
-        "ig_likes": "2.1K"
-      }
-    },
-    {
-      "guest": "Philip Pilkington",
-      "surname": "PILKINGTON",
-      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
-      "date": "17 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.7K",
-        "yt_views": null,
-        "x_views": "90.7K",
-        "ig_likes": "448"
-      }
-    },
-    {
-      "guest": "John Mearsheimer",
-      "surname": "MEARSHEIMER",
-      "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
-      "date": "10 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "e664d5dd55a6",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.0K",
-        "yt_views": null,
-        "x_views": "91.6K",
-        "ig_likes": "809"
-      }
-    },
-    {
-      "guest": "Gabor Maté",
-      "surname": "MATÉ",
-      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
-      "date": "3 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.5K",
-        "yt_views": null,
-        "x_views": "860.9K",
-        "ig_likes": "5.0K"
-      }
-    },
-    {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
-      "surname": "BARNES",
-      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "1 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "14.9K",
-        "yt_views": null,
-        "x_views": "362.0K",
-        "ig_likes": "3.0K"
-      }
-    },
-    {
-      "guest": "of Israel’s Shin Bet Ami Ayalon",
-      "surname": "AYALON",
-      "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
-      "date": "27 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "349527d06a1f",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.2K",
-        "yt_views": null,
-        "x_views": "285.7K",
-        "ig_likes": "11.8K"
-      }
-    },
-    {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
-      "surname": "LEVY",
-      "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
-      "date": "25 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": null,
-        "x_views": "592.8K",
-        "ig_likes": "2.3K"
-      }
-    },
-    {
-      "guest": "Doug Bandow",
-      "surname": "BANDOW",
-      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
-      "date": "20 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.0K",
-        "yt_views": null,
-        "x_views": "285.3K",
-        "ig_likes": "1.6K"
-      }
-    },
-    {
-      "guest": "Lawrence Wilkerson",
-      "surname": "WILKERSON",
-      "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
-      "date": "18 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.7K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "1.8K"
-      }
-    },
-    {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "date": "13 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.3K",
-        "yt_views": null,
-        "x_views": "402.8K",
-        "ig_likes": "3.5K"
-      }
-    },
-    {
-      "guest": "Tobias Ellwood",
-      "surname": "ELLWOOD",
-      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
-      "date": "6 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
-        "x_views": "251.9K",
-        "ig_likes": "1.1K"
-      }
-    },
-    {
-      "guest": "Dennis Kucinich",
-      "surname": "KUCINICH",
-      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
-      "date": "4 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "9702aa6e4b89",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.4K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "1.1K"
-      }
-    },
-    {
-      "guest": "Max Blumenthal",
-      "surname": "BLUMENTHAL",
-      "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
-      "date": "29 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "437b917e580d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.9K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
         "ig_likes": "2.1K"
       }
     },
@@ -691,9 +439,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "362",
-        "yt_views": "89",
-        "x_views": "149.1K",
+        "rumble_views": "363",
+        "yt_views": "90",
+        "x_views": "149.4K",
         "ig_likes": "196"
       }
     },
@@ -741,7 +489,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "291",
-        "x_views": "689.4K",
+        "x_views": "689.5K",
         "ig_likes": "230"
       }
     },
@@ -881,9 +629,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.7K",
-        "yt_views": "551",
-        "x_views": "103.0K",
+        "rumble_views": "1.8K",
+        "yt_views": "610",
+        "x_views": "112.5K",
         "ig_likes": "448"
       }
     },
@@ -903,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": null,
-        "x_views": "156.2K",
+        "x_views": "156.6K",
         "ig_likes": "578"
       }
     },
@@ -927,7 +675,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "26.7K",
-        "x_views": "247.2K",
+        "x_views": "247.3K",
         "ig_likes": "809"
       }
     },
@@ -974,8 +722,8 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "36.7K",
-        "x_views": "860.9K",
+        "yt_views": "36.8K",
+        "x_views": "657.4K",
         "ig_likes": "5.0K"
       }
     }
@@ -999,9 +747,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "362",
-        "yt_views": "89",
-        "x_views": "149.1K",
+        "rumble_views": "363",
+        "yt_views": "90",
+        "x_views": "149.4K",
         "ig_likes": "196"
       }
     },
@@ -1049,7 +797,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "291",
-        "x_views": "689.4K",
+        "x_views": "689.5K",
         "ig_likes": "230"
       }
     },
