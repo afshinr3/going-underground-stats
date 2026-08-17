@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-17T14:48:33Z",
+  "updated": "2026-08-17T14:59:50Z",
   "drops": [
     {
-      "ts": "2026-08-17T14:48:33Z",
+      "ts": "2026-08-17T14:59:50Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -12,7 +12,7 @@
       "drop_pct": 62.9
     },
     {
-      "ts": "2026-08-17T14:48:33Z",
+      "ts": "2026-08-17T14:59:50Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "RUMBLE",
@@ -22,7 +22,7 @@
       "drop_pct": 70.6
     },
     {
-      "ts": "2026-08-17T14:48:33Z",
+      "ts": "2026-08-17T14:59:50Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "RUMBLE",
@@ -32,7 +32,7 @@
       "drop_pct": 74.3
     },
     {
-      "ts": "2026-08-17T14:48:33Z",
+      "ts": "2026-08-17T14:59:50Z",
       "show": "GU",
       "guest": "Blumenthal",
       "platform": "RUMBLE",
@@ -42,7 +42,7 @@
       "drop_pct": 64.2
     },
     {
-      "ts": "2026-08-17T14:48:33Z",
+      "ts": "2026-08-17T14:59:50Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -50,56 +50,6 @@
       "peak_at": "2026-08-17T14:09:22Z",
       "current": 91600,
       "drop_pct": 62.9
-    },
-    {
-      "ts": "2026-08-17T14:48:33Z",
-      "show": "GU",
-      "guest": "Ayalon",
-      "platform": "RUMBLE",
-      "peak": 10900,
-      "peak_at": "2026-08-17T05:43:26Z",
-      "current": 3200,
-      "drop_pct": 70.6
-    },
-    {
-      "ts": "2026-08-17T14:48:33Z",
-      "show": "GU",
-      "guest": "Levy",
-      "platform": "RUMBLE",
-      "peak": 10900,
-      "peak_at": "2026-08-17T05:43:26Z",
-      "current": 2800,
-      "drop_pct": 74.3
-    },
-    {
-      "ts": "2026-08-17T14:48:33Z",
-      "show": "GU",
-      "guest": "Blumenthal",
-      "platform": "RUMBLE",
-      "peak": 10900,
-      "peak_at": "2026-08-17T05:43:26Z",
-      "current": 3900,
-      "drop_pct": 64.2
-    },
-    {
-      "ts": "2026-08-17T14:48:33Z",
-      "show": "GU",
-      "guest": "Olmert",
-      "platform": "RUMBLE",
-      "peak": 10900,
-      "peak_at": "2026-08-17T05:43:26Z",
-      "current": 3000,
-      "drop_pct": 72.5
-    },
-    {
-      "ts": "2026-08-17T14:48:33Z",
-      "show": "GU",
-      "guest": "Keen",
-      "platform": "RUMBLE",
-      "peak": 10900,
-      "peak_at": "2026-08-17T05:43:26Z",
-      "current": 3000,
-      "drop_pct": 72.5
     }
   ]
 }
