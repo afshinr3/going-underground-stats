@@ -3,10 +3,10 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "353",
-    "x_views": "96.3K",
+    "rumble_views": "346",
+    "x_views": "144.2K",
     "date": "16 Aug",
-    "yt_views": "84",
+    "yt_views": "85",
     "ig_likes": "191",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -51,9 +51,9 @@
     "yt_views": "155",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "692.8K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "814.2K",
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Mohammed Baharoon",
@@ -79,9 +79,9 @@
     "yt_views": "87",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "231.8K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "689.1K",
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Hussein Askary",
@@ -107,8 +107,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "129.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "202.7K",
+    "_x_status": "MEASURED",
     "_x_passes": 3
   },
   {
@@ -196,7 +196,7 @@
     "surname": "Bhaskar",
     "title": "NEW EPISODE OF NEW ORDER \n\nBRICS \u2018UP & RUNNING\u2019: How India Will Navigate US-Iran Conflict & Tensions With Trump\u2014C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
     "date": "28 Jun",
-    "rumble_views": "539",
+    "rumble_views": "538",
     "x_views": "324.7K",
     "yt_views": "0",
     "ig_likes": "845",
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-17T08:13:48Z",
+    "_carried_forward_iso": "2026-08-17T08:21:42Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
