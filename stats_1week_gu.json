@@ -5,8 +5,8 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T14:20:03.604675Z",
-  "n": 2,
+  "generated_at": "2026-08-17T14:48:33.732044Z",
+  "n": 3,
   "entries": [
     {
       "guest": "Philip Pilkington",
@@ -14,12 +14,25 @@
       "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
       "rumble_views": "1.7K",
-      "x_views": "90.7K",
+      "x_views": "81.7K",
       "ig_likes": "191",
       "show": "GU",
       "canonical_guest_full_name": "Philip Pilkington",
       "canonical_surname_upper": "PILKINGTON",
-      "canonical_episode_id": "93ad76c313d1"
+      "canonical_episode_id": "93ad76c313d1",
+      "canonical_video_id": "w7KXuXugzlA",
+      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+      "pub_iso": "2026-08-17T10:43:18Z",
+      "canonical_episode_id_v2": "6f9f42c60330bac0",
+      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+      "source_platform_ids": {
+        "youtube": [
+          "w7KXuXugzlA"
+        ]
+      },
+      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_passes": 6,
+      "yt_views": "415"
     },
     {
       "guest": "Branko Milanovic",
@@ -32,7 +45,25 @@
       "pub_iso": "2026-08-14T14:15:19Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "577"
+      "ig_likes": "577",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "canonical_surname_upper": "MILANOVIC",
+      "canonical_episode_id": "fd9388b8783d"
+    },
+    {
+      "guest": "Philip Pilkington",
+      "surname": "Pilkington",
+      "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
+      "date": "17 Aug",
+      "rumble_views": "1.7K",
+      "x_views": "90.7K",
+      "ig_likes": "191",
+      "show": "GU",
+      "canonical_guest_full_name": "Philip Pilkington",
+      "canonical_surname_upper": "PILKINGTON",
+      "canonical_episode_id": "93ad76c313d1",
+      "_carried_forward_iso": "2026-08-17T14:42:17Z",
+      "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
     }
   ],
   "source_feed": "videos.json",
