@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T05:06:25.444024Z",
+  "generated_at": "2026-08-17T05:43:26.069907Z",
   "n": 2,
   "entries": [
     {
@@ -13,7 +13,7 @@
       "surname": "Pilkington",
       "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "16 Aug",
-      "rumble_views": "904",
+      "rumble_views": "958",
       "show": "GU",
       "canonical_guest_full_name": "Philip Pilkington",
       "pub_iso": "2026-08-16T11:03:32Z",
@@ -23,8 +23,8 @@
       "_x_status": "MEASURED",
       "canonical_surname_upper": "PILKINGTON",
       "canonical_episode_id": "93ad76c313d1",
-      "x_views": "36.7K",
-      "_x_passes": 3
+      "x_views": "37.2K",
+      "_x_passes": 2
     },
     {
       "guest": "Branko Milanovic",
@@ -38,7 +38,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "577",
-      "x_views": "144.4K",
+      "x_views": "145.2K",
       "_x_status": "MEASURED_LOWER_BOUND",
       "_x_passes": 6,
       "canonical_surname_upper": "MILANOVIC",
