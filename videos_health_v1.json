@@ -1,7 +1,27 @@
 {
-  "iso": "2026-08-17T04:19:46Z",
-  "last_updated": "2026-08-17T04:19:46Z",
+  "iso": "2026-08-17T05:06:25Z",
+  "last_updated": "2026-08-17T05:06:25Z",
   "episodes": [
+    {
+      "guest": "Philip Pilkington",
+      "surname": "PILKINGTON",
+      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
+      "date": "16 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "93ad76c313d1",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-16T11:03:32Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "904",
+        "yt_views": null,
+        "x_views": "36.7K",
+        "ig_likes": "187"
+      }
+    },
     {
       "guest": "Branko Milanovic",
       "surname": "MILANOVIC",
@@ -18,8 +38,8 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": null,
-        "x_views": "143.5K",
-        "ig_likes": "572"
+        "x_views": "144.4K",
+        "ig_likes": "577"
       }
     },
     {
@@ -43,7 +63,7 @@
         "rumble_views": "2.9K",
         "yt_views": "26.4K",
         "x_views": "246.5K",
-        "ig_likes": "806"
+        "ig_likes": "807"
       }
     },
     {
@@ -64,9 +84,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "424.1K",
+        "x_views": "424.2K",
         "ig_likes": "2.3K"
       }
     },
@@ -89,8 +109,8 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "35.9K",
-        "x_views": "54.9K",
+        "yt_views": "36.0K",
+        "x_views": "860.9K",
         "ig_likes": "5.0K"
       }
     },
@@ -139,7 +159,7 @@
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "285.7K",
-        "ig_likes": "11.6K"
+        "ig_likes": "11.7K"
       }
     },
     {
@@ -348,53 +368,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.9K",
         "yt_views": null,
         "x_views": "91.6K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Doug Bandow",
-      "surname": "BANDOW",
-      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
-      "date": "20 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": "285.3K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Lawrence Wilkerson",
-      "surname": "WILKERSON",
-      "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
-      "date": "18 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
+        "ig_likes": "807"
       }
     },
     {
@@ -411,119 +388,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.5K",
         "yt_views": null,
         "x_views": "860.9K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "date": "13 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": "532.5K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Tobias Ellwood",
-      "surname": "ELLWOOD",
-      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
-      "date": "6 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": "251.6K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Dennis Kucinich",
-      "surname": "KUCINICH",
-      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
-      "date": "4 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "9702aa6e4b89",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Max Blumenthal",
-      "surname": "BLUMENTHAL",
-      "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
-      "date": "29 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "437b917e580d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
+        "ig_likes": "5.0K"
       }
     },
     {
@@ -540,50 +408,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "14.9K",
         "yt_views": null,
         "x_views": "361.7K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Ehud Olmert",
-      "surname": "OLMERT",
-      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
-      "date": "20 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "2d6e9913fb1c",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": "37.3K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Steve Keen",
-      "surname": "KEEN",
-      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
-      "date": "15 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "cbe40066aa0d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": "365.2K",
-        "ig_likes": "?"
+        "ig_likes": "3.0K"
       }
     },
     {
@@ -600,10 +428,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.2K",
         "yt_views": null,
         "x_views": "285.7K",
-        "ig_likes": "?"
+        "ig_likes": "11.7K"
       }
     },
     {
@@ -620,10 +448,202 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.8K",
         "yt_views": null,
         "x_views": "592.6K",
-        "ig_likes": "?"
+        "ig_likes": "2.3K"
+      }
+    },
+    {
+      "guest": "Doug Bandow",
+      "surname": "BANDOW",
+      "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
+      "date": "20 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "dfc6afbc2824",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": null,
+        "x_views": "285.3K",
+        "ig_likes": "1.6K"
+      }
+    },
+    {
+      "guest": "Lawrence Wilkerson",
+      "surname": "WILKERSON",
+      "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
+      "date": "18 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "40f99fc9eb05",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.7K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "1.8K"
+      }
+    },
+    {
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
+      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
+      "date": "13 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.3K",
+        "yt_views": null,
+        "x_views": "532.5K",
+        "ig_likes": "3.4K"
+      }
+    },
+    {
+      "guest": "Tobias Ellwood",
+      "surname": "ELLWOOD",
+      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
+      "date": "6 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6ca7f65c75da",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.5K",
+        "yt_views": null,
+        "x_views": "251.6K",
+        "ig_likes": "1.1K"
+      }
+    },
+    {
+      "guest": "Dennis Kucinich",
+      "surname": "KUCINICH",
+      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
+      "date": "4 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "9702aa6e4b89",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.4K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "1.1K"
+      }
+    },
+    {
+      "guest": "Max Blumenthal",
+      "surname": "BLUMENTHAL",
+      "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
+      "date": "29 Jun",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "437b917e580d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.9K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "2.1K"
+      }
+    },
+    {
+      "guest": "‘The US LACKS THE POWER TO DEF",
+      "surname": "DEF",
+      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+      "date": "27 Jun",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "95d519473319",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.5K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "2.1K"
+      }
+    },
+    {
+      "guest": "Ehud Olmert",
+      "surname": "OLMERT",
+      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
+      "date": "20 Jun",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "2d6e9913fb1c",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": null,
+        "x_views": "37.3K",
+        "ig_likes": "2.8K"
+      }
+    },
+    {
+      "guest": "Steve Keen",
+      "surname": "KEEN",
+      "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
+      "date": "15 Jun",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "cbe40066aa0d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": null,
+        "x_views": "365.2K",
+        "ig_likes": "811"
       }
     },
     {
@@ -640,10 +660,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.6K",
         "yt_views": null,
         "x_views": "304.8K",
-        "ig_likes": "?"
+        "ig_likes": "112"
       }
     },
     {
@@ -664,10 +684,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "334",
+        "rumble_views": "343",
         "yt_views": "80",
-        "x_views": "135.1K",
-        "ig_likes": "186"
+        "x_views": "136.7K",
+        "ig_likes": "191"
       }
     },
     {
@@ -760,7 +780,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "734",
+        "rumble_views": "736",
         "yt_views": "1.1K",
         "x_views": "381.5K",
         "ig_likes": "350"
@@ -837,6 +857,26 @@
   ],
   "gu": [
     {
+      "guest": "Philip Pilkington",
+      "surname": "PILKINGTON",
+      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
+      "date": "16 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "93ad76c313d1",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-16T11:03:32Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "904",
+        "yt_views": null,
+        "x_views": "36.7K",
+        "ig_likes": "187"
+      }
+    },
+    {
       "guest": "Branko Milanovic",
       "surname": "MILANOVIC",
       "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
@@ -852,8 +892,8 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": null,
-        "x_views": "143.5K",
-        "ig_likes": "572"
+        "x_views": "144.4K",
+        "ig_likes": "577"
       }
     },
     {
@@ -877,7 +917,7 @@
         "rumble_views": "2.9K",
         "yt_views": "26.4K",
         "x_views": "246.5K",
-        "ig_likes": "806"
+        "ig_likes": "807"
       }
     },
     {
@@ -898,9 +938,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "424.1K",
+        "x_views": "424.2K",
         "ig_likes": "2.3K"
       }
     },
@@ -923,33 +963,9 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "35.9K",
-        "x_views": "54.9K",
+        "yt_views": "36.0K",
+        "x_views": "860.9K",
         "ig_likes": "5.0K"
-      }
-    },
-    {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
-      "surname": "BARNES",
-      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "1 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": "N_ysv6Gh9Ac",
-      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id_v2": "7edf3af7b8798e44",
-      "pub_iso": "2026-08-01T21:22:19Z",
-      "source_platform_ids": {
-        "youtube": [
-          "N_ysv6Gh9Ac"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "14.9K",
-        "yt_views": "3.2K",
-        "x_views": "361.7K",
-        "ig_likes": "3.0K"
       }
     }
   ],
@@ -972,10 +988,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "334",
+        "rumble_views": "343",
         "yt_views": "80",
-        "x_views": "135.1K",
-        "ig_likes": "186"
+        "x_views": "136.7K",
+        "ig_likes": "191"
       }
     },
     {
@@ -1068,7 +1084,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "734",
+        "rumble_views": "736",
         "yt_views": "1.1K",
         "x_views": "381.5K",
         "ig_likes": "350"
