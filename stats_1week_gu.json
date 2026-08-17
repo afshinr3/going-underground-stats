@@ -5,16 +5,16 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T16:11:26.329645Z",
-  "n": 3,
+  "generated_at": "2026-08-17T16:20:04.142219Z",
+  "n": 2,
   "entries": [
     {
       "guest": "Philip Pilkington",
       "surname": "Pilkington",
       "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
-      "rumble_views": "1.7K",
-      "x_views": "103.0K",
+      "rumble_views": "1.8K",
+      "x_views": "138.8K",
       "ig_likes": "448",
       "show": "GU",
       "canonical_guest_full_name": "Philip Pilkington",
@@ -32,7 +32,7 @@
       },
       "_x_status": "MEASURED_LOWER_BOUND",
       "_x_passes": 6,
-      "yt_views": "551"
+      "yt_views": "558"
     },
     {
       "guest": "Branko Milanovic",
@@ -46,26 +46,11 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "578",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d",
-      "x_views": "156.2K",
+      "x_views": "155.9K",
       "_x_passes": 6
-    },
-    {
-      "guest": "Philip Pilkington",
-      "surname": "Pilkington",
-      "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
-      "date": "17 Aug",
-      "rumble_views": "1.7K",
-      "x_views": "90.7K",
-      "ig_likes": "448",
-      "show": "GU",
-      "canonical_guest_full_name": "Philip Pilkington",
-      "canonical_surname_upper": "PILKINGTON",
-      "canonical_episode_id": "93ad76c313d1",
-      "_carried_forward_iso": "2026-08-17T16:05:10Z",
-      "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
     }
   ],
   "source_feed": "videos.json",
