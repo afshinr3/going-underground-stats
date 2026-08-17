@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T21:49:26.527426Z",
+  "generated_at": "2026-08-17T22:13:29.324605Z",
   "n": 2,
   "entries": [
     {
@@ -30,9 +30,9 @@
           "w7KXuXugzlA"
         ]
       },
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_passes": 6,
-      "yt_views": "1.0K"
+      "yt_views": "1.1K"
     },
     {
       "guest": "Branko Milanovic",
@@ -46,7 +46,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "580",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d",
       "x_views": "158.2K",

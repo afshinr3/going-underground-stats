@@ -1,18 +1,38 @@
 {
-  "updated": "2026-08-17T21:57:13Z",
+  "updated": "2026-08-17T22:13:29Z",
   "drops": [
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
       "peak": 860900,
       "peak_at": "2026-08-17T03:54:06Z",
-      "current": 657400,
-      "drop_pct": 23.6
+      "current": 55000,
+      "drop_pct": 93.6
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
+      "show": "GU",
+      "guest": "Barnes",
+      "platform": "X",
+      "peak": 1500000,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 105100,
+      "drop_pct": 93.0
+    },
+    {
+      "ts": "2026-08-17T22:13:29Z",
+      "show": "GU",
+      "guest": "Ayalon",
+      "platform": "X",
+      "peak": 1100000,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 286400,
+      "drop_pct": 74.0
+    },
+    {
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "RUMBLE",
@@ -22,7 +42,7 @@
       "drop_pct": 70.6
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Levy",
       "platform": "RUMBLE",
@@ -32,7 +52,7 @@
       "drop_pct": 74.3
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "X",
@@ -42,7 +62,7 @@
       "drop_pct": 63.9
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "IG",
@@ -52,7 +72,7 @@
       "drop_pct": 68.6
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Carden",
       "platform": "X",
@@ -62,7 +82,7 @@
       "drop_pct": 82.3
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
@@ -72,7 +92,7 @@
       "drop_pct": 67.3
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Kucinich",
       "platform": "X",
@@ -82,7 +102,7 @@
       "drop_pct": 95.9
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Blumenthal",
       "platform": "RUMBLE",
@@ -92,7 +112,7 @@
       "drop_pct": 64.2
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Olmert",
       "platform": "RUMBLE",
@@ -102,7 +122,7 @@
       "drop_pct": 72.5
     },
     {
-      "ts": "2026-08-17T21:57:13Z",
+      "ts": "2026-08-17T22:13:29Z",
       "show": "GU",
       "guest": "Keen",
       "platform": "RUMBLE",
