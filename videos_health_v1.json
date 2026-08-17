@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-17T12:22:57Z",
-  "last_updated": "2026-08-17T12:22:57Z",
+  "iso": "2026-08-17T13:23:00Z",
+  "last_updated": "2026-08-17T13:23:00Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -17,8 +17,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "157",
-        "x_views": "45.2K",
+        "yt_views": "271",
+        "x_views": "61.6K",
         "ig_likes": "191"
       }
     },
@@ -38,7 +38,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": null,
-        "x_views": "153.0K",
+        "x_views": "154.0K",
         "ig_likes": "577"
       }
     },
@@ -62,7 +62,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "26.6K",
-        "x_views": "69.3K",
+        "x_views": "247.0K",
         "ig_likes": "809"
       }
     },
@@ -86,7 +86,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "424.5K",
+        "x_views": "424.6K",
         "ig_likes": "2.3K"
       }
     },
@@ -109,7 +109,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "36.4K",
+        "yt_views": "36.5K",
         "x_views": "860.9K",
         "ig_likes": "5.0K"
       }
@@ -134,7 +134,7 @@
       "metrics": {
         "rumble_views": "14.9K",
         "yt_views": "3.2K",
-        "x_views": "361.9K",
+        "x_views": "362.0K",
         "ig_likes": "3.0K"
       }
     },
@@ -182,7 +182,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "592.7K",
+        "x_views": "592.8K",
         "ig_likes": "2.3K"
       }
     },
@@ -305,7 +305,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "225.6K",
+        "x_views": "251.8K",
         "ig_likes": "1.1K"
       }
     },
@@ -371,90 +371,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "91.6K",
-        "ig_likes": "809"
-      }
-    },
-    {
-      "guest": "Gabor Maté",
-      "surname": "MATÉ",
-      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
-      "date": "3 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.5K",
-        "yt_views": null,
-        "x_views": "860.9K",
-        "ig_likes": "5.0K"
-      }
-    },
-    {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
-      "surname": "BARNES",
-      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "1 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "14.9K",
-        "yt_views": null,
-        "x_views": "361.9K",
-        "ig_likes": "3.0K"
-      }
-    },
-    {
-      "guest": "of Israel’s Shin Bet Ami Ayalon",
-      "surname": "AYALON",
-      "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
-      "date": "27 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "349527d06a1f",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.2K",
-        "yt_views": null,
-        "x_views": "285.7K",
-        "ig_likes": "11.7K"
-      }
-    },
-    {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
-      "surname": "LEVY",
-      "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
-      "date": "25 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": null,
-        "x_views": "592.7K",
-        "ig_likes": "2.3K"
+        "ig_likes": "?"
       }
     },
     {
@@ -471,10 +391,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "285.3K",
-        "ig_likes": "1.6K"
+        "ig_likes": "?"
       }
     },
     {
@@ -491,13 +411,33 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.7K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "1.8K"
+        "ig_likes": "?"
+      }
+    },
+    {
+      "guest": "Gabor Maté",
+      "surname": "MATÉ",
+      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
+      "date": "3 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "0d30042528a6",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "860.9K",
+        "ig_likes": "?"
       }
     },
     {
@@ -514,10 +454,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "402.7K",
-        "ig_likes": "3.5K"
+        "ig_likes": "?"
       }
     },
     {
@@ -534,10 +474,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "251.7K",
-        "ig_likes": "1.1K"
+        "x_views": "251.8K",
+        "ig_likes": "?"
       }
     },
     {
@@ -554,13 +494,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.4K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "1.1K"
+        "ig_likes": "?"
       }
     },
     {
@@ -577,13 +517,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "2.1K"
+        "ig_likes": "?"
       }
     },
     {
@@ -600,13 +540,33 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "2.1K"
+        "ig_likes": "?"
+      }
+    },
+    {
+      "guest": "Trump’s Ex-Lawyer Robert Barnes",
+      "surname": "BARNES",
+      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
+      "date": "1 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "c133da20813e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "362.0K",
+        "ig_likes": "?"
       }
     },
     {
@@ -623,10 +583,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "37.3K",
-        "ig_likes": "2.8K"
+        "ig_likes": "?"
       }
     },
     {
@@ -643,30 +603,50 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "365.3K",
-        "ig_likes": "811"
+        "ig_likes": "?"
       }
     },
     {
-      "guest": "Theodore Postol",
-      "surname": "POSTOL",
-      "title": "Prof. Theodore Postol Explains Why Israel Could Use NUCLEAR WEAPONS in the War on Iran",
-      "date": "13 Jun",
+      "guest": "of Israel’s Shin Bet Ami Ayalon",
+      "surname": "AYALON",
+      "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
+      "date": "27 Jul",
       "show": "GU",
       "link": "",
-      "canonical_episode_id": "8014ccd61339",
+      "canonical_episode_id": "349527d06a1f",
       "canonical_video_id": null,
       "canonical_video_url": null,
       "canonical_episode_id_v2": null,
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.6K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "193.9K",
-        "ig_likes": "112"
+        "x_views": "285.7K",
+        "ig_likes": "?"
+      }
+    },
+    {
+      "guest": "Ex-Israeli Negotiator Daniel Levy",
+      "surname": "LEVY",
+      "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
+      "date": "25 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "fcee2e52ba61",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "592.8K",
+        "ig_likes": "?"
       }
     },
     {
@@ -688,8 +668,8 @@
       },
       "metrics": {
         "rumble_views": "355",
-        "yt_views": "87",
-        "x_views": "101.5K",
+        "yt_views": "88",
+        "x_views": "148.1K",
         "ig_likes": "194"
       }
     },
@@ -713,7 +693,7 @@
       "metrics": {
         "rumble_views": "444",
         "yt_views": "156",
-        "x_views": "692.9K",
+        "x_views": "814.5K",
         "ig_likes": "274"
       }
     },
@@ -736,8 +716,8 @@
       },
       "metrics": {
         "rumble_views": "536",
-        "yt_views": "87",
-        "x_views": "231.9K",
+        "yt_views": "291",
+        "x_views": "689.3K",
         "ig_likes": "230"
       }
     },
@@ -761,7 +741,7 @@
       "metrics": {
         "rumble_views": "639",
         "yt_views": "133",
-        "x_views": "129.9K",
+        "x_views": "202.9K",
         "ig_likes": "587"
       }
     },
@@ -874,8 +854,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "157",
-        "x_views": "45.2K",
+        "yt_views": "271",
+        "x_views": "61.6K",
         "ig_likes": "191"
       }
     },
@@ -895,7 +875,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": null,
-        "x_views": "153.0K",
+        "x_views": "154.0K",
         "ig_likes": "577"
       }
     },
@@ -919,7 +899,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "26.6K",
-        "x_views": "69.3K",
+        "x_views": "247.0K",
         "ig_likes": "809"
       }
     },
@@ -943,7 +923,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "424.5K",
+        "x_views": "424.6K",
         "ig_likes": "2.3K"
       }
     },
@@ -966,7 +946,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "36.4K",
+        "yt_views": "36.5K",
         "x_views": "860.9K",
         "ig_likes": "5.0K"
       }
@@ -992,8 +972,8 @@
       },
       "metrics": {
         "rumble_views": "355",
-        "yt_views": "87",
-        "x_views": "101.5K",
+        "yt_views": "88",
+        "x_views": "148.1K",
         "ig_likes": "194"
       }
     },
@@ -1017,7 +997,7 @@
       "metrics": {
         "rumble_views": "444",
         "yt_views": "156",
-        "x_views": "692.9K",
+        "x_views": "814.5K",
         "ig_likes": "274"
       }
     },
@@ -1040,8 +1020,8 @@
       },
       "metrics": {
         "rumble_views": "536",
-        "yt_views": "87",
-        "x_views": "231.9K",
+        "yt_views": "291",
+        "x_views": "689.3K",
         "ig_likes": "230"
       }
     },
@@ -1065,7 +1045,7 @@
       "metrics": {
         "rumble_views": "639",
         "yt_views": "133",
-        "x_views": "129.9K",
+        "x_views": "202.9K",
         "ig_likes": "587"
       }
     },
