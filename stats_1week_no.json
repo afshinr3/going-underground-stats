@@ -5,18 +5,18 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-17T10:15:12.420252Z",
+  "generated_at": "2026-08-17T10:55:00.361627Z",
   "n": 1,
   "entries": [
     {
       "guest": "Sarang Shidore",
       "surname": "Shidore",
       "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-      "rumble_views": "346",
-      "x_views": "100.4K",
+      "rumble_views": "355",
+      "x_views": "147.0K",
       "date": "16 Aug",
       "yt_views": "87",
-      "ig_likes": "191",
+      "ig_likes": "194",
       "canonical_guest_full_name": "Sarang Shidore",
       "canonical_surname_upper": "SHIDORE",
       "canonical_episode_id": "10f843fd1fef",
@@ -32,9 +32,9 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "_x_status": "MEASURED",
+      "_x_status": "MEASURED_LOWER_BOUND",
       "show": "NO",
-      "_x_passes": 3
+      "_x_passes": 6
     }
   ],
   "source_feed": "videos_neworder.json",
