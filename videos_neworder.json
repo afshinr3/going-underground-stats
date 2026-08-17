@@ -3,10 +3,10 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "370",
-    "x_views": "150.4K",
+    "rumble_views": "368",
+    "x_views": "150.6K",
     "date": "16 Aug",
-    "yt_views": "90",
+    "yt_views": "94",
     "ig_likes": "196",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -48,12 +48,12 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "158",
+    "yt_views": "156",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "815.0K",
-    "_x_status": "MEASURED",
-    "_x_passes": 3
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Mohammed Baharoon",
@@ -80,8 +80,8 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "689.6K",
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "_x_passes": 6
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Hussein Askary",
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-17T19:05:15Z",
+    "_carried_forward_iso": "2026-08-17T19:39:11Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
