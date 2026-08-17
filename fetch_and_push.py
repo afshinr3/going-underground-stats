@@ -2096,13 +2096,49 @@ async def update_show(show, ig_clips):
                     or str(_r.get('canonical_episode_id') or '').strip()
                     or str(_r.get('canonical_episode_id_v2') or '').strip()
                     or f"{str(_r.get('surname') or '').upper()}|{str(_r.get('date') or '')}")
-        _now_keys = {_ep_key(r) for r in cache}
+        # ANY_SHARED_IDENTITY_MEANS_SAME_EPISODE_V1_20260817
+        # `_ep_key` is an ordered PRECEDENCE CHAIN, so two rows only match when they resolve at
+        # the SAME level of it. Production proof, 2026-08-17 stats_1week_gu.json: n=3 for two real
+        # episodes, with Pilkington published twice —
+        #     fresh   row: canonical_video_id w7KXuXugzlA        -> keyed on the video id
+        #     carried row: no video id                           -> fell through to the title hash
+        #     BOTH rows:   canonical_episode_id 93ad76c313d1     -> would have matched
+        # so a shared, unambiguous identity was present and the chain never consulted it, because
+        # a stronger key existed on one side only. The dashboard showed one episode twice with
+        # different x_views (97.6K and a stale 90.7K).
+        #
+        # Precedence is the wrong shape for this. Two rows are the SAME episode if they agree on
+        # ANY identity field, so identities are unioned into equivalence classes and membership is
+        # tested against the class. This subsumes both failure modes the chain was patched for:
+        # the punctuation fork (two title hashes joined through a shared video id) and this one
+        # (a missing video id joined through a shared episode id).
+        def _identities(_r):
+            out = set()
+            for f in ('canonical_video_id', 'canonical_episode_id', 'canonical_episode_id_v2'):
+                v = str(_r.get(f) or '').strip()
+                if v:
+                    out.add(f"{f}={v}")
+            t = _norm_title_id(_r)
+            if t:
+                out.add(f"title={t}")
+            for pid_list in (_r.get('source_platform_ids') or {}).values():
+                for pid in (pid_list or []):
+                    if pid:
+                        out.add(f"platform={pid}")
+            if not out:
+                out.add(f"fallback={str(_r.get('surname') or '').upper()}|{_r.get('date') or ''}")
+            return out
+
+        _known_ids = set()
+        for r in cache:
+            _known_ids |= _identities(r)
+
         _readded = []
         for _r in _prev:
             if not isinstance(_r, dict):
                 continue
-            if _ep_key(_r) in _now_keys:
-                continue
+            if _identities(_r) & _known_ids:
+                continue          # shares an identity with a row already present -> same episode
             if _r.get('is_upcoming'):
                 continue          # an upcoming row legitimately disappears once it airs
             _r = dict(_r)
@@ -2111,7 +2147,7 @@ async def update_show(show, ig_clips):
                 'absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 '
                 'because a known episode must not disappear on one failed lookup')
             cache.append(_r)
-            _now_keys.add(_ep_key(_r))     # a carried-forward row is now PRESENT; a second
+            _known_ids |= _identities(_r)  # a carried-forward row is now PRESENT; a second
                                            # copy of the same episode must not also be added
             _readded.append(f"{_r.get('surname')}|{_r.get('date')}")
 
