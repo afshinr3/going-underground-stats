@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-18T01:39:32Z",
+  "updated": "2026-08-18T02:01:01Z",
   "drops": [
     {
-      "ts": "2026-08-18T01:39:32Z",
+      "ts": "2026-08-18T02:01:01Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -12,27 +12,7 @@
       "drop_pct": 63.0
     },
     {
-      "ts": "2026-08-18T01:39:32Z",
-      "show": "GU",
-      "guest": "Bandow",
-      "platform": "X",
-      "peak": 745600,
-      "peak_at": "2026-08-17T16:49:53Z",
-      "current": 286800,
-      "drop_pct": 61.5
-    },
-    {
-      "ts": "2026-08-18T01:39:32Z",
-      "show": "GU",
-      "guest": "Ellwood",
-      "platform": "X",
-      "peak": 691500,
-      "peak_at": "2026-08-17T16:49:53Z",
-      "current": 252200,
-      "drop_pct": 63.5
-    },
-    {
-      "ts": "2026-08-18T01:39:32Z",
+      "ts": "2026-08-18T02:01:01Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
@@ -42,7 +22,7 @@
       "drop_pct": 75.8
     },
     {
-      "ts": "2026-08-18T01:39:32Z",
+      "ts": "2026-08-18T02:01:01Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
@@ -52,7 +32,37 @@
       "drop_pct": 74.0
     },
     {
-      "ts": "2026-08-18T01:39:32Z",
+      "ts": "2026-08-18T02:01:01Z",
+      "show": "GU",
+      "guest": "Bandow",
+      "platform": "X",
+      "peak": 745600,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 286800,
+      "drop_pct": 61.5
+    },
+    {
+      "ts": "2026-08-18T02:01:01Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "X",
+      "peak": 536800,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 403300,
+      "drop_pct": 24.9
+    },
+    {
+      "ts": "2026-08-18T02:01:01Z",
+      "show": "GU",
+      "guest": "Ellwood",
+      "platform": "X",
+      "peak": 691500,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 252200,
+      "drop_pct": 63.5
+    },
+    {
+      "ts": "2026-08-18T02:01:01Z",
       "show": "NO",
       "guest": "Shidore",
       "platform": "X",
@@ -62,7 +72,7 @@
       "drop_pct": 31.5
     },
     {
-      "ts": "2026-08-18T01:39:32Z",
+      "ts": "2026-08-18T02:01:01Z",
       "show": "NO",
       "guest": "Baharoon",
       "platform": "X",
