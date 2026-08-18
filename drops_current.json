@@ -1,18 +1,28 @@
 {
-  "updated": "2026-08-18T13:33:09Z",
+  "updated": "2026-08-18T13:54:45Z",
   "drops": [
     {
-      "ts": "2026-08-18T13:33:09Z",
+      "ts": "2026-08-18T13:54:45Z",
       "show": "GU",
-      "guest": "Mearsheimer",
+      "guest": "Barnes",
       "platform": "X",
-      "peak": 248400,
-      "peak_at": "2026-08-18T12:15:27Z",
-      "current": 91600,
-      "drop_pct": 63.1
+      "peak": 1500000,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 105200,
+      "drop_pct": 93.0
     },
     {
-      "ts": "2026-08-18T13:33:09Z",
+      "ts": "2026-08-18T13:54:45Z",
+      "show": "GU",
+      "guest": "Ayalon",
+      "platform": "X",
+      "peak": 1100000,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 286700,
+      "drop_pct": 73.9
+    },
+    {
+      "ts": "2026-08-18T13:54:45Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
@@ -22,34 +32,54 @@
       "drop_pct": 61.5
     },
     {
-      "ts": "2026-08-18T13:33:09Z",
+      "ts": "2026-08-18T13:54:45Z",
+      "show": "GU",
+      "guest": "Wilkerson",
+      "platform": "X",
+      "peak": 1600000,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 172000,
+      "drop_pct": 89.2
+    },
+    {
+      "ts": "2026-08-18T13:54:45Z",
+      "show": "GU",
+      "guest": "Fritz",
+      "platform": "X",
+      "peak": 536800,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 193900,
+      "drop_pct": 63.9
+    },
+    {
+      "ts": "2026-08-18T13:54:45Z",
+      "show": "GU",
+      "guest": "Carden",
+      "platform": "X",
+      "peak": 717200,
+      "peak_at": "2026-08-17T16:49:53Z",
+      "current": 127000,
+      "drop_pct": 82.3
+    },
+    {
+      "ts": "2026-08-18T13:54:45Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
       "peak": 691500,
       "peak_at": "2026-08-17T16:49:53Z",
-      "current": 252500,
-      "drop_pct": 63.5
+      "current": 226300,
+      "drop_pct": 67.3
     },
     {
-      "ts": "2026-08-18T13:33:09Z",
+      "ts": "2026-08-18T13:54:45Z",
       "show": "GU",
-      "guest": "Barnes",
+      "guest": "Kucinich",
       "platform": "X",
-      "peak": 1500000,
+      "peak": 1900000,
       "peak_at": "2026-08-17T16:49:53Z",
-      "current": 362800,
-      "drop_pct": 75.8
-    },
-    {
-      "ts": "2026-08-18T13:33:09Z",
-      "show": "GU",
-      "guest": "Ayalon",
-      "platform": "X",
-      "peak": 1100000,
-      "peak_at": "2026-08-17T16:49:53Z",
-      "current": 286700,
-      "drop_pct": 73.9
+      "current": 78500,
+      "drop_pct": 95.9
     }
   ]
 }
