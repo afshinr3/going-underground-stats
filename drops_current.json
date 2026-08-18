@@ -1,8 +1,28 @@
 {
-  "updated": "2026-08-18T14:17:52Z",
+  "updated": "2026-08-18T14:38:29Z",
   "drops": [
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
+      "show": "GU",
+      "guest": "Mearsheimer",
+      "platform": "X",
+      "peak": 248400,
+      "peak_at": "2026-08-18T12:15:27Z",
+      "current": 69600,
+      "drop_pct": 72.0
+    },
+    {
+      "ts": "2026-08-18T14:38:29Z",
+      "show": "GU",
+      "guest": "Mat\u00e9",
+      "platform": "X",
+      "peak": 861000,
+      "peak_at": "2026-08-18T01:39:32Z",
+      "current": 55100,
+      "drop_pct": 93.6
+    },
+    {
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Barnes",
       "platform": "X",
@@ -12,7 +32,7 @@
       "drop_pct": 93.0
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Ayalon",
       "platform": "X",
@@ -22,17 +42,17 @@
       "drop_pct": 73.9
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Bandow",
       "platform": "X",
       "peak": 745600,
       "peak_at": "2026-08-17T16:49:53Z",
-      "current": 287200,
+      "current": 287300,
       "drop_pct": 61.5
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Wilkerson",
       "platform": "X",
@@ -42,17 +62,17 @@
       "drop_pct": 89.2
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "X",
       "peak": 536800,
       "peak_at": "2026-08-17T16:49:53Z",
-      "current": 193900,
+      "current": 194000,
       "drop_pct": 63.9
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Carden",
       "platform": "X",
@@ -62,7 +82,7 @@
       "drop_pct": 82.3
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Ellwood",
       "platform": "X",
@@ -72,7 +92,7 @@
       "drop_pct": 67.3
     },
     {
-      "ts": "2026-08-18T14:17:52Z",
+      "ts": "2026-08-18T14:38:29Z",
       "show": "GU",
       "guest": "Kucinich",
       "platform": "X",
