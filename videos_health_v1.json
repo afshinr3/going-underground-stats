@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-18T02:56:39Z",
-  "last_updated": "2026-08-18T02:56:39Z",
+  "iso": "2026-08-18T03:50:54Z",
+  "last_updated": "2026-08-18T03:50:54Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -22,8 +22,8 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.3K",
-        "x_views": "178.8K",
-        "ig_likes": "595"
+        "x_views": "181.0K",
+        "ig_likes": "753"
       }
     },
     {
@@ -42,8 +42,8 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": null,
-        "x_views": "158.6K",
-        "ig_likes": "580"
+        "x_views": "158.7K",
+        "ig_likes": "586"
       }
     },
     {
@@ -67,7 +67,7 @@
         "rumble_views": "3.0K",
         "yt_views": "27.0K",
         "x_views": "247.9K",
-        "ig_likes": "811"
+        "ig_likes": "812"
       }
     },
     {
@@ -113,7 +113,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "38.2K",
+        "yt_views": "38.3K",
         "x_views": "861.0K",
         "ig_likes": "5.0K"
       }
@@ -163,7 +163,7 @@
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "286.5K",
-        "ig_likes": "11.8K"
+        "ig_likes": "11.9K"
       }
     },
     {
@@ -312,7 +312,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "252.2K",
+        "x_views": "226.0K",
         "ig_likes": "1.1K"
       }
     },
@@ -336,10 +336,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "944",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "78.4K",
         "ig_likes": "1.1K"
       }
     },
@@ -368,29 +365,6 @@
       }
     },
     {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "2.2K"
-      }
-    },
-    {
       "guest": "Ehud Olmert",
       "surname": "OLMERT",
       "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -406,7 +380,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "37.4K",
+        "x_views": "93.9K",
         "ig_likes": "2.8K"
       }
     },
@@ -426,7 +400,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "365.5K",
+        "x_views": "457.6K",
         "ig_likes": "811"
       }
     },
@@ -449,9 +423,9 @@
       },
       "metrics": {
         "rumble_views": "375",
-        "yt_views": "102",
+        "yt_views": "104",
         "x_views": "151.8K",
-        "ig_likes": "197"
+        "ig_likes": "200"
       }
     },
     {
@@ -498,7 +472,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "291",
-        "x_views": "689.8K",
+        "x_views": "689.9K",
         "ig_likes": "230"
       }
     },
@@ -640,8 +614,8 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "1.3K",
-        "x_views": "178.8K",
-        "ig_likes": "595"
+        "x_views": "181.0K",
+        "ig_likes": "753"
       }
     },
     {
@@ -660,8 +634,8 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": null,
-        "x_views": "158.6K",
-        "ig_likes": "580"
+        "x_views": "158.7K",
+        "ig_likes": "586"
       }
     },
     {
@@ -685,7 +659,7 @@
         "rumble_views": "3.0K",
         "yt_views": "27.0K",
         "x_views": "247.9K",
-        "ig_likes": "811"
+        "ig_likes": "812"
       }
     },
     {
@@ -731,7 +705,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "38.2K",
+        "yt_views": "38.3K",
         "x_views": "861.0K",
         "ig_likes": "5.0K"
       }
@@ -757,9 +731,9 @@
       },
       "metrics": {
         "rumble_views": "375",
-        "yt_views": "102",
+        "yt_views": "104",
         "x_views": "151.8K",
-        "ig_likes": "197"
+        "ig_likes": "200"
       }
     },
     {
@@ -806,7 +780,7 @@
       "metrics": {
         "rumble_views": "536",
         "yt_views": "291",
-        "x_views": "689.8K",
+        "x_views": "689.9K",
         "ig_likes": "230"
       }
     },
