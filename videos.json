@@ -5,7 +5,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "2.9K",
-    "x_views": "222.6K",
+    "x_views": "223.4K",
     "ig_likes": "1.8K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -21,8 +21,9 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "2.5K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "2.5K",
+    "_x_passes": 6
   },
   {
     "guest": "Branko Milanovic",
@@ -36,9 +37,11 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "594",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_surname_upper": "MILANOVIC",
-    "canonical_episode_id": "fd9388b8783d"
+    "canonical_episode_id": "fd9388b8783d",
+    "x_views": "161.0K",
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
@@ -46,7 +49,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.0K",
-    "x_views": "91.6K",
+    "x_views": "249.6K",
     "ig_likes": "816",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -62,18 +65,19 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "27.8K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "27.8K",
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
-    "rumble_views": "3.3K",
-    "x_views": null,
+    "rumble_views": null,
+    "x_views": "427.1K",
     "date": "7 Aug",
     "yt_views": "7.7K",
-    "ig_likes": "2.4K",
+    "ig_likes": null,
     "canonical_guest_full_name": "Hasan \u00dcnal",
     "canonical_surname_upper": "\u00dcNAL",
     "canonical_episode_id": "c5f74b00a6fa",
@@ -89,8 +93,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "show": "GU"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "show": "GU",
+    "_x_passes": 6
   },
   {
     "guest": "Gabor Mat\u00e9",
@@ -115,7 +120,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "42.5K"
+    "yt_views": "42.6K"
   },
   {
     "guest": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -250,7 +255,7 @@
     "x_views": "404.8K",
     "date": "13 Jul",
     "yt_views": "1.0K",
-    "ig_likes": "1.1K",
+    "ig_likes": "3.5K",
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
     "canonical_episode_id": "b8e8126f2b5e",
@@ -273,11 +278,11 @@
     "guest": "James Carden",
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
-    "rumble_views": "2.7K",
+    "rumble_views": null,
     "x_views": null,
     "date": "11 Jul",
     "yt_views": "1.5K",
-    "ig_likes": "522",
+    "ig_likes": null,
     "canonical_guest_full_name": "James Carden",
     "canonical_surname_upper": "CARDEN",
     "canonical_episode_id": "bce46f2dc542",
@@ -383,7 +388,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-19T17:02:41Z",
+    "_carried_forward_iso": "2026-08-19T17:17:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -398,7 +403,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-19T17:02:41Z",
+    "_carried_forward_iso": "2026-08-19T17:17:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -413,7 +418,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-19T17:02:41Z",
+    "_carried_forward_iso": "2026-08-19T17:17:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
