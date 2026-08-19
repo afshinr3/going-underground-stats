@@ -136,7 +136,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "563.5K",
-    "_x_status": "MEASURED",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -162,7 +162,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -188,7 +188,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-19T14:38:58Z",
+    "_carried_forward_iso": "2026-08-19T14:56:34Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
