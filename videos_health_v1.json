@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-19T03:53:05Z",
-  "last_updated": "2026-08-19T03:53:05Z",
+  "iso": "2026-08-19T04:34:23Z",
+  "last_updated": "2026-08-19T04:34:23Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "215.4K",
+        "x_views": "216.1K",
         "ig_likes": "1.7K"
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": null,
-        "x_views": "160.3K",
+        "x_views": "115.4K",
         "ig_likes": "592"
       }
     },
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "27.5K",
-        "x_views": "69.7K",
+        "x_views": "249.0K",
         "ig_likes": "816"
       }
     },
@@ -90,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "426.5K",
+        "x_views": "426.6K",
         "ig_likes": "2.4K"
       }
     },
@@ -359,29 +359,6 @@
       }
     },
     {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "2.0K"
-      }
-    },
-    {
       "guest": "Ehud Olmert",
       "surname": "OLMERT",
       "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -417,7 +394,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "458.3K",
+        "x_views": "458.4K",
         "ig_likes": "811"
       }
     },
@@ -441,7 +418,7 @@
       "metrics": {
         "rumble_views": "390",
         "yt_views": "119",
-        "x_views": "170.0K",
+        "x_views": "170.2K",
         "ig_likes": "203"
       }
     },
@@ -465,7 +442,7 @@
       "metrics": {
         "rumble_views": "452",
         "yt_views": "159",
-        "x_views": "816.2K",
+        "x_views": "816.3K",
         "ig_likes": "275"
       }
     },
@@ -631,7 +608,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "215.4K",
+        "x_views": "216.1K",
         "ig_likes": "1.7K"
       }
     },
@@ -651,7 +628,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": null,
-        "x_views": "160.3K",
+        "x_views": "115.4K",
         "ig_likes": "592"
       }
     },
@@ -675,7 +652,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "27.5K",
-        "x_views": "69.7K",
+        "x_views": "249.0K",
         "ig_likes": "816"
       }
     },
@@ -699,7 +676,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "7.6K",
-        "x_views": "426.5K",
+        "x_views": "426.6K",
         "ig_likes": "2.4K"
       }
     },
@@ -749,7 +726,7 @@
       "metrics": {
         "rumble_views": "390",
         "yt_views": "119",
-        "x_views": "170.0K",
+        "x_views": "170.2K",
         "ig_likes": "203"
       }
     },
@@ -773,7 +750,7 @@
       "metrics": {
         "rumble_views": "452",
         "yt_views": "159",
-        "x_views": "816.2K",
+        "x_views": "816.3K",
         "ig_likes": "275"
       }
     },

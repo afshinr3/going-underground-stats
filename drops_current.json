@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-19T03:53:05Z",
+  "updated": "2026-08-19T04:34:23Z",
   "drops": [
     {
-      "ts": "2026-08-19T03:53:05Z",
+      "ts": "2026-08-19T04:34:23Z",
       "show": "GU",
-      "guest": "Mearsheimer",
+      "guest": "Milanovic",
       "platform": "X",
-      "peak": 249000,
+      "peak": 160300,
       "peak_at": "2026-08-19T02:58:45Z",
-      "current": 69700,
-      "drop_pct": 72.0
+      "current": 115400,
+      "drop_pct": 28.0
     },
     {
-      "ts": "2026-08-19T03:53:05Z",
+      "ts": "2026-08-19T04:34:23Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",

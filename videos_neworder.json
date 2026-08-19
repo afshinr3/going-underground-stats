@@ -3,8 +3,8 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "391",
-    "x_views": "170.0K",
+    "rumble_views": "390",
+    "x_views": "170.2K",
     "date": "16 Aug",
     "yt_views": "119",
     "ig_likes": "203",
@@ -23,9 +23,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "show": "NO",
-    "_x_passes": 6
+    "_x_passes": 2
   },
   {
     "guest": "Marta Fernandez",
@@ -51,8 +51,8 @@
     "yt_views": "159",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "816.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "816.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "690.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "203.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
