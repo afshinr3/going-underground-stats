@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-19T01:34:25Z",
-  "last_updated": "2026-08-19T01:34:25Z",
+  "iso": "2026-08-19T02:58:45Z",
+  "last_updated": "2026-08-19T02:58:45Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -20,10 +20,30 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "213.4K",
-        "ig_likes": null
+        "x_views": "214.7K",
+        "ig_likes": "1.5K"
+      }
+    },
+    {
+      "guest": "Branko Milanovic",
+      "surname": "MILANOVIC",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "14 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-14T02:15:22Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.1K",
+        "yt_views": null,
+        "x_views": "160.3K",
+        "ig_likes": "592"
       }
     },
     {
@@ -44,10 +64,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "27.5K",
-        "x_views": "248.9K",
-        "ig_likes": null
+        "x_views": "249.0K",
+        "ig_likes": "815"
       }
     },
     {
@@ -68,10 +88,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "7.6K",
         "x_views": "426.5K",
-        "ig_likes": null
+        "ig_likes": "2.4K"
       }
     },
     {
@@ -92,10 +112,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "41.2K",
+        "rumble_views": "3.5K",
+        "yt_views": "41.3K",
         "x_views": "55.3K",
-        "ig_likes": null
+        "ig_likes": "5.0K"
       }
     },
     {
@@ -116,10 +136,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "15.0K",
         "yt_views": "3.2K",
         "x_views": "363.2K",
-        "ig_likes": null
+        "ig_likes": "3.0K"
       }
     },
     {
@@ -140,10 +160,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "286.8K",
-        "ig_likes": null
+        "ig_likes": "12.0K"
       }
     },
     {
@@ -164,10 +184,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "4.1K",
         "x_views": "593.5K",
-        "ig_likes": null
+        "ig_likes": "2.3K"
       }
     },
     {
@@ -188,10 +208,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "3.1K",
         "x_views": "287.6K",
-        "ig_likes": null
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -212,13 +232,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.7K",
         "yt_views": "4.3K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "1.8K"
       }
     },
     {
@@ -239,10 +259,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "1.0K",
         "x_views": "404.2K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -263,13 +283,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.7K",
         "yt_views": "1.5K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "522"
       }
     },
     {
@@ -290,10 +310,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.5K",
         "yt_views": "1.4K",
         "x_views": "252.9K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -314,13 +334,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.4K",
         "yt_views": "945",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": null
+        "x_views": "78.5K",
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -341,36 +358,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.9K",
         "yt_views": "15.4K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "?",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "?"
+        "x_views": "206.4K",
+        "ig_likes": "2.1K"
       }
     },
     {
@@ -387,10 +378,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "37.6K",
-        "ig_likes": "?"
+        "x_views": "93.9K",
+        "ig_likes": "2.8K"
       }
     },
     {
@@ -407,10 +398,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "457.9K",
-        "ig_likes": "?"
+        "x_views": "458.3K",
+        "ig_likes": "811"
       }
     },
     {
@@ -431,9 +422,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "389",
+        "rumble_views": "390",
         "yt_views": "119",
-        "x_views": "169.8K",
+        "x_views": "170.0K",
         "ig_likes": "203"
       }
     },
@@ -455,7 +446,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "451",
+        "rumble_views": "452",
         "yt_views": "159",
         "x_views": "816.2K",
         "ig_likes": "275"
@@ -621,10 +612,30 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "213.4K",
-        "ig_likes": null
+        "x_views": "214.7K",
+        "ig_likes": "1.5K"
+      }
+    },
+    {
+      "guest": "Branko Milanovic",
+      "surname": "MILANOVIC",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "14 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-14T02:15:22Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.1K",
+        "yt_views": null,
+        "x_views": "160.3K",
+        "ig_likes": "592"
       }
     },
     {
@@ -645,10 +656,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "27.5K",
-        "x_views": "248.9K",
-        "ig_likes": null
+        "x_views": "249.0K",
+        "ig_likes": "815"
       }
     },
     {
@@ -669,10 +680,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "7.6K",
         "x_views": "426.5K",
-        "ig_likes": null
+        "ig_likes": "2.4K"
       }
     },
     {
@@ -693,34 +704,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "41.2K",
+        "rumble_views": "3.5K",
+        "yt_views": "41.3K",
         "x_views": "55.3K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
-      "surname": "BARNES",
-      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "1 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": "N_ysv6Gh9Ac",
-      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id_v2": "7edf3af7b8798e44",
-      "pub_iso": "2026-08-01T21:22:19Z",
-      "source_platform_ids": {
-        "youtube": [
-          "N_ysv6Gh9Ac"
-        ]
-      },
-      "metrics": {
-        "rumble_views": null,
-        "yt_views": "3.2K",
-        "x_views": "363.2K",
-        "ig_likes": null
+        "ig_likes": "5.0K"
       }
     }
   ],
@@ -743,9 +730,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "389",
+        "rumble_views": "390",
         "yt_views": "119",
-        "x_views": "169.8K",
+        "x_views": "170.0K",
         "ig_likes": "203"
       }
     },
@@ -767,7 +754,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "451",
+        "rumble_views": "452",
         "yt_views": "159",
         "x_views": "816.2K",
         "ig_likes": "275"
