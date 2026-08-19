@@ -21,7 +21,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.2K",
     "_x_passes": 3
   },
@@ -37,7 +37,7 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "592",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d",
     "x_views": "115.4K",
@@ -65,7 +65,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "27.5K",
     "_x_passes": 2
   },
@@ -93,7 +93,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "show": "GU",
     "_x_passes": 6
   },
@@ -380,7 +380,7 @@
         "-c_7WNHYTEE"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "15.4K",
     "_x_passes": 6
   },
@@ -398,7 +398,7 @@
     "canonical_episode_id": "2d6e9913fb1c",
     "_carried_forward_iso": "2026-08-19T03:44:15Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -415,7 +415,22 @@
     "canonical_episode_id": "cbe40066aa0d",
     "_carried_forward_iso": "2026-08-19T03:44:15Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
+  },
+  {
+    "guest": "\u2018The US LACKS THE POWER TO DEF",
+    "surname": "DEF",
+    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+    "date": "27 Jun",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
+    "show": "GU",
+    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
+    "canonical_surname_upper": "DEF",
+    "canonical_episode_id": "95d519473319",
+    "_carried_forward_iso": "2026-08-19T04:40:35Z",
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
