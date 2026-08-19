@@ -1,18 +1,8 @@
 {
-  "updated": "2026-08-19T19:43:17Z",
+  "updated": "2026-08-19T19:47:56Z",
   "drops": [
     {
-      "ts": "2026-08-19T19:43:17Z",
-      "show": "GU",
-      "guest": "Mearsheimer",
-      "platform": "X",
-      "peak": 249600,
-      "peak_at": "2026-08-19T17:25:31Z",
-      "current": 91600,
-      "drop_pct": 63.3
-    },
-    {
-      "ts": "2026-08-19T19:43:17Z",
+      "ts": "2026-08-19T19:47:56Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
