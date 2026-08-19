@@ -21,7 +21,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.4K",
     "_x_passes": 6
   },
@@ -37,7 +37,7 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "592",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d",
     "x_views": "160.8K",
@@ -65,7 +65,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "27.7K",
     "_x_passes": 6
   },
@@ -93,7 +93,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "show": "GU",
     "_x_passes": 6
   },
@@ -120,7 +120,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "42.0K",
+    "yt_views": "42.1K",
     "_x_passes": 6
   },
   {
@@ -331,7 +331,7 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "1.4K",
     "_x_passes": 6
   },
@@ -357,7 +357,7 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "945",
     "_x_passes": 6
   },
@@ -383,7 +383,7 @@
         "-c_7WNHYTEE"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "15.4K",
     "_x_passes": 6
   },
@@ -392,14 +392,14 @@
     "surname": "DEF",
     "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
     "date": "27 Jun",
-    "rumble_views": "2.5K",
-    "x_views": null,
-    "ig_likes": "2.0K",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-19T12:07:32Z",
+    "_carried_forward_iso": "2026-08-19T12:23:19Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -407,14 +407,14 @@
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "3.1K",
+    "rumble_views": "?",
     "x_views": "37.7K",
-    "ig_likes": "2.8K",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-19T12:07:32Z",
+    "_carried_forward_iso": "2026-08-19T12:23:19Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -422,14 +422,14 @@
     "surname": "Keen",
     "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
     "date": "15 Jun",
-    "rumble_views": "3.0K",
+    "rumble_views": "?",
     "x_views": "458.5K",
-    "ig_likes": "811",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-19T12:07:32Z",
+    "_carried_forward_iso": "2026-08-19T12:23:19Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
