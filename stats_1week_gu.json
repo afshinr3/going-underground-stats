@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-19T11:23:43.703221Z",
+  "generated_at": "2026-08-19T11:49:45.247347Z",
   "n": 2,
   "entries": [
     {
@@ -30,7 +30,7 @@
           "w7KXuXugzlA"
         ]
       },
-      "_x_status": "MEASURED",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "yt_views": "2.3K",
       "_x_passes": 3
     },
@@ -46,7 +46,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "592",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d",
       "x_views": "160.7K",

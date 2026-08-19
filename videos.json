@@ -66,7 +66,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "27.6K",
+    "yt_views": "27.7K",
     "_x_passes": 6
   },
   {
@@ -103,7 +103,7 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "3.5K",
-    "x_views": "55.3K",
+    "x_views": "55.4K",
     "ig_likes": "5.0K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
@@ -119,7 +119,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "42.0K",
     "_x_passes": 6
   },
@@ -129,7 +129,7 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": "15.0K",
-    "x_views": "363.2K",
+    "x_views": "105.4K",
     "ig_likes": "3.0K",
     "show": "GU",
     "canonical_guest_full_name": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -145,8 +145,9 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "3.2K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "3.2K",
+    "_x_passes": 6
   },
   {
     "guest": "of Israel\u2019s Shin Bet Ami Ayalon",
@@ -154,7 +155,7 @@
     "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
     "date": "27 Jul",
     "rumble_views": "3.2K",
-    "x_views": "286.8K",
+    "x_views": "287.0K",
     "ig_likes": "12.0K",
     "show": "GU",
     "canonical_guest_full_name": "of Israel\u2019s Shin Bet Ami Ayalon",
@@ -170,8 +171,9 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "1.6K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "1.6K",
+    "_x_passes": 6
   },
   {
     "guest": "Ex-Israeli Negotiator Daniel Levy",
@@ -179,7 +181,7 @@
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
     "rumble_views": "2.8K",
-    "x_views": "267.0K",
+    "x_views": "267.1K",
     "ig_likes": "2.3K",
     "show": "GU",
     "canonical_guest_full_name": "Ex-Israeli Negotiator Daniel Levy",
@@ -195,9 +197,9 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "4.1K",
-    "_x_passes": 2
+    "_x_passes": 6
   },
   {
     "guest": "Doug Bandow",
@@ -397,7 +399,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-19T11:39:09Z",
+    "_carried_forward_iso": "2026-08-19T11:42:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -412,7 +414,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-19T11:39:09Z",
+    "_carried_forward_iso": "2026-08-19T11:42:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -427,7 +429,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-19T11:39:09Z",
+    "_carried_forward_iso": "2026-08-19T11:42:29Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
