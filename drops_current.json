@@ -1,18 +1,8 @@
 {
-  "updated": "2026-08-19T05:05:48Z",
+  "updated": "2026-08-19T05:17:56Z",
   "drops": [
     {
-      "ts": "2026-08-19T05:05:48Z",
-      "show": "GU",
-      "guest": "Milanovic",
-      "platform": "X",
-      "peak": 160300,
-      "peak_at": "2026-08-19T02:58:45Z",
-      "current": 115400,
-      "drop_pct": 28.0
-    },
-    {
-      "ts": "2026-08-19T05:05:48Z",
+      "ts": "2026-08-19T05:17:56Z",
       "show": "GU",
       "guest": "Mat\u00e9",
       "platform": "X",
