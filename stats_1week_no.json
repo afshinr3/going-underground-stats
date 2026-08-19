@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-19T10:49:59.954701Z",
+  "generated_at": "2026-08-19T11:23:43.703521Z",
   "n": 1,
   "entries": [
     {
@@ -32,9 +32,9 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "MEASURED",
       "show": "NO",
-      "_x_passes": 6
+      "_x_passes": 3
     }
   ],
   "source_feed": "videos_neworder.json",
