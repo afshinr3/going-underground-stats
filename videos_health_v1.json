@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-20T02:54:13Z",
-  "last_updated": "2026-08-20T02:54:13Z",
+  "iso": "2026-08-20T03:53:13Z",
+  "last_updated": "2026-08-20T03:53:13Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "2.5K",
-        "x_views": "230.1K",
+        "x_views": "230.4K",
         "ig_likes": "1.9K"
       }
     },
@@ -42,8 +42,8 @@
       "metrics": {
         "rumble_views": "2.2K",
         "yt_views": null,
-        "x_views": "161.5K",
-        "ig_likes": "596"
+        "x_views": "161.6K",
+        "ig_likes": "598"
       }
     },
     {
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "28.0K",
-        "x_views": "249.9K",
+        "x_views": "250.0K",
         "ig_likes": "816"
       }
     },
@@ -333,10 +333,7 @@
       "metrics": {
         "rumble_views": "2.4K",
         "yt_views": "946",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "78.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -362,29 +359,6 @@
         "yt_views": "15.4K",
         "x_views": "206.6K",
         "ig_likes": "2.1K"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "2.0K"
       }
     },
     {
@@ -424,7 +398,7 @@
         "rumble_views": "3.0K",
         "yt_views": null,
         "x_views": "458.5K",
-        "ig_likes": "811"
+        "ig_likes": "813"
       }
     },
     {
@@ -447,8 +421,8 @@
       "metrics": {
         "rumble_views": "420",
         "yt_views": "121",
-        "x_views": "172.0K",
-        "ig_likes": "205"
+        "x_views": "172.1K",
+        "ig_likes": "206"
       }
     },
     {
@@ -637,7 +611,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "2.5K",
-        "x_views": "230.1K",
+        "x_views": "230.4K",
         "ig_likes": "1.9K"
       }
     },
@@ -657,8 +631,8 @@
       "metrics": {
         "rumble_views": "2.2K",
         "yt_views": null,
-        "x_views": "161.5K",
-        "ig_likes": "596"
+        "x_views": "161.6K",
+        "ig_likes": "598"
       }
     },
     {
@@ -681,7 +655,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "28.0K",
-        "x_views": "249.9K",
+        "x_views": "250.0K",
         "ig_likes": "816"
       }
     },
@@ -755,8 +729,8 @@
       "metrics": {
         "rumble_views": "420",
         "yt_views": "121",
-        "x_views": "172.0K",
-        "ig_likes": "205"
+        "x_views": "172.1K",
+        "ig_likes": "206"
       }
     },
     {
