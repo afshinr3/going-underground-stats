@@ -21,7 +21,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "yt_views": "2.6K"
   },
@@ -36,7 +36,10 @@
     "pub_iso": "2026-08-14T18:13:10Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "600"
+    "ig_likes": "600",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "canonical_surname_upper": "MILANOVIC",
+    "canonical_episode_id": "fd9388b8783d"
   },
   {
     "guest": "John Mearsheimer",
@@ -60,7 +63,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "28.7K",
     "_x_passes": 3
   },
@@ -88,7 +91,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -114,8 +117,8 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "45.1K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "yt_views": "45.2K",
     "_x_passes": 6
   },
   {
@@ -393,7 +396,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-20T18:02:10Z",
+    "_carried_forward_iso": "2026-08-20T18:45:51Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -408,7 +411,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-20T18:02:10Z",
+    "_carried_forward_iso": "2026-08-20T18:45:51Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -423,7 +426,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-20T18:02:10Z",
+    "_carried_forward_iso": "2026-08-20T18:45:51Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
