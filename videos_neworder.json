@@ -51,8 +51,8 @@
     "yt_views": "159",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "817.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "694.2K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "665.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "232.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
