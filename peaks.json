@@ -810,8 +810,8 @@
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 538,
     "rumble_views_at": "2026-08-19T23:45:15Z",
-    "x_views": 691500,
-    "x_views_at": "2026-08-20T15:08:57Z"
+    "x_views": 691600,
+    "x_views_at": "2026-08-20T15:41:16Z"
   },
   "GU:Mat\u00e9": {
     "x_views": 861100,
@@ -820,8 +820,8 @@
     "ig_likes_at": "2026-08-19T16:43:45Z",
     "rumble_views": 3700,
     "rumble_views_at": "2026-08-17T05:43:26Z",
-    "yt_views": 44700,
-    "yt_views_at": "2026-08-20T14:21:28Z"
+    "yt_views": 44800,
+    "yt_views_at": "2026-08-20T15:41:16Z"
   },
   "NO:Fernandez": {
     "yt_views": 159,
@@ -854,8 +854,8 @@
     "x_views_at": "2026-08-20T15:08:57Z"
   },
   "GU:Milanovic": {
-    "ig_likes": 600,
-    "ig_likes_at": "2026-08-20T15:39:13Z",
+    "ig_likes": 598,
+    "ig_likes_at": "2026-08-20T03:53:13Z",
     "rumble_views": 2200,
     "rumble_views_at": "2026-08-19T05:28:17Z",
     "x_views": 161800,
@@ -864,20 +864,20 @@
   "NO:Shidore": {
     "rumble_views": 2800,
     "rumble_views_at": "2026-08-15T14:42:24Z",
-    "x_views": 172600,
-    "x_views_at": "2026-08-20T13:32:15Z",
-    "ig_likes": 207,
-    "ig_likes_at": "2026-08-20T15:39:13Z",
+    "x_views": 172700,
+    "x_views_at": "2026-08-20T15:41:16Z",
+    "ig_likes": 206,
+    "ig_likes_at": "2026-08-20T03:53:13Z",
     "yt_views": 124,
     "yt_views_at": "2026-08-20T11:27:04Z"
   },
   "GU:Pilkington": {
-    "ig_likes": 2000,
-    "ig_likes_at": "2026-08-20T15:39:13Z",
+    "ig_likes": 1900,
+    "ig_likes_at": "2026-08-19T22:45:15Z",
     "rumble_views": 3000,
     "rumble_views_at": "2026-08-20T02:54:13Z",
-    "x_views": 235100,
-    "x_views_at": "2026-08-20T15:08:57Z",
+    "x_views": 235300,
+    "x_views_at": "2026-08-20T15:41:16Z",
     "yt_views": 2600,
     "yt_views_at": "2026-08-20T07:39:26Z"
   }
