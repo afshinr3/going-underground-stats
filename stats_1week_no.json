@@ -1,13 +1,42 @@
 {
   "show": "NO",
   "window": "fri_to_mon_broadcast_week",
-  "window_start": "2026-08-21",
-  "window_end": "2026-08-24",
-  "window_start_mon": "2026-08-21",
-  "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-20T20:20:04.431816Z",
-  "n": 0,
-  "entries": [],
+  "window_start": "2026-08-14",
+  "window_end": "2026-08-17",
+  "window_start_mon": "2026-08-14",
+  "window_end_sun": "2026-08-17",
+  "generated_at": "2026-08-20T20:50:42.470520Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Sarang Shidore",
+      "surname": "Shidore",
+      "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
+      "rumble_views": "422",
+      "x_views": "173.0K",
+      "date": "16 Aug",
+      "yt_views": "124",
+      "ig_likes": "207",
+      "canonical_guest_full_name": "Sarang Shidore",
+      "canonical_surname_upper": "SHIDORE",
+      "canonical_episode_id": "10f843fd1fef",
+      "_yt_content_type": "EPISODE",
+      "_yt_class_confidence": "HIGH",
+      "canonical_video_id": "CfY37_DnbIM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "pub_iso": "2026-08-16T06:30:06Z",
+      "canonical_episode_id_v2": "51403e831b2b092f",
+      "source_platform_ids": {
+        "youtube": [
+          "CfY37_DnbIM"
+        ]
+      },
+      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
+      "_x_status": "MEASURED_LOWER_BOUND",
+      "show": "NO",
+      "_x_passes": 6
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
