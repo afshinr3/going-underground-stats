@@ -5,7 +5,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": null,
-    "x_views": "236.0K",
+    "x_views": "236.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -21,8 +21,8 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "yt_views": "2.6K"
   },
   {
@@ -31,7 +31,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": null,
-    "x_views": "250.6K",
+    "x_views": "70.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -47,16 +47,16 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "MEASURED",
     "yt_views": "28.7K",
-    "_x_passes": 6
+    "_x_passes": 3
   },
   {
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": null,
-    "x_views": "428.2K",
+    "x_views": "428.3K",
     "date": "7 Aug",
     "yt_views": "7.7K",
     "ig_likes": null,
@@ -102,7 +102,7 @@
       ]
     },
     "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "45.0K",
+    "yt_views": "45.1K",
     "_x_passes": 6
   },
   {
@@ -364,7 +364,7 @@
         "-c_7WNHYTEE"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "15.4K",
     "_x_passes": 6
   },
@@ -380,7 +380,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-20T17:27:49Z",
+    "_carried_forward_iso": "2026-08-20T18:02:10Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -395,7 +395,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-20T17:27:49Z",
+    "_carried_forward_iso": "2026-08-20T18:02:10Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -410,7 +410,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-20T17:27:49Z",
+    "_carried_forward_iso": "2026-08-20T18:02:10Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
