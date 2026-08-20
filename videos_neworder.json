@@ -38,7 +38,7 @@
     "pub_iso": "2026-08-09T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "274",
+    "ig_likes": "275",
     "canonical_video_id": "XnOfgmdAELk",
     "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
     "canonical_episode_id_v2": "127afae570dfe74d",
@@ -94,7 +94,7 @@
     "pub_iso": "2026-07-26T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "586",
+    "ig_likes": "587",
     "canonical_video_id": "_sA9-4RwI00",
     "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
     "canonical_episode_id_v2": "9e5a40326e7138df",
@@ -135,8 +135,8 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "382.0K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "382.1K",
+    "_x_status": "MEASURED",
     "_x_passes": 6
   },
   {
@@ -147,7 +147,7 @@
     "rumble_views": "962",
     "x_views": "316.6K",
     "yt_views": "1.1K",
-    "ig_likes": "232",
+    "ig_likes": "233",
     "show": "NO",
     "canonical_guest_full_name": "John Perkins",
     "canonical_surname_upper": "PERKINS",
@@ -162,7 +162,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -171,7 +171,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "524",
-    "x_views": "529.8K",
+    "x_views": "757.5K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -188,7 +188,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "_x_passes": 6
   },
   {
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-20T11:16:51Z",
+    "_carried_forward_iso": "2026-08-20T11:26:49Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
