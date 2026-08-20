@@ -5,17 +5,17 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-20T01:35:19.594688Z",
-  "n": 1,
+  "generated_at": "2026-08-20T02:20:03.952297Z",
+  "n": 2,
   "entries": [
     {
       "guest": "Philip Pilkington",
       "surname": "Pilkington",
       "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
-      "rumble_views": null,
+      "rumble_views": "3.0K",
       "x_views": "229.6K",
-      "ig_likes": null,
+      "ig_likes": "1.9K",
       "show": "GU",
       "canonical_guest_full_name": "Philip Pilkington",
       "canonical_surname_upper": "PILKINGTON",
@@ -30,9 +30,22 @@
           "w7KXuXugzlA"
         ]
       },
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_passes": 6,
       "yt_views": "2.5K"
+    },
+    {
+      "guest": "Branko Milanovic",
+      "surname": "Milanovic",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "14 Aug",
+      "rumble_views": "2.2K",
+      "show": "GU",
+      "canonical_guest_full_name": "Branko Milanovic",
+      "pub_iso": "2026-08-14T02:15:24Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "ig_likes": "596"
     }
   ],
   "source_feed": "videos.json",
