@@ -21,9 +21,9 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
-    "yt_views": "2.5K"
+    "yt_views": "2.6K"
   },
   {
     "guest": "Branko Milanovic",
@@ -38,7 +38,7 @@
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "598",
     "x_views": "161.7K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "MILANOVIC",
     "canonical_episode_id": "fd9388b8783d"
@@ -65,8 +65,8 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "28.3K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "yt_views": "28.4K",
     "_x_passes": 6
   },
   {
@@ -93,7 +93,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -119,8 +119,8 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "44.1K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "yt_views": "44.2K",
     "_x_passes": 6
   },
   {
@@ -195,7 +195,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 2,
     "yt_views": "4.1K"
   },
@@ -395,7 +395,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-20T08:03:58Z",
+    "_carried_forward_iso": "2026-08-20T08:42:20Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
@@ -412,7 +412,7 @@
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
-    "_carried_forward_iso": "2026-08-20T08:03:58Z",
+    "_carried_forward_iso": "2026-08-20T08:42:20Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
