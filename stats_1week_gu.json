@@ -5,7 +5,7 @@
   "window_end": "2026-08-17",
   "window_start_mon": "2026-08-14",
   "window_end_sun": "2026-08-17",
-  "generated_at": "2026-08-20T05:54:01.072742Z",
+  "generated_at": "2026-08-20T06:23:03.819933Z",
   "n": 2,
   "entries": [
     {
@@ -14,7 +14,7 @@
       "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
       "rumble_views": "3.0K",
-      "x_views": "231.0K",
+      "x_views": "231.3K",
       "ig_likes": "1.9K",
       "show": "GU",
       "canonical_guest_full_name": "Philip Pilkington",
@@ -46,9 +46,9 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "598",
-      "x_views": "161.6K",
-      "_x_status": "MEASURED",
-      "_x_passes": 3,
+      "x_views": "161.7K",
+      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_passes": 6,
       "canonical_surname_upper": "MILANOVIC",
       "canonical_episode_id": "fd9388b8783d"
     }
