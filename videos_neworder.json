@@ -3,10 +3,10 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "421",
-    "x_views": "105.6K",
+    "rumble_views": "420",
+    "x_views": "172.2K",
     "date": "16 Aug",
-    "yt_views": "123",
+    "yt_views": "122",
     "ig_likes": "206",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -23,9 +23,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Marta Fernandez",
@@ -51,9 +51,9 @@
     "yt_views": "159",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "694.2K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 4
+    "x_views": "817.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Mohammed Baharoon",
@@ -79,9 +79,9 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "232.5K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 4
+    "x_views": "691.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Hussein Askary",
@@ -107,9 +107,9 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "130.4K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3
+    "x_views": "204.6K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Peter Schiff",
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-20T07:17:15Z",
+    "_carried_forward_iso": "2026-08-20T07:22:46Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
