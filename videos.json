@@ -21,7 +21,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.6K",
     "_x_passes": 6
   },
@@ -47,7 +47,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "29.1K",
     "_x_passes": 6
   },
@@ -75,7 +75,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "show": "GU",
     "_x_passes": 6
   },
@@ -101,7 +101,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "46.1K",
     "_x_passes": 6
   },
@@ -360,48 +360,35 @@
     "yt_views": "15.4K"
   },
   {
-    "guest": "\u2018The US LACKS THE POWER TO DEF",
-    "surname": "DEF",
-    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-    "date": "27 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
-    "show": "GU",
-    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
-    "canonical_surname_upper": "DEF",
-    "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-21T03:17:25Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
-  },
-  {
     "guest": "Ehud Olmert",
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "?",
+    "rumble_views": null,
     "x_views": "37.9K",
-    "ig_likes": "?",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
     "_carried_forward_iso": "2026-08-21T03:17:25Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Steve Keen",
     "surname": "Keen",
     "title": "Iran: FAMINE & Financial Crisis UNAVOIDABLE From Strait of Hormuz Closure (Prof. Steve Keen)",
     "date": "15 Jun",
-    "rumble_views": "?",
+    "rumble_views": null,
     "x_views": "459.2K",
-    "ig_likes": "?",
+    "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Steve Keen",
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
     "_carried_forward_iso": "2026-08-21T03:17:25Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
 ]
