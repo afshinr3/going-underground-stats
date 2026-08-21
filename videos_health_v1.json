@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-21T19:54:22Z",
-  "last_updated": "2026-08-21T19:54:22Z",
+  "iso": "2026-08-21T20:21:02Z",
+  "last_updated": "2026-08-21T20:21:02Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -113,8 +113,8 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "47.4K",
-        "x_views": "56.0K",
+        "yt_views": "47.5K",
+        "x_views": "56.1K",
         "ig_likes": "5.1K"
       }
     },
@@ -162,7 +162,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
-        "x_views": "287.8K",
+        "x_views": "287.9K",
         "ig_likes": "12.0K"
       }
     },
@@ -186,7 +186,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "4.1K",
-        "x_views": "43.9K",
+        "x_views": "267.5K",
         "ig_likes": "2.0K"
       }
     },
@@ -210,7 +210,7 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "3.1K",
-        "x_views": "289.4K",
+        "x_views": "289.5K",
         "ig_likes": "1.6K"
       }
     },
@@ -722,8 +722,8 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "47.4K",
-        "x_views": "56.0K",
+        "yt_views": "47.5K",
+        "x_views": "56.1K",
         "ig_likes": "5.1K"
       }
     }
