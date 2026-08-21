@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-21T08:18:38Z",
-  "last_updated": "2026-08-21T08:18:38Z",
+  "iso": "2026-08-21T09:07:25Z",
+  "last_updated": "2026-08-21T09:07:25Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -20,10 +20,30 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "2.7K",
-        "x_views": "240.8K",
-        "ig_likes": null
+        "x_views": "241.0K",
+        "ig_likes": "2.1K"
+      }
+    },
+    {
+      "guest": "Branko Milanovic",
+      "surname": "MILANOVIC",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "14 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-14T08:15:25Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.2K",
+        "yt_views": null,
+        "x_views": "162.6K",
+        "ig_likes": "602"
       }
     },
     {
@@ -44,10 +64,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "29.3K",
-        "x_views": "251.2K",
-        "ig_likes": null
+        "x_views": "251.3K",
+        "ig_likes": "816"
       }
     },
     {
@@ -68,10 +88,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "7.7K",
         "x_views": "428.8K",
-        "ig_likes": null
+        "ig_likes": "2.4K"
       }
     },
     {
@@ -92,10 +112,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "46.4K",
+        "rumble_views": "3.5K",
+        "yt_views": "46.5K",
         "x_views": "55.9K",
-        "ig_likes": null
+        "ig_likes": "5.1K"
       }
     },
     {
@@ -116,10 +136,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "15.0K",
         "yt_views": "3.2K",
         "x_views": "364.9K",
-        "ig_likes": null
+        "ig_likes": "3.0K"
       }
     },
     {
@@ -140,10 +160,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.2K",
         "yt_views": "1.6K",
         "x_views": "287.6K",
-        "ig_likes": null
+        "ig_likes": "12.0K"
       }
     },
     {
@@ -164,10 +184,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "4.1K",
         "x_views": "594.5K",
-        "ig_likes": null
+        "ig_likes": "2.0K"
       }
     },
     {
@@ -188,10 +208,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "3.1K",
         "x_views": "289.1K",
-        "ig_likes": null
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -212,13 +232,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.7K",
         "yt_views": "4.3K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "1.8K"
       }
     },
     {
@@ -239,10 +259,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "1.0K",
         "x_views": "194.2K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -263,10 +283,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.7K",
         "yt_views": "1.5K",
         "x_views": "127.1K",
-        "ig_likes": null
+        "ig_likes": "522"
       }
     },
     {
@@ -287,10 +307,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.5K",
         "yt_views": "1.4K",
         "x_views": "254.4K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -311,13 +331,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.4K",
         "yt_views": "947",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -338,13 +358,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.9K",
         "yt_views": "15.4K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "2.1K"
       }
     },
     {
@@ -361,13 +381,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.5K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "?"
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -384,10 +404,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.1K",
         "yt_views": null,
         "x_views": "38.0K",
-        "ig_likes": "?"
+        "ig_likes": "2.6K"
       }
     },
     {
@@ -404,10 +424,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.0K",
         "yt_views": null,
         "x_views": "459.7K",
-        "ig_likes": "?"
+        "ig_likes": "243"
       }
     },
     {
@@ -430,7 +450,7 @@
       "metrics": {
         "rumble_views": "426",
         "yt_views": "125",
-        "x_views": "173.5K",
+        "x_views": "173.6K",
         "ig_likes": "207"
       }
     },
@@ -618,10 +638,30 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "2.7K",
-        "x_views": "240.8K",
-        "ig_likes": null
+        "x_views": "241.0K",
+        "ig_likes": "2.1K"
+      }
+    },
+    {
+      "guest": "Branko Milanovic",
+      "surname": "MILANOVIC",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "14 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-14T08:15:25Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.2K",
+        "yt_views": null,
+        "x_views": "162.6K",
+        "ig_likes": "602"
       }
     },
     {
@@ -642,10 +682,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "29.3K",
-        "x_views": "251.2K",
-        "ig_likes": null
+        "x_views": "251.3K",
+        "ig_likes": "816"
       }
     },
     {
@@ -666,10 +706,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "7.7K",
         "x_views": "428.8K",
-        "ig_likes": null
+        "ig_likes": "2.4K"
       }
     },
     {
@@ -690,34 +730,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
-        "yt_views": "46.4K",
+        "rumble_views": "3.5K",
+        "yt_views": "46.5K",
         "x_views": "55.9K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
-      "surname": "BARNES",
-      "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
-      "date": "1 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": "N_ysv6Gh9Ac",
-      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id_v2": "7edf3af7b8798e44",
-      "pub_iso": "2026-08-01T21:22:19Z",
-      "source_platform_ids": {
-        "youtube": [
-          "N_ysv6Gh9Ac"
-        ]
-      },
-      "metrics": {
-        "rumble_views": null,
-        "yt_views": "3.2K",
-        "x_views": "364.9K",
-        "ig_likes": null
+        "ig_likes": "5.1K"
       }
     }
   ],
@@ -742,7 +758,7 @@
       "metrics": {
         "rumble_views": "426",
         "yt_views": "125",
-        "x_views": "173.5K",
+        "x_views": "173.6K",
         "ig_likes": "207"
       }
     },
