@@ -23,16 +23,16 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "show": "NO",
-    "_x_passes": 6
+    "_x_passes": 2
   },
   {
     "guest": "Marta Fernandez",
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "465",
+    "rumble_views": "463",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -51,8 +51,8 @@
     "yt_views": "162",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "819.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "819.2K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -79,8 +79,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "692.7K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "692.8K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,9 +107,9 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "205.7K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6
+    "x_views": "205.8K",
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Peter Schiff",
@@ -204,7 +204,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-22T01:31:44Z",
+    "_carried_forward_iso": "2026-08-22T01:34:39Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
