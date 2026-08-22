@@ -4,7 +4,7 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "6.2K",
-    "x_views": "168",
+    "x_views": "2.4K",
     "date": "20 Aug",
     "yt_views": "0",
     "ig_likes": null,
@@ -23,9 +23,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Sarang Shidore",
@@ -51,9 +51,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 4
+    "_x_passes": 6
   },
   {
     "guest": "Marta Fernandez",
@@ -135,8 +135,8 @@
     "yt_views": "133",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "205.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "130.8K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -163,8 +163,8 @@
     "yt_views": "1.1K",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "382.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "564.1K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -173,7 +173,7 @@
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "963",
-    "x_views": "317.4K",
+    "x_views": "151.7K",
     "yt_views": "1.1K",
     "ig_likes": "232",
     "show": "NO",
@@ -190,7 +190,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -199,7 +199,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "524",
-    "x_views": "757.9K",
+    "x_views": "530.0K",
     "yt_views": "1.1K",
     "ig_likes": "462",
     "show": "NO",
@@ -216,7 +216,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -232,7 +232,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-22T12:47:35Z",
+    "_carried_forward_iso": "2026-08-22T12:59:43Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
