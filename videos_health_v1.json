@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-22T17:14:06Z",
-  "last_updated": "2026-08-22T17:14:06Z",
+  "iso": "2026-08-22T17:22:03Z",
+  "last_updated": "2026-08-22T17:22:03Z",
   "episodes": [
     {
       "guest": "Michael O’Hanlon",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "1.3K",
-        "yt_views": null,
+        "yt_views": "535",
         "x_views": "28.9K",
         "ig_likes": "250"
       }
@@ -65,7 +65,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.3K",
-        "yt_views": null,
+        "yt_views": "4.8K",
         "x_views": "163.9K",
         "ig_likes": "603"
       }
@@ -137,7 +137,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "48.9K",
+        "yt_views": "49.0K",
         "x_views": "56.4K",
         "ig_likes": "5.1K"
       }
@@ -472,7 +472,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "431",
+        "rumble_views": "432",
         "yt_views": "128",
         "x_views": "106.6K",
         "ig_likes": "209"
@@ -496,7 +496,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "473",
+        "rumble_views": "474",
         "yt_views": "163",
         "x_views": "695.0K",
         "ig_likes": "275"
@@ -663,7 +663,7 @@
       },
       "metrics": {
         "rumble_views": "1.3K",
-        "yt_views": null,
+        "yt_views": "535",
         "x_views": "28.9K",
         "ig_likes": "250"
       }
@@ -707,7 +707,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.3K",
-        "yt_views": null,
+        "yt_views": "4.8K",
         "x_views": "163.9K",
         "ig_likes": "603"
       }
@@ -804,7 +804,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "431",
+        "rumble_views": "432",
         "yt_views": "128",
         "x_views": "106.6K",
         "ig_likes": "209"
@@ -828,7 +828,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "473",
+        "rumble_views": "474",
         "yt_views": "163",
         "x_views": "695.0K",
         "ig_likes": "275"

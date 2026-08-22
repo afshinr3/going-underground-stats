@@ -758,6 +758,22 @@ def fetch_youtube_data(channel_id, known_surnames=None):
         episode_views = {}      # surname -> summed views across EPISODE entries
         short_clip_views = {}   # surname -> summed views across SHORT / CLIP entries
         date_map = {}           # surname -> ISO date (EPISODE only)
+        # YT_ATTRIB_BY_VIDEO_ID_V1_20260822 — video_id -> views, for EPISODE entries.
+        #
+        # Surname-token attribution CANNOT work when the guest is not named in the
+        # YouTube title. Measured 2026-08-22: "Afshin Rattansi CHALLENGES Ex-CIA Advisor
+        # on the Legacy of America's Wars" (Eu0Phb99ipg, 278 views) and "Ex-World Bank
+        # Lead Economist Says WW3..." (eyfC-IBPTOM, 4,838 views) both carried real view
+        # counts that never reached their episodes -- the app showed YouTube "?" beside
+        # populated Rumble/X/IG columns. Mearsheimer's title DOES contain his surname, so
+        # his 29,998 attached fine; that is the whole difference.
+        #
+        # This is the THIRD failure of surname-token attribution. The docstring above
+        # records the second (Ünal/Maté were unmatchable by an ASCII-only token regex).
+        # An episode record already knows its own video id, so match on THAT: it is exact,
+        # cannot mis-attribute to a same-named Short, and does not care what the title says.
+        by_video_id = {}
+        title_views = {}        # normalised full title -> views (EPISODE entries)
         for title, link_href, pub, description, views in entries:
             _content_type, _confidence = _yt_classify_content(link_href, title, description)
             _is_episode_class = _content_type in ("EPISODE", "EPISODE_UNCLASSIFIED")
@@ -768,6 +784,16 @@ def fetch_youtube_data(channel_id, known_surnames=None):
                 _v = int(views)
             except Exception:
                 _v = 0
+            _vid = None
+            _vm = re.search(r'[?&]v=([A-Za-z0-9_-]{6,})', link_href or '')
+            if _vm:
+                _vid = _vm.group(1)
+            if _vid and _is_episode_class:
+                by_video_id[_vid] = by_video_id.get(_vid, 0) + _v
+            if _is_episode_class:
+                _tn = re.sub(r'\s+', ' ', title).strip().lower()
+                if _tn:
+                    title_views[_tn] = title_views.get(_tn, 0) + _v
             # METRIC_ATTRIB_V1_2026_07_20 — extract whole-word tokens ONLY.
             _tokens = set(_capitalised_tokens(title))
             # Parenthesised aliases (e.g. "(Prof. Steve Keen)") — split words.
@@ -800,10 +826,17 @@ def fetch_youtube_data(channel_id, known_surnames=None):
         for sn, v in short_clip_views.items():
             if sn not in views_map:
                 views_map[sn] = format_views(v)
-        return views_map, date_map
+        id_map = {k: format_views(v) for k, v in by_video_id.items()}
+        # Secondary exact-title key, for episodes whose record never got a video id
+        # bound (Milanovic 2026-08-14 has canonical_video_id=None and so cannot be
+        # matched by id at all). FULL-STRING equality after normalisation -- not a token
+        # heuristic, so it cannot mis-attribute the way surname matching does.
+        for _t, _v2 in title_views.items():
+            id_map.setdefault("title::" + _t, format_views(_v2))
+        return views_map, date_map, id_map
     except Exception as e:
         print(f"YouTube error for {channel_id}: {e}", file=sys.stderr)
-        return {}, {}
+        return {}, {}, {}
 
 
 def fetch_instagram_clips(known_surnames=None):
@@ -1654,7 +1687,7 @@ async def update_show(show, ig_clips):
         for v in cache if (v.get('surname') or v.get('canonical_surname_upper'))
     }
     _known.discard('')
-    yt, yt_dates = fetch_youtube_data(show['yt_channel_id'], known_surnames=_known)
+    yt, yt_dates, yt_by_id = fetch_youtube_data(show['yt_channel_id'], known_surnames=_known)
 
     # Helper: convert "25 Apr" or "21 Mar" to ISO YYYY-MM-DD using current year
     from datetime import datetime
@@ -1870,6 +1903,22 @@ async def update_show(show, ig_clips):
     # non-null AND non-'0' (avoid regressing a real number to null when the
     # scraper misses one cycle — root cause of the 2026-07-20 yt_views wipe).
     for v in cache:
+        # YT_ATTRIB_BY_VIDEO_ID_V1_20260822 — exact id match wins over surname tokens.
+        # The episode already knows its YouTube id; use it rather than hoping the guest
+        # is named in the title. Same overwrite discipline as below: never regress a real
+        # number to null when a scrape misses a cycle.
+        _yid = (v.get('canonical_video_id')
+                or ((v.get('source_platform_ids') or {}).get('youtube') or [None])[0])
+        _tkey = "title::" + re.sub(r'\s+', ' ', str(v.get('title') or '')).strip().lower()
+        _ykey = _yid if (_yid and _yid in yt_by_id) else (
+            _tkey if _tkey in yt_by_id else None)
+        if _ykey:
+            _new = yt_by_id[_ykey]
+            _cur = v.get('yt_views')
+            if _new and _new not in ('0', 0, '?', None):
+                v['yt_views'] = _new
+            elif _cur in (None, '?', '', 0):
+                v['yt_views'] = _new
         _sn_candidates = [
             (v.get('canonical_surname_upper') or '').lower(),
             (v.get('surname') or '').lower(),
