@@ -388,21 +388,6 @@
     "_x_passes": 6
   },
   {
-    "guest": "\u2018The US LACKS THE POWER TO DEF",
-    "surname": "DEF",
-    "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-    "date": "27 Jun",
-    "rumble_views": "2.5K",
-    "x_views": null,
-    "ig_likes": "2.0K",
-    "show": "GU",
-    "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
-    "canonical_surname_upper": "DEF",
-    "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-22T03:16:22Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
-  },
-  {
     "guest": "Ehud Olmert",
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
@@ -415,7 +400,8 @@
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
     "_carried_forward_iso": "2026-08-22T03:16:22Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Steve Keen",
@@ -430,6 +416,7 @@
     "canonical_surname_upper": "KEEN",
     "canonical_episode_id": "cbe40066aa0d",
     "_carried_forward_iso": "2026-08-22T03:16:22Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
 ]
