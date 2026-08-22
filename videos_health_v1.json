@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-22T07:02:08Z",
-  "last_updated": "2026-08-22T07:02:08Z",
+  "iso": "2026-08-22T07:42:51Z",
+  "last_updated": "2026-08-22T07:42:51Z",
   "episodes": [
     {
       "guest": "Philip Pilkington",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.7K",
-        "x_views": "244.4K",
+        "x_views": "244.5K",
         "ig_likes": "2.2K"
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": null,
-        "x_views": "163.5K",
+        "x_views": "163.6K",
         "ig_likes": "603"
       }
     },
@@ -65,7 +65,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "29.7K",
+        "yt_views": "29.8K",
         "x_views": "252.3K",
         "ig_likes": "817"
       }
@@ -113,7 +113,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "48.2K",
+        "yt_views": "48.3K",
         "x_views": "56.2K",
         "ig_likes": "5.1K"
       }
@@ -399,6 +399,33 @@
       }
     },
     {
+      "guest": "David Monyae",
+      "surname": "MONYAE",
+      "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
+      "date": "20 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
+      "canonical_episode_id": "6608d24f803f",
+      "canonical_video_id": "KhzHRLRRuQE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
+      "canonical_episode_id_v2": "31de5bc45e56e093",
+      "pub_iso": "2026-08-20T04:36:18Z",
+      "source_platform_ids": {
+        "youtube": [
+          "KhzHRLRRuQE"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Sarang Shidore",
       "surname": "SHIDORE",
       "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
@@ -417,7 +444,7 @@
       },
       "metrics": {
         "rumble_views": "431",
-        "yt_views": "128",
+        "yt_views": "127",
         "x_views": "174.7K",
         "ig_likes": "209"
       }
@@ -608,7 +635,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.7K",
-        "x_views": "244.4K",
+        "x_views": "244.5K",
         "ig_likes": "2.2K"
       }
     },
@@ -628,7 +655,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": null,
-        "x_views": "163.5K",
+        "x_views": "163.6K",
         "ig_likes": "603"
       }
     },
@@ -651,7 +678,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "29.7K",
+        "yt_views": "29.8K",
         "x_views": "252.3K",
         "ig_likes": "817"
       }
@@ -699,13 +726,40 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "48.2K",
+        "yt_views": "48.3K",
         "x_views": "56.2K",
         "ig_likes": "5.1K"
       }
     }
   ],
   "no": [
+    {
+      "guest": "David Monyae",
+      "surname": "MONYAE",
+      "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
+      "date": "20 Aug",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
+      "canonical_episode_id": "6608d24f803f",
+      "canonical_video_id": "KhzHRLRRuQE",
+      "canonical_video_url": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
+      "canonical_episode_id_v2": "31de5bc45e56e093",
+      "pub_iso": "2026-08-20T04:36:18Z",
+      "source_platform_ids": {
+        "youtube": [
+          "KhzHRLRRuQE"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Sarang Shidore",
       "surname": "SHIDORE",
@@ -725,7 +779,7 @@
       },
       "metrics": {
         "rumble_views": "431",
-        "yt_views": "128",
+        "yt_views": "127",
         "x_views": "174.7K",
         "ig_likes": "209"
       }
@@ -800,30 +854,6 @@
         "yt_views": "133",
         "x_views": "205.8K",
         "ig_likes": "586"
-      }
-    },
-    {
-      "guest": "Peter Schiff",
-      "surname": "SCHIFF",
-      "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
-      "date": "19 Jul",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=rE30fKtk4pk",
-      "canonical_episode_id": "4d61219d41f9",
-      "canonical_video_id": "rE30fKtk4pk",
-      "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
-      "canonical_episode_id_v2": "e0b569e93071552f",
-      "pub_iso": "2026-07-19T06:30:06Z",
-      "source_platform_ids": {
-        "youtube": [
-          "rE30fKtk4pk"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "738",
-        "yt_views": "1.1K",
-        "x_views": "564.0K",
-        "ig_likes": "350"
       }
     }
   ]
