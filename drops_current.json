@@ -1,4 +1,15 @@
 {
-  "updated": "2026-08-22T16:13:28Z",
-  "drops": []
+  "updated": "2026-08-22T16:36:04Z",
+  "drops": [
+    {
+      "ts": "2026-08-22T16:36:04Z",
+      "show": "GU",
+      "guest": "O\u2019Hanlon",
+      "platform": "IG",
+      "peak": 11500,
+      "peak_at": "2026-08-22T16:13:28Z",
+      "current": 250,
+      "drop_pct": 97.8
+    }
+  ]
 }
