@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-22T10:37:36Z",
+  "updated": "2026-08-22T10:55:56Z",
   "drops": [
     {
-      "ts": "2026-08-22T10:37:36Z",
+      "ts": "2026-08-22T10:55:56Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -12,17 +12,17 @@
       "drop_pct": 72.1
     },
     {
-      "ts": "2026-08-22T10:37:36Z",
+      "ts": "2026-08-22T10:55:56Z",
       "show": "NO",
       "guest": "Shidore",
       "platform": "X",
       "peak": 174800,
       "peak_at": "2026-08-22T08:53:14Z",
-      "current": 106400,
+      "current": 106500,
       "drop_pct": 39.1
     },
     {
-      "ts": "2026-08-22T10:37:36Z",
+      "ts": "2026-08-22T10:55:56Z",
       "show": "NO",
       "guest": "Baharoon",
       "platform": "X",
