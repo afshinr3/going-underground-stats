@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-22T20:41:48Z",
+  "updated": "2026-08-22T20:44:48Z",
   "drops": [
     {
-      "ts": "2026-08-22T20:41:48Z",
+      "ts": "2026-08-22T20:44:48Z",
       "show": "GU",
       "guest": "O\u2019Hanlon",
       "platform": "IG",
@@ -10,16 +10,6 @@
       "peak_at": "2026-08-22T16:13:28Z",
       "current": 334,
       "drop_pct": 97.1
-    },
-    {
-      "ts": "2026-08-22T20:41:48Z",
-      "show": "GU",
-      "guest": "Mearsheimer",
-      "platform": "X",
-      "peak": 252800,
-      "peak_at": "2026-08-22T18:12:29Z",
-      "current": 70600,
-      "drop_pct": 72.1
     }
   ]
 }
