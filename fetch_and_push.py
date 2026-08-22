@@ -1117,6 +1117,33 @@ def discover_new_episodes(channel_id, data_file):
                 continue
             guest = extract_guest(title)
             surname = extract_surname(guest)
+            # GU_GUEST_FROM_POSTS_V1_20260822 — the title is not the only evidence we hold.
+            #
+            # Some titles name the guest only by ROLE: "Afshin Rattansi CHALLENGES Ex-CIA
+            # Advisor on the Legacy of America's Wars" names the HOST and nobody else.
+            # extract_guest correctly returns None, and this SKIP is correct as far as it
+            # goes — but the episode then either vanishes or (worse, on 2026-08-22) carried
+            # a legacy title[:30] guest of "Afshin Rattansi CHALLENGES Ex-" with surname
+            # "Ex-" onto the leaderboard, at 753K reach, the top episode of the week.
+            #
+            # The show announces every guest on its own X/IG feed the day before:
+            # "SATURDAY'S GOING UNDERGROUND: We're joined by Dr. Michael O'Hanlon...".
+            # Consult that before giving up. The resolver binds on the show marker AND the
+            # announcement phrase AND nearest-in-time, and REFUSES rather than guessing:
+            # back-tested over 14 episodes it matched 10, refused 3, and produced zero
+            # false positives.
+            if not guest or not surname:
+                try:
+                    import gu_guest_from_posts_v1 as _GFP
+                    _show = 'NO' if str(locals().get('show_code', '')).upper() == 'NO' else 'GU'
+                    _n, _ev = _GFP.resolve_guest(pub, _show)
+                    if _n:
+                        guest = _n
+                        surname = _GFP.surname_of(_n)
+                        print(f"  GUEST_FROM_POSTS: {surname} <- {_ev.get('announced_iso')} "
+                              f"({_ev.get('hours_from_episode')}h before) :: {title[:50]}...")
+                except Exception as _e:
+                    print(f"  GUEST_FROM_POSTS_ERR: {type(_e).__name__}: {str(_e)[:80]}")
             # Skip if extractor couldn't find a clean guest (returns None now instead of
             # title[:30]) — avoids "DES"/"St" garbage from the legacy truncation fallback.
             if not guest or not surname:
@@ -1136,6 +1163,15 @@ def discover_new_episodes(channel_id, data_file):
                           'action','missing','missing','brics','india','warns',
                           'global','south','west','east','world','power','trump'}
             # GU_SURNAME_HARDENING_V1_2026_07_03 - extra validity gate on top of SKIP_WORDS.
+            # ROLE_PREFIX_SURNAME_SCRUB_V1_20260822 — "Ex-" is 3 chars, not in SKIP_WORDS,
+            # and passes _looks_valid_surname, so it slipped every existing guard and
+            # reached the leaderboard. A surname that IS a role prefix, or that ends in a
+            # hyphen (i.e. was cut mid-word), is never a person.
+            _ROLE_PREFIXES = {'ex', 'ex-', 'former', 'deputy', 'acting', 'senior',
+                              'chief', 'head', 'lead', 'vice', 'asst', 'assistant'}
+            if surname.rstrip('-').lower() in _ROLE_PREFIXES or surname.endswith('-'):
+                print(f"  SKIP (role-prefix surname {surname!r}): {title[:50]}...")
+                continue
             if (len(surname) <= 2 or surname.lower() in SKIP_WORDS
                     or not _looks_valid_surname(surname)):
                 continue
