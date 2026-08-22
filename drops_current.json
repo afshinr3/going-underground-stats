@@ -1,15 +1,4 @@
 {
-  "updated": "2026-08-22T08:48:52Z",
-  "drops": [
-    {
-      "ts": "2026-08-22T08:48:52Z",
-      "show": "GU",
-      "guest": "Mearsheimer",
-      "platform": "X",
-      "peak": 252300,
-      "peak_at": "2026-08-22T07:02:08Z",
-      "current": 70500,
-      "drop_pct": 72.1
-    }
-  ]
+  "updated": "2026-08-22T08:53:14Z",
+  "drops": []
 }
