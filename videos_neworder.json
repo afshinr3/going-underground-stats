@@ -4,10 +4,10 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "6.2K",
-    "x_views": "6.2K",
+    "x_views": "6.6K",
     "date": "20 Aug",
     "yt_views": "0",
-    "ig_likes": "67",
+    "ig_likes": null,
     "canonical_guest_full_name": "David Monyae",
     "canonical_surname_upper": "MONYAE",
     "canonical_episode_id": "6608d24f803f",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -31,8 +31,8 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "432",
-    "x_views": "106.6K",
+    "rumble_views": "431",
+    "x_views": "175.3K",
     "date": "16 Aug",
     "yt_views": "128",
     "ig_likes": "209",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -60,7 +60,7 @@
     "surname": "Fernandez",
     "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America \u2014Prof. Marta Fernandez",
     "date": "9 Aug",
-    "rumble_views": "474",
+    "rumble_views": "473",
     "show": "NO",
     "canonical_guest_full_name": "Marta Fernandez",
     "pub_iso": "2026-08-09T06:30:06Z",
@@ -79,8 +79,8 @@
     "yt_views": "163",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "695.0K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "819.8K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,8 +107,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "233.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "693.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -136,7 +136,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "130.8K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -150,7 +150,7 @@
     "pub_iso": "2026-07-19T06:30:06Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "391",
+    "ig_likes": "351",
     "canonical_video_id": "rE30fKtk4pk",
     "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
     "canonical_episode_id_v2": "e0b569e93071552f",
@@ -164,7 +164,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "564.1K",
-    "_x_status": "MEASURED",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 5
   },
   {
@@ -175,7 +175,7 @@
     "rumble_views": "963",
     "x_views": "151.7K",
     "yt_views": "1.1K",
-    "ig_likes": "302",
+    "ig_likes": "232",
     "show": "NO",
     "canonical_guest_full_name": "John Perkins",
     "canonical_surname_upper": "PERKINS",
@@ -190,7 +190,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 5
   },
   {
@@ -216,7 +216,7 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -227,12 +227,12 @@
     "rumble_views": "543",
     "x_views": "88.1K",
     "yt_views": "0",
-    "ig_likes": "566",
+    "ig_likes": "845",
     "show": "NO",
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-22T17:13:52Z",
+    "_carried_forward_iso": "2026-08-22T17:42:09Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
