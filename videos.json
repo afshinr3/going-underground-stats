@@ -23,7 +23,7 @@
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
-    "yt_views": "809"
+    "yt_views": "820"
   },
   {
     "guest": "Philip Pilkington",
@@ -224,7 +224,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -250,7 +250,7 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -276,7 +276,7 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.3K",
     "_x_passes": 6
   },
@@ -305,7 +305,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -332,7 +332,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -358,7 +358,7 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "1.4K",
     "_x_passes": 6
   },
@@ -384,7 +384,7 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "948",
     "_x_passes": 6
   },
@@ -400,7 +400,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-22T20:03:10Z",
+    "_carried_forward_iso": "2026-08-22T20:17:03Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -415,7 +415,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-22T20:03:10Z",
+    "_carried_forward_iso": "2026-08-22T20:17:03Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -430,7 +430,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-22T20:03:10Z",
+    "_carried_forward_iso": "2026-08-22T20:17:03Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
