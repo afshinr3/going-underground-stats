@@ -6,7 +6,7 @@
     "date": "22 Aug",
     "rumble_views": "1.6K",
     "x_views": "507.4K",
-    "ig_likes": "306",
+    "ig_likes": "284",
     "show": "GU",
     "canonical_guest_full_name": "Afshin Rattansi CHALLENGES Ex-",
     "canonical_surname_upper": "EX-",
@@ -31,7 +31,7 @@
     "date": "17 Aug",
     "rumble_views": "3.2K",
     "x_views": "249.5K",
-    "ig_likes": "2.4K",
+    "ig_likes": "2.3K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
@@ -61,7 +61,7 @@
     "pub_iso": "2026-08-14T08:15:19Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "604",
+    "ig_likes": "603",
     "x_views": "164.3K",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
@@ -119,7 +119,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -145,7 +145,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "49.9K"
   },
@@ -155,7 +155,7 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": "15.1K",
-    "x_views": "366.5K",
+    "x_views": "106.3K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -171,8 +171,9 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "3.2K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "3.2K",
+    "_x_passes": 6
   },
   {
     "guest": "of Israel\u2019s Shin Bet Ami Ayalon",
@@ -395,7 +396,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-23T10:17:23Z",
+    "_carried_forward_iso": "2026-08-23T10:14:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -410,7 +411,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-23T10:17:23Z",
+    "_carried_forward_iso": "2026-08-23T10:14:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -425,7 +426,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-23T10:17:23Z",
+    "_carried_forward_iso": "2026-08-23T10:14:47Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
