@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-23T17:42:43Z",
-  "last_updated": "2026-08-23T17:42:43Z",
+  "iso": "2026-08-23T17:47:06Z",
+  "last_updated": "2026-08-23T17:47:06Z",
   "episodes": [
     {
       "guest": "Michael O’Hanlon",
@@ -22,7 +22,7 @@
       "metrics": {
         "rumble_views": "1.7K",
         "yt_views": "1.6K",
-        "x_views": "50.0K",
+        "x_views": "49.9K",
         "ig_likes": "506"
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.9K",
-        "x_views": "252.1K",
+        "x_views": "252.0K",
         "ig_likes": "2.4K"
       }
     },
@@ -64,7 +64,7 @@
       "pub_iso": "2026-08-14T08:15:19Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.3K",
+        "rumble_views": "2.4K",
         "yt_views": "4.9K",
         "x_views": "164.6K",
         "ig_likes": "605"
@@ -90,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.4K",
-        "x_views": "254.0K",
+        "x_views": "70.8K",
         "ig_likes": "820"
       }
     },
@@ -234,7 +234,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "3.1K",
-        "x_views": "290.6K",
+        "x_views": "290.7K",
         "ig_likes": "1.6K"
       }
     },
@@ -306,7 +306,7 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "127.2K",
+        "x_views": "127.3K",
         "ig_likes": "522"
       }
     },
@@ -330,7 +330,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.4K",
-        "x_views": "229.6K",
+        "x_views": "229.7K",
         "ig_likes": "1.1K"
       }
     },
@@ -372,13 +372,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "2.1K"
+        "ig_likes": "?"
       }
     },
     {
@@ -395,13 +395,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "829"
+        "ig_likes": "?"
       }
     },
     {
@@ -418,10 +418,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": "?",
         "yt_views": null,
         "x_views": "38.3K",
-        "ig_likes": "2.6K"
+        "ig_likes": "?"
       }
     },
     {
@@ -442,9 +442,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "162",
+        "rumble_views": "171",
         "yt_views": "29",
-        "x_views": "121.2K",
+        "x_views": "110.4K",
         "ig_likes": "260"
       }
     },
@@ -658,7 +658,7 @@
       "metrics": {
         "rumble_views": "1.7K",
         "yt_views": "1.6K",
-        "x_views": "50.0K",
+        "x_views": "49.9K",
         "ig_likes": "506"
       }
     },
@@ -682,7 +682,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.9K",
-        "x_views": "252.1K",
+        "x_views": "252.0K",
         "ig_likes": "2.4K"
       }
     },
@@ -700,7 +700,7 @@
       "pub_iso": "2026-08-14T08:15:19Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.3K",
+        "rumble_views": "2.4K",
         "yt_views": "4.9K",
         "x_views": "164.6K",
         "ig_likes": "605"
@@ -726,7 +726,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.4K",
-        "x_views": "254.0K",
+        "x_views": "70.8K",
         "ig_likes": "820"
       }
     },
@@ -774,9 +774,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "162",
+        "rumble_views": "171",
         "yt_views": "29",
-        "x_views": "121.2K",
+        "x_views": "110.4K",
         "ig_likes": "260"
       }
     },

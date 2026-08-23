@@ -3,8 +3,8 @@
     "guest": "David Monyae",
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
-    "rumble_views": "162",
-    "x_views": "121.2K",
+    "rumble_views": "171",
+    "x_views": "110.4K",
     "date": "23 Aug",
     "yt_views": "29",
     "ig_likes": "260",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6
   },
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6
   },
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "820.7K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -108,8 +108,8 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "694.1K",
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "_x_passes": 6
+    "_x_status": "FETCH_FAILED:Exception",
+    "_x_passes": 3
   },
   {
     "guest": "Hussein Askary",
@@ -232,7 +232,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-23T17:42:29Z",
+    "_carried_forward_iso": "2026-08-23T17:46:52Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
