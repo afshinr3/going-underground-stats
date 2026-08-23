@@ -120,8 +120,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 5,
+    "_x_status": "MEASURED",
+    "_x_passes": 4,
     "show": "GU"
   },
   {
@@ -146,9 +146,9 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "49.5K",
-    "_x_passes": 5
+    "_x_passes": 6
   },
   {
     "guest": "Trump\u2019s Ex-Lawyer Robert Barnes",
@@ -172,7 +172,7 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "3.2K"
   },
@@ -198,7 +198,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.6K",
     "_x_passes": 6
   },
@@ -393,14 +393,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "3.9K",
+    "x_views": null,
+    "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-22T23:56:48Z",
+    "_carried_forward_iso": "2026-08-23T00:00:15Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -408,14 +408,14 @@
     "surname": "DEF",
     "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
     "date": "27 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "2.5K",
+    "x_views": null,
+    "ig_likes": "829",
     "show": "GU",
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-22T23:56:48Z",
+    "_carried_forward_iso": "2026-08-23T00:00:15Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -423,14 +423,14 @@
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "?",
-    "x_views": "38.2K",
-    "ig_likes": "?",
+    "rumble_views": "3.1K",
+    "x_views": "38.1K",
+    "ig_likes": "2.8K",
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-22T23:56:48Z",
+    "_carried_forward_iso": "2026-08-23T00:00:15Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
