@@ -37,6 +37,16 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # `extract_guest()` output (e.g. "Ukraine Proxy War" for Carden ep, or the
 # truncated "Ex-UK Defence Minister Tobias " for Ellwood ep).
 CANON_MAP = {
+    # CANON_LULA_V1_20260823 — the guest extractor returns None for every title
+    # shape this name appears in ("Brazil's President Lula da Silva on ...",
+    # "Lula da Silva: Brazil Will NOT ...", "Afshin Rattansi CHALLENGES Brazil's
+    # President ..."), because the name is preceded by a country-possessive role
+    # rather than an honorific the extractor knows. With no CANON_MAP entry and no
+    # announcement post, such an episode is dropped at ingest as SKIP(unparseable)
+    # rather than merely mis-named. Both surname spellings are mapped: "da Silva"
+    # yields the surname "Silva", and "Lula" appears alone in shorter titles.
+    "silva":       "Luiz Inácio Lula da Silva",
+    "lula":        "Luiz Inácio Lula da Silva",
     "ellwood":     "Tobias Ellwood",
     "wilkerson":   "Lawrence Wilkerson",
     "kucinich":    "Dennis Kucinich",
@@ -303,6 +313,65 @@ def _iso_to_short(iso_str):
         return d.strftime("%-d %b")
     except Exception:
         return ""
+
+
+def _short_to_iso(short_date, today=None):
+    """'22 Aug' -> '2026-08-22T00:00:00Z'. Returns '' on failure.
+
+    PUB_ISO_FALLBACK_V1_20260823 — the guest-repair pass can only consult the
+    show's announcement feed if it knows WHEN the episode aired, and it read that
+    from `pub_iso` alone. Every row in videos.json (GU) carries `date` and none
+    carries `pub_iso`, so the resolver was skipped for the whole feed and the
+    2026-08-22 episode kept the fragment "Afshin Rattansi CHALLENGES Ex-" /
+    surname "Ex-" while the answer — "Dr. Michael O'Hanlon" — sat in the
+    announcement mirror the resolver already reads.
+
+    The short date is not as good as pub_iso and is not a replacement for it: it
+    has no time of day and no year. But the resolver matches on a 48-hour window
+    around the episode, so midnight on the right day is inside tolerance, and a
+    guest we CAN name beats a guard that declines to look. pub_iso is still
+    preferred wherever it exists.
+
+    The year is inferred as the most recent occurrence of that day/month at or
+    before `today`, which is the only reading consistent with a feed that holds
+    the latest 15 episodes. A date more than a year stale would resolve to the
+    wrong year — the resolver then finds no announcement in its window and
+    REFUSES, which is the safe direction.
+    """
+    if not short_date:
+        return ""
+    from datetime import datetime as _dt
+    now = today or _dt.utcnow()
+    s = str(short_date).strip()
+    for _fmt in ("%d %b", "%d %B"):
+        try:
+            d = _dt.strptime(s, _fmt)
+        except ValueError:
+            continue
+        for _yr in (now.year, now.year - 1):
+            try:
+                cand = d.replace(year=_yr)
+            except ValueError:
+                continue
+            if cand <= now + __import__("datetime").timedelta(days=2):
+                return cand.strftime("%Y-%m-%dT00:00:00Z")
+        return ""
+    return ""
+
+
+def _row_pub_iso(row):
+    """Best available publication timestamp for a stored row.
+
+    PUB_ISO_FALLBACK_V1_20260823. Prefers the canonical `pub_iso`; falls back to
+    the short `date` the row has always carried. Returns '' when neither is
+    usable, and callers must still treat '' as "do not guess".
+    """
+    if not isinstance(row, dict):
+        return ""
+    p = row.get("pub_iso")
+    if p:
+        return p
+    return _short_to_iso(row.get("date"))
 
 
 def _iso_normalise(iso_str):
@@ -1241,6 +1310,28 @@ def discover_new_episodes(channel_id, data_file):
                               f"({_ev.get('hours_from_episode')}h before) :: {title[:50]}...")
                 except Exception as _e:
                     print(f"  GUEST_FROM_POSTS_ERR: {type(_e).__name__}: {str(_e)[:80]}")
+            # CANON_AT_INGEST_V1_20260823 — consult CANON_MAP BEFORE the skip.
+            #
+            # THE GAP THIS CLOSES. _canonical_from_title was already called on this
+            # path, but 25 lines further down — AFTER the `not guest or not surname`
+            # gate below. So a known name that the title-extractor cannot parse was
+            # dropped before the canonical map was ever asked, and the map could only
+            # ever repair a row that had already survived ingest. The on-load repair
+            # pass has consulted the map in exactly this position since 2026-08-23;
+            # the entry gate had not caught up, so the two disagreed about whether a
+            # name was knowable.
+            #
+            # Passing an EMPTY guest is deliberate and matches the repair pass: with a
+            # guest supplied, the helper has a clean-looking-passthrough branch that
+            # would legitimise whatever junk it was handed. Empty in means only a
+            # positive CANON_MAP hit comes out, so this can name a guest it knows and
+            # never invents one it does not.
+            if not guest or not surname:
+                _cfn_i, _csu_i, _ = _canonical_from_title(title, "", "")
+                if _cfn_i and _csu_i:
+                    guest = _cfn_i
+                    surname = _cfn_i.split()[-1]
+                    print(f"  CANON_AT_INGEST: {surname} <- CANON_MAP :: {title[:50]}...")
             # Skip if extractor couldn't find a clean guest (returns None now instead of
             # title[:30]) — avoids "DES"/"St" garbage from the legacy truncation fallback.
             if not guest or not surname:
@@ -1636,12 +1727,18 @@ async def update_show(show, ig_clips):
             #
             # The name was provable the whole time: the show announced
             # "Dr. Michael O'Hanlon" on its own X feed 21.7h before broadcast.
-            if not (new_guest and new_surname) and v.get('pub_iso'):
+            # PUB_ISO_FALLBACK_V1_20260823 — was `and v.get('pub_iso')`, which no GU
+            # row satisfies: 0 of 15 carry pub_iso (New Order carries it on 8 of 9,
+            # which is why this only ever bit one show). The resolver was therefore
+            # never called on the feed it was written to repair. It now accepts the
+            # short `date` as a fallback timestamp; see _row_pub_iso.
+            _pub_for_resolver = _row_pub_iso(v)
+            if not (new_guest and new_surname) and _pub_for_resolver:
                 try:
                     import gu_guest_from_posts_v1 as _GFP
                     _show_code = ('NO' if 'neworder' in os.path.basename(show['data_file']).lower()
                                   else 'GU')
-                    _n, _ev = _GFP.resolve_guest(v['pub_iso'], _show_code)
+                    _n, _ev = _GFP.resolve_guest(_pub_for_resolver, _show_code)
                     if _n:
                         new_guest = _n
                         new_surname = _GFP.surname_of(_n)
