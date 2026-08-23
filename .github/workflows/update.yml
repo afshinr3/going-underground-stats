@@ -31,6 +31,22 @@ jobs:
           pip install playwright requests Pillow
           playwright install --with-deps chromium
 
+      # DERIVED_FEED_CONSISTENCY_V1_2026_08_23 — verify the COMMITTED state, before
+      # this run regenerates anything. Running it after the fetch would be
+      # circular: the same process just wrote the feed, so it would always agree.
+      # What this catches is the gap that actually bit us — something writing
+      # videos.json without running the generator (an out-of-band repair, or the
+      # bridge discarding a regenerated weekly file), leaving the leaderboard
+      # disagreeing with the canonical feed with nothing to say so.
+      #
+      # continue-on-error: a stale derived feed must be LOUD, not block the stats
+      # pipeline — the next run republishes the feed anyway, and failing the job
+      # would stop good data from shipping over a reporting-layer disagreement.
+      # Same fail-open-but-visible rule the EPISODE_UNION guard already follows.
+      - name: Verify derived feeds match canonical sources
+        continue-on-error: true
+        run: python3 verify_derived_feeds_v1.py
+
       - name: Fetch fresh data (videos.json + followers.json)
         env:
           X_COOKIES_JSON: ${{ secrets.X_COOKIES_JSON }}
