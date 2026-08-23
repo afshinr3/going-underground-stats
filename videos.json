@@ -23,9 +23,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-    "_x_status": "MEASURED",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "GU",
-    "_x_passes": 2
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -65,7 +65,7 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "604",
-    "x_views": "164.4K",
+    "x_views": "118.1K",
     "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "4.9K",
@@ -395,14 +395,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "3.9K",
+    "x_views": null,
+    "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-23T13:35:18Z",
+    "_carried_forward_iso": "2026-08-23T13:35:17Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -410,14 +410,14 @@
     "surname": "DEF",
     "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
     "date": "27 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "2.5K",
+    "x_views": null,
+    "ig_likes": "829",
     "show": "GU",
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-23T13:35:18Z",
+    "_carried_forward_iso": "2026-08-23T13:35:17Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -425,14 +425,14 @@
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "?",
+    "rumble_views": "3.1K",
     "x_views": "38.3K",
-    "ig_likes": "?",
+    "ig_likes": "2.8K",
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-23T13:35:18Z",
+    "_carried_forward_iso": "2026-08-23T13:35:17Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
