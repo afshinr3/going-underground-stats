@@ -1,7 +1,31 @@
 {
-  "iso": "2026-08-23T11:33:19Z",
-  "last_updated": "2026-08-23T11:33:19Z",
+  "iso": "2026-08-23T11:52:58Z",
+  "last_updated": "2026-08-23T11:52:58Z",
   "episodes": [
+    {
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": "Eu0Phb99ipg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id_v2": "20fc52f5bc97c24f",
+      "pub_iso": "2026-08-22T11:55:34Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Eu0Phb99ipg"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "1.6K",
+        "yt_views": "1.2K",
+        "x_views": "48.5K",
+        "ig_likes": "284"
+      }
+    },
     {
       "guest": "Philip Pilkington",
       "surname": "PILKINGTON",
@@ -22,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.9K",
-        "x_views": "249.8K",
+        "x_views": "250.1K",
         "ig_likes": "2.3K"
       }
     },
@@ -42,7 +66,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "4.9K",
-        "x_views": "164.3K",
+        "x_views": "164.4K",
         "ig_likes": "603"
       }
     },
@@ -66,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.3K",
-        "x_views": "70.8K",
+        "x_views": "253.6K",
         "ig_likes": "819"
       }
     },
@@ -162,7 +186,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
-        "x_views": "288.4K",
+        "x_views": "288.3K",
         "ig_likes": "10.9K"
       }
     },
@@ -186,7 +210,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "4.1K",
-        "x_views": "267.8K",
+        "x_views": "595.5K",
         "ig_likes": "2.0K"
       }
     },
@@ -420,7 +444,7 @@
       "metrics": {
         "rumble_views": "88",
         "yt_views": "18",
-        "x_views": "16.0K",
+        "x_views": "37.9K",
         "ig_likes": "140"
       }
     },
@@ -444,7 +468,7 @@
       "metrics": {
         "rumble_views": "432",
         "yt_views": "133",
-        "x_views": "106.8K",
+        "x_views": "176.1K",
         "ig_likes": "209"
       }
     },
@@ -468,7 +492,7 @@
       "metrics": {
         "rumble_views": "474",
         "yt_views": "163",
-        "x_views": "695.2K",
+        "x_views": "820.4K",
         "ig_likes": "275"
       }
     },
@@ -492,7 +516,7 @@
       "metrics": {
         "rumble_views": "538",
         "yt_views": "291",
-        "x_views": "15.6K",
+        "x_views": "693.8K",
         "ig_likes": "230"
       }
     },
@@ -516,7 +540,7 @@
       "metrics": {
         "rumble_views": "641",
         "yt_views": "133",
-        "x_views": "206.2K",
+        "x_views": "130.9K",
         "ig_likes": "586"
       }
     },
@@ -540,7 +564,7 @@
       "metrics": {
         "rumble_views": "738",
         "yt_views": "1.1K",
-        "x_views": "382.9K",
+        "x_views": "564.2K",
         "ig_likes": "351"
       }
     },
@@ -564,7 +588,7 @@
       "metrics": {
         "rumble_views": "963",
         "yt_views": "1.1K",
-        "x_views": "318.0K",
+        "x_views": "151.9K",
         "ig_likes": "232"
       }
     },
@@ -588,7 +612,7 @@
       "metrics": {
         "rumble_views": "524",
         "yt_views": "1.1K",
-        "x_views": "758.2K",
+        "x_views": "530.1K",
         "ig_likes": "462"
       }
     },
@@ -615,6 +639,30 @@
   ],
   "gu": [
     {
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": "Eu0Phb99ipg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id_v2": "20fc52f5bc97c24f",
+      "pub_iso": "2026-08-22T11:55:34Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Eu0Phb99ipg"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "1.6K",
+        "yt_views": "1.2K",
+        "x_views": "48.5K",
+        "ig_likes": "284"
+      }
+    },
+    {
       "guest": "Philip Pilkington",
       "surname": "PILKINGTON",
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
@@ -634,7 +682,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.9K",
-        "x_views": "249.8K",
+        "x_views": "250.1K",
         "ig_likes": "2.3K"
       }
     },
@@ -654,7 +702,7 @@
       "metrics": {
         "rumble_views": "2.3K",
         "yt_views": "4.9K",
-        "x_views": "164.3K",
+        "x_views": "164.4K",
         "ig_likes": "603"
       }
     },
@@ -678,7 +726,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.3K",
-        "x_views": "70.8K",
+        "x_views": "253.6K",
         "ig_likes": "819"
       }
     },
@@ -705,30 +753,6 @@
         "x_views": "431.2K",
         "ig_likes": "2.4K"
       }
-    },
-    {
-      "guest": "Gabor Maté",
-      "surname": "MATÉ",
-      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
-      "date": "3 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": "PUw_r6rI5PY",
-      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id_v2": "5e4fb101123620bc",
-      "pub_iso": "2026-08-03T22:18:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "PUw_r6rI5PY"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.6K",
-        "yt_views": "49.9K",
-        "x_views": "56.6K",
-        "ig_likes": "5.2K"
-      }
     }
   ],
   "no": [
@@ -752,7 +776,7 @@
       "metrics": {
         "rumble_views": "88",
         "yt_views": "18",
-        "x_views": "16.0K",
+        "x_views": "37.9K",
         "ig_likes": "140"
       }
     },
@@ -776,7 +800,7 @@
       "metrics": {
         "rumble_views": "432",
         "yt_views": "133",
-        "x_views": "106.8K",
+        "x_views": "176.1K",
         "ig_likes": "209"
       }
     },
@@ -800,7 +824,7 @@
       "metrics": {
         "rumble_views": "474",
         "yt_views": "163",
-        "x_views": "695.2K",
+        "x_views": "820.4K",
         "ig_likes": "275"
       }
     },
@@ -824,7 +848,7 @@
       "metrics": {
         "rumble_views": "538",
         "yt_views": "291",
-        "x_views": "15.6K",
+        "x_views": "693.8K",
         "ig_likes": "230"
       }
     },
@@ -848,7 +872,7 @@
       "metrics": {
         "rumble_views": "641",
         "yt_views": "133",
-        "x_views": "206.2K",
+        "x_views": "130.9K",
         "ig_likes": "586"
       }
     }
