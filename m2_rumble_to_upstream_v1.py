@@ -74,6 +74,46 @@ def _rumble_join_key(_title):
 
 
 def _episode_surname_tokens(_ep):
+    """Tokens that may identify this episode's GUEST in the Rumble surname map.
+
+    LOOSE_TOKEN_RUMBLE_MISATTRIB_V1_20260822 — this used to tokenise the whole TITLE as
+    well as the guest, returning every 4+ letter word. The Rumble map is keyed the same
+    way, so it holds 442 keys including 'world', 'must', 'prof', 'again', 'against',
+    'action', 'alliance'. Any episode could therefore inherit any Rumble video's view
+    count through one shared ordinary word.
+
+    Measured 2026-08-22: Prof. David Monyae's episode — which has NO Rumble video at all,
+    the show had not gone live — matched the token 'david' and was credited **6,250
+    Rumble views** belonging to an unrelated video. The app displayed "Rumble 6.2K" for
+    something that did not exist.
+
+    Only the guest's SURNAME can identify the guest. Restricting to it costs nothing:
+    13 of the 14 current episodes match by exact title key and never reach this fallback,
+    and the fourteenth was the fabricated one.
+    """
+    _tokens = []
+    _sn_fields = (
+        str(_ep.get("surname") or ""),
+        str(_ep.get("canonical_surname_upper") or ""),
+    )
+    for _f in _sn_fields:
+        for _t in re.findall(r"[A-Za-z]{4,}", _f):
+            _tokens.append(_t.lower())
+    # Last token of the guest's full name is a surname too ("Prof. David Monyae").
+    _g = str(_ep.get("canonical_guest_full_name") or _ep.get("guest") or "").strip()
+    _gw = re.findall(r"[A-Za-z]{4,}", _g.split("\n")[0])
+    if _gw:
+        _tokens.append(_gw[-1].lower())
+    _seen, _out = set(), []
+    for _t in _tokens:
+        if _t not in _seen:
+            _seen.add(_t)
+            _out.append(_t)
+    return _out
+
+
+def _episode_all_word_tokens_LEGACY(_ep):
+    """Retained for reference only — this is the loose behaviour that mis-attributed."""
     _tokens = []
     for _fld in (_ep.get("guest") or "", _ep.get("title") or ""):
         _s = str(_fld)
