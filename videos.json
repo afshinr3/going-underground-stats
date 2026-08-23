@@ -4,7 +4,7 @@
     "surname": "O\u2019Hanlon",
     "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
     "rumble_views": "1.7K",
-    "x_views": "49.3K",
+    "x_views": "49.4K",
     "date": "22 Aug",
     "yt_views": "1.4K",
     "ig_likes": "415",
@@ -33,7 +33,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.2K",
-    "x_views": "251.1K",
+    "x_views": "251.2K",
     "ig_likes": "2.4K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -94,9 +94,9 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "30.4K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -150,7 +150,7 @@
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
-    "yt_views": "50.0K"
+    "yt_views": "50.1K"
   },
   {
     "guest": "Robert Barnes",
@@ -360,7 +360,7 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "yt_views": "1.4K"
   },
@@ -386,7 +386,7 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "yt_views": "948"
   },
@@ -402,7 +402,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-23T14:09:17Z",
+    "_carried_forward_iso": "2026-08-23T14:37:21Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -417,7 +417,7 @@
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-23T14:09:17Z",
+    "_carried_forward_iso": "2026-08-23T14:37:21Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -432,7 +432,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-23T14:09:17Z",
+    "_carried_forward_iso": "2026-08-23T14:37:21Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
