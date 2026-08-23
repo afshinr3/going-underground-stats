@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-23T04:17:21Z",
+  "updated": "2026-08-23T04:38:55Z",
   "drops": [
     {
-      "ts": "2026-08-23T04:17:21Z",
+      "ts": "2026-08-23T04:38:55Z",
       "show": "GU",
       "guest": "Ex-",
       "platform": "X",
@@ -12,7 +12,17 @@
       "drop_pct": 31.5
     },
     {
-      "ts": "2026-08-23T04:17:21Z",
+      "ts": "2026-08-23T04:38:55Z",
+      "show": "GU",
+      "guest": "Ex-",
+      "platform": "IG",
+      "peak": 11500,
+      "peak_at": "2026-08-22T14:43:54Z",
+      "current": 284,
+      "drop_pct": 97.5
+    },
+    {
+      "ts": "2026-08-23T04:38:55Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -22,7 +32,27 @@
       "drop_pct": 33.5
     },
     {
-      "ts": "2026-08-23T04:17:21Z",
+      "ts": "2026-08-23T04:38:55Z",
+      "show": "GU",
+      "guest": "Mearsheimer",
+      "platform": "IG",
+      "peak": 1800,
+      "peak_at": "2026-08-22T18:28:40Z",
+      "current": 819,
+      "drop_pct": 54.5
+    },
+    {
+      "ts": "2026-08-23T04:38:55Z",
+      "show": "GU",
+      "guest": "Wilkerson",
+      "platform": "IG",
+      "peak": 2500,
+      "peak_at": "2026-08-22T18:28:40Z",
+      "current": 1800,
+      "drop_pct": 28.0
+    },
+    {
+      "ts": "2026-08-23T04:38:55Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "IG",
