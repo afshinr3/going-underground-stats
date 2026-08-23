@@ -444,10 +444,37 @@ def _readjudicate_carried_guest(row, show_code):
               f":: {title[:50]}...")
         return True
 
-    # Unresolvable. Blank rather than republish a fragment. The row keeps its
-    # place and its metrics — CLEANUP_NEVER_DELETES_A_BOUND_EPISODE_V1 protects a
-    # blank-named row that carries a canonical identity, which is why blanking is
-    # safe here and deleting would not be.
+    # Unresolvable. Blanking is NOT unconditionally safe, and assuming it was is
+    # how the first version of this helper deleted the 27 Jun row.
+    #
+    # BLANK_ONLY_WHEN_NON_DESTRUCTIVE_V1_20260823. cleanup_json() removes any row
+    # whose surname is <= 1 char UNLESS it is identity-bound, and it counts only
+    # canonical_video_id / canonical_episode_id_v2 / rumble_only_injected as
+    # identity. canonical_episode_id — a hash of the title — does NOT qualify. So
+    # blanking an unbound row hands it straight to deletion, which is precisely
+    # the path that destroyed the 22 Aug episode and its 507.4K x_views earlier
+    # today.
+    #
+    # Blank only where that cannot cost a measurement:
+    #   bound row            -> safe, cleanup protects it, it keeps its metrics
+    #   unbound, no metrics  -> safe, there is nothing to lose and a nameless,
+    #                           identity-less, metric-less row IS the legacy junk
+    #                           cleanup_json exists to remove
+    #   unbound WITH metrics -> do NOT blank. A visible fragment is ugly; deleting
+    #                           a measured episode is unrecoverable, because the
+    #                           row comes back as a fresh measurement if it ever
+    #                           returns. Ugly beats lossy.
+    _bound = bool(row.get('canonical_video_id') or row.get('canonical_episode_id_v2')
+                  or row.get('rumble_only_injected'))
+    _has_metric = any(
+        (row.get(_f) not in (None, '', '?', '-', 'n/a', 'N/A', '0', 0))
+        for _f in ('x_views', 'yt_views', 'rumble_views', 'ig_likes'))
+    if not _bound and _has_metric:
+        print(f"  [UNION_GUEST_KEPT_UNRESOLVED] refusing to blank an unbound row that "
+              f"carries measured views — blanking would hand it to cleanup_json for "
+              f"deletion :: {title[:50]}...")
+        return False
+
     if guest or surname:
         row['guest'] = ''
         row['surname'] = ''

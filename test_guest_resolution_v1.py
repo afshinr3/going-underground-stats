@@ -126,6 +126,22 @@ for sn, gt, ti in [("Blumenthal", "Max Blumenthal",
     check(f"{sn!r} is left untouched",
           m._readjudicate_carried_guest(row, "GU") is False and row["surname"] == sn)
 
+
+check("an UNBOUND row carrying measured views is NOT blanked (would be deleted)", (lambda: (
+    lambda r: m._readjudicate_carried_guest(r, "GU") is False and r["surname"] == "DEF"
+)({"surname": "DEF", "guest": "\u2018The US LACKS THE POWER TO DEF", "date": "27 Jun",
+   "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-",
+   "x_views": "412.0K", "canonical_episode_id": "95d519473319"}))())
+check("an unbound row with NO metrics is blanked (nothing to lose)", (lambda: (
+    lambda r: m._readjudicate_carried_guest(r, "GU") is True and r["surname"] == ""
+)({"surname": "DEF", "guest": "\u2018The US LACKS THE POWER TO DEF", "date": "27 Jun",
+   "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-",
+   "x_views": "?", "rumble_views": "?", "ig_likes": "?"}))())
+check("a BOUND row with metrics is blanked (cleanup protects it)", (lambda: (
+    lambda r: m._readjudicate_carried_guest(r, "GU") is True and r["surname"] == ""
+)({"surname": "DEF", "guest": "\u2018The US LACKS THE POWER TO DEF", "date": "27 Jun",
+   "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-",
+   "x_views": "412.0K", "canonical_video_id": "abc12345678"}))())
 check("a row with no title is left alone",
       m._readjudicate_carried_guest({"surname": "DEF", "guest": "x", "title": ""}, "GU") is False)
 check("a non-dict is handled", m._readjudicate_carried_guest(None, "GU") is False)
