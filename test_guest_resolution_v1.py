@@ -96,6 +96,40 @@ for fn in ("videos.json", "videos_neworder.json"):
     check(f"{fn}: no truncated title-prefix guest",
           not frag, ", ".join(f"{r.get('date')}:{r.get('surname')!r}" for r in frag))
 
+print("\n[6] UNION_READJUDICATES_GUEST — a carried-forward row is repaired, not republished")
+# EPISODE_UNION re-adds rows from the PREVIOUSLY PUBLISHED file, below the
+# normalize pass. Without re-adjudication a fragment survives every run forever,
+# which is how 'DEF' outlived a repair pass that had already blanked it.
+_frag = {"surname": "DEF", "guest": "‘The US LACKS THE POWER TO DEF", "date": "27 Jun",
+         "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-"}
+check("a fragment surname is not republished",
+      m._readjudicate_carried_guest(_frag, "GU") is True
+      and _frag["surname"] == "" and _frag["_guest_unresolved"] is True,
+      f"{_frag.get('surname')!r}")
+check("  and the canonical fields are blanked in step",
+      _frag["canonical_surname_upper"] == "" and _frag["canonical_guest_full_name"] == "")
+
+_role = {"surname": "Ex-", "guest": "Afshin Rattansi CHALLENGES Ex-", "date": "22 Aug",
+         "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars"}
+m._readjudicate_carried_guest(_role, "GU")
+check("a role-prefix surname is not republished", _role["surname"] in ("", "O’Hanlon"),
+      f"{_role.get('surname')!r}")
+
+# Non-regression: a guest whose real name opens the title is the NORMAL shape for
+# this show and must not be re-derived on every run.
+for sn, gt, ti in [("Blumenthal", "Max Blumenthal",
+                    "Max Blumenthal Reveals Why Trump’s MoU with Iran Will Fail"),
+                   ("Maté", "Gabor Maté",
+                    "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionism"),
+                   ("O’Hanlon", "Michael O’Hanlon", "Some Long Episode Title About The CIA")]:
+    row = {"surname": sn, "guest": gt, "title": ti, "date": "1 Jan"}
+    check(f"{sn!r} is left untouched",
+          m._readjudicate_carried_guest(row, "GU") is False and row["surname"] == sn)
+
+check("a row with no title is left alone",
+      m._readjudicate_carried_guest({"surname": "DEF", "guest": "x", "title": ""}, "GU") is False)
+check("a non-dict is handled", m._readjudicate_carried_guest(None, "GU") is False)
+
 print(f"\n{'All guest-resolution tests passed.' if not FAILED else str(len(FAILED)) + ' FAILURES'}"
       f"  ({len(PASSED)} passed)")
 sys.exit(0 if not FAILED else 1)

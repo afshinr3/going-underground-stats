@@ -374,6 +374,92 @@ def _row_pub_iso(row):
     return _short_to_iso(row.get("date"))
 
 
+def _readjudicate_carried_guest(row, show_code):
+    """Re-derive the guest of a row being carried forward by EPISODE_UNION.
+
+    UNION_READJUDICATES_GUEST_V1_20260823 — the normalize/repair pass runs at the
+    TOP of update_show, the URL_BIND cleanup drops rows below it, and
+    EPISODE_UNION re-adds those rows from the PREVIOUSLY PUBLISHED file further
+    down still. A row that takes that route is therefore restored to whatever the
+    last publish said, having never met the repair pass in this run.
+
+    Proved in production 2026-08-23T17:47Z: the normalizer logged
+    "blanking unresolvable guest/surname" for the 27 Jun episode, and the run
+    committed surname 'DEF' anyway. The row is 57 days old and outside the
+    15-entry RSS window, so URL_BIND dropped it and the union put the fragment
+    back. The same line names the other two rows in that state — Blumenthal|29
+    Jun and Olmert|20 Jun — which is the whole population with no pub_iso.
+
+    Fixing the repair pass alone could never reach these rows: they re-enter
+    AFTER it. This is the same defect one level further out as
+    GUEST_REPAIR_ON_LOAD_V1, which existed because the INGEST gate could not
+    reach rows already stored.
+
+    Returns True when the row was changed. Blanking is the floor, never a
+    fragment: a guest we cannot name is empty and the app falls back to the title.
+    """
+    if not isinstance(row, dict):
+        return False
+    surname = (row.get('surname') or '').strip()
+    guest = (row.get('guest') or '').strip()
+    title = (row.get('title') or '').strip()
+    if not title:
+        return False
+
+    # The trigger is an unusable SURNAME, not "the guest opens the title".
+    # "Max Blumenthal Reveals Why..." and "Gabor Maté: Netanyahu is..." are the
+    # normal shape for this show, and treating a title-prefix guest as suspect
+    # re-derived those rows on every run — churn, log noise, and a repair pass
+    # that fires constantly is one nobody reads. A truncation artefact always
+    # leaves an invalid surname behind ('DEF', 'Ex-', 'Israel’s'); that is the
+    # signal worth acting on.
+    role_frag = (surname.rstrip('-').lower() in _ROLE_PREFIXES) or surname.endswith('-')
+    if surname and _looks_valid_surname(surname) and not role_frag:
+        return False        # already a real name; leave it entirely alone
+
+    new_guest = extract_guest(title)
+    new_surname = extract_surname(new_guest) if new_guest else None
+    if not (new_guest and new_surname):
+        _cfn, _csu, _ = _canonical_from_title(title, "", "")
+        if _cfn and _csu:
+            new_guest, new_surname = _cfn, _cfn.split()[-1]
+    if not (new_guest and new_surname):
+        _pub = _row_pub_iso(row)
+        if _pub:
+            try:
+                import gu_guest_from_posts_v1 as _GFP
+                _n, _ev = _GFP.resolve_guest(_pub, show_code)
+                if _n:
+                    new_guest, new_surname = _n, _GFP.surname_of(_n)
+            except Exception:
+                pass
+
+    if new_guest and new_surname and _looks_valid_surname(new_surname):
+        row['guest'] = new_guest
+        row['surname'] = new_surname
+        row['canonical_guest_full_name'] = new_guest
+        row['canonical_surname_upper'] = new_surname.upper()
+        row.pop('_guest_unresolved', None)
+        print(f"  [UNION_GUEST_REPAIR] {new_surname} <- carried-forward row "
+              f":: {title[:50]}...")
+        return True
+
+    # Unresolvable. Blank rather than republish a fragment. The row keeps its
+    # place and its metrics — CLEANUP_NEVER_DELETES_A_BOUND_EPISODE_V1 protects a
+    # blank-named row that carries a canonical identity, which is why blanking is
+    # safe here and deleting would not be.
+    if guest or surname:
+        row['guest'] = ''
+        row['surname'] = ''
+        row['canonical_guest_full_name'] = ''
+        row['canonical_surname_upper'] = ''
+        row['_guest_unresolved'] = True
+        print(f"  [UNION_GUEST_BLANK] carried-forward row has no derivable guest; "
+              f"blanked rather than republished :: {title[:50]}...")
+        return True
+    return False
+
+
 def _iso_normalise(iso_str):
     """Return ISO in 'YYYY-MM-DDTHH:MM:SSZ' form (UTC). Passes-through if
     already Z; strips '+00:00' offset."""
@@ -2452,6 +2538,16 @@ async def update_show(show, ig_clips):
             _r['_carried_forward_reason'] = (
                 'absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 '
                 'because a known episode must not disappear on one failed lookup')
+            # UNION_READJUDICATES_GUEST_V1_20260823 — this row comes from the
+            # PREVIOUSLY PUBLISHED file and re-enters BELOW the normalize pass, so
+            # it would otherwise republish whatever fragment the last publish held.
+            # Re-adjudicate before it rejoins the inventory.
+            try:
+                _readjudicate_carried_guest(
+                    _r, 'NO' if 'neworder' in os.path.basename(show['data_file']).lower()
+                        else 'GU')
+            except Exception as _e:
+                print(f"  [UNION_GUEST_REPAIR_ERR] {type(_e).__name__}: {str(_e)[:80]}")
             cache.append(_r)
             _known_ids |= _identities(_r)  # a carried-forward row is now PRESENT; a second
                                            # copy of the same episode must not also be added
