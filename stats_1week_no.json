@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-23T21:44:54.781777Z",
+  "generated_at": "2026-08-23T22:08:03.967161Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "211",
       "x_views": "165.5K",
       "date": "23 Aug",
-      "yt_views": "31",
+      "yt_views": "32",
       "ig_likes": "268",
       "canonical_guest_full_name": "David Monyae",
       "canonical_surname_upper": "MONYAE",
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-      "_x_status": "MEASURED_LOWER_BOUND",
+      "_x_status": "FETCH_FAILED:Exception",
       "show": "NO",
       "_x_passes": 6
     }
