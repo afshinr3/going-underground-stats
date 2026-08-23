@@ -122,8 +122,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 6,
+    "_x_status": "MEASURED",
+    "_x_passes": 4,
     "show": "GU"
   },
   {
@@ -132,7 +132,7 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "3.6K",
-    "x_views": "56.6K",
+    "x_views": "56.7K",
     "ig_likes": "5.2K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
@@ -148,7 +148,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "50.1K"
   },
@@ -158,7 +158,7 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": "15.1K",
-    "x_views": "106.3K",
+    "x_views": "106.4K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Robert Barnes",
@@ -174,9 +174,9 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "3.2K",
-    "_x_passes": 6
+    "_x_passes": 5
   },
   {
     "guest": "Ami Ayalon",
@@ -200,7 +200,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.6K",
     "_x_passes": 6
   },
@@ -395,14 +395,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "3.9K",
+    "x_views": null,
+    "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-23T15:09:09Z",
+    "_carried_forward_iso": "2026-08-23T15:05:24Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -410,14 +410,14 @@
     "surname": "DEF",
     "title": "\u2018The US LACKS THE POWER TO DEFEAT IRAN\u2019 Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
     "date": "27 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "2.5K",
+    "x_views": null,
+    "ig_likes": "829",
     "show": "GU",
     "canonical_guest_full_name": "\u2018The US LACKS THE POWER TO DEF",
     "canonical_surname_upper": "DEF",
     "canonical_episode_id": "95d519473319",
-    "_carried_forward_iso": "2026-08-23T15:09:09Z",
+    "_carried_forward_iso": "2026-08-23T15:05:24Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -425,14 +425,14 @@
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "?",
+    "rumble_views": "3.1K",
     "x_views": "38.3K",
-    "ig_likes": "?",
+    "ig_likes": "2.8K",
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-23T15:09:09Z",
+    "_carried_forward_iso": "2026-08-23T15:05:24Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
