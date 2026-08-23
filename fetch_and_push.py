@@ -2469,18 +2469,68 @@ BAD_SURNAMES = {'Co', 'C', 'J', 'Relation', 'Hit', 'Indi', 'a', 'Rick',
 
 
 def cleanup_json(data_file):
-    """Remove entries with known bad surnames from a JSON data file."""
+    """Remove entries with known bad surnames from a JSON data file.
+
+    CLEANUP_NEVER_DELETES_A_BOUND_EPISODE_V1_2026_08_23 — this function runs
+    AFTER update_show() has saved, and therefore AFTER the EPISODE_UNION
+    inventory guard has already certified "no episode lost this run". Anything
+    removed here is removed with no audit, no union protection, and no trace in
+    the saved-entry count that the run reports.
+
+    That is how the 22 Aug episode (canonical_video_id=Eu0Phb99ipg) was lost on
+    2026-08-23 11:33. The normalizer could not resolve a guest from the title
+    "Afshin Rattansi CHALLENGES Ex-CIA Advisor..." and blanked guest/surname.
+    The run printed "[EPISODE_UNION] no episode lost" and "Saved 18 entries" —
+    then the blank surname failed the len > 1 test here and the row was deleted,
+    committing 17. Its accumulated metrics went with it: x_views 507.4K was
+    never recovered, because the row came back as a fresh measurement.
+
+    A name we cannot resolve YET is a naming problem, not evidence the episode
+    does not exist — later runs repaired that very row to "Michael O’Hanlon".
+    So a row bound to a real video is never deleted here; it keeps its place and
+    its metrics, and waits for the name to resolve. Only rows with no canonical
+    identity at all remain deletable, which is the legacy junk this was written
+    for. Every decision is printed: silent shrinkage is the failure mode.
+    """
     if not os.path.exists(data_file):
         return
     with open(data_file) as f:
         data = json.load(f)
     before = len(data)
-    data = [v for v in data if v.get('surname', '') not in BAD_SURNAMES
-            and len(v.get('surname', '')) > 1]
-    if len(data) < before:
+
+    def _bad_name(v):
+        sn = v.get('surname', '') or ''
+        return sn in BAD_SURNAMES or len(sn) <= 1
+
+    def _identity_bound(v):
+        return bool(v.get('canonical_video_id')
+                    or v.get('canonical_episode_id_v2')
+                    or v.get('rumble_only_injected'))
+
+    kept, removed, protected = [], [], []
+    for v in data:
+        if not _bad_name(v):
+            kept.append(v)
+        elif _identity_bound(v):
+            kept.append(v)
+            protected.append(v)
+        else:
+            removed.append(v)
+
+    for v in protected:
+        print(f"  [CLEANUP_PROTECTED] kept bound episode with unresolved name: "
+              f"date={v.get('date')!r} surname={v.get('surname')!r} "
+              f"cvid={v.get('canonical_video_id')!r} "
+              f"title={(v.get('title') or '')[:70]!r}", file=sys.stderr)
+    for v in removed:
+        print(f"  [CLEANUP_REMOVED] {os.path.basename(data_file)}: "
+              f"date={v.get('date')!r} surname={v.get('surname')!r} "
+              f"title={(v.get('title') or '')[:70]!r}", file=sys.stderr)
+
+    if removed:
         with open(data_file, 'w') as f:
-            json.dump(data, f, indent=2)
-        print(f"  Cleaned {before - len(data)} bad entries from {os.path.basename(data_file)}")
+            json.dump(kept, f, indent=2)
+        print(f"  Cleaned {before - len(kept)} bad entries from {os.path.basename(data_file)}")
 
 
 async def fetch_x_followers(handles):
