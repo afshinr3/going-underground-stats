@@ -54,6 +54,10 @@ try:
     import fetch_and_push as _FP  # noqa: E402  (cloud module; __main__-guarded, safe to import)
 except Exception:
     _FP = None
+try:
+    import verify_derived_feeds_v1 as _VDF  # noqa: E402  (stdlib-only, import-safe)
+except Exception:
+    _VDF = None
 
 # Non-surname tokens (copied verbatim from auto_update.py surname-fallback).
 _STOP = {"going", "underground", "episode", "video", "with", "from", "reveals",
@@ -307,14 +311,27 @@ def _git(*args, check=False):
 
 
 def _weekly_entries_sig(path):
-    """Content signature of a stats_1week_*.json — the in-window (surname, date)
-    set, ignoring the always-changing generated_at timestamp. None if unreadable."""
-    try:
-        d = json.load(open(path))
-        return sorted((str(e.get("surname")), str(e.get("date")))
-                      for e in (d.get("entries") or []))
-    except Exception:
-        return None
+    """Content signature of a stats_1week_*.json. None if unreadable.
+
+    DERIVED_FEED_SIGNATURE_PARITY_V1_2026_08_23 — this used to sign only the
+    in-window (surname, date) roster. That made every metric inside an entry
+    invisible to the publish decision: when a regenerated feed carried moved
+    view counts but the same roster, it signed IDENTICAL and the freshly
+    generated file was thrown away by `git checkout --` while the updated
+    videos.json was committed. main then served a weekly feed disagreeing with
+    its own canonical source — observed 2026-08-23 on Eu0Phb99ipg
+    (_x_status MEASURED vs UNMEASURED_NO_POSTS_FOUND, yt_views 1.3K vs 1.4K)
+    and KhzHRLRRuQE.
+
+    The roster is not the content. This now delegates to the consistency
+    checker's feed_signature(), so the decision "is this feed worth publishing"
+    and the check "does this feed match its source" are the SAME question asked
+    once. generated_at is still ignored — that is what it was always meant to
+    ignore, and it is still the only thing normalised away.
+    """
+    if _VDF is None:
+        return None          # unknown, never "unchanged" — see caller
+    return _VDF.feed_signature(path)
 
 
 
@@ -471,11 +488,16 @@ def main():
             _FP._generate_weekly_stats()  # rewrites both weekly files from the feed
             for _wf in WEEKLY:
                 _p = os.path.join(REPO, _wf)
-                if _weekly_entries_sig(_p) != _sig_before.get(_wf):
+                _sig_now, _sig_was = _weekly_entries_sig(_p), _sig_before.get(_wf)
+                # A signature we could not compute is UNKNOWN. Treating unknown as
+                # "unchanged" would discard a freshly generated feed on the strength
+                # of a failed read — absence reported as success, which is the exact
+                # shape of every silent loss in this pipeline. Publish instead.
+                if _sig_now is None or _sig_was is None or _sig_now != _sig_was:
                     if _wf not in changed_files:
-                        changed_files.append(_wf)      # entries changed -> commit
+                        changed_files.append(_wf)      # content changed -> commit
                 else:
-                    _git("checkout", "--", _wf)        # only timestamp moved -> discard churn
+                    _git("checkout", "--", _wf)        # only generated_at moved -> discard churn
             print(f"  [{INJECT_MARKER}] weekly stats regenerated; "
                   f"committing={[w for w in WEEKLY if w in changed_files]}")
         except Exception as _e_ws:

@@ -69,6 +69,7 @@ cannot be performed at all.
 
 import contextlib
 import datetime as _dt
+import hashlib
 import io
 import json
 import os
@@ -179,6 +180,51 @@ def record_id(entry):
         if val:
             return str(val)
     return "{}|{}".format(entry.get("surname") or "", entry.get("date") or "")
+
+
+def semantic_payload(payload):
+    """The feed payload with every explicitly non-semantic field removed."""
+    if not isinstance(payload, dict):
+        return payload
+    return {k: v for k, v in payload.items() if k not in NON_SEMANTIC_TOP_LEVEL}
+
+
+def feed_signature(source):
+    """Canonical signature of a derived feed's SEMANTIC content.
+
+    DERIVED_FEED_SIGNATURE_PARITY_V1_2026_08_23 — this is the single definition
+    of "did this feed meaningfully change", shared by the consistency check and
+    by the bridge's decision about whether a regenerated weekly file is worth
+    publishing. Those two were separate before, and they disagreed: the bridge
+    signed only the (surname, date) roster, so a feed whose METRICS had moved
+    signed identical, was discarded with `git checkout --`, and the stale copy
+    stayed on main while videos.json went forward. The checker then reported the
+    divergence the bridge had just created. One definition, used by both, is the
+    only thing that keeps them from drifting apart again.
+
+    `source` is a path or an already-parsed payload. Returns None when the feed
+    cannot be read; callers must treat None as UNKNOWN, never as "unchanged" —
+    a signature we could not compute is not evidence that nothing changed.
+
+    Key order and whitespace are serialisation, not content, so they are
+    normalised away by sort_keys. Entry ORDER is content and is preserved: the
+    generator emits entries in canonical-source order, so a different order
+    means the feed did not come from the current generator over the current
+    source, exactly as compare_feed() treats it.
+    """
+    if isinstance(source, (str, bytes, os.PathLike)):
+        try:
+            with open(source, "rb") as f:
+                payload = json.loads(f.read())
+        except Exception:
+            return None
+    else:
+        payload = source
+    if not isinstance(payload, dict):
+        return None
+    body = json.dumps(semantic_payload(payload), sort_keys=True,
+                      ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(body.encode("utf-8")).hexdigest()
 
 
 def _finding(kind, feed, rec="-", field="-"):
