@@ -5,35 +5,9 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-23T11:22:42.727916Z",
-  "n": 1,
-  "entries": [
-    {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "Ex-",
-      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
-      "date": "22 Aug",
-      "rumble_views": "1.6K",
-      "x_views": "507.4K",
-      "ig_likes": "284",
-      "show": "GU",
-      "canonical_guest_full_name": "Afshin Rattansi CHALLENGES Ex-",
-      "canonical_surname_upper": "EX-",
-      "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": "Eu0Phb99ipg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "pub_iso": "2026-08-22T11:55:34Z",
-      "canonical_episode_id_v2": "20fc52f5bc97c24f",
-      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "source_platform_ids": {
-        "youtube": [
-          "Eu0Phb99ipg"
-        ]
-      },
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "1.2K"
-    }
-  ],
+  "generated_at": "2026-08-23T11:33:19.141308Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
