@@ -52,6 +52,22 @@ jobs:
           git config user.email "bot@github.com"
           mkdir -p docs && touch docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl && git add videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl
           git diff --cached --quiet && exit 0
+          # AUDIT_LOG_SURVIVES_RESET_V1_2026_08_23 — the two docs/*.jsonl audit
+          # logs are append-only, and they were absent from the save/restore
+          # lists below. `git reset --hard origin/main` therefore discarded
+          # every line CI wrote and the `touch` re-created them empty, so no
+          # bot run has ever committed an audit line since 2026-07-20.
+          # Capture only the bytes THIS run appended, then re-append after each
+          # reset, so a concurrent run's lines are preserved, not overwritten.
+          mkdir -p /tmp/gu_audit
+          for f in docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl; do
+            base=$(git show "HEAD:$f" 2>/dev/null | wc -c | tr -d ' ')
+            [ -n "$base" ] || base=0
+            if [ -f "$f" ]; then
+              tail -c "+$((base + 1))" "$f" > "/tmp/gu_audit/$(basename "$f").delta"
+              echo "  [AUDIT] $f: base=${base}B appended=$(wc -c < "/tmp/gu_audit/$(basename "$f").delta" | tr -d ' ')B"
+            fi
+          done
           # v2: robust push - save files, fetch+reset to latest remote, restore, recommit
           for f in videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
             [ -f "$f" ] && cp "$f" "/tmp/gu_${f//./_}"
@@ -62,6 +78,14 @@ jobs:
             git reset --hard origin/main
             for f in videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
               [ -f "/tmp/gu_${f//./_}" ] && cp "/tmp/gu_${f//./_}" "$f"
+            done
+            # AUDIT_LOG_SURVIVES_RESET_V1_2026_08_23 — replay this run's audit
+            # lines on top of whatever origin/main now holds.
+            for f in docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl; do
+              d="/tmp/gu_audit/$(basename "$f").delta"
+              if [ -s "$d" ]; then
+                mkdir -p docs && cat "$d" >> "$f"
+              fi
             done
             mkdir -p docs && touch docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl && git add videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json docs/audit_queue_unclassified_v1.jsonl docs/audit_queue_url_bind_v1.jsonl
             git diff --cached --quiet && exit 0
