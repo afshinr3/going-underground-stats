@@ -174,6 +174,51 @@ def _blocked(name):
 
 
 def _load_posts(show):
+    """(text, datetime) for every post by this show, from EVERY available source.
+
+    GU_ANNOUNCEMENTS_IN_REPO_V1_20260823 — the upstream scrape lives at absolute
+    paths on one Mac. GitHub Actions, which is what actually regenerates
+    videos.json, has neither file, so this used to return [] there: the resolver
+    refused, and the caller's repair pass blanked the guest instead of naming it.
+    A resolver whose evidence exists on only one machine cannot fix a feed built
+    on another.
+
+    The in-repo announcements file is a verbatim projection of the same posts (see
+    gu_announcements_extract_v1.py) and is unioned with the upstream scrape rather
+    than replacing it, so a laptop run still sees announcements newer than the last
+    commit. Deduplication is on (normalised text, timestamp), which is what makes
+    the union safe.
+    """
+    out = list(_load_posts_upstream(show))
+    seen = {(_norm(t)[:160], w.isoformat()) for t, w in out}
+    for text, when in _load_posts_in_repo(show):
+        key = (_norm(text)[:160], when.isoformat())
+        if key not in seen:
+            seen.add(key)
+            out.append((text, when))
+    return out
+
+
+def _load_posts_in_repo(show):
+    """Announcement posts committed alongside this module. Fail-soft to []."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        "gu_announcements_v1.json")
+    try:
+        with open(path) as fh:
+            rows = (json.load(fh).get("shows") or {}).get(show) or []
+    except Exception:
+        return []
+    out = []
+    for r in rows:
+        try:
+            out.append((r.get("text") or "",
+                        datetime.fromisoformat(str(r.get("ts")).replace("Z", "+00:00"))))
+        except Exception:
+            continue
+    return out
+
+
+def _load_posts_upstream(show):
     """(text, datetime) for every post by this show. Fail-soft to []."""
     out = []
     try:
