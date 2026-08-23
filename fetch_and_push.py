@@ -978,13 +978,77 @@ def _strip_r_date_suffix(s):
     if not s: return s
     return re.sub(r"_R[A-Za-z0-9]{2,10}$", "", str(s))
 
+# ROLE_PREFIX_SURNAME_SCRUB_V1_20260822 — lifted to module scope by
+# GUEST_REPAIR_ON_LOAD_V1_20260823 so the ingest gate and the on-load repair pass
+# share ONE definition instead of maintaining two drifting copies.
+# A surname that IS a role prefix, or that ends in a hyphen (i.e. was cut
+# mid-word, "Ex-"), is never a person.
+_ROLE_PREFIXES = {'ex', 'ex-', 'former', 'deputy', 'acting', 'senior',
+                  'chief', 'head', 'lead', 'vice', 'asst', 'assistant'}
+
+
+_DESCRIPTOR_HEAD_WORDS = {
+    'negotiator', 'lawyer', 'officer', 'advisor', 'adviser', 'chief', 'analyst',
+    'minister', 'ambassador', 'commander', 'director', 'secretary', 'spokesperson',
+    'economist', 'journalist', 'strategist', 'professor', 'whistleblower', 'hitman',
+}
+
+
+def _strip_descriptor_prefix(guest, surname):
+    """Return `guest` reduced to the trailing person name, or None to leave it alone.
+
+    GUEST_REPAIR_ON_LOAD_V1_20260823. Several stored guests carry a role or
+    mid-sentence prefix in front of a name that is otherwise correct:
+
+        "Ex-Israeli Negotiator Daniel Levy"     -> "Daniel Levy"
+        "of Israel's Shin Bet Ami Ayalon"       -> "Ami Ayalon"
+        "Trump's Ex-Lawyer Robert Barnes"       -> "Robert Barnes"
+
+    The pre-existing _BAD_GUEST_PREFIX_RE missed all three: it requires
+    WHITESPACE after Ex/Former/Fmr, so the hyphenated "Ex-Israeli" never matched,
+    and it is anchored at the start, so a possessive or "of ..." lead-in never
+    matched either.
+
+    DELIBERATELY CONSERVATIVE — it strips only when the head is demonstrably NOT
+    part of a name: a lowercase-initial word ("of"), a possessive ("Trump's"), a
+    hyphenated Ex-/Former- compound, or a known role noun. That is what keeps a
+    genuine three-token name intact: "C. Uday Bhaskar" has head ["C."], which is
+    capitalised, unpossessed and not a role word, so it is returned untouched
+    rather than being clipped to "Uday Bhaskar".
+    """
+    if not guest or not surname:
+        return None
+    toks = guest.split()
+    if len(toks) < 3 or toks[-1].strip(".,").lower() != surname.strip(".,").lower():
+        return None
+    head, tail = toks[:-2], toks[-2:]
+    def _is_descriptor(t):
+        return (t[:1].islower()
+                or t.lower().endswith(("'s", "’s"))
+                or re.match(r'^(?:Ex|Former|Fmr)[\s\-]', t, re.I) is not None
+                or t.strip(".,").lower() in _DESCRIPTOR_HEAD_WORDS)
+    if not any(_is_descriptor(t) for t in head):
+        return None
+    if not gu_parser._looks_like_name(' '.join(tail)):
+        return None
+    return ' '.join(tail)
+
+
 def _looks_valid_surname(s):
     """True iff s is a plausible surname. Rejects underscore/digit
-    poisoning, ALL-CAPS junk fragments (DEF), and short truncations (Tru)."""
+    poisoning, ALL-CAPS junk fragments (DEF), and short truncations (Tru).
+
+    GUEST_REPAIR_ON_LOAD_V1_20260823 — also rejects role prefixes and
+    hyphen-terminated cuts. "Ex-" is 3 chars, is not ALL-CAPS, is not in
+    _GU_JUNK_TOKENS and its first char is alphabetic, so it passed every
+    clause above and reached the leaderboard as the top episode of the week
+    at 510K reach. A fragment ending in "-" is by construction half a word.
+    """
     if not s: return False
     s = s.strip().rstrip(".,?!:;’‘\"'")
     if "_" in s or any(ch.isdigit() for ch in s): return False
     if s.upper() in _GU_JUNK_TOKENS: return False
+    if s.endswith('-') or s.rstrip('-').lower() in _ROLE_PREFIXES: return False
     return (len(s) >= 3 and s[0].isalpha()
             and not (s.isupper() and len(s) <= 4))
 
@@ -1200,8 +1264,9 @@ def discover_new_episodes(channel_id, data_file):
             # and passes _looks_valid_surname, so it slipped every existing guard and
             # reached the leaderboard. A surname that IS a role prefix, or that ends in a
             # hyphen (i.e. was cut mid-word), is never a person.
-            _ROLE_PREFIXES = {'ex', 'ex-', 'former', 'deputy', 'acting', 'senior',
-                              'chief', 'head', 'lead', 'vice', 'asst', 'assistant'}
+            # GUEST_REPAIR_ON_LOAD_V1_20260823 — _ROLE_PREFIXES now lives at module
+            # scope and is enforced inside _looks_valid_surname too, so the entry gate
+            # and the on-load repair pass cannot drift apart.
             if surname.rstrip('-').lower() in _ROLE_PREFIXES or surname.endswith('-'):
                 print(f"  SKIP (role-prefix surname {surname!r}): {title[:50]}...")
                 continue
@@ -1504,6 +1569,15 @@ async def update_show(show, ig_clips):
         for _field_name, _val in (('guest', _cur_guest), ('canonical_guest_full_name', _cur_canon)):
             if not _val or not _sn_now:
                 continue
+            # GUEST_REPAIR_ON_LOAD_V1_20260823 — handle the descriptor-prefix shapes
+            # the anchored Ex/Former regex below cannot see (hyphenated compounds,
+            # possessives, mid-sentence "of ..." cuts).
+            _desc = _strip_descriptor_prefix(_val, _sn_now)
+            if _desc and _desc != _val:
+                v[_field_name] = _desc
+                _normalised += 1
+                print(f"  [DESCRIPTOR_PREFIX_SCRUB] {_field_name}: {_val[:50]!r} -> {_desc!r}")
+                continue
             if _BAD_GUEST_PREFIX_RE.match(_val) and _val.split()[-1].lower() == _sn_now.lower():
                 # LEGACY_GUEST_PREFIX_SCRUB_V1_2026_07_20 — prefer canonical
                 # full name from CANON_MAP; fallback to stripped tail.
@@ -1545,10 +1619,45 @@ async def update_show(show, ig_clips):
                 if _cfn and _cs_upper:
                     new_guest = _cfn
                     new_surname = _cfn.split()[-1]
+            # GUEST_REPAIR_ON_LOAD_V1_20260823 — escalate to the show's own
+            # announcement feed, exactly as the ingest path already does.
+            #
+            # THE DEFECT THIS CLOSES. The ingest gate (GU_GUEST_FROM_POSTS_V1 +
+            # ROLE_PREFIX_SURNAME_SCRUB_V1) only ever guarded records being CREATED.
+            # A record already in videos.json is carried forward every run under
+            # EPISODE_UNION_NEVER_SHRINKS_V1 and its views are refreshed, but its
+            # guest was never re-adjudicated. So the 2026-08-22 episode kept the
+            # legacy title[:30] guest "Afshin Rattansi CHALLENGES Ex-" / surname
+            # "Ex-" indefinitely: is_truncated fired, extract_guest returned None
+            # (correctly — the title names the HOST and a ROLE, no guest), the
+            # CANON_MAP lookup missed, _is_role_surname was False and
+            # _needs_rederive was False, so every branch declined and the fragment
+            # survived untouched. Fixing the entry gate could never repair it.
+            #
+            # The name was provable the whole time: the show announced
+            # "Dr. Michael O'Hanlon" on its own X feed 21.7h before broadcast.
+            if not (new_guest and new_surname) and v.get('pub_iso'):
+                try:
+                    import gu_guest_from_posts_v1 as _GFP
+                    _show_code = ('NO' if 'neworder' in os.path.basename(show['data_file']).lower()
+                                  else 'GU')
+                    _n, _ev = _GFP.resolve_guest(v['pub_iso'], _show_code)
+                    if _n:
+                        new_guest = _n
+                        new_surname = _GFP.surname_of(_n)
+                        print(f"  [GUEST_REPAIR_FROM_POSTS] {new_surname} <- "
+                              f"{_ev.get('announced_iso')} "
+                              f"({_ev.get('hours_from_episode')}h before) :: {title[:50]}...")
+                except Exception as _e:
+                    print(f"  [GUEST_REPAIR_FROM_POSTS_ERR] {type(_e).__name__}: {str(_e)[:80]}")
             if new_guest and new_surname:
                 print(f"  [normalize] guest '{guest[:40]}...' -> '{new_guest}' (surname {new_surname})")
                 v['guest'] = new_guest
                 v['surname'] = new_surname
+                # Keep the canonical identity fields in step, or the app reads the
+                # repaired surname beside the stale poisoned full name.
+                v['canonical_guest_full_name'] = new_guest
+                v['canonical_surname_upper'] = new_surname.upper()
                 _normalised += 1
             elif _is_role_surname:
                 # LEGACY_ROLE_SURNAME_SCRUB_V1_2026_07_20 — role-word survivor
@@ -1557,11 +1666,26 @@ async def update_show(show, ig_clips):
                 print(f"  [ROLE_SURNAME_DROP] surname={orig_surname!r} guest={guest[:40]!r} "
                       f"title={title[:60]!r}")
                 _to_drop_idx.append(_idx)
-            elif _needs_rederive:
+            elif _needs_rederive or is_truncated:
                 # GU_SURNAME_HARDENING_V1_2026_07_03 - safe fallback: blank the surname
                 # (Android falls back to guest/title) rather than shipping "Tru" / "DEF".
-                print(f"  [normalize] blanking junk surname; title={title[:50]}")
+                #
+                # GUEST_REPAIR_ON_LOAD_V1_20260823 — `or is_truncated` added. This was
+                # the silent fall-through: a record could be POSITIVELY IDENTIFIED as
+                # truncated and still match none of the three repair branches, in which
+                # case the loop did nothing at all and the fragment shipped. Detecting a
+                # defect and then declining to act on it is worse than not detecting it,
+                # because the log says the pass ran. A guest we cannot name is now blank
+                # (the app falls back to the title), never a fragment of one.
+                if guest and title.startswith(guest) and len(title) > len(guest) + 10:
+                    # The stored guest is literally a prefix of the title, i.e. a
+                    # title[:30] artefact. It is not a name and must not be shown.
+                    v['guest'] = ''
+                    v['canonical_guest_full_name'] = ''
+                print(f"  [normalize] blanking unresolvable guest/surname; title={title[:50]}")
                 v['surname'] = ''
+                v['canonical_surname_upper'] = ''
+                v['_guest_unresolved'] = True
                 _normalised += 1
     if _to_drop_idx:
         cache = [v for _i, v in enumerate(cache) if _i not in set(_to_drop_idx)]
