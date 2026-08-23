@@ -3,11 +3,11 @@
     "guest": "David Monyae",
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
-    "rumble_views": "116",
-    "x_views": "16.0K",
+    "rumble_views": "88",
+    "x_views": "33.2K",
     "date": "23 Aug",
-    "yt_views": "16",
-    "ig_likes": "150",
+    "yt_views": "18",
+    "ig_likes": "140",
     "canonical_guest_full_name": "David Monyae",
     "canonical_surname_upper": "MONYAE",
     "canonical_episode_id": "6608d24f803f",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -31,11 +31,11 @@
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "435",
-    "x_views": "106.8K",
+    "rumble_views": "432",
+    "x_views": "176.1K",
     "date": "16 Aug",
     "yt_views": "133",
-    "ig_likes": "210",
+    "ig_likes": "209",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
     "canonical_episode_id": "10f843fd1fef",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -79,8 +79,8 @@
     "yt_views": "163",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "695.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "820.4K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -107,8 +107,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "233.2K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "693.8K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -232,7 +232,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-23T11:02:29Z",
+    "_carried_forward_iso": "2026-08-23T11:22:28Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
