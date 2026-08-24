@@ -21,9 +21,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.9K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -47,9 +47,9 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
@@ -57,7 +57,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": null,
-    "x_views": "255.3K",
+    "x_views": "255.4K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -73,16 +73,16 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "30.8K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": null,
-    "x_views": "432.0K",
+    "x_views": "432.1K",
     "date": "7 Aug",
     "yt_views": "7.8K",
     "ig_likes": null,
@@ -101,8 +101,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "show": "GU"
   },
   {
@@ -127,8 +127,8 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "51.2K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "51.3K",
     "_x_passes": 6
   },
   {
@@ -153,7 +153,7 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.2K",
     "_x_passes": 6
   },
@@ -163,7 +163,7 @@
     "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
     "date": "27 Jul",
     "rumble_views": null,
-    "x_views": "288.9K",
+    "x_views": "289.0K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Ami Ayalon",
@@ -179,7 +179,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "1.6K"
   },
@@ -189,7 +189,7 @@
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
     "rumble_views": null,
-    "x_views": "268.0K",
+    "x_views": "268.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Daniel Levy",
@@ -205,7 +205,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -380,7 +380,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-24T23:37:22Z",
+    "_carried_forward_iso": "2026-08-24T23:35:59Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -395,7 +395,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-24T23:37:22Z",
+    "_carried_forward_iso": "2026-08-24T23:35:59Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
