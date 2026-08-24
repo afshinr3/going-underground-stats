@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T11:20:07.073878Z",
+  "generated_at": "2026-08-24T11:51:29.705326Z",
   "n": 2,
   "entries": [
     {
@@ -19,7 +19,10 @@
       "pub_iso": "2026-08-23T18:09:55Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "167"
+      "ig_likes": "167",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "canonical_surname_upper": "SILVA",
+      "canonical_episode_id": "f9189e08f1d7"
     },
     {
       "guest": "Michael O\u2019Hanlon",
