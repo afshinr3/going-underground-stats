@@ -5,7 +5,7 @@
     "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
     "date": "22 Aug",
     "rumble_views": null,
-    "x_views": "52.5K",
+    "x_views": "52.6K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
@@ -21,9 +21,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.9K",
-    "_x_passes": 5
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -31,7 +31,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": null,
-    "x_views": "257.5K",
+    "x_views": "257.6K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -47,7 +47,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -57,7 +57,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": null,
-    "x_views": "255.3K",
+    "x_views": "71.2K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -73,7 +73,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "30.8K",
     "_x_passes": 6
   },
@@ -101,7 +101,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -348,7 +348,7 @@
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "78.7K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
@@ -364,8 +364,9 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "948"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "948",
+    "_x_passes": 6
   },
   {
     "guest": "Max Blumenthal",
@@ -379,7 +380,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-24T22:30:17Z",
+    "_carried_forward_iso": "2026-08-24T22:40:41Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -394,7 +395,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-24T22:30:17Z",
+    "_carried_forward_iso": "2026-08-24T22:40:41Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
