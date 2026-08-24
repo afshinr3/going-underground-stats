@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T16:28:14.504586Z",
+  "generated_at": "2026-08-24T17:18:57.595893Z",
   "n": 2,
   "entries": [
     {
@@ -50,7 +50,7 @@
       },
       "_x_status": "MEASURED",
       "yt_views": "1.9K",
-      "_x_passes": 3
+      "_x_passes": 4
     }
   ],
   "source_feed": "videos.json",
