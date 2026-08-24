@@ -1,7 +1,27 @@
 {
-  "iso": "2026-08-24T04:52:30Z",
-  "last_updated": "2026-08-24T04:52:30Z",
+  "iso": "2026-08-24T05:43:16Z",
+  "last_updated": "2026-08-24T05:43:16Z",
   "episodes": [
+    {
+      "guest": "Luiz Inácio Lula da Silva",
+      "surname": "SILVA",
+      "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
+      "date": "23 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "f9189e08f1d7",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-23T17:52:19Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "611",
+        "yt_views": null,
+        "x_views": "11.4K",
+        "ig_likes": "162"
+      }
+    },
     {
       "guest": "Michael O’Hanlon",
       "surname": "O’HANLON",
@@ -22,7 +42,7 @@
       "metrics": {
         "rumble_views": "1.8K",
         "yt_views": "1.8K",
-        "x_views": "51.6K",
+        "x_views": "51.7K",
         "ig_likes": "533"
       }
     },
@@ -46,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "3.0K",
-        "x_views": "254.8K",
+        "x_views": "254.9K",
         "ig_likes": "2.6K"
       }
     },
@@ -70,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.6K",
-        "x_views": "254.5K",
+        "x_views": "71.0K",
         "ig_likes": "820"
       }
     },
@@ -142,7 +162,7 @@
       "metrics": {
         "rumble_views": "15.1K",
         "yt_views": "3.2K",
-        "x_views": "367.2K",
+        "x_views": "106.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -166,7 +186,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "1.6K",
-        "x_views": "288.6K",
+        "x_views": "288.7K",
         "ig_likes": "10.9K"
       }
     },
@@ -386,7 +406,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": null,
-        "x_views": "38.3K",
+        "x_views": "38.4K",
         "ig_likes": "1.9K"
       }
     },
@@ -409,8 +429,8 @@
       },
       "metrics": {
         "rumble_views": "240",
-        "yt_views": "48",
-        "x_views": "226.6K",
+        "yt_views": "51",
+        "x_views": "212.3K",
         "ig_likes": "272"
       }
     },
@@ -434,7 +454,7 @@
       "metrics": {
         "rumble_views": "445",
         "yt_views": "136",
-        "x_views": "177.0K",
+        "x_views": "18.8K",
         "ig_likes": "212"
       }
     },
@@ -458,7 +478,7 @@
       "metrics": {
         "rumble_views": "478",
         "yt_views": "165",
-        "x_views": "821.2K",
+        "x_views": "24.5K",
         "ig_likes": "275"
       }
     },
@@ -482,7 +502,7 @@
       "metrics": {
         "rumble_views": "542",
         "yt_views": "291",
-        "x_views": "694.6K",
+        "x_views": "15.6K",
         "ig_likes": "230"
       }
     },
@@ -506,7 +526,7 @@
       "metrics": {
         "rumble_views": "642",
         "yt_views": "133",
-        "x_views": "206.3K",
+        "x_views": "131.0K",
         "ig_likes": "586"
       }
     },
@@ -530,7 +550,7 @@
       "metrics": {
         "rumble_views": "738",
         "yt_views": "1.1K",
-        "x_views": "564.3K",
+        "x_views": "564.4K",
         "ig_likes": "350"
       }
     },
@@ -605,6 +625,26 @@
   ],
   "gu": [
     {
+      "guest": "Luiz Inácio Lula da Silva",
+      "surname": "SILVA",
+      "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
+      "date": "23 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "f9189e08f1d7",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-08-23T17:52:19Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "611",
+        "yt_views": null,
+        "x_views": "11.4K",
+        "ig_likes": "162"
+      }
+    },
+    {
       "guest": "Michael O’Hanlon",
       "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
@@ -624,7 +664,7 @@
       "metrics": {
         "rumble_views": "1.8K",
         "yt_views": "1.8K",
-        "x_views": "51.6K",
+        "x_views": "51.7K",
         "ig_likes": "533"
       }
     },
@@ -648,7 +688,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "3.0K",
-        "x_views": "254.8K",
+        "x_views": "254.9K",
         "ig_likes": "2.6K"
       }
     },
@@ -672,7 +712,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "30.6K",
-        "x_views": "254.5K",
+        "x_views": "71.0K",
         "ig_likes": "820"
       }
     },
@@ -699,30 +739,6 @@
         "x_views": "431.6K",
         "ig_likes": "2.4K"
       }
-    },
-    {
-      "guest": "Gabor Maté",
-      "surname": "MATÉ",
-      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
-      "date": "3 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": "PUw_r6rI5PY",
-      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id_v2": "5e4fb101123620bc",
-      "pub_iso": "2026-08-03T22:18:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "PUw_r6rI5PY"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.6K",
-        "yt_views": "50.7K",
-        "x_views": "56.8K",
-        "ig_likes": "5.2K"
-      }
     }
   ],
   "no": [
@@ -745,8 +761,8 @@
       },
       "metrics": {
         "rumble_views": "240",
-        "yt_views": "48",
-        "x_views": "226.6K",
+        "yt_views": "51",
+        "x_views": "212.3K",
         "ig_likes": "272"
       }
     },
@@ -770,7 +786,7 @@
       "metrics": {
         "rumble_views": "445",
         "yt_views": "136",
-        "x_views": "177.0K",
+        "x_views": "18.8K",
         "ig_likes": "212"
       }
     },
@@ -794,7 +810,7 @@
       "metrics": {
         "rumble_views": "478",
         "yt_views": "165",
-        "x_views": "821.2K",
+        "x_views": "24.5K",
         "ig_likes": "275"
       }
     },
@@ -818,7 +834,7 @@
       "metrics": {
         "rumble_views": "542",
         "yt_views": "291",
-        "x_views": "694.6K",
+        "x_views": "15.6K",
         "ig_likes": "230"
       }
     },
@@ -842,7 +858,7 @@
       "metrics": {
         "rumble_views": "642",
         "yt_views": "133",
-        "x_views": "206.3K",
+        "x_views": "131.0K",
         "ig_likes": "586"
       }
     }
