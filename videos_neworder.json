@@ -3,10 +3,10 @@
     "guest": "David Monyae",
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
-    "rumble_views": "238",
-    "x_views": "184.3K",
+    "rumble_views": "229",
+    "x_views": "199.8K",
     "date": "23 Aug",
-    "yt_views": "33",
+    "yt_views": "44",
     "ig_likes": "268",
     "canonical_guest_full_name": "David Monyae",
     "canonical_surname_upper": "MONYAE",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -32,7 +32,7 @@
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "445",
-    "x_views": "176.8K",
+    "x_views": "176.9K",
     "date": "16 Aug",
     "yt_views": "136",
     "ig_likes": "212",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "821.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "694.5K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -116,7 +116,7 @@
     "surname": "Askary",
     "title": "Global South\u2019s Rise Causes PANIC for West\u2019s Elites as US-Led Unipolar World Declines- Hussein Askary",
     "date": "26 Jul",
-    "rumble_views": "642",
+    "rumble_views": "641",
     "show": "NO",
     "canonical_guest_full_name": "Hussein Askary",
     "pub_iso": "2026-07-26T06:30:06Z",
@@ -232,7 +232,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-24T00:59:04Z",
+    "_carried_forward_iso": "2026-08-24T01:36:38Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
