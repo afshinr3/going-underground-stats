@@ -5,18 +5,18 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T09:28:10.857895Z",
+  "generated_at": "2026-08-24T10:20:05.458220Z",
   "n": 1,
   "entries": [
     {
       "guest": "David Monyae",
       "surname": "Monyae",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
-      "rumble_views": "240",
+      "rumble_views": "261",
       "x_views": "235.5K",
       "date": "23 Aug",
-      "yt_views": "58",
-      "ig_likes": "272",
+      "yt_views": "67",
+      "ig_likes": "274",
       "canonical_guest_full_name": "David Monyae",
       "canonical_surname_upper": "MONYAE",
       "canonical_episode_id": "6608d24f803f",
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-      "_x_status": "MEASURED",
+      "_x_status": "FETCH_FAILED:Exception",
       "show": "NO",
       "_x_passes": 3
     }
