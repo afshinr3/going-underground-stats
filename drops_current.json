@@ -1,14 +1,14 @@
 {
-  "updated": "2026-08-24T19:10:39Z",
+  "updated": "2026-08-24T19:22:39Z",
   "drops": [
     {
-      "ts": "2026-08-24T19:10:39Z",
+      "ts": "2026-08-24T19:22:39Z",
       "show": "GU",
       "guest": "O\u2019Hanlon",
       "platform": "X",
       "peak": 508300,
       "peak_at": "2026-08-24T00:59:17Z",
-      "current": 52400,
+      "current": 52500,
       "drop_pct": 89.7
     }
   ]
