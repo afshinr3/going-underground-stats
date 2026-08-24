@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T08:34:23.747597Z",
+  "generated_at": "2026-08-24T09:20:04.511079Z",
   "n": 2,
   "entries": [
     {
@@ -13,18 +13,13 @@
       "surname": "Silva",
       "title": "The Trump Assassination Plots: What You Haven\u2019t Been Told (Ken Silva)",
       "date": "23 Aug",
-      "rumble_views": "611",
+      "rumble_views": "969",
       "show": "GU",
       "canonical_guest_full_name": "Luiz In\u00e1cio Lula da Silva",
-      "pub_iso": "2026-08-23T17:52:19Z",
+      "pub_iso": "2026-08-23T18:04:06Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "162",
-      "x_views": "11.4K",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "_x_passes": 6,
-      "canonical_surname_upper": "SILVA",
-      "canonical_episode_id": "f9189e08f1d7"
+      "ig_likes": "167"
     },
     {
       "guest": "Michael O\u2019Hanlon",
@@ -32,8 +27,8 @@
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
       "date": "22 Aug",
       "rumble_views": "1.8K",
-      "x_views": "51.9K",
-      "ig_likes": "533",
+      "x_views": "337.7K",
+      "ig_likes": "554",
       "show": "GU",
       "canonical_guest_full_name": "Michael O\u2019Hanlon",
       "canonical_surname_upper": "O\u2019HANLON",
@@ -48,9 +43,8 @@
           "Eu0Phb99ipg"
         ]
       },
-      "_x_status": "MEASURED",
-      "yt_views": "1.8K",
-      "_x_passes": 4
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "yt_views": "1.8K"
     }
   ],
   "source_feed": "videos.json",
