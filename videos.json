@@ -11,10 +11,10 @@
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "167",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "x_views": "31.4K",
+    "x_views": "42.0K",
     "_x_passes": 6
   },
   {
@@ -39,9 +39,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "1.8K",
-    "_x_passes": 6
+    "_x_passes": 3
   },
   {
     "guest": "Philip Pilkington",
@@ -49,7 +49,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.3K",
-    "x_views": "255.8K",
+    "x_views": "256.0K",
     "ig_likes": "2.6K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -65,7 +65,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -91,9 +91,9 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "30.7K",
-    "_x_passes": 6
+    "_x_passes": 4
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -119,7 +119,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -388,14 +388,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "?",
-    "x_views": "?",
-    "ig_likes": "?",
+    "rumble_views": "3.9K",
+    "x_views": null,
+    "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-24T13:00:12Z",
+    "_carried_forward_iso": "2026-08-24T13:05:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -403,14 +403,14 @@
     "surname": "Olmert",
     "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
     "date": "20 Jun",
-    "rumble_views": "?",
+    "rumble_views": "3.1K",
     "x_views": "38.4K",
-    "ig_likes": "?",
+    "ig_likes": "1.9K",
     "show": "GU",
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-24T13:00:12Z",
+    "_carried_forward_iso": "2026-08-24T13:05:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
