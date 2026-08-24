@@ -4,17 +4,17 @@
     "surname": "Silva",
     "title": "The Trump Assassination Plots: What You Haven\u2019t Been Told (Ken Silva)",
     "date": "23 Aug",
-    "rumble_views": "1.6K",
+    "rumble_views": "1.4K",
     "show": "GU",
     "canonical_guest_full_name": "Luiz In\u00e1cio Lula da Silva",
     "pub_iso": "2026-08-23T18:09:55Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "245",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "x_views": "42.0K",
+    "x_views": "79.4K",
     "_x_passes": 6
   },
   {
@@ -39,9 +39,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.9K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -65,7 +65,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -91,7 +91,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "30.7K",
     "_x_passes": 6
   },
@@ -100,7 +100,7 @@
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": "3.4K",
-    "x_views": "431.8K",
+    "x_views": "431.9K",
     "date": "7 Aug",
     "yt_views": "7.8K",
     "ig_likes": "2.4K",
@@ -119,7 +119,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -129,7 +129,7 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "3.6K",
-    "x_views": "56.9K",
+    "x_views": "57.0K",
     "ig_likes": "5.2K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
@@ -145,7 +145,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "51.1K",
     "_x_passes": 6
   },
@@ -155,7 +155,7 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": "15.1K",
-    "x_views": "106.6K",
+    "x_views": "106.7K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Robert Barnes",
@@ -171,7 +171,7 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.2K",
     "_x_passes": 6
   },
@@ -181,7 +181,7 @@
     "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
     "date": "27 Jul",
     "rumble_views": "3.2K",
-    "x_views": "288.7K",
+    "x_views": "288.9K",
     "ig_likes": "10.9K",
     "show": "GU",
     "canonical_guest_full_name": "Ami Ayalon",
@@ -197,7 +197,7 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "yt_views": "1.6K"
   },
@@ -396,7 +396,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-24T20:15:00Z",
+    "_carried_forward_iso": "2026-08-24T20:18:03Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -411,7 +411,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-24T20:15:00Z",
+    "_carried_forward_iso": "2026-08-24T20:18:03Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]

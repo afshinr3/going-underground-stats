@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T20:20:04.348449Z",
+  "generated_at": "2026-08-24T20:25:30.359749Z",
   "n": 2,
   "entries": [
     {
@@ -13,17 +13,17 @@
       "surname": "Silva",
       "title": "The Trump Assassination Plots: What You Haven\u2019t Been Told (Ken Silva)",
       "date": "23 Aug",
-      "rumble_views": "1.6K",
+      "rumble_views": "1.4K",
       "show": "GU",
       "canonical_guest_full_name": "Luiz In\u00e1cio Lula da Silva",
       "pub_iso": "2026-08-23T18:09:55Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "ig_likes": "245",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "MEASURED_LOWER_BOUND",
       "canonical_surname_upper": "SILVA",
       "canonical_episode_id": "f9189e08f1d7",
-      "x_views": "42.0K",
+      "x_views": "79.4K",
       "_x_passes": 6
     },
     {
@@ -48,9 +48,9 @@
           "Eu0Phb99ipg"
         ]
       },
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "MEASURED_LOWER_BOUND",
       "yt_views": "1.9K",
-      "_x_passes": 3
+      "_x_passes": 6
     }
   ],
   "source_feed": "videos.json",
