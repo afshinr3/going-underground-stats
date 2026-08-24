@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-24T11:51:29Z",
-  "last_updated": "2026-08-24T11:51:29Z",
+  "iso": "2026-08-24T12:19:40Z",
+  "last_updated": "2026-08-24T12:19:40Z",
   "episodes": [
     {
       "guest": "Luiz Inácio Lula da Silva",
@@ -18,10 +18,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "31.4K",
         "ig_likes": "167"
       }
     },
@@ -45,7 +42,7 @@
       "metrics": {
         "rumble_views": "1.8K",
         "yt_views": "1.8K",
-        "x_views": "52.1K",
+        "x_views": "52.2K",
         "ig_likes": "554"
       }
     },
@@ -117,7 +114,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "7.8K",
-        "x_views": "431.7K",
+        "x_views": "431.8K",
         "ig_likes": "2.4K"
       }
     },
@@ -427,7 +424,7 @@
       "metrics": {
         "rumble_views": "267",
         "yt_views": "70",
-        "x_views": "243.1K",
+        "x_views": "244.3K",
         "ig_likes": "274"
       }
     },
@@ -451,7 +448,7 @@
       "metrics": {
         "rumble_views": "445",
         "yt_views": "137",
-        "x_views": "107.1K",
+        "x_views": "107.2K",
         "ig_likes": "212"
       }
     },
@@ -637,10 +634,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "31.4K",
         "ig_likes": "167"
       }
     },
@@ -664,7 +658,7 @@
       "metrics": {
         "rumble_views": "1.8K",
         "yt_views": "1.8K",
-        "x_views": "52.1K",
+        "x_views": "52.2K",
         "ig_likes": "554"
       }
     },
@@ -736,7 +730,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "7.8K",
-        "x_views": "431.7K",
+        "x_views": "431.8K",
         "ig_likes": "2.4K"
       }
     }
@@ -762,7 +756,7 @@
       "metrics": {
         "rumble_views": "267",
         "yt_views": "70",
-        "x_views": "243.1K",
+        "x_views": "244.3K",
         "ig_likes": "274"
       }
     },
@@ -786,7 +780,7 @@
       "metrics": {
         "rumble_views": "445",
         "yt_views": "137",
-        "x_views": "107.1K",
+        "x_views": "107.2K",
         "ig_likes": "212"
       }
     },
