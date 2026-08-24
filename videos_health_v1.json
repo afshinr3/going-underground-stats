@@ -1,27 +1,7 @@
 {
-  "iso": "2026-08-24T08:34:23Z",
-  "last_updated": "2026-08-24T08:34:23Z",
+  "iso": "2026-08-24T09:28:10Z",
+  "last_updated": "2026-08-24T09:28:10Z",
   "episodes": [
-    {
-      "guest": "Luiz Inácio Lula da Silva",
-      "surname": "SILVA",
-      "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
-      "date": "23 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-23T17:52:19Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "611",
-        "yt_views": null,
-        "x_views": "11.4K",
-        "ig_likes": "162"
-      }
-    },
     {
       "guest": "Michael O’Hanlon",
       "surname": "O’HANLON",
@@ -40,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.8K",
+        "rumble_views": null,
         "yt_views": "1.8K",
-        "x_views": "51.9K",
-        "ig_likes": "533"
+        "x_views": "337.7K",
+        "ig_likes": null
       }
     },
     {
@@ -64,10 +44,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "3.0K",
         "x_views": "255.3K",
-        "ig_likes": "2.6K"
+        "ig_likes": null
       }
     },
     {
@@ -88,10 +68,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "30.6K",
-        "x_views": "71.0K",
-        "ig_likes": "820"
+        "x_views": "168.5K",
+        "ig_likes": null
       }
     },
     {
@@ -112,10 +92,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.4K",
+        "rumble_views": null,
         "yt_views": "7.8K",
         "x_views": "431.6K",
-        "ig_likes": "2.4K"
+        "ig_likes": null
       }
     },
     {
@@ -136,10 +116,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.6K",
+        "rumble_views": null,
         "yt_views": "50.8K",
-        "x_views": "56.8K",
-        "ig_likes": "5.2K"
+        "x_views": "291.9K",
+        "ig_likes": null
       }
     },
     {
@@ -160,10 +140,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "15.1K",
+        "rumble_views": null,
         "yt_views": "3.2K",
-        "x_views": "106.5K",
-        "ig_likes": "1.1K"
+        "x_views": "367.5K",
+        "ig_likes": null
       }
     },
     {
@@ -184,10 +164,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": null,
         "yt_views": "1.6K",
         "x_views": "288.7K",
-        "ig_likes": "10.9K"
+        "ig_likes": null
       }
     },
     {
@@ -208,10 +188,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.9K",
+        "rumble_views": null,
         "yt_views": "4.1K",
-        "x_views": "595.9K",
-        "ig_likes": "2.0K"
+        "x_views": "596.2K",
+        "ig_likes": null
       }
     },
     {
@@ -232,10 +212,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "3.1K",
         "x_views": "290.8K",
-        "ig_likes": "1.6K"
+        "ig_likes": null
       }
     },
     {
@@ -256,13 +236,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.7K",
+        "rumble_views": null,
         "yt_views": "4.3K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": "1.8K"
+        "ig_likes": null
       }
     },
     {
@@ -283,10 +263,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "1.1K",
-        "x_views": "408.9K",
-        "ig_likes": "453"
+        "x_views": "194.6K",
+        "ig_likes": null
       }
     },
     {
@@ -307,13 +287,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.7K",
+        "rumble_views": null,
         "yt_views": "1.5K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": "521"
+        "x_views": "127.3K",
+        "ig_likes": null
       }
     },
     {
@@ -334,10 +311,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": null,
         "yt_views": "1.4K",
-        "x_views": "230.1K",
-        "ig_likes": "1.1K"
+        "x_views": "256.6K",
+        "ig_likes": null
       }
     },
     {
@@ -358,10 +335,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.4K",
+        "rumble_views": null,
         "yt_views": "948",
-        "x_views": "78.7K",
-        "ig_likes": "681"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       }
     },
     {
@@ -378,10 +358,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "207.1K",
-        "ig_likes": "2.1K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
       }
     },
     {
@@ -398,10 +381,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "94.0K",
-        "ig_likes": "1.9K"
+        "x_views": "38.4K",
+        "ig_likes": "?"
       }
     },
     {
@@ -424,7 +407,7 @@
       "metrics": {
         "rumble_views": "240",
         "yt_views": "58",
-        "x_views": "231.3K",
+        "x_views": "235.5K",
         "ig_likes": "272"
       }
     },
@@ -619,26 +602,6 @@
   ],
   "gu": [
     {
-      "guest": "Luiz Inácio Lula da Silva",
-      "surname": "SILVA",
-      "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
-      "date": "23 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-23T17:52:19Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "611",
-        "yt_views": null,
-        "x_views": "11.4K",
-        "ig_likes": "162"
-      }
-    },
-    {
       "guest": "Michael O’Hanlon",
       "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
@@ -656,10 +619,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.8K",
+        "rumble_views": null,
         "yt_views": "1.8K",
-        "x_views": "51.9K",
-        "ig_likes": "533"
+        "x_views": "337.7K",
+        "ig_likes": null
       }
     },
     {
@@ -680,10 +643,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "3.0K",
         "x_views": "255.3K",
-        "ig_likes": "2.6K"
+        "ig_likes": null
       }
     },
     {
@@ -704,10 +667,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "30.6K",
-        "x_views": "71.0K",
-        "ig_likes": "820"
+        "x_views": "168.5K",
+        "ig_likes": null
       }
     },
     {
@@ -728,10 +691,34 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.4K",
+        "rumble_views": null,
         "yt_views": "7.8K",
         "x_views": "431.6K",
-        "ig_likes": "2.4K"
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Gabor Maté",
+      "surname": "MATÉ",
+      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
+      "date": "3 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id": "0d30042528a6",
+      "canonical_video_id": "PUw_r6rI5PY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "PUw_r6rI5PY"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "50.8K",
+        "x_views": "291.9K",
+        "ig_likes": null
       }
     }
   ],
@@ -756,7 +743,7 @@
       "metrics": {
         "rumble_views": "240",
         "yt_views": "58",
-        "x_views": "231.3K",
+        "x_views": "235.5K",
         "ig_likes": "272"
       }
     },
