@@ -1,15 +1,15 @@
 {
-  "updated": "2026-08-24T02:03:19Z",
+  "updated": "2026-08-24T02:45:55Z",
   "drops": [
     {
-      "ts": "2026-08-24T02:03:19Z",
+      "ts": "2026-08-24T02:45:55Z",
       "show": "GU",
-      "guest": "O\u2019Hanlon",
+      "guest": "Mearsheimer",
       "platform": "X",
-      "peak": 508300,
-      "peak_at": "2026-08-24T00:59:17Z",
-      "current": 51300,
-      "drop_pct": 89.9
+      "peak": 254400,
+      "peak_at": "2026-08-24T01:36:52Z",
+      "current": 168500,
+      "drop_pct": 33.8
     }
   ]
 }
