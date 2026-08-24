@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-24T17:20:05.570309Z",
+  "generated_at": "2026-08-24T17:53:50.689860Z",
   "n": 2,
   "entries": [
     {
@@ -48,9 +48,9 @@
           "Eu0Phb99ipg"
         ]
       },
-      "_x_status": "MEASURED",
+      "_x_status": "MEASURED_LOWER_BOUND",
       "yt_views": "1.9K",
-      "_x_passes": 4
+      "_x_passes": 6
     }
   ],
   "source_feed": "videos.json",
