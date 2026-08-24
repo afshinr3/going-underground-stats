@@ -6,7 +6,7 @@
     "rumble_views": "275",
     "x_views": "270.3K",
     "date": "23 Aug",
-    "yt_views": "79",
+    "yt_views": "77",
     "ig_likes": "276",
     "canonical_guest_full_name": "David Monyae",
     "canonical_surname_upper": "MONYAE",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6
   },
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "MEASURED",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 3
   },
@@ -80,7 +80,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "821.6K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -108,7 +108,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "695.0K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
   },
   {
@@ -232,7 +232,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-24T15:45:57Z",
+    "_carried_forward_iso": "2026-08-24T16:09:38Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
