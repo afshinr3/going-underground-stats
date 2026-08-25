@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-25T04:48:58.578614Z",
+  "generated_at": "2026-08-25T05:30:58.175108Z",
   "n": 1,
   "entries": [
     {
@@ -20,8 +20,8 @@
       "canonical_guest_full_name": "Michael O\u2019Hanlon",
       "canonical_surname_upper": "O\u2019HANLON",
       "canonical_episode_id": "6f96fd46bb55",
-      "_x_status": "MEASURED_LOWER_BOUND",
-      "_x_passes": 6
+      "_x_status": "MEASURED",
+      "_x_passes": 5
     }
   ],
   "source_feed": "videos.json",

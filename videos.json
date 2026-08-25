@@ -11,8 +11,8 @@
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
     "canonical_surname_upper": "O\u2019HANLON",
     "canonical_episode_id": "6f96fd46bb55",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 6
+    "_x_status": "MEASURED",
+    "_x_passes": 5
   },
   {
     "guest": "Philip Pilkington",
@@ -26,7 +26,7 @@
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -35,14 +35,14 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": null,
-    "x_views": "255.5K",
+    "x_views": "71.2K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 6
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "Gabor Mat\u00e9",
@@ -50,14 +50,14 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": null,
-    "x_views": "189.4K",
+    "x_views": "57.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
     "canonical_surname_upper": "MAT\u00c9",
     "canonical_episode_id": "0d30042528a6",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 2
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   },
   {
     "guest": "Robert Barnes",
@@ -65,13 +65,13 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": null,
-    "x_views": "351.6K",
+    "x_views": "106.8K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Robert Barnes",
     "canonical_surname_upper": "BARNES",
     "canonical_episode_id": "c133da20813e",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
