@@ -11,7 +11,7 @@
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
     "canonical_surname_upper": "O\u2019HANLON",
     "canonical_episode_id": "6f96fd46bb55",
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_video_id": "Eu0Phb99ipg",
     "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
@@ -37,7 +37,7 @@
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_video_id": "w7KXuXugzlA",
     "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
@@ -63,7 +63,7 @@
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 5,
     "canonical_video_id": "TuFMmjBU3Vw",
     "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
@@ -101,7 +101,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "show": "GU",
     "_x_passes": 6
   },
@@ -117,7 +117,7 @@
     "canonical_guest_full_name": "Gabor Mat\u00e9",
     "canonical_surname_upper": "MAT\u00c9",
     "canonical_episode_id": "0d30042528a6",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_video_id": "PUw_r6rI5PY",
     "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
@@ -374,7 +374,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-25T07:46:19Z",
+    "_carried_forward_iso": "2026-08-25T08:05:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -389,7 +389,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-25T07:46:19Z",
+    "_carried_forward_iso": "2026-08-25T08:05:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
