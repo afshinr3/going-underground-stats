@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-25T21:07:20.397201Z",
+  "generated_at": "2026-08-25T21:50:14.433717Z",
   "n": 1,
   "entries": [
     {
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-      "_x_status": "MEASURED",
+      "_x_status": "FETCH_FAILED:Exception",
       "show": "NO",
       "_x_passes": 3
     }

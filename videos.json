@@ -5,7 +5,7 @@
     "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
     "date": "22 Aug",
     "rumble_views": null,
-    "x_views": "53.0K",
+    "x_views": "53.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
@@ -21,9 +21,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "2.0K",
-    "_x_passes": 2
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -47,7 +47,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -73,9 +73,9 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "31.6K",
-    "_x_passes": 2
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -101,7 +101,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -212,7 +212,7 @@
     "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION\u2014Doug Bandow",
     "date": "20 Jul",
     "rumble_views": null,
-    "x_views": "292.1K",
+    "x_views": "292.2K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
@@ -228,8 +228,9 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "3.1K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "3.1K",
+    "_x_passes": 6
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -237,7 +238,7 @@
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "209.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
@@ -253,8 +254,9 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "4.3K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "4.3K",
+    "_x_passes": 6
   },
   {
     "guest": "Dennis Fritz",
@@ -281,8 +283,8 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 3
+    "_x_status": "MEASURED",
+    "_x_passes": 6
   },
   {
     "guest": "James Carden",
@@ -308,8 +310,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 2,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "show": "GU"
   },
   {
@@ -376,7 +378,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-25T21:38:35Z",
+    "_carried_forward_iso": "2026-08-25T21:41:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -391,7 +393,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-25T21:38:35Z",
+    "_carried_forward_iso": "2026-08-25T21:41:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
