@@ -79,7 +79,7 @@
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "432.7K",
     "date": "7 Aug",
     "yt_views": "7.8K",
     "ig_likes": null,
@@ -98,7 +98,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "show": "GU"
   },
   {
@@ -157,7 +158,7 @@
     "title": "\u2018War on Iran is Bringing Iran Closer to a NUCLEAR BOMB\u2014 Ex-Chief of Israel\u2019s Shin Bet Ami Ayalon",
     "date": "27 Jul",
     "rumble_views": null,
-    "x_views": "289.1K",
+    "x_views": "289.3K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Ami Ayalon",
@@ -173,7 +174,8 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
+    "_x_passes": 3,
     "yt_views": "1.7K"
   },
   {
@@ -256,7 +258,7 @@
     "surname": "Fritz",
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
     "rumble_views": null,
-    "x_views": "410.8K",
+    "x_views": "194.8K",
     "date": "13 Jul",
     "yt_views": "1.1K",
     "ig_likes": null,
@@ -276,14 +278,15 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED",
+    "_x_passes": 3
   },
   {
     "guest": "James Carden",
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
     "rumble_views": null,
-    "x_views": null,
+    "x_views": "127.4K",
     "date": "11 Jul",
     "yt_views": "1.5K",
     "ig_likes": null,
@@ -302,7 +305,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
+    "_x_passes": 2,
     "show": "GU"
   },
   {
@@ -367,7 +371,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-25T18:59:47Z",
+    "_carried_forward_iso": "2026-08-25T19:09:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -382,7 +386,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-25T18:59:47Z",
+    "_carried_forward_iso": "2026-08-25T19:09:56Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
