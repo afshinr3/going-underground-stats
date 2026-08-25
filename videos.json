@@ -12,7 +12,7 @@
     "rumble_prov": "m2_rumble_only_v3",
     "ig_likes": "533",
     "x_views": "94.3K",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7"
@@ -39,7 +39,7 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.0K",
     "_x_passes": 6
   },
@@ -65,7 +65,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -91,7 +91,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "31.7K",
     "_x_passes": 6
   },
@@ -396,7 +396,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-25T22:24:09Z",
+    "_carried_forward_iso": "2026-08-25T22:45:13Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -411,7 +411,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-25T22:24:09Z",
+    "_carried_forward_iso": "2026-08-25T22:45:13Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
