@@ -363,11 +363,22 @@ function fmtTotal(v) {
 // Prefer videos_health_v1.json (structured schema; no "?"). Fall back to
 // legacy videos.json (scrape strings with "?"). Same downstream renderer
 // handles both because fmtCell() and parseCount() are polymorphic.
-function healthToEntries(h) {
+function healthToEntries(h, showCode) {
     // Convert {episodes:[{guest,date,title,show,metrics:{...}}]} -> flat list
     // matching the legacy videos.json row shape used by the leaderboard.
+    //
+    // HEALTH_FEED_IS_BOTH_SHOWS_V1_20260826 — videos_health_v1.json's `episodes`
+    // array holds GU *and* NO, but its result was assigned wholesale to guEntries
+    // while NO was loaded separately from videos_neworder.json. Every New Order
+    // episode therefore rendered twice: once correctly as NO and once mislabelled
+    // GU (Monyae, Baharoon, Askary, Perkins, Shidore, Bhaskar were all doubled).
+    // In the "latest 2 GU + 1 NO" week tab the phantom GU copy consumed a GU slot
+    // and displaced a real Going Underground episode. Filter by show when the
+    // caller names one; an entry with no show is kept so nothing silently vanishes.
     if (!h || !Array.isArray(h.episodes)) return [];
-    return h.episodes.map(ep => ({
+    const eps = showCode ? h.episodes.filter(ep => !ep.show || ep.show === showCode)
+                         : h.episodes;
+    return eps.map(ep => ({
         guest: ep.guest,
         surname: (ep.guest || '').split(' ').slice(-1)[0] || '',
         title: ep.title,
@@ -407,7 +418,7 @@ async function fetchAll() {
     const guHealthR = await loadJSON('videos_health_v1.json', null);
     const guLegacyR = await loadJSON('videos.json', []);
     const guHealth  = guHealthR.ok ? guHealthR.value : null;
-    const guEntries = guHealth ? healthToEntries(guHealth) : guLegacyR.value;
+    const guEntries = guHealth ? healthToEntries(guHealth, 'GU') : guLegacyR.value;
     if (!guHealth && !guLegacyR.ok) errors.push('GU: no usable episode source — the list below is NOT authoritative');
     // NO: (health for NO not yet emitted — remains legacy)
     const noR    = await loadJSON('videos_neworder.json', []);
