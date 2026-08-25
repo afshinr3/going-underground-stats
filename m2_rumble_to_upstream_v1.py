@@ -414,6 +414,59 @@ def _process_file(path, exact, surname, vids, posts, changes):
     show_code = SHOW_OF.get(path)
     if show_code:
         _inject_rumble_only(videos, show_code, vids, fname, changes)
+    # `vids` is the raw LIST of Rumble videos; `exact` maps join-key -> views only,
+    # so neither carries the full record. Build a join-key -> record map here.
+    _by_key = {}
+    for _rv in (vids or []):
+        _k = _rumble_join_key(_rv.get("title"))
+        if _k:
+            _by_key.setdefault(_k, _rv)
+
+    # RUMBLE_CANONICAL_DATE_RESTAMP_V1_20260826 — for rows this bridge owns
+    # (rumble_only_injected), Rumble is canonical for the DATE as well as the views.
+    # Those rows were stamped from the channel listing's rounded relative string
+    # ("2 days ago" -> now-2d), which drifts with the scrape clock and was routinely a
+    # day out: the 2026-08-24 Ken Silva episode was stored as "23 Aug". The scraper now
+    # records the exact publish instant from each video page; re-stamp the stored row
+    # from it so a row created under the old estimate is corrected instead of frozen.
+    # Only ever touches rows the bridge itself injected, and reports every change.
+    for ep in videos:
+        if not ep.get("rumble_only_injected"):
+            continue
+        # Re-adjudicate identity through the CLOUD's own function (never a private
+        # copy — a second implementation is how these two writers drift apart).
+        # Rows injected before SURNAME_IS_NOT_AN_IDENTITY_V1 carry a guest bound on
+        # surname alone; the ingest gate cannot reach an existing row.
+        if _FP is not None and hasattr(_FP, "_readjudicate_carried_guest"):
+            _before = ep.get("guest")
+            try:
+                if _FP._readjudicate_carried_guest(ep, show_code):
+                    changes.append((fname, ep.get("surname"), "guest",
+                                    _before, ep.get("guest")))
+            except Exception as _e_id:
+                print(f"  [identity-repair] {ep.get('surname')}: {_e_id!r}",
+                      file=sys.stderr, flush=True)
+        rv = _by_key.get(_rumble_join_key(ep.get("title")))
+        if not rv or not rv.get("date_iso"):
+            continue
+        if str(rv.get("date_prov") or "") != "rumble_video_page_time_datetime":
+            continue                      # only trust an EXACT canonical timestamp
+        try:
+            dt = datetime.datetime.fromisoformat(
+                str(rv["date_iso"]).replace("Z", "").split(".")[0]
+            ).replace(tzinfo=datetime.timezone.utc)
+        except Exception:
+            continue
+        new_date = f"{dt.day} {dt.strftime('%b')}"
+        new_piso = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+        if ep.get("date") != new_date or ep.get("pub_iso") != new_piso:
+            changes.append((fname, ep.get("surname"), "date",
+                            f'{ep.get("date")}/{ep.get("pub_iso")}',
+                            f'{new_date}/{new_piso}'))
+            ep["date"] = new_date
+            ep["pub_iso"] = new_piso
+            ep["date_prov"] = "rumble_video_page_time_datetime"
+
     for ep in videos:
         # ---- Rumble (exact key, surname fallback) ----
         v = exact.get(_rumble_join_key(ep.get("title")))
@@ -459,8 +512,23 @@ def main():
 
     changes = []
     changed_files = []
+    # FILE_ISOLATION_V1_20260826 — one unreadable target file used to abort the whole
+    # run. videos_neworder.json carried unresolved `git stash pop` conflict markers,
+    # so json.load raised and main() died AFTER videos.json had been mutated on disk
+    # but BEFORE the commit/push, every hour. The Rumble-only episode was written
+    # locally and never published, while the cloud kept committing videos.json — a
+    # feed whose refresh timestamp advances while an episode silently never arrives.
+    # Each file is now isolated: a failure is reported loudly, the other files still
+    # publish, and the process exits NON-ZERO so the failure cannot pass as success.
+    failed_files = []
     for path in TARGET_FILES:
-        cf = _process_file(path, exact, surname, vids, posts, changes)
+        try:
+            cf = _process_file(path, exact, surname, vids, posts, changes)
+        except Exception as e:
+            failed_files.append((os.path.basename(path), repr(e)[:200]))
+            print(f"[{MARKER}] ERROR processing {os.path.basename(path)}: {e!r}",
+                  file=sys.stderr, flush=True)
+            continue
         if cf and not DRY:
             changed_files.append(cf)
 
@@ -503,9 +571,15 @@ def main():
         except Exception as _e_ws:
             print(f"  [{INJECT_MARKER}] weekly-stats regen skipped: {_e_ws}")
 
+    if failed_files:
+        print(f"[{MARKER}] {len(failed_files)} target file(s) FAILED and were skipped:",
+              file=sys.stderr, flush=True)
+        for fn, err in failed_files:
+            print(f"    {fn}: {err}", file=sys.stderr, flush=True)
+
     if not changed_files:
         print(f"[{MARKER}] no committable changes")
-        return 0
+        return 2 if failed_files else 0
 
     for cf in changed_files:
         _git("add", cf)
@@ -513,7 +587,11 @@ def main():
     _git("commit", "-m", f"Rumble+IG bridge: M2 local->upstream {_now}")
     p = _git("push")
     print(f"  push rc={p.returncode} {(p.stderr or p.stdout or '')[-160:].strip()}")
-    return 0
+    if p.returncode != 0:
+        print(f"[{MARKER}] PUSH FAILED — changes are committed locally but NOT live",
+              file=sys.stderr, flush=True)
+        return 3
+    return 2 if failed_files else 0
 
 
 if __name__ == "__main__":

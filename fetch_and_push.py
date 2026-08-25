@@ -197,6 +197,114 @@ def _v4_gate_unclassified(ceid, title, link_href, pub, description,
 
 
 
+
+# SURNAME_IS_NOT_AN_IDENTITY_V1_20260826
+# CANON_MAP is keyed on a bare single-token surname and was matched with a raw
+# substring test (`if _sn in tl`). Two consequences, both live defects:
+#   1. Two people who share a surname collapse into one. "The Trump Assassination
+#      Plots: What You Haven't Been Told (Ken Silva)" bound to CANON_MAP["silva"]
+#      = "Luiz Inacio Lula da Silva", so a Ken Silva episode was published under
+#      Lula da Silva's name. Every one of the 38 keys is a bare surname, so this
+#      is systemic, not specific to Silva.
+#   2. A raw substring also matches inside longer words ("keen", "clark", "sood").
+# The rule below binds only when the title identifies the PERSON: the surname must
+# match on a word boundary, and the capitalised token that immediately precedes it
+# (skipping nobiliary particles) must be part of the canonical full name. A title
+# naming a different person with the same surname is left to the extractor, which
+# already returns the literal correct name. Ambiguity refuses to expand rather than
+# guessing -- publishing the wrong person's name is worse than publishing no
+# expansion at all.
+def _canon_audit(event, **fields):
+    """Refusals and ambiguities are REPORTED. A silent refusal is how the Milanovic
+    episode vanished; the same mistake must not be repeated for identity binding."""
+    try:
+        import json as _j, datetime as _dt
+        rec = {"iso": _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+               "marker": "SURNAME_IS_NOT_AN_IDENTITY_V1_20260826", "event": event}
+        rec.update(fields)
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "canon_identity_audit.jsonl"), "a") as f:
+            f.write(_j.dumps(rec, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+
+
+_NAME_PARTICLES = {"da", "de", "del", "della", "di", "do", "dos", "van", "von",
+                   "bin", "ibn", "al", "el", "la", "le", "ter", "ten", "st"}
+
+# A diminutive is the SAME person, so refusing to bind "Col. Larry Wilkerson" to
+# canonical "Lawrence Wilkerson" would be a rule that rejects correct data -- as
+# much a defect as one that accepts wrong data. Bounded, explicit, both directions.
+_DIMINUTIVES = {
+    "larry": "lawrence", "bill": "william", "billy": "william", "bob": "robert",
+    "bobby": "robert", "rob": "robert", "dick": "richard", "rick": "richard",
+    "jim": "james", "jimmy": "james", "mike": "michael", "tom": "thomas",
+    "tommy": "thomas", "dave": "david", "steve": "stephen", "joe": "joseph",
+    "tony": "anthony", "ted": "edward", "eddie": "edward", "nick": "nicholas",
+    "chris": "christopher", "dan": "daniel", "danny": "daniel", "ken": "kenneth",
+    "matt": "matthew", "greg": "gregory", "ben": "benjamin", "sam": "samuel",
+    "andy": "andrew", "pete": "peter", "phil": "philip", "ron": "ronald",
+    "don": "donald", "gabe": "gabriel", "alex": "alexander", "vlad": "vladimir",
+}
+
+
+def _given_before_surname(text, surname):
+    """The given name immediately preceding `surname`, skipping nobiliary particles.
+
+    Comparing first tokens instead was wrong: extractor output routinely carries a
+    role prefix ("Trump's Ex-Lawyer Robert Barnes", "of Israel's Shin Bet Ami
+    Ayalon"), so a first-token test reported a mismatch for names that are in fact
+    the same person and would have overwritten clean stored names with fragments.
+    """
+    tl = (text or "").lower()
+    m = re.search(r"\b" + re.escape((surname or "").lower()) + r"\b", tl)
+    if not m:
+        return ""
+    toks = re.findall(r"[a-z\u00c0-\u024f'\u2019-]+", tl[:m.start()])
+    while toks and toks[-1] in _NAME_PARTICLES:
+        toks.pop()
+    return toks[-1] if toks else ""
+
+
+def _name_tokens_agree(a, b):
+    """Same given name, allowing common diminutives in either direction."""
+    a, b = (a or "").lower(), (b or "").lower()
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    return _DIMINUTIVES.get(a) == b or _DIMINUTIVES.get(b) == a
+
+
+def _canon_surname_identifies_person(title_lower, surname_key, canonical_full):
+    """True when `title_lower` names the person `canonical_full`, not merely
+    someone sharing their surname. Returns False on ambiguity."""
+    m = re.search(r"\b" + re.escape(surname_key) + r"\b", title_lower)
+    if not m:
+        return False
+    canon_tokens = {t.lower().strip(".,:;()[]'\u2019")
+                    for t in str(canonical_full or "").split()}
+    if not canon_tokens:
+        return False
+    # whole canonical name present -> unambiguous
+    if str(canonical_full or "").lower() in title_lower:
+        return True
+    before = title_lower[:m.start()]
+    toks = re.findall(r"[a-z\u00c0-\u024f'\u2019-]+", before)
+    # skip nobiliary particles immediately preceding the surname ("lula da silva")
+    while toks and toks[-1] in _NAME_PARTICLES:
+        toks.pop()
+    if not toks:
+        return True          # surname stands alone -> no contradicting given name
+    prev = toks[-1]
+    if prev in canon_tokens or any(_name_tokens_agree(prev, c) for c in canon_tokens):
+        return True          # given name agrees with the canonical person
+    # A different given name immediately before the surname means a DIFFERENT
+    # person. Refuse. Anything else (a sentence word) is not evidence either way,
+    # so refuse too -- the extractor's literal name is the safer answer.
+    return False
+
+
 def _canonical_from_title(title, cur_guest, cur_surname):
     """Return (canonical_full_name_or_None, canonical_surname_upper_or_None, episode_id).
 
@@ -209,18 +317,25 @@ def _canonical_from_title(title, cur_guest, cur_surname):
     t = (title or "").strip()
     tl = t.lower()
     canon = None
-    # 1) Surname-substring scan on title
-    for _sn, _cn in CANON_MAP.items():
-        if _sn in tl:
-            canon = _cn
-            break
-    # 2) Current guest field
+    # 1) Surname scan on title -- word-boundary AND person-identifying (see
+    #    SURNAME_IS_NOT_AN_IDENTITY_V1_20260826). Collect every hit so that two
+    #    different canonical people matching one title is treated as ambiguous
+    #    instead of resolved by dict order.
+    _hits = {_cn for _sn, _cn in CANON_MAP.items()
+             if _canon_surname_identifies_person(tl, _sn, _cn)}
+    if len(_hits) == 1:
+        canon = next(iter(_hits))
+    elif len(_hits) > 1:
+        _canon_audit("AMBIGUOUS_TITLE", title=t, candidates=sorted(_hits))
+    # 2) Current guest field, same rule
     if not canon and cur_guest:
         cgl = cur_guest.lower()
-        for _sn, _cn in CANON_MAP.items():
-            if _sn in cgl:
-                canon = _cn
-                break
+        _ghits = {_cn for _sn, _cn in CANON_MAP.items()
+                  if _canon_surname_identifies_person(cgl, _sn, _cn)}
+        if len(_ghits) == 1:
+            canon = next(iter(_ghits))
+        elif len(_ghits) > 1:
+            _canon_audit("AMBIGUOUS_GUEST", guest=cur_guest, candidates=sorted(_ghits))
     # 3) Clean-looking current guest passes through as canonical
     if not canon and cur_guest and " " in cur_guest and not cur_guest.endswith(" "):
         if not any(cur_guest.startswith(p) for p in _CANON_BAD_PREFIXES):
@@ -414,7 +529,31 @@ def _readjudicate_carried_guest(row, show_code):
     # leaves an invalid surname behind ('DEF', 'Ex-', 'Israel’s'); that is the
     # signal worth acting on.
     role_frag = (surname.rstrip('-').lower() in _ROLE_PREFIXES) or surname.endswith('-')
-    if surname and _looks_valid_surname(surname) and not role_frag:
+    # MISBOUND_IDENTITY_REPAIR_V1_20260826 — a VALID surname is not proof of a
+    # correct identity. Under the old surname-substring CANON_MAP scan, a title
+    # naming one person bound to a different person who shares their surname:
+    # "...(Ken Silva)" stored guest "Luiz Inacio Lula da Silva" with surname
+    # "Silva". Every guard here keys on a malformed surname, so "Silva" passed and
+    # the row was never re-adjudicated -- the wrong person stayed published. The
+    # signature is narrow and checkable: the title yields a confident full name
+    # with the SAME surname but a DIFFERENT given name from the stored guest.
+    _misbound = False
+    if surname and _looks_valid_surname(surname) and not role_frag and guest:
+        _tg = (extract_guest(title) or '').strip()
+        _ts = (extract_surname(_tg) if _tg else '') or ''
+        _g_title = _given_before_surname(_tg, _ts)
+        _g_stored = _given_before_surname(guest, surname)
+        if (_tg and _ts and ' ' in _tg
+                and _ts.lower() == surname.lower()
+                and _g_title and _g_stored
+                and not _name_tokens_agree(_g_title, _g_stored)):
+            _misbound = True
+            print(f"  [MISBOUND_IDENTITY] stored {guest!r} (given {_g_stored!r}) vs "
+                  f"title-derived {_tg!r} (given {_g_title!r}) :: {title[:44]}...")
+            _canon_audit("MISBOUND_IDENTITY_REPAIRED", title=title,
+                         stored_guest=guest, title_guest=_tg,
+                         stored_given=_g_stored, title_given=_g_title)
+    if surname and _looks_valid_surname(surname) and not role_frag and not _misbound:
         return False        # already a real name; leave it entirely alone
 
     new_guest = extract_guest(title)
