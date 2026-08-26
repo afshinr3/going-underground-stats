@@ -5,53 +5,21 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-26T06:23:15.133051Z",
-  "n": 2,
+  "generated_at": "2026-08-26T07:20:06.036308Z",
+  "n": 1,
   "entries": [
     {
-      "guest": "Ken Silva",
-      "surname": "Silva",
-      "title": "The Trump Assassination Plots: What You Haven\u2019t Been Told (Ken Silva)",
-      "date": "24 Aug",
-      "rumble_views": "2.1K",
-      "show": "GU",
-      "canonical_guest_full_name": "Ken Silva",
-      "pub_iso": "2026-08-24T04:00:05Z",
-      "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "537",
-      "_x_status": "MEASURED",
-      "canonical_surname_upper": "SILVA",
-      "canonical_episode_id": "f9189e08f1d7",
-      "yt_views": "283",
-      "x_views": "96.9K",
-      "_x_passes": 5
-    },
-    {
-      "guest": "Michael O\u2019Hanlon",
-      "surname": "O\u2019Hanlon",
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "Ex-",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
       "date": "22 Aug",
       "rumble_views": "2.0K",
-      "x_views": "53.2K",
-      "ig_likes": "579",
+      "x_views": "511.0K",
+      "ig_likes": "461",
       "show": "GU",
-      "canonical_guest_full_name": "Michael O\u2019Hanlon",
-      "canonical_surname_upper": "O\u2019HANLON",
-      "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": "Eu0Phb99ipg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "pub_iso": "2026-08-22T11:55:34Z",
-      "canonical_episode_id_v2": "20fc52f5bc97c24f",
-      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "source_platform_ids": {
-        "youtube": [
-          "Eu0Phb99ipg"
-        ]
-      },
-      "_x_status": "MEASURED_LOWER_BOUND",
-      "yt_views": "2.0K",
-      "_x_passes": 6
+      "canonical_guest_full_name": "Afshin Rattansi CHALLENGES Ex-",
+      "canonical_surname_upper": "EX-",
+      "canonical_episode_id": "6f96fd46bb55"
     }
   ],
   "source_feed": "videos.json",
