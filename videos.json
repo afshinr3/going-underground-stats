@@ -40,9 +40,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "2.0K",
-    "_x_passes": 3
+    "_x_passes": 5
   },
   {
     "guest": "Philip Pilkington",
@@ -50,7 +50,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.4K",
-    "x_views": "260.2K",
+    "x_views": "260.3K",
     "ig_likes": "2.9K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -66,9 +66,9 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
@@ -76,7 +76,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.2K",
-    "x_views": "256.7K",
+    "x_views": "71.5K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -92,7 +92,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "33.0K",
     "_x_passes": 2
   },
@@ -101,7 +101,7 @@
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": "3.4K",
-    "x_views": "432.9K",
+    "x_views": "433.0K",
     "date": "7 Aug",
     "yt_views": "7.8K",
     "ig_likes": "2.4K",
@@ -120,7 +120,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -130,7 +130,7 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "3.6K",
-    "x_views": "57.3K",
+    "x_views": "57.4K",
     "ig_likes": "5.2K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
@@ -146,7 +146,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "52.6K",
     "_x_passes": 6
   },
@@ -393,14 +393,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "3.9K",
-    "x_views": null,
-    "ig_likes": "2.1K",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-26T11:14:46Z",
+    "_carried_forward_iso": "2026-08-26T11:16:21Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
