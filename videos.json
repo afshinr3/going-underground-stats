@@ -14,7 +14,7 @@
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "yt_views": "696",
+    "yt_views": "704",
     "x_views": "96.9K",
     "_x_passes": 5
   },
@@ -40,7 +40,7 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.0K",
     "_x_passes": 4
   },
@@ -66,7 +66,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.0K",
     "_x_passes": 3
   },
@@ -92,7 +92,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "33.6K",
     "_x_passes": 4
   },
@@ -400,7 +400,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-26T14:40:20Z",
+    "_carried_forward_iso": "2026-08-26T15:01:51Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
