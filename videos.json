@@ -14,7 +14,7 @@
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "yt_views": "59"
+    "yt_views": "78"
   },
   {
     "guest": "Michael O\u2019Hanlon",
@@ -38,7 +38,7 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.0K",
     "_x_passes": 4
   },
@@ -64,7 +64,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -90,7 +90,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "31.8K",
     "_x_passes": 4
   },
@@ -99,7 +99,7 @@
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": "3.4K",
-    "x_views": "432.8K",
+    "x_views": "432.9K",
     "date": "7 Aug",
     "yt_views": "7.8K",
     "ig_likes": "2.4K",
@@ -118,7 +118,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -128,7 +128,7 @@
     "title": "Gabor Mat\u00e9: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "3.6K",
-    "x_views": "292.1K",
+    "x_views": "57.3K",
     "ig_likes": "5.2K",
     "show": "GU",
     "canonical_guest_full_name": "Gabor Mat\u00e9",
@@ -144,8 +144,9 @@
         "PUw_r6rI5PY"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "52.2K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "52.2K",
+    "_x_passes": 6
   },
   {
     "guest": "Robert Barnes",
@@ -153,7 +154,7 @@
     "title": "Iran Disaster: \u2018Trump Sees Israel as a TOOL to CONQUER THE WORLD\u2019\u2014 Trump\u2019s Ex-Lawyer Robert Barnes",
     "date": "1 Aug",
     "rumble_views": "15.7K",
-    "x_views": "368.6K",
+    "x_views": "106.9K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Robert Barnes",
@@ -169,8 +170,9 @@
         "N_ysv6Gh9Ac"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "3.2K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "3.2K",
+    "_x_passes": 6
   },
   {
     "guest": "Ami Ayalon",
@@ -194,8 +196,8 @@
         "pzEU7fNiXgc"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "yt_views": "1.7K"
   },
   {
@@ -204,7 +206,7 @@
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
     "rumble_views": "2.9K",
-    "x_views": "597.2K",
+    "x_views": "268.3K",
     "ig_likes": "2.0K",
     "show": "GU",
     "canonical_guest_full_name": "Daniel Levy",
@@ -220,8 +222,9 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "4.1K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "4.1K",
+    "_x_passes": 6
   },
   {
     "guest": "Doug Bandow",
@@ -379,7 +382,7 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "948",
     "_x_passes": 6
   },
@@ -395,7 +398,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-25T23:40:34Z",
+    "_carried_forward_iso": "2026-08-26T00:04:55Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -410,7 +413,7 @@
     "canonical_guest_full_name": "Ehud Olmert",
     "canonical_surname_upper": "OLMERT",
     "canonical_episode_id": "2d6e9913fb1c",
-    "_carried_forward_iso": "2026-08-25T23:40:34Z",
+    "_carried_forward_iso": "2026-08-26T00:04:55Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]

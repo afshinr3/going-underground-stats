@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-25T23:48:46.959164Z",
+  "generated_at": "2026-08-26T00:12:15.059226Z",
   "n": 2,
   "entries": [
     {
@@ -23,7 +23,7 @@
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "canonical_surname_upper": "SILVA",
       "canonical_episode_id": "f9189e08f1d7",
-      "yt_views": "59"
+      "yt_views": "78"
     },
     {
       "guest": "Michael O\u2019Hanlon",
@@ -47,7 +47,7 @@
           "Eu0Phb99ipg"
         ]
       },
-      "_x_status": "MEASURED",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "yt_views": "2.0K",
       "_x_passes": 4
     }
