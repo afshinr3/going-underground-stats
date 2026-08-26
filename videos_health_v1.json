@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-26T01:37:42Z",
-  "last_updated": "2026-08-26T01:37:42Z",
+  "iso": "2026-08-26T02:20:07Z",
+  "last_updated": "2026-08-26T02:20:07Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -17,11 +17,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.1K",
-        "yt_views": "182",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "yt_views": "211",
+        "x_views": "310.7K",
         "ig_likes": "533"
       }
     },
@@ -67,7 +64,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": "3.4K",
         "yt_views": "3.0K",
         "x_views": "259.6K",
         "ig_likes": "2.9K"
@@ -385,26 +382,6 @@
       }
     },
     {
-      "guest": "Ehud Olmert",
-      "surname": "OLMERT",
-      "title": "Ex-Israeli PM Ehud Olmert SLAMS Israeli Govt-Sponsored JEWISH TERRORISM in Occupied Palestine",
-      "date": "20 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "2d6e9913fb1c",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": null,
-        "x_views": "38.6K",
-        "ig_likes": "2.7K"
-      }
-    },
-    {
       "guest": "David Monyae",
       "surname": "MONYAE",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
@@ -422,7 +399,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "309",
+        "rumble_views": "311",
         "yt_views": "166",
         "x_views": "269.7K",
         "ig_likes": "280"
@@ -446,7 +423,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "450",
+        "rumble_views": "451",
         "yt_views": "138",
         "x_views": "107.6K",
         "ig_likes": "213"
@@ -470,7 +447,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "482",
+        "rumble_views": "484",
         "yt_views": "165",
         "x_views": "695.9K",
         "ig_likes": "276"
@@ -494,7 +471,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "544",
+        "rumble_views": "545",
         "yt_views": "291",
         "x_views": "233.9K",
         "ig_likes": "230"
@@ -542,7 +519,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "739",
+        "rumble_views": "740",
         "yt_views": "1.1K",
         "x_views": "383.4K",
         "ig_likes": "350"
@@ -566,7 +543,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "965",
+        "rumble_views": "966",
         "yt_views": "1.1K",
         "x_views": "318.7K",
         "ig_likes": "233"
@@ -633,11 +610,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.1K",
-        "yt_views": "182",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "yt_views": "211",
+        "x_views": "310.7K",
         "ig_likes": "533"
       }
     },
@@ -683,7 +657,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": "3.4K",
         "yt_views": "3.0K",
         "x_views": "259.6K",
         "ig_likes": "2.9K"
@@ -757,7 +731,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "309",
+        "rumble_views": "311",
         "yt_views": "166",
         "x_views": "269.7K",
         "ig_likes": "280"
@@ -781,7 +755,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "450",
+        "rumble_views": "451",
         "yt_views": "138",
         "x_views": "107.6K",
         "ig_likes": "213"
@@ -805,7 +779,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "482",
+        "rumble_views": "484",
         "yt_views": "165",
         "x_views": "695.9K",
         "ig_likes": "276"
@@ -829,7 +803,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "544",
+        "rumble_views": "545",
         "yt_views": "291",
         "x_views": "233.9K",
         "ig_likes": "230"
