@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-26T04:18:40.664653Z",
+  "generated_at": "2026-08-26T05:04:24.699021Z",
   "n": 2,
   "entries": [
     {
@@ -24,7 +24,7 @@
       "canonical_surname_upper": "SILVA",
       "canonical_episode_id": "f9189e08f1d7",
       "yt_views": "283",
-      "x_views": "96.3K",
+      "x_views": "96.5K",
       "_x_passes": 6
     },
     {
@@ -51,7 +51,7 @@
       },
       "_x_status": "MEASURED",
       "yt_views": "2.0K",
-      "_x_passes": 3
+      "_x_passes": 2
     }
   ],
   "source_feed": "videos.json",
