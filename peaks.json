@@ -809,7 +809,7 @@
     "ig_likes": 230,
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 555,
-    "rumble_views_at": "2026-08-26T14:42:32Z",
+    "rumble_views_at": "2026-08-26T14:47:59Z",
     "x_views": 696500,
     "x_views_at": "2026-08-26T13:57:48Z"
   },
@@ -829,7 +829,7 @@
     "ig_likes": 276,
     "ig_likes_at": "2026-08-25T22:50:55Z",
     "rumble_views": 494,
-    "rumble_views_at": "2026-08-26T14:42:32Z",
+    "rumble_views_at": "2026-08-26T14:47:59Z",
     "x_views": 879500,
     "x_views_at": "2026-08-11T16:38:59Z"
   },
@@ -845,7 +845,7 @@
   },
   "GU:Mearsheimer": {
     "yt_views": 33600,
-    "yt_views_at": "2026-08-26T14:42:32Z",
+    "yt_views_at": "2026-08-26T14:47:59Z",
     "ig_likes": 1800,
     "ig_likes_at": "2026-08-22T18:28:40Z",
     "rumble_views": 3200,
@@ -886,8 +886,8 @@
   "NO:Monyae": {
     "rumble_views": 6200,
     "rumble_views_at": "2026-08-22T08:26:56Z",
-    "x_views": 302100,
-    "x_views_at": "2026-08-26T13:57:48Z",
+    "x_views": 302300,
+    "x_views_at": "2026-08-26T14:47:59Z",
     "ig_likes": 281,
     "ig_likes_at": "2026-08-26T03:40:14Z",
     "yt_views": 184,
@@ -921,6 +921,6 @@
     "rumble_views": 2200,
     "rumble_views_at": "2026-08-26T13:32:47Z",
     "yt_views": 696,
-    "yt_views_at": "2026-08-26T14:42:32Z"
+    "yt_views_at": "2026-08-26T14:47:59Z"
   }
 }
