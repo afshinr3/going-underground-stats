@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-26T06:02:03Z",
+  "updated": "2026-08-26T06:23:15Z",
   "drops": [
     {
-      "ts": "2026-08-26T06:02:03Z",
+      "ts": "2026-08-26T06:23:15Z",
       "show": "GU",
       "guest": "Silva",
       "platform": "X",
       "peak": 310700,
       "peak_at": "2026-08-26T01:46:06Z",
-      "current": 96700,
-      "drop_pct": 68.9
+      "current": 96900,
+      "drop_pct": 68.8
     },
     {
-      "ts": "2026-08-26T06:02:03Z",
+      "ts": "2026-08-26T06:23:15Z",
       "show": "GU",
       "guest": "O\u2019Hanlon",
       "platform": "X",

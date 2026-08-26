@@ -3,8 +3,8 @@
     "guest": "David Monyae",
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
-    "rumble_views": "318",
-    "x_views": "299.6K",
+    "rumble_views": "314",
+    "x_views": "299.9K",
     "date": "23 Aug",
     "yt_views": "173",
     "ig_likes": "281",
@@ -23,15 +23,15 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED",
     "show": "NO",
-    "_x_passes": 6
+    "_x_passes": 3
   },
   {
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
-    "rumble_views": "455",
+    "rumble_views": "454",
     "x_views": "178.9K",
     "date": "16 Aug",
     "yt_views": "139",
@@ -51,9 +51,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Marta Fernandez",
@@ -80,8 +80,8 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "823.0K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime"
   },
   {
@@ -89,7 +89,7 @@
     "surname": "Baharoon",
     "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
     "date": "2 Aug",
-    "rumble_views": "549",
+    "rumble_views": "548",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
     "pub_iso": "2026-08-02T06:30:10Z",
@@ -109,8 +109,8 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "696.2K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6,
+    "_x_status": "MEASURED",
+    "_x_passes": 3,
     "date_prov": "rumble_video_page_time_datetime"
   },
   {
@@ -118,7 +118,7 @@
     "surname": "Askary",
     "title": "Global South\u2019s Rise Causes PANIC for West\u2019s Elites as US-Led Unipolar World Declines- Hussein Askary",
     "date": "26 Jul",
-    "rumble_views": "648",
+    "rumble_views": "646",
     "show": "NO",
     "canonical_guest_full_name": "Hussein Askary",
     "pub_iso": "2026-07-26T06:30:22Z",
@@ -147,7 +147,7 @@
     "surname": "Schiff",
     "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
     "date": "19 Jul",
-    "rumble_views": "744",
+    "rumble_views": "743",
     "show": "NO",
     "canonical_guest_full_name": "Peter Schiff",
     "pub_iso": "2026-07-19T06:30:15Z",
@@ -176,7 +176,7 @@
     "surname": "Perkins",
     "title": "John Perkins: Trump\u2019s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
-    "rumble_views": "970",
+    "rumble_views": "969",
     "x_views": "318.7K",
     "yt_views": "1.1K",
     "ig_likes": "233",
@@ -236,7 +236,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-26T02:30:46Z",
+    "_carried_forward_iso": "2026-08-26T06:23:01Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
