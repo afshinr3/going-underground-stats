@@ -14,7 +14,7 @@
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "yt_views": "510",
+    "yt_views": "519",
     "x_views": "96.9K",
     "_x_passes": 5
   },
@@ -40,9 +40,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "2.0K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -66,7 +66,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -76,7 +76,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.2K",
-    "x_views": "256.7K",
+    "x_views": "71.5K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -92,7 +92,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "32.8K",
     "_x_passes": 6
   },
@@ -224,7 +224,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -234,7 +234,7 @@
     "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION\u2014Doug Bandow",
     "date": "20 Jul",
     "rumble_views": "3.1K",
-    "x_views": "292.2K",
+    "x_views": "292.6K",
     "ig_likes": "1.6K",
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
@@ -250,7 +250,7 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -276,7 +276,7 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "4.3K",
     "_x_passes": 6
   },
@@ -285,7 +285,7 @@
     "surname": "Fritz",
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
     "rumble_views": "3.3K",
-    "x_views": "194.8K",
+    "x_views": "194.9K",
     "date": "13 Jul",
     "yt_views": "1.1K",
     "ig_likes": "454",
@@ -305,7 +305,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6
   },
   {
@@ -400,7 +400,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-26T09:45:01Z",
+    "_carried_forward_iso": "2026-08-26T09:55:17Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
