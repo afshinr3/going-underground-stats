@@ -40,9 +40,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "2.0K",
-    "_x_passes": 5
+    "_x_passes": 6
   },
   {
     "guest": "Philip Pilkington",
@@ -66,7 +66,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -92,7 +92,7 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "33.1K",
     "_x_passes": 2
   },
@@ -342,7 +342,7 @@
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
     "rumble_views": "2.5K",
-    "x_views": "231.3K",
+    "x_views": "231.7K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
@@ -358,7 +358,7 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "1.5K",
     "_x_passes": 6
   },
@@ -384,7 +384,7 @@
         "M_KrzyAybFI"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "948",
     "_x_passes": 6
   },
@@ -400,7 +400,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-26T11:59:27Z",
+    "_carried_forward_iso": "2026-08-26T11:59:46Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
