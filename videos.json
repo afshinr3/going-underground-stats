@@ -14,7 +14,7 @@
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "yt_views": "519",
+    "yt_views": "563",
     "x_views": "96.9K",
     "_x_passes": 5
   },
@@ -40,7 +40,7 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.0K",
     "_x_passes": 6
   },
@@ -66,7 +66,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.0K",
     "_x_passes": 6
   },
@@ -92,8 +92,8 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "32.8K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "yt_views": "32.9K",
     "_x_passes": 6
   },
   {
@@ -147,7 +147,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "52.5K",
+    "yt_views": "52.6K",
     "_x_passes": 6
   },
   {
@@ -224,7 +224,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -250,7 +250,7 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -276,7 +276,7 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.3K",
     "_x_passes": 6
   },
@@ -305,7 +305,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -400,7 +400,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-26T09:55:17Z",
+    "_carried_forward_iso": "2026-08-26T10:29:34Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
