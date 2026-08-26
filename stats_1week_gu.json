@@ -5,7 +5,7 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-26T14:47:59.530073Z",
+  "generated_at": "2026-08-26T15:20:04.320401Z",
   "n": 2,
   "entries": [
     {
@@ -19,11 +19,11 @@
       "pub_iso": "2026-08-24T04:00:05Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
-      "ig_likes": "539",
+      "ig_likes": "472",
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "canonical_surname_upper": "SILVA",
       "canonical_episode_id": "f9189e08f1d7",
-      "yt_views": "696",
+      "yt_views": "704",
       "x_views": "96.9K",
       "_x_passes": 5
     },
@@ -49,7 +49,7 @@
           "Eu0Phb99ipg"
         ]
       },
-      "_x_status": "MEASURED",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "yt_views": "2.0K",
       "_x_passes": 4
     }
