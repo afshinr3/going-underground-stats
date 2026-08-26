@@ -1,24 +1,28 @@
 {
-  "iso": "2026-08-26T18:20:05Z",
-  "last_updated": "2026-08-26T18:20:05Z",
+  "iso": "2026-08-26T19:20:04Z",
+  "last_updated": "2026-08-26T19:20:04Z",
   "episodes": [
     {
       "guest": "Ken Silva",
       "surname": "SILVA",
       "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
-      "date": "24 Aug",
+      "date": "25 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
       "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-24T04:00:05Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "XSlrLlk8WrM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+      "canonical_episode_id_v2": "028a119cb410b046",
+      "pub_iso": "2026-08-25T22:45:28Z",
+      "source_platform_ids": {
+        "youtube": [
+          "XSlrLlk8WrM"
+        ]
+      },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": "764",
-        "x_views": "96.9K",
+        "yt_views": "782",
+        "x_views": "310.8K",
         "ig_likes": "472"
       }
     },
@@ -42,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": "2.0K",
-        "x_views": "53.4K",
+        "x_views": "640.4K",
         "ig_likes": "580"
       }
     },
@@ -89,8 +93,8 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "34.2K",
-        "x_views": "257.0K",
+        "yt_views": "34.4K",
+        "x_views": "168.5K",
         "ig_likes": "828"
       }
     },
@@ -113,8 +117,11 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "7.8K",
-        "x_views": "433.0K",
+        "yt_views": "7.9K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "2.4K"
       }
     },
@@ -137,8 +144,8 @@
       },
       "metrics": {
         "rumble_views": "3.6K",
-        "yt_views": "52.9K",
-        "x_views": "57.4K",
+        "yt_views": "53.0K",
+        "x_views": "292.4K",
         "ig_likes": "5.2K"
       }
     },
@@ -162,7 +169,7 @@
       "metrics": {
         "rumble_views": "15.7K",
         "yt_views": "3.2K",
-        "x_views": "106.9K",
+        "x_views": "369.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -210,7 +217,7 @@
       "metrics": {
         "rumble_views": "2.9K",
         "yt_views": "4.1K",
-        "x_views": "268.3K",
+        "x_views": "597.9K",
         "ig_likes": "2.0K"
       }
     },
@@ -258,7 +265,10 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "4.3K",
-        "x_views": "209.1K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "1.8K"
       }
     },
@@ -282,7 +292,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "194.9K",
+        "x_views": "412.0K",
         "ig_likes": "454"
       }
     },
@@ -306,7 +316,10 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "127.4K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "521"
       }
     },
@@ -330,7 +343,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.5K",
-        "x_views": "231.9K",
+        "x_views": "258.6K",
         "ig_likes": "1.1K"
       }
     },
@@ -340,21 +353,20 @@
       "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
       "date": "4 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=M_KrzyAybFI",
+      "link": "",
       "canonical_episode_id": "9702aa6e4b89",
-      "canonical_video_id": "M_KrzyAybFI",
-      "canonical_video_url": "https://www.youtube.com/watch?v=M_KrzyAybFI",
-      "canonical_episode_id_v2": "495ea447b2ab31cf",
-      "pub_iso": "2026-07-04T10:54:02Z",
-      "source_platform_ids": {
-        "youtube": [
-          "M_KrzyAybFI"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.4K",
-        "yt_views": "948",
-        "x_views": "209.0K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
         "ig_likes": "681"
       }
     },
@@ -399,7 +411,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "333",
+        "rumble_views": "334",
         "yt_views": "198",
         "x_views": "303.0K",
         "ig_likes": "281"
@@ -423,7 +435,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "465",
+        "rumble_views": "466",
         "yt_views": "139",
         "x_views": "179.3K",
         "ig_likes": "213"
@@ -447,7 +459,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "497",
+        "rumble_views": "498",
         "yt_views": "166",
         "x_views": "823.4K",
         "ig_likes": "276"
@@ -471,7 +483,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "559",
+        "rumble_views": "560",
         "yt_views": "291",
         "x_views": "696.6K",
         "ig_likes": "230"
@@ -495,7 +507,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "658",
+        "rumble_views": "659",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -519,7 +531,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "756",
+        "rumble_views": "757",
         "yt_views": "1.1K",
         "x_views": "550.4K",
         "ig_likes": "350"
@@ -599,19 +611,23 @@
       "guest": "Ken Silva",
       "surname": "SILVA",
       "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
-      "date": "24 Aug",
+      "date": "25 Aug",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
       "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-08-24T04:00:05Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "XSlrLlk8WrM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+      "canonical_episode_id_v2": "028a119cb410b046",
+      "pub_iso": "2026-08-25T22:45:28Z",
+      "source_platform_ids": {
+        "youtube": [
+          "XSlrLlk8WrM"
+        ]
+      },
       "metrics": {
         "rumble_views": "2.2K",
-        "yt_views": "764",
-        "x_views": "96.9K",
+        "yt_views": "782",
+        "x_views": "310.8K",
         "ig_likes": "472"
       }
     },
@@ -635,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.0K",
         "yt_views": "2.0K",
-        "x_views": "53.4K",
+        "x_views": "640.4K",
         "ig_likes": "580"
       }
     },
@@ -682,8 +698,8 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "34.2K",
-        "x_views": "257.0K",
+        "yt_views": "34.4K",
+        "x_views": "168.5K",
         "ig_likes": "828"
       }
     },
@@ -706,8 +722,11 @@
       },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": "7.8K",
-        "x_views": "433.0K",
+        "yt_views": "7.9K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "2.4K"
       }
     }
@@ -731,7 +750,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "333",
+        "rumble_views": "334",
         "yt_views": "198",
         "x_views": "303.0K",
         "ig_likes": "281"
@@ -755,7 +774,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "465",
+        "rumble_views": "466",
         "yt_views": "139",
         "x_views": "179.3K",
         "ig_likes": "213"
@@ -779,7 +798,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "497",
+        "rumble_views": "498",
         "yt_views": "166",
         "x_views": "823.4K",
         "ig_likes": "276"
@@ -803,7 +822,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "559",
+        "rumble_views": "560",
         "yt_views": "291",
         "x_views": "696.6K",
         "ig_likes": "230"
@@ -827,7 +846,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "658",
+        "rumble_views": "659",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
