@@ -4,7 +4,7 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "341",
-    "x_views": "273.9K",
+    "x_views": "315.9K",
     "date": "23 Aug",
     "yt_views": "207",
     "ig_likes": "282",
@@ -23,16 +23,16 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "469",
-    "x_views": "107.7K",
+    "x_views": "179.4K",
     "date": "16 Aug",
     "yt_views": "139",
     "ig_likes": "213",
@@ -51,9 +51,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Marta Fernandez",
@@ -79,9 +79,9 @@
     "yt_views": "166",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "696.1K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 3,
+    "x_views": "823.5K",
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime"
   },
   {
@@ -108,9 +108,9 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "234.1K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6,
+    "x_views": "696.7K",
+    "_x_status": "MEASURED",
+    "_x_passes": 2,
     "date_prov": "rumble_video_page_time_datetime"
   },
   {

@@ -6,7 +6,7 @@
     "date": "25 Aug",
     "rumble_views": "2.2K",
     "x_views": "628.9K",
-    "ig_likes": "478",
+    "ig_likes": "475",
     "show": "GU",
     "canonical_guest_full_name": "Ken Silva",
     "canonical_surname_upper": "SILVA",
@@ -30,13 +30,13 @@
     "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
     "date": "22 Aug",
     "rumble_views": "2.0K",
-    "x_views": "511.9K",
-    "ig_likes": "581",
+    "x_views": "53.5K",
+    "ig_likes": "580",
     "show": "GU",
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
     "canonical_surname_upper": "O\u2019HANLON",
     "canonical_episode_id": "6f96fd46bb55",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "canonical_video_id": "Eu0Phb99ipg",
     "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
     "pub_iso": "2026-08-22T11:55:34Z",
@@ -47,7 +47,8 @@
         "Eu0Phb99ipg"
       ]
     },
-    "yt_views": "2.0K"
+    "yt_views": "2.0K",
+    "_x_passes": 3
   },
   {
     "guest": "Philip Pilkington",
@@ -55,13 +56,13 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.4K",
-    "x_views": "260.9K",
-    "ig_likes": "3.0K",
+    "x_views": "261.1K",
+    "ig_likes": "2.9K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_video_id": "w7KXuXugzlA",
     "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
     "pub_iso": "2026-08-17T10:43:18Z",
@@ -72,7 +73,8 @@
         "w7KXuXugzlA"
       ]
     },
-    "yt_views": "3.0K"
+    "yt_views": "3.0K",
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
@@ -80,13 +82,13 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.2K",
-    "x_views": "168.5K",
+    "x_views": "257.1K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_video_id": "TuFMmjBU3Vw",
     "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
     "pub_iso": "2026-08-10T13:10:52Z",
@@ -97,17 +99,18 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "yt_views": "35.9K"
+    "yt_views": "35.9K",
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
-    "rumble_views": "3.4K",
+    "rumble_views": null,
     "x_views": null,
     "date": "7 Aug",
     "yt_views": "7.9K",
-    "ig_likes": "2.5K",
+    "ig_likes": null,
     "canonical_guest_full_name": "Hasan \u00dcnal",
     "canonical_surname_upper": "\u00dcNAL",
     "canonical_episode_id": "c5f74b00a6fa",
@@ -305,11 +308,11 @@
     "guest": "James Carden",
     "surname": "Carden",
     "title": "Ukraine Proxy War: Europe\u2019s Elites & US Neocons Want the DISSOLUTION of Russia \u2014James Carden",
-    "rumble_views": "2.7K",
+    "rumble_views": null,
     "x_views": null,
     "date": "11 Jul",
     "yt_views": "1.5K",
-    "ig_likes": "521",
+    "ig_likes": null,
     "canonical_guest_full_name": "James Carden",
     "canonical_surname_upper": "CARDEN",
     "canonical_episode_id": "bce46f2dc542",
@@ -334,13 +337,13 @@
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
     "rumble_views": "2.5K",
-    "x_views": "258.9K",
+    "x_views": "232.3K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_video_id": "SmH-aEMZyqg",
     "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
     "pub_iso": "2026-07-06T10:38:50Z",
@@ -351,7 +354,8 @@
         "SmH-aEMZyqg"
       ]
     },
-    "yt_views": "1.5K"
+    "yt_views": "1.5K",
+    "_x_passes": 6
   },
   {
     "guest": "Dennis Kucinich",
@@ -359,15 +363,16 @@
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "2.4K",
-    "x_views": null,
+    "x_views": "78.8K",
     "ig_likes": "681",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_carried_forward_iso": "2026-08-27T02:36:36Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_passes": 6
   },
   {
     "guest": "Max Blumenthal",
@@ -375,14 +380,15 @@
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
     "rumble_views": "3.9K",
-    "x_views": null,
+    "x_views": "207.2K",
     "ig_likes": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_carried_forward_iso": "2026-08-27T02:36:36Z",
-    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
+    "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "_x_passes": 6
   }
 ]
