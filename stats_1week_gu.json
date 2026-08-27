@@ -5,21 +5,33 @@
   "window_end": "2026-08-24",
   "window_start_mon": "2026-08-21",
   "window_end_sun": "2026-08-24",
-  "generated_at": "2026-08-27T08:20:07.084887Z",
+  "generated_at": "2026-08-27T09:20:08.076473Z",
   "n": 1,
   "entries": [
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "Ex-",
+      "guest": "Michael O\u2019Hanlon",
+      "surname": "O\u2019Hanlon",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
       "date": "22 Aug",
       "rumble_views": "2.0K",
       "x_views": "641.1K",
-      "ig_likes": "463",
+      "ig_likes": "581",
       "show": "GU",
-      "canonical_guest_full_name": "Afshin Rattansi CHALLENGES Ex-",
-      "canonical_surname_upper": "EX-",
-      "canonical_episode_id": "6f96fd46bb55"
+      "canonical_guest_full_name": "Michael O\u2019Hanlon",
+      "canonical_surname_upper": "O\u2019HANLON",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": "Eu0Phb99ipg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "pub_iso": "2026-08-22T11:55:34Z",
+      "canonical_episode_id_v2": "20fc52f5bc97c24f",
+      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "source_platform_ids": {
+        "youtube": [
+          "Eu0Phb99ipg"
+        ]
+      },
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "yt_views": "2.0K"
     }
   ],
   "source_feed": "videos.json",
