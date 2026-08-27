@@ -640,8 +640,8 @@
   "GU:DEF": {
     "ig_likes": 2400,
     "ig_likes_at": "2026-08-13T21:42:48Z",
-    "rumble_views": 2500,
-    "rumble_views_at": "2026-08-13T21:42:48Z"
+    "rumble_views": 2600,
+    "rumble_views_at": "2026-08-27T00:47:23Z"
   },
   "GU:Harward": {
     "x_views": 88400,
@@ -820,8 +820,8 @@
     "ig_likes_at": "2026-08-23T04:45:55Z",
     "rumble_views": 3700,
     "rumble_views_at": "2026-08-17T05:43:26Z",
-    "yt_views": 53200,
-    "yt_views_at": "2026-08-26T22:56:25Z"
+    "yt_views": 53300,
+    "yt_views_at": "2026-08-27T00:47:23Z"
   },
   "NO:Fernandez": {
     "yt_views": 166,
@@ -844,8 +844,8 @@
     "yt_views_at": "2026-08-26T18:29:27Z"
   },
   "GU:Mearsheimer": {
-    "yt_views": 35300,
-    "yt_views_at": "2026-08-26T23:18:29Z",
+    "yt_views": 35600,
+    "yt_views_at": "2026-08-27T00:47:23Z",
     "ig_likes": 1800,
     "ig_likes_at": "2026-08-22T18:28:40Z",
     "rumble_views": 3200,
@@ -920,7 +920,7 @@
     "ig_likes_at": "2026-08-26T10:04:07Z",
     "rumble_views": 2200,
     "rumble_views_at": "2026-08-26T13:32:47Z",
-    "yt_views": 834,
-    "yt_views_at": "2026-08-26T23:40:34Z"
+    "yt_views": 863,
+    "yt_views_at": "2026-08-27T00:47:23Z"
   }
 }
