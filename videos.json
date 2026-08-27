@@ -46,7 +46,7 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.0K",
     "_x_passes": 6
   },
@@ -72,7 +72,7 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -98,8 +98,8 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "yt_views": "38.1K",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "yt_views": "38.2K",
     "_x_passes": 6
   },
   {
@@ -152,7 +152,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "53.8K"
+    "yt_views": "53.9K"
   },
   {
     "guest": "Robert Barnes",
@@ -226,7 +226,7 @@
         "IGlM3ZTHIY8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.1K",
     "_x_passes": 6
   },
@@ -252,7 +252,7 @@
         "_SVI4UPDX7g"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.1K",
     "_x_passes": 6
   },
@@ -278,7 +278,7 @@
         "WlIY7-ovBd8"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "4.3K",
     "_x_passes": 6
   },
@@ -307,7 +307,7 @@
     },
     "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
     "show": "GU",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -334,7 +334,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "show": "GU",
     "_x_passes": 6
   },
@@ -360,7 +360,7 @@
         "SmH-aEMZyqg"
       ]
     },
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "1.5K",
     "_x_passes": 6
   },
@@ -369,14 +369,14 @@
     "surname": "Kucinich",
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
-    "rumble_views": "2.4K",
-    "x_views": null,
-    "ig_likes": "681",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-08-27T14:41:48Z",
+    "_carried_forward_iso": "2026-08-27T15:03:14Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -384,14 +384,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": "3.9K",
-    "x_views": null,
-    "ig_likes": "2.1K",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-27T14:41:48Z",
+    "_carried_forward_iso": "2026-08-27T15:03:14Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
