@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-28T20:20:08Z",
-  "last_updated": "2026-08-28T20:20:08Z",
+  "iso": "2026-08-28T21:20:05Z",
+  "last_updated": "2026-08-28T21:20:05Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -23,7 +23,7 @@
         "rumble_views": "2.4K",
         "yt_views": "1.6K",
         "x_views": "628.9K",
-        "ig_likes": "498"
+        "ig_likes": "504"
       }
     },
     {
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "513.8K",
+        "x_views": "513.9K",
         "ig_likes": "582"
       }
     },
@@ -93,7 +93,7 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "42.2K",
+        "yt_views": "42.3K",
         "x_views": "168.5K",
         "ig_likes": "828"
       }
@@ -144,7 +144,7 @@
       },
       "metrics": {
         "rumble_views": "3.6K",
-        "yt_views": "55.4K",
+        "yt_views": "55.5K",
         "x_views": "292.8K",
         "ig_likes": "5.2K"
       }
@@ -292,7 +292,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "414.7K",
+        "x_views": "414.8K",
         "ig_likes": "454"
       }
     },
@@ -390,30 +390,7 @@
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "2.1K"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "829"
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -435,7 +412,7 @@
       },
       "metrics": {
         "rumble_views": "378",
-        "yt_views": "313",
+        "yt_views": "339",
         "x_views": "322.0K",
         "ig_likes": "288"
       }
@@ -506,7 +483,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "598",
+        "rumble_views": "599",
         "yt_views": "291",
         "x_views": "696.8K",
         "ig_likes": "230"
@@ -554,7 +531,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "801",
+        "rumble_views": "802",
         "yt_views": "1.1K",
         "x_views": "550.4K",
         "ig_likes": "350"
@@ -625,7 +602,7 @@
         "rumble_views": "545",
         "yt_views": "0",
         "x_views": "88.1K",
-        "ig_likes": "845"
+        "ig_likes": "429"
       }
     }
   ],
@@ -651,7 +628,7 @@
         "rumble_views": "2.4K",
         "yt_views": "1.6K",
         "x_views": "628.9K",
-        "ig_likes": "498"
+        "ig_likes": "504"
       }
     },
     {
@@ -674,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "513.8K",
+        "x_views": "513.9K",
         "ig_likes": "582"
       }
     },
@@ -721,7 +698,7 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "42.2K",
+        "yt_views": "42.3K",
         "x_views": "168.5K",
         "ig_likes": "828"
       }
@@ -774,7 +751,7 @@
       },
       "metrics": {
         "rumble_views": "378",
-        "yt_views": "313",
+        "yt_views": "339",
         "x_views": "322.0K",
         "ig_likes": "288"
       }
@@ -845,7 +822,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "598",
+        "rumble_views": "599",
         "yt_views": "291",
         "x_views": "696.8K",
         "ig_likes": "230"
