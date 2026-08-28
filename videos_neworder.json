@@ -4,7 +4,7 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "369",
-    "x_views": "276.7K",
+    "x_views": "322.0K",
     "date": "23 Aug",
     "yt_views": "283",
     "ig_likes": "286",
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -32,7 +32,7 @@
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "495",
-    "x_views": "107.8K",
+    "x_views": "179.6K",
     "date": "16 Aug",
     "yt_views": "139",
     "ig_likes": "213",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -79,9 +79,9 @@
     "yt_views": "170",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "696.1K",
-    "_x_status": "FETCH_FAILED:Exception",
-    "_x_passes": 6,
+    "x_views": "823.7K",
+    "_x_status": "MEASURED",
+    "_x_passes": 2,
     "date_prov": "rumble_video_page_time_datetime"
   },
   {
@@ -108,8 +108,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "234.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "696.8K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime"
   },
@@ -236,7 +236,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-08-28T10:01:54Z",
+    "_carried_forward_iso": "2026-08-28T10:15:35Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6

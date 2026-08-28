@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-28T09:20:09Z",
-  "last_updated": "2026-08-28T09:20:09Z",
+  "iso": "2026-08-28T10:15:49Z",
+  "last_updated": "2026-08-28T10:15:49Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "339.5K",
+        "x_views": "53.7K",
         "ig_likes": "581"
       }
     },
@@ -70,7 +70,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "3.1K",
-        "x_views": "261.8K",
+        "x_views": "262.1K",
         "ig_likes": "3.0K"
       }
     },
@@ -93,8 +93,8 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "41.1K",
-        "x_views": "168.5K",
+        "yt_views": "41.2K",
+        "x_views": "257.5K",
         "ig_likes": "828"
       }
     },
@@ -118,10 +118,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "8.0K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "433.2K",
         "ig_likes": "2.5K"
       }
     },
@@ -343,7 +340,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.5K",
-        "x_views": "260.0K",
+        "x_views": "233.3K",
         "ig_likes": "1.1K"
       }
     },
@@ -412,8 +409,8 @@
       },
       "metrics": {
         "rumble_views": "369",
-        "yt_views": "277",
-        "x_views": "276.7K",
+        "yt_views": "283",
+        "x_views": "322.0K",
         "ig_likes": "286"
       }
     },
@@ -437,7 +434,7 @@
       "metrics": {
         "rumble_views": "495",
         "yt_views": "139",
-        "x_views": "107.8K",
+        "x_views": "179.6K",
         "ig_likes": "213"
       }
     },
@@ -460,8 +457,8 @@
       },
       "metrics": {
         "rumble_views": "528",
-        "yt_views": "169",
-        "x_views": "696.1K",
+        "yt_views": "170",
+        "x_views": "823.7K",
         "ig_likes": "276"
       }
     },
@@ -485,7 +482,7 @@
       "metrics": {
         "rumble_views": "591",
         "yt_views": "291",
-        "x_views": "234.1K",
+        "x_views": "696.8K",
         "ig_likes": "230"
       }
     },
@@ -651,7 +648,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "339.5K",
+        "x_views": "53.7K",
         "ig_likes": "581"
       }
     },
@@ -675,7 +672,7 @@
       "metrics": {
         "rumble_views": "3.4K",
         "yt_views": "3.1K",
-        "x_views": "261.8K",
+        "x_views": "262.1K",
         "ig_likes": "3.0K"
       }
     },
@@ -698,8 +695,8 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "41.1K",
-        "x_views": "168.5K",
+        "yt_views": "41.2K",
+        "x_views": "257.5K",
         "ig_likes": "828"
       }
     },
@@ -723,10 +720,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "8.0K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "433.2K",
         "ig_likes": "2.5K"
       }
     }
@@ -751,8 +745,8 @@
       },
       "metrics": {
         "rumble_views": "369",
-        "yt_views": "277",
-        "x_views": "276.7K",
+        "yt_views": "283",
+        "x_views": "322.0K",
         "ig_likes": "286"
       }
     },
@@ -776,7 +770,7 @@
       "metrics": {
         "rumble_views": "495",
         "yt_views": "139",
-        "x_views": "107.8K",
+        "x_views": "179.6K",
         "ig_likes": "213"
       }
     },
@@ -799,8 +793,8 @@
       },
       "metrics": {
         "rumble_views": "528",
-        "yt_views": "169",
-        "x_views": "696.1K",
+        "yt_views": "170",
+        "x_views": "823.7K",
         "ig_likes": "276"
       }
     },
@@ -824,7 +818,7 @@
       "metrics": {
         "rumble_views": "591",
         "yt_views": "291",
-        "x_views": "234.1K",
+        "x_views": "696.8K",
         "ig_likes": "230"
       }
     },
