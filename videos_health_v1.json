@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-28T04:20:06Z",
-  "last_updated": "2026-08-28T04:20:06Z",
+  "iso": "2026-08-28T05:20:06Z",
+  "last_updated": "2026-08-28T05:20:06Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -93,9 +93,36 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "40.3K",
+        "yt_views": "40.5K",
         "x_views": "168.5K",
         "ig_likes": "828"
+      }
+    },
+    {
+      "guest": "Hasan Ünal",
+      "surname": "ÜNAL",
+      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "date": "7 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "3.5K",
+        "yt_views": "8.0K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": "2.5K"
       }
     },
     {
@@ -270,6 +297,33 @@
       }
     },
     {
+      "guest": "James Carden",
+      "surname": "CARDEN",
+      "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
+      "date": "11 Jul",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
+      "canonical_episode_id": "bce46f2dc542",
+      "canonical_video_id": "Cc9-pfOYmWQ",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
+      "canonical_episode_id_v2": "4298e576095c64c0",
+      "pub_iso": "2026-07-11T11:47:03Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Cc9-pfOYmWQ"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "2.7K",
+        "yt_views": "1.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": "521"
+      }
+    },
+    {
       "guest": "Tobias Ellwood",
       "surname": "ELLWOOD",
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
@@ -357,8 +411,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "365",
-        "yt_views": "270",
+        "rumble_views": "367",
+        "yt_views": "274",
         "x_views": "276.7K",
         "ig_likes": "285"
       }
@@ -381,7 +435,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "489",
+        "rumble_views": "491",
         "yt_views": "139",
         "x_views": "107.8K",
         "ig_likes": "213"
@@ -405,7 +459,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "524",
+        "rumble_views": "526",
         "yt_views": "169",
         "x_views": "696.1K",
         "ig_likes": "276"
@@ -453,7 +507,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "677",
+        "rumble_views": "678",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -477,7 +531,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "784",
+        "rumble_views": "787",
         "yt_views": "1.1K",
         "x_views": "550.4K",
         "ig_likes": "350"
@@ -644,33 +698,36 @@
       },
       "metrics": {
         "rumble_views": "3.2K",
-        "yt_views": "40.3K",
+        "yt_views": "40.5K",
         "x_views": "168.5K",
         "ig_likes": "828"
       }
     },
     {
-      "guest": "Gabor Maté",
-      "surname": "MATÉ",
-      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
-      "date": "3 Aug",
+      "guest": "Hasan Ünal",
+      "surname": "ÜNAL",
+      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "date": "7 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": "PUw_r6rI5PY",
-      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id_v2": "5e4fb101123620bc",
-      "pub_iso": "2026-08-03T22:18:20Z",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
       "source_platform_ids": {
         "youtube": [
-          "PUw_r6rI5PY"
+          "6nISoLoPlO4"
         ]
       },
       "metrics": {
-        "rumble_views": "3.6K",
-        "yt_views": "54.6K",
-        "x_views": "292.7K",
-        "ig_likes": "5.2K"
+        "rumble_views": "3.5K",
+        "yt_views": "8.0K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": "2.5K"
       }
     }
   ],
@@ -693,8 +750,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "365",
-        "yt_views": "270",
+        "rumble_views": "367",
+        "yt_views": "274",
         "x_views": "276.7K",
         "ig_likes": "285"
       }
@@ -717,7 +774,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "489",
+        "rumble_views": "491",
         "yt_views": "139",
         "x_views": "107.8K",
         "ig_likes": "213"
@@ -741,7 +798,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "524",
+        "rumble_views": "526",
         "yt_views": "169",
         "x_views": "696.1K",
         "ig_likes": "276"
@@ -789,7 +846,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "677",
+        "rumble_views": "678",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
