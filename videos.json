@@ -109,7 +109,7 @@
     "rumble_views": null,
     "x_views": null,
     "date": "7 Aug",
-    "yt_views": "8.0K",
+    "yt_views": "8.1K",
     "ig_likes": null,
     "canonical_guest_full_name": "Hasan \u00dcnal",
     "canonical_surname_upper": "\u00dcNAL",
@@ -371,7 +371,7 @@
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-08-29T10:45:14Z",
+    "_carried_forward_iso": "2026-08-29T11:07:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -386,7 +386,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-08-29T10:45:14Z",
+    "_carried_forward_iso": "2026-08-29T11:07:23Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
