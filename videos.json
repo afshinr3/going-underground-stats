@@ -6,7 +6,7 @@
     "date": "25 Aug",
     "rumble_views": "2.4K",
     "x_views": "628.9K",
-    "ig_likes": "507",
+    "ig_likes": "504",
     "show": "GU",
     "canonical_guest_full_name": "Ken Silva",
     "canonical_surname_upper": "SILVA",
@@ -30,8 +30,8 @@
     "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America\u2019s Wars: Success or Failure?",
     "date": "22 Aug",
     "rumble_views": "2.1K",
-    "x_views": "642.9K",
-    "ig_likes": "583",
+    "x_views": "53.8K",
+    "ig_likes": "582",
     "show": "GU",
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
     "canonical_surname_upper": "O\u2019HANLON",
@@ -46,8 +46,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "2.0K"
+    "_x_status": "MEASURED",
+    "yt_views": "2.0K",
+    "_x_passes": 3
   },
   {
     "guest": "Philip Pilkington",
@@ -55,7 +56,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.5K",
-    "x_views": "262.5K",
+    "x_views": "262.8K",
     "ig_likes": "3.0K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -71,8 +72,9 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "3.1K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "3.1K",
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
@@ -80,7 +82,7 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.3K",
-    "x_views": "168.5K",
+    "x_views": "71.6K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
@@ -96,8 +98,9 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "42.6K"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "yt_views": "42.6K",
+    "_x_passes": 6
   },
   {
     "guest": "Hasan \u00dcnal",
@@ -377,7 +380,7 @@
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
     "rumble_views": "3.9K",
-    "x_views": null,
+    "x_views": "207.3K",
     "ig_likes": "1.6K",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
@@ -385,6 +388,7 @@
     "canonical_episode_id": "437b917e580d",
     "_carried_forward_iso": "2026-08-29T02:01:45Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6
   }
 ]
