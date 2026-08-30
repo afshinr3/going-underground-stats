@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-30T00:20:10Z",
-  "last_updated": "2026-08-30T00:20:10Z",
+  "iso": "2026-08-30T01:20:06Z",
+  "last_updated": "2026-08-30T01:20:06Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -8,46 +8,38 @@
       "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
       "date": "25 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+      "link": "",
       "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": "XSlrLlk8WrM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
-      "canonical_episode_id_v2": "028a119cb410b046",
-      "pub_iso": "2026-08-25T22:45:28Z",
-      "source_platform_ids": {
-        "youtube": [
-          "XSlrLlk8WrM"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "1.8K",
+        "yt_views": null,
         "x_views": "628.9K",
         "ig_likes": "510"
       }
     },
     {
-      "guest": "Michael O’Hanlon",
-      "surname": "O’HANLON",
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "link": "",
       "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": "Eu0Phb99ipg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "canonical_episode_id_v2": "20fc52f5bc97c24f",
-      "pub_iso": "2026-08-22T11:55:34Z",
-      "source_platform_ids": {
-        "youtube": [
-          "Eu0Phb99ipg"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.1K",
-        "yt_views": "2.0K",
-        "x_views": "53.9K",
-        "ig_likes": "584"
+        "yt_views": null,
+        "x_views": "644.1K",
+        "ig_likes": "466"
       }
     },
     {
@@ -56,20 +48,16 @@
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+      "link": "",
       "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": "w7KXuXugzlA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": "6f9f42c60330bac0",
-      "pub_iso": "2026-08-17T10:43:18Z",
-      "source_platform_ids": {
-        "youtube": [
-          "w7KXuXugzlA"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "3.1K",
+        "yt_views": null,
         "x_views": "263.5K",
         "ig_likes": "3.1K"
       }
@@ -80,46 +68,18 @@
       "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
       "date": "10 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "link": "",
       "canonical_episode_id": "e664d5dd55a6",
-      "canonical_video_id": "TuFMmjBU3Vw",
-      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
-      "canonical_episode_id_v2": "dd4cbedfd850395d",
-      "pub_iso": "2026-08-10T13:10:52Z",
-      "source_platform_ids": {
-        "youtube": [
-          "TuFMmjBU3Vw"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "42.8K",
-        "x_views": "258.0K",
+        "yt_views": null,
+        "x_views": "168.5K",
         "ig_likes": "828"
-      }
-    },
-    {
-      "guest": "Hasan Ünal",
-      "surname": "ÜNAL",
-      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
-      "date": "7 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": "6nISoLoPlO4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id_v2": "fb275712144dd36d",
-      "pub_iso": "2026-08-07T12:13:55Z",
-      "source_platform_ids": {
-        "youtube": [
-          "6nISoLoPlO4"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.5K",
-        "yt_views": "8.1K",
-        "x_views": "433.3K",
-        "ig_likes": "2.5K"
       }
     },
     {
@@ -128,93 +88,77 @@
       "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
       "date": "3 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+      "link": "",
       "canonical_episode_id": "0d30042528a6",
-      "canonical_video_id": "PUw_r6rI5PY",
-      "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id_v2": "5e4fb101123620bc",
-      "pub_iso": "2026-08-03T22:18:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "PUw_r6rI5PY"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.7K",
-        "yt_views": "56.7K",
+        "yt_views": null,
         "x_views": "293.1K",
         "ig_likes": "5.2K"
       }
     },
     {
-      "guest": "Robert Barnes",
+      "guest": "Trump’s Ex-Lawyer Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+      "link": "",
       "canonical_episode_id": "c133da20813e",
-      "canonical_video_id": "N_ysv6Gh9Ac",
-      "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id_v2": "7edf3af7b8798e44",
-      "pub_iso": "2026-08-01T21:22:19Z",
-      "source_platform_ids": {
-        "youtube": [
-          "N_ysv6Gh9Ac"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "15.8K",
-        "yt_views": "3.3K",
-        "x_views": "372.4K",
+        "yt_views": null,
+        "x_views": "372.5K",
         "ig_likes": "1.1K"
       }
     },
     {
-      "guest": "Ami Ayalon",
+      "guest": "of Israel’s Shin Bet Ami Ayalon",
       "surname": "AYALON",
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+      "link": "",
       "canonical_episode_id": "349527d06a1f",
-      "canonical_video_id": "pzEU7fNiXgc",
-      "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
-      "canonical_episode_id_v2": "86e2d81a08f45d8e",
-      "pub_iso": "2026-07-27T15:50:41Z",
-      "source_platform_ids": {
-        "youtube": [
-          "pzEU7fNiXgc"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "1.7K",
+        "yt_views": null,
         "x_views": "290.7K",
         "ig_likes": "10.9K"
       }
     },
     {
-      "guest": "Daniel Levy",
+      "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "link": "",
       "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": "IGlM3ZTHIY8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
-      "canonical_episode_id_v2": "4a0e3632a2a01b42",
-      "pub_iso": "2026-07-25T13:30:22Z",
-      "source_platform_ids": {
-        "youtube": [
-          "IGlM3ZTHIY8"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "4.1K",
-        "x_views": "600.5K",
+        "yt_views": null,
+        "x_views": "600.6K",
         "ig_likes": "2.0K"
       }
     },
@@ -224,20 +168,16 @@
       "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
       "date": "20 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "link": "",
       "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": "_SVI4UPDX7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "canonical_episode_id_v2": "3c04f341a327a14e",
-      "pub_iso": "2026-07-20T20:04:05Z",
-      "source_platform_ids": {
-        "youtube": [
-          "_SVI4UPDX7g"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "3.1K",
+        "yt_views": null,
         "x_views": "295.3K",
         "ig_likes": "1.6K"
       }
@@ -248,76 +188,41 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "link": "",
       "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": "WlIY7-ovBd8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "canonical_episode_id_v2": "4a4b17f0a7877200",
-      "pub_iso": "2026-07-18T11:32:42Z",
-      "source_platform_ids": {
-        "youtube": [
-          "WlIY7-ovBd8"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.8K",
-        "yt_views": "4.3K",
+        "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
+          "reason": "UNMEASURED"
         },
         "ig_likes": "1.8K"
       }
     },
     {
-      "guest": "Dennis Fritz",
-      "surname": "FRITZ",
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+      "link": "",
       "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": "grMo8SmAQpU",
-      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
-      "canonical_episode_id_v2": "af16e80c488f7ef0",
-      "pub_iso": "2026-07-13T16:25:30Z",
-      "source_platform_ids": {
-        "youtube": [
-          "grMo8SmAQpU"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "1.1K",
-        "x_views": "416.1K",
-        "ig_likes": "454"
-      }
-    },
-    {
-      "guest": "James Carden",
-      "surname": "CARDEN",
-      "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
-      "date": "11 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-      "canonical_episode_id": "bce46f2dc542",
-      "canonical_video_id": "Cc9-pfOYmWQ",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-      "canonical_episode_id_v2": "4298e576095c64c0",
-      "pub_iso": "2026-07-11T11:47:03Z",
-      "source_platform_ids": {
-        "youtube": [
-          "Cc9-pfOYmWQ"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.7K",
-        "yt_views": "1.5K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": "521"
+        "yt_views": null,
+        "x_views": "416.3K",
+        "ig_likes": "1.9K"
       }
     },
     {
@@ -326,21 +231,17 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+      "link": "",
       "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": "SmH-aEMZyqg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
-      "canonical_episode_id_v2": "e5c307d186579b5a",
-      "pub_iso": "2026-07-06T10:38:50Z",
-      "source_platform_ids": {
-        "youtube": [
-          "SmH-aEMZyqg"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "1.5K",
-        "x_views": "261.3K",
+        "yt_views": null,
+        "x_views": "261.4K",
         "ig_likes": "1.1K"
       }
     },
@@ -432,7 +333,7 @@
       },
       "metrics": {
         "rumble_views": "400",
-        "yt_views": "513",
+        "yt_views": "525",
         "x_views": "324.1K",
         "ig_likes": "288"
       }
@@ -455,7 +356,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "521",
+        "rumble_views": "522",
         "yt_views": "140",
         "x_views": "179.8K",
         "ig_likes": "213"
@@ -479,7 +380,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "555",
+        "rumble_views": "557",
         "yt_views": "171",
         "x_views": "823.9K",
         "ig_likes": "276"
@@ -503,7 +404,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "613",
+        "rumble_views": "614",
         "yt_views": "291",
         "x_views": "697.0K",
         "ig_likes": "230"
@@ -551,7 +452,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "818",
+        "rumble_views": "819",
         "yt_views": "1.1K",
         "x_views": "564.7K",
         "ig_likes": "351"
@@ -633,46 +534,38 @@
       "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
       "date": "25 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+      "link": "",
       "canonical_episode_id": "f9189e08f1d7",
-      "canonical_video_id": "XSlrLlk8WrM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
-      "canonical_episode_id_v2": "028a119cb410b046",
-      "pub_iso": "2026-08-25T22:45:28Z",
-      "source_platform_ids": {
-        "youtube": [
-          "XSlrLlk8WrM"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "1.8K",
+        "yt_views": null,
         "x_views": "628.9K",
         "ig_likes": "510"
       }
     },
     {
-      "guest": "Michael O’Hanlon",
-      "surname": "O’HANLON",
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "link": "",
       "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": "Eu0Phb99ipg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "canonical_episode_id_v2": "20fc52f5bc97c24f",
-      "pub_iso": "2026-08-22T11:55:34Z",
-      "source_platform_ids": {
-        "youtube": [
-          "Eu0Phb99ipg"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.1K",
-        "yt_views": "2.0K",
-        "x_views": "53.9K",
-        "ig_likes": "584"
+        "yt_views": null,
+        "x_views": "644.1K",
+        "ig_likes": "466"
       }
     },
     {
@@ -681,20 +574,16 @@
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
       "date": "17 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+      "link": "",
       "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": "w7KXuXugzlA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": "6f9f42c60330bac0",
-      "pub_iso": "2026-08-17T10:43:18Z",
-      "source_platform_ids": {
-        "youtube": [
-          "w7KXuXugzlA"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "3.1K",
+        "yt_views": null,
         "x_views": "263.5K",
         "ig_likes": "3.1K"
       }
@@ -705,46 +594,38 @@
       "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
       "date": "10 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+      "link": "",
       "canonical_episode_id": "e664d5dd55a6",
-      "canonical_video_id": "TuFMmjBU3Vw",
-      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
-      "canonical_episode_id_v2": "dd4cbedfd850395d",
-      "pub_iso": "2026-08-10T13:10:52Z",
-      "source_platform_ids": {
-        "youtube": [
-          "TuFMmjBU3Vw"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "42.8K",
-        "x_views": "258.0K",
+        "yt_views": null,
+        "x_views": "168.5K",
         "ig_likes": "828"
       }
     },
     {
-      "guest": "Hasan Ünal",
-      "surname": "ÜNAL",
-      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
-      "date": "7 Aug",
+      "guest": "Gabor Maté",
+      "surname": "MATÉ",
+      "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
+      "date": "3 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id": "c5f74b00a6fa",
-      "canonical_video_id": "6nISoLoPlO4",
-      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-      "canonical_episode_id_v2": "fb275712144dd36d",
-      "pub_iso": "2026-08-07T12:13:55Z",
-      "source_platform_ids": {
-        "youtube": [
-          "6nISoLoPlO4"
-        ]
-      },
+      "link": "",
+      "canonical_episode_id": "0d30042528a6",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.5K",
-        "yt_views": "8.1K",
-        "x_views": "433.3K",
-        "ig_likes": "2.5K"
+        "rumble_views": "3.7K",
+        "yt_views": null,
+        "x_views": "293.1K",
+        "ig_likes": "5.2K"
       }
     }
   ],
@@ -768,7 +649,7 @@
       },
       "metrics": {
         "rumble_views": "400",
-        "yt_views": "513",
+        "yt_views": "525",
         "x_views": "324.1K",
         "ig_likes": "288"
       }
@@ -791,7 +672,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "521",
+        "rumble_views": "522",
         "yt_views": "140",
         "x_views": "179.8K",
         "ig_likes": "213"
@@ -815,7 +696,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "555",
+        "rumble_views": "557",
         "yt_views": "171",
         "x_views": "823.9K",
         "ig_likes": "276"
@@ -839,7 +720,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "613",
+        "rumble_views": "614",
         "yt_views": "291",
         "x_views": "697.0K",
         "ig_likes": "230"
