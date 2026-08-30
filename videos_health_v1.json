@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-29T23:43:42Z",
-  "last_updated": "2026-08-29T23:43:42Z",
+  "iso": "2026-08-30T00:20:10Z",
+  "last_updated": "2026-08-30T00:20:10Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -47,7 +47,7 @@
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
         "x_views": "53.9K",
-        "ig_likes": "466"
+        "ig_likes": "584"
       }
     },
     {
@@ -116,10 +116,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.5K",
         "yt_views": "8.1K",
         "x_views": "433.3K",
-        "ig_likes": null
+        "ig_likes": "2.5K"
       }
     },
     {
@@ -290,7 +290,7 @@
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
         "x_views": "416.1K",
-        "ig_likes": "1.9K"
+        "ig_likes": "454"
       }
     },
     {
@@ -311,13 +311,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.7K",
         "yt_views": "1.5K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "521"
       }
     },
     {
@@ -432,7 +432,7 @@
       },
       "metrics": {
         "rumble_views": "400",
-        "yt_views": "514",
+        "yt_views": "513",
         "x_views": "324.1K",
         "ig_likes": "288"
       }
@@ -672,7 +672,7 @@
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
         "x_views": "53.9K",
-        "ig_likes": "466"
+        "ig_likes": "584"
       }
     },
     {
@@ -741,10 +741,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.5K",
         "yt_views": "8.1K",
         "x_views": "433.3K",
-        "ig_likes": null
+        "ig_likes": "2.5K"
       }
     }
   ],
@@ -768,7 +768,7 @@
       },
       "metrics": {
         "rumble_views": "400",
-        "yt_views": "514",
+        "yt_views": "513",
         "x_views": "324.1K",
         "ig_likes": "288"
       }
