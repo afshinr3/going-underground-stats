@@ -1,6 +1,6 @@
 {
-  "iso": "2026-08-30T02:20:04Z",
-  "last_updated": "2026-08-30T02:20:04Z",
+  "iso": "2026-08-30T03:20:04Z",
+  "last_updated": "2026-08-30T03:20:04Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -21,9 +21,9 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "1.8K",
+        "yt_views": "1.9K",
         "x_views": "628.9K",
-        "ig_likes": "510"
+        "ig_likes": "511"
       }
     },
     {
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "644.1K",
+        "x_views": "515.4K",
         "ig_likes": "584"
       }
     },
@@ -118,7 +118,10 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "8.1K",
-        "x_views": "433.4K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "2.5K"
       }
     },
@@ -166,7 +169,7 @@
       "metrics": {
         "rumble_views": "15.8K",
         "yt_views": "3.3K",
-        "x_views": "372.5K",
+        "x_views": "372.6K",
         "ig_likes": "1.1K"
       }
     },
@@ -262,7 +265,10 @@
       "metrics": {
         "rumble_views": "3.8K",
         "yt_views": "4.3K",
-        "x_views": "209.2K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "1.8K"
       }
     },
@@ -286,7 +292,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "195.0K",
+        "x_views": "416.4K",
         "ig_likes": "454"
       }
     },
@@ -310,7 +316,10 @@
       "metrics": {
         "rumble_views": "2.7K",
         "yt_views": "1.5K",
-        "x_views": "127.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "521"
       }
     },
@@ -334,7 +343,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.5K",
-        "x_views": "234.6K",
+        "x_views": "261.5K",
         "ig_likes": "1.1K"
       }
     },
@@ -358,7 +367,7 @@
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "818"
+        "ig_likes": "835"
       }
     },
     {
@@ -381,30 +390,7 @@
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "2.1K"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": "737"
+        "ig_likes": "1.5K"
       }
     },
     {
@@ -616,7 +602,7 @@
         "rumble_views": "545",
         "yt_views": "0",
         "x_views": "88.1K",
-        "ig_likes": "753"
+        "ig_likes": "292"
       }
     }
   ],
@@ -640,9 +626,9 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "1.8K",
+        "yt_views": "1.9K",
         "x_views": "628.9K",
-        "ig_likes": "510"
+        "ig_likes": "511"
       }
     },
     {
@@ -665,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.1K",
         "yt_views": "2.0K",
-        "x_views": "644.1K",
+        "x_views": "515.4K",
         "ig_likes": "584"
       }
     },
@@ -737,7 +723,10 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "8.1K",
-        "x_views": "433.4K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": "2.5K"
       }
     }
