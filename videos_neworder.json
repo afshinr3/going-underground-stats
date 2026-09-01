@@ -4,9 +4,9 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "464",
-    "x_views": "326.2K",
+    "x_views": "280.5K",
     "date": "23 Aug",
-    "yt_views": "893",
+    "yt_views": "904",
     "ig_likes": "290",
     "canonical_guest_full_name": "David Monyae",
     "canonical_surname_upper": "MONYAE",
@@ -23,16 +23,16 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America\u2019s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "587",
-    "x_views": "180.4K",
+    "x_views": "108.0K",
     "date": "16 Aug",
     "yt_views": "140",
     "ig_likes": "213",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "show": "NO",
     "_x_passes": 6
   },
@@ -79,8 +79,8 @@
     "yt_views": "173",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
-    "x_views": "824.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "696.5K",
+    "_x_status": "MEASURED",
     "_x_passes": 3,
     "date_prov": "rumble_video_page_time_datetime"
   },
@@ -108,8 +108,8 @@
     "yt_views": "291",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "697.4K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "x_views": "234.3K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime"
   },
@@ -236,7 +236,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-09-01T09:51:04Z",
+    "_carried_forward_iso": "2026-09-01T10:09:59Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6
