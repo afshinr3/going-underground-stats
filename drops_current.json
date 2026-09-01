@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-01T02:57:32Z",
+  "updated": "2026-09-01T03:44:53Z",
   "drops": [
     {
-      "ts": "2026-09-01T02:57:32Z",
+      "ts": "2026-09-01T03:44:53Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
@@ -10,16 +10,6 @@
       "peak_at": "2026-09-01T00:21:19Z",
       "current": 168500,
       "drop_pct": 34.9
-    },
-    {
-      "ts": "2026-09-01T02:57:32Z",
-      "show": "GU",
-      "guest": "Mearsheimer",
-      "platform": "RUMBLE",
-      "peak": 5500,
-      "peak_at": "2026-08-31T17:38:38Z",
-      "current": 3400,
-      "drop_pct": 38.2
     }
   ]
 }
