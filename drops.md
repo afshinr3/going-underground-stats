@@ -41754,3 +41754,9 @@
 | Show | Guest | Platform | Peak | Peak time | Now | Drop |
 |------|-------|----------|------|-----------|-----|------|
 | GU | Mearsheimer | RUMBLE | 5.5K | 2026-08-31T17:38 | 3.4K | **-38.2%** |
+
+## 2026-09-01 06:04:13.588841
+
+| Show | Guest | Platform | Peak | Peak time | Now | Drop |
+|------|-------|----------|------|-----------|-----|------|
+| GU | Mearsheimer | RUMBLE | 5.5K | 2026-08-31T17:38 | 3.4K | **-38.2%** |
