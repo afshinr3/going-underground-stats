@@ -1,4 +1,15 @@
 {
-  "updated": "2026-09-02T00:50:28Z",
-  "drops": []
+  "updated": "2026-09-02T01:13:01Z",
+  "drops": [
+    {
+      "ts": "2026-09-02T01:13:01Z",
+      "show": "GU",
+      "guest": "Mearsheimer",
+      "platform": "X",
+      "peak": 259100,
+      "peak_at": "2026-09-01T23:27:32Z",
+      "current": 168500,
+      "drop_pct": 35.0
+    }
+  ]
 }
