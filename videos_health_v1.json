@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-02T18:28:36Z",
-  "last_updated": "2026-09-02T18:28:36Z",
+  "iso": "2026-09-02T19:20:04Z",
+  "last_updated": "2026-09-02T19:20:04Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -361,13 +361,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.5K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "?"
+        "ig_likes": "867"
       }
     },
     {
@@ -384,13 +384,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.9K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "?"
+        "ig_likes": "923"
       }
     },
     {
@@ -460,7 +460,7 @@
       },
       "metrics": {
         "rumble_views": "658",
-        "yt_views": "175",
+        "yt_views": "174",
         "x_views": "824.8K",
         "ig_likes": "276"
       }
@@ -483,7 +483,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "686",
+        "rumble_views": "687",
         "yt_views": "291",
         "x_views": "697.6K",
         "ig_likes": "230"
@@ -507,7 +507,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -799,7 +799,7 @@
       },
       "metrics": {
         "rumble_views": "658",
-        "yt_views": "175",
+        "yt_views": "174",
         "x_views": "824.8K",
         "ig_likes": "276"
       }
@@ -822,7 +822,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "686",
+        "rumble_views": "687",
         "yt_views": "291",
         "x_views": "697.6K",
         "ig_likes": "230"
@@ -846,7 +846,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
