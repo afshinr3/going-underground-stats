@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-02T15:06:04Z",
-  "last_updated": "2026-09-02T15:06:04Z",
+  "iso": "2026-09-02T15:20:07Z",
+  "last_updated": "2026-09-02T15:20:07Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -361,13 +361,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.5K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "?"
+        "ig_likes": "867"
       }
     },
     {
@@ -384,13 +384,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.9K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED"
         },
-        "ig_likes": "?"
+        "ig_likes": "2.5K"
       }
     },
     {
@@ -411,7 +411,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "488",
+        "rumble_views": "491",
         "yt_views": "1.2K",
         "x_views": "326.7K",
         "ig_likes": "291"
@@ -750,7 +750,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "488",
+        "rumble_views": "491",
         "yt_views": "1.2K",
         "x_views": "326.7K",
         "ig_likes": "291"
