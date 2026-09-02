@@ -810,8 +810,8 @@
     "ig_likes_at": "2026-08-10T15:31:06Z",
     "rumble_views": 685,
     "rumble_views_at": "2026-09-02T13:42:27Z",
-    "x_views": 697500,
-    "x_views_at": "2026-09-01T23:27:32Z"
+    "x_views": 697600,
+    "x_views_at": "2026-09-02T15:06:05Z"
   },
   "GU:Mat\u00e9": {
     "x_views": 861100,
@@ -821,7 +821,7 @@
     "rumble_views": 3800,
     "rumble_views_at": "2026-09-01T06:52:13Z",
     "yt_views": 60500,
-    "yt_views_at": "2026-09-02T14:51:10Z"
+    "yt_views_at": "2026-09-02T15:06:05Z"
   },
   "NO:Fernandez": {
     "yt_views": 174,
@@ -850,8 +850,8 @@
     "ig_likes_at": "2026-08-22T18:28:40Z",
     "rumble_views": 5500,
     "rumble_views_at": "2026-08-31T17:38:38Z",
-    "x_views": 259100,
-    "x_views_at": "2026-09-01T23:27:32Z"
+    "x_views": 259300,
+    "x_views_at": "2026-09-02T15:06:05Z"
   },
   "GU:Milanovic": {
     "ig_likes": 606,
@@ -878,16 +878,16 @@
     "ig_likes_at": "2026-09-01T09:28:57Z",
     "rumble_views": 3700,
     "rumble_views_at": "2026-09-02T00:28:17Z",
-    "x_views": 266500,
-    "x_views_at": "2026-09-02T06:16:01Z",
+    "x_views": 266800,
+    "x_views_at": "2026-09-02T15:06:05Z",
     "yt_views": 3200,
     "yt_views_at": "2026-08-30T07:33:25Z"
   },
   "NO:Monyae": {
     "rumble_views": 6200,
     "rumble_views_at": "2026-08-22T08:26:56Z",
-    "x_views": 326600,
-    "x_views_at": "2026-09-02T06:16:01Z",
+    "x_views": 326700,
+    "x_views_at": "2026-09-02T15:06:05Z",
     "ig_likes": 291,
     "ig_likes_at": "2026-09-02T03:30:28Z",
     "yt_views": 1200,
@@ -921,6 +921,6 @@
     "rumble_views": 2800,
     "rumble_views_at": "2026-09-02T03:30:28Z",
     "yt_views": 2100,
-    "yt_views_at": "2026-09-02T14:51:10Z"
+    "yt_views_at": "2026-09-02T15:06:05Z"
   }
 }
