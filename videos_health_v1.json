@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-02T04:20:05Z",
-  "last_updated": "2026-09-02T04:20:05Z",
+  "iso": "2026-09-02T05:20:04Z",
+  "last_updated": "2026-09-02T05:20:04Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -23,8 +23,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -39,7 +39,7 @@
         "rumble_views": "2.3K",
         "yt_views": null,
         "x_views": "518.8K",
-        "ig_likes": "470"
+        "ig_likes": "589"
       }
     },
     {
@@ -103,7 +103,7 @@
       }
     },
     {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
+      "guest": "Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
@@ -123,7 +123,7 @@
       }
     },
     {
-      "guest": "of Israel’s Shin Bet Ami Ayalon",
+      "guest": "Ami Ayalon",
       "surname": "AYALON",
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
@@ -143,7 +143,7 @@
       }
     },
     {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
+      "guest": "Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
@@ -200,14 +200,14 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "1.8K"
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -222,7 +222,7 @@
         "rumble_views": "3.3K",
         "yt_views": null,
         "x_views": "420.4K",
-        "ig_likes": "1.8K"
+        "ig_likes": "454"
       }
     },
     {
@@ -263,7 +263,7 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "867"
       }
@@ -286,32 +286,9 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "1.2K"
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
       }
     },
     {
@@ -356,7 +333,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "608",
+        "rumble_views": "609",
         "yt_views": "141",
         "x_views": "180.5K",
         "ig_likes": "213"
@@ -428,7 +405,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "752",
+        "rumble_views": "753",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -452,7 +429,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "883",
+        "rumble_views": "884",
         "yt_views": "1.1K",
         "x_views": "564.8K",
         "ig_likes": "351"
@@ -549,8 +526,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -565,7 +542,7 @@
         "rumble_views": "2.3K",
         "yt_views": null,
         "x_views": "518.8K",
-        "ig_likes": "470"
+        "ig_likes": "589"
       }
     },
     {
@@ -672,7 +649,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "608",
+        "rumble_views": "609",
         "yt_views": "141",
         "x_views": "180.5K",
         "ig_likes": "213"
@@ -744,7 +721,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "752",
+        "rumble_views": "753",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
