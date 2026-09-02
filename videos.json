@@ -46,9 +46,9 @@
         "Eu0Phb99ipg"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "2.1K",
-    "_x_passes": 3
+    "_x_passes": 4
   },
   {
     "guest": "Philip Pilkington",
@@ -56,7 +56,7 @@
     "title": "Iran War: Trump\u2019s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "3.7K",
-    "x_views": "267.0K",
+    "x_views": "267.1K",
     "ig_likes": "3.2K",
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
@@ -72,16 +72,16 @@
         "w7KXuXugzlA"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "yt_views": "3.3K",
-    "_x_passes": 3
+    "_x_passes": 6
   },
   {
     "guest": "John Mearsheimer",
     "surname": "Mearsheimer",
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
-    "rumble_views": "5.5K",
+    "rumble_views": "3.4K",
     "x_views": "259.4K",
     "ig_likes": "828",
     "show": "GU",
@@ -98,16 +98,16 @@
         "TuFMmjBU3Vw"
       ]
     },
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED",
     "yt_views": "42.9K",
-    "_x_passes": 6
+    "_x_passes": 2
   },
   {
     "guest": "Hasan \u00dcnal",
     "surname": "\u00dcnal",
     "title": "Professor Hasan \u00dcnal: Iran\u2019s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
     "rumble_views": "3.6K",
-    "x_views": null,
+    "x_views": "433.6K",
     "date": "7 Aug",
     "yt_views": "8.1K",
     "ig_likes": "2.5K",
@@ -126,8 +126,9 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "show": "GU"
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "show": "GU",
+    "_x_passes": 6
   },
   {
     "guest": "Gabor Mat\u00e9",
@@ -209,7 +210,7 @@
     "surname": "Levy",
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends\u2014 Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
-    "rumble_views": "6.8K",
+    "rumble_views": "3.0K",
     "x_views": "603.6K",
     "ig_likes": "2.0K",
     "show": "GU",
@@ -259,7 +260,7 @@
     "surname": "Wilkerson",
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
-    "rumble_views": "1.8K",
+    "rumble_views": "3.8K",
     "x_views": null,
     "ig_likes": "1.8K",
     "show": "GU",
@@ -283,7 +284,7 @@
     "guest": "Dennis Fritz",
     "surname": "Fritz",
     "title": "CMSGT. Dennis Fritz: Israel\u2019s Influence Over Trump\u2019s Pentagon Is EVEN WORSE Than Under Bush!",
-    "rumble_views": "2.6K",
+    "rumble_views": "3.3K",
     "x_views": "421.0K",
     "date": "13 Jul",
     "yt_views": "1.1K",
@@ -363,14 +364,14 @@
     "surname": "Kucinich",
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
-    "rumble_views": "101",
-    "x_views": null,
-    "ig_likes": "867",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-09-02T23:27:12Z",
+    "_carried_forward_iso": "2026-09-02T23:33:18Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -378,14 +379,14 @@
     "surname": "Blumenthal",
     "title": "Max Blumenthal Reveals Why Trump\u2019s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
-    "rumble_views": null,
-    "x_views": null,
-    "ig_likes": "930",
+    "rumble_views": "?",
+    "x_views": "?",
+    "ig_likes": "?",
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-09-02T23:27:12Z",
+    "_carried_forward_iso": "2026-09-02T23:33:18Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
