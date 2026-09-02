@@ -25,7 +25,7 @@
     "canonical_guest_full_name": "Michael O\u2019Hanlon",
     "canonical_surname_upper": "O\u2019HANLON",
     "canonical_episode_id": "6f96fd46bb55",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -40,7 +40,7 @@
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -55,7 +55,7 @@
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -182,7 +182,7 @@
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   },
   {
@@ -197,7 +197,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6
   }
 ]
