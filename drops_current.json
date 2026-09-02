@@ -1,8 +1,18 @@
 {
-  "updated": "2026-09-02T03:54:45Z",
+  "updated": "2026-09-02T04:17:12Z",
   "drops": [
     {
-      "ts": "2026-09-02T03:54:45Z",
+      "ts": "2026-09-02T04:17:12Z",
+      "show": "GU",
+      "guest": "Ex-",
+      "platform": "X",
+      "peak": 770300,
+      "peak_at": "2026-09-02T02:44:52Z",
+      "current": 518799,
+      "drop_pct": 32.6
+    },
+    {
+      "ts": "2026-09-02T04:17:12Z",
       "show": "GU",
       "guest": "Mearsheimer",
       "platform": "X",
