@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-02T17:20:04Z",
-  "last_updated": "2026-09-02T17:20:04Z",
+  "iso": "2026-09-02T18:20:07Z",
+  "last_updated": "2026-09-02T18:20:07Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -144,7 +144,7 @@
       },
       "metrics": {
         "rumble_views": "3.8K",
-        "yt_views": "60.5K",
+        "yt_views": "60.6K",
         "x_views": "293.9K",
         "ig_likes": "5.2K"
       }
@@ -394,29 +394,6 @@
       }
     },
     {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "David Monyae",
       "surname": "MONYAE",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
@@ -506,7 +483,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "686",
+        "rumble_views": "687",
         "yt_views": "291",
         "x_views": "697.6K",
         "ig_likes": "230"
@@ -530,7 +507,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -845,7 +822,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "686",
+        "rumble_views": "687",
         "yt_views": "291",
         "x_views": "697.6K",
         "ig_likes": "230"
@@ -869,7 +846,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
