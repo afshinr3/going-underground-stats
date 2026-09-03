@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-03T01:43:57Z",
-  "last_updated": "2026-09-03T01:43:57Z",
+  "iso": "2026-09-03T02:20:03Z",
+  "last_updated": "2026-09-03T02:20:03Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -20,10 +20,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "2.1K",
         "x_views": "628.9K",
-        "ig_likes": null
+        "ig_likes": "572"
       }
     },
     {
@@ -44,10 +44,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.3K",
         "yt_views": "2.1K",
         "x_views": "54.3K",
-        "ig_likes": null
+        "ig_likes": "589"
       }
     },
     {
@@ -68,10 +68,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.7K",
         "yt_views": "3.3K",
         "x_views": "267.2K",
-        "ig_likes": null
+        "ig_likes": "3.2K"
       }
     },
     {
@@ -92,10 +92,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.4K",
         "yt_views": "42.9K",
         "x_views": "259.5K",
-        "ig_likes": null
+        "ig_likes": "828"
       }
     },
     {
@@ -116,13 +116,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.6K",
         "yt_views": "8.1K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "2.5K"
       }
     },
     {
@@ -143,10 +143,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.8K",
         "yt_views": "60.8K",
         "x_views": "294.0K",
-        "ig_likes": null
+        "ig_likes": "5.2K"
       }
     },
     {
@@ -167,10 +167,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "16.0K",
         "yt_views": "3.3K",
         "x_views": "376.3K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -191,10 +191,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.4K",
         "yt_views": "1.7K",
         "x_views": "291.7K",
-        "ig_likes": null
+        "ig_likes": "10.9K"
       }
     },
     {
@@ -215,10 +215,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.0K",
         "yt_views": "4.2K",
         "x_views": "604.0K",
-        "ig_likes": null
+        "ig_likes": "2.0K"
       }
     },
     {
@@ -239,10 +239,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.2K",
         "yt_views": "3.1K",
         "x_views": "298.1K",
-        "ig_likes": null
+        "ig_likes": "1.6K"
       }
     },
     {
@@ -263,13 +263,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.8K",
         "yt_views": "4.3K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "1.8K"
       }
     },
     {
@@ -290,10 +290,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.3K",
         "yt_views": "1.1K",
         "x_views": "421.5K",
-        "ig_likes": null
+        "ig_likes": "454"
       }
     },
     {
@@ -314,13 +314,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.7K",
         "yt_views": "1.6K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "521"
       }
     },
     {
@@ -341,10 +341,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.5K",
         "yt_views": "1.5K",
         "x_views": "237.8K",
-        "ig_likes": null
+        "ig_likes": "1.1K"
       }
     },
     {
@@ -361,13 +361,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.5K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": "?"
+        "ig_likes": "867"
       }
     },
     {
@@ -384,13 +384,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.9K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": "?"
+        "ig_likes": "930"
       }
     },
     {
@@ -411,7 +411,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "497",
+        "rumble_views": "499",
         "yt_views": "1.3K",
         "x_views": "326.9K",
         "ig_likes": "291"
@@ -435,7 +435,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "621",
+        "rumble_views": "622",
         "yt_views": "142",
         "x_views": "180.8K",
         "ig_likes": "213"
@@ -459,7 +459,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "665",
+        "rumble_views": "666",
         "yt_views": "175",
         "x_views": "824.9K",
         "ig_likes": "276"
@@ -483,7 +483,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "692",
+        "rumble_views": "693",
         "yt_views": "291",
         "x_views": "697.7K",
         "ig_likes": "230"
@@ -507,7 +507,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "768",
+        "rumble_views": "770",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
@@ -625,10 +625,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "2.1K",
         "x_views": "628.9K",
-        "ig_likes": null
+        "ig_likes": "572"
       }
     },
     {
@@ -649,10 +649,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.3K",
         "yt_views": "2.1K",
         "x_views": "54.3K",
-        "ig_likes": null
+        "ig_likes": "589"
       }
     },
     {
@@ -673,10 +673,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.7K",
         "yt_views": "3.3K",
         "x_views": "267.2K",
-        "ig_likes": null
+        "ig_likes": "3.2K"
       }
     },
     {
@@ -697,10 +697,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.4K",
         "yt_views": "42.9K",
         "x_views": "259.5K",
-        "ig_likes": null
+        "ig_likes": "828"
       }
     },
     {
@@ -721,13 +721,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.6K",
         "yt_views": "8.1K",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": null
+        "ig_likes": "2.5K"
       }
     }
   ],
@@ -750,7 +750,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "497",
+        "rumble_views": "499",
         "yt_views": "1.3K",
         "x_views": "326.9K",
         "ig_likes": "291"
@@ -774,7 +774,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "621",
+        "rumble_views": "622",
         "yt_views": "142",
         "x_views": "180.8K",
         "ig_likes": "213"
@@ -798,7 +798,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "665",
+        "rumble_views": "666",
         "yt_views": "175",
         "x_views": "824.9K",
         "ig_likes": "276"
@@ -822,7 +822,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "692",
+        "rumble_views": "693",
         "yt_views": "291",
         "x_views": "697.7K",
         "ig_likes": "230"
@@ -846,7 +846,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "768",
+        "rumble_views": "770",
         "yt_views": "133",
         "x_views": "131.1K",
         "ig_likes": "585"
