@@ -62,8 +62,8 @@
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "MEASURED",
-    "_x_passes": 3,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "canonical_video_id": "w7KXuXugzlA",
     "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
     "pub_iso": "2026-08-17T10:43:18Z",
@@ -82,14 +82,14 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.5K",
-    "x_views": "259.9K",
+    "x_views": "72.0K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "MEASURED",
-    "_x_passes": 4,
+    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_passes": 6,
     "canonical_video_id": "TuFMmjBU3Vw",
     "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
     "pub_iso": "2026-08-10T13:10:52Z",
@@ -153,7 +153,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "yt_views": "61.8K"
+    "yt_views": "61.9K"
   },
   {
     "guest": "Robert Barnes",
@@ -339,13 +339,13 @@
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
     "rumble_views": "2.5K",
-    "x_views": "265.1K",
+    "x_views": "237.9K",
     "ig_likes": "1.1K",
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "canonical_video_id": "SmH-aEMZyqg",
     "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
     "pub_iso": "2026-07-06T10:38:50Z",
@@ -356,7 +356,8 @@
         "SmH-aEMZyqg"
       ]
     },
-    "yt_views": "1.5K"
+    "yt_views": "1.5K",
+    "_x_passes": 6
   },
   {
     "guest": "Dennis Kucinich",
@@ -371,7 +372,7 @@
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
     "_x_status": "MEASURED_LOWER_BOUND",
-    "_carried_forward_iso": "2026-09-04T14:47:38Z",
+    "_carried_forward_iso": "2026-09-04T18:05:08Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_passes": 6
   },
@@ -388,7 +389,7 @@
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
     "_x_status": "MEASURED_LOWER_BOUND",
-    "_carried_forward_iso": "2026-09-04T14:47:38Z",
+    "_carried_forward_iso": "2026-09-04T18:05:08Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_passes": 6
   }
