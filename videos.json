@@ -82,14 +82,14 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.5K",
-    "x_views": "142.2K",
+    "x_views": "72.0K",
     "ig_likes": "828",
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "MEASURED_LOWER_BOUND",
-    "_x_passes": 6,
+    "_x_status": "MEASURED",
+    "_x_passes": 4,
     "canonical_video_id": "TuFMmjBU3Vw",
     "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
     "pub_iso": "2026-08-10T13:10:52Z",
@@ -153,7 +153,7 @@
         "PUw_r6rI5PY"
       ]
     },
-    "yt_views": "62.0K"
+    "yt_views": "62.1K"
   },
   {
     "guest": "Robert Barnes",
@@ -329,7 +329,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "_x_status": "MEASURED_LOWER_BOUND",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_passes": 6,
     "show": "GU"
   },
@@ -372,7 +372,7 @@
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
     "_x_status": "MEASURED_LOWER_BOUND",
-    "_carried_forward_iso": "2026-09-04T20:36:34Z",
+    "_carried_forward_iso": "2026-09-04T22:44:01Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_passes": 6
   },
@@ -389,7 +389,7 @@
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
     "_x_status": "MEASURED_LOWER_BOUND",
-    "_carried_forward_iso": "2026-09-04T20:36:34Z",
+    "_carried_forward_iso": "2026-09-04T22:44:01Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_passes": 6
   }
