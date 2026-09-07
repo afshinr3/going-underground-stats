@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-07T16:28:51Z",
-  "last_updated": "2026-09-07T16:28:51Z",
+  "iso": "2026-09-07T18:36:18Z",
+  "last_updated": "2026-09-07T18:36:18Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "2.1K",
+        "yt_views": "2.2K",
         "x_views": "628.9K",
         "ig_likes": null
       }
@@ -394,29 +394,6 @@
       }
     },
     {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "David Monyae",
       "surname": "MONYAE",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
@@ -649,7 +626,7 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "2.1K",
+        "yt_views": "2.2K",
         "x_views": "628.9K",
         "ig_likes": null
       }
