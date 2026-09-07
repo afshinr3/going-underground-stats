@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-07T23:07:47Z",
-  "last_updated": "2026-09-07T23:07:47Z",
+  "iso": "2026-09-07T23:20:14Z",
+  "last_updated": "2026-09-07T23:20:14Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -385,29 +385,6 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.9K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
