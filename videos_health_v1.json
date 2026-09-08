@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-08T09:20:13Z",
-  "last_updated": "2026-09-08T09:20:13Z",
+  "iso": "2026-09-08T10:20:20Z",
+  "last_updated": "2026-09-08T10:20:20Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.1K",
-        "x_views": "343.0K",
+        "x_views": "343.1K",
         "ig_likes": null
       }
     },
@@ -169,7 +169,7 @@
       "metrics": {
         "rumble_views": "16.0K",
         "yt_views": "3.3K",
-        "x_views": "378.8K",
+        "x_views": "378.9K",
         "ig_likes": null
       }
     },
@@ -217,7 +217,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "4.2K",
-        "x_views": "606.2K",
+        "x_views": "606.3K",
         "ig_likes": null
       }
     },
@@ -292,7 +292,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "610.3K",
+        "x_views": "610.6K",
         "ig_likes": null
       }
     },
@@ -385,29 +385,6 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.9K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -674,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.1K",
-        "x_views": "343.0K",
+        "x_views": "343.1K",
         "ig_likes": null
       }
     },
