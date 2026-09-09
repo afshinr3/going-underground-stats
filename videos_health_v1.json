@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-08T23:47:50Z",
-  "last_updated": "2026-09-08T23:47:50Z",
+  "iso": "2026-09-09T01:20:12Z",
+  "last_updated": "2026-09-09T01:20:12Z",
   "episodes": [
     {
       "guest": "Ken Silva",
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.1K",
-        "x_views": "523.4K",
+        "x_views": "523.5K",
         "ig_likes": null
       }
     },
@@ -145,7 +145,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "63.5K",
-        "x_views": "294.7K",
+        "x_views": "294.8K",
         "ig_likes": null
       }
     },
@@ -169,7 +169,7 @@
       "metrics": {
         "rumble_views": "16.0K",
         "yt_views": "3.3K",
-        "x_views": "379.3K",
+        "x_views": "379.4K",
         "ig_likes": null
       }
     },
@@ -292,7 +292,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "612.1K",
+        "x_views": "612.5K",
         "ig_likes": null
       }
     },
@@ -343,7 +343,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "1.5K",
-        "x_views": "267.7K",
+        "x_views": "267.8K",
         "ig_likes": null
       }
     },
@@ -385,29 +385,6 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "3.9K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED"
-        },
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "‘The US LACKS THE POWER TO DEF",
-      "surname": "DEF",
-      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
-      "date": "27 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "95d519473319",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.6K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -674,7 +651,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.1K",
-        "x_views": "523.4K",
+        "x_views": "523.5K",
         "ig_likes": null
       }
     },
