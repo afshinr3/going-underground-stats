@@ -1,5 +1,32 @@
 [
   {
+    "guest": "Tucker Carlson",
+    "surname": "Carlson",
+    "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
+    "rumble_views": null,
+    "x_views": null,
+    "date": "11 Sep",
+    "yt_views": "5",
+    "ig_likes": null,
+    "canonical_guest_full_name": "Tucker Carlson",
+    "canonical_surname_upper": "CARLSON",
+    "canonical_episode_id": "692029c34641",
+    "_yt_content_type": "EPISODE",
+    "_yt_class_confidence": "HIGH",
+    "canonical_video_id": "JUHl-tQRN7g",
+    "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+    "pub_iso": "2026-09-11T22:32:20Z",
+    "canonical_episode_id_v2": "f9bdbb4afb5f669d",
+    "source_platform_ids": {
+      "youtube": [
+        "JUHl-tQRN7g"
+      ]
+    },
+    "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "show": "GU"
+  },
+  {
     "guest": "Ken Silva",
     "surname": "Silva",
     "title": "The Trump Assassination Plots: What You Haven\u2019t Been Told (Ken Silva)",
@@ -367,7 +394,7 @@
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-09-11T22:28:52Z",
+    "_carried_forward_iso": "2026-09-11T22:50:54Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -382,7 +409,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-09-11T22:28:52Z",
+    "_carried_forward_iso": "2026-09-11T22:50:54Z",
     "_carried_forward_reason": "absent from this run\u2019s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
