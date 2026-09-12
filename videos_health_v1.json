@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-11T23:52:44Z",
-  "last_updated": "2026-09-11T23:52:44Z",
+  "iso": "2026-09-12T01:51:25Z",
+  "last_updated": "2026-09-12T01:51:25Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "66",
+        "yt_views": "216",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
@@ -653,7 +653,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "66",
+        "yt_views": "216",
         "x_views": {
           "status": "N/A",
           "reason": "UNMEASURED_NO_POSTS_FOUND"
