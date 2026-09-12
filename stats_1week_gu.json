@@ -5,7 +5,7 @@
   "window_end": "2026-09-14",
   "window_start_mon": "2026-09-11",
   "window_end_sun": "2026-09-14",
-  "generated_at": "2026-09-12T06:44:03.324141Z",
+  "generated_at": "2026-09-12T11:29:40.094056Z",
   "n": 1,
   "entries": [
     {
@@ -20,7 +20,18 @@
       "canonical_guest_full_name": "Tucker Carlson",
       "canonical_surname_upper": "CARLSON",
       "canonical_episode_id": "692029c34641",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+      "canonical_video_id": "JUHl-tQRN7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+      "pub_iso": "2026-09-11T22:32:20Z",
+      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
+      "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+      "source_platform_ids": {
+        "youtube": [
+          "JUHl-tQRN7g"
+        ]
+      },
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "yt_views": "3.6K"
     }
   ],
   "source_feed": "videos.json",
