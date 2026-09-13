@@ -5,7 +5,7 @@
   "window_end": "2026-09-14",
   "window_start_mon": "2026-09-11",
   "window_end_sun": "2026-09-14",
-  "generated_at": "2026-09-12T23:47:55.177590Z",
+  "generated_at": "2026-09-13T00:20:04.200784Z",
   "n": 1,
   "entries": [
     {
@@ -13,7 +13,7 @@
       "surname": "Carlson",
       "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
       "date": "11 Sep",
-      "rumble_views": null,
+      "rumble_views": "2.2K",
       "x_views": "120.3K",
       "ig_likes": null,
       "show": "GU",
@@ -31,7 +31,7 @@
         ]
       },
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "9.9K"
+      "yt_views": "10.3K"
     }
   ],
   "source_feed": "videos.json",
