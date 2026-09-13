@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-13T04:20:04Z",
-  "last_updated": "2026-09-13T04:20:04Z",
+  "iso": "2026-09-13T05:20:04Z",
+  "last_updated": "2026-09-13T05:20:04Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -16,7 +16,7 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.3K",
+        "rumble_views": "2.4K",
         "yt_views": null,
         "x_views": "341.9K",
         "ig_likes": null
@@ -43,8 +43,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -123,7 +123,7 @@
       }
     },
     {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
+      "guest": "Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
@@ -143,7 +143,7 @@
       }
     },
     {
-      "guest": "of Israel’s Shin Bet Ami Ayalon",
+      "guest": "Ami Ayalon",
       "surname": "AYALON",
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
@@ -163,7 +163,7 @@
       }
     },
     {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
+      "guest": "Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
@@ -220,14 +220,14 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": null
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -283,7 +283,7 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": null
       }
@@ -306,7 +306,7 @@
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": null
       }
@@ -539,7 +539,7 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.3K",
+        "rumble_views": "2.4K",
         "yt_views": null,
         "x_views": "341.9K",
         "ig_likes": null
@@ -566,8 +566,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
