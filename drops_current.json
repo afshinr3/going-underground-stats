@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-14T13:04:40Z",
+  "updated": "2026-09-14T13:51:36Z",
   "drops": [
     {
-      "ts": "2026-09-14T13:04:40Z",
+      "ts": "2026-09-14T13:51:36Z",
       "show": "NO",
       "guest": "Baharoon",
       "platform": "RUMBLE",
       "peak": 3100,
       "peak_at": "2026-09-13T20:35:51Z",
-      "current": 833,
+      "current": 835,
       "drop_pct": 73.1
     }
   ]
