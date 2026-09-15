@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-15T14:20:04Z",
-  "last_updated": "2026-09-15T14:20:04Z",
+  "iso": "2026-09-15T15:58:37Z",
+  "last_updated": "2026-09-15T15:58:37Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "4.0K",
-        "yt_views": "37.3K",
+        "yt_views": "37.6K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "2.3K",
-        "x_views": "105.4K",
+        "x_views": "105.5K",
         "ig_likes": null
       }
     },
@@ -70,7 +70,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "781.1K",
+        "x_views": "345.6K",
         "ig_likes": null
       }
     },
@@ -94,7 +94,7 @@
       "metrics": {
         "rumble_views": "4.1K",
         "yt_views": "3.4K",
-        "x_views": "204.1K",
+        "x_views": "204.3K",
         "ig_likes": null
       }
     },
@@ -140,7 +140,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": null,
         "yt_views": "8.2K",
         "x_views": {
           "status": "N/A",
@@ -169,7 +169,7 @@
       "metrics": {
         "rumble_views": "4.0K",
         "yt_views": "64.1K",
-        "x_views": "296.0K",
+        "x_views": "296.1K",
         "ig_likes": null
       }
     },
@@ -241,7 +241,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "4.3K",
-        "x_views": "611.3K",
+        "x_views": "611.5K",
         "ig_likes": null
       }
     },
@@ -316,7 +316,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "442.7K",
+        "x_views": "443.1K",
         "ig_likes": null
       }
     },
@@ -338,7 +338,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
+        "rumble_views": null,
         "yt_views": "1.6K",
         "x_views": {
           "status": "N/A",
@@ -363,7 +363,7 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": null,
-        "x_views": "272.6K",
+        "x_views": "272.7K",
         "ig_likes": null
       }
     },
@@ -646,7 +646,7 @@
       },
       "metrics": {
         "rumble_views": "4.0K",
-        "yt_views": "37.3K",
+        "yt_views": "37.6K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -671,7 +671,7 @@
       "metrics": {
         "rumble_views": "3.5K",
         "yt_views": "2.3K",
-        "x_views": "105.4K",
+        "x_views": "105.5K",
         "ig_likes": null
       }
     },
@@ -695,7 +695,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.2K",
-        "x_views": "781.1K",
+        "x_views": "345.6K",
         "ig_likes": null
       }
     },
@@ -719,7 +719,7 @@
       "metrics": {
         "rumble_views": "4.1K",
         "yt_views": "3.4K",
-        "x_views": "204.1K",
+        "x_views": "204.3K",
         "ig_likes": null
       }
     },
