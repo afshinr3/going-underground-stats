@@ -925,8 +925,37 @@ def _url_bind_sort_by_pub_iso(cache):
 # --- end CANONICAL_URL_BIND_V1_2026_07_20 helpers ----------------------------
 
 
-X_COOKIES = json.loads(os.environ.get("X_COOKIES_JSON", "[]"))
-IG_COOKIES = json.loads(os.environ.get("IG_COOKIES_JSON", "[]"))
+def _norm_cookies(raw, default_domain):
+    """COOKIE_FORMAT_V1_20260917 — accept Cookie-Editor / EditThisCookie / Playwright exports.
+    Cookie-Editor writes sameSite 'no_restriction'/'unspecified' and 'expirationDate',
+    which Playwright's add_cookies rejects outright (every X search then fails)."""
+    try:
+        data = json.loads(raw or "[]")
+    except Exception:
+        print(f"COOKIES: {default_domain} secret is not valid JSON", file=sys.stderr)
+        return []
+    if isinstance(data, dict):
+        data = data.get("cookies") or [{"name": k, "value": v} for k, v in data.items()]
+    ss = {"no_restriction": "None", "none": "None", "lax": "Lax", "strict": "Strict"}
+    out = []
+    for c in data if isinstance(data, list) else []:
+        if not isinstance(c, dict) or not c.get("name"):
+            continue
+        d = {"name": c["name"], "value": str(c.get("value", "")),
+             "domain": c.get("domain") or default_domain, "path": c.get("path") or "/",
+             "secure": bool(c.get("secure", True)), "httpOnly": bool(c.get("httpOnly", False))}
+        exp = c.get("expires", c.get("expirationDate"))
+        if isinstance(exp, (int, float)) and exp > 0:
+            d["expires"] = float(exp)
+        s_ = ss.get(str(c.get("sameSite", "")).lower())
+        if s_:
+            d["sameSite"] = s_
+        out.append(d)
+    return out
+
+
+X_COOKIES = _norm_cookies(os.environ.get("X_COOKIES_JSON"), ".x.com")
+IG_COOKIES = _norm_cookies(os.environ.get("IG_COOKIES_JSON"), ".instagram.com")
 
 TIDBYT_DEVICES = [
     {"id": "winsomely-tidy-chic-roach-990",
