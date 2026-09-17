@@ -1212,6 +1212,14 @@ def fetch_instagram_clips(known_surnames=None):
         r = requests.get(
             'https://i.instagram.com/api/v1/users/web_profile_info/?username=afshinrattansi',
             headers=headers, timeout=15)
+        # IG_AUTH_DIAGNOSIS_V1_20260917 — a login redirect / block returns HTML, which used to
+        # surface only as "Expecting value: line 1 column 1" and every ig_likes went null.
+        if r.status_code != 200 or 'json' not in (r.headers.get('content-type') or ''):
+            print(f"IG error: IG_AUTH_FAILED status={r.status_code} "
+                  f"content-type={r.headers.get('content-type')} final_url={r.url[:80]} — "
+                  f"refresh the IG_COOKIES_JSON secret (instagram.com session expired or blocked)",
+                  file=sys.stderr)
+            return {}
         user_id = r.json()['data']['user']['id']
         clips = {}
         max_id = ''
@@ -1775,6 +1783,158 @@ async def _scrape_x_search(ctx, query):
         await page.close()
 
 
+# X_EPISODE_ENGAGEMENT_V1_20260917 — count EVERY X post about an episode, not a sample.
+#
+# The old method searched only `from:GUnderground_TV|afshinrattansi "<guest>"`, read the
+# DOM after 5 scrolls, and so missed (a) clips whose text does not repeat the guest's name
+# — Tucker Carlson's clips quote the premiere post instead — and (b) every post by anyone
+# else. Measured 17 Sep 2026 in a logged-in browser: the Tucker premiere alone had 454K
+# views and 23 quote posts with another 586K, while the feed showed 684K.
+#
+# Now, per episode, reading X's own GraphQL responses (exact ids, views, quote links):
+#   1. own posts naming the guest (full name or surname) since air date  -> seeds
+#   2. every post by anyone quoting a seed, then quoting those (2 levels)
+#   3. posts by anyone naming the guest together with the show / host
+# Union by tweet id, max views per id. Native reposts carry no views of their own and are
+# not counted. A search that never renders raises, so failure is never recorded as zero.
+
+def _x_walk(obj, out):
+    stack = [obj]
+    while stack:
+        o = stack.pop()
+        if isinstance(o, list):
+            stack.extend(o); continue
+        if not isinstance(o, dict):
+            continue
+        if o.get('__typename') == 'TweetWithVisibilityResults' and isinstance(o.get('tweet'), dict):
+            t = dict(o['tweet']); t['__typename'] = 'Tweet'; stack.append(t)
+        if o.get('__typename') == 'Tweet' and isinstance(o.get('legacy'), dict) and o.get('rest_id'):
+            L = o['legacy']
+            try:
+                views = int(((o.get('views') or {}).get('count')) or 0)
+            except Exception:
+                views = 0
+            u = ((o.get('core') or {}).get('user_results') or {}).get('result') or {}
+            user = ((u.get('core') or {}).get('screen_name')
+                    or (u.get('legacy') or {}).get('screen_name') or '')
+            qr = (o.get('quoted_status_result') or {}).get('result') or {}
+            quoted = qr.get('rest_id') or (qr.get('tweet') or {}).get('rest_id') or L.get('quoted_status_id_str')
+            text = (((o.get('note_tweet') or {}).get('note_tweet_results') or {}).get('result') or {}).get('text') \
+                or L.get('full_text') or ''
+            rid = o['rest_id']
+            prev = out.get(rid)
+            if not prev or views > prev['views']:
+                out[rid] = {'id': rid, 'user': user, 'views': views, 'quoted': quoted,
+                            'quotes': int(L.get('quote_count') or 0),
+                            'retweeted': bool(L.get('retweeted_status_result')),
+                            'created_at': L.get('created_at'), 'text': text}
+        # Do NOT descend into embedded quoted / reposted tweets: only posts the search itself
+        # returned are counted (a mention quoting an unrelated viral post must not add its views).
+        stack.extend(v for k, v in o.items() if isinstance(v, (dict, list))
+                     and k not in ('quoted_status_result', 'retweeted_status_result'))
+
+
+async def _x_search_graphql(ctx, query, max_scrolls=40):
+    """Run an X search (Latest) and return {tweet_id: record} from X's own API responses.
+    Scrolls until X stops returning new posts. Raises if the results never render."""
+    out, seen_resp = {}, [0]
+    page = await ctx.new_page()
+
+    async def on_resp(resp):
+        if 'SearchTimeline' not in resp.url:
+            return
+        try:
+            _x_walk(await resp.json(), out)
+            seen_resp[0] += 1
+        except Exception:
+            pass
+    page.on('response', on_resp)
+    try:
+        await page.goto('https://x.com/search?q=' + urllib.parse.quote(query) + '&f=live',
+                        wait_until='domcontentloaded', timeout=30000)
+        if 'login' in page.url.lower():
+            raise Exception('X login wall (X_COOKIES_JSON expired)')
+        try:
+            await page.wait_for_selector('article[data-testid="tweet"]', timeout=20000)
+        except Exception:
+            body = ''
+            try:
+                body = (await page.inner_text('body'))[:4000]
+            except Exception:
+                pass
+            if re.search(r'No results for|not find any results|Try searching for something else', body, re.I):
+                return {}
+            raise Exception('x_search_results_never_rendered')
+        stale = 0
+        for _ in range(max_scrolls):
+            before = (len(out), seen_resp[0])
+            await page.mouse.wheel(0, 6000)
+            await page.wait_for_timeout(1800)
+            stale = stale + 1 if (len(out), seen_resp[0]) == before else 0
+            if stale >= 4:
+                break
+        return out
+    finally:
+        await page.close()
+
+
+async def fetch_x_episode_engagement(ctx, show_handle, full_name, surname, since_date):
+    """Total X views of every post about one episode. Returns (views, n_posts, detail)."""
+    own = f'(from:{show_handle} OR from:afshinrattansi)'
+    since = f' since:{since_date}' if since_date else ''
+    names = [n for n in {full_name.strip(), (surname or '').strip()} if n and len(n) > 3]
+    name_q = '(' + ' OR '.join(f'"{n}"' for n in names) + ')'
+    posts, rendered = {}, 0
+
+    async def run(q):
+        nonlocal rendered
+        last = None
+        for _ in range(3):                      # X search is intermittent; retry renders
+            try:
+                res = await _x_search_graphql(ctx, q)
+                rendered += 1
+                for k, v in res.items():
+                    if k not in posts or v['views'] > posts[k]['views']:
+                        posts[k] = v
+                return res
+            except Exception as e:
+                last = e
+        print(f"    [X_ENGAGEMENT] query failed after retries: {q[:90]} ({last})", file=sys.stderr)
+        return {}
+
+    # 1. own posts naming the guest -> seeds
+    seeds = await run(f'{own} {name_q}{since}')
+    # 2. quotes of seeds, then quotes of those (by anyone)
+    frontier = [k for k, v in seeds.items() if not v['retweeted']]
+    done = set()
+    for _level in range(2):
+        todo = [k for k in frontier if k not in done]
+        done.update(todo)
+        new = {}
+        for i in range(0, len(todo), 12):
+            chunk = todo[i:i + 12]
+            res = await run(' OR '.join(f'quoted_tweet_id:{k}' for k in chunk))
+            new.update(res)
+        frontier = [k for k, v in new.items() if v['quotes'] > 0]
+        if not frontier:
+            break
+    # 3. mentions of the guest with the show or host, by anyone
+    show_terms = f'("Going Underground" OR @{show_handle} OR @afshinrattansi OR Rattansi)'
+    if show_handle.lower() == 'newordertv':
+        show_terms = f'("New Order" OR @{show_handle} OR @afshinrattansi OR Rattansi)'
+    await run(f'{name_q} {show_terms}{since}')
+
+    if rendered == 0:
+        raise Exception('x_engagement_no_search_rendered')
+    counted = {k: v for k, v in posts.items() if not v['retweeted']}
+    own_views = sum(v['views'] for v in counted.values()
+                    if v['user'].lower() in (show_handle.lower(), 'afshinrattansi'))
+    total = sum(v['views'] for v in counted.values())
+    return total, len(counted), {'own_views': own_views, 'others_views': total - own_views,
+                                 'searches_rendered': rendered,
+                                 'ids': {k: v['views'] for k, v in counted.items()}}
+
+
 # Bounded: X will not be argued with. Three passes recovered every case measured.
 MAX_X_SEARCH_PASSES = 6
 
@@ -2326,9 +2486,28 @@ async def update_show(show, ig_clips):
                                 ctx, handles, term, since_date=since, _return_ids=ids,
                                 _meta_out=_meta)
 
-                        await _accum(full_name)
-                        if surname and len(surname) > 3:
-                            await _accum(surname)
+                        # X_EPISODE_ENGAGEMENT_V1_20260917 — primary measurement: every post
+                        # about the episode (own clips, quotes by anyone, mentions by anyone).
+                        _eng_ok = False
+                        try:
+                            _et, _en, _ed = await fetch_x_episode_engagement(
+                                ctx, show['x_handle'], full_name, surname, since)
+                            for _k, _vv in _ed['ids'].items():
+                                if _vv > ids.get(_k, 0):
+                                    ids[_k] = _vv
+                            v['_x_own_views'] = _ed['own_views']
+                            v['_x_others_views'] = _ed['others_views']
+                            v['_x_posts'] = _en
+                            _eng_ok = True
+                            print(f"  {surname}: X engagement {_en} posts, "
+                                  f"{format_views(_et)} (own {format_views(_ed['own_views'])}, "
+                                  f"others {format_views(_ed['others_views'])})")
+                        except Exception as _ee:
+                            print(f"  {surname}: X engagement failed: {_ee}", file=sys.stderr)
+                        if not _eng_ok:
+                            await _accum(full_name)
+                            if surname and len(surname) > 3:
+                                await _accum(surname)
                         total, count = sum(ids.values()), len(ids)
                         # Fallback 2 (x_date_window shows): sum handle tweets in episode date window
                         if total == 0 and use_date_window:
