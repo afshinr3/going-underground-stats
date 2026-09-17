@@ -154,6 +154,12 @@ check("'Martin Luther King III' -> King", m.extract_surname("Martin Luther King 
 check("'Sr.' alone is not a surname", m.extract_surname("Sr.") is None)
 check("plain names unchanged", m.extract_surname("Prof. David Monyae") == "Monyae")
 
+check("GUEST_BY_VIDEO_ID binds the 15 Aug role-only GU title to Milanović",
+      m.GUEST_BY_VIDEO_ID.get("eyfC-IBPTOM") == "Branko Milanović")
+check("Milanović resolves via CANON_MAP from the guest field",
+      (m._canonical_from_title("Ex-World Bank Lead Economist Says WW3", "Branko Milanović", "Milanović")[0]
+       == "Branko Milanović"))
+
 print(f"\n{'All guest-resolution tests passed.' if not FAILED else str(len(FAILED)) + ' FAILURES'}"
       f"  ({len(PASSED)} passed)")
 sys.exit(0 if not FAILED else 1)

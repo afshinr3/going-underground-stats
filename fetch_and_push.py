@@ -86,6 +86,16 @@ CANON_MAP = {
     "clark":       "Wesley Clark",
     "vallely":     "Paul Vallely",
     "astore":      "William J. Astore",
+    "milanović":   "Branko Milanović",
+    "milanovic":   "Branko Milanović",
+}
+
+# GU_GUEST_BY_VIDEO_ID_V1_20260917 — exact YouTube video id -> guest, for episodes whose
+# title names the guest only by role. Each entry verified from the video description.
+GUEST_BY_VIDEO_ID = {
+    # 15 Aug GU "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely..."
+    # description: "we speak to Prof. Branko Milanovic, former Lead Economist at the World Bank"
+    "eyfC-IBPTOM": "Branko Milanović",
 }
 _CANON_BAD_PREFIXES = ("Ex-", "Former ", "Fmr ", "SLAMS ", "BLASTS ",
                        "REVEALS ", "EXPOSES ", "WARNS ", "'", "\u2018", "\u2019")
@@ -1584,6 +1594,18 @@ def discover_new_episodes(channel_id, data_file):
             # would legitimise whatever junk it was handed. Empty in means only a
             # positive CANON_MAP hit comes out, so this can name a guest it knows and
             # never invents one it does not.
+            # GU_GUEST_BY_VIDEO_ID_V1_20260917 — titles that name the guest only by role
+            # ("Ex-World Bank Lead Economist Says WW3 ...") and whose announcement post also
+            # omits the name cannot be resolved by the parser, CANON_MAP or the posts
+            # resolver. Bind them by exact YouTube video id, verified against the video's own
+            # description, never by title text.
+            if not guest or not surname:
+                _vid_m = re.search(r"(?:v=|/shorts/|youtu\.be/)([A-Za-z0-9_-]{11})", link_href or "")
+                _vid_guest = GUEST_BY_VIDEO_ID.get(_vid_m.group(1)) if _vid_m else None
+                if _vid_guest:
+                    guest = _vid_guest
+                    surname = _vid_guest.split()[-1]
+                    print(f"  GUEST_BY_VIDEO_ID: {surname} <- {_vid_m.group(1)} :: {title[:50]}...")
             if not guest or not surname:
                 _cfn_i, _csu_i, _ = _canonical_from_title(title, "", "")
                 if _cfn_i and _csu_i:
