@@ -828,8 +828,8 @@
     "yt_views_at": "2026-09-15T04:14:10Z",
     "ig_likes": 276,
     "ig_likes_at": "2026-08-25T22:50:55Z",
-    "rumble_views": 909,
-    "rumble_views_at": "2026-09-16T22:34:48Z",
+    "rumble_views": 910,
+    "rumble_views_at": "2026-09-17T02:47:13Z",
     "x_views": 879500,
     "x_views_at": "2026-08-11T16:38:59Z"
   },
@@ -933,7 +933,12 @@
   },
   "NO:Batista": {
     "yt_views": 4300,
-    "yt_views_at": "2026-09-17T01:07:22Z"
+    "yt_views_at": "2026-09-17T01:07:22Z",
+    "rumble_views": 601,
+    "rumble_views_at": "2026-09-17T02:47:13Z"
   },
-  "GU:Milanovi\u0107": {}
+  "GU:Milanovi\u0107": {
+    "rumble_views": 3000,
+    "rumble_views_at": "2026-09-17T02:47:13Z"
+  }
 }
