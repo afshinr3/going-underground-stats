@@ -2573,7 +2573,7 @@ async def update_show(show, ig_clips):
                     _v["guest"] = _canon
                     # Rewrite surname too so downstream extractors don't re-read stale
                     # value like "War" (Carden) or "Minister" (Ellwood).
-                    _v["surname"] = _canon.split()[-1]
+                    _v["surname"] = extract_surname(_canon) or _canon.split()[-1]
                 _canon_resolved += 1
             else:
                 _v.setdefault("canonical_guest_full_name", None)
@@ -2583,7 +2583,9 @@ async def update_show(show, ig_clips):
             # renderer and push84_lametric.py never fall back to raw `surname`.
             _cs_source = _canon or _v.get("canonical_guest_full_name") or _v.get("surname") or ""
             if _cs_source:
-                _last_word = _cs_source.split()[-1] if " " in _cs_source else _cs_source
+                # GU_SURNAME_GENERATIONAL_SUFFIX_V1_20260917 — "Batista Jr." must emit BATISTA, not JR.
+                _last_word = ((extract_surname(_cs_source) if " " in _cs_source else None)
+                              or (_cs_source.split()[-1] if " " in _cs_source else _cs_source))
                 _v["canonical_surname_upper"] = _last_word.upper()
             else:
                 _v.setdefault("canonical_surname_upper", None)
