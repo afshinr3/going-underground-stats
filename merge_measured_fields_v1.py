@@ -26,6 +26,13 @@ import os
 import sys
 
 FIELDS = ("rumble_views", "ig_likes")
+# EPISODE_CARRY_FORWARD_V1_20260918 — an episode must not vanish because ONE discovery run
+# failed to find it. Measured 2026-09-18: videos.json held 15 GU rows while the published
+# health feed held 18; Milanović (15 Aug), Hasan Ünal (7 Aug) and James Carden (11 Jul) were
+# all live on YouTube and simply absent from that run's output, so the LaMetric guest frames
+# skipped straight past them. Rows now survive a run that omits them; only a TOMBSTONE
+# removes one, which is the "positive evidence" this rule requires.
+TOMBSTONES = "gu_removed_episodes_v1.json"
 UNMEASURED = (None, "", "?")
 FILES = ("videos.json", "videos_neworder.json")
 
@@ -36,6 +43,74 @@ def _key_id(r):
 
 def _key_name(r):
     return ((r.get("surname") or "").strip().lower(), (r.get("date") or "").strip())
+
+
+def _load_tombstones(path=TOMBSTONES):
+    """{canonical_episode_id or 'surname|date'} deliberately removed. Absent file = none."""
+    try:
+        d = json.load(open(path))
+        out = set(d.get("by_canonical_episode_id") or [])
+        out |= set(d.get("by_surname_date") or [])
+        return out
+    except Exception:
+        return set()
+
+
+def _tombstoned(row, tombs):
+    if not tombs:
+        return False
+    cid = row.get("canonical_episode_id")
+    sn, dt = _key_name(row)
+    return bool((cid and cid in tombs) or (sn and f"{sn}|{dt}" in tombs))
+
+
+def _sort_key(r):
+    """Newest first. pub_iso when present, else the bare '15 Aug' with the feed's year."""
+    iso = str(r.get("pub_iso") or "")[:10]
+    if len(iso) == 10 and iso[4] == "-":
+        return iso
+    import datetime as _dt
+    for fmt in ("%d %b %Y", "%d %B %Y"):
+        for yr in (_dt.date.today().year, _dt.date.today().year - 1):
+            try:
+                return _dt.datetime.strptime(f"{(r.get('date') or '').strip()} {yr}",
+                                             fmt).date().isoformat()
+            except ValueError:
+                continue
+    return "0000-00-00"
+
+
+def carry_forward_rows(cloud_rows, origin_rows, tombs=None):
+    """Append previously published rows this run omitted. Returns (rows, n_restored).
+
+    Freshly discovered data always wins: a row present in BOTH sets is left as the cloud
+    published it (the field-level merge above has already back-filled what this run could
+    not measure). Pure: no I/O.
+    """
+    tombs = tombs or set()
+    have_id = {_key_id(r) for r in cloud_rows if isinstance(r, dict) and _key_id(r)}
+    have_name = {_key_name(r) for r in cloud_rows if isinstance(r, dict) and _key_name(r)[0]}
+    restored = []
+    for o in origin_rows or []:
+        if not isinstance(o, dict):
+            continue
+        if (_key_id(o) and _key_id(o) in have_id) or (_key_name(o)[0] and _key_name(o) in have_name):
+            continue
+        if _tombstoned(o, tombs):
+            print(f"[EPISODE_CARRY_FORWARD_V1] tombstoned, not restored: "
+                  f"{o.get('date')} {o.get('surname')}")
+            continue
+        row = dict(o)
+        row.setdefault("_carried_forward_v1", "EPISODE_CARRY_FORWARD_V1_20260918")
+        restored.append(row)
+    if not restored:
+        return cloud_rows, 0
+    out = list(cloud_rows) + restored
+    out.sort(key=_sort_key, reverse=True)
+    for r in restored:
+        print(f"[EPISODE_CARRY_FORWARD_V1] restored {r.get('date')} "
+              f"{r.get('guest') or r.get('surname')} (omitted by this run)")
+    return out, len(restored)
 
 
 def merge_rows(cloud_rows, origin_rows):
@@ -72,13 +147,15 @@ def main(cloud_dir):
             cloud = json.load(open(src))
             origin = json.load(open(fn)) if os.path.exists(fn) else []
             merged, n = merge_rows(cloud, origin)
+            merged, n_rows = carry_forward_rows(merged, origin, _load_tombstones())
         except Exception as e:
             print(f"[MERGE_MEASURED_FIELDS_V1] {fn}: merge skipped ({e!r}); cloud copy used")
-            merged, n = json.load(open(src)), 0
+            merged, n, n_rows = json.load(open(src)), 0, 0
         with open(fn, "w") as fh:
             json.dump(merged, fh, indent=2, ensure_ascii=False)
-        print(f"[MERGE_MEASURED_FIELDS_V1] {fn}: carried forward {n} measured field(s) from origin")
-        total += n
+        print(f"[MERGE_MEASURED_FIELDS_V1] {fn}: carried forward {n} measured field(s) "
+              f"and {n_rows} whole episode row(s) from origin")
+        total += n + n_rows
     if total:
         try:
             import fetch_and_push as fp

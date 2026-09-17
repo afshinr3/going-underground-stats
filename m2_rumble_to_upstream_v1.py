@@ -28,8 +28,9 @@ import os
 import re
 import subprocess
 import sys
+import time
 
-REPO = "/Users/afshin/going-underground-stats"
+REPO ="/Users/afshin/going-underground-stats"
 RUMBLE = "/Users/afshin/RumbleMonitor/rumble_2026.json"
 VIDEOS = os.path.join(REPO, "videos.json")            # GU
 VIDEOS_NO = os.path.join(REPO, "videos_neworder.json")  # New Order
@@ -503,8 +504,65 @@ def _process_file(path, exact, surname, vids, posts, changes):
     return fname if len(changes) > n0 else None
 
 
+def _health_episodes_sig(path):
+    """Content signature of the health feed, ignoring the always-moving iso /
+    last_updated. None when it cannot be read — the caller treats unknown as
+    changed and publishes, rather than discarding a fresh feed on a failed read."""
+    try:
+        d = json.load(open(path))
+        eps = d.get("episodes") or []
+        return json.dumps(
+            [[e.get("title"), e.get("date"), e.get("guest"), e.get("surname"),
+              (e.get("metrics") or {}).get("rumble_views"),
+              (e.get("metrics") or {}).get("ig_likes")] for e in eps],
+            sort_keys=True, ensure_ascii=False)
+    except Exception:
+        return None
+
+
+def _videos_feed_degraded(path):
+    """DEGRADED_FEED_HEALTH_GUARD_V1_20260913 — True when the GU feed on disk is the legacy
+    X-only shape: no (non-injected) row carries `yt_views` or `canonical_video_id`. An external
+    writer (commits as "GU Stats Bot" from a +0400 host, not the GitHub Action) intermittently
+    pushes that shape; regenerating the health feed from it nulled YouTube on every GU episode
+    (health yt_ok 23 -> 9, 26 -> 24 episodes, 2026-09-13 01:20Z and 03:20-06:20Z). Keeping the
+    last health feed is stale-but-measured; regenerating from this shape is fresh-but-UNKNOWN.
+    Unreadable/empty -> False (prior behaviour: let the emitter run)."""
+    try:
+        rows = [r for r in (json.load(open(path)) or [])
+                if isinstance(r, dict) and not r.get("rumble_only_injected")]
+        if not rows:
+            return False
+        return not any(("yt_views" in r) or ("canonical_video_id" in r) for r in rows)
+    except Exception:
+        return False
+
+
+def _recover_interrupted_rebase(stale_s=900):
+    """INTERRUPTED_REBASE_RECOVERY_V1_20260913 — a `pull --rebase` interrupted on 2026-09-11
+    18:20Z left the repo mid-rebase on a detached HEAD. Every later pull failed, every push
+    failed ("You are not currently on a branch"), 28 hourly commits never went live and the
+    local videos_health_v1.json that every LaMetric pusher reads froze for ~30h. A rebase dir
+    older than `stale_s` is not in progress, it is abandoned: abort it (restores the branch,
+    re-applies the autostash) so this run syncs normally. Everything here is recomputed hourly
+    from local truth, so nothing unique is dropped. Never raises."""
+    try:
+        gd = os.path.join(REPO, ".git")
+        for d in ("rebase-merge", "rebase-apply"):
+            p = os.path.join(gd, d)
+            age = time.time() - os.path.getmtime(p) if os.path.isdir(p) else 0
+            if age > stale_s:
+                r = _git("rebase", "--abort")
+                print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] stale {d} ({int(age)}s) aborted "
+                      f"rc={r.returncode}",
+                      file=sys.stderr, flush=True)
+    except Exception as _e:
+        print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] check failed: {_e!r}", file=sys.stderr, flush=True)
+
+
 def main():
     if not DRY:
+        _recover_interrupted_rebase()
         _git("pull", "--rebase", "--autostash")  # sync with cloud first
 
     exact, surname, vids = _build_rumble_maps()
@@ -570,6 +628,53 @@ def main():
                   f"committing={[w for w in WEEKLY if w in changed_files]}")
         except Exception as _e_ws:
             print(f"  [{INJECT_MARKER}] weekly-stats regen skipped: {_e_ws}")
+
+        # X_STORE_ATTRIBUTION_REAPPLY_V1_20260918 — the Action measures each episode's X
+        # reach with ONE live search, which is pagination/rate limited, so it republishes
+        # roughly half the real number every run (Carlson 684.3K vs 1.48M in the complete
+        # local store; Silva 106.1K vs 216.7K) and over-counts any row whose guest parsed
+        # as a title fragment (surname "Ex-" -> 531.8K vs 112.3K). This bridge owns the
+        # complete store, so it re-attributes from it here — after the pull, before the
+        # health feed is regenerated from these files. Rows the store cannot measure, and
+        # rows supported by fewer than 3 posts, are left exactly as the Action published
+        # them. Idempotent: a second run rewrites nothing.
+        try:
+            import gu_x_store_attribution_v1 as _XSA
+            _XSA.reattribute(apply=True)
+            for _f in ("videos.json", "videos_neworder.json"):
+                if _f not in changed_files:
+                    changed_files.append(_f)
+        except Exception as _e_xsa:
+            print(f"  [{INJECT_MARKER}] X store re-attribution skipped: {_e_xsa!r}",
+                  file=sys.stderr, flush=True)
+
+        # HEALTH_FEED_REGEN_V1_20260826 — videos_health_v1.json is the feed the
+        # DASHBOARD PREFERS (videos.json is only its fallback), and it is emitted
+        # exclusively by the cloud's main_fetch. So a Rumble-only episode could be
+        # correct in videos.json and still never render: the 2026-08-24 episode was
+        # live in videos.json while the health feed showed 25 episodes without it,
+        # and that feed's `last_updated` is the very timestamp the operator watches
+        # advance. Regenerate it from the same emitter (never a private copy) right
+        # after the feed is updated. Commit only when the EPISODE CONTENT changes;
+        # `iso`/`last_updated` move every run and would otherwise cause churn.
+        HEALTH = "videos_health_v1.json"
+        _h_before = _health_episodes_sig(os.path.join(REPO, HEALTH))
+        try:
+            if _videos_feed_degraded(VIDEOS):   # DEGRADED_FEED_HEALTH_GUARD_V1_20260913
+                raise RuntimeError("DEGRADED_FEED_HEALTH_GUARD_V1: videos.json is the legacy "
+                                   "X-only shape (no yt_views/canonical_video_id) — keeping the "
+                                   "previous health feed rather than nulling YouTube")
+            _FP._emit_videos_health_v1()
+            _h_now = _health_episodes_sig(os.path.join(REPO, HEALTH))
+            if _h_now is None or _h_before is None or _h_now != _h_before:
+                if HEALTH not in changed_files:
+                    changed_files.append(HEALTH)
+                print(f"  [{INJECT_MARKER}] health feed regenerated; committing")
+            else:
+                _git("checkout", "--", HEALTH)   # only timestamps moved
+        except Exception as _e_h:
+            print(f"  [{INJECT_MARKER}] health-feed regen FAILED: {_e_h!r}",
+                  file=sys.stderr, flush=True)
 
     if failed_files:
         print(f"[{MARKER}] {len(failed_files)} target file(s) FAILED and were skipped:",
