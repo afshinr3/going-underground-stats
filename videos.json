@@ -22,7 +22,7 @@
       ]
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-    "yt_views": "44.0K"
+    "yt_views": "43.9K"
   },
   {
     "guest": "Ken Silva",
@@ -98,6 +98,33 @@
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "3.5K"
+  },
+  {
+    "guest": "Branko Milanović",
+    "surname": "Milanović",
+    "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+    "rumble_views": null,
+    "x_views": null,
+    "date": "15 Aug",
+    "yt_views": null,
+    "ig_likes": null,
+    "canonical_guest_full_name": "Branko Milanović",
+    "canonical_surname_upper": "MILANOVIĆ",
+    "canonical_episode_id": "fd9388b8783d",
+    "_yt_content_type": "EPISODE",
+    "_yt_class_confidence": "HIGH",
+    "canonical_video_id": "eyfC-IBPTOM",
+    "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+    "pub_iso": "2026-08-15T16:00:16Z",
+    "canonical_episode_id_v2": "833ef9680be61562",
+    "source_platform_ids": {
+      "youtube": [
+        "eyfC-IBPTOM"
+      ]
+    },
+    "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "show": "GU"
   },
   {
     "guest": "John Mearsheimer",
@@ -367,7 +394,7 @@
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_carried_forward_iso": "2026-09-17T01:21:34Z",
+    "_carried_forward_iso": "2026-09-17T01:24:20Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -382,7 +409,7 @@
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_carried_forward_iso": "2026-09-17T01:21:34Z",
+    "_carried_forward_iso": "2026-09-17T01:24:20Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
@@ -397,7 +424,7 @@
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_carried_forward_iso": "2026-09-17T01:21:34Z",
+    "_carried_forward_iso": "2026-09-17T01:24:20Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]

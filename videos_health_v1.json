@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-17T01:34:15Z",
-  "last_updated": "2026-09-17T01:34:15Z",
+  "iso": "2026-09-17T01:37:03Z",
+  "last_updated": "2026-09-17T01:37:03Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "44.0K",
+        "yt_views": "43.9K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -95,6 +95,33 @@
         "rumble_views": null,
         "yt_views": "3.5K",
         "x_views": "205.1K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Branko Milanović",
+      "surname": "MILANOVIĆ",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "15 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": "eyfC-IBPTOM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id_v2": "833ef9680be61562",
+      "pub_iso": "2026-08-15T16:00:16Z",
+      "source_platform_ids": {
+        "youtube": [
+          "eyfC-IBPTOM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -507,7 +534,7 @@
       },
       "metrics": {
         "rumble_views": "909",
-        "yt_views": "28",
+        "yt_views": "29",
         "x_views": "825.9K",
         "ig_likes": "276"
       }
@@ -673,7 +700,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "44.0K",
+        "yt_views": "43.9K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -751,26 +778,29 @@
       }
     },
     {
-      "guest": "John Mearsheimer",
-      "surname": "MEARSHEIMER",
-      "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
-      "date": "10 Aug",
+      "guest": "Branko Milanović",
+      "surname": "MILANOVIĆ",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "15 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
-      "canonical_episode_id": "e664d5dd55a6",
-      "canonical_video_id": "TuFMmjBU3Vw",
-      "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
-      "canonical_episode_id_v2": "dd4cbedfd850395d",
-      "pub_iso": "2026-08-10T13:10:52Z",
+      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": "eyfC-IBPTOM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id_v2": "833ef9680be61562",
+      "pub_iso": "2026-08-15T16:00:16Z",
       "source_platform_ids": {
         "youtube": [
-          "TuFMmjBU3Vw"
+          "eyfC-IBPTOM"
         ]
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "43.0K",
-        "x_views": "168.5K",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     }
@@ -870,7 +900,7 @@
       },
       "metrics": {
         "rumble_views": "909",
-        "yt_views": "28",
+        "yt_views": "29",
         "x_views": "825.9K",
         "ig_likes": "276"
       }
