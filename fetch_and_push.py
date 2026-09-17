@@ -1466,6 +1466,12 @@ def extract_surname(guest_name):
     # GU_SURNAME_HARDENING_V1_2026_07_03 - broader regex catches _R<alnum2..10>.
     name = _strip_r_date_suffix(name).strip()
     parts = name.strip().split()
+    # GU_SURNAME_GENERATIONAL_SUFFIX_V1_20260917 — "Paulo Nogueira Batista Jr." yielded
+    # surname "Jr.", which _looks_valid_surname rejects, so the 13 Sep New Order episode was
+    # dropped at ingest as SKIP(unparseable) and never reached videos_neworder.json.
+    # A generational suffix is never the surname; drop it and take the token before it.
+    while len(parts) >= 2 and parts[-1].rstrip('.,').lower() in ('jr', 'sr', 'ii', 'iii', 'iv'):
+        parts = parts[:-1]
     if not parts:
         return None
     last = parts[-1]

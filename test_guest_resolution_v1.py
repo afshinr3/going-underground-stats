@@ -146,6 +146,14 @@ check("a row with no title is left alone",
       m._readjudicate_carried_guest({"surname": "DEF", "guest": "x", "title": ""}, "GU") is False)
 check("a non-dict is handled", m._readjudicate_carried_guest(None, "GU") is False)
 
+print("\n[GEN] GU_SURNAME_GENERATIONAL_SUFFIX_V1 — a Jr./Sr./III suffix is never the surname")
+_bt = "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)"
+check("13 Sep New Order title resolves to Batista (was SKIP unparseable)",
+      m.extract_surname(m.extract_guest(_bt)) == "Batista", m.extract_surname(m.extract_guest(_bt)))
+check("'Martin Luther King III' -> King", m.extract_surname("Martin Luther King III") == "King")
+check("'Sr.' alone is not a surname", m.extract_surname("Sr.") is None)
+check("plain names unchanged", m.extract_surname("Prof. David Monyae") == "Monyae")
+
 print(f"\n{'All guest-resolution tests passed.' if not FAILED else str(len(FAILED)) + ' FAILURES'}"
       f"  ({len(PASSED)} passed)")
 sys.exit(0 if not FAILED else 1)
