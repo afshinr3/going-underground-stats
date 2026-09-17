@@ -92,7 +92,14 @@ jobs:
             git rebase --abort 2>/dev/null || true
             git fetch origin main
             git reset --hard origin/main
-            for f in videos.json videos_neworder.json videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
+            for f in videos_health_v1.json followers.json peaks.json drops.md drops_current.json stats_1week_gu.json stats_1week_no.json; do
+              [ -f "/tmp/gu_${f//./_}" ] && cp "/tmp/gu_${f//./_}" "$f"
+            done
+            # MERGE_MEASURED_FIELDS_V1_20260917 — the working tree now holds origin/main (the M2
+            # bridge's latest Rumble/IG numbers). Write videos*.json from this run's copies but
+            # carry forward rumble_views/ig_likes this run could not measure, instead of nulling
+            # them; re-emits weekly + health feeds from the merged files.
+            python3 merge_measured_fields_v1.py /tmp || for f in videos.json videos_neworder.json; do
               [ -f "/tmp/gu_${f//./_}" ] && cp "/tmp/gu_${f//./_}" "$f"
             done
             # AUDIT_LOG_SURVIVES_RESET_V1_2026_08_23 — replay this run's audit
