@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-17T10:55:48Z",
+  "updated": "2026-09-17T11:19:34Z",
   "drops": [
     {
-      "ts": "2026-09-17T10:55:48Z",
+      "ts": "2026-09-17T11:19:34Z",
       "show": "GU",
-      "guest": "Fritz",
+      "guest": "Israel\u2019s",
       "platform": "X",
       "peak": 641900,
-      "peak_at": "2026-09-17T04:45:14Z",
-      "current": 445800,
+      "peak_at": "2026-09-17T03:59:10Z",
+      "current": 445900,
       "drop_pct": 30.5
     }
   ]
