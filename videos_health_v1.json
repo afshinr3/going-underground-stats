@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-17T00:32:33Z",
-  "last_updated": "2026-09-17T00:32:33Z",
+  "iso": "2026-09-17T01:07:19Z",
+  "last_updated": "2026-09-17T01:07:19Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "43.8K",
+        "yt_views": "43.9K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -414,6 +414,33 @@
       }
     },
     {
+      "guest": "Paulo Nogueira Batista Jr.",
+      "surname": "JR.",
+      "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
+      "date": "13 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "canonical_episode_id": "e7574eace8b5",
+      "canonical_video_id": "uj4XUktMctY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "canonical_episode_id_v2": "698f9aaca66cf17f",
+      "pub_iso": "2026-09-13T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "uj4XUktMctY"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "4.3K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "David Monyae",
       "surname": "MONYAE",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
@@ -480,7 +507,7 @@
       },
       "metrics": {
         "rumble_views": "909",
-        "yt_views": "28",
+        "yt_views": "29",
         "x_views": "825.9K",
         "ig_likes": "276"
       }
@@ -646,7 +673,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "43.8K",
+        "yt_views": "43.9K",
         "x_views": "684.3K",
         "ig_likes": null
       }
@@ -750,6 +777,33 @@
   ],
   "no": [
     {
+      "guest": "Paulo Nogueira Batista Jr.",
+      "surname": "JR.",
+      "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
+      "date": "13 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "canonical_episode_id": "e7574eace8b5",
+      "canonical_video_id": "uj4XUktMctY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "canonical_episode_id_v2": "698f9aaca66cf17f",
+      "pub_iso": "2026-09-13T06:30:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "uj4XUktMctY"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "4.3K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "David Monyae",
       "surname": "MONYAE",
       "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
@@ -816,7 +870,7 @@
       },
       "metrics": {
         "rumble_views": "909",
-        "yt_views": "28",
+        "yt_views": "29",
         "x_views": "825.9K",
         "ig_likes": "276"
       }
@@ -843,30 +897,6 @@
         "yt_views": "291",
         "x_views": "698.3K",
         "ig_likes": "230"
-      }
-    },
-    {
-      "guest": "Hussein Askary",
-      "surname": "ASKARY",
-      "title": "Global South’s Rise Causes PANIC for West’s Elites as US-Led Unipolar World Declines- Hussein Askary",
-      "date": "26 Jul",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=_sA9-4RwI00",
-      "canonical_episode_id": "df26e3c0ad57",
-      "canonical_video_id": "_sA9-4RwI00",
-      "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
-      "canonical_episode_id_v2": "9e5a40326e7138df",
-      "pub_iso": "2026-07-26T06:30:22Z",
-      "source_platform_ids": {
-        "youtube": [
-          "_sA9-4RwI00"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "866",
-        "yt_views": "133",
-        "x_views": "206.8K",
-        "ig_likes": "585"
       }
     }
   ]
