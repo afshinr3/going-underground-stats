@@ -160,6 +160,10 @@ check("Milanović resolves via CANON_MAP from the guest field",
       (m._canonical_from_title("Ex-World Bank Lead Economist Says WW3", "Branko Milanović", "Milanović")[0]
        == "Branko Milanović"))
 
+check("canonical surname of a Jr. guest is BATISTA, not JR.",
+      m._canonical_from_title("x", "Paulo Nogueira Batista Jr.", "Batista")[1] == "BATISTA",
+      m._canonical_from_title("x", "Paulo Nogueira Batista Jr.", "Batista")[1])
+
 print(f"\n{'All guest-resolution tests passed.' if not FAILED else str(len(FAILED)) + ' FAILURES'}"
       f"  ({len(PASSED)} passed)")
 sys.exit(0 if not FAILED else 1)

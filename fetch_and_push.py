@@ -357,7 +357,9 @@ def _canonical_from_title(title, cur_guest, cur_surname):
     hash_src = t if t else (cur_guest or cur_surname or "")
     episode_id = hashlib.sha1(hash_src.encode("utf-8")).hexdigest()[:12]
     if canon:
-        cs_upper = canon.split()[-1].upper()
+        # GU_SURNAME_GENERATIONAL_SUFFIX_V1_20260917 — "Paulo Nogueira Batista Jr." gave
+        # canonical_surname_upper "JR."; take the surname through the same suffix-aware rule.
+        cs_upper = (extract_surname(canon) or canon.split()[-1]).upper()
     elif cur_surname:
         cs_upper = cur_surname.upper()
         canon = None  # do not fabricate a full name we do not know
