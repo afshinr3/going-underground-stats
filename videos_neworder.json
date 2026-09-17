@@ -4,7 +4,7 @@
     "surname": "Batista",
     "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
     "rumble_views": "632",
-    "x_views": "1.3M",
+    "x_views": "1.2M",
     "date": "13 Sep",
     "yt_views": "4.5K",
     "ig_likes": null,
@@ -23,7 +23,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_store_tweets": 11
   },
@@ -32,7 +32,7 @@
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "822",
-    "x_views": "482.4K",
+    "x_views": "482.3K",
     "date": "23 Aug",
     "yt_views": "3.5K",
     "ig_likes": "291",
@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6,
     "_x_store_tweets": 9
@@ -80,7 +80,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "show": "NO",
     "_x_passes": 6,
     "_x_store_tweets": 9
@@ -110,7 +110,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 9
@@ -140,7 +140,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 10
@@ -170,7 +170,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "442.7K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8
@@ -200,7 +200,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "940.8K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8
@@ -228,7 +228,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception",
     "_x_passes": 6,
     "_x_store_tweets": 9
   },
@@ -271,7 +271,7 @@
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
     "canonical_episode_id": "e35a16f2cfd4",
-    "_carried_forward_iso": "2026-09-17T20:01:40Z",
+    "_carried_forward_iso": "2026-09-17T21:54:50Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,

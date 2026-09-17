@@ -1,13 +1,42 @@
 {
   "show": "NO",
   "window": "fri_to_mon_broadcast_week",
-  "window_start": "2026-09-18",
-  "window_end": "2026-09-21",
-  "window_start_mon": "2026-09-18",
-  "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-17T20:20:05.673265Z",
-  "n": 0,
-  "entries": [],
+  "window_start": "2026-09-11",
+  "window_end": "2026-09-14",
+  "window_start_mon": "2026-09-11",
+  "window_end_sun": "2026-09-14",
+  "generated_at": "2026-09-17T21:55:03.629358Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Paulo Nogueira Batista Jr.",
+      "surname": "Batista",
+      "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
+      "rumble_views": "632",
+      "x_views": "1.2M",
+      "date": "13 Sep",
+      "yt_views": "4.5K",
+      "ig_likes": null,
+      "canonical_guest_full_name": "Paulo Nogueira Batista Jr.",
+      "canonical_surname_upper": "BATISTA",
+      "canonical_episode_id": "e7574eace8b5",
+      "_yt_content_type": "EPISODE",
+      "_yt_class_confidence": "HIGH",
+      "canonical_video_id": "uj4XUktMctY",
+      "canonical_video_url": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "pub_iso": "2026-09-13T06:30:06Z",
+      "canonical_episode_id_v2": "698f9aaca66cf17f",
+      "source_platform_ids": {
+        "youtube": [
+          "uj4XUktMctY"
+        ]
+      },
+      "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
+      "_x_status": "FETCH_FAILED:Exception",
+      "show": "NO",
+      "_x_store_tweets": 11
+    }
+  ],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],

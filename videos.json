@@ -11,8 +11,19 @@
     "canonical_guest_full_name": "Tucker Carlson",
     "canonical_surname_upper": "CARLSON",
     "canonical_episode_id": "692029c34641",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 26
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 26,
+    "canonical_video_id": "JUHl-tQRN7g",
+    "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+    "pub_iso": "2026-09-11T22:32:20Z",
+    "canonical_episode_id_v2": "f9bdbb4afb5f669d",
+    "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+    "source_platform_ids": {
+      "youtube": [
+        "JUHl-tQRN7g"
+      ]
+    },
+    "yt_views": "47.6K"
   },
   {
     "guest": "Ken Silva",
@@ -20,14 +31,25 @@
     "title": "The Trump Assassination Plots: What You Haven’t Been Told (Ken Silva)",
     "date": "25 Aug",
     "rumble_views": "3.6K",
-    "x_views": "216.9K",
+    "x_views": "216.7K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Ken Silva",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 9
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 9,
+    "canonical_video_id": "XSlrLlk8WrM",
+    "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+    "pub_iso": "2026-08-25T22:45:28Z",
+    "canonical_episode_id_v2": "028a119cb410b046",
+    "link": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
+    "source_platform_ids": {
+      "youtube": [
+        "XSlrLlk8WrM"
+      ]
+    },
+    "yt_views": "2.3K"
   },
   {
     "guest": "Michael O’Hanlon",
@@ -39,11 +61,22 @@
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Michael O’Hanlon",
-    "canonical_surname_upper": "HANLON",
+    "canonical_surname_upper": "O’HANLON",
     "canonical_episode_id": "6f96fd46bb55",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 9,
-    "_x_guest_repaired_from": "Afshin Rattansi CHALLENGES Ex-"
+    "_x_guest_repaired_from": "Afshin Rattansi CHALLENGES Ex-",
+    "canonical_video_id": "Eu0Phb99ipg",
+    "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+    "pub_iso": "2026-08-22T11:55:34Z",
+    "canonical_episode_id_v2": "20fc52f5bc97c24f",
+    "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+    "source_platform_ids": {
+      "youtube": [
+        "Eu0Phb99ipg"
+      ]
+    },
+    "yt_views": "2.2K"
   },
   {
     "guest": "Philip Pilkington",
@@ -51,14 +84,25 @@
     "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
     "date": "17 Aug",
     "rumble_views": "4.2K",
-    "x_views": "424.4K",
+    "x_views": "424.2K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 12,
+    "canonical_video_id": "w7KXuXugzlA",
+    "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+    "pub_iso": "2026-08-17T10:43:18Z",
+    "canonical_episode_id_v2": "6f9f42c60330bac0",
+    "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
+    "source_platform_ids": {
+      "youtube": [
+        "w7KXuXugzlA"
+      ]
+    },
+    "yt_views": "3.5K"
   },
   {
     "guest": "Branko Milanović",
@@ -75,11 +119,18 @@
     "canonical_episode_id": "fd9388b8783d",
     "canonical_video_id": "eyfC-IBPTOM",
     "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-    "pub_iso": "2026-08-15T00:00:00",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "pub_iso": "2026-08-15T16:00:16Z",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 4,
     "_restored_by": "GU_ROW_RESTORE_V1_20260918",
-    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity"
+    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity",
+    "canonical_episode_id_v2": "833ef9680be61562",
+    "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+    "source_platform_ids": {
+      "youtube": [
+        "eyfC-IBPTOM"
+      ]
+    }
   },
   {
     "guest": "John Mearsheimer",
@@ -87,14 +138,25 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.8K",
-    "x_views": "474.6K",
+    "x_views": "474.5K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 14,
+    "canonical_video_id": "TuFMmjBU3Vw",
+    "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+    "pub_iso": "2026-08-10T13:10:52Z",
+    "canonical_episode_id_v2": "dd4cbedfd850395d",
+    "link": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
+    "source_platform_ids": {
+      "youtube": [
+        "TuFMmjBU3Vw"
+      ]
+    },
+    "yt_views": "43.0K"
   },
   {
     "guest": "Hasan Ünal",
@@ -111,11 +173,18 @@
     "canonical_episode_id": "c5f74b00a6fa",
     "canonical_video_id": "6nISoLoPlO4",
     "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
-    "pub_iso": "2026-08-07T00:00:00",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "pub_iso": "2026-08-07T12:13:55Z",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 9,
     "_restored_by": "GU_ROW_RESTORE_V1_20260918",
-    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity"
+    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity",
+    "canonical_episode_id_v2": "fb275712144dd36d",
+    "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+    "source_platform_ids": {
+      "youtube": [
+        "6nISoLoPlO4"
+      ]
+    }
   },
   {
     "guest": "Gabor Maté",
@@ -123,14 +192,25 @@
     "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "4.1K",
-    "x_views": "645.3K",
+    "x_views": "645.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Gabor Maté",
     "canonical_surname_upper": "MATÉ",
     "canonical_episode_id": "0d30042528a6",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 14,
+    "canonical_video_id": "PUw_r6rI5PY",
+    "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+    "pub_iso": "2026-08-03T22:18:20Z",
+    "canonical_episode_id_v2": "5e4fb101123620bc",
+    "link": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
+    "source_platform_ids": {
+      "youtube": [
+        "PUw_r6rI5PY"
+      ]
+    },
+    "yt_views": "64.3K"
   },
   {
     "guest": "Robert Barnes",
@@ -144,9 +224,20 @@
     "canonical_guest_full_name": "Robert Barnes",
     "canonical_surname_upper": "BARNES",
     "canonical_episode_id": "c133da20813e",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 12,
-    "_x_guest_repaired_from": "Trump’s Ex-Lawyer Robert Barnes"
+    "_x_guest_repaired_from": "Trump’s Ex-Lawyer Robert Barnes",
+    "canonical_video_id": "N_ysv6Gh9Ac",
+    "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+    "pub_iso": "2026-08-01T21:22:19Z",
+    "canonical_episode_id_v2": "7edf3af7b8798e44",
+    "link": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
+    "source_platform_ids": {
+      "youtube": [
+        "N_ysv6Gh9Ac"
+      ]
+    },
+    "yt_views": "3.3K"
   },
   {
     "guest": "Ami Ayalon",
@@ -160,9 +251,20 @@
     "canonical_guest_full_name": "Ami Ayalon",
     "canonical_surname_upper": "AYALON",
     "canonical_episode_id": "349527d06a1f",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 11,
-    "_x_guest_repaired_from": "of Israel’s Shin Bet Ami Ayalon"
+    "_x_guest_repaired_from": "of Israel’s Shin Bet Ami Ayalon",
+    "canonical_video_id": "pzEU7fNiXgc",
+    "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+    "pub_iso": "2026-07-27T15:50:41Z",
+    "canonical_episode_id_v2": "86e2d81a08f45d8e",
+    "link": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
+    "source_platform_ids": {
+      "youtube": [
+        "pzEU7fNiXgc"
+      ]
+    },
+    "yt_views": "1.8K"
   },
   {
     "guest": "Daniel Levy",
@@ -170,15 +272,26 @@
     "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
     "date": "25 Jul",
     "rumble_views": "3.1K",
-    "x_views": "616.2K",
+    "x_views": "615.9K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Daniel Levy",
     "canonical_surname_upper": "LEVY",
     "canonical_episode_id": "fcee2e52ba61",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 12,
-    "_x_guest_repaired_from": "Ex-Israeli Negotiator Daniel Levy"
+    "_x_guest_repaired_from": "Ex-Israeli Negotiator Daniel Levy",
+    "canonical_video_id": "IGlM3ZTHIY8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+    "pub_iso": "2026-07-25T13:30:22Z",
+    "canonical_episode_id_v2": "4a0e3632a2a01b42",
+    "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+    "source_platform_ids": {
+      "youtube": [
+        "IGlM3ZTHIY8"
+      ]
+    },
+    "yt_views": "4.3K"
   },
   {
     "guest": "Doug Bandow",
@@ -186,14 +299,25 @@
     "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
     "date": "20 Jul",
     "rumble_views": "3.2K",
-    "x_views": "795.6K",
+    "x_views": "795.3K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Doug Bandow",
     "canonical_surname_upper": "BANDOW",
     "canonical_episode_id": "dfc6afbc2824",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 16
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 16,
+    "canonical_video_id": "_SVI4UPDX7g",
+    "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+    "pub_iso": "2026-07-20T20:04:05Z",
+    "canonical_episode_id_v2": "3c04f341a327a14e",
+    "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+    "source_platform_ids": {
+      "youtube": [
+        "_SVI4UPDX7g"
+      ]
+    },
+    "yt_views": "3.1K"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -207,8 +331,19 @@
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
     "canonical_episode_id": "40f99fc9eb05",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 19
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+    "_x_store_tweets": 19,
+    "canonical_video_id": "WlIY7-ovBd8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "pub_iso": "2026-07-18T11:32:42Z",
+    "canonical_episode_id_v2": "4a4b17f0a7877200",
+    "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "source_platform_ids": {
+      "youtube": [
+        "WlIY7-ovBd8"
+      ]
+    },
+    "yt_views": "4.3K"
   },
   {
     "guest": "Dennis Fritz",
@@ -222,9 +357,20 @@
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 16,
-    "_x_guest_repaired_from": "CMSGT. Dennis Fritz: Israel’s "
+    "_x_guest_repaired_from": "CMSGT. Dennis Fritz: Israel’s ",
+    "canonical_video_id": "grMo8SmAQpU",
+    "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "pub_iso": "2026-07-13T16:25:30Z",
+    "canonical_episode_id_v2": "af16e80c488f7ef0",
+    "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "source_platform_ids": {
+      "youtube": [
+        "grMo8SmAQpU"
+      ]
+    },
+    "yt_views": "1.1K"
   },
   {
     "guest": "James Carden",
@@ -241,11 +387,18 @@
     "canonical_episode_id": "bce46f2dc542",
     "canonical_video_id": "Cc9-pfOYmWQ",
     "canonical_video_url": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-    "pub_iso": "2026-07-11T00:00:00",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "pub_iso": "2026-07-11T11:47:03Z",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "_x_store_tweets": 12,
     "_restored_by": "GU_ROW_RESTORE_V1_20260918",
-    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity"
+    "_restored_note": "present in videos_health_v1.json 2026-09-17T19:20Z and in the YouTube RSS, absent from videos.json; every field re-measured from yt_2026/rumble_2026/x_2026, none copied from the stale feed except title/date/guest identity",
+    "canonical_episode_id_v2": "4298e576095c64c0",
+    "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
+    "source_platform_ids": {
+      "youtube": [
+        "Cc9-pfOYmWQ"
+      ]
+    }
   },
   {
     "guest": "Tobias Ellwood",
@@ -260,7 +413,9 @@
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_store_tweets": 14,
+    "_carried_forward_iso": "2026-09-17T21:36:20Z",
+    "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "Dennis Kucinich",
@@ -275,7 +430,9 @@
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12
+    "_x_store_tweets": 12,
+    "_carried_forward_iso": "2026-09-17T21:36:20Z",
+    "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   },
   {
     "guest": "Max Blumenthal",
@@ -290,6 +447,8 @@
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 13
+    "_x_store_tweets": 13,
+    "_carried_forward_iso": "2026-09-17T21:36:20Z",
+    "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup"
   }
 ]
