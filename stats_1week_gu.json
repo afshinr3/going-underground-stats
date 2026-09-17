@@ -5,7 +5,7 @@
   "window_end": "2026-09-14",
   "window_start_mon": "2026-09-11",
   "window_end_sun": "2026-09-14",
-  "generated_at": "2026-09-17T04:20:05.506710Z",
+  "generated_at": "2026-09-17T05:20:04.467215Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,8 @@
       "show": "GU",
       "canonical_guest_full_name": "Tucker Carlson",
       "canonical_surname_upper": "CARLSON",
-      "canonical_episode_id": "692029c34641"
+      "canonical_episode_id": "692029c34641",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND"
     }
   ],
   "source_feed": "videos.json",
