@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-17T01:37:03Z",
-  "last_updated": "2026-09-17T01:37:03Z",
+  "iso": "2026-09-17T02:10:57Z",
+  "last_updated": "2026-09-17T02:10:57Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -388,10 +388,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": null,
         "yt_views": null,
         "x_views": "273.8K",
-        "ig_likes": "?"
+        "ig_likes": null
       }
     },
     {
@@ -408,13 +408,13 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": null,
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": "?"
+        "ig_likes": null
       }
     },
     {
@@ -431,18 +431,18 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": null,
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
-        "ig_likes": "?"
+        "ig_likes": null
       }
     },
     {
       "guest": "Paulo Nogueira Batista Jr.",
-      "surname": "JR.",
+      "surname": "BATISTA",
       "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
       "date": "13 Sep",
       "show": "NO",
@@ -808,7 +808,7 @@
   "no": [
     {
       "guest": "Paulo Nogueira Batista Jr.",
-      "surname": "JR.",
+      "surname": "BATISTA",
       "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
       "date": "13 Sep",
       "show": "NO",
