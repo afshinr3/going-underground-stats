@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-17T22:28:40Z",
+  "updated": "2026-09-17T23:18:42Z",
   "drops": [
     {
-      "ts": "2026-09-17T22:28:40Z",
+      "ts": "2026-09-17T23:18:42Z",
       "show": "GU",
       "guest": "Fritz",
       "platform": "X",
@@ -10,6 +10,16 @@
       "peak_at": "2026-09-17T04:45:14Z",
       "current": 450200,
       "drop_pct": 29.9
+    },
+    {
+      "ts": "2026-09-17T23:18:42Z",
+      "show": "GU",
+      "guest": "Ellwood",
+      "platform": "X",
+      "peak": 721600,
+      "peak_at": "2026-09-17T22:28:40Z",
+      "current": 274600,
+      "drop_pct": 61.9
     }
   ]
 }
