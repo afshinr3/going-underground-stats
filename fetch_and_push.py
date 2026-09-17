@@ -3306,6 +3306,10 @@ def push_to_tidbyt():
         # broken extractor output (e.g. "War" for Carden ep, "Minister" for
         # Ellwood ep) never reaches the Tidbyt pixmap.
         name = v.get('canonical_surname_upper') or v.get('surname', '?')
+        # GU_DISPLAY_NAME_ASCII_V1_20260917 — the 64x32 pixmap font garbles accents and curly
+        # apostrophes (MILANOVIĆ, ÜNAL, MATÉ, O’HANLON); fold display text to ASCII only.
+        import unicodedata as _ud_t
+        name = _ud_t.normalize('NFKD', str(name).replace('\u2019', "'").replace('\u2018', "'")).encode('ascii', 'ignore').decode('ascii') or '?'
         date = v.get('date', '')
         label = f"{name} {date}" if date else name
         if total >= 1_000_000: t = f"{total/1_000_000:.1f}M"
