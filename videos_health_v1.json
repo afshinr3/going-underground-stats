@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-18T13:20:05Z",
-  "last_updated": "2026-09-18T13:20:05Z",
+  "iso": "2026-09-18T13:49:33Z",
+  "last_updated": "2026-09-18T13:49:33Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -72,6 +72,26 @@
         "yt_views": "2.2K",
         "x_views": "112.3K",
         "ig_likes": null
+      }
+    },
+    {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "532.9K",
+        "ig_likes": "?"
       }
     },
     {
@@ -339,6 +359,26 @@
       }
     },
     {
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
+      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
+      "date": "13 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "447.7K",
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "James Carden",
       "surname": "CARDEN",
       "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
@@ -464,7 +504,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "839",
+        "rumble_views": "837",
         "yt_views": "3.5K",
         "x_views": "482.4K",
         "ig_likes": "291"
@@ -488,7 +528,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "898",
+        "rumble_views": "897",
         "yt_views": "153",
         "x_views": "358.9K",
         "ig_likes": "213"
@@ -512,7 +552,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "946",
+        "rumble_views": "945",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
@@ -733,6 +773,26 @@
       }
     },
     {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "532.9K",
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "Philip Pilkington",
       "surname": "PILKINGTON",
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
@@ -753,30 +813,6 @@
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
         "x_views": "424.9K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Branko Milanović",
-      "surname": "MILANOVIĆ",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "15 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id": "fd9388b8783d",
-      "canonical_video_id": "eyfC-IBPTOM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id_v2": "833ef9680be61562",
-      "pub_iso": "2026-08-15T16:00:16Z",
-      "source_platform_ids": {
-        "youtube": [
-          "eyfC-IBPTOM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": "5.1K",
-        "x_views": "166.6K",
         "ig_likes": null
       }
     }
@@ -824,7 +860,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "839",
+        "rumble_views": "837",
         "yt_views": "3.5K",
         "x_views": "482.4K",
         "ig_likes": "291"
@@ -848,7 +884,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "898",
+        "rumble_views": "897",
         "yt_views": "153",
         "x_views": "358.9K",
         "ig_likes": "213"
@@ -872,7 +908,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "946",
+        "rumble_views": "945",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
