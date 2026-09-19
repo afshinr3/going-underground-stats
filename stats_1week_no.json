@@ -5,7 +5,7 @@
   "window_end": "2026-09-21",
   "window_start_mon": "2026-09-18",
   "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-19T15:20:04.892958Z",
+  "generated_at": "2026-09-19T16:20:04.354992Z",
   "n": 1,
   "entries": [
     {
@@ -13,7 +13,7 @@
       "surname": "Lieven",
       "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India\u2019s Interests (Prof. Anatol Lieven)",
       "rumble_views": "188.0K",
-      "x_views": null,
+      "x_views": "3.3K",
       "date": "18 Sep",
       "yt_views": "0",
       "ig_likes": null,
@@ -33,7 +33,8 @@
       },
       "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
       "_x_status": "FETCH_FAILED:Exception",
-      "show": "NO"
+      "show": "NO",
+      "_x_store_tweets": 1
     }
   ],
   "source_feed": "videos_neworder.json",

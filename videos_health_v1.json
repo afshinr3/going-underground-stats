@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-19T13:20:03Z",
-  "last_updated": "2026-09-19T13:20:03Z",
+  "iso": "2026-09-19T16:20:04Z",
+  "last_updated": "2026-09-19T16:20:04Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.7K",
+        "yt_views": "54.8K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "2.4K",
-        "x_views": "218.1K",
+        "x_views": "218.3K",
         "ig_likes": null
       }
     },
@@ -68,28 +68,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.9K",
+        "rumble_views": "3.0K",
         "yt_views": "2.2K",
-        "x_views": "112.4K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Michael O’Hanlon",
-      "surname": "HANLON",
-      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
-      "date": "22 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.9K",
-        "yt_views": null,
         "x_views": "112.4K",
         "ig_likes": null
       }
@@ -114,7 +94,7 @@
       "metrics": {
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
-        "x_views": "425.9K",
+        "x_views": "426.2K",
         "ig_likes": null
       }
     },
@@ -209,8 +189,8 @@
       },
       "metrics": {
         "rumble_views": "4.1K",
-        "yt_views": "64.4K",
-        "x_views": "646.2K",
+        "yt_views": "64.5K",
+        "x_views": "646.4K",
         "ig_likes": null
       }
     },
@@ -282,7 +262,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "4.3K",
-        "x_views": "618.1K",
+        "x_views": "618.5K",
         "ig_likes": null
       }
     },
@@ -306,7 +286,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "3.1K",
-        "x_views": "797.8K",
+        "x_views": "798.2K",
         "ig_likes": null
       }
     },
@@ -359,26 +339,6 @@
       }
     },
     {
-      "guest": "Dennis Fritz",
-      "surname": "FRITZ",
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "date": "13 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.3K",
-        "yt_views": null,
-        "x_views": "450.3K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "James Carden",
       "surname": "CARDEN",
       "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
@@ -398,7 +358,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "1.6K",
-        "x_views": "722.0K",
+        "x_views": "722.1K",
         "ig_likes": null
       }
     },
@@ -463,6 +423,30 @@
       }
     },
     {
+      "guest": "Anatol Lieven",
+      "surname": "LIEVEN",
+      "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
+      "date": "18 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
+      "canonical_episode_id": "b0953b065f05",
+      "canonical_video_id": "5qq_DVNUXvM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
+      "canonical_episode_id_v2": "8693b2d8a6532abf",
+      "pub_iso": "2026-09-18T05:16:12Z",
+      "source_platform_ids": {
+        "youtube": [
+          "5qq_DVNUXvM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "188.0K",
+        "yt_views": "0",
+        "x_views": "3.3K",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Paulo Nogueira Batista Jr.",
       "surname": "BATISTA",
       "title": "BRICS Summit 2026: The West is Declining, But STILL DANGEROUS (Prof. Paulo Nogueira Batista Jr.)",
@@ -480,7 +464,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "711",
+        "rumble_views": "719",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -504,9 +488,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "866",
+        "rumble_views": "872",
         "yt_views": "3.5K",
-        "x_views": "482.5K",
+        "x_views": "482.6K",
         "ig_likes": "291"
       }
     },
@@ -528,7 +512,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "918",
+        "rumble_views": "920",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -552,7 +536,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "972",
+        "rumble_views": "976",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
@@ -576,7 +560,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "889",
+        "rumble_views": "891",
         "yt_views": "291",
         "x_views": "1.3M",
         "ig_likes": "230"
@@ -624,7 +608,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "913",
+        "rumble_views": "914",
         "yt_views": "1.1K",
         "x_views": "940.9K",
         "ig_likes": "351"
@@ -672,7 +656,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "547",
+        "rumble_views": "548",
         "yt_views": "1.1K",
         "x_views": "759.1K",
         "ig_likes": "462"
@@ -719,7 +703,7 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.7K",
+        "yt_views": "54.8K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -744,7 +728,7 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "2.4K",
-        "x_views": "218.1K",
+        "x_views": "218.3K",
         "ig_likes": null
       }
     },
@@ -766,28 +750,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.9K",
+        "rumble_views": "3.0K",
         "yt_views": "2.2K",
-        "x_views": "112.4K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Michael O’Hanlon",
-      "surname": "HANLON",
-      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
-      "date": "22 Aug",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "6f96fd46bb55",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.9K",
-        "yt_views": null,
         "x_views": "112.4K",
         "ig_likes": null
       }
@@ -812,12 +776,60 @@
       "metrics": {
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
-        "x_views": "425.9K",
+        "x_views": "426.2K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Branko Milanović",
+      "surname": "MILANOVIĆ",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "15 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": "eyfC-IBPTOM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id_v2": "833ef9680be61562",
+      "pub_iso": "2026-08-15T16:00:16Z",
+      "source_platform_ids": {
+        "youtube": [
+          "eyfC-IBPTOM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "3.1K",
+        "yt_views": "5.1K",
+        "x_views": "166.7K",
         "ig_likes": null
       }
     }
   ],
   "no": [
+    {
+      "guest": "Anatol Lieven",
+      "surname": "LIEVEN",
+      "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
+      "date": "18 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
+      "canonical_episode_id": "b0953b065f05",
+      "canonical_video_id": "5qq_DVNUXvM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
+      "canonical_episode_id_v2": "8693b2d8a6532abf",
+      "pub_iso": "2026-09-18T05:16:12Z",
+      "source_platform_ids": {
+        "youtube": [
+          "5qq_DVNUXvM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "188.0K",
+        "yt_views": "0",
+        "x_views": "3.3K",
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Paulo Nogueira Batista Jr.",
       "surname": "BATISTA",
@@ -836,7 +848,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "711",
+        "rumble_views": "719",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -860,9 +872,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "866",
+        "rumble_views": "872",
         "yt_views": "3.5K",
-        "x_views": "482.5K",
+        "x_views": "482.6K",
         "ig_likes": "291"
       }
     },
@@ -884,7 +896,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "918",
+        "rumble_views": "920",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -908,34 +920,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "972",
+        "rumble_views": "976",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
-      }
-    },
-    {
-      "guest": "Mohammed Baharoon",
-      "surname": "BAHAROON",
-      "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
-      "date": "2 Aug",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
-      "canonical_episode_id": "c082946ae2ff",
-      "canonical_video_id": "F8hxaEtl9Y8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
-      "canonical_episode_id_v2": "2ad17dd19bd4004d",
-      "pub_iso": "2026-08-02T06:30:10Z",
-      "source_platform_ids": {
-        "youtube": [
-          "F8hxaEtl9Y8"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "889",
-        "yt_views": "291",
-        "x_views": "1.3M",
-        "ig_likes": "230"
       }
     }
   ]
