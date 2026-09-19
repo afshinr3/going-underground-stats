@@ -51,7 +51,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_store_tweets": 11,
     "_x_own_views": 1299924,
@@ -83,7 +83,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
@@ -115,7 +115,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
@@ -148,7 +148,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": null,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 9,
@@ -181,7 +181,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "1.3M",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": null,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 10,
@@ -214,7 +214,7 @@
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "442.8K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": null,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
@@ -247,7 +247,7 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "940.9K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8
@@ -275,7 +275,7 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "_x_store_tweets": 9
   },
