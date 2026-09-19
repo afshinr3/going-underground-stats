@@ -828,8 +828,8 @@
     "yt_views_at": "2026-09-15T04:14:10Z",
     "ig_likes": 276,
     "ig_likes_at": "2026-08-25T22:50:55Z",
-    "rumble_views": 972,
-    "rumble_views_at": "2026-09-19T14:15:03Z",
+    "rumble_views": 973,
+    "rumble_views_at": "2026-09-19T14:53:18Z",
     "x_views": 1800000,
     "x_views_at": "2026-09-18T00:29:15Z"
   },
@@ -934,8 +934,8 @@
   "NO:Batista": {
     "yt_views": 4700,
     "yt_views_at": "2026-09-19T07:13:21Z",
-    "rumble_views": 711,
-    "rumble_views_at": "2026-09-19T14:15:03Z",
+    "rumble_views": 713,
+    "rumble_views_at": "2026-09-19T14:53:18Z",
     "x_views": 1400000,
     "x_views_at": "2026-09-18T00:29:15Z"
   },
@@ -954,5 +954,6 @@
     "yt_views_at": "2026-09-17T22:28:40Z",
     "rumble_views": 2900,
     "rumble_views_at": "2026-09-17T22:28:40Z"
-  }
+  },
+  "NO:Lieven": {}
 }
