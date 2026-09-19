@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-19T13:14:17Z",
-  "last_updated": "2026-09-19T13:14:17Z",
+  "iso": "2026-09-19T13:20:03Z",
+  "last_updated": "2026-09-19T13:20:03Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -75,8 +75,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -88,10 +88,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.9K",
         "yt_views": null,
-        "x_views": "534.0K",
-        "ig_likes": "?"
+        "x_views": "112.4K",
+        "ig_likes": null
       }
     },
     {
@@ -136,12 +136,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "5.1K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "166.7K",
         "ig_likes": null
       }
     },
@@ -187,12 +184,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "4.0K",
         "yt_views": "8.2K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "674.3K",
         "ig_likes": null
       }
     },
@@ -365,8 +359,8 @@
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -378,10 +372,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.3K",
         "yt_views": null,
-        "x_views": "449.2K",
-        "ig_likes": "?"
+        "x_views": "450.3K",
+        "ig_likes": null
       }
     },
     {
@@ -402,12 +396,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "2.8K",
         "yt_views": "1.6K",
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
+        "x_views": "722.0K",
         "ig_likes": null
       }
     },
@@ -489,7 +480,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "708",
+        "rumble_views": "711",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -513,7 +504,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "865",
+        "rumble_views": "866",
         "yt_views": "3.5K",
         "x_views": "482.5K",
         "ig_likes": "291"
@@ -561,7 +552,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "971",
+        "rumble_views": "972",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
@@ -609,7 +600,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "868",
+        "rumble_views": "870",
         "yt_views": "133",
         "x_views": "442.8K",
         "ig_likes": "585"
@@ -782,8 +773,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -795,10 +786,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "2.9K",
         "yt_views": null,
-        "x_views": "534.0K",
-        "ig_likes": "?"
+        "x_views": "112.4K",
+        "ig_likes": null
       }
     },
     {
@@ -845,7 +836,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "708",
+        "rumble_views": "711",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -869,7 +860,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "865",
+        "rumble_views": "866",
         "yt_views": "3.5K",
         "x_views": "482.5K",
         "ig_likes": "291"
@@ -917,7 +908,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "971",
+        "rumble_views": "972",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
