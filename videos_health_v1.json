@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-19T11:20:04Z",
-  "last_updated": "2026-09-19T11:20:04Z",
+  "iso": "2026-09-19T13:14:17Z",
+  "last_updated": "2026-09-19T13:14:17Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.5K",
+        "yt_views": "54.7K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -75,6 +75,26 @@
       }
     },
     {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "534.0K",
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "Philip Pilkington",
       "surname": "PILKINGTON",
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
@@ -116,9 +136,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.7K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -164,9 +187,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.3K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -339,6 +365,26 @@
       }
     },
     {
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
+      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
+      "date": "13 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "449.2K",
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "James Carden",
       "surname": "CARDEN",
       "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
@@ -356,9 +402,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
+        "rumble_views": null,
         "yt_views": "1.6K",
-        "x_views": "722.0K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -440,7 +489,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "703",
+        "rumble_views": "708",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -464,7 +513,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "864",
+        "rumble_views": "865",
         "yt_views": "3.5K",
         "x_views": "482.5K",
         "ig_likes": "291"
@@ -488,7 +537,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "917",
+        "rumble_views": "918",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -512,7 +561,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "970",
+        "rumble_views": "971",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
@@ -679,7 +728,7 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.5K",
+        "yt_views": "54.7K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -733,6 +782,26 @@
       }
     },
     {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "534.0K",
+        "ig_likes": "?"
+      }
+    },
+    {
       "guest": "Philip Pilkington",
       "surname": "PILKINGTON",
       "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
@@ -753,30 +822,6 @@
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
         "x_views": "425.9K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Branko Milanović",
-      "surname": "MILANOVIĆ",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "15 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id": "fd9388b8783d",
-      "canonical_video_id": "eyfC-IBPTOM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id_v2": "833ef9680be61562",
-      "pub_iso": "2026-08-15T16:00:16Z",
-      "source_platform_ids": {
-        "youtube": [
-          "eyfC-IBPTOM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": "5.1K",
-        "x_views": "166.7K",
         "ig_likes": null
       }
     }
@@ -800,7 +845,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "703",
+        "rumble_views": "708",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -824,7 +869,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "864",
+        "rumble_views": "865",
         "yt_views": "3.5K",
         "x_views": "482.5K",
         "ig_likes": "291"
@@ -848,7 +893,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "917",
+        "rumble_views": "918",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -872,7 +917,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "970",
+        "rumble_views": "971",
         "yt_views": "29",
         "x_views": "1.3M",
         "ig_likes": "276"
