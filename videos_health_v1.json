@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-19T17:20:05Z",
-  "last_updated": "2026-09-19T17:20:05Z",
+  "iso": "2026-09-19T19:11:02Z",
+  "last_updated": "2026-09-19T19:11:02Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.8K",
-        "x_views": "1.5M",
+        "yt_views": "55.1K",
+        "x_views": "2.1M",
         "ig_likes": null
       }
     },
@@ -46,7 +46,7 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "2.4K",
-        "x_views": "218.3K",
+        "x_views": "6.4K",
         "ig_likes": null
       }
     },
@@ -70,8 +70,28 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "2.2K",
-        "x_views": "112.4K",
+        "x_views": "111.2K",
         "ig_likes": null
+      }
+    },
+    {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "534.3K",
+        "ig_likes": "?"
       }
     },
     {
@@ -94,7 +114,7 @@
       "metrics": {
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
-        "x_views": "426.2K",
+        "x_views": "390.1K",
         "ig_likes": null
       }
     },
@@ -116,9 +136,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.7K",
+        "x_views": "276.5K",
         "ig_likes": null
       }
     },
@@ -164,9 +184,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.3K",
+        "x_views": "1.0M",
         "ig_likes": null
       }
     },
@@ -286,7 +306,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "3.1K",
-        "x_views": "798.2K",
+        "x_views": "323.6K",
         "ig_likes": null
       }
     },
@@ -310,7 +330,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "4.3K",
-        "x_views": "1.1M",
+        "x_views": "451.9K",
         "ig_likes": null
       }
     },
@@ -334,8 +354,28 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "450.3K",
+        "x_views": "195.3K",
         "ig_likes": null
+      }
+    },
+    {
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
+      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
+      "date": "13 Jul",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "b8e8126f2b5e",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "449.6K",
+        "ig_likes": "?"
       }
     },
     {
@@ -356,9 +396,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
+        "rumble_views": null,
         "yt_views": "1.6K",
-        "x_views": "722.1K",
+        "x_views": "1.1M",
         "ig_likes": null
       }
     },
@@ -464,8 +504,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "721",
-        "yt_views": "4.7K",
+        "rumble_views": "722",
+        "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
       }
@@ -488,7 +528,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "873",
+        "rumble_views": "874",
         "yt_views": "3.5K",
         "x_views": "482.6K",
         "ig_likes": "291"
@@ -703,8 +743,8 @@
       },
       "metrics": {
         "rumble_views": "4.8K",
-        "yt_views": "54.8K",
-        "x_views": "1.5M",
+        "yt_views": "55.1K",
+        "x_views": "2.1M",
         "ig_likes": null
       }
     },
@@ -728,7 +768,7 @@
       "metrics": {
         "rumble_views": "3.7K",
         "yt_views": "2.4K",
-        "x_views": "218.3K",
+        "x_views": "6.4K",
         "ig_likes": null
       }
     },
@@ -752,8 +792,28 @@
       "metrics": {
         "rumble_views": "3.0K",
         "yt_views": "2.2K",
-        "x_views": "112.4K",
+        "x_views": "111.2K",
         "ig_likes": null
+      }
+    },
+    {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "534.3K",
+        "ig_likes": "?"
       }
     },
     {
@@ -776,31 +836,7 @@
       "metrics": {
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
-        "x_views": "426.2K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Branko Milanović",
-      "surname": "MILANOVIĆ",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "15 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id": "fd9388b8783d",
-      "canonical_video_id": "eyfC-IBPTOM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id_v2": "833ef9680be61562",
-      "pub_iso": "2026-08-15T16:00:16Z",
-      "source_platform_ids": {
-        "youtube": [
-          "eyfC-IBPTOM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": "5.1K",
-        "x_views": "166.7K",
+        "x_views": "390.1K",
         "ig_likes": null
       }
     }
@@ -848,8 +884,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "721",
-        "yt_views": "4.7K",
+        "rumble_views": "722",
+        "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
       }
@@ -872,7 +908,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "873",
+        "rumble_views": "874",
         "yt_views": "3.5K",
         "x_views": "482.6K",
         "ig_likes": "291"
