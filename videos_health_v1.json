@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-20T00:20:03Z",
-  "last_updated": "2026-09-20T00:20:03Z",
+  "iso": "2026-09-20T01:51:35Z",
+  "last_updated": "2026-09-20T01:51:35Z",
   "episodes": [
     {
       "guest": "Tucker Carlson",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "4.9K",
-        "yt_views": "55.6K",
+        "yt_views": "55.8K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -44,7 +44,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.7K",
+        "rumble_views": "3.8K",
         "yt_views": "2.4K",
         "x_views": "218.3K",
         "ig_likes": null
@@ -68,8 +68,28 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "2.2K",
+        "x_views": "534.6K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": null,
         "x_views": "112.4K",
         "ig_likes": null
       }
@@ -116,9 +136,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.7K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -142,7 +165,7 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "43.0K",
-        "x_views": "474.9K",
+        "x_views": "24.1K",
         "ig_likes": null
       }
     },
@@ -164,9 +187,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.3K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -190,7 +216,7 @@
       "metrics": {
         "rumble_views": "4.1K",
         "yt_views": "64.5K",
-        "x_views": "646.4K",
+        "x_views": "869.3K",
         "ig_likes": null
       }
     },
@@ -310,7 +336,10 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "4.3K",
-        "x_views": "1.1M",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -334,7 +363,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "450.3K",
+        "x_views": "450.0K",
         "ig_likes": null
       }
     },
@@ -356,9 +385,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
+        "rumble_views": null,
         "yt_views": "1.6K",
-        "x_views": "722.1K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -378,8 +410,8 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": null,
-        "x_views": "721.6K",
-        "ig_likes": null
+        "x_views": "276.5K",
+        "ig_likes": "?"
       }
     },
     {
@@ -398,8 +430,11 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": null,
-        "x_views": "913.5K",
-        "ig_likes": null
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
       }
     },
     {
@@ -418,8 +453,11 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": null,
-        "x_views": "452.7K",
-        "ig_likes": null
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
       }
     },
     {
@@ -703,7 +741,7 @@
       },
       "metrics": {
         "rumble_views": "4.9K",
-        "yt_views": "55.6K",
+        "yt_views": "55.8K",
         "x_views": "1.5M",
         "ig_likes": null
       }
@@ -726,7 +764,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.7K",
+        "rumble_views": "3.8K",
         "yt_views": "2.4K",
         "x_views": "218.3K",
         "ig_likes": null
@@ -750,8 +788,28 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "2.2K",
+        "x_views": "534.6K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.0K",
+        "yt_views": null,
         "x_views": "112.4K",
         "ig_likes": null
       }
@@ -777,30 +835,6 @@
         "rumble_views": "4.2K",
         "yt_views": "3.5K",
         "x_views": "426.2K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Branko Milanović",
-      "surname": "MILANOVIĆ",
-      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
-      "date": "15 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id": "fd9388b8783d",
-      "canonical_video_id": "eyfC-IBPTOM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
-      "canonical_episode_id_v2": "833ef9680be61562",
-      "pub_iso": "2026-08-15T16:00:16Z",
-      "source_platform_ids": {
-        "youtube": [
-          "eyfC-IBPTOM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": "5.1K",
-        "x_views": "166.7K",
         "ig_likes": null
       }
     }
