@@ -820,16 +820,16 @@
     "ig_likes_at": "2026-08-23T04:45:55Z",
     "rumble_views": 4100,
     "rumble_views_at": "2026-09-16T01:48:06Z",
-    "yt_views": 64500,
-    "yt_views_at": "2026-09-19T16:46:41Z"
+    "yt_views": 64599,
+    "yt_views_at": "2026-09-20T18:03:14Z"
   },
   "NO:Fernandez": {
     "yt_views": 408,
     "yt_views_at": "2026-09-15T04:14:10Z",
     "ig_likes": 276,
     "ig_likes_at": "2026-08-25T22:50:55Z",
-    "rumble_views": 999,
-    "rumble_views_at": "2026-09-20T16:44:46Z",
+    "rumble_views": 1000,
+    "rumble_views_at": "2026-09-20T18:03:14Z",
     "x_views": 1800000,
     "x_views_at": "2026-09-18T00:29:15Z"
   },
@@ -850,8 +850,8 @@
     "ig_likes_at": "2026-08-22T18:28:40Z",
     "rumble_views": 5500,
     "rumble_views_at": "2026-08-31T17:38:38Z",
-    "x_views": 475000,
-    "x_views_at": "2026-09-20T10:19:55Z"
+    "x_views": 475100,
+    "x_views_at": "2026-09-20T18:03:14Z"
   },
   "GU:Milanovic": {
     "ig_likes": 606,
@@ -924,8 +924,8 @@
     "yt_views_at": "2026-09-19T07:50:59Z"
   },
   "GU:Carlson": {
-    "yt_views": 57300,
-    "yt_views_at": "2026-09-20T15:35:07Z",
+    "yt_views": 57500,
+    "yt_views_at": "2026-09-20T18:03:14Z",
     "x_views": 2100000,
     "x_views_at": "2026-09-19T19:11:00Z",
     "rumble_views": 5000,
@@ -934,8 +934,8 @@
   "NO:Batista": {
     "yt_views": 4700,
     "yt_views_at": "2026-09-19T07:13:21Z",
-    "rumble_views": 752,
-    "rumble_views_at": "2026-09-20T16:44:46Z",
+    "rumble_views": 755,
+    "rumble_views_at": "2026-09-20T18:03:14Z",
     "x_views": 1400000,
     "x_views_at": "2026-09-18T00:29:15Z"
   },
@@ -960,7 +960,7 @@
     "x_views_at": "2026-09-20T16:44:46Z",
     "rumble_views": 188000,
     "rumble_views_at": "2026-09-19T16:46:41Z",
-    "yt_views": 105,
-    "yt_views_at": "2026-09-20T14:49:21Z"
+    "yt_views": 119,
+    "yt_views_at": "2026-09-20T18:03:14Z"
   }
 }
