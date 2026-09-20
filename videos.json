@@ -11,8 +11,7 @@
     "canonical_guest_full_name": "Tucker Carlson",
     "canonical_surname_upper": "CARLSON",
     "canonical_episode_id": "692029c34641",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 26
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Ken Silva",
@@ -26,8 +25,21 @@
     "canonical_guest_full_name": "Ken Silva",
     "canonical_surname_upper": "SILVA",
     "canonical_episode_id": "f9189e08f1d7",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 9
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
+  },
+  {
+    "guest": "Michael O’Hanlon",
+    "surname": "O’Hanlon",
+    "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+    "date": "22 Aug",
+    "rumble_views": null,
+    "x_views": "347.4K",
+    "ig_likes": null,
+    "show": "GU",
+    "canonical_guest_full_name": "Michael O’Hanlon",
+    "canonical_surname_upper": "O’HANLON",
+    "canonical_episode_id": "6f96fd46bb55",
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Michael O’Hanlon",
@@ -43,7 +55,8 @@
     "canonical_episode_id": "6f96fd46bb55",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 9,
-    "_x_guest_repaired_from": "Afshin Rattansi CHALLENGES Ex-"
+    "_x_guest_repaired_from": "Afshin Rattansi CHALLENGES Ex-",
+    "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918"
   },
   {
     "guest": "Philip Pilkington",
@@ -57,8 +70,7 @@
     "canonical_guest_full_name": "Philip Pilkington",
     "canonical_surname_upper": "PILKINGTON",
     "canonical_episode_id": "93ad76c313d1",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "John Mearsheimer",
@@ -66,14 +78,13 @@
     "title": "Prof. John Mearsheimer Explains Why Iran War MUST END & why US Will Reduce Middle East Presence",
     "date": "10 Aug",
     "rumble_views": "3.9K",
-    "x_views": "475.0K",
+    "x_views": "24.1K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "e664d5dd55a6",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Gabor Maté",
@@ -81,14 +92,13 @@
     "title": "Gabor Maté: Netanyahu is the Most EGREGIOUS Expression of Zionist Dehumanisation of Palestinians",
     "date": "3 Aug",
     "rumble_views": "4.1K",
-    "x_views": "646.9K",
+    "x_views": "869.3K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Gabor Maté",
     "canonical_surname_upper": "MATÉ",
     "canonical_episode_id": "0d30042528a6",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Robert Barnes",
@@ -102,9 +112,7 @@
     "canonical_guest_full_name": "Robert Barnes",
     "canonical_surname_upper": "BARNES",
     "canonical_episode_id": "c133da20813e",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12,
-    "_x_guest_repaired_from": "Trump’s Ex-Lawyer Robert Barnes"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Ami Ayalon",
@@ -118,9 +126,7 @@
     "canonical_guest_full_name": "Ami Ayalon",
     "canonical_surname_upper": "AYALON",
     "canonical_episode_id": "349527d06a1f",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 11,
-    "_x_guest_repaired_from": "of Israel’s Shin Bet Ami Ayalon"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Daniel Levy",
@@ -134,9 +140,7 @@
     "canonical_guest_full_name": "Daniel Levy",
     "canonical_surname_upper": "LEVY",
     "canonical_episode_id": "fcee2e52ba61",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12,
-    "_x_guest_repaired_from": "Ex-Israeli Negotiator Daniel Levy"
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Doug Bandow",
@@ -150,8 +154,7 @@
     "canonical_guest_full_name": "Doug Bandow",
     "canonical_surname_upper": "BANDOW",
     "canonical_episode_id": "dfc6afbc2824",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 16
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -159,14 +162,13 @@
     "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
     "date": "18 Jul",
     "rumble_views": "3.9K",
-    "x_views": "1.1M",
+    "x_views": null,
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
     "canonical_episode_id": "40f99fc9eb05",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 19
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Dennis Fritz",
@@ -174,15 +176,13 @@
     "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
     "date": "13 Jul",
     "rumble_views": "3.3K",
-    "x_views": "450.3K",
+    "x_views": "450.4K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 16,
-    "_x_guest_repaired_from": "CMSGT. Dennis Fritz: Israel’s "
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Tobias Ellwood",
@@ -190,14 +190,13 @@
     "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
     "date": "6 Jul",
     "rumble_views": "2.5K",
-    "x_views": "721.6K",
+    "x_views": "276.7K",
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Dennis Kucinich",
@@ -205,14 +204,13 @@
     "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
     "date": "4 Jul",
     "rumble_views": "2.5K",
-    "x_views": "913.5K",
+    "x_views": null,
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Dennis Kucinich",
     "canonical_surname_upper": "KUCINICH",
     "canonical_episode_id": "9702aa6e4b89",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 12
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   },
   {
     "guest": "Max Blumenthal",
@@ -220,13 +218,12 @@
     "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
     "date": "29 Jun",
     "rumble_views": "3.9K",
-    "x_views": "452.7K",
+    "x_views": null,
     "ig_likes": null,
     "show": "GU",
     "canonical_guest_full_name": "Max Blumenthal",
     "canonical_surname_upper": "BLUMENTHAL",
     "canonical_episode_id": "437b917e580d",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 13
+    "_x_status": "UNMEASURED_NO_POSTS_FOUND"
   }
 ]
