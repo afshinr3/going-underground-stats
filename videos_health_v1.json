@@ -1,7 +1,30 @@
 {
-  "iso": "2026-09-21T01:14:04Z",
-  "last_updated": "2026-09-21T01:14:04Z",
+  "iso": "2026-09-21T01:20:05Z",
+  "last_updated": "2026-09-21T01:20:05Z",
   "episodes": [
+    {
+      "guest": "Steve Hanke",
+      "surname": "Hanke",
+      "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
+      "date": "20 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-20T13:01:50Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "573",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
@@ -75,8 +98,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -88,10 +111,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "535.8K",
-        "ig_likes": "?"
+        "x_views": "112.4K",
+        "ig_likes": null
       }
     },
     {
@@ -359,8 +382,8 @@
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -372,10 +395,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.3K",
         "yt_views": null,
-        "x_views": "451.6K",
-        "ig_likes": "?"
+        "x_views": "450.3K",
+        "ig_likes": null
       }
     },
     {
@@ -480,7 +503,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "346",
+        "rumble_views": "350",
         "yt_views": "200",
         "x_views": "131.0K",
         "ig_likes": null
@@ -504,7 +527,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -528,7 +551,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "906",
+        "rumble_views": "907",
         "yt_views": "3.5K",
         "x_views": "482.6K",
         "ig_likes": "291"
@@ -552,7 +575,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "947",
+        "rumble_views": "948",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -725,6 +748,29 @@
   ],
   "gu": [
     {
+      "guest": "Steve Hanke",
+      "surname": "Hanke",
+      "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
+      "date": "20 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-20T13:01:50Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "573",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
       "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
@@ -797,8 +843,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -810,33 +856,9 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "?",
+        "rumble_views": "3.0K",
         "yt_views": null,
-        "x_views": "535.8K",
-        "ig_likes": "?"
-      }
-    },
-    {
-      "guest": "Philip Pilkington",
-      "surname": "PILKINGTON",
-      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
-      "date": "17 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": "w7KXuXugzlA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": "6f9f42c60330bac0",
-      "pub_iso": "2026-08-17T10:43:18Z",
-      "source_platform_ids": {
-        "youtube": [
-          "w7KXuXugzlA"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "4.3K",
-        "yt_views": "3.5K",
-        "x_views": "427.2K",
+        "x_views": "112.4K",
         "ig_likes": null
       }
     }
@@ -860,7 +882,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "346",
+        "rumble_views": "350",
         "yt_views": "200",
         "x_views": "131.0K",
         "ig_likes": null
@@ -884,7 +906,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "762",
+        "rumble_views": "763",
         "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -908,7 +930,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "906",
+        "rumble_views": "907",
         "yt_views": "3.5K",
         "x_views": "482.6K",
         "ig_likes": "291"
@@ -932,7 +954,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "947",
+        "rumble_views": "948",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
