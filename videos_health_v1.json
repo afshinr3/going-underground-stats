@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-21T10:20:05Z",
-  "last_updated": "2026-09-21T10:20:05Z",
+  "iso": "2026-09-21T11:20:07Z",
+  "last_updated": "2026-09-21T11:20:07Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -64,7 +64,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.8K",
+        "rumble_views": "3.9K",
         "yt_views": "2.4K",
         "x_views": "219.4K",
         "ig_likes": null
@@ -160,7 +160,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.9K",
+        "rumble_views": "4.0K",
         "yt_views": "43.0K",
         "x_views": "475.3K",
         "ig_likes": null
@@ -423,26 +423,6 @@
       }
     },
     {
-      "guest": "Max Blumenthal",
-      "surname": "BLUMENTHAL",
-      "title": "Max Blumenthal Reveals Why Trump’s MoU with Iran Will FAIL and What Israel Will Do Next",
-      "date": "29 Jun",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "437b917e580d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.9K",
-        "yt_views": null,
-        "x_views": "452.7K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Anatol Lieven",
       "surname": "LIEVEN",
       "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
@@ -460,8 +440,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "386",
-        "yt_views": "246",
+        "rumble_views": "387",
+        "yt_views": "254",
         "x_views": "567.0K",
         "ig_likes": null
       }
@@ -508,7 +488,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "913",
+        "rumble_views": "914",
         "yt_views": "3.5K",
         "x_views": "482.7K",
         "ig_likes": "291"
@@ -532,7 +512,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "953",
+        "rumble_views": "954",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -766,7 +746,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.8K",
+        "rumble_views": "3.9K",
         "yt_views": "2.4K",
         "x_views": "219.4K",
         "ig_likes": null
@@ -840,8 +820,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "386",
-        "yt_views": "246",
+        "rumble_views": "387",
+        "yt_views": "254",
         "x_views": "567.0K",
         "ig_likes": null
       }
@@ -888,7 +868,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "913",
+        "rumble_views": "914",
         "yt_views": "3.5K",
         "x_views": "482.7K",
         "ig_likes": "291"
@@ -912,7 +892,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "953",
+        "rumble_views": "954",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
