@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-21T13:20:05Z",
-  "last_updated": "2026-09-21T13:20:05Z",
+  "iso": "2026-09-21T16:20:03Z",
+  "last_updated": "2026-09-21T16:20:03Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -8,17 +8,21 @@
       "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
       "date": "21 Sep",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
       "canonical_episode_id": "ad07f4c2e03c",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-21T01:00:15Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "pdpZyOUSWcs",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
+      "canonical_episode_id_v2": "66ac525813ac9b56",
+      "pub_iso": "2026-09-21T10:19:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "pdpZyOUSWcs"
+        ]
+      },
       "metrics": {
-        "rumble_views": "1.5K",
-        "yt_views": "120",
-        "x_views": "10.6K",
+        "rumble_views": "1.6K",
+        "yt_views": "583",
+        "x_views": "591.3K",
         "ig_likes": null
       }
     },
@@ -41,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "5.2K",
-        "yt_views": "59.4K",
+        "yt_views": "59.8K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -359,30 +363,6 @@
       }
     },
     {
-      "guest": "James Carden",
-      "surname": "CARDEN",
-      "title": "Ukraine Proxy War: Europe’s Elites & US Neocons Want the DISSOLUTION of Russia —James Carden",
-      "date": "11 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-      "canonical_episode_id": "bce46f2dc542",
-      "canonical_video_id": "Cc9-pfOYmWQ",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Cc9-pfOYmWQ",
-      "canonical_episode_id_v2": "4298e576095c64c0",
-      "pub_iso": "2026-07-11T11:47:03Z",
-      "source_platform_ids": {
-        "youtube": [
-          "Cc9-pfOYmWQ"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "1.6K",
-        "x_views": "722.1K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Tobias Ellwood",
       "surname": "ELLWOOD",
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
@@ -440,8 +420,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "398",
-        "yt_views": "257",
+        "rumble_views": "411",
+        "yt_views": "264",
         "x_views": "567.0K",
         "ig_likes": null
       }
@@ -464,7 +444,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "773",
+        "rumble_views": "778",
         "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -488,7 +468,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "916",
+        "rumble_views": "920",
         "yt_views": "3.5K",
         "x_views": "482.7K",
         "ig_likes": "291"
@@ -512,7 +492,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "954",
+        "rumble_views": "958",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
@@ -560,7 +540,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "891",
+        "rumble_views": "893",
         "yt_views": "291",
         "x_views": "1.3M",
         "ig_likes": "230"
@@ -690,17 +670,21 @@
       "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
       "date": "21 Sep",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
       "canonical_episode_id": "ad07f4c2e03c",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-21T01:00:15Z",
-      "source_platform_ids": {},
+      "canonical_video_id": "pdpZyOUSWcs",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
+      "canonical_episode_id_v2": "66ac525813ac9b56",
+      "pub_iso": "2026-09-21T10:19:37Z",
+      "source_platform_ids": {
+        "youtube": [
+          "pdpZyOUSWcs"
+        ]
+      },
       "metrics": {
-        "rumble_views": "1.5K",
-        "yt_views": "120",
-        "x_views": "10.6K",
+        "rumble_views": "1.6K",
+        "yt_views": "583",
+        "x_views": "591.3K",
         "ig_likes": null
       }
     },
@@ -723,7 +707,7 @@
       },
       "metrics": {
         "rumble_views": "5.2K",
-        "yt_views": "59.4K",
+        "yt_views": "59.8K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -820,8 +804,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "398",
-        "yt_views": "257",
+        "rumble_views": "411",
+        "yt_views": "264",
         "x_views": "567.0K",
         "ig_likes": null
       }
@@ -844,7 +828,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "773",
+        "rumble_views": "778",
         "yt_views": "4.6K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -868,7 +852,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "916",
+        "rumble_views": "920",
         "yt_views": "3.5K",
         "x_views": "482.7K",
         "ig_likes": "291"
@@ -892,7 +876,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "954",
+        "rumble_views": "958",
         "yt_views": "153",
         "x_views": "359.0K",
         "ig_likes": "213"
