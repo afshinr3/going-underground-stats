@@ -5,7 +5,7 @@
   "window_end": "2026-09-21",
   "window_start_mon": "2026-09-18",
   "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-21T17:20:03.817010Z",
+  "generated_at": "2026-09-21T17:46:13.149891Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,19 @@
       "show": "GU",
       "canonical_guest_full_name": "Steve Hanke",
       "canonical_surname_upper": "HANKE",
-      "canonical_episode_id": "ad07f4c2e03c"
+      "canonical_episode_id": "ad07f4c2e03c",
+      "canonical_video_id": "pdpZyOUSWcs",
+      "canonical_video_url": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
+      "pub_iso": "2026-09-21T10:19:37Z",
+      "canonical_episode_id_v2": "66ac525813ac9b56",
+      "link": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
+      "source_platform_ids": {
+        "youtube": [
+          "pdpZyOUSWcs"
+        ]
+      },
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "yt_views": "800"
     }
   ],
   "source_feed": "videos.json",
