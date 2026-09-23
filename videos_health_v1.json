@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-23T09:20:04Z",
-  "last_updated": "2026-09-23T09:20:04Z",
+  "iso": "2026-09-23T11:20:05Z",
+  "last_updated": "2026-09-23T11:20:05Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -45,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "5.3K",
-        "yt_views": "64.3K",
+        "yt_views": "64.4K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -420,8 +420,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "510",
-        "yt_views": "332",
+        "rumble_views": "514",
+        "yt_views": "335",
         "x_views": "916.0K",
         "ig_likes": null
       }
@@ -707,7 +707,7 @@
       },
       "metrics": {
         "rumble_views": "5.3K",
-        "yt_views": "64.3K",
+        "yt_views": "64.4K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -804,8 +804,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "510",
-        "yt_views": "332",
+        "rumble_views": "514",
+        "yt_views": "335",
         "x_views": "916.0K",
         "ig_likes": null
       }
