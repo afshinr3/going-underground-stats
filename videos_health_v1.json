@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-23T21:24:41Z",
-  "last_updated": "2026-09-23T21:24:41Z",
+  "iso": "2026-09-23T23:53:58Z",
+  "last_updated": "2026-09-23T23:53:58Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -21,8 +21,8 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "2.1K",
-        "x_views": "296.1K",
+        "yt_views": "2.2K",
+        "x_views": "655.7K",
         "ig_likes": null
       }
     },
@@ -45,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "5.4K",
-        "yt_views": "65.2K",
+        "yt_views": "65.6K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -92,8 +92,28 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "2.2K",
+        "x_views": "667.9K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "3.1K",
+        "yt_views": null,
         "x_views": "112.4K",
         "ig_likes": null
       }
@@ -169,7 +189,7 @@
       "metrics": {
         "rumble_views": "4.0K",
         "yt_views": "43.0K",
-        "x_views": "475.7K",
+        "x_views": "24.1K",
         "ig_likes": null
       }
     },
@@ -220,7 +240,7 @@
       "metrics": {
         "rumble_views": "4.1K",
         "yt_views": "64.8K",
-        "x_views": "649.9K",
+        "x_views": "870.2K",
         "ig_likes": null
       }
     },
@@ -340,7 +360,10 @@
       "metrics": {
         "rumble_views": "3.9K",
         "yt_views": "4.4K",
-        "x_views": "1.1M",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -364,7 +387,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "1.1K",
-        "x_views": "450.4K",
+        "x_views": "456.2K",
         "ig_likes": null
       }
     },
@@ -384,8 +407,8 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": null,
-        "x_views": "721.6K",
-        "ig_likes": null
+        "x_views": "279.9K",
+        "ig_likes": "?"
       }
     },
     {
@@ -404,8 +427,11 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": null,
-        "x_views": "913.5K",
-        "ig_likes": null
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
       }
     },
     {
@@ -426,8 +452,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "526",
-        "yt_views": "364",
+        "rumble_views": "530",
+        "yt_views": "387",
         "x_views": "916.0K",
         "ig_likes": null
       }
@@ -450,7 +476,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "837",
+        "rumble_views": "843",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -474,7 +500,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "971",
+        "rumble_views": "974",
         "yt_views": "3.6K",
         "x_views": "482.8K",
         "ig_likes": "291"
@@ -689,8 +715,8 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "2.1K",
-        "x_views": "296.1K",
+        "yt_views": "2.2K",
+        "x_views": "655.7K",
         "ig_likes": null
       }
     },
@@ -713,7 +739,7 @@
       },
       "metrics": {
         "rumble_views": "5.4K",
-        "yt_views": "65.2K",
+        "yt_views": "65.6K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -760,33 +786,29 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": null,
         "yt_views": "2.2K",
-        "x_views": "112.4K",
+        "x_views": "667.9K",
         "ig_likes": null
       }
     },
     {
-      "guest": "Philip Pilkington",
-      "surname": "PILKINGTON",
-      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
-      "date": "17 Aug",
+      "guest": "Michael O’Hanlon",
+      "surname": "HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": "w7KXuXugzlA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": "6f9f42c60330bac0",
-      "pub_iso": "2026-08-17T10:43:18Z",
-      "source_platform_ids": {
-        "youtube": [
-          "w7KXuXugzlA"
-        ]
-      },
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "4.4K",
-        "yt_views": "3.5K",
-        "x_views": "429.8K",
+        "rumble_views": "3.1K",
+        "yt_views": null,
+        "x_views": "112.4K",
         "ig_likes": null
       }
     }
@@ -810,8 +832,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "526",
-        "yt_views": "364",
+        "rumble_views": "530",
+        "yt_views": "387",
         "x_views": "916.0K",
         "ig_likes": null
       }
@@ -834,7 +856,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "837",
+        "rumble_views": "843",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -858,7 +880,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "971",
+        "rumble_views": "974",
         "yt_views": "3.6K",
         "x_views": "482.8K",
         "ig_likes": "291"
