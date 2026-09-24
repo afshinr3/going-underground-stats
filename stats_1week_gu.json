@@ -5,7 +5,7 @@
   "window_end": "2026-09-21",
   "window_start_mon": "2026-09-18",
   "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-23T23:53:58.457930Z",
+  "generated_at": "2026-09-24T01:20:06.124020Z",
   "n": 1,
   "entries": [
     {
@@ -14,7 +14,7 @@
       "title": "Prof. Steve Hanke: \u2018Trump is TRAPPED in Inflation Crisis\u2019 Warns to STAY AWAY from US Bond Market",
       "date": "21 Sep",
       "rumble_views": "2.5K",
-      "x_views": "655.7K",
+      "x_views": "300.6K",
       "ig_likes": null,
       "show": "GU",
       "canonical_guest_full_name": "Steve Hanke",
@@ -30,8 +30,9 @@
           "pdpZyOUSWcs"
         ]
       },
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "2.2K"
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "yt_views": "2.2K",
+      "_x_store_tweets": 10
     }
   ],
   "source_feed": "videos.json",
