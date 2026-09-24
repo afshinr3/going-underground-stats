@@ -5,7 +5,7 @@
   "window_end": "2026-09-21",
   "window_start_mon": "2026-09-18",
   "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-24T18:20:05.621657Z",
+  "generated_at": "2026-09-24T19:20:04.218769Z",
   "n": 1,
   "entries": [
     {
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
-      "_x_status": "FETCH_FAILED:Exception",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "NO",
       "_x_store_tweets": 9,
       "_x_own_views": 1016031,
