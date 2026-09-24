@@ -5,7 +5,7 @@
   "window_end": "2026-09-21",
   "window_start_mon": "2026-09-18",
   "window_end_sun": "2026-09-21",
-  "generated_at": "2026-09-24T14:20:05.684262Z",
+  "generated_at": "2026-09-24T15:20:04.204750Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,9 @@
       "show": "GU",
       "canonical_guest_full_name": "Steve Hanke",
       "canonical_surname_upper": "HANKE",
-      "canonical_episode_id": "ad07f4c2e03c"
+      "canonical_episode_id": "ad07f4c2e03c",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_store_tweets": 10
     }
   ],
   "source_feed": "videos.json",
