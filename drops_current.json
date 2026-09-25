@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-25T05:18:00Z",
+  "updated": "2026-09-25T07:52:38Z",
   "drops": [
     {
-      "ts": "2026-09-25T05:18:00Z",
+      "ts": "2026-09-25T07:52:38Z",
       "show": "GU",
-      "guest": "Israel\u2019s",
+      "guest": "Mat\u00e9",
       "platform": "X",
-      "peak": 669100,
-      "peak_at": "2026-09-24T11:03:31Z",
-      "current": 458200,
-      "drop_pct": 31.5
+      "peak": 870500,
+      "peak_at": "2026-09-25T04:14:41Z",
+      "current": 651000,
+      "drop_pct": 25.2
     }
   ]
 }

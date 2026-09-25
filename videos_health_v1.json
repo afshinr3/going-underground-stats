@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-25T03:20:03Z",
-  "last_updated": "2026-09-25T03:20:03Z",
+  "iso": "2026-09-25T07:52:38Z",
+  "last_updated": "2026-09-25T07:52:38Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -44,8 +44,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.4K",
-        "yt_views": "67.7K",
+        "rumble_views": "5.5K",
+        "yt_views": "68.5K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -140,9 +140,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.8K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -188,9 +191,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -420,8 +426,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "579",
-        "yt_views": "497",
+        "rumble_views": "585",
+        "yt_views": "506",
         "x_views": "924.7K",
         "ig_likes": null
       }
@@ -444,7 +450,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "881",
+        "rumble_views": "886",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -706,8 +712,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.4K",
-        "yt_views": "67.7K",
+        "rumble_views": "5.5K",
+        "yt_views": "68.5K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -804,8 +810,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "579",
-        "yt_views": "497",
+        "rumble_views": "585",
+        "yt_views": "506",
         "x_views": "924.7K",
         "ig_likes": null
       }
@@ -828,7 +834,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "881",
+        "rumble_views": "886",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
