@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-26T09:20:03Z",
-  "last_updated": "2026-09-26T09:20:03Z",
+  "iso": "2026-09-26T10:10:22Z",
+  "last_updated": "2026-09-26T10:10:22Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "2.7K",
-        "yt_views": "2.2K",
+        "yt_views": "2.3K",
         "x_views": "305.4K",
         "ig_likes": null
       }
@@ -45,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "5.5K",
-        "yt_views": "69.9K",
+        "yt_views": "71.0K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -65,7 +65,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": null,
+        "yt_views": "1.3K",
         "x_views": "11.7K",
         "ig_likes": null
       }
@@ -423,6 +423,33 @@
       }
     },
     {
+      "guest": "John Mearsheimer",
+      "surname": "MEARSHEIMER",
+      "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
+      "date": "25 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
+      "canonical_episode_id": "6578bc6660c6",
+      "canonical_video_id": "Vgvd4N3n_Tc",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
+      "canonical_episode_id_v2": "458a6b574e07d8f3",
+      "pub_iso": "2026-09-25T07:47:13Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Vgvd4N3n_Tc"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Anatol Lieven",
       "surname": "LIEVEN",
       "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
@@ -441,7 +468,7 @@
       },
       "metrics": {
         "rumble_views": "626",
-        "yt_views": "521",
+        "yt_views": "534",
         "x_views": "929.5K",
         "ig_likes": null
       }
@@ -703,7 +730,7 @@
       },
       "metrics": {
         "rumble_views": "2.7K",
-        "yt_views": "2.2K",
+        "yt_views": "2.3K",
         "x_views": "305.4K",
         "ig_likes": null
       }
@@ -727,7 +754,7 @@
       },
       "metrics": {
         "rumble_views": "5.5K",
-        "yt_views": "69.9K",
+        "yt_views": "71.0K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -747,7 +774,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": null,
+        "yt_views": "1.3K",
         "x_views": "11.7K",
         "ig_likes": null
       }
@@ -803,6 +830,33 @@
   ],
   "no": [
     {
+      "guest": "John Mearsheimer",
+      "surname": "MEARSHEIMER",
+      "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
+      "date": "25 Sep",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
+      "canonical_episode_id": "6578bc6660c6",
+      "canonical_video_id": "Vgvd4N3n_Tc",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
+      "canonical_episode_id_v2": "458a6b574e07d8f3",
+      "pub_iso": "2026-09-25T07:47:13Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Vgvd4N3n_Tc"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Anatol Lieven",
       "surname": "LIEVEN",
       "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
@@ -821,7 +875,7 @@
       },
       "metrics": {
         "rumble_views": "626",
-        "yt_views": "521",
+        "yt_views": "534",
         "x_views": "929.5K",
         "ig_likes": null
       }
@@ -896,30 +950,6 @@
         "yt_views": "155",
         "x_views": "359.2K",
         "ig_likes": "213"
-      }
-    },
-    {
-      "guest": "Marta Fernandez",
-      "surname": "FERNANDEZ",
-      "title": "Trump is Reviving the Monroe Doctrine to KICK China OUT of Latin America —Prof. Marta Fernandez",
-      "date": "9 Aug",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=XnOfgmdAELk",
-      "canonical_episode_id": "b5a688bb5c98",
-      "canonical_video_id": "XnOfgmdAELk",
-      "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
-      "canonical_episode_id_v2": "127afae570dfe74d",
-      "pub_iso": "2026-08-09T06:30:23Z",
-      "source_platform_ids": {
-        "youtube": [
-          "XnOfgmdAELk"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "1.1K",
-        "yt_views": "29",
-        "x_views": "1.3M",
-        "ig_likes": "276"
       }
     }
   ]
