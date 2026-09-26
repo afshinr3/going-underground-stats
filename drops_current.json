@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-26T20:51:00Z",
+  "updated": "2026-09-26T23:32:53Z",
   "drops": [
     {
-      "ts": "2026-09-26T20:51:00Z",
+      "ts": "2026-09-26T23:32:53Z",
       "show": "NO",
       "guest": "Lieven",
       "platform": "X",
       "peak": 1600000,
       "peak_at": "2026-09-26T05:01:37Z",
-      "current": 932200,
+      "current": 933500,
       "drop_pct": 41.7
     },
     {
-      "ts": "2026-09-26T20:51:00Z",
+      "ts": "2026-09-26T23:32:53Z",
       "show": "NO",
       "guest": "Perkins",
       "platform": "X",

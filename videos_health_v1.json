@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-26T23:20:05Z",
-  "last_updated": "2026-09-26T23:20:05Z",
+  "iso": "2026-09-26T23:32:53Z",
+  "last_updated": "2026-09-26T23:32:53Z",
   "episodes": [
     {
       "guest": "Joe Kent",
@@ -17,7 +17,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.0K",
-        "yt_views": "9.8K",
+        "yt_views": "12.2K",
         "x_views": "482.5K",
         "ig_likes": null
       }
@@ -65,7 +65,7 @@
       },
       "metrics": {
         "rumble_views": "5.6K",
-        "yt_views": "71.7K",
+        "yt_views": "71.9K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -464,8 +464,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "657",
-        "yt_views": "555",
+        "rumble_views": "654",
+        "yt_views": "567",
         "x_views": "933.5K",
         "ig_likes": null
       }
@@ -488,7 +488,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "959",
+        "rumble_views": "956",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -512,7 +512,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.1K",
+        "rumble_views": "1.0K",
         "yt_views": "3.6K",
         "x_views": "482.9K",
         "ig_likes": "291"
@@ -723,7 +723,7 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "2.0K",
-        "yt_views": "9.8K",
+        "yt_views": "12.2K",
         "x_views": "482.5K",
         "ig_likes": null
       }
@@ -771,7 +771,7 @@
       },
       "metrics": {
         "rumble_views": "5.6K",
-        "yt_views": "71.7K",
+        "yt_views": "71.9K",
         "x_views": "1.6M",
         "ig_likes": null
       }
@@ -868,8 +868,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "657",
-        "yt_views": "555",
+        "rumble_views": "654",
+        "yt_views": "567",
         "x_views": "933.5K",
         "ig_likes": null
       }
@@ -892,7 +892,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "959",
+        "rumble_views": "956",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -916,7 +916,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.1K",
+        "rumble_views": "1.0K",
         "yt_views": "3.6K",
         "x_views": "482.9K",
         "ig_likes": "291"
