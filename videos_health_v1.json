@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-26T13:18:20Z",
-  "last_updated": "2026-09-26T13:18:20Z",
+  "iso": "2026-09-26T13:25:45Z",
+  "last_updated": "2026-09-26T13:25:45Z",
   "episodes": [
     {
       "guest": "Joe Kent",
@@ -440,7 +440,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": "0",
         "yt_views": "0",
         "x_views": {
           "status": "N/A",
@@ -847,7 +847,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": "0",
         "yt_views": "0",
         "x_views": {
           "status": "N/A",
