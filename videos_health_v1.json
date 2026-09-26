@@ -1,7 +1,27 @@
 {
-  "iso": "2026-09-26T01:20:06Z",
-  "last_updated": "2026-09-26T01:20:06Z",
+  "iso": "2026-09-26T02:20:06Z",
+  "last_updated": "2026-09-26T02:20:06Z",
   "episodes": [
+    {
+      "guest": "Joe Kent",
+      "surname": "Kent",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "25 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-25T11:15:26Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "570",
+        "yt_views": null,
+        "x_views": "5.0K",
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Steve Hanke",
       "surname": "HANKE",
@@ -420,7 +440,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "614",
+        "rumble_views": "615",
         "yt_views": "521",
         "x_views": "929.5K",
         "ig_likes": null
@@ -444,7 +464,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "917",
+        "rumble_views": "918",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -665,6 +685,26 @@
   ],
   "gu": [
     {
+      "guest": "Joe Kent",
+      "surname": "Kent",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "25 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-25T11:15:26Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "570",
+        "yt_views": null,
+        "x_views": "5.0K",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Steve Hanke",
       "surname": "HANKE",
       "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
@@ -759,30 +799,6 @@
         "x_views": "112.4K",
         "ig_likes": null
       }
-    },
-    {
-      "guest": "Philip Pilkington",
-      "surname": "PILKINGTON",
-      "title": "Iran War: Trump’s Oil Market Manipulation & The Breakdown of US Dollar Hegemony (Philip Pilkington)",
-      "date": "17 Aug",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id": "93ad76c313d1",
-      "canonical_video_id": "w7KXuXugzlA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": "6f9f42c60330bac0",
-      "pub_iso": "2026-08-17T10:43:18Z",
-      "source_platform_ids": {
-        "youtube": [
-          "w7KXuXugzlA"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "4.4K",
-        "yt_views": "3.5K",
-        "x_views": "432.0K",
-        "ig_likes": null
-      }
     }
   ],
   "no": [
@@ -804,7 +820,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "614",
+        "rumble_views": "615",
         "yt_views": "521",
         "x_views": "929.5K",
         "ig_likes": null
@@ -828,7 +844,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "917",
+        "rumble_views": "918",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
