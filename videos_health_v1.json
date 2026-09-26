@@ -1,27 +1,7 @@
 {
-  "iso": "2026-09-26T20:51:02Z",
-  "last_updated": "2026-09-26T20:51:02Z",
+  "iso": "2026-09-26T21:20:04Z",
+  "last_updated": "2026-09-26T21:20:04Z",
   "episodes": [
-    {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "26 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-25T11:34:17Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.9K",
-        "yt_views": "9.8K",
-        "x_views": "275.4K",
-        "ig_likes": null
-      }
-    },
     {
       "guest": "Joe Kent",
       "surname": "KENT",
@@ -37,8 +17,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": "6.8K",
-        "x_views": "275.4K",
+        "yt_views": "9.8K",
+        "x_views": "482.5K",
         "ig_likes": null
       }
     },
@@ -62,7 +42,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.3K",
-        "x_views": "307.5K",
+        "x_views": "308.2K",
         "ig_likes": null
       }
     },
@@ -108,9 +88,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": "4.1K",
         "yt_views": "2.4K",
-        "x_views": "223.4K",
+        "x_views": "223.6K",
         "ig_likes": null
       }
     },
@@ -158,7 +138,7 @@
       "metrics": {
         "rumble_views": "4.5K",
         "yt_views": "3.5K",
-        "x_views": "432.9K",
+        "x_views": "433.2K",
         "ig_likes": null
       }
     },
@@ -206,7 +186,7 @@
       "metrics": {
         "rumble_views": "4.0K",
         "yt_views": "43.1K",
-        "x_views": "476.3K",
+        "x_views": "476.4K",
         "ig_likes": null
       }
     },
@@ -254,7 +234,7 @@
       "metrics": {
         "rumble_views": "4.1K",
         "yt_views": "65.1K",
-        "x_views": "653.2K",
+        "x_views": "653.5K",
         "ig_likes": null
       }
     },
@@ -326,7 +306,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "4.3K",
-        "x_views": "627.1K",
+        "x_views": "627.5K",
         "ig_likes": null
       }
     },
@@ -350,7 +330,7 @@
       "metrics": {
         "rumble_views": "3.3K",
         "yt_views": "3.1K",
-        "x_views": "808.0K",
+        "x_views": "808.5K",
         "ig_likes": null
       }
     },
@@ -484,9 +464,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "649",
+        "rumble_views": "653",
         "yt_views": "555",
-        "x_views": "932.2K",
+        "x_views": "933.5K",
         "ig_likes": null
       }
     },
@@ -508,7 +488,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "946",
+        "rumble_views": "955",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -654,7 +634,7 @@
       "metrics": {
         "rumble_views": "917",
         "yt_views": "1.1K",
-        "x_views": "941.2K",
+        "x_views": "941.3K",
         "ig_likes": "351"
       }
     },
@@ -732,26 +712,6 @@
       "guest": "Joe Kent",
       "surname": "KENT",
       "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "26 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-25T11:34:17Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.9K",
-        "yt_views": "9.8K",
-        "x_views": "275.4K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
       "date": "25 Sep",
       "show": "GU",
       "link": "",
@@ -763,8 +723,8 @@
       "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": "6.8K",
-        "x_views": "275.4K",
+        "yt_views": "9.8K",
+        "x_views": "482.5K",
         "ig_likes": null
       }
     },
@@ -788,7 +748,7 @@
       "metrics": {
         "rumble_views": "2.8K",
         "yt_views": "2.3K",
-        "x_views": "307.5K",
+        "x_views": "308.2K",
         "ig_likes": null
       }
     },
@@ -834,9 +794,33 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": "4.1K",
         "yt_views": "2.4K",
-        "x_views": "223.4K",
+        "x_views": "223.6K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": "Eu0Phb99ipg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
+      "canonical_episode_id_v2": "20fc52f5bc97c24f",
+      "pub_iso": "2026-08-22T11:55:34Z",
+      "source_platform_ids": {
+        "youtube": [
+          "Eu0Phb99ipg"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "3.2K",
+        "yt_views": "2.2K",
+        "x_views": "112.5K",
         "ig_likes": null
       }
     }
@@ -884,9 +868,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "649",
+        "rumble_views": "653",
         "yt_views": "555",
-        "x_views": "932.2K",
+        "x_views": "933.5K",
         "ig_likes": null
       }
     },
@@ -908,7 +892,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "946",
+        "rumble_views": "955",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
