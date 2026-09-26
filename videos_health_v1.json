@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-26T05:20:08Z",
-  "last_updated": "2026-09-26T05:20:08Z",
+  "iso": "2026-09-26T06:20:05Z",
+  "last_updated": "2026-09-26T06:20:05Z",
   "episodes": [
     {
       "guest": "Joe Kent",
@@ -16,7 +16,7 @@
       "pub_iso": "2026-09-24T18:51:23Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "887",
+        "rumble_views": "973",
         "yt_views": null,
         "x_views": "11.7K",
         "ig_likes": null
@@ -440,7 +440,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "620",
+        "rumble_views": "623",
         "yt_views": "521",
         "x_views": "929.5K",
         "ig_likes": null
@@ -464,7 +464,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "922",
+        "rumble_views": "923",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -698,7 +698,7 @@
       "pub_iso": "2026-09-24T18:51:23Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "887",
+        "rumble_views": "973",
         "yt_views": null,
         "x_views": "11.7K",
         "ig_likes": null
@@ -820,7 +820,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "620",
+        "rumble_views": "623",
         "yt_views": "521",
         "x_views": "929.5K",
         "ig_likes": null
@@ -844,7 +844,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "922",
+        "rumble_views": "923",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
