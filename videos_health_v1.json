@@ -1,27 +1,7 @@
 {
-  "iso": "2026-09-26T10:20:05Z",
-  "last_updated": "2026-09-26T10:20:05Z",
+  "iso": "2026-09-26T11:20:07Z",
+  "last_updated": "2026-09-26T11:20:07Z",
   "episodes": [
-    {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "25 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-25T16:00:19Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.3K",
-        "yt_views": "1.3K",
-        "x_views": "11.7K",
-        "ig_likes": null
-      }
-    },
     {
       "guest": "Steve Hanke",
       "surname": "HANKE",
@@ -43,6 +23,26 @@
         "rumble_views": "2.7K",
         "yt_views": "2.3K",
         "x_views": "305.4K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "20 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-20T13:18:17Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "1.4K",
+        "yt_views": "1.3K",
+        "x_views": "11.7K",
         "ig_likes": null
       }
     },
@@ -467,7 +467,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "628",
+        "rumble_views": "629",
         "yt_views": "534",
         "x_views": "929.5K",
         "ig_likes": null
@@ -491,7 +491,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "929",
+        "rumble_views": "930",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
@@ -712,26 +712,6 @@
   ],
   "gu": [
     {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "25 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-25T16:00:19Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.3K",
-        "yt_views": "1.3K",
-        "x_views": "11.7K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Steve Hanke",
       "surname": "HANKE",
       "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
@@ -752,6 +732,26 @@
         "rumble_views": "2.7K",
         "yt_views": "2.3K",
         "x_views": "305.4K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "20 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-20T13:18:17Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "1.4K",
+        "yt_views": "1.3K",
+        "x_views": "11.7K",
         "ig_likes": null
       }
     },
@@ -874,7 +874,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "628",
+        "rumble_views": "629",
         "yt_views": "534",
         "x_views": "929.5K",
         "ig_likes": null
@@ -898,7 +898,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "929",
+        "rumble_views": "930",
         "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": null
