@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-26T08:20:04Z",
-  "last_updated": "2026-09-26T08:20:04Z",
+  "iso": "2026-09-26T09:20:03Z",
+  "last_updated": "2026-09-26T09:20:03Z",
   "episodes": [
     {
       "guest": "Steve Hanke",
@@ -27,26 +27,6 @@
       }
     },
     {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "20 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-20T13:18:17Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.2K",
-        "yt_views": null,
-        "x_views": "11.7K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
       "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
@@ -67,6 +47,26 @@
         "rumble_views": "5.5K",
         "yt_views": "69.9K",
         "x_views": "1.6M",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "3 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-03T15:55:09Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "1.2K",
+        "yt_views": null,
+        "x_views": "11.7K",
         "ig_likes": null
       }
     },
@@ -709,26 +709,6 @@
       }
     },
     {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "20 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-20T13:18:17Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.2K",
-        "yt_views": null,
-        "x_views": "11.7K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
       "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
@@ -749,6 +729,26 @@
         "rumble_views": "5.5K",
         "yt_views": "69.9K",
         "x_views": "1.6M",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "3 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-03T15:55:09Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "1.2K",
+        "yt_views": null,
+        "x_views": "11.7K",
         "ig_likes": null
       }
     },
