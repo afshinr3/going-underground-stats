@@ -1,7 +1,27 @@
 {
-  "iso": "2026-09-26T05:01:42Z",
-  "last_updated": "2026-09-26T05:01:42Z",
+  "iso": "2026-09-26T05:20:08Z",
+  "last_updated": "2026-09-26T05:20:08Z",
   "episodes": [
+    {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "24 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-24T18:51:23Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "887",
+        "yt_views": null,
+        "x_views": "11.7K",
+        "ig_likes": null
+      }
+    },
     {
       "guest": "Steve Hanke",
       "surname": "HANKE",
@@ -47,26 +67,6 @@
         "rumble_views": "5.5K",
         "yt_views": "69.9K",
         "x_views": "1.6M",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Joe Kent",
-      "surname": "Kent",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "5 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-05T23:36:12Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "796",
-        "yt_views": null,
-        "x_views": "11.7K",
         "ig_likes": null
       }
     },
@@ -359,26 +359,6 @@
       }
     },
     {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "16 Jul",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-07-16T18:59:15Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "668",
-        "yt_views": null,
-        "x_views": "5.0K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Dennis Fritz",
       "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
@@ -460,9 +440,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "617",
+        "rumble_views": "620",
         "yt_views": "521",
-        "x_views": "1.6M",
+        "x_views": "929.5K",
         "ig_likes": null
       }
     },
@@ -484,9 +464,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "919",
+        "rumble_views": "922",
         "yt_views": "4.7K",
-        "x_views": "1.4M",
+        "x_views": "1.3M",
         "ig_likes": null
       }
     },
@@ -510,7 +490,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "3.6K",
-        "x_views": "895.5K",
+        "x_views": "482.9K",
         "ig_likes": "291"
       }
     },
@@ -534,7 +514,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": "155",
-        "x_views": "515.4K",
+        "x_views": "359.2K",
         "ig_likes": "213"
       }
     },
@@ -558,7 +538,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": "29",
-        "x_views": "826.6K",
+        "x_views": "1.3M",
         "ig_likes": "276"
       }
     },
@@ -580,9 +560,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.1K",
+        "rumble_views": "897",
         "yt_views": "291",
-        "x_views": "698.5K",
+        "x_views": "1.3M",
         "ig_likes": "230"
       }
     },
@@ -606,7 +586,7 @@
       "metrics": {
         "rumble_views": "884",
         "yt_views": "133",
-        "x_views": "207.0K",
+        "x_views": "443.0K",
         "ig_likes": "585"
       }
     },
@@ -630,7 +610,7 @@
       "metrics": {
         "rumble_views": "917",
         "yt_views": "1.1K",
-        "x_views": "394.5K",
+        "x_views": "941.2K",
         "ig_likes": "351"
       }
     },
@@ -654,7 +634,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "1.1K",
-        "x_views": "1.1M",
+        "x_views": "812.1K",
         "ig_likes": "233"
       }
     },
@@ -705,6 +685,26 @@
   ],
   "gu": [
     {
+      "guest": "Joe Kent",
+      "surname": "KENT",
+      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
+      "date": "24 Sep",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "24d1b088669d",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-09-24T18:51:23Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "887",
+        "yt_views": null,
+        "x_views": "11.7K",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Steve Hanke",
       "surname": "HANKE",
       "title": "Prof. Steve Hanke: ‘Trump is TRAPPED in Inflation Crisis’ Warns to STAY AWAY from US Bond Market",
@@ -749,26 +749,6 @@
         "rumble_views": "5.5K",
         "yt_views": "69.9K",
         "x_views": "1.6M",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Joe Kent",
-      "surname": "Kent",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "5 Sep",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-09-05T23:36:12Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "796",
-        "yt_views": null,
-        "x_views": "11.7K",
         "ig_likes": null
       }
     },
@@ -840,9 +820,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "617",
+        "rumble_views": "620",
         "yt_views": "521",
-        "x_views": "1.6M",
+        "x_views": "929.5K",
         "ig_likes": null
       }
     },
@@ -864,9 +844,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "919",
+        "rumble_views": "922",
         "yt_views": "4.7K",
-        "x_views": "1.4M",
+        "x_views": "1.3M",
         "ig_likes": null
       }
     },
@@ -890,7 +870,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "3.6K",
-        "x_views": "895.5K",
+        "x_views": "482.9K",
         "ig_likes": "291"
       }
     },
@@ -914,7 +894,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": "155",
-        "x_views": "515.4K",
+        "x_views": "359.2K",
         "ig_likes": "213"
       }
     },
@@ -938,7 +918,7 @@
       "metrics": {
         "rumble_views": "1.1K",
         "yt_views": "29",
-        "x_views": "826.6K",
+        "x_views": "1.3M",
         "ig_likes": "276"
       }
     }
