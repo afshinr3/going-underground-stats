@@ -5,7 +5,7 @@
   "window_end": "2026-09-28",
   "window_start_mon": "2026-09-25",
   "window_end_sun": "2026-09-28",
-  "generated_at": "2026-09-27T12:18:49.813269Z",
+  "generated_at": "2026-09-27T12:20:10.378576Z",
   "n": 1,
   "entries": [
     {
@@ -19,7 +19,9 @@
       "show": "GU",
       "canonical_guest_full_name": "Joe Kent",
       "canonical_surname_upper": "KENT",
-      "canonical_episode_id": "24d1b088669d"
+      "canonical_episode_id": "24d1b088669d",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_store_tweets": 11
     }
   ],
   "source_feed": "videos.json",
