@@ -1605,6 +1605,29 @@ def discover_new_episodes(channel_id, data_file):
             # announcement phrase AND nearest-in-time, and REFUSES rather than guessing:
             # back-tested over 14 episodes it matched 10, refused 3, and produced zero
             # false positives.
+            # GU_GUEST_FROM_DESCRIPTION_V1_20260928 — ask the episode's OWN description
+            # FIRST. YouTube caps a title at 100 characters and this show puts the guest
+            # last, so the cap amputates the name: the 2026-09-28 episode arrived as
+            # "...Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander" (99 chars) with
+            # "Vice Admiral Robert Harward" cut off. The title parser rejected it on every
+            # cycle from 07:06Z and the episode never reached videos.json while it was live
+            # on YouTube and Rumble. The description, already carried in this same feed
+            # entry, opens with the show's own convention and names him outright.
+            #
+            # BEFORE the posts resolver deliberately: the description is EPISODE-SCOPED
+            # (same feed entry as the video id), so unlike a +/-40h post window there is no
+            # way for a neighbouring episode's guest to claim this one.
+            if not guest or not surname:
+                try:
+                    import gu_guest_from_description_v1 as _GFD
+                    _n, _ev = _GFD.guest_from_description(description)
+                    if _n:
+                        guest = _n
+                        surname = _GFD.surname_of(_n)
+                        print(f"  GUEST_FROM_DESCRIPTION: {surname} <- {_ev.get('clause')!r} "
+                              f":: {title[:50]}...")
+                except Exception as _e:
+                    print(f"  GUEST_FROM_DESCRIPTION_ERR: {type(_e).__name__}: {str(_e)[:80]}")
             if not guest or not surname:
                 try:
                     import gu_guest_from_posts_v1 as _GFP

@@ -9,6 +9,12 @@ on:
     paths:
       - 'fetch_and_push.py'
       - 'gu_parser.py'
+      # GUEST_RESOLVER_DEPLOY_PATHS_V1_20260928 — the guest resolvers are imported BY
+      # fetch_and_push.py, so a fix confined to one of them changed nothing the push
+      # trigger watched and waited up to 15 minutes on the cron. They deploy with the
+      # generator now.
+      - 'gu_guest_from_posts_v1.py'
+      - 'gu_guest_from_description_v1.py'
       - '.github/workflows/update.yml'
       - 'regression_tests_gu_titles.json'
   workflow_dispatch: {}       # allow manual run
