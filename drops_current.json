@@ -1,15 +1,4 @@
 {
-  "updated": "2026-09-28T16:41:44Z",
-  "drops": [
-    {
-      "ts": "2026-09-28T16:41:44Z",
-      "show": "GU",
-      "guest": "Milanovi\u0107",
-      "platform": "IG",
-      "peak": 8700,
-      "peak_at": "2026-09-27T17:55:12Z",
-      "current": 6000,
-      "drop_pct": 31.0
-    }
-  ]
+  "updated": "2026-09-28T22:31:30Z",
+  "drops": []
 }
