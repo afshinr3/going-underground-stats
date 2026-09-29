@@ -6,7 +6,7 @@
     "rumble_views": "750",
     "x_views": "658.6K",
     "date": "27 Sep",
-    "yt_views": "12.1K",
+    "yt_views": "12.0K",
     "ig_likes": "1.6K",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
@@ -26,7 +26,8 @@
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_rumble_views_correction": "SURNAME_SCOPE_V1_20260926: was '4.0K', which is the view count of the GOING UNDERGROUND episode 'Prof. John Mearsheimer Explains Why Iran War MUST END' (2026-07-28, 4,010 views), attributed here by a surname-only join. This episode has no Rumble video: its YouTube id premieres 2026-09-27 and Rumble's New Order channel does not carry it.",
-    "_x_store_tweets": 10
+    "_x_store_tweets": 10,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Anatol Lieven",
@@ -131,7 +132,7 @@
     "rumble_views": "1.2K",
     "x_views": "359.3K",
     "date": "16 Aug",
-    "yt_views": "155",
+    "yt_views": "161",
     "ig_likes": "421",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -154,7 +155,8 @@
     "_x_store_tweets": 9,
     "_x_own_views": 465216,
     "_x_others_views": 50226,
-    "_x_posts": 40
+    "_x_posts": 40,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Marta Fernandez",
@@ -177,7 +179,7 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "30",
+    "yt_views": "190",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
@@ -187,7 +189,8 @@
     "_x_store_tweets": 9,
     "_x_own_views": 1158130,
     "_x_others_views": 0,
-    "_x_posts": 9
+    "_x_posts": 9,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Mohammed Baharoon",
@@ -210,7 +213,7 @@
         "F8hxaEtl9Y8"
       ]
     },
-    "yt_views": "291",
+    "yt_views": "110",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "1.3M",
@@ -220,7 +223,8 @@
     "_x_store_tweets": 10,
     "_x_own_views": 1248451,
     "_x_others_views": 0,
-    "_x_posts": 9
+    "_x_posts": 9,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Hussein Askary",
@@ -243,7 +247,7 @@
         "_sA9-4RwI00"
       ]
     },
-    "yt_views": "133",
+    "yt_views": "245",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "443.1K",
@@ -253,7 +257,8 @@
     "_x_store_tweets": 8,
     "_x_own_views": 430518,
     "_x_others_views": 0,
-    "_x_posts": 7
+    "_x_posts": 7,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Peter Schiff",
@@ -276,14 +281,15 @@
         "rE30fKtk4pk"
       ]
     },
-    "yt_views": "1.1K",
+    "yt_views": "514",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "941.3K",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
-    "_x_store_tweets": 8
+    "_x_store_tweets": 8,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "John Perkins",
@@ -292,7 +298,7 @@
     "date": "12 Jul",
     "rumble_views": "1.0K",
     "x_views": "812.2K",
-    "yt_views": "1.1K",
+    "yt_views": "837",
     "ig_likes": "291",
     "show": "NO",
     "canonical_guest_full_name": "John Perkins",
@@ -313,7 +319,8 @@
     "_x_store_tweets": 9,
     "_x_own_views": 1025394,
     "_x_others_views": 62124,
-    "_x_posts": 28
+    "_x_posts": 28,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Vikram Sood",
@@ -322,7 +329,7 @@
     "date": "5 Jul",
     "rumble_views": "553",
     "x_views": "846.1K",
-    "yt_views": "1.1K",
+    "yt_views": "3.2K",
     "ig_likes": "1.1K",
     "show": "NO",
     "canonical_guest_full_name": "Vikram Sood",
@@ -342,7 +349,8 @@
     "_x_passes": null,
     "_x_own_views": 846064,
     "_x_others_views": 0,
-    "_x_posts": 7
+    "_x_posts": 7,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "C. Uday Bhaskar",

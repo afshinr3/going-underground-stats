@@ -5,7 +5,7 @@
   "window_end": "2026-09-28",
   "window_start_mon": "2026-09-25",
   "window_end_sun": "2026-09-28",
-  "generated_at": "2026-09-29T23:41:14.976759Z",
+  "generated_at": "2026-09-29T23:45:23.682754Z",
   "n": 2,
   "entries": [
     {
@@ -59,8 +59,9 @@
         ]
       },
       "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-      "yt_views": "30.6K",
-      "_x_store_tweets": 11
+      "yt_views": "30.5K",
+      "_x_store_tweets": 11,
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
   "source_feed": "videos.json",

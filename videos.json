@@ -50,8 +50,9 @@
       ]
     },
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "yt_views": "30.6K",
-    "_x_store_tweets": 11
+    "yt_views": "30.5K",
+    "_x_store_tweets": 11,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Steve Hanke",
@@ -412,7 +413,17 @@
     "_carried_forward_iso": "2026-09-29T22:15:47Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 19
+    "_x_store_tweets": 19,
+    "canonical_video_id": "WlIY7-ovBd8",
+    "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+    "source_platform_ids": {
+      "youtube": [
+        "WlIY7-ovBd8"
+      ]
+    },
+    "yt_views": "4.4K",
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Dennis Fritz",
@@ -430,7 +441,17 @@
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 16,
-    "_x_guest_repaired_from": "CMSGT. Dennis Fritz: Israel’s "
+    "_x_guest_repaired_from": "CMSGT. Dennis Fritz: Israel’s ",
+    "canonical_video_id": "grMo8SmAQpU",
+    "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
+    "source_platform_ids": {
+      "youtube": [
+        "grMo8SmAQpU"
+      ]
+    },
+    "yt_views": "1.1K",
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Tobias Ellwood",
@@ -447,6 +468,16 @@
     "_carried_forward_iso": "2026-09-29T22:15:47Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 14
+    "_x_store_tweets": 14,
+    "canonical_video_id": "SmH-aEMZyqg",
+    "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+    "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
+    "source_platform_ids": {
+      "youtube": [
+        "SmH-aEMZyqg"
+      ]
+    },
+    "yt_views": "1.5K",
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   }
 ]
