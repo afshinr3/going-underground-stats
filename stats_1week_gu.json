@@ -5,7 +5,7 @@
   "window_end": "2026-09-28",
   "window_start_mon": "2026-09-25",
   "window_end_sun": "2026-09-28",
-  "generated_at": "2026-09-29T14:23:10.462557Z",
+  "generated_at": "2026-09-29T14:57:55.020412Z",
   "n": 2,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "2.6K",
       "x_views": "296.7K",
       "date": "28 Sep",
-      "yt_views": "1.3K",
+      "yt_views": "1.4K",
       "ig_likes": "388",
       "canonical_guest_full_name": "Robert Harward",
       "canonical_surname_upper": "HARWARD",
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "show": "GU",
       "_x_store_tweets": 9
     },
@@ -43,12 +43,12 @@
       "date": "26 Sep",
       "rumble_views": "2.8K",
       "x_views": "850.1K",
-      "ig_likes": "950",
+      "ig_likes": "948",
       "show": "GU",
       "canonical_guest_full_name": "Joe Kent",
       "canonical_surname_upper": "KENT",
       "canonical_episode_id": "24d1b088669d",
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_store_tweets": 11,
       "canonical_video_id": "-SUo0l498vA",
       "canonical_video_url": "https://www.youtube.com/watch?v=-SUo0l498vA",
@@ -60,7 +60,7 @@
           "-SUo0l498vA"
         ]
       },
-      "yt_views": "29.2K"
+      "yt_views": "29.7K"
     }
   ],
   "source_feed": "videos.json",
