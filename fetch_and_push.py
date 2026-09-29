@@ -2637,11 +2637,37 @@ async def update_show(show, ig_clips):
         _tkey = "title::" + re.sub(r'\s+', ' ', str(v.get('title') or '')).strip().lower()
         _ykey = _yid if (_yid and _yid in yt_by_id) else (
             _tkey if _tkey in yt_by_id else None)
+        # EXACT_ID_MUST_ACTUALLY_WIN_V1_20260930 — YT_ATTRIB_BY_VIDEO_ID_V1_20260822 says
+        # "exact id match wins over surname tokens", and the control flow never honoured it:
+        # the surname pass below ran unconditionally afterwards and, being last, overwrote
+        # the exact per-video figure every time.
+        #
+        # That matters because `views_map[surname]` is a SUM — fetch_youtube_data does
+        # `episode_views[sn] = episode_views.get(sn, 0) + _v` over EVERY video whose title
+        # contains the surname — so it is not this episode's view count at all. Measured
+        # 2026-09-30 against YouTube itself, five published New Order rows were wrong, three
+        # of them carrying the SAME fabricated 1.1K for videos of 514, 837 and 3,239:
+        #
+        #     Schiff     rE30fKtk4pk   published 1.1K   actual   514
+        #     Perkins    O3jo1u4MhPY   published 1.1K   actual   837
+        #     Sood       U_7Y7bkSXfk   published 1.1K   actual 3,239
+        #     Baharoon   F8hxaEtl9Y8   published  291   actual   110
+        #     Fernandez  XnOfgmdAELk   published   30   actual   190
+        #
+        # This is the same incident the 2026-07-20 note above already describes ("a Short
+        # containing 'Perkins' set yt_views on the main NO episode") — the fix guarded which
+        # map the surname falls back to, but not whether it runs at all.
+        #
+        # The surname fallback is still needed for a row with NO id and no exact title, so it
+        # is suppressed per-row rather than removed. It cannot be a `continue`: the same loop
+        # also attributes ig_clips, and skipping it would take Instagram down with it.
+        _yt_bound_exactly = False
         if _ykey:
             _new = yt_by_id[_ykey]
             _cur = v.get('yt_views')
             if _new and _new not in ('0', 0, '?', None):
                 v['yt_views'] = _new
+                _yt_bound_exactly = True
             elif _cur in (None, '?', '', 0):
                 v['yt_views'] = _new
         _sn_candidates = [
@@ -2651,7 +2677,7 @@ async def update_show(show, ig_clips):
         for surname in _sn_candidates:
             if not surname:
                 continue
-            if surname in yt:
+            if surname in yt and not _yt_bound_exactly:
                 _new = yt[surname]
                 _cur = v.get('yt_views')
                 # Only overwrite if new is a positive number OR the current is

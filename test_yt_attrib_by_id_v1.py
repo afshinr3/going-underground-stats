@@ -59,9 +59,20 @@ blk2 = blk2[:blk2.index("_sn_candidates")]
 check("only overwrites on a real value", "_new not in ('0', 0, '?', None)" in blk2)
 check("fills when current is missing", "_cur in (None, '?', '', 0)" in blk2)
 
-print("\n5  The surname path still exists as a fallback")
+print("\n5  The surname path still exists as a fallback -- but ONLY as a fallback")
 check("surname candidates still built", "_sn_candidates = [" in src)
-check("surname map still consulted", "if surname in yt:" in src)
+# EXACT_ID_MUST_ACTUALLY_WIN_V1_20260930 — this asserted the literal "if surname in yt:".
+# It passed for thirteen months while the behaviour it was written to protect was broken:
+# this module's own headline is "exact id match wins over surname tokens", and the surname
+# pass ran unconditionally AFTER the id pass and overwrote it, because nothing gated it.
+# Five published New Order rows were wrong, three of them sharing a fabricated 1.1K for
+# videos of 514, 837 and 3,239 views. The map is a SUM over every video whose title carries
+# the surname, so it is not one episode's count at all.
+# The path must still EXIST — a row with no id and no exact title needs it — so the check is
+# now that it exists AND is suppressed once the id already answered.
+check("surname map still consulted", "if surname in yt and not _yt_bound_exactly:" in src)
+check("surname map is gated by the exact-id result",
+      "_yt_bound_exactly = True" in src and "_yt_bound_exactly = False" in src)
 
 print("\n6  Title normalisation is stable")
 norm = lambda t: re.sub(r'\s+', ' ', t).strip().lower()

@@ -627,13 +627,29 @@ def _health_episodes_sig(path):
     """Content signature of the health feed, ignoring the always-moving iso /
     last_updated. None when it cannot be read — the caller treats unknown as
     changed and publishes, rather than discarding a fresh feed on a failed read."""
+    # SIG_MUST_COVER_WHAT_IT_GUARDS_V1_20260930 — this hashed only rumble_views and
+    # ig_likes, the two fields the bridge wrote when it was written. Anything else that
+    # changed produced an IDENTICAL signature, so the caller called it churn and ran
+    # `git checkout -- videos_health_v1.json`, DISCARDING a freshly regenerated and correct
+    # feed. Measured 2026-09-30: after GU_YT_STORE_ATTRIBUTION_V1 filled Wilkerson,
+    # Fritz and Ellwood with real YouTube figures, the health feed the displays read still
+    # said null on every one of them, run after run — the emitter was producing the right
+    # answer and this function was reverting it. X had been silently losing the same way
+    # ever since GU_X_STORE_ATTRIBUTION_V1 started rewriting x_views.
+    #
+    # A change-detector must cover everything the artifact it guards can carry, so the
+    # signature is over ALL FOUR metrics plus the bound identity. Metrics can be dicts
+    # ({status:'N/A'}), hence sort_keys on the dump.
     try:
         d = json.load(open(path))
         eps = d.get("episodes") or []
         return json.dumps(
             [[e.get("title"), e.get("date"), e.get("guest"), e.get("surname"),
+              e.get("canonical_video_id"), e.get("link"),
               (e.get("metrics") or {}).get("rumble_views"),
-              (e.get("metrics") or {}).get("ig_likes")] for e in eps],
+              (e.get("metrics") or {}).get("ig_likes"),
+              (e.get("metrics") or {}).get("yt_views"),
+              (e.get("metrics") or {}).get("x_views")] for e in eps],
             sort_keys=True, ensure_ascii=False)
     except Exception:
         return None
@@ -780,6 +796,24 @@ def main():
                     changed_files.append(_f)
         except Exception as _e_xsa:
             print(f"  [{INJECT_MARKER}] X store re-attribution skipped: {_e_xsa!r}",
+                  file=sys.stderr, flush=True)
+
+        # GU_YT_STORE_ATTRIBUTION_V1_20260930 — YouTube from the complete local store, for
+        # the same reason X is: the cloud discovers videos through the channel RSS feed,
+        # which serves ~15 recent uploads, so an episode that ages out of it never acquires
+        # a canonical_video_id and can never be measured again. On 2026-09-30 the three
+        # oldest GU episodes (Wilkerson 18 Jul, Fritz 13 Jul, Ellwood 6 Jul) were carried
+        # forward with yt_views null and no video id, while all three sat in
+        # ~/RumbleMonitor/yt_2026.json — 90 videos back to 2025-12-22, refreshed 6-hourly.
+        # This binds the id as well as the number, so a row cannot go dark that way again.
+        try:
+            import gu_yt_store_attribution_v1 as _YSA
+            _YSA.reattribute(apply=True)
+            for _f in ("videos.json", "videos_neworder.json"):
+                if _f not in changed_files:
+                    changed_files.append(_f)
+        except Exception as _e_ysa:
+            print(f"  [{INJECT_MARKER}] YT store re-attribution skipped: {_e_ysa!r}",
                   file=sys.stderr, flush=True)
 
         # X_FOLLOWERS_LOCAL_V1_20260930 — followers.json is collected HERE, not in CI.
