@@ -3001,29 +3001,27 @@ async def update_show(show, ig_clips):
                 if _t:
                     _r['canonical_episode_id'] = _hashlib_backfill.sha1(
                         _t.encode('utf-8')).hexdigest()[:12]
-        _collapsed, _seen_idx = [], {}
-        for _r in cache:
-            _k = _ep_key(_r)
-            if _k not in _seen_idx:
-                _seen_idx[_k] = len(_collapsed)
-                _collapsed.append(_r)
-                continue
-            _keep = _collapsed[_seen_idx[_k]]
-            _drop = _r
-            # prefer the row that is NOT carried forward; if both or neither, keep the first
-            if _keep.get('_carried_forward_iso') and not _drop.get('_carried_forward_iso'):
-                _keep, _drop = _drop, _keep
-            for _f, _v in _drop.items():
-                if _is_blank(_keep.get(_f)) and not _is_blank(_v):
-                    _keep[_f] = _v
-            # never publish a placeholder: an unknown stays absent rather than rendering "?"
-            for _f in list(_keep):
-                if isinstance(_keep[_f], str) and _keep[_f].strip() in ('?', '-', 'n/a', 'N/A'):
-                    _keep[_f] = None
-            _collapsed[_seen_idx[_k]] = _keep
-        if len(_collapsed) != len(cache):
-            print(f"  [EPISODE_COLLAPSE_V1] {len(cache)} rows -> {len(_collapsed)} unique "
-                  f"episodes for {os.path.basename(show['data_file'])}")
+        # SHARED_EPISODE_IDENTITY_V1_20260930 — this collapse keyed on `_ep_key`, the
+        # ordered precedence chain, so two rows matched only when they resolved at the SAME
+        # level of it. ANY_SHARED_IDENTITY_MEANS_SAME_EPISODE_V1_20260817 above had already
+        # diagnosed that exact failure and replaced the chain with an identity UNION — but
+        # only for the carry-forward test twenty lines up. The collapse itself was left on
+        # the chain, and so was the local bridge's. Measured 2026-09-30 on the live GU feed:
+        # Michael O'Hanlon 22 Aug published TWICE, one row keyed on canonical_video_id
+        # Eu0Phb99ipg and the other — which had none — on the title hash, while BOTH carried
+        # canonical_episode_id 6f96fd46bb55 AND the same title hash. 19 rows for 18 episodes:
+        # the guest appeared twice in the LaMetric rotation, once with a total missing
+        # YouTube, and every aggregate over that date double-counted X, Rumble and IG.
+        #
+        # The rule now lives in episode_identity_v1, which BOTH publishers call, so the next
+        # fix cannot land on one writer and miss the other — which is how this survived six
+        # weeks after being correctly diagnosed.
+        import episode_identity_v1 as _EI
+        _collapsed, _merged = _EI.collapse(cache)
+        if _merged:
+            print(f"  [{_EI.MARKER}] {len(cache)} rows -> {len(_collapsed)} unique "
+                  f"episodes for {os.path.basename(show['data_file'])} "
+                  f"({_merged} duplicate row(s) merged)")
         cache = _collapsed
         # METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1_20260814 — the same rule, one level down.
         #

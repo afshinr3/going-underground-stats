@@ -450,6 +450,8 @@ def _norm_title_id_local(title):
 
 
 def _episode_key_local(r):
+    """DEPRECATED — kept only because other call sites may still reference it.
+    Identity is a SET, not a chain; see episode_identity_v1. Do not add callers."""
     return (str(r.get("canonical_video_id") or "").strip()
             or _norm_title_id_local(r.get("title"))
             or str(r.get("canonical_episode_id") or "").strip()
@@ -457,27 +459,28 @@ def _episode_key_local(r):
 
 
 def _collapse_local(rows):
-    out, idx = [], {}
-    for r in rows:
-        r = dict(r)
-        k = _episode_key_local(r)
-        if k not in idx:
-            idx[k] = len(out)
-            out.append(r)
-            continue
-        keep, drop = out[idx[k]], r
-        if keep.get("_carried_forward_iso") and not drop.get("_carried_forward_iso"):
-            keep, drop = drop, keep
-        for f, v in drop.items():
-            if _blankish(keep.get(f)) and not _blankish(v):
-                keep[f] = v
-        keep.pop("_carried_forward_iso", None)
-        keep.pop("_carried_forward_reason", None)
-        out[idx[k]] = keep
-    for r in out:
-        for f in list(r):
-            if isinstance(r[f], str) and r[f].strip() in ("?", "-", "n/a", "N/A"):
-                r[f] = None
+    """SHARED_EPISODE_IDENTITY_V1_20260930 — delegates to episode_identity_v1.collapse.
+
+    This used to key on `_episode_key_local`, an ordered precedence chain, so two rows
+    matched only when they resolved at the SAME level of it. Measured 2026-09-30 on the
+    live GU feed: Michael O'Hanlon 22 Aug published TWICE, one row keyed on its
+    canonical_video_id and the other — which had none — on the title hash, while BOTH
+    carried the same canonical_episode_id 6f96fd46bb55 and the same title hash. A shared,
+    unambiguous identity was present and the chain never consulted it, because a stronger
+    key existed on one side only. 19 rows for 18 episodes: the guest appeared twice in the
+    LaMetric rotation, once with a total missing YouTube (2.2K), and every aggregate over
+    that date double-counted its X, Rumble and IG figures.
+
+    ANY_SHARED_IDENTITY_MEANS_SAME_EPISODE_V1_20260817 had already diagnosed and fixed
+    precisely this — but only for the cloud's carry-forward test. Both collapses stayed on
+    the chain. The rule now lives in ONE module that both writers call, so a future fix
+    cannot land on one publisher and miss the other.
+    """
+    import episode_identity_v1 as _EI
+    out, merged = _EI.collapse(rows)
+    if merged:
+        print(f"  [{_EI.MARKER}] collapsed {len(rows)} row(s) -> {len(out)} unique "
+              f"episode(s) ({merged} duplicate row(s) merged)", flush=True)
     return out
 
 
@@ -584,10 +587,22 @@ def _process_file(path, exact, surname, vids, posts, changes):
         except Exception as _e:
             pass  # fail-open: never let one episode's IG match abort the bridge
 
-    if len(changes) > n0 and not DRY:
+    # COLLAPSE_IS_ITS_OWN_REASON_TO_WRITE_V1_20260930 — the collapse used to run only
+    # inside the `len(changes) > n0` branch below, so a duplicate could only ever be
+    # repaired as a SIDE EFFECT of some unrelated metric moving. A feed whose numbers are
+    # all current but whose rows are doubled is therefore never rewritten, and the
+    # duplicate is permanent: the O'Hanlon pair survived every hourly run because the
+    # episode is from 22 August and nothing about it changes any more. A repair must be
+    # its own reason to write.
+    _dupes_merged = 0
+    if not DRY:
+        _pre = len(videos)
+        videos = _collapse_local(videos)
+        _dupes_merged = _pre - len(videos)
+
+    if (len(changes) > n0 or _dupes_merged) and not DRY:
         videos.sort(key=_pub_iso_sort_key, reverse=True)  # surface newest (incl. injected) at top
         with open(path, "w", encoding="utf-8") as fh:
-            videos = _collapse_local(videos)   # see BOTH_WRITERS_MUST_COLLAPSE_V1
             # ASCII_PARITY_WITH_CLOUD_WRITER_V1_20260930 — the old comment here claimed
             # ensure_ascii=True matched the cloud writer. It does not: the cloud's FINAL
             # writer for these feeds is merge_measured_fields_v1.py:155, which dumps with
@@ -601,6 +616,9 @@ def _process_file(path, exact, surname, vids, posts, changes):
             # reads that local file — lost all five episode frames. Match the cloud
             # writer's encoding so identical data produces identical bytes.
             json.dump(videos, fh, indent=2, ensure_ascii=False)
+        if _dupes_merged:
+            print(f"  [{MARKER}] {fname}: {_dupes_merged} duplicate row(s) merged away",
+                  flush=True)
         return fname
     return fname if len(changes) > n0 else None
 

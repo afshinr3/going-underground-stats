@@ -30,32 +30,31 @@ def canon_id(title):
     return hashlib.sha1((title or "").encode("utf-8")).hexdigest()[:12]
 
 
+# TEST_THE_REAL_COLLAPSE_V1_20260930 — this file used to define its OWN `ep_key` and
+# `collapse`, and that is why it never caught the O'Hanlon duplicate. Its private chain led
+# with `canonical_episode_id`; production's led with `canonical_video_id`. The two rows of
+# the 22 Aug O'Hanlon episode share an episode id, so THIS chain merged them and the suite
+# stayed green, while the chain that actually ships keyed one row on its video id and
+# published both. The test proved a rule the pipeline did not implement.
+#
+# Every assertion below now runs against the shipped code. The six lockdowns in the
+# docstring are unchanged; only the implementation under test is real.
+import episode_identity_v1 as _EI
+
+
 def ep_key(r):
+    """Kept for the assertions that reference it: the SET of identities, not a chain."""
     if not r.get("canonical_episode_id"):
         t = (r.get("title") or "").strip()
         if t:
             r["canonical_episode_id"] = canon_id(t)
-    return (str(r.get("canonical_episode_id") or "").strip()
-            or str(r.get("canonical_video_id") or "").strip()
-            or f"{str(r.get('surname') or '').upper()}|{str(r.get('date') or '')}")
+    return frozenset(_EI.identities(r))
 
 
 def collapse(rows):
-    out, idx = [], {}
-    for r in rows:
-        r = dict(r)
-        k = ep_key(r)
-        if k not in idx:
-            idx[k] = len(out); out.append(r); continue
-        keep, drop = out[idx[k]], r
-        if keep.get("_carried_forward_iso") and not drop.get("_carried_forward_iso"):
-            keep, drop = drop, keep
-        for f, v in drop.items():
-            if keep.get(f) in BLANK and v not in BLANK:
-                keep[f] = v
-        keep.pop("_carried_forward_iso", None); keep.pop("_carried_forward_reason", None)
-        out[idx[k]] = keep
+    out, _ = _EI.collapse(rows)
     return out
+
 
 
 def main():
