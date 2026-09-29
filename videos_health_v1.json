@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-29T23:41:17Z",
-  "last_updated": "2026-09-29T23:41:17Z",
+  "iso": "2026-09-29T23:48:32Z",
+  "last_updated": "2026-09-29T23:48:32Z",
   "episodes": [
     {
       "guest": "Robert Harward",
@@ -45,7 +45,7 @@
       },
       "metrics": {
         "rumble_views": "2.9K",
-        "yt_views": "30.6K",
+        "yt_views": "30.5K",
         "x_views": "852.4K",
         "ig_likes": "1.9K"
       }
@@ -368,16 +368,20 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
       "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "WlIY7-ovBd8",
+      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
       "canonical_episode_id_v2": null,
       "pub_iso": null,
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "WlIY7-ovBd8"
+        ]
+      },
       "metrics": {
         "rumble_views": "3.9K",
-        "yt_views": null,
+        "yt_views": "4.4K",
         "x_views": "1.1M",
         "ig_likes": "4.6K"
       }
@@ -388,16 +392,20 @@
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
       "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "grMo8SmAQpU",
+      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
       "canonical_episode_id_v2": null,
       "pub_iso": null,
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "grMo8SmAQpU"
+        ]
+      },
       "metrics": {
         "rumble_views": "3.4K",
-        "yt_views": null,
+        "yt_views": "1.1K",
         "x_views": "450.4K",
         "ig_likes": "605"
       }
@@ -408,16 +416,20 @@
       "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
       "date": "6 Jul",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
       "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "SmH-aEMZyqg",
+      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
       "canonical_episode_id_v2": null,
       "pub_iso": null,
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "SmH-aEMZyqg"
+        ]
+      },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": null,
+        "yt_views": "1.5K",
         "x_views": "721.6K",
         "ig_likes": "1.5K"
       }
@@ -441,7 +453,7 @@
       },
       "metrics": {
         "rumble_views": "750",
-        "yt_views": "12.1K",
+        "yt_views": "12.0K",
         "x_views": "658.6K",
         "ig_likes": "1.6K"
       }
@@ -537,7 +549,7 @@
       },
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": "155",
+        "yt_views": "161",
         "x_views": "359.3K",
         "ig_likes": "421"
       }
@@ -561,7 +573,7 @@
       },
       "metrics": {
         "rumble_views": "1.1K",
-        "yt_views": "30",
+        "yt_views": "190",
         "x_views": "1.3M",
         "ig_likes": "1.8K"
       }
@@ -585,7 +597,7 @@
       },
       "metrics": {
         "rumble_views": "898",
-        "yt_views": "291",
+        "yt_views": "110",
         "x_views": "1.3M",
         "ig_likes": "377"
       }
@@ -609,7 +621,7 @@
       },
       "metrics": {
         "rumble_views": "884",
-        "yt_views": "133",
+        "yt_views": "245",
         "x_views": "443.1K",
         "ig_likes": "1.0K"
       }
@@ -633,7 +645,7 @@
       },
       "metrics": {
         "rumble_views": "919",
-        "yt_views": "1.1K",
+        "yt_views": "514",
         "x_views": "941.3K",
         "ig_likes": "387"
       }
@@ -657,7 +669,7 @@
       },
       "metrics": {
         "rumble_views": "1.0K",
-        "yt_views": "1.1K",
+        "yt_views": "837",
         "x_views": "812.2K",
         "ig_likes": "291"
       }
@@ -681,7 +693,7 @@
       },
       "metrics": {
         "rumble_views": "553",
-        "yt_views": "1.1K",
+        "yt_views": "3.2K",
         "x_views": "846.1K",
         "ig_likes": "1.1K"
       }
@@ -692,16 +704,20 @@
       "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
       "date": "28 Jun",
       "show": "NO",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=08aeFzW4N2E",
       "canonical_episode_id": "e35a16f2cfd4",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "08aeFzW4N2E",
+      "canonical_video_url": "https://www.youtube.com/watch?v=08aeFzW4N2E",
       "canonical_episode_id_v2": null,
       "pub_iso": null,
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "08aeFzW4N2E"
+        ]
+      },
       "metrics": {
         "rumble_views": "560",
-        "yt_views": "0",
+        "yt_views": "138",
         "x_views": "382.9K",
         "ig_likes": "3.1K"
       }
@@ -751,7 +767,7 @@
       },
       "metrics": {
         "rumble_views": "2.9K",
-        "yt_views": "30.6K",
+        "yt_views": "30.5K",
         "x_views": "852.4K",
         "ig_likes": "1.9K"
       }
@@ -849,7 +865,7 @@
       },
       "metrics": {
         "rumble_views": "750",
-        "yt_views": "12.1K",
+        "yt_views": "12.0K",
         "x_views": "658.6K",
         "ig_likes": "1.6K"
       }
@@ -945,7 +961,7 @@
       },
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": "155",
+        "yt_views": "161",
         "x_views": "359.3K",
         "ig_likes": "421"
       }
