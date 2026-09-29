@@ -497,9 +497,21 @@ def _process_file(path, exact, surname, vids, posts, changes):
 
     if len(changes) > n0 and not DRY:
         videos.sort(key=_pub_iso_sort_key, reverse=True)  # surface newest (incl. injected) at top
-        with open(path, "w") as fh:
+        with open(path, "w", encoding="utf-8") as fh:
             videos = _collapse_local(videos)   # see BOTH_WRITERS_MUST_COLLAPSE_V1
-            json.dump(videos, fh, indent=2)  # indent=2 + ensure_ascii=True == cloud writer
+            # ASCII_PARITY_WITH_CLOUD_WRITER_V1_20260930 — the old comment here claimed
+            # ensure_ascii=True matched the cloud writer. It does not: the cloud's FINAL
+            # writer for these feeds is merge_measured_fields_v1.py:155, which dumps with
+            # ensure_ascii=False. So every title carrying a smart quote (7 of them across
+            # the two feeds) was written back escaped as \u2019 here and literal there.
+            # Each bridge run therefore rewrote lines that held identical DATA, and the
+            # hourly rebase hit a conflict on every one of them. On 2026-09-29 that
+            # conflict aborted mid-rebase and left conflict markers in videos.json and
+            # videos_neworder.json; the next run could not parse them, regenerated
+            # videos_health_v1.json as episodes:[], and the LaMetric /lametric app — which
+            # reads that local file — lost all five episode frames. Match the cloud
+            # writer's encoding so identical data produces identical bytes.
+            json.dump(videos, fh, indent=2, ensure_ascii=False)
         return fname
     return fname if len(changes) > n0 else None
 
@@ -607,7 +619,22 @@ def main():
     # deterministically. Same generator -> identical output, so it never fights
     # the cloud. Commit weekly files ONLY when their in-window entries actually
     # change (ignore the always-moving generated_at) to avoid per-run churn.
-    if _FP is not None:
+    # UNREADABLE_FEED_MUST_NOT_REGENERATE_DERIVED_V1_20260930 — the derived feeds
+    # (weekly stats + videos_health_v1.json) are summaries OF the target feeds. When a
+    # target feed fails to parse it is reported in failed_files and skipped above, but
+    # the regenerators below were still run: they read the same unreadable file, found
+    # no episodes, and wrote episodes:[] / n:0 over a previously correct summary. That
+    # is a read failure published as the fact "there are no episodes". On 2026-09-29 an
+    # aborted rebase left conflict markers in both feeds and this path emptied the
+    # health feed, which is what the LaMetric /lametric app reads — the display lost
+    # every episode frame while the live GitHub copy was still intact. A feed we could
+    # not read tells us nothing about its contents: keep the last good summary.
+    if _FP is not None and failed_files:
+        print(f"  [{INJECT_MARKER}] derived feeds NOT regenerated: "
+              f"{len(failed_files)} source feed(s) unreadable "
+              f"({', '.join(fn for fn, _ in failed_files)}) — keeping last good summary",
+              file=sys.stderr, flush=True)
+    if _FP is not None and not failed_files:
         WEEKLY = ("stats_1week_gu.json", "stats_1week_no.json")
         _sig_before = {w: _weekly_entries_sig(os.path.join(REPO, w)) for w in WEEKLY}
         try:
@@ -646,6 +673,22 @@ def main():
                     changed_files.append(_f)
         except Exception as _e_xsa:
             print(f"  [{INJECT_MARKER}] X store re-attribution skipped: {_e_xsa!r}",
+                  file=sys.stderr, flush=True)
+
+        # X_FOLLOWERS_LOCAL_V1_20260930 — followers.json is collected HERE, not in CI.
+        # X blocks the GitHub runner's IP: measured 2026-09-30, the same cookies read
+        # "207.2K Followers" from this Mac and "not found" for all three handles in the
+        # Action, which wrote nulls over the good file every run from 2026-09-27T07:25Z
+        # and left the X-GU / X-NO / X-AR LaMetric apps showing "?" for two and a half
+        # days. The cloud writer is now fail-closed (FOLLOWERS_FAIL_CLOSED_V1) and this
+        # bridge owns the file, exactly as it already owns the X post store above.
+        try:
+            import x_followers_local_v1 as _XFL
+            _f_changed, _ = _XFL.write_followers()
+            if _f_changed and "followers.json" not in changed_files:
+                changed_files.append("followers.json")
+        except Exception as _e_xfl:
+            print(f"  [{INJECT_MARKER}] X follower collection skipped: {_e_xfl!r}",
                   file=sys.stderr, flush=True)
 
         # HEALTH_FEED_REGEN_V1_20260826 — videos_health_v1.json is the feed the

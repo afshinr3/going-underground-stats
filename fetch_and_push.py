@@ -3497,14 +3497,37 @@ async def main_fetch():
     print("\nFetching X follower counts...")
     followers = await fetch_x_followers(['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV'])
     total = sum(followers.values())
-    out = {
-        "accounts": {h: followers.get(h) for h in ['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV']},
-        "total": total,
-        "updated": __import__('datetime').datetime.utcnow().isoformat() + 'Z',
-    }
-    with open(os.path.join(ROOT, 'followers.json'), 'w') as f:
-        json.dump(out, f, indent=2)
-    print(f"Total X followers: {total:,}")
+    # FOLLOWERS_FAIL_CLOSED_V1_20260930 — this runner cannot read X, so it must not be
+    # allowed to answer. Measured 2026-09-30: the same cookies and the same code read
+    # "207.2K Followers" from Afshin's Mac and "not found" for all three handles here,
+    # while every episode search failed x_search_results_never_rendered. X blocks the
+    # datacenter IP; the cookies are fine and rotating the secret changes nothing.
+    # From 2026-09-27T07:25Z this block wrote accounts:{null,null,null} total:0 over a
+    # good file on every run, and the X-GU / X-NO / X-AR LaMetric apps showed "?" and
+    # "STALE" for two and a half days. followers.json is now produced on the Mac by
+    # x_followers_local_v1.py, which reaches X's GraphQL endpoint from a trusted IP and
+    # is published by the hourly bridge. A scrape that resolved NOTHING is a failed read,
+    # not the fact "zero followers": leave the good file alone and say so loudly.
+    #
+    # The bar is ALL THREE handles, not one. A partial scrape is the more dangerous
+    # outcome, because {129293, null, null} looks like a valid file and a sane-looking
+    # total, and it would overwrite a complete set the Mac had just measured. Partial
+    # coverage may only ever ADD to this file, never replace it, and the Mac already
+    # carries values forward per handle — so CI writes only a complete answer.
+    _f_handles = ['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV']
+    if len(followers) < len(_f_handles):
+        print(f"[FOLLOWERS_FAIL_CLOSED_V1] CI resolved {len(followers)}/{len(_f_handles)} "
+              f"handles (expected: X blocks this runner) — followers.json left untouched; "
+              f"the Mac owns this file", file=sys.stderr)
+    else:
+        out = {
+            "accounts": {h: followers.get(h) for h in ['afshinrattansi', 'GUnderground_TV', 'NewOrder_TV']},
+            "total": total,
+            "updated": __import__('datetime').datetime.utcnow().isoformat() + 'Z',
+        }
+        with open(os.path.join(ROOT, 'followers.json'), 'w') as f:
+            json.dump(out, f, indent=2)
+        print(f"Total X followers: {total:,}")
 
     # GU_WEEKLY_STATS_V1_2026_07_04 — publish per-show last-completed-week stats
     try:
