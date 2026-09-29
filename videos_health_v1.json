@@ -1,6 +1,6 @@
 {
-  "iso": "2026-09-29T14:57:55Z",
-  "last_updated": "2026-09-29T14:57:55Z",
+  "iso": "2026-09-29T20:16:22Z",
+  "last_updated": "2026-09-29T20:16:22Z",
   "episodes": [
     {
       "guest": "Robert Harward",
@@ -20,10 +20,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": "1.4K",
-        "x_views": "296.7K",
-        "ig_likes": "388"
+        "rumble_views": null,
+        "yt_views": "1.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       }
     },
     {
@@ -44,10 +47,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "29.7K",
+        "rumble_views": null,
+        "yt_views": "30.3K",
         "x_views": "850.1K",
-        "ig_likes": "948"
+        "ig_likes": null
       }
     },
     {
@@ -68,10 +71,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "2.4K",
         "x_views": "312.3K",
-        "ig_likes": "371"
+        "ig_likes": null
       }
     },
     {
@@ -92,10 +95,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.8K",
-        "yt_views": "76.6K",
+        "rumble_views": null,
+        "yt_views": "77.0K",
         "x_views": "1.9M",
-        "ig_likes": "6.7K"
+        "ig_likes": null
       }
     },
     {
@@ -116,10 +119,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.2K",
+        "rumble_views": null,
         "yt_views": "2.4K",
         "x_views": "225.3K",
-        "ig_likes": "1.1K"
+        "ig_likes": null
       }
     },
     {
@@ -140,10 +143,30 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "2.2K",
-        "x_views": "112.5K",
-        "ig_likes": "760"
+        "x_views": "588.6K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "588.7K",
+        "ig_likes": "?"
       }
     },
     {
@@ -164,10 +187,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.5K",
+        "rumble_views": null,
         "yt_views": "3.6K",
         "x_views": "435.6K",
-        "ig_likes": "6.4K"
+        "ig_likes": null
       }
     },
     {
@@ -188,10 +211,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.4K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.8K",
-        "ig_likes": "5.9K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       }
     },
     {
@@ -212,10 +238,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "43.1K",
-        "x_views": "478.7K",
-        "ig_likes": "272"
+        "x_views": "95.0K",
+        "ig_likes": null
       }
     },
     {
@@ -236,9 +262,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.0K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.6K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       }
     },
@@ -260,9 +289,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.1K",
+        "rumble_views": null,
         "yt_views": "65.4K",
-        "x_views": "656.1K",
+        "x_views": "871.5K",
         "ig_likes": null
       }
     },
@@ -284,7 +313,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "16.3K",
+        "rumble_views": null,
         "yt_views": "3.4K",
         "x_views": "1.5M",
         "ig_likes": null
@@ -308,7 +337,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.6K",
+        "rumble_views": null,
         "yt_views": "2.0K",
         "x_views": "1.2M",
         "ig_likes": null
@@ -332,9 +361,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": null,
         "yt_views": "4.3K",
-        "x_views": "630.7K",
+        "x_views": "658.5K",
         "ig_likes": null
       }
     },
@@ -356,7 +385,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "3.1K",
         "x_views": "811.7K",
         "ig_likes": null
@@ -368,27 +397,26 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "link": "",
       "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": "WlIY7-ovBd8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
-      "canonical_episode_id_v2": "4a4b17f0a7877200",
-      "pub_iso": "2026-07-18T11:32:42Z",
-      "source_platform_ids": {
-        "youtube": [
-          "WlIY7-ovBd8"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.9K",
-        "yt_views": "4.4K",
-        "x_views": "1.1M",
-        "ig_likes": "319"
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": "?"
       }
     },
     {
-      "guest": "Dennis Fritz",
-      "surname": "FRITZ",
+      "guest": "CMSGT. Dennis Fritz: Israel’s",
+      "surname": "ISRAEL’S",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -400,10 +428,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.4K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "450.4K",
-        "ig_likes": "314"
+        "x_views": "657.5K",
+        "ig_likes": "?"
       }
     },
     {
@@ -420,10 +448,10 @@
       "pub_iso": null,
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "2.5K",
+        "rumble_views": "?",
         "yt_views": null,
-        "x_views": "721.6K",
-        "ig_likes": null
+        "x_views": "284.6K",
+        "ig_likes": "?"
       }
     },
     {
@@ -445,7 +473,7 @@
       },
       "metrics": {
         "rumble_views": "709",
-        "yt_views": "11.3K",
+        "yt_views": "11.9K",
         "x_views": "633.5K",
         "ig_likes": "272"
       }
@@ -730,10 +758,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.6K",
-        "yt_views": "1.4K",
-        "x_views": "296.7K",
-        "ig_likes": "388"
+        "rumble_views": null,
+        "yt_views": "1.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       }
     },
     {
@@ -754,10 +785,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "29.7K",
+        "rumble_views": null,
+        "yt_views": "30.3K",
         "x_views": "850.1K",
-        "ig_likes": "948"
+        "ig_likes": null
       }
     },
     {
@@ -778,10 +809,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.0K",
+        "rumble_views": null,
         "yt_views": "2.4K",
         "x_views": "312.3K",
-        "ig_likes": "371"
+        "ig_likes": null
       }
     },
     {
@@ -802,10 +833,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "5.8K",
-        "yt_views": "76.6K",
+        "rumble_views": null,
+        "yt_views": "77.0K",
         "x_views": "1.9M",
-        "ig_likes": "6.7K"
+        "ig_likes": null
       }
     },
     {
@@ -826,10 +857,10 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.2K",
+        "rumble_views": null,
         "yt_views": "2.4K",
         "x_views": "225.3K",
-        "ig_likes": "1.1K"
+        "ig_likes": null
       }
     }
   ],
@@ -853,7 +884,7 @@
       },
       "metrics": {
         "rumble_views": "709",
-        "yt_views": "11.3K",
+        "yt_views": "11.9K",
         "x_views": "633.5K",
         "ig_likes": "272"
       }
