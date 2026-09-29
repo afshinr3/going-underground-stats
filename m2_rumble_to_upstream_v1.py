@@ -38,6 +38,24 @@ TARGET_FILES = [VIDEOS, VIDEOS_NO]
 SHOW_OF = {VIDEOS: "GU", VIDEOS_NO: "NO"}
 DRY = "--dry-run" in sys.argv
 MARKER = "M2_RUMBLE_IG_BRIDGE_V2_20260724"
+
+# SCOPED_VIDEO_DATE_V1_20260926 — which Rumble date provenances may overwrite a published date.
+#
+# This gate used to be `!= "rumble_video_page_time_datetime"`, and that one string was written by
+# scrape_2026_rumble for EVERY successful lookup — including the ones that read the recommendation
+# rail instead of the video. That is how the 2026-09-25 Joe Kent episode was published as "20 Sep":
+# a sidebar video's publish instant, wearing the provenance this bridge trusts above all others.
+#
+# The legacy string is deliberately NOT trusted any more. It is unfalsifiable — a rail date and a
+# real one are indistinguishable under it — and every fresh scrape now stamps a specific, scoped
+# source instead. Trusting it "for continuity" would keep exactly the records that need re-deriving.
+TRUSTED_RUMBLE_DATE_PROVS = frozenset({
+    "rumble_scoped_time_page_date_agrees",      # <time> in the video header + page date chip agree
+    "rumble_ldjson_uploaddate_page_date_agrees",  # VideoObject uploadDate + page date chip agree
+    "rumble_scoped_time_only",                  # <time> scoped to the video, no chip to cross-check
+    "rumble_ldjson_uploaddate_only",            # VideoObject for THIS url, no chip to cross-check
+    "rumble_page_date_chip_day_only",           # the video's own date chip, day precision
+})
 # RUMBLE_ONLY_EPISODE_INJECT_V1_20260725 — inject episodes that exist on Rumble
 # but not yet on YouTube/X (the cloud's only sources), so Rumble-first shows
 # (e.g. this-week's episode) reach videos.json + the 1-week tab + Substack the
@@ -117,6 +135,64 @@ def _episode_surname_tokens(_ep):
     return _out
 
 
+# SURNAME_SCOPE_V1_20260926 — a surname match must also be the SAME SHOW and the SAME WEEK.
+#
+# WHAT HAPPENED. The New Order episode "Prof. John Mearsheimer: GREAT FEAR in the US that China
+# will be the World's MOST POWERFUL Country" had not been published anywhere — its YouTube id
+# premieres in 18 hours and it has no Rumble video at all — yet GU Stats showed it with 4.0K
+# Rumble views. Those 4,010 views belong to "Prof. John Mearsheimer Explains Why Iran War MUST
+# END", a GOING UNDERGROUND episode from 2026-07-28. The surname fallback matched on the token
+# "mearsheimer" alone, and the map had thrown away the other three Mearsheimer videos.
+#
+# The 2026-08-22 fix narrowed the fallback from every 4+ letter title word to the guest's surname.
+# That killed the 'david'/'world' class of collision but not this one: the same guest, on the other
+# show, two months earlier, is still a surname match. Recurring guests are the norm on both shows,
+# so the loose version was always going to attribute an unpublished episode sooner or later.
+#
+# THE RULE. A fallback match must be the same show AND within SURNAME_MATCH_MAX_DAYS of the
+# episode's own published date, and it must be the ONLY candidate that qualifies. Ambiguity is a
+# refusal: leaving rumble_views alone shows nothing, while guessing shows a number the operator
+# cannot tell from a measurement ([[regenerated_artifact_is_not_a_repair_source]]).
+SURNAME_MATCH_MAX_DAYS = 7
+
+
+def _ep_published_date(_ep):
+    """The episode's own date, from pub_iso. None when absent."""
+    _raw = str(_ep.get("pub_iso") or "").replace("Z", "")
+    if not _raw:
+        return None
+    try:
+        return datetime.datetime.fromisoformat(_raw.split(".")[0]).date()
+    except Exception:
+        return None
+
+
+def _scoped_surname_match(_ep, _cands, _show_code):
+    """(video | None, why). Same show, within SURNAME_MATCH_MAX_DAYS, and unambiguous."""
+    _ep_d = _ep_published_date(_ep)
+    if _ep_d is None:
+        return None, "episode_has_no_pub_iso"
+    _ok = []
+    for _v in _cands or []:
+        if _show_code and str(_v.get("show") or "") != str(_show_code):
+            continue
+        try:
+            _vd = datetime.datetime.fromisoformat(
+                str(_v.get("date_iso") or "").split(".")[0]).date()
+        except Exception:
+            continue
+        if abs((_vd - _ep_d).days) <= SURNAME_MATCH_MAX_DAYS:
+            _ok.append(_v)
+    if not _ok:
+        return None, ("no_same_show_video_within_%dd_of_%s (%d other-show/other-date candidate(s))"
+                      % (SURNAME_MATCH_MAX_DAYS, _ep_d, len(_cands or [])))
+    if len(_ok) > 1:
+        return None, ("ambiguous_%d_candidates_within_%dd:%s"
+                      % (len(_ok), SURNAME_MATCH_MAX_DAYS,
+                         [str(x.get("date_iso"))[:10] for x in _ok]))
+    return _ok[0], "same_show_%s" % str(_ok[0].get("date_iso"))[:10]
+
+
 def _episode_all_word_tokens_LEGACY(_ep):
     """Retained for reference only — this is the loose behaviour that mis-attributed."""
     _tokens = []
@@ -183,7 +259,12 @@ def _build_rumble_maps():
             _tl = _tok.lower()
             if _tl in _STOP:
                 continue
-            surname.setdefault(_tl, _v.get("views", 0))
+            # SURNAME_SCOPE_V1_20260926 — keep EVERY candidate, not the first. A surname is
+            # not unique across the archive: John Mearsheimer has four Rumble videos, two on
+            # each show, spread over nine months. setdefault kept whichever the iteration
+            # reached first and threw the rest away, so the caller could not tell an
+            # unambiguous match from a coin toss between four.
+            surname.setdefault(_tl, []).append(_v)
     return exact, surname, vids
 
 
@@ -450,8 +531,8 @@ def _process_file(path, exact, surname, vids, posts, changes):
         rv = _by_key.get(_rumble_join_key(ep.get("title")))
         if not rv or not rv.get("date_iso"):
             continue
-        if str(rv.get("date_prov") or "") != "rumble_video_page_time_datetime":
-            continue                      # only trust an EXACT canonical timestamp
+        if str(rv.get("date_prov") or "") not in TRUSTED_RUMBLE_DATE_PROVS:
+            continue                      # only trust a SCOPED, cross-checked timestamp
         try:
             dt = datetime.datetime.fromisoformat(
                 str(rv["date_iso"]).replace("Z", "").split(".")[0]
@@ -466,7 +547,9 @@ def _process_file(path, exact, surname, vids, posts, changes):
                             f'{new_date}/{new_piso}'))
             ep["date"] = new_date
             ep["pub_iso"] = new_piso
-            ep["date_prov"] = "rumble_video_page_time_datetime"
+            # Carry the SOURCE's provenance, not a frozen string: "which source said so" is the
+            # whole value of this field, and flattening it is what hid the rail date.
+            ep["date_prov"] = str(rv.get("date_prov"))
 
     for ep in videos:
         # ---- Rumble (exact key, surname fallback) ----
@@ -474,9 +557,15 @@ def _process_file(path, exact, surname, vids, posts, changes):
         via = ""
         if not v:
             for _tok in _episode_surname_tokens(ep):
-                if _tok in surname:
-                    v, via = surname[_tok], " (surname)"
+                _cands = surname.get(_tok)
+                if not _cands:
+                    continue
+                _hit, _why = _scoped_surname_match(ep, _cands, show_code)
+                if _hit is not None:
+                    v, via = _hit.get("views", 0), " (surname:%s)" % _why
                     break
+                if _why:
+                    print(f"  [surname-join] {ep.get('surname')}: refused — {_why}", flush=True)
         if v and v != 0:
             newr = _fmt(v)
             if str(ep.get("rumble_views")) != newr:

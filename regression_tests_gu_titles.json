@@ -289,6 +289,70 @@
       "category": "non_ascii_guest_name",
       "added_iso": "2026-08-09T10:45Z",
       "added_reason": "NON_ASCII_GUEST_NAME_V1 — synthetic guard so the ASCII-only class cannot be reintroduced for any accented alphabet"
+    },
+    {
+      "title": "Americans Pay $2 BILLION A DAY for the Iran War: Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander Vice Admiral Robert Harward",
+      "expected_guest": "Robert Harward",
+      "expected_cluster_id_prefix": "harward_",
+      "category": "interviewer_anchored_long_headline",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "INTERVIEWER_ANCHORED_V1 — headline is 49 chars so the colon path's ^([^:]{2,40}): never matched and sub-paths 4b-4e were unreachable. Live consequence: Substack EP 1449 (article 203827430) published with the HEADLINE as the guest, and totals_pusher.py carried a hardcoded override for the LaMetric path only."
+    },
+    {
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America's Wars",
+      "expected_guest": null,
+      "expected_cluster_id_prefix": null,
+      "category": "interviewer_anchored_must_not_fabricate",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "This names no guest. The first cut of the trailing-name walk returned \"America's Wars\" (cluster wars_<date>) — caught by replaying the rejection log against the new path. A name must be reached through a ROLE word, not through prose."
+    },
+    {
+      "title": "‘The US LACKS THE POWER TO DEFEAT IRAN’ Afshin Rattansi Challenges Ex-Deputy CENTCOM",
+      "expected_guest": null,
+      "expected_cluster_id_prefix": null,
+      "category": "interviewer_anchored_truncated_no_name",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "Same episode as the Harward case, title truncated before the name. Must stay a rejection — inventing \"CENTCOM\" is the junk-surname laundering that put fabricated views into a measured feed."
+    },
+    {
+      "title": "Afshin Rattansi Challenges NATO Spokesperson",
+      "expected_guest": null,
+      "expected_cluster_id_prefix": null,
+      "category": "interviewer_anchored_role_only",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "Billing with no person. ALL-CAPS org + role noun must both be refused."
+    },
+    {
+      "title": "Gaza on the Brink: Afshin Rattansi speaks to Ex-Israeli Negotiator Daniel Levy",
+      "expected_guest": "Daniel Levy",
+      "expected_cluster_id_prefix": "levy_",
+      "category": "interviewer_anchored_unlisted_role_noun",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "\"Negotiator\" is not in the left-to-right role-noun list; reading the billing from the RIGHT makes an unlisted noun cost nothing."
+    },
+    {
+      "title": "Dennis Kucinich SLAMS Integration of US & Israeli Military, Says it INCREASES RISK OF WAR",
+      "expected_guest": "Dennis Kucinich",
+      "expected_cluster_id_prefix": "kucinich_",
+      "category": "name_verb_leading_shouted_verb",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "CAPS_VERB_V1 — name_verb_leading held \"Slams\" and the title said \"SLAMS\", so two live Kucinich episodes fell through. Both cases listed explicitly rather than re.IGNORECASE, which would loosen the NAME group too."
+    },
+    {
+      "title": "Lula da Silva: Brazil Will NOT Be Subordinated to the Dollar",
+      "expected_guest": "Lula da Silva",
+      "expected_cluster_id_prefix": "silva_",
+      "category": "name_particle_lowercase_middle",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "NAME_PARTICLE_V1 — _looks_like_name required every token to start uppercase, so \"Lula da Silva\" was False and Brazil's president failed the colon and name_on paths on every appearance."
+    },
+    {
+      "title": "Afshin Rattansi speaks to the Legacy of America's Wars",
+      "expected_guest": null,
+      "expected_cluster_id_prefix": null,
+      "category": "name_particle_must_not_admit_prose",
+      "added_iso": "2026-09-28T19:00Z",
+      "added_reason": "Guard on the particle relaxation: lowercase prose must still be refused, and a particle is allowed only from a closed list in a MIDDLE position."
     }
   ],
   "canonical_url_bind_test_cases": [

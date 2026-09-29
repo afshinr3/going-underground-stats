@@ -1505,31 +1505,22 @@ def _publish_guard_scan(videos_list, label):
     return []
 
 def extract_surname(guest_name):
-    """Get just the surname from a guest name. Returns None if guest_name is None/empty."""
-    if not guest_name:
+    """Delegates EXTRACTION to gu_parser; keeps the ingest validity gate here.
+
+    SURNAME_SINGLE_SOURCE_V1_2026_09_29 — gu_parser.extract_surname was the weakest of three
+    copies, so this one's capabilities were ported into it FIRST (generational suffixes
+    Jr./Sr./II/III/IV from here, hyphenated surnames from auto_update, the broad
+    `_R[A-Za-z0-9]{2,10}$` cache-key strip from here). Verified equal to this function on
+    every case in the name corpus before switching.
+
+    `_looks_valid_surname()` stays LOCAL and still runs: returning None from here is not a
+    parsing opinion, it is the signal discover_new_episodes() uses to SKIP an episode at
+    ingest. That is a caller's policy, not a property of surname extraction, so it does not
+    belong in the shared parser.
+    """
+    last = gu_parser.extract_surname(guest_name)
+    if not last:
         return None
-    name = guest_name.replace('(Jim) ', '').replace('Lt. Col. ', '').replace('Dr. ', '').replace('Prof. ', '').replace('Sgt. ', '')
-    # Defensive: legacy data may have a "_R<date>" suffix from an older writer (see is_repeat
-    # branch in legacy local auto_update.py). Strip it so downstream consumers (LaMetric,
-    # GitHub Pages, APK) don't display it.
-    # GU_SURNAME_HARDENING_V1_2026_07_03 - broader regex catches _R<alnum2..10>.
-    name = _strip_r_date_suffix(name).strip()
-    parts = name.strip().split()
-    # GU_SURNAME_GENERATIONAL_SUFFIX_V1_20260917 — "Paulo Nogueira Batista Jr." yielded
-    # surname "Jr.", which _looks_valid_surname rejects, so the 13 Sep New Order episode was
-    # dropped at ingest as SKIP(unparseable) and never reached videos_neworder.json.
-    # A generational suffix is never the surname; drop it and take the token before it.
-    while len(parts) >= 2 and parts[-1].rstrip('.,').lower() in ('jr', 'sr', 'ii', 'iii', 'iv'):
-        parts = parts[:-1]
-    if not parts:
-        return None
-    last = parts[-1]
-    if len(parts) >= 2 and parts[-2].endswith('-'):
-        return parts[-2] + last
-    if len(parts) >= 2 and '-' in parts[-1] and parts[-2][0].isupper():
-        return last
-    # GU_SURNAME_HARDENING_V1_2026_07_03 - reject junk-token surnames outright,
-    # signalling to caller (discover_new_episodes) to skip this episode.
     if not _looks_valid_surname(last):
         return None
     return last
