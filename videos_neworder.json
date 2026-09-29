@@ -359,7 +359,7 @@
     "date": "28 Jun",
     "rumble_views": "560",
     "x_views": "382.9K",
-    "yt_views": "0",
+    "yt_views": "138",
     "ig_likes": "3.1K",
     "show": "NO",
     "canonical_guest_full_name": "C. Uday Bhaskar",
@@ -369,6 +369,15 @@
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
-    "_x_store_tweets": 7
+    "_x_store_tweets": 7,
+    "canonical_video_id": "08aeFzW4N2E",
+    "canonical_video_url": "https://www.youtube.com/watch?v=08aeFzW4N2E",
+    "link": "https://www.youtube.com/watch?v=08aeFzW4N2E",
+    "source_platform_ids": {
+      "youtube": [
+        "08aeFzW4N2E"
+      ]
+    },
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   }
 ]
