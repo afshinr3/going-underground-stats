@@ -5,39 +5,9 @@
   "window_end": "2026-09-28",
   "window_start_mon": "2026-09-25",
   "window_end_sun": "2026-09-28",
-  "generated_at": "2026-09-29T20:16:22.525370Z",
-  "n": 1,
-  "entries": [
-    {
-      "guest": "John Mearsheimer",
-      "surname": "Mearsheimer",
-      "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World\u2019s MOST POWERFUL Country",
-      "rumble_views": "709",
-      "x_views": "633.5K",
-      "date": "27 Sep",
-      "yt_views": "11.9K",
-      "ig_likes": "272",
-      "canonical_guest_full_name": "John Mearsheimer",
-      "canonical_surname_upper": "MEARSHEIMER",
-      "canonical_episode_id": "6578bc6660c6",
-      "_yt_content_type": "EPISODE",
-      "_yt_class_confidence": "HIGH",
-      "canonical_video_id": "Vgvd4N3n_Tc",
-      "canonical_video_url": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
-      "pub_iso": "2026-09-27T06:30:06Z",
-      "canonical_episode_id_v2": "458a6b574e07d8f3",
-      "source_platform_ids": {
-        "youtube": [
-          "Vgvd4N3n_Tc"
-        ]
-      },
-      "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
-      "_x_status": "FETCH_FAILED:Exception",
-      "show": "NO",
-      "_rumble_views_correction": "SURNAME_SCOPE_V1_20260926: was '4.0K', which is the view count of the GOING UNDERGROUND episode 'Prof. John Mearsheimer Explains Why Iran War MUST END' (2026-07-28, 4,010 views), attributed here by a surname-only join. This episode has no Rumble video: its YouTube id premieres 2026-09-27 and Rumble's New Order channel does not carry it.",
-      "_x_store_tweets": 10
-    }
-  ],
+  "generated_at": "2026-09-29T21:06:27.589493Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos_neworder.json",
   "rejected_count": 0,
   "rejected_sample": [],
