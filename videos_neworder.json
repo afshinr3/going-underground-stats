@@ -3,11 +3,11 @@
     "guest": "John Mearsheimer",
     "surname": "Mearsheimer",
     "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
-    "rumble_views": "750",
+    "rumble_views": "752",
     "x_views": "658.6K",
     "date": "27 Sep",
-    "yt_views": "12.2K",
-    "ig_likes": "285",
+    "yt_views": "12.0K",
+    "ig_likes": "1.6K",
     "canonical_guest_full_name": "John Mearsheimer",
     "canonical_surname_upper": "MEARSHEIMER",
     "canonical_episode_id": "6578bc6660c6",
@@ -23,19 +23,20 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_rumble_views_correction": "SURNAME_SCOPE_V1_20260926: was '4.0K', which is the view count of the GOING UNDERGROUND episode 'Prof. John Mearsheimer Explains Why Iran War MUST END' (2026-07-28, 4,010 views), attributed here by a surname-only join. This episode has no Rumble video: its YouTube id premieres 2026-09-27 and Rumble's New Order channel does not carry it.",
-    "_x_store_tweets": 10
+    "_x_store_tweets": 10,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Anatol Lieven",
     "surname": "Lieven",
     "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
-    "rumble_views": "761",
+    "rumble_views": "762",
     "x_views": "939.0K",
     "date": "20 Sep",
-    "yt_views": "665",
+    "yt_views": "664",
     "ig_likes": "422",
     "canonical_guest_full_name": "Anatol Lieven",
     "canonical_surname_upper": "LIEVEN",
@@ -52,13 +53,14 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_store_tweets": 9,
     "_x_own_views": 1209838,
     "_x_others_views": 436806,
     "_x_posts": 36,
-    "_x_passes": null
+    "_x_passes": null,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Paulo Nogueira Batista Jr.",
@@ -68,7 +70,7 @@
     "x_views": "1.3M",
     "date": "13 Sep",
     "yt_views": "4.7K",
-    "ig_likes": "992",
+    "ig_likes": "1.1K",
     "canonical_guest_full_name": "Paulo Nogueira Batista Jr.",
     "canonical_surname_upper": "BATISTA",
     "canonical_episode_id": "e7574eace8b5",
@@ -84,7 +86,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_store_tweets": 11,
     "_x_own_views": 1352353,
@@ -116,7 +118,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
@@ -131,7 +133,7 @@
     "rumble_views": "1.2K",
     "x_views": "359.3K",
     "date": "16 Aug",
-    "yt_views": "155",
+    "yt_views": "161",
     "ig_likes": "421",
     "canonical_guest_full_name": "Sarang Shidore",
     "canonical_surname_upper": "SHIDORE",
@@ -148,13 +150,14 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
     "_x_own_views": 465216,
     "_x_others_views": 50226,
-    "_x_posts": 40
+    "_x_posts": 40,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Marta Fernandez",
@@ -167,7 +170,7 @@
     "pub_iso": "2026-08-09T06:30:23Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "276",
+    "ig_likes": "1.8K",
     "canonical_video_id": "XnOfgmdAELk",
     "canonical_video_url": "https://www.youtube.com/watch?v=XnOfgmdAELk",
     "canonical_episode_id_v2": "127afae570dfe74d",
@@ -177,17 +180,18 @@
         "XnOfgmdAELk"
       ]
     },
-    "yt_views": "30",
+    "yt_views": "190",
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 9,
     "_x_own_views": 1158130,
     "_x_others_views": 0,
-    "_x_posts": 9
+    "_x_posts": 9,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Mohammed Baharoon",
@@ -200,7 +204,7 @@
     "pub_iso": "2026-08-02T06:30:10Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "230",
+    "ig_likes": "377",
     "canonical_video_id": "F8hxaEtl9Y8",
     "canonical_video_url": "https://www.youtube.com/watch?v=F8hxaEtl9Y8",
     "canonical_episode_id_v2": "2ad17dd19bd4004d",
@@ -210,17 +214,18 @@
         "F8hxaEtl9Y8"
       ]
     },
-    "yt_views": "291",
+    "yt_views": "110",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "1.3M",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 10,
     "_x_own_views": 1248451,
     "_x_others_views": 0,
-    "_x_posts": 9
+    "_x_posts": 9,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Hussein Askary",
@@ -233,7 +238,7 @@
     "pub_iso": "2026-07-26T06:30:22Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "585",
+    "ig_likes": "1.0K",
     "canonical_video_id": "_sA9-4RwI00",
     "canonical_video_url": "https://www.youtube.com/watch?v=_sA9-4RwI00",
     "canonical_episode_id_v2": "9e5a40326e7138df",
@@ -243,17 +248,18 @@
         "_sA9-4RwI00"
       ]
     },
-    "yt_views": "133",
+    "yt_views": "245",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
     "x_views": "443.1K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
     "_x_own_views": 430518,
     "_x_others_views": 0,
-    "_x_posts": 7
+    "_x_posts": 7,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Peter Schiff",
@@ -266,7 +272,7 @@
     "pub_iso": "2026-07-19T06:30:15Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
-    "ig_likes": "351",
+    "ig_likes": "387",
     "canonical_video_id": "rE30fKtk4pk",
     "canonical_video_url": "https://www.youtube.com/watch?v=rE30fKtk4pk",
     "canonical_episode_id_v2": "e0b569e93071552f",
@@ -276,14 +282,15 @@
         "rE30fKtk4pk"
       ]
     },
-    "yt_views": "1.1K",
+    "yt_views": "514",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "941.3K",
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
-    "_x_store_tweets": 8
+    "_x_store_tweets": 8,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "John Perkins",
@@ -292,8 +299,8 @@
     "date": "12 Jul",
     "rumble_views": "1.0K",
     "x_views": "812.2K",
-    "yt_views": "1.1K",
-    "ig_likes": "233",
+    "yt_views": "837",
+    "ig_likes": "291",
     "show": "NO",
     "canonical_guest_full_name": "John Perkins",
     "canonical_surname_upper": "PERKINS",
@@ -308,12 +315,13 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": null,
     "_x_store_tweets": 9,
     "_x_own_views": 1025394,
     "_x_others_views": 62124,
-    "_x_posts": 28
+    "_x_posts": 28,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Vikram Sood",
@@ -322,8 +330,8 @@
     "date": "5 Jul",
     "rumble_views": "553",
     "x_views": "846.1K",
-    "yt_views": "1.1K",
-    "ig_likes": "462",
+    "yt_views": "3.2K",
+    "ig_likes": "1.1K",
     "show": "NO",
     "canonical_guest_full_name": "Vikram Sood",
     "canonical_surname_upper": "SOOD",
@@ -342,7 +350,8 @@
     "_x_passes": null,
     "_x_own_views": 846064,
     "_x_others_views": 0,
-    "_x_posts": 7
+    "_x_posts": 7,
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -351,8 +360,8 @@
     "date": "28 Jun",
     "rumble_views": "560",
     "x_views": "382.9K",
-    "yt_views": "0",
-    "ig_likes": "213",
+    "yt_views": "138",
+    "ig_likes": "3.1K",
     "show": "NO",
     "canonical_guest_full_name": "C. Uday Bhaskar",
     "canonical_surname_upper": "BHASKAR",
@@ -361,6 +370,15 @@
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_passes": 6,
-    "_x_store_tweets": 7
+    "_x_store_tweets": 7,
+    "canonical_video_id": "08aeFzW4N2E",
+    "canonical_video_url": "https://www.youtube.com/watch?v=08aeFzW4N2E",
+    "link": "https://www.youtube.com/watch?v=08aeFzW4N2E",
+    "source_platform_ids": {
+      "youtube": [
+        "08aeFzW4N2E"
+      ]
+    },
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   }
 ]
