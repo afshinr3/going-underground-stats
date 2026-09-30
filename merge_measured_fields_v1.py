@@ -25,7 +25,24 @@ import json
 import os
 import sys
 
-FIELDS = ("rumble_views", "ig_likes")
+# MERGE_MUST_PROTECT_EVERY_LOCAL_MEASUREMENT_V1_20260930 — this listed only the two
+# fields the bridge wrote when it was written. Everything else the Mac measures was
+# unprotected, and the cloud's null won. Observed 2026-09-30 within ten minutes of the fix:
+# the Mac bound and measured YouTube for the three oldest GU episodes (Wilkerson 4.4K,
+# Fritz 1.1K, Ellwood 1.5K), and the next three "GU Stats Bot" commits put yt_views back to
+# null — the cloud cannot see those episodes at all, because it discovers videos through a
+# ~15-item RSS window they aged out of.
+#
+# x_views is here for the same reason and it is now the more urgent one: X blocks the GitHub
+# runner's IP, so CI measures NOTHING on X and would otherwise null every episode's X figure
+# on its next successful commit.
+#
+# The identity fields travel with them. A row whose canonical_video_id the cloud does not
+# know is a row nothing can measure again, which is how these three went dark in the first
+# place — carrying the number forward without the binding would fix one run and lose the
+# next.
+FIELDS = ("rumble_views", "ig_likes", "yt_views", "x_views",
+          "canonical_video_id", "canonical_video_url", "link")
 # EPISODE_CARRY_FORWARD_V1_20260918 — an episode must not vanish because ONE discovery run
 # failed to find it. Measured 2026-09-18: videos.json held 15 GU rows while the published
 # health feed held 18; Milanović (15 Aug), Hasan Ünal (7 Aug) and James Carden (11 Jul) were
@@ -35,6 +52,20 @@ FIELDS = ("rumble_views", "ig_likes")
 TOMBSTONES = "gu_removed_episodes_v1.json"
 UNMEASURED = (None, "", "?")
 FILES = ("videos.json", "videos_neworder.json")
+
+
+def _identities(r):
+    """SHARED_EPISODE_IDENTITY_V1_20260930 — match on the union of identifiers, not a
+    precedence chain. `_key_id` was canonical_video_id alone with a (surname, date)
+    fallback, so a pair that disagreed on which of the two they carried could fail to
+    match — and the fallback is looser than the title hash it skipped. Reusing the one
+    identity rule both publishers already use keeps this matcher consistent with them."""
+    import sys as _sys, os as _os
+    _here = _os.path.dirname(_os.path.abspath(__file__))
+    if _here not in _sys.path:
+        _sys.path.insert(0, _here)
+    import episode_identity_v1 as _EI
+    return _EI.identities(r)
 
 
 def _key_id(r):
@@ -115,19 +146,25 @@ def carry_forward_rows(cloud_rows, origin_rows, tombs=None):
 
 def merge_rows(cloud_rows, origin_rows):
     """Return (merged_rows, n_carried). Pure: no I/O."""
-    by_id, by_name = {}, {}
+    by_ident, by_name = {}, {}
     for o in origin_rows or []:
         if not isinstance(o, dict):
             continue
-        if _key_id(o):
-            by_id.setdefault(_key_id(o), o)
+        for _i in _identities(o):
+            by_ident.setdefault(_i, o)
         if _key_name(o)[0]:
             by_name.setdefault(_key_name(o), o)
     n = 0
     for r in cloud_rows or []:
         if not isinstance(r, dict):
             continue
-        o = (by_id.get(_key_id(r)) if _key_id(r) else None) or by_name.get(_key_name(r))
+        o = None
+        for _i in _identities(r):
+            o = by_ident.get(_i)
+            if o is not None:
+                break
+        if o is None:
+            o = by_name.get(_key_name(r))
         if not o:
             continue
         for f in FIELDS:

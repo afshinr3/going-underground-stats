@@ -3559,17 +3559,41 @@ async def main_fetch():
         print(f"[VIDEOS_HEALTH_V1_CALL_ERR] {_e_vh}")
 
 
-def push_to_tidbyt():
-    """Build animation from Going Underground data and push to both Tidbyts."""
-    with open(SHOWS[0]['data_file']) as f:
-        cache = json.load(f)
+# TIDBYT_BOTH_SHOWS_V1_20260930 — New Order on the Tidbyt, per operator request
+# 2026-09-30. This rendered SHOWS[0] only, so half the output the stats exist to measure was
+# absent from the display: New Order's 12 episodes were collected, attributed and published
+# to every other consumer and then dropped here.
+#
+# Layout is SECTIONED, not merged: a header frame naming the show, then that show's
+# episodes, for each show in turn. The operator chose this over a combined newest-N list so
+# nothing is dropped; the cost is a loop of about 33s instead of 21s, so any one episode
+# comes round roughly half as often. Per-show caps stay generous but BOUNDED — an unbounded
+# loop would grow silently as the feeds do, and a 60-frame animation is a display nobody
+# can read.
+TIDBYT_EPS_PER_SHOW = 20
 
+
+def push_to_tidbyt():
+    """Build the animation from BOTH shows and push to both Tidbyts."""
+    # (label, total_str, show_code) in display order: each show's episodes behind its header.
     sorted_eps = []
-    for v in cache[:15]:
+    per_show = []
+    for _show in SHOWS:
+        _code = 'NO' if 'neworder' in os.path.basename(_show['data_file']).lower() else 'GU'
+        try:
+            with open(_show['data_file']) as f:
+                cache = json.load(f) or []
+        except Exception as _e:
+            print(f"  [TIDBYT_FEED_ERR] {_show['name']}: {_e!r}", file=sys.stderr)
+            continue
+        per_show.append((_show['name'], _code, cache[:TIDBYT_EPS_PER_SHOW]))
+
+    for _name, _code, _rows in per_show:
+      for v in _rows:
         # GU_UNKNOWN_IS_NULL_V2 — unknown platforms are excluded, not counted as 0.
         total, _unknown_fields = sum_known_metrics(v)
         if _unknown_fields:
-            print(f"  [GU_PARTIAL_TOTAL] {v.get('surname','?')} {v.get('date','')}: "
+            print(f"  [GU_PARTIAL_TOTAL] {_code} {v.get('surname','?')} {v.get('date','')}: "
                   f"total excludes unmeasured {','.join(_unknown_fields)}")
         # TIDBYT_CANONICAL_PREF_V1_2026_07_11 — prefer canonical_surname_upper so
         # broken extractor output (e.g. "War" for Carden ep, "Minister" for
@@ -3584,7 +3608,13 @@ def push_to_tidbyt():
         if total >= 1_000_000: t = f"{total/1_000_000:.1f}M"
         elif total >= 1_000: t = f"{total/1_000:.0f}K"
         else: t = str(total)
-        sorted_eps.append((label, t))
+        # PARTIAL_TOTAL_IS_A_LOWER_BOUND_V1_20260930 — the same rule the LaMetric frames and
+        # the dashboard follow. sum_known_metrics already tells us which platforms it had to
+        # leave out; printing the number bare made an episode whose X figure had not landed
+        # look like a weaker episode. "+" means at least this much.
+        if _unknown_fields and total > 0:
+            t += "+"
+        sorted_eps.append((label, t, _code))
 
     WIDTH, HEIGHT = 64, 32
     try:
@@ -3640,17 +3670,43 @@ def push_to_tidbyt():
         draw_crisp(hdr, (WIDTH - nw) // 2, 13, followers_total_str, (0, 255, 0), font_num)
         frames.append(hdr)
 
-    for name, total in sorted_eps[:15]:
+    # A show header frame precedes that show's episodes, so which programme a surname
+    # belongs to is stated rather than inferred. Colour carries it too, matching the
+    # convention the LaMetric pushers already use: GU red, New Order purple.
+    _SHOW_RGB = {'GU': (255, 90, 70), 'NO': (185, 120, 255)}
+    _SHOW_LABEL = {'GU': 'GOING UNDER', 'NO': 'NEW ORDER'}
+
+    _current = None
+    for name, total, _code in sorted_eps:
+        if _code != _current:
+            _current = _code
+            _hdr = Image.new("RGB", (WIDTH, HEIGHT), (10, 0, 0))
+            _txt = _SHOW_LABEL.get(_code, _code)
+            _tw = font_name.getbbox(_txt)[2]
+            draw_crisp(_hdr, max(0, (WIDTH - _tw) // 2), 8, _txt,
+                       _SHOW_RGB.get(_code, (255, 255, 255)), font_name)
+            frames.append(_hdr)
         img = Image.new("RGB", (WIDTH, HEIGHT), (10, 0, 0))
         d = name[:12]
         nw = font_name.getbbox(d)[2]
-        draw_crisp(img, max(0, (WIDTH - nw) // 2), 0, d, (255, 255, 255), font_name)
+        draw_crisp(img, max(0, (WIDTH - nw) // 2), 0, d,
+                   _SHOW_RGB.get(_code, (255, 255, 255)), font_name)
         nw2 = font_num.getbbox(total)[2]
         draw_crisp(img, (WIDTH - nw2) // 2, 13, total, (0, 255, 0), font_num)
         frames.append(img)
 
+    print(f"  [TIDBYT_BOTH_SHOWS_V1] {len(frames)} frames "
+          f"({', '.join(f'{c}:{sum(1 for _, _, x in sorted_eps if x == c)}' for c in dict.fromkeys(x for _, _, x in sorted_eps))})"
+          f" — loop {len(frames)}s")
+
+    # The palette is the ONLY colours the pixmap can show: a colour not listed here is
+    # quantised to the nearest one that is, silently. The two show colours are added
+    # explicitly, and the alert red the drop frames already used is added with them — it was
+    # never in the palette, so those frames have been rendering in whatever was closest.
     palette_img = Image.new("P", (1, 1))
-    palette_img.putpalette([10,0,0, 255,255,255, 0,255,0, 0,0,0] + [0]*(256-4)*3)
+    palette_img.putpalette([10,0,0, 255,255,255, 0,255,0,
+                            255,90,70, 185,120,255, 255,60,60, 60,0,0,
+                            0,0,0] + [0]*(256-8)*3)
     pframes = [f.quantize(palette=palette_img, dither=Image.Dither.NONE) for f in frames]
     buf = io.BytesIO()
     pframes[0].save(buf, format="GIF", save_all=True, append_images=pframes[1:],
