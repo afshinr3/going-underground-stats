@@ -155,7 +155,9 @@
     },
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "yt_views": "2.2K",
-    "_x_store_tweets": 9
+    "_x_store_tweets": 9,
+    "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
+    "_x_guest_repaired_from": "Afshin Rattansi CHALLENGES Ex-"
   },
   {
     "guest": "Philip Pilkington",
@@ -407,7 +409,7 @@
     "canonical_guest_full_name": "Lawrence Wilkerson",
     "canonical_surname_upper": "WILKERSON",
     "canonical_episode_id": "40f99fc9eb05",
-    "_carried_forward_iso": "2026-09-29T23:36:31Z",
+    "_carried_forward_iso": "2026-09-29T23:46:15Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 19
@@ -424,7 +426,7 @@
     "canonical_guest_full_name": "Dennis Fritz",
     "canonical_surname_upper": "FRITZ",
     "canonical_episode_id": "b8e8126f2b5e",
-    "_carried_forward_iso": "2026-09-29T23:36:31Z",
+    "_carried_forward_iso": "2026-09-29T23:46:15Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 16,
@@ -442,7 +444,7 @@
     "canonical_guest_full_name": "Tobias Ellwood",
     "canonical_surname_upper": "ELLWOOD",
     "canonical_episode_id": "6ca7f65c75da",
-    "_carried_forward_iso": "2026-09-29T23:36:31Z",
+    "_carried_forward_iso": "2026-09-29T23:46:15Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 14
