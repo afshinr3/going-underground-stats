@@ -5,7 +5,7 @@
   "window_end": "2026-09-28",
   "window_start_mon": "2026-09-25",
   "window_end_sun": "2026-09-28",
-  "generated_at": "2026-10-01T02:20:04.068862Z",
+  "generated_at": "2026-10-01T03:20:04.965763Z",
   "n": 2,
   "entries": [
     {
@@ -13,9 +13,9 @@
       "surname": "Harward",
       "title": "Americans Pay $2 BILLION A DAY for Iran War: Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
       "rumble_views": "2.8K",
-      "x_views": null,
+      "x_views": "362.1K",
       "date": "28 Sep",
-      "yt_views": "1.8K",
+      "yt_views": "1.7K",
       "ig_likes": "1.3K",
       "canonical_guest_full_name": "Robert Harward",
       "canonical_surname_upper": "HARWARD",
@@ -32,8 +32,10 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "show": "GU"
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "show": "GU",
+      "_x_store_tweets": 9,
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     },
     {
       "guest": "Joe Kent",
@@ -41,7 +43,7 @@
       "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
       "date": "26 Sep",
       "rumble_views": "3.0K",
-      "x_views": "856.7K",
+      "x_views": "857.0K",
       "ig_likes": "2.0K",
       "show": "GU",
       "canonical_guest_full_name": "Joe Kent",
@@ -57,8 +59,10 @@
           "-SUo0l498vA"
         ]
       },
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "32.8K"
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "yt_views": "32.0K",
+      "_x_store_tweets": 11,
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
   "source_feed": "videos.json",
