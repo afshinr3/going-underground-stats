@@ -392,6 +392,218 @@ def _git(*args, check=False):
                           capture_output=True, text=True, check=check)
 
 
+# ---------------------------------------------------------------------------
+# REBASE_MARKER_GUARD_V1_20261001
+#
+# On 2026-10-01 the LaMetric read "SOURCE UNAVAILABLE" for hours while the
+# pusher reported http=201 and n_full=0. Cause: a single transient
+# `port 22: Operation timed out` left local main 2-ahead/8-behind, so the
+# `pull --rebase` below hit a conflict on the generated JSON feeds, left
+# **conflict markers inside videos_health_v1.json** and stopped on a detached
+# HEAD. canonical_gu_pusher_v2 reads that file directly, its json.load raised,
+# and _load_episodes returned (age, [], False) -> the fail-closed frame.
+#
+# It then repeated hourly, and the repeat is the important part:
+# _recover_interrupted_rebase aborted the rebase only once it was older than
+# stale_s, and main() then immediately re-ran `pull --rebase`, which hit the
+# same conflict and had git write the SAME markers back. So the feed was
+# re-broken at cron minute :20 every hour and the display died for another ~59
+# minutes. Meanwhile every push failed with "You are not currently on a
+# branch", which grew the divergence and guaranteed the next conflict.
+#
+# (Measured, against git 2.50.1: `git checkout -- <path>` on an unmerged path
+# does NOT rewrite markers — it fails with "error: path ... is unmerged" and
+# leaves the file alone. The churn-suppression reverts were therefore silently
+# no-ops here, not the thing re-breaking the feed. _git() ignores returncode,
+# so that failure was invisible.)
+#
+# Two invariants now hold, and both are checked rather than assumed:
+#   1. This process never returns while a managed feed on disk contains a
+#      conflict marker or fails to parse.
+#   2. A conflict in a managed feed is RESOLVED, not left. Every local
+#      contribution to these files (Rumble, IG, X-store and YT-store
+#      attribution) is recomputed from local truth later in this same run, so
+#      taking the upstream side and re-deriving loses nothing. A conflict in
+#      any path this module does not own is never guessed at.
+# ---------------------------------------------------------------------------
+MANAGED_FEEDS = frozenset({
+    "videos.json", "videos_neworder.json", "videos_health_v1.json",
+    "stats_1week_gu.json", "stats_1week_no.json",
+})
+_CONFLICT_RE = re.compile(r"^(<{7}|={7}|>{7})", re.M)
+# git's own name for "the branch this repo publishes from"
+DEFAULT_BRANCH = "main"
+
+
+def _in_rebase():
+    gd = os.path.join(REPO, ".git")
+    return any(os.path.isdir(os.path.join(gd, d))
+               for d in ("rebase-merge", "rebase-apply"))
+
+
+def _rebase_age_s():
+    gd = os.path.join(REPO, ".git")
+    ages = [time.time() - os.path.getmtime(os.path.join(gd, d))
+            for d in ("rebase-merge", "rebase-apply")
+            if os.path.isdir(os.path.join(gd, d))]
+    return max(ages) if ages else 0.0
+
+
+def _conflicted_paths():
+    """Basenames git reports as unmerged. Empty on any failure (never raises)."""
+    r = _git("diff", "--name-only", "--diff-filter=U")
+    if r.returncode != 0:
+        return []
+    return [ln.strip() for ln in (r.stdout or "").splitlines() if ln.strip()]
+
+
+def _has_markers(path):
+    """True if the file on disk carries conflict markers. Unreadable -> False."""
+    try:
+        with open(path, encoding="utf-8", errors="replace") as f:
+            return bool(_CONFLICT_RE.search(f.read()))
+    except Exception:
+        return False
+
+
+def _ensure_on_branch():
+    """Re-attach a detached HEAD to the publishing branch.
+
+    A detached HEAD is why 28 hourly commits once never went live: every push
+    fails with "You are not currently on a branch" while the local feed the
+    displays read keeps being rewritten. Detached HEAD is never a state this
+    cron should run in.
+    """
+    if _git("symbolic-ref", "-q", "HEAD").returncode == 0:
+        return True
+    head = DEFAULT_BRANCH
+    try:
+        hn = os.path.join(REPO, ".git", "rebase-merge", "head-name")
+        if os.path.isfile(hn):
+            head = open(hn).read().strip().rsplit("/", 1)[-1] or DEFAULT_BRANCH
+    except Exception:
+        pass
+    r = _git("checkout", head)
+    print(f"  [REBASE_MARKER_GUARD_V1] detached HEAD -> checkout {head} "
+          f"rc={r.returncode}", file=sys.stderr, flush=True)
+    return r.returncode == 0
+
+
+def _safe_discard(path):
+    """`git checkout -- path`, but never blindly while that path is unmerged.
+
+    On an unmerged path git refuses: "error: path ... is unmerged", rc=1, file
+    untouched. Because _git() ignores returncode, the churn-suppression reverts
+    below failed silently against a conflicted index — the discard they intended
+    never happened and nothing said so. Fail loudly instead, and let
+    _verify_no_markers own the actual repair.
+    """
+    base = os.path.basename(path)
+    if base in _conflicted_paths():
+        print(f"  [REBASE_MARKER_GUARD_V1] refusing `checkout --` on unmerged "
+              f"{base} (would re-create markers)", file=sys.stderr, flush=True)
+        return False
+    return _git("checkout", "--", path).returncode == 0
+
+
+def _resolve_managed_conflicts():
+    """Drive an in-progress rebase to completion without ever leaving markers.
+
+    Returns one of: "clean" (no rebase in progress), "resolved", "aborted",
+    "foreign" (left alone — conflicts in paths we do not own), "stuck".
+    """
+    if not _in_rebase():
+        return "clean"
+
+    for _ in range(40):                      # bounded: never spin on git
+        if not _in_rebase():
+            return "resolved"
+        conflicted = _conflicted_paths()
+        foreign = [c for c in conflicted if os.path.basename(c) not in MANAGED_FEEDS]
+        if foreign:
+            # Not ours to guess at. Only clear it once it is plainly abandoned,
+            # so an interactive rebase in another session is not stomped.
+            age = _rebase_age_s()
+            if age > 900:
+                r = _git("rebase", "--abort")
+                print(f"  [REBASE_MARKER_GUARD_V1] abandoned rebase ({int(age)}s) with "
+                      f"unowned conflicts {foreign} -> abort rc={r.returncode}",
+                      file=sys.stderr, flush=True)
+                return "aborted" if r.returncode == 0 else "stuck"
+            print(f"  [REBASE_MARKER_GUARD_V1] rebase in progress ({int(age)}s) with "
+                  f"unowned conflicts {foreign} — left alone",
+                  file=sys.stderr, flush=True)
+            return "foreign"
+
+        for c in conflicted:
+            # "ours" during a rebase is upstream (the cloud Action's published
+            # row); "theirs" is the local commit being replayed. Prefer upstream
+            # and let this run re-derive every local contribution on top.
+            if _git("checkout", "--ours", "--", c).returncode != 0:
+                _git("checkout", "--theirs", "--", c)
+            _git("add", c)
+            print(f"  [REBASE_MARKER_GUARD_V1] resolved {c} to upstream side; "
+                  f"local values re-derived this run", file=sys.stderr, flush=True)
+
+        r = _git("-c", "core.editor=true", "rebase", "--continue")
+        if r.returncode != 0:
+            blob = ((r.stderr or "") + (r.stdout or "")).lower()
+            if "no changes" in blob or "did not change" in blob or "empty" in blob:
+                if _git("rebase", "--skip").returncode != 0:
+                    break
+            elif not _conflicted_paths():
+                break
+    # Could not drive it forward: abort so nothing is left half-applied.
+    if _in_rebase():
+        r = _git("rebase", "--abort")
+        print(f"  [REBASE_MARKER_GUARD_V1] could not resolve; abort rc={r.returncode}",
+              file=sys.stderr, flush=True)
+        return "aborted" if r.returncode == 0 else "stuck"
+    return "resolved"
+
+
+def _verify_no_markers():
+    """Last line of defence: no managed feed may be left broken on disk.
+
+    Checked, not assumed — a marker here is what blanks the displays, and the
+    push that follows is not worth making if the file the device reads is
+    unparseable. Restores from HEAD (which is only reachable once the index is
+    unmerged) and reports anything it cannot fix.
+    """
+    bad = []
+    for base in sorted(MANAGED_FEEDS):
+        path = os.path.join(REPO, base)
+        if not os.path.isfile(path):
+            continue
+        broken = _has_markers(path)
+        if not broken:
+            try:
+                with open(path, encoding="utf-8") as f:
+                    json.load(f)
+            except Exception:
+                broken = True
+        if not broken:
+            continue
+        print(f"  [REBASE_MARKER_GUARD_V1] {base} is unparseable/has markers — "
+              f"restoring from HEAD", file=sys.stderr, flush=True)
+        _git("reset", "-q", "--", base)
+        _git("checkout", "--", base)
+        still = _has_markers(path)
+        if not still:
+            try:
+                with open(path, encoding="utf-8") as f:
+                    json.load(f)
+            except Exception:
+                still = True
+        if still:
+            bad.append(base)
+    if bad:
+        print(f"[{MARKER}] MARKER GUARD FAILED — still broken on disk: {bad}. "
+              f"The LaMetric feeds read these files directly.",
+              file=sys.stderr, flush=True)
+    return bad
+
+
 def _weekly_entries_sig(path):
     """Content signature of a stats_1week_*.json. None if unreadable.
 
@@ -682,15 +894,17 @@ def _recover_interrupted_rebase(stale_s=900):
     re-applies the autostash) so this run syncs normally. Everything here is recomputed hourly
     from local truth, so nothing unique is dropped. Never raises."""
     try:
-        gd = os.path.join(REPO, ".git")
-        for d in ("rebase-merge", "rebase-apply"):
-            p = os.path.join(gd, d)
-            age = time.time() - os.path.getmtime(p) if os.path.isdir(p) else 0
-            if age > stale_s:
-                r = _git("rebase", "--abort")
-                print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] stale {d} ({int(age)}s) aborted "
-                      f"rc={r.returncode}",
-                      file=sys.stderr, flush=True)
+        _ensure_on_branch()
+        if _in_rebase():
+            age = int(_rebase_age_s())
+            # REBASE_MARKER_GUARD_V1_20261001 — waiting out stale_s used to leave
+            # conflict markers in the feed the displays read for the whole hour.
+            # A conflict confined to feeds this module owns is resolved now,
+            # whatever its age; anything else still honours stale_s.
+            outcome = _resolve_managed_conflicts()
+            print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] rebase dir ({age}s) -> {outcome}",
+                  file=sys.stderr, flush=True)
+            _ensure_on_branch()
     except Exception as _e:
         print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] check failed: {_e!r}", file=sys.stderr, flush=True)
 
@@ -698,7 +912,18 @@ def _recover_interrupted_rebase(stale_s=900):
 def main():
     if not DRY:
         _recover_interrupted_rebase()
-        _git("pull", "--rebase", "--autostash")  # sync with cloud first
+        _pull = _git("pull", "--rebase", "--autostash")  # sync with cloud first
+        if _pull.returncode != 0 or _in_rebase():
+            # An unchecked pull was the whole 2026-10-01 outage: it conflicted,
+            # left markers in videos_health_v1.json and stopped on a detached
+            # HEAD, and the run carried on as though it had synced.
+            print(f"  [REBASE_MARKER_GUARD_V1] pull --rebase rc={_pull.returncode} "
+                  f"{((_pull.stderr or _pull.stdout or '')[-200:]).strip()}",
+                  file=sys.stderr, flush=True)
+            print(f"  [REBASE_MARKER_GUARD_V1] pull left a rebase -> "
+                  f"{_resolve_managed_conflicts()}", file=sys.stderr, flush=True)
+            _ensure_on_branch()
+        _verify_no_markers()
 
     exact, surname, vids = _build_rumble_maps()
     posts = IGM.load_posts()
@@ -773,7 +998,7 @@ def main():
                     if _wf not in changed_files:
                         changed_files.append(_wf)      # content changed -> commit
                 else:
-                    _git("checkout", "--", _wf)        # only generated_at moved -> discard churn
+                    _safe_discard(os.path.join(REPO, _wf))  # only generated_at moved -> discard churn
             print(f"  [{INJECT_MARKER}] weekly stats regenerated; "
                   f"committing={[w for w in WEEKLY if w in changed_files]}")
         except Exception as _e_ws:
@@ -855,7 +1080,7 @@ def main():
                     changed_files.append(HEALTH)
                 print(f"  [{INJECT_MARKER}] health feed regenerated; committing")
             else:
-                _git("checkout", "--", HEALTH)   # only timestamps moved
+                _safe_discard(os.path.join(REPO, HEALTH))   # only timestamps moved
         except Exception as _e_h:
             print(f"  [{INJECT_MARKER}] health-feed regen FAILED: {_e_h!r}",
                   file=sys.stderr, flush=True)
@@ -866,9 +1091,18 @@ def main():
         for fn, err in failed_files:
             print(f"    {fn}: {err}", file=sys.stderr, flush=True)
 
+    # REBASE_MARKER_GUARD_V1 — never return with a broken feed on disk, and
+    # never publish one. These files are what the LaMetric pushers read.
+    broken_feeds = _verify_no_markers() if not DRY else []
+
     if not changed_files:
         print(f"[{MARKER}] no committable changes")
-        return 2 if failed_files else 0
+        return 4 if broken_feeds else (2 if failed_files else 0)
+
+    if broken_feeds:
+        print(f"[{MARKER}] NOT committing: {broken_feeds} unparseable on disk",
+              file=sys.stderr, flush=True)
+        return 4
 
     for cf in changed_files:
         _git("add", cf)
