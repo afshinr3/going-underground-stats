@@ -1751,6 +1751,22 @@ def discover_new_episodes(channel_id, data_file):
             print(f"  NEW: {emit_guest} ({short_date}) [canon={csu} id={ceid}]")
         if new_eps:
             cached = new_eps + cached
+            # UNCONDITIONAL_COLLAPSE_BEFORE_WRITE_V1_20261001 — this is the OTHER
+            # publisher of this file, and its only dedup is `title.lower()[:40] in
+            # existing_titles`, a prefix chain that cannot see a shared
+            # canonical_episode_id. If the run dies between here and update_show's
+            # write, this is the version that gets committed.
+            try:
+                import episode_identity_v1 as _EI_dn
+                _cached_dn, _merged_dn = _EI_dn.collapse(cached)
+                if _merged_dn:
+                    print(f"  [{_EI_dn.MARKER}] discovery collapse "
+                          f"{len(cached)} -> {len(_cached_dn)} rows "
+                          f"({_merged_dn} duplicate row(s) merged)")
+                cached = _cached_dn
+            except Exception as _e_dn:
+                print(f"  [EPISODE_IDENTITY_V1] discovery collapse FAILED: "
+                      f"{type(_e_dn).__name__}: {_e_dn}", file=sys.stderr)
             with open(data_file, 'w') as f:
                 json.dump(cached, f, indent=2)
             print(f"  Added {len(new_eps)} new episode(s)")
@@ -3094,6 +3110,30 @@ async def update_show(show, ig_clips):
         # failure this exists to prevent, so a broken guard must be visible.
         print(f"  [EPISODE_UNION] GUARD FAILED, inventory not protected this run: "
               f"{_e_union}", file=sys.stderr)
+
+    # UNCONDITIONAL_COLLAPSE_BEFORE_WRITE_V1_20261001 — the union collapse above
+    # lives inside the try that ends at the fail-open `except` just above, so ANY
+    # exception anywhere in that ~190-line block skipped it while THIS write still
+    # ran. That is how the Action published 19 rows with the O'Hanlon pair intact
+    # on 2026-09-30 20:55 and 2026-10-01 00:36 — after the shared identity rule had
+    # already landed in both writers on 2026-09-30 03:22. The guard announced
+    # "inventory not protected this run" on stderr and the duplicate shipped anyway.
+    #
+    # A repair must be its own reason to write. collapse() is pure and idempotent
+    # (a second pass merges 0), so it runs again here, in its own guard, on the
+    # bytes actually about to hit disk.
+    try:
+        import episode_identity_v1 as _EI_pw
+        _cache_pw, _merged_pw = _EI_pw.collapse(cache)
+        if _merged_pw:
+            print(f"  [{_EI_pw.MARKER}] pre-write collapse "
+                  f"{len(cache)} -> {len(_cache_pw)} rows for "
+                  f"{os.path.basename(show['data_file'])} "
+                  f"({_merged_pw} duplicate row(s) merged)")
+        cache = _cache_pw
+    except Exception as _e_pw:
+        print(f"  [EPISODE_IDENTITY_V1] PRE-WRITE COLLAPSE FAILED, duplicates may "
+              f"publish: {type(_e_pw).__name__}: {_e_pw}", file=sys.stderr)
 
     with open(show['data_file'], 'w') as f:
         json.dump(cache, f, indent=2)

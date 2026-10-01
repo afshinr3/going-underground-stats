@@ -85,6 +85,79 @@ def identities(row):
     return out
 
 
+def _norm_text(t):
+    """The same folding norm_title_id uses, without the hash."""
+    t = (t or "").strip()
+    if not t:
+        return ""
+    t = unicodedata.normalize("NFKD", t)
+    for a, b in (("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'), ("\u201d", '"'),
+                 ("\u2013", "-"), ("\u2014", "-"), ("\u00a0", " ")):
+        t = t.replace(a, b)
+    return re.sub(r"\s+", " ", t).strip().casefold()
+
+
+def _role_words():
+    """Sourced from gu_guest_from_posts_v1 so the two cannot drift. Never raises."""
+    try:
+        import gu_guest_from_posts_v1 as _P
+        return set(_P._ROLE_WORDS)
+    except Exception:
+        return set()
+
+
+# Fields that must never be filled from a row whose name is evidently not a name.
+NAME_FIELDS = ("guest", "surname",
+               "canonical_guest_full_name", "canonical_surname_upper")
+
+
+def name_is_poisoned(row):
+    """True when this row's guest/surname is evidently a headline fragment.
+
+    NAME_TRUST_IN_MERGE_V1_20261001. _merge kept whichever row appeared FIRST and
+    only filled its blanks. That is order-dependent, and row order is not stable:
+    discover_new_episodes does `cached = new_eps + cached` and the cache is later
+    sorted by pub_iso, which the poisoned row does not carry. Measured on the
+    published 19-row feed: collapsing the O'Hanlon pair good-row-first keeps
+    "Michael O'Hanlon"; junk-row-first keeps "Afshin Rattansi CHALLENGES Ex-" /
+    surname "Ex-" — strictly worse than the duplicate it replaces, because it is
+    one row, confidently wrong, and no longer detectable as a dupe.
+
+    The tests are deliberately narrow and self-evidencing. Two tempting rules were
+    measured and REJECTED against all 36 distinct rows in this feed's history:
+
+    - "the guest is a leading slice of its own title" flags THREE correct rows,
+      because this show titles episodes "Tucker Carlson: We Are on the Brink...".
+      A correct guest is very often a prefix of its own headline.
+    - `gu_parser._looks_like_name` is wrong in both directions here: it ACCEPTS
+      "Afshin Rattansi CHALLENGES Ex-" and REJECTS "Michael O'Hanlon", whose
+      apostrophe is U+2019.
+
+    What actually distinguishes the fragments is the cut itself:
+      1. The value ends in "-" — by construction half a word. "Ex-" reached the
+         leaderboard as the top episode of the week at 510K reach.
+      2. The guest carries headline punctuation (":"), as in
+         "CMSGT. Dennis Fritz: Israel's ". A person's name does not.
+      3. The surname is a ROLE, not a family name (sourced from
+         gu_guest_from_posts_v1._ROLE_WORDS so the two cannot drift).
+    Verified over those 36 rows: exactly the two known fragments are flagged and
+    nothing else — see test_episode_identity_name_trust_v1.py.
+    """
+    guest = (row.get("guest") or row.get("canonical_guest_full_name") or "").strip()
+    if guest:
+        if guest.endswith("-"):
+            return True
+        if ":" in guest:
+            return True
+    sn = (row.get("surname") or "").strip().rstrip(".,?!:;\u2019\u2018\"'")
+    if sn:
+        if sn.endswith("-"):
+            return True
+        if sn.rstrip("-").casefold() in _role_words():
+            return True
+    return False
+
+
 def _merge(keep, drop):
     """Fill keep's blanks from drop. Prefers the row that is NOT carried forward; a
     measured value is never overwritten by an absent one (METRIC_NEVER_REGRESSES).
@@ -94,10 +167,22 @@ def _merge(keep, drop):
     They must NOT be cleared from a row that was never merged — a genuinely carried-forward
     episode keeps its provenance, which is what test_episode_never_disappears_v1 checks.
     """
-    if keep.get("_carried_forward_iso") and not drop.get("_carried_forward_iso"):
+    # NAME_TRUST_IN_MERGE_V1_20261001 — decide which row SURVIVES on evidence,
+    # not on which happened to come first. A name that is a slice of its own
+    # headline loses to one that is not; see name_is_poisoned.
+    k_bad, d_bad = name_is_poisoned(keep), name_is_poisoned(drop)
+    if k_bad and not d_bad:
+        keep, drop = drop, keep
+        k_bad, d_bad = d_bad, k_bad
+    elif k_bad == d_bad and keep.get("_carried_forward_iso") and not drop.get("_carried_forward_iso"):
         keep, drop = drop, keep
     for f, v in drop.items():
         if is_blank(keep.get(f)) and not is_blank(v):
+            # A poisoned donor may still supply metrics and ids, but never a name:
+            # filling a blank guest with a headline fragment is how the fragment
+            # got onto the leaderboard in the first place.
+            if d_bad and f in NAME_FIELDS:
+                continue
             keep[f] = v
     keep.pop("_carried_forward_iso", None)
     keep.pop("_carried_forward_reason", None)
