@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-02T01:20:06Z",
-  "last_updated": "2026-10-02T01:20:06Z",
+  "iso": "2026-10-02T02:00:45Z",
+  "last_updated": "2026-10-02T02:00:45Z",
   "episodes": [
     {
       "guest": "Joe Kent",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "33.5K",
+        "yt_views": "33.4K",
         "x_views": "857.0K",
         "ig_likes": "2.0K"
       }
@@ -69,7 +69,7 @@
       },
       "metrics": {
         "rumble_views": "6.0K",
-        "yt_views": "80.9K",
+        "yt_views": "80.8K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -99,8 +99,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -195,7 +195,7 @@
       }
     },
     {
-      "guest": "Trump’s Ex-Lawyer Robert Barnes",
+      "guest": "Robert Barnes",
       "surname": "BARNES",
       "title": "Iran Disaster: ‘Trump Sees Israel as a TOOL to CONQUER THE WORLD’— Trump’s Ex-Lawyer Robert Barnes",
       "date": "1 Aug",
@@ -219,7 +219,7 @@
       }
     },
     {
-      "guest": "of Israel’s Shin Bet Ami Ayalon",
+      "guest": "Ami Ayalon",
       "surname": "AYALON",
       "title": "‘War on Iran is Bringing Iran Closer to a NUCLEAR BOMB— Ex-Chief of Israel’s Shin Bet Ami Ayalon",
       "date": "27 Jul",
@@ -243,7 +243,7 @@
       }
     },
     {
-      "guest": "Ex-Israeli Negotiator Daniel Levy",
+      "guest": "Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
@@ -312,14 +312,14 @@
         "yt_views": "4.4K",
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": "4.6K"
       }
     },
     {
-      "guest": "CMSGT. Dennis Fritz: Israel’s",
-      "surname": "ISRAEL’S",
+      "guest": "Dennis Fritz",
+      "surname": "FRITZ",
       "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
       "date": "13 Jul",
       "show": "GU",
@@ -383,8 +383,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "919",
-        "yt_views": "13.6K",
+        "rumble_views": "915",
+        "yt_views": "13.5K",
         "x_views": "672.1K",
         "ig_likes": "1.6K"
       }
@@ -407,8 +407,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "816",
-        "yt_views": "685",
+        "rumble_views": "815",
+        "yt_views": "681",
         "x_views": "939.4K",
         "ig_likes": "423"
       }
@@ -600,7 +600,7 @@
       },
       "metrics": {
         "rumble_views": "1.0K",
-        "yt_views": "844",
+        "yt_views": "842",
         "x_views": "812.2K",
         "ig_likes": "291"
       }
@@ -674,7 +674,7 @@
       },
       "metrics": {
         "rumble_views": "3.0K",
-        "yt_views": "33.5K",
+        "yt_views": "33.4K",
         "x_views": "857.0K",
         "ig_likes": "2.0K"
       }
@@ -722,7 +722,7 @@
       },
       "metrics": {
         "rumble_views": "6.0K",
-        "yt_views": "80.9K",
+        "yt_views": "80.8K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -752,8 +752,8 @@
       }
     },
     {
-      "guest": "Afshin Rattansi CHALLENGES Ex-",
-      "surname": "EX-",
+      "guest": "Michael O’Hanlon",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -795,8 +795,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "919",
-        "yt_views": "13.6K",
+        "rumble_views": "915",
+        "yt_views": "13.5K",
         "x_views": "672.1K",
         "ig_likes": "1.6K"
       }
@@ -819,8 +819,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "816",
-        "yt_views": "685",
+        "rumble_views": "815",
+        "yt_views": "681",
         "x_views": "939.4K",
         "ig_likes": "423"
       }
