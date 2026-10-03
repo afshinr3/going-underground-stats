@@ -651,6 +651,108 @@ def _iso_normalise(iso_str):
     return s
 
 
+# YT_PREMIERE_DATE_V1_20261004 — a PREMIERE is dated by when it AIRS, not when it was
+# uploaded.
+#
+# THE DEFECT, observed on the published feed 2026-10-03: the New Order episode
+# "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT..." showed as **2 Oct**
+# in videos_neworder.json (and therefore on the Android app) while it had not aired at
+# all. It was a scheduled premiere: uploaded 2026-10-02T07:12:53Z, airing
+# 2026-10-04T06:30:00Z. The YouTube RSS feed lists a premiere exactly like a published
+# video and its <published> element carries the UPLOAD time, with no field saying the
+# video has never been seen. So the row was admitted as a full EPISODE, dated two days
+# early, sorted to the top as the newest episode, and carried yt_views "0" with
+# rumble_views and x_views null — which the Android app renders as "?" because of the
+# deliberate '?'-to-null hardening. One cause, three visible symptoms.
+#
+# WHY A CACHE FILE AND NOT JUST A PROBE: `date` is recomputed from `pub_iso` on every
+# run (see _iso_to_short call below), and this job runs every 15 minutes in CI. A probe
+# that fails there — CI egress is not the same network as the Mac — would silently fall
+# back to the RSS upload date and revert the correction run after run, which is the
+# failure mode already recorded for the YouTube values in this repo. So the premiere time
+# is LEARNED ONCE and committed to yt_premiere_cache_v1.json; after that no network is
+# required and CI cannot regress it.
+#
+# AND IT STAYS the premiere date after airing: YouTube keeps publishedAt at the upload
+# time forever, so a premiere's correct episode date is its air time permanently, not
+# only while it is upcoming. Presence in the cache therefore means "date this video by
+# premiere_iso", with no expiry.
+#
+# Fail-open by design: an unknown video is left exactly as RSS described it. This file's
+# policy is never to drop or rewrite a row on a transient network failure.
+PREMIERE_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              "yt_premiere_cache_v1.json")
+_PREMIERE_MEM = {}
+
+
+def _premiere_cache_load():
+    if _PREMIERE_MEM:
+        return _PREMIERE_MEM
+    try:
+        with open(PREMIERE_CACHE) as fh:
+            _PREMIERE_MEM.update(json.load(fh) or {})
+    except Exception:
+        pass
+    return _PREMIERE_MEM
+
+
+def _premiere_cache_save():
+    try:
+        tmp = PREMIERE_CACHE + ".tmp"
+        with open(tmp, "w") as fh:
+            json.dump(_PREMIERE_MEM, fh, indent=1, sort_keys=True)
+        os.replace(tmp, PREMIERE_CACHE)
+    except Exception as _e:
+        print("  [YT_PREMIERE] cache write failed: %s" % _e, file=sys.stderr)
+
+
+def _yt_premiere_iso(video_id, pub_iso):
+    """Air time for a premiere, or None for an ordinary upload.
+
+    Reads the committed cache first. Probes the watch page only for a video that is
+    recent AND not already known, so a steady state costs no requests at all.
+    """
+    cache = _premiere_cache_load()
+    hit = cache.get(video_id)
+    if isinstance(hit, dict):
+        return hit.get("premiere_iso")          # learned: premiere
+    if hit == "not_premiere":
+        return None                             # learned: ordinary upload
+    # Bound the probe: only videos published in the last 30 days can still be waiting
+    # to air, and anything older has long since been classified.
+    import datetime as _dtm
+    try:
+        age_d = (_dtm.datetime.now(_dtm.timezone.utc)
+                 - _dtm.datetime.fromisoformat((pub_iso or "").replace("Z", "+00:00"))).days
+        if age_d > 30:
+            return None
+    except Exception:
+        pass
+    try:
+        req = urllib.request.Request("https://www.youtube.com/watch?v=%s" % video_id,
+                                     headers={"User-Agent": "Mozilla/5.0",
+                                              "Accept-Language": "en-US,en;q=0.9"})
+        html = urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "replace")
+    except Exception as _e:
+        print("  [YT_PREMIERE] probe failed for %s (%s) — leaving RSS date untouched"
+              % (video_id, _e), file=sys.stderr)
+        return None                             # fail-open, and do NOT cache a failure
+    m = re.search(r'"scheduledStartTime":"(\d+)"', html)
+    if not m:
+        cache[video_id] = "not_premiere"
+        _premiere_cache_save()
+        return None
+    iso = _dtm.datetime.fromtimestamp(int(m.group(1)), _dtm.timezone.utc).strftime(
+        "%Y-%m-%dT%H:%M:%SZ")
+    cache[video_id] = {"premiere_iso": iso, "upload_iso": pub_iso,
+                       "learned_at": _dtm.datetime.now(_dtm.timezone.utc).strftime(
+                           "%Y-%m-%dT%H:%M:%SZ")}
+    _premiere_cache_save()
+    print("  [YT_PREMIERE] %s is a premiere: airs %s (uploaded %s) — dating it by air time"
+          % (video_id, iso, pub_iso), flush=True)
+    return iso
+
+
 def _fetch_youtube_full_episodes(channel_id):
     """Return dict {video_id: {title, pub_iso, link, channel_id, ceid_v2,
     content_type, confidence}} of the last 15 RSS entries whose classifier
@@ -680,10 +782,15 @@ def _fetch_youtube_full_episodes(channel_id):
             ct, conf = _yt_classify_content(link, title, desc or "")
             if ct in ("SHORT", "CLIP"):
                 continue
+            _pub_norm = _iso_normalise(pub)
+            # YT_PREMIERE_DATE_V1_20261004 — a premiere is dated by when it airs.
+            _prem = _yt_premiere_iso(vid, _pub_norm)
             out[vid] = {
                 "video_id": vid,
                 "title": title,
-                "pub_iso": _iso_normalise(pub),
+                "pub_iso": _prem or _pub_norm,
+                "_yt_premiere_iso": _prem,
+                "_yt_upload_iso": _pub_norm,
                 "link": f"https://www.youtube.com/watch?v={vid}",
                 "channel_id": channel_id,
                 "canonical_episode_id_v2": _canonical_episode_id_v2(channel_id, vid),
