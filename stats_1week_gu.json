@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T02:20:04.448499Z",
+  "generated_at": "2026-10-03T02:45:23.630559Z",
   "n": 1,
   "entries": [
     {
@@ -18,7 +18,8 @@
       "canonical_guest_full_name": "Matthew Hoh",
       "pub_iso": "2026-10-03T01:00:29Z",
       "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3"
+      "rumble_prov": "m2_rumble_only_v3",
+      "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918"
     }
   ],
   "source_feed": "videos.json",
