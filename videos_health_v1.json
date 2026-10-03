@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T21:20:08Z",
-  "last_updated": "2026-10-03T21:20:08Z",
+  "iso": "2026-10-03T21:34:56Z",
+  "last_updated": "2026-10-03T21:34:56Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -18,7 +18,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.2K",
-        "x_views": "167.3K",
+        "x_views": "6.1K",
         "ig_likes": null
       }
     },
@@ -42,7 +42,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.1K",
-        "x_views": "370.3K",
+        "x_views": "368.5K",
         "ig_likes": "1.3K"
       }
     },
@@ -66,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "33.9K",
-        "x_views": "866.3K",
+        "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
     },
@@ -90,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.4K",
-        "x_views": "316.9K",
+        "x_views": "315.7K",
         "ig_likes": "1.4K"
       }
     },
@@ -138,7 +138,7 @@
       "metrics": {
         "rumble_views": "4.3K",
         "yt_views": "2.5K",
-        "x_views": "227.3K",
+        "x_views": "227.2K",
         "ig_likes": "1.2K"
       }
     },
@@ -458,14 +458,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "2 Oct",
+      "date": "4 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-02T07:12:53Z",
+      "pub_iso": "2026-10-04T06:30:00Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -473,7 +473,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": null,
+        "yt_views": "0",
         "x_views": "4.1K",
         "ig_likes": "3.5K"
       }
@@ -498,7 +498,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "13.7K",
-        "x_views": "704.2K",
+        "x_views": "699.7K",
         "ig_likes": "1.6K"
       }
     },
@@ -520,9 +520,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "873",
-        "yt_views": "689",
-        "x_views": "940.0K",
+        "rumble_views": "872",
+        "yt_views": "690",
+        "x_views": "939.9K",
         "ig_likes": "423"
       }
     },
@@ -784,7 +784,7 @@
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.2K",
-        "x_views": "167.3K",
+        "x_views": "6.1K",
         "ig_likes": null
       }
     },
@@ -808,7 +808,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.1K",
-        "x_views": "370.3K",
+        "x_views": "368.5K",
         "ig_likes": "1.3K"
       }
     },
@@ -832,7 +832,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "33.9K",
-        "x_views": "866.3K",
+        "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
     },
@@ -856,7 +856,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.4K",
-        "x_views": "316.9K",
+        "x_views": "315.7K",
         "ig_likes": "1.4K"
       }
     },
@@ -890,14 +890,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "2 Oct",
+      "date": "4 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-02T07:12:53Z",
+      "pub_iso": "2026-10-04T06:30:00Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -905,7 +905,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": null,
+        "yt_views": "0",
         "x_views": "4.1K",
         "ig_likes": "3.5K"
       }
@@ -930,7 +930,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "13.7K",
-        "x_views": "704.2K",
+        "x_views": "699.7K",
         "ig_likes": "1.6K"
       }
     },
@@ -952,9 +952,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "873",
-        "yt_views": "689",
-        "x_views": "940.0K",
+        "rumble_views": "872",
+        "yt_views": "690",
+        "x_views": "939.9K",
         "ig_likes": "423"
       }
     },
