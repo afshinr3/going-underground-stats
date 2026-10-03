@@ -2810,7 +2810,13 @@ async def update_show(show, ig_clips):
             if _new and _new not in ('0', 0, '?', None):
                 v['yt_views'] = _new
                 _yt_bound_exactly = True
-            elif _cur in (None, '?', '', 0):
+            elif _cur in (None, '?', '', 0) and _new not in ('0', 0, '?', None, ''):
+                # YT_ZERO_IS_NOT_A_MEASUREMENT_V1_20261004 — this branch exists to FILL a
+                # missing figure, and "0" does not fill it: it asserts that nobody watched.
+                # A scheduled premiere reports 0 because it has not aired, so writing it
+                # here would overwrite the honest null with a false claim, and would do so
+                # every 15 minutes — reverting the correction in gu_yt_store_attribution_v1
+                # on the very next cloud run.
                 v['yt_views'] = _new
         _sn_candidates = [
             (v.get('canonical_surname_upper') or '').lower(),
@@ -2826,7 +2832,10 @@ async def update_show(show, ig_clips):
                 # missing/empty. Preserves a real number when scraper misses.
                 if _new and _new not in ('0', 0, '?', None):
                     v['yt_views'] = _new
-                elif _cur in (None, '?', '', 0):
+                elif _cur in (None, '?', '', 0) and _new not in ('0', 0, '?', None, ''):
+                    # YT_ZERO_IS_NOT_A_MEASUREMENT_V1_20261004 — see above. Same rule on
+                    # the surname-fallback path, which is the one that has already
+                    # published wrong numbers here twice.
                     v['yt_views'] = _new
             if surname in ig_clips:
                 _new = ig_clips[surname]
