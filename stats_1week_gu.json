@@ -5,9 +5,22 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-02T23:57:06.279473Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-10-03T02:20:04.448499Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Matthew Hoh",
+      "surname": "Hoh",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "rumble_views": "728",
+      "show": "GU",
+      "canonical_guest_full_name": "Matthew Hoh",
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3"
+    }
+  ],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
