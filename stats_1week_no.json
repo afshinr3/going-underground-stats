@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T20:39:17.206538Z",
+  "generated_at": "2026-10-03T20:46:44.924317Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": null,
       "x_views": null,
       "date": "4 Oct",
-      "yt_views": "0",
+      "yt_views": null,
       "ig_likes": "3.5K",
       "canonical_guest_full_name": "Lawrence Wilkerson",
       "canonical_surname_upper": "WILKERSON",
@@ -36,7 +36,8 @@
       "show": "NO",
       "_yt_upload_iso": "2026-10-02T07:12:53Z",
       "_yt_premiere_iso": "2026-10-04T06:30:00Z",
-      "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004"
+      "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004",
+      "_yt_status": "YT_UPCOMING_IS_UNMEASURED_V1_20261004"
     }
   ],
   "source_feed": "videos_neworder.json",

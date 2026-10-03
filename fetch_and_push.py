@@ -868,8 +868,22 @@ def _url_bind_cleanup_and_backfill(cache, channel_id, root_dir, data_file_name):
         # END" (Rumble 2026-08-09). The bridge re-injected it hourly; this deleted it
         # minutes later, every time. Exempt bridge-injected rows: they are not YouTube
         # rows and the bridge applies its own recency + attribution gates.
-        if row.get("rumble_only_injected"):
-            kept.append(row); continue
+        # RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004 — this exemption used to `continue`
+        # here, which skipped the DROP (correct) and the BIND (wrong). A Rumble-first
+        # row therefore stayed permanently unbound even after its YouTube video
+        # appeared, so canonical_video_id never arrived and yt_views / ig_likes could
+        # never attach to it. Observed on the published feed 2026-10-03: the newest GU
+        # episode (Matthew Hoh, 3 Oct, rumble_only_injected) had no canonical_video_id
+        # in ANY commit of that day — including the cloud's own runs — while its video
+        # doTi3weQTaM sat in the GU RSS the whole time and _url_bind_title_match returns
+        # True for the pair. The Android app renders the two absent fields as "?", which
+        # is the question marks the operator reported.
+        #
+        # The exemption is a DROP exemption, not a BIND exemption, so it now only
+        # suppresses the drop. Everything else about these rows is unchanged: the bridge
+        # still owns their recency and attribution gates, and a bridge row that matches
+        # nothing is still kept, never deleted.
+        _bridge_row = bool(row.get("rumble_only_injected"))
         rvid = row.get("canonical_video_id")
         title = row.get("title") or ""
         matched_ep = None
@@ -929,7 +943,12 @@ def _url_bind_cleanup_and_backfill(cache, channel_id, root_dir, data_file_name):
             _age_days = (now - _d).days
         except Exception:
             pass
-        _drop = _looks_short_titled or (_age_days > STALE_DAYS_DROP_UNBOUND)
+        # RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004 — a bridge-injected row is never
+        # dropped here. It is not a YouTube row; it may legitimately have no match
+        # yet, and deleting it is what RUMBLE_FIRST_HONORIFIC_KEEP_V1 was written to
+        # stop. It reaches this point now only because it was offered the bind.
+        _drop = (not _bridge_row) and (
+            _looks_short_titled or (_age_days > STALE_DAYS_DROP_UNBOUND))
         if _drop:
             dropped.append({
                 "iso_flagged": now.strftime("%Y-%m-%dT%H:%M:%SZ"),

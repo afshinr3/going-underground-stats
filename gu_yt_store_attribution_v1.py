@@ -141,7 +141,33 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
         for r in rows:
             if not isinstance(r, dict):
                 continue
-            hits = idx.get(EI.norm_title_id(r.get("title"))) or []
+            # YT_STORE_ID_FIRST_V1_20261004 — a bound row is matched by its VIDEO ID,
+            # not by its title. Titles are edited after publication: the 3 Oct GU episode
+            # went out as "...NUCLEAR WEAPONS Being Used..." and the channel now serves
+            # "...NUKES Being Used...". Normalised-title lookup missed it, the contained
+            # -title fallback missed it too (neither string contains the other), and the
+            # row therefore kept yt_views ABSENT for a whole day while the store held
+            # doTi3weQTaM with 1,213 views. The Android app renders an absent field as
+            # "?", which is what the operator saw on the newest episode.
+            #
+            # canonical_video_id is a stronger key than any title, and this file already
+            # treats it as authoritative a few lines below, where a store title match that
+            # disagrees with the bound id is refused as IDDIFF. Looking it up first is the
+            # same rule applied earlier, and it closes the window where an edited title
+            # silently stops a bound episode being measured.
+            hits = []
+            _bound_first = (r.get("canonical_video_id") or "").strip()
+            if _bound_first:
+                hits = [v for v in videos if v.get("id") == _bound_first]
+                if hits and EI.norm_title_id(r.get("title")) != EI.norm_title_id(
+                        hits[0].get("title")):
+                    # Only worth a line when the id actually RESCUED the match; an id
+                    # hit whose title agrees anyway is the normal case and silent.
+                    print(f"  BYID  {r.get('date')} {r.get('surname')}: matched "
+                          f"{_bound_first} by bound id — store title differs "
+                          f"({(hits[0].get('title') or '')[:40]!r})")
+            if not hits:
+                hits = idx.get(EI.norm_title_id(r.get("title"))) or []
             if not hits:
                 hits = _contained_match(r, videos, show)
                 if len(hits) == 1:
@@ -172,6 +198,22 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
             if bound and bound != v["id"]:
                 print(f"  IDDIFF {r.get('date')} {r.get('surname')}: row bound to {bound}, "
                       f"store title matches {v['id']} — left unchanged")
+                continue
+
+            # YT_UPCOMING_IS_UNMEASURED_V1_20261004 — a scheduled premiere reports
+            # views 0, and 0 is not a measurement. Writing it says "nobody watched this"
+            # about an episode nobody has been ABLE to watch, which is the fabricated-zero
+            # the attribution guard refuses. The local store already distinguishes the two
+            # cases with live_status ("is_upcoming" vs "not_live"), so no network and no
+            # heuristic is needed. Leave the field unmeasured until it airs; the next run
+            # after the premiere sees live_status not_live and fills the real figure.
+            if (v.get("live_status") or "") == "is_upcoming":
+                if r.get("yt_views") not in (None, ""):
+                    print(f"  UPCOMING {r.get('date')} {r.get('surname')}: store says "
+                          f"is_upcoming — clearing fabricated {r.get('yt_views')!r} to null")
+                    r["yt_views"] = None
+                    r["_yt_status"] = "YT_UPCOMING_IS_UNMEASURED_V1_20261004"
+                    changed += 1
                 continue
 
             views = v.get("views")

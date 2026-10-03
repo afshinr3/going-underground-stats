@@ -15,7 +15,18 @@
     "canonical_surname_upper": "HOH",
     "canonical_episode_id": "443de1f604d7",
     "x_views": "6.1K",
-    "_x_store_tweets": 1
+    "_x_store_tweets": 1,
+    "canonical_video_id": "doTi3weQTaM",
+    "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
+    "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
+    "source_platform_ids": {
+      "youtube": [
+        "doTi3weQTaM"
+      ]
+    },
+    "_rumble_first_bind_v1": "RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004",
+    "yt_views": "1.2K",
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
   },
   {
     "guest": "Robert Harward",
@@ -120,7 +131,7 @@
         "JUHl-tQRN7g"
       ]
     },
-    "yt_views": "83.2K",
+    "yt_views": "83.3K",
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "pub_iso": "2026-09-11T22:32:20Z",

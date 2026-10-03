@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T20:20:08Z",
-  "last_updated": "2026-10-03T20:20:08Z",
+  "iso": "2026-10-03T20:46:59Z",
+  "last_updated": "2026-10-03T20:46:59Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -8,16 +8,20 @@
       "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id": "443de1f604d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "doTi3weQTaM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "doTi3weQTaM"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": null,
+        "yt_views": "1.2K",
         "x_views": "6.1K",
         "ig_likes": null
       }
@@ -113,7 +117,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "83.2K",
+        "yt_views": "83.3K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -458,14 +462,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "2 Oct",
+      "date": "4 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-02T07:12:53Z",
+      "pub_iso": "2026-10-04T06:30:00Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -473,7 +477,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "0",
+        "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
@@ -777,16 +781,20 @@
       "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
-      "link": "",
+      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id": "443de1f604d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
+      "canonical_video_id": "doTi3weQTaM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
+      "source_platform_ids": {
+        "youtube": [
+          "doTi3weQTaM"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": null,
+        "yt_views": "1.2K",
         "x_views": "6.1K",
         "ig_likes": null
       }
@@ -882,7 +890,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "83.2K",
+        "yt_views": "83.3K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -893,14 +901,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "2 Oct",
+      "date": "4 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-02T07:12:53Z",
+      "pub_iso": "2026-10-04T06:30:00Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -908,7 +916,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "0",
+        "yt_views": null,
         "x_views": {
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
