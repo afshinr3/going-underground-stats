@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T09:20:06Z",
-  "last_updated": "2026-10-03T09:20:06Z",
+  "iso": "2026-10-03T10:20:06Z",
+  "last_updated": "2026-10-03T10:20:06Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -16,7 +16,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.4K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -116,7 +116,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "82.7K",
+        "yt_views": "82.9K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -499,8 +499,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "857",
-        "yt_views": "687",
+        "rumble_views": "862",
+        "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
@@ -761,7 +761,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.4K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -861,7 +861,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "82.7K",
+        "yt_views": "82.9K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -910,8 +910,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "857",
-        "yt_views": "687",
+        "rumble_views": "862",
+        "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
