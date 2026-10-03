@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T10:20:04.662929Z",
+  "generated_at": "2026-10-03T11:20:04.397771Z",
   "n": 1,
   "entries": [
     {
@@ -20,9 +20,11 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "canonical_surname_upper": "HOH",
-      "canonical_episode_id": "443de1f604d7"
+      "canonical_episode_id": "443de1f604d7",
+      "x_views": "6.1K",
+      "_x_store_tweets": 1
     }
   ],
   "source_feed": "videos.json",
