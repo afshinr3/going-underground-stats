@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T21:43:43Z",
-  "last_updated": "2026-10-03T21:43:43Z",
+  "iso": "2026-10-03T22:20:05Z",
+  "last_updated": "2026-10-03T22:20:05Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -20,9 +20,29 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.9K",
+        "rumble_views": "2.0K",
         "yt_views": "1.3K",
-        "x_views": "6.1K",
+        "x_views": "167.3K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "Hoh",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.0K",
+        "yt_views": null,
+        "x_views": "167.3K",
         "ig_likes": null
       }
     },
@@ -46,7 +66,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.1K",
-        "x_views": "368.5K",
+        "x_views": "370.3K",
         "ig_likes": "1.3K"
       }
     },
@@ -70,7 +90,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "33.9K",
-        "x_views": "863.7K",
+        "x_views": "866.3K",
         "ig_likes": "2.0K"
       }
     },
@@ -94,7 +114,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.4K",
-        "x_views": "315.7K",
+        "x_views": "316.9K",
         "ig_likes": "1.4K"
       }
     },
@@ -142,7 +162,7 @@
       "metrics": {
         "rumble_views": "4.3K",
         "yt_views": "2.5K",
-        "x_views": "227.2K",
+        "x_views": "227.3K",
         "ig_likes": "1.2K"
       }
     },
@@ -477,7 +497,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "0",
+        "yt_views": null,
         "x_views": "4.1K",
         "ig_likes": "3.5K"
       }
@@ -502,7 +522,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "13.7K",
-        "x_views": "699.7K",
+        "x_views": "704.2K",
         "ig_likes": "1.6K"
       }
     },
@@ -524,9 +544,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "872",
-        "yt_views": "690",
-        "x_views": "939.9K",
+        "rumble_views": "875",
+        "yt_views": "692",
+        "x_views": "940.0K",
         "ig_likes": "423"
       }
     },
@@ -790,9 +810,29 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.9K",
+        "rumble_views": "2.0K",
         "yt_views": "1.3K",
-        "x_views": "6.1K",
+        "x_views": "167.3K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "Hoh",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.0K",
+        "yt_views": null,
+        "x_views": "167.3K",
         "ig_likes": null
       }
     },
@@ -816,7 +856,7 @@
       "metrics": {
         "rumble_views": "3.1K",
         "yt_views": "2.1K",
-        "x_views": "368.5K",
+        "x_views": "370.3K",
         "ig_likes": "1.3K"
       }
     },
@@ -840,7 +880,7 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "33.9K",
-        "x_views": "863.7K",
+        "x_views": "866.3K",
         "ig_likes": "2.0K"
       }
     },
@@ -864,32 +904,8 @@
       "metrics": {
         "rumble_views": "3.2K",
         "yt_views": "2.4K",
-        "x_views": "315.7K",
+        "x_views": "316.9K",
         "ig_likes": "1.4K"
-      }
-    },
-    {
-      "guest": "Tucker Carlson",
-      "surname": "CARLSON",
-      "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
-      "date": "11 Sep",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id": "692029c34641",
-      "canonical_video_id": "JUHl-tQRN7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
-      "pub_iso": "2026-09-11T22:32:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "JUHl-tQRN7g"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "6.1K",
-        "yt_views": "83.3K",
-        "x_views": "1.9M",
-        "ig_likes": "6.7K"
       }
     }
   ],
@@ -913,7 +929,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "0",
+        "yt_views": null,
         "x_views": "4.1K",
         "ig_likes": "3.5K"
       }
@@ -938,7 +954,7 @@
       "metrics": {
         "rumble_views": "1.0K",
         "yt_views": "13.7K",
-        "x_views": "699.7K",
+        "x_views": "704.2K",
         "ig_likes": "1.6K"
       }
     },
@@ -960,9 +976,9 @@
         ]
       },
       "metrics": {
-        "rumble_views": "872",
-        "yt_views": "690",
-        "x_views": "939.9K",
+        "rumble_views": "875",
+        "yt_views": "692",
+        "x_views": "940.0K",
         "ig_likes": "423"
       }
     },

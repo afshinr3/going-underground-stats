@@ -5,15 +5,15 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T21:43:43.677180Z",
-  "n": 1,
+  "generated_at": "2026-10-03T22:20:04.220189Z",
+  "n": 2,
   "entries": [
     {
       "guest": "Matthew Hoh",
       "surname": "Hoh",
       "title": "Significant Possibility of NUKES Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
-      "rumble_views": "1.9K",
+      "rumble_views": "2.0K",
       "show": "GU",
       "canonical_guest_full_name": "Matthew Hoh",
       "pub_iso": "2026-10-03T11:55:31Z",
@@ -37,6 +37,18 @@
       "yt_views": "1.3K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "canonical_episode_id_v2": "ae10a949db2aa421"
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "Hoh",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "rumble_views": "2.0K",
+      "show": "GU",
+      "canonical_guest_full_name": "Matthew Hoh",
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3"
     }
   ],
   "source_feed": "videos.json",
