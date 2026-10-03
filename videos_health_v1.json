@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T13:59:01Z",
-  "last_updated": "2026-10-03T13:59:01Z",
+  "iso": "2026-10-03T14:20:05Z",
+  "last_updated": "2026-10-03T14:20:05Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -16,7 +16,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.5K",
+        "rumble_views": "1.6K",
         "yt_views": null,
         "x_views": "6.1K",
         "ig_likes": null
@@ -65,7 +65,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "33.9K",
+        "yt_views": "33.8K",
         "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
@@ -113,7 +113,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "83.0K",
+        "yt_views": "82.9K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -478,7 +478,7 @@
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
         },
-        "ig_likes": null
+        "ig_likes": "3.5K"
       }
     },
     {
@@ -523,7 +523,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "864",
+        "rumble_views": "867",
         "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
@@ -785,7 +785,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.5K",
+        "rumble_views": "1.6K",
         "yt_views": null,
         "x_views": "6.1K",
         "ig_likes": null
@@ -834,7 +834,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "33.9K",
+        "yt_views": "33.8K",
         "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
@@ -882,7 +882,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "83.0K",
+        "yt_views": "82.9K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -913,7 +913,7 @@
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
         },
-        "ig_likes": null
+        "ig_likes": "3.5K"
       }
     },
     {
@@ -958,7 +958,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "864",
+        "rumble_views": "867",
         "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
