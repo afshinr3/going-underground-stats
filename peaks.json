@@ -930,12 +930,12 @@
     "yt_views_at": "2026-09-30T09:22:40Z"
   },
   "GU:Carlson": {
-    "yt_views": 82800,
-    "yt_views_at": "2026-10-03T08:36:45Z",
+    "yt_views": 83000,
+    "yt_views_at": "2026-10-03T13:59:01Z",
     "x_views": 2500000,
     "x_views_at": "2026-10-01T11:43:23Z",
-    "rumble_views": 6000,
-    "rumble_views_at": "2026-10-01T22:43:42Z",
+    "rumble_views": 6100,
+    "rumble_views_at": "2026-10-03T13:59:01Z",
     "ig_likes": 6700,
     "ig_likes_at": "2026-09-28T14:34:34Z"
   },
@@ -984,13 +984,15 @@
     "x_views_at": "2026-10-01T11:43:23Z",
     "rumble_views": 3100,
     "rumble_views_at": "2026-10-02T14:49:00Z",
-    "yt_views": 33800,
-    "yt_views_at": "2026-10-02T23:57:06Z",
+    "yt_views": 33900,
+    "yt_views_at": "2026-10-03T13:59:01Z",
     "ig_likes": 2000,
     "ig_likes_at": "2026-09-30T09:22:40Z"
   },
   "GU:Hoh": {
-    "rumble_views": 1100,
-    "rumble_views_at": "2026-10-03T08:36:45Z"
+    "rumble_views": 1500,
+    "rumble_views_at": "2026-10-03T13:59:01Z",
+    "x_views": 6100,
+    "x_views_at": "2026-10-03T13:59:01Z"
   }
 }

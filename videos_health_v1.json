@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T13:20:08Z",
-  "last_updated": "2026-10-03T13:20:08Z",
+  "iso": "2026-10-03T13:59:01Z",
+  "last_updated": "2026-10-03T13:59:01Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -16,7 +16,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.6K",
+        "rumble_views": "1.5K",
         "yt_views": null,
         "x_views": "6.1K",
         "ig_likes": null
@@ -65,7 +65,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "33.8K",
+        "yt_views": "33.9K",
         "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
@@ -113,7 +113,7 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "82.9K",
+        "yt_views": "83.0K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -455,6 +455,33 @@
       }
     },
     {
+      "guest": "Lawrence Wilkerson",
+      "surname": "WILKERSON",
+      "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
+      "date": "2 Oct",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
+      "canonical_episode_id": "a6d0d25fbeb3",
+      "canonical_video_id": "-jJol9Qyxoo",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
+      "canonical_episode_id_v2": "794ee6585d75e9fb",
+      "pub_iso": "2026-10-02T07:12:53Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-jJol9Qyxoo"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "John Mearsheimer",
       "surname": "MEARSHEIMER",
       "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
@@ -496,7 +523,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "867",
+        "rumble_views": "864",
         "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
@@ -758,7 +785,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.6K",
+        "rumble_views": "1.5K",
         "yt_views": null,
         "x_views": "6.1K",
         "ig_likes": null
@@ -807,7 +834,7 @@
       },
       "metrics": {
         "rumble_views": "3.1K",
-        "yt_views": "33.8K",
+        "yt_views": "33.9K",
         "x_views": "863.7K",
         "ig_likes": "2.0K"
       }
@@ -855,13 +882,40 @@
       },
       "metrics": {
         "rumble_views": "6.1K",
-        "yt_views": "82.9K",
+        "yt_views": "83.0K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
     }
   ],
   "no": [
+    {
+      "guest": "Lawrence Wilkerson",
+      "surname": "WILKERSON",
+      "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
+      "date": "2 Oct",
+      "show": "NO",
+      "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
+      "canonical_episode_id": "a6d0d25fbeb3",
+      "canonical_video_id": "-jJol9Qyxoo",
+      "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
+      "canonical_episode_id_v2": "794ee6585d75e9fb",
+      "pub_iso": "2026-10-02T07:12:53Z",
+      "source_platform_ids": {
+        "youtube": [
+          "-jJol9Qyxoo"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "0",
+        "x_views": {
+          "status": "N/A",
+          "reason": "FETCH_FAILED:Exception"
+        },
+        "ig_likes": null
+      }
+    },
     {
       "guest": "John Mearsheimer",
       "surname": "MEARSHEIMER",
@@ -904,7 +958,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "867",
+        "rumble_views": "864",
         "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
@@ -956,30 +1010,6 @@
         "yt_views": "3.6K",
         "x_views": "483.1K",
         "ig_likes": "368"
-      }
-    },
-    {
-      "guest": "Sarang Shidore",
-      "surname": "SHIDORE",
-      "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
-      "date": "16 Aug",
-      "show": "NO",
-      "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "canonical_episode_id": "10f843fd1fef",
-      "canonical_video_id": "CfY37_DnbIM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-      "canonical_episode_id_v2": "51403e831b2b092f",
-      "pub_iso": "2026-08-16T06:30:06Z",
-      "source_platform_ids": {
-        "youtube": [
-          "CfY37_DnbIM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "1.2K",
-        "yt_views": "162",
-        "x_views": "359.3K",
-        "ig_likes": "421"
       }
     }
   ]
