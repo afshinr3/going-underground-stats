@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T22:20:04.220189Z",
+  "generated_at": "2026-10-03T23:20:04.983385Z",
   "n": 2,
   "entries": [
     {
@@ -20,11 +20,11 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "canonical_surname_upper": "HOH",
       "canonical_episode_id": "a5df3acf1214",
-      "x_views": "6.1K",
-      "_x_store_tweets": 1,
+      "x_views": "167.3K",
+      "_x_store_tweets": 9,
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
@@ -48,7 +48,10 @@
       "canonical_guest_full_name": "Matthew Hoh",
       "pub_iso": "2026-10-03T01:00:29Z",
       "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3"
+      "rumble_prov": "m2_rumble_only_v3",
+      "x_views": "167.3K",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_store_tweets": 9
     }
   ],
   "source_feed": "videos.json",
