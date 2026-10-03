@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T07:20:06Z",
-  "last_updated": "2026-10-03T07:20:06Z",
+  "iso": "2026-10-03T08:20:08Z",
+  "last_updated": "2026-10-03T08:20:08Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -16,7 +16,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.1K",
+        "rumble_views": "1.3K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -499,7 +499,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "853",
+        "rumble_views": "856",
         "yt_views": "687",
         "x_views": "939.9K",
         "ig_likes": "423"
@@ -761,7 +761,7 @@
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.1K",
+        "rumble_views": "1.3K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
@@ -910,7 +910,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "853",
+        "rumble_views": "856",
         "yt_views": "687",
         "x_views": "939.9K",
         "ig_likes": "423"
