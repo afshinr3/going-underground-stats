@@ -1,23 +1,27 @@
 {
-  "iso": "2026-10-03T21:34:56Z",
-  "last_updated": "2026-10-03T21:34:56Z",
+  "iso": "2026-10-03T21:42:36Z",
+  "last_updated": "2026-10-03T21:42:36Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
       "surname": "HOH",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
       "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id": "443de1f604d7",
+      "canonical_episode_id": "a5df3acf1214",
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
+      "canonical_episode_id_v2": "ae10a949db2aa421",
+      "pub_iso": "2026-10-03T11:55:31Z",
+      "source_platform_ids": {
+        "youtube": [
+          "doTi3weQTaM"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": "1.2K",
+        "yt_views": "1.3K",
         "x_views": "6.1K",
         "ig_likes": null
       }
@@ -521,7 +525,7 @@
       },
       "metrics": {
         "rumble_views": "872",
-        "yt_views": "690",
+        "yt_views": "692",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
@@ -771,19 +775,23 @@
     {
       "guest": "Matthew Hoh",
       "surname": "HOH",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
       "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id": "443de1f604d7",
+      "canonical_episode_id": "a5df3acf1214",
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
+      "canonical_episode_id_v2": "ae10a949db2aa421",
+      "pub_iso": "2026-10-03T11:55:31Z",
+      "source_platform_ids": {
+        "youtube": [
+          "doTi3weQTaM"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.9K",
-        "yt_views": "1.2K",
+        "yt_views": "1.3K",
         "x_views": "6.1K",
         "ig_likes": null
       }
@@ -953,7 +961,7 @@
       },
       "metrics": {
         "rumble_views": "872",
-        "yt_views": "690",
+        "yt_views": "692",
         "x_views": "939.9K",
         "ig_likes": "423"
       }

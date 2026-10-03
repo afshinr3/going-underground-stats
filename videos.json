@@ -2,24 +2,32 @@
   {
     "guest": "Matthew Hoh",
     "surname": "Hoh",
-    "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+    "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
     "date": "3 Oct",
     "rumble_views": "1.9K",
     "show": "GU",
     "canonical_guest_full_name": "Matthew Hoh",
-    "pub_iso": "2026-10-03T01:00:29Z",
+    "pub_iso": "2026-10-03T11:55:31Z",
     "rumble_only_injected": true,
     "rumble_prov": "m2_rumble_only_v3",
     "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
     "_x_status": "UNMEASURED_NO_POSTS_FOUND",
     "canonical_surname_upper": "HOH",
-    "canonical_episode_id": "443de1f604d7",
+    "canonical_episode_id": "a5df3acf1214",
     "x_views": "6.1K",
     "_x_store_tweets": 1,
-    "yt_views": "1.2K",
     "canonical_video_id": "doTi3weQTaM",
     "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-    "link": "https://www.youtube.com/watch?v=doTi3weQTaM"
+    "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
+    "source_platform_ids": {
+      "youtube": [
+        "doTi3weQTaM"
+      ]
+    },
+    "_rumble_first_bind_v1": "RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004",
+    "yt_views": "1.3K",
+    "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
+    "canonical_episode_id_v2": "ae10a949db2aa421"
   },
   {
     "guest": "Robert Harward",
