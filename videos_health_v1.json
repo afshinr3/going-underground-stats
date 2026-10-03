@@ -1,26 +1,26 @@
 {
-  "iso": "2026-10-03T08:20:08Z",
-  "last_updated": "2026-10-03T08:20:08Z",
+  "iso": "2026-10-03T08:36:45Z",
+  "last_updated": "2026-10-03T08:36:45Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
-      "surname": "Hoh",
+      "surname": "HOH",
       "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
       "link": "",
-      "canonical_episode_id": null,
+      "canonical_episode_id": "443de1f604d7",
       "canonical_video_id": null,
       "canonical_video_url": null,
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.1K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": null
       }
@@ -116,7 +116,7 @@
       },
       "metrics": {
         "rumble_views": "6.0K",
-        "yt_views": "82.7K",
+        "yt_views": "82.8K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -499,8 +499,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "856",
-        "yt_views": "687",
+        "rumble_views": "853",
+        "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
@@ -749,23 +749,23 @@
   "gu": [
     {
       "guest": "Matthew Hoh",
-      "surname": "Hoh",
+      "surname": "HOH",
       "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "show": "GU",
       "link": "",
-      "canonical_episode_id": null,
+      "canonical_episode_id": "443de1f604d7",
       "canonical_video_id": null,
       "canonical_video_url": null,
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
       "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.1K",
         "yt_views": null,
         "x_views": {
           "status": "N/A",
-          "reason": "UNMEASURED"
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
         },
         "ig_likes": null
       }
@@ -861,7 +861,7 @@
       },
       "metrics": {
         "rumble_views": "6.0K",
-        "yt_views": "82.7K",
+        "yt_views": "82.8K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -910,8 +910,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "856",
-        "yt_views": "687",
+        "rumble_views": "853",
+        "yt_views": "688",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
