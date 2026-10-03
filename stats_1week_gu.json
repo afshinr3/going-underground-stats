@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-03T20:46:44.923601Z",
+  "generated_at": "2026-10-03T20:58:45.767010Z",
   "n": 1,
   "entries": [
     {
@@ -25,17 +25,10 @@
       "canonical_episode_id": "443de1f604d7",
       "x_views": "6.1K",
       "_x_store_tweets": 1,
+      "yt_views": "1.2K",
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
-      "_rumble_first_bind_v1": "RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004",
-      "yt_views": "1.2K",
-      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
+      "link": "https://www.youtube.com/watch?v=doTi3weQTaM"
     }
   ],
   "source_feed": "videos.json",

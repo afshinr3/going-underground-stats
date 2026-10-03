@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-03T20:46:59Z",
-  "last_updated": "2026-10-03T20:46:59Z",
+  "iso": "2026-10-03T20:58:45Z",
+  "last_updated": "2026-10-03T20:58:45Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -14,11 +14,7 @@
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.2K",
@@ -462,14 +458,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "4 Oct",
+      "date": "2 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-04T06:30:00Z",
+      "pub_iso": "2026-10-02T07:12:53Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -477,7 +473,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": null,
+        "yt_views": "0",
         "x_views": {
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
@@ -527,8 +523,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "872",
-        "yt_views": "689",
+        "rumble_views": "871",
+        "yt_views": "690",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
@@ -787,11 +783,7 @@
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
       "canonical_episode_id_v2": null,
       "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
+      "source_platform_ids": {},
       "metrics": {
         "rumble_views": "1.9K",
         "yt_views": "1.2K",
@@ -901,14 +893,14 @@
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
-      "date": "4 Oct",
+      "date": "2 Oct",
       "show": "NO",
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id": "a6d0d25fbeb3",
       "canonical_video_id": "-jJol9Qyxoo",
       "canonical_video_url": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
       "canonical_episode_id_v2": "794ee6585d75e9fb",
-      "pub_iso": "2026-10-04T06:30:00Z",
+      "pub_iso": "2026-10-02T07:12:53Z",
       "source_platform_ids": {
         "youtube": [
           "-jJol9Qyxoo"
@@ -916,7 +908,7 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": null,
+        "yt_views": "0",
         "x_views": {
           "status": "N/A",
           "reason": "FETCH_FAILED:Exception"
@@ -966,8 +958,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "872",
-        "yt_views": "689",
+        "rumble_views": "871",
+        "yt_views": "690",
         "x_views": "939.9K",
         "ig_likes": "423"
       }
