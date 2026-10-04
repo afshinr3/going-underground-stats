@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-04T15:32:48Z",
-  "last_updated": "2026-10-04T15:32:48Z",
+  "iso": "2026-10-04T16:20:09Z",
+  "last_updated": "2026-10-04T16:20:09Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -20,8 +20,28 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.3K",
-        "yt_views": "2.1K",
+        "rumble_views": "2.4K",
+        "yt_views": "2.2K",
+        "x_views": "167.3K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "HOH",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "443de1f604d7",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.4K",
+        "yt_views": null,
         "x_views": "167.3K",
         "ig_likes": null
       }
@@ -459,26 +479,6 @@
       }
     },
     {
-      "guest": "Matthew Hoh",
-      "surname": "HOH",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "443de1f604d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.3K",
-        "yt_views": null,
-        "x_views": "167.3K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
@@ -496,8 +496,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "368",
-        "yt_views": "1.1K",
+        "rumble_views": "528",
+        "yt_views": "1.3K",
         "x_views": "13.7K",
         "ig_likes": "3.5K"
       }
@@ -544,7 +544,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "897",
+        "rumble_views": "901",
         "yt_views": "700",
         "x_views": "940.1K",
         "ig_likes": "423"
@@ -810,8 +810,28 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.3K",
-        "yt_views": "2.1K",
+        "rumble_views": "2.4K",
+        "yt_views": "2.2K",
+        "x_views": "167.3K",
+        "ig_likes": null
+      }
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "HOH",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "443de1f604d7",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.4K",
+        "yt_views": null,
         "x_views": "167.3K",
         "ig_likes": null
       }
@@ -887,30 +907,6 @@
         "x_views": "316.9K",
         "ig_likes": "1.4K"
       }
-    },
-    {
-      "guest": "Tucker Carlson",
-      "surname": "CARLSON",
-      "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
-      "date": "11 Sep",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id": "692029c34641",
-      "canonical_video_id": "JUHl-tQRN7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
-      "pub_iso": "2026-09-11T22:32:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "JUHl-tQRN7g"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "6.2K",
-        "yt_views": "84.4K",
-        "x_views": "1.9M",
-        "ig_likes": "6.7K"
-      }
     }
   ],
   "no": [
@@ -932,8 +928,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "368",
-        "yt_views": "1.1K",
+        "rumble_views": "528",
+        "yt_views": "1.3K",
         "x_views": "13.7K",
         "ig_likes": "3.5K"
       }
@@ -980,7 +976,7 @@
         ]
       },
       "metrics": {
-        "rumble_views": "897",
+        "rumble_views": "901",
         "yt_views": "700",
         "x_views": "940.1K",
         "ig_likes": "423"
