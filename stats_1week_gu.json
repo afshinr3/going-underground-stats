@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-04T16:20:08.013572Z",
+  "generated_at": "2026-10-04T17:20:05.787106Z",
   "n": 2,
   "entries": [
     {
@@ -20,7 +20,7 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "canonical_surname_upper": "HOH",
       "canonical_episode_id": "a5df3acf1214",
       "x_views": "167.3K",
@@ -34,7 +34,7 @@
         ]
       },
       "_rumble_first_bind_v1": "RUMBLE_FIRST_BIND_NOT_SKIP_V1_20261004",
-      "yt_views": "2.1K",
+      "yt_views": "2.2K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "canonical_episode_id_v2": "ae10a949db2aa421"
     },
