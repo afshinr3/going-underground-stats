@@ -1163,6 +1163,48 @@ def sum_known_metrics(entry, fields=('rumble_views', 'x_views', 'yt_views', 'ig_
     return total, unknown
 
 
+# X_STALE_AFTER_H — the X feed is refreshed hourly by the store-attribution bridge, so a
+# figure older than this was not refreshed by the runs that should have refreshed it.
+X_STALE_AFTER_H = 6
+
+# field -> the key holding the ISO time that field was last genuinely measured.
+STALE_STAMP_KEYS = {'x_views': '_x_measured_iso'}
+
+
+def stale_metric_fields(entry, fields=('x_views',), max_age_h=X_STALE_AFTER_H, now=None):
+    """-> names of fields whose value is real but was measured too long ago.
+
+    A carried-forward figure is a LOWER BOUND, not a current measurement: views only
+    grow. It must therefore mark the total with the same "+" an absent platform does,
+    which `sum_known_metrics` cannot do because it only asks whether the field parses.
+
+    A MISSING stamp is deliberately NOT stale. Every historical row predates the stamp,
+    so treating absence as staleness would mark all 33 rows at once — and an alarm that
+    always fires is one nobody reads. The check activates as stamps accumulate, which on
+    an hourly pipeline is within the hour.
+
+    Totals are never changed here. The value stays in the sum; only its confidence is
+    reported.
+    """
+    import datetime as _d
+    now = now or _d.datetime.now(_d.timezone.utc)
+    out = []
+    for f in fields:
+        if parse_count_opt(entry.get(f)) is None:
+            continue  # already unknown; sum_known_metrics owns that case
+        stamp = entry.get(STALE_STAMP_KEYS.get(f, ''))
+        if not stamp:
+            continue  # unknown age -> say nothing
+        try:
+            when = _d.datetime.strptime(str(stamp), '%Y-%m-%dT%H:%M:%SZ').replace(
+                tzinfo=_d.timezone.utc)
+        except (ValueError, TypeError):
+            continue  # unparseable age -> say nothing, never guess
+        if (now - when).total_seconds() > max_age_h * 3600:
+            out.append(f)
+    return out
+
+
 def format_views(v):
     n = parse_count(v) if isinstance(v, str) else int(v)
     if n >= 1_000_000: return f"{n/1_000_000:.1f}M"
@@ -2724,6 +2766,15 @@ async def update_show(show, ig_clips):
                             v['_x_status'] = ('MEASURED' if _meta.get('converged', True)
                                               else 'MEASURED_LOWER_BOUND')
                             v['_x_passes'] = _meta.get('passes')
+                            # X_MEASURED_STAMP_V1_20261005 — when this value was actually
+                            # measured. A failed fetch leaves the PREVIOUS x_views in the
+                            # row (correctly: it is real data), but nothing downstream could
+                            # tell a figure measured minutes ago from one carried forward
+                            # for days, because sum_known_metrics only asks whether the
+                            # field parses. The stamp is what makes age answerable.
+                            import datetime as _dtx
+                            v['_x_measured_iso'] = _dtx.datetime.now(
+                                _dtx.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
                             print(f"  {surname}: {count} tweets, X:{v['x_views']}"
                                   f" [{_meta.get('passes')} passes,"
                                   f" {'converged' if _meta.get('converged') else 'floor'}]")
@@ -2757,8 +2808,18 @@ async def update_show(show, ig_clips):
                     except Exception as e:
                         # A failed retrieval is the clearest possible unknown. It must never
                         # be able to reach the display as a number.
+                        #
+                        # X_FAILURE_MESSAGE_V1_20261005 — this recorded only the exception
+                        # TYPE, and every live failure raises bare `Exception`, so all 13
+                        # New Order rows read 'FETCH_FAILED:Exception' and the reason existed
+                        # ONLY on stderr. A status that cannot distinguish a timeout from a
+                        # selector change from a logged-out session cannot be acted on, and
+                        # _health_metric renders this string as the dashboard tooltip's
+                        # reason, so the operator was being shown the word "Exception".
                         print(f"  {surname}: X error {e}", file=sys.stderr)
-                        v['_x_status'] = f'FETCH_FAILED:{type(e).__name__}'
+                        _emsg = ' '.join(str(e).split())[:120]
+                        v['_x_status'] = (f'FETCH_FAILED:{type(e).__name__}'
+                                          + (f':{_emsg}' if _emsg else ''))
 
 
             await asyncio.gather(*[process_episode(v) for v in eligible])
@@ -3787,7 +3848,16 @@ def push_to_tidbyt():
         # the dashboard follow. sum_known_metrics already tells us which platforms it had to
         # leave out; printing the number bare made an episode whose X figure had not landed
         # look like a weaker episode. "+" means at least this much.
-        if _unknown_fields and total > 0:
+        # X_STALE_IS_A_LOWER_BOUND_V1_20261005 — a carried-forward figure earns the same
+        # "+" as an absent one. Without this, a stale value and a fresh one render
+        # identically, so a display that had silently stopped being updated looked exactly
+        # like one that was current.
+        _stale_fields = stale_metric_fields(v)
+        if _stale_fields:
+            print(f"  [GU_STALE_METRIC] {_code} {v.get('surname','?')} {v.get('date','')}: "
+                  f"{','.join(_stale_fields)} measured over {X_STALE_AFTER_H}h ago; "
+                  f"total marked as a lower bound")
+        if (_unknown_fields or _stale_fields) and total > 0:
             t += "+"
         sorted_eps.append((label, t, _code))
 
