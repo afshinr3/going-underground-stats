@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Append-only runtime log written by gu_parser.py on every rejected title. The drift
+# monitor that consumes it is host-side, nothing in this repo reads it, and it has never
+# been committed on any branch — so it only ever showed up as permanent `git status`
+# noise on whatever machine last ran the parser or the tests.
+parser_rejections.jsonl
