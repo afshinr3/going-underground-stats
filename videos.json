@@ -4,7 +4,7 @@
     "surname": "Hoh",
     "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
     "date": "3 Oct",
-    "rumble_views": "2.0K",
+    "rumble_views": "2.1K",
     "show": "GU",
     "canonical_guest_full_name": "Matthew Hoh",
     "pub_iso": "2026-10-03T11:55:31Z",
@@ -28,6 +28,24 @@
     "yt_views": "1.3K",
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "canonical_episode_id_v2": "ae10a949db2aa421"
+  },
+  {
+    "guest": "Matthew Hoh",
+    "surname": "Hoh",
+    "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+    "date": "3 Oct",
+    "rumble_views": "2.1K",
+    "show": "GU",
+    "canonical_guest_full_name": "Matthew Hoh",
+    "pub_iso": "2026-10-03T01:00:29Z",
+    "rumble_only_injected": true,
+    "rumble_prov": "m2_rumble_only_v3",
+    "x_views": "167.3K",
+    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_store_tweets": 9,
+    "_carried_forward_iso": "2026-10-03T23:33:55Z",
+    "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
+    "canonical_episode_id": "443de1f604d7"
   },
   {
     "guest": "Robert Harward",
@@ -512,23 +530,5 @@
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 14
-  },
-  {
-    "guest": "Matthew Hoh",
-    "surname": "Hoh",
-    "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-    "date": "3 Oct",
-    "rumble_views": "2.0K",
-    "show": "GU",
-    "canonical_guest_full_name": "Matthew Hoh",
-    "pub_iso": "2026-10-03T01:00:29Z",
-    "rumble_only_injected": true,
-    "rumble_prov": "m2_rumble_only_v3",
-    "x_views": "167.3K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_store_tweets": 9,
-    "_carried_forward_iso": "2026-10-03T23:33:55Z",
-    "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "canonical_episode_id": "443de1f604d7"
   }
 ]
