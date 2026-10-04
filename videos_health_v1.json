@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-04T22:20:08Z",
-  "last_updated": "2026-10-04T22:20:08Z",
+  "iso": "2026-10-04T22:40:10Z",
+  "last_updated": "2026-10-04T22:40:10Z",
   "episodes": [
     {
       "guest": "Matthew Hoh",
@@ -22,26 +22,6 @@
       "metrics": {
         "rumble_views": "2.5K",
         "yt_views": "2.6K",
-        "x_views": "167.3K",
-        "ig_likes": null
-      }
-    },
-    {
-      "guest": "Matthew Hoh",
-      "surname": "HOH",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "443de1f604d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
         "x_views": "167.3K",
         "ig_likes": null
       }
@@ -137,7 +117,7 @@
       },
       "metrics": {
         "rumble_views": "6.2K",
-        "yt_views": "84.7K",
+        "yt_views": "84.8K",
         "x_views": "1.9M",
         "ig_likes": "6.7K"
       }
@@ -479,6 +459,26 @@
       }
     },
     {
+      "guest": "Matthew Hoh",
+      "surname": "HOH",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "443de1f604d7",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-03T01:00:29Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "2.5K",
+        "yt_views": null,
+        "x_views": "167.3K",
+        "ig_likes": null
+      }
+    },
+    {
       "guest": "Lawrence Wilkerson",
       "surname": "WILKERSON",
       "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
@@ -496,8 +496,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "861",
-        "yt_views": "8.6K",
+        "rumble_views": "813",
+        "yt_views": "9.3K",
         "x_views": "13.7K",
         "ig_likes": "3.5K"
       }
@@ -544,8 +544,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "907",
-        "yt_views": "720",
+        "rumble_views": "903",
+        "yt_views": "734",
         "x_views": "940.1K",
         "ig_likes": "423"
       }
@@ -569,7 +569,7 @@
       },
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": "4.8K",
+        "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": "1.1K"
       }
@@ -737,7 +737,7 @@
       },
       "metrics": {
         "rumble_views": "1.0K",
-        "yt_views": "852",
+        "yt_views": "849",
         "x_views": "812.3K",
         "ig_likes": "291"
       }
@@ -817,26 +817,6 @@
       }
     },
     {
-      "guest": "Matthew Hoh",
-      "surname": "HOH",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "443de1f604d7",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": null,
-        "x_views": "167.3K",
-        "ig_likes": null
-      }
-    },
-    {
       "guest": "Robert Harward",
       "surname": "HARWARD",
       "title": "Americans Pay $2 BILLION A DAY for Iran War: Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
@@ -907,6 +887,30 @@
         "x_views": "316.9K",
         "ig_likes": "1.4K"
       }
+    },
+    {
+      "guest": "Tucker Carlson",
+      "surname": "CARLSON",
+      "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
+      "date": "11 Sep",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+      "canonical_episode_id": "692029c34641",
+      "canonical_video_id": "JUHl-tQRN7g",
+      "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
+      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
+      "pub_iso": "2026-09-11T22:32:20Z",
+      "source_platform_ids": {
+        "youtube": [
+          "JUHl-tQRN7g"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "6.2K",
+        "yt_views": "84.8K",
+        "x_views": "1.9M",
+        "ig_likes": "6.7K"
+      }
     }
   ],
   "no": [
@@ -928,8 +932,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "861",
-        "yt_views": "8.6K",
+        "rumble_views": "813",
+        "yt_views": "9.3K",
         "x_views": "13.7K",
         "ig_likes": "3.5K"
       }
@@ -976,8 +980,8 @@
         ]
       },
       "metrics": {
-        "rumble_views": "907",
-        "yt_views": "720",
+        "rumble_views": "903",
+        "yt_views": "734",
         "x_views": "940.1K",
         "ig_likes": "423"
       }
@@ -1001,7 +1005,7 @@
       },
       "metrics": {
         "rumble_views": "1.2K",
-        "yt_views": "4.8K",
+        "yt_views": "4.7K",
         "x_views": "1.3M",
         "ig_likes": "1.1K"
       }
