@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-05T22:27:46.875578Z",
+  "generated_at": "2026-10-05T23:20:04.966742Z",
   "n": 2,
   "entries": [
     {
@@ -13,9 +13,9 @@
       "surname": "Chal",
       "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
       "date": "5 Oct",
-      "rumble_views": null,
+      "rumble_views": "1.9K",
       "x_views": null,
-      "ig_likes": null,
+      "ig_likes": "2.3K",
       "show": "GU",
       "canonical_guest_full_name": "Officer Chal",
       "canonical_surname_upper": "CHAL",
@@ -38,7 +38,7 @@
       "surname": "Hoh",
       "title": "Significant Possibility of NUKES Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
-      "rumble_views": null,
+      "rumble_views": "2.8K",
       "x_views": "324.6K",
       "ig_likes": null,
       "show": "GU",
@@ -56,7 +56,11 @@
         ]
       },
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "3.0K"
+      "yt_views": "3.0K",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "rumble_url": "https://rumble.com/v7g9qai-significant-possibility-of-the-use-of-nuclear-weapons-against-iran-ex-state.html",
+      "rumble_vid": "v7g9qai"
     }
   ],
   "source_feed": "videos.json",
