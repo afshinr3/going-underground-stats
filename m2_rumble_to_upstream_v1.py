@@ -310,13 +310,19 @@ RUMBLE_GUEST_OVERRIDES = {
     # _clean_guest_surname returns nothing and the injector correctly refuses to guess. Same
     # class as the Milanovic entry above.
     #
-    # The SURNAME is the operator's assertion. The given name is NOT recorded here because
-    # nothing reachable from this repo confirms it: the Rumble page refuses datacenter IPs,
-    # the YouTube feed does not carry the episode, and this table exists precisely so a name
-    # is asserted rather than invented. Completing it to the full name is a one-word edit
-    # the operator can make; until then the feed shows the surname, which is what the Tidbyt
-    # and LaMetric frames render anyway.
-    "v7gdd92": ("Finfrock", "Finfrock"),
+    # GIVEN NAME COMPLETED 2026-10-05 from the episode's own audio, which became reachable
+    # once the Rumble HLS media was pulled for the Substack transcript. The host's
+    # introduction, verbatim from that transcript:
+    #   "Joining me from Nashville, Tennessee is a former senior operations officer who was
+    #    at the CIA for almost 20 years. Charles Finfrock is also a former senior manager of
+    #    Tesla's insider threat program and is now founder and CEO of [Vigilantis], a private
+    #    intelligence and security firm."
+    # "Charles" appears four times and is never anything else. The surname is rendered
+    # Finfrauk / Finfrog / Fennfrog by Whisper's `base` model, which mangles proper nouns --
+    # all phonetically the operator's already-asserted "Finfrock", so the two sources agree
+    # rather than one overriding the other. This is still an assertion from evidence, not a
+    # parser guess: the name is spoken on air by the host.
+    "v7gdd92": ("Charles Finfrock", "Finfrock"),
 }
 
 
