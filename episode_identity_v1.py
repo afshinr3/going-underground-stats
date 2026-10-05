@@ -229,12 +229,33 @@ def venue_ids(row):
 
 
 def air_date_key(row):
-    """SURNAME|date, or None when either part is missing -- never a half key."""
+    """SURNAME|air date, or None when either part is missing -- never a half key.
+
+    YEAR_AWARE_AIR_DATE_V1_20261005. `date` is the display string and carries NO YEAR
+    ("18 Jul", "3 Oct"), and GUESTS RECUR -- Mearsheimer appears on GU 10 Aug and on New
+    Order 27 Sep; Wilkerson on GU 18 Jul and New Order 4 Oct. A year-blind key would make
+    one guest's 18 Jul 2026 interview collide with their 18 Jul 2027 one, and this key
+    exists to AUTHORISE a merge, so a collision here conflates two real episodes and their
+    view counts. pub_iso carries the year, so it leads.
+
+    The short-date fallback is NAMESPACED, so a year-aware key can never compare equal to
+    a year-blind one. pub_iso is absent on 4 of 33 live rows (Wilkerson 18 Jul, Fritz
+    13 Jul, Ellwood 6 Jul, Bhaskar 28 Jun), and for those the honest answer is that the
+    year is unknown. The cost is that a re-minted pair where only ONE row has pub_iso is
+    left unmerged -- a visible duplicate, which is the conservative failure. The dangerous
+    failure is merging two distinct episodes, and that is now impossible on a year
+    mismatch.
+    """
     sn = str(row.get("canonical_surname_upper") or row.get("surname") or "").strip().upper()
-    dt = str(row.get("date") or "").strip()
-    if not sn or not dt or sn in PLACEHOLDERS or dt in PLACEHOLDERS:
+    if not sn or sn in PLACEHOLDERS:
         return None
-    return f"{sn}|{dt}"
+    pub = str(row.get("pub_iso") or "").strip()
+    if len(pub) >= 10 and pub[4] == "-" and pub[7] == "-":
+        return f"{sn}|{pub[:10]}"                 # year-aware: SURNAME|2026-10-03
+    dt = str(row.get("date") or "").strip()
+    if not dt or dt in PLACEHOLDERS:
+        return None
+    return f"{sn}|undated:{dt}"                   # year UNKNOWN; never equal to the above
 
 
 def is_re_minted_pair(a, b):
