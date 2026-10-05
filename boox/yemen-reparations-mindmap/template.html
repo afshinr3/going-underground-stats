@@ -1,0 +1,418 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>What the UK Owes to Yemen</title>
+<style>
+/*FONTS*/
+:root{--W:7200px;--H:5400px;--ink:#000;--g1:#3a3a3a;--g2:#777;--g3:#bdbdbd;--g4:#ececec;--paper:#fff}
+@page{margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper);color:var(--ink)}
+body{font-family:'Cormorant Garamond',serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{position:relative;overflow:hidden;page-break-after:always;break-after:page;background:#fff}
+.page:last-child{page-break-after:auto;break-after:auto}
+#canvas{width:var(--W);height:var(--H);position:relative;background:#fff}
+.scaler{position:absolute;left:0;top:0;transform-origin:0 0}
+#gsvg{position:absolute;left:0;top:0;width:var(--W);height:var(--H);overflow:visible}
+.frame{position:absolute;inset:48px;border:3px solid #000}
+.frame:after{content:"";position:absolute;inset:12px;border:1px solid #000}
+.grid{position:absolute;inset:120px;display:grid;gap:90px 110px;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.08fr) minmax(0,1fr);grid-template-rows:minmax(0,1.3fr) minmax(0,1.12fr) minmax(0,1.3fr);
+  grid-template-areas:"b1 b2 b3" "b8 c b4" "b7 b6 b5"}
+.zone{position:relative;min-height:0;display:flex;flex-direction:column;justify-content:flex-start}
+.zone.top{flex-direction:column-reverse;justify-content:flex-start}
+.zsvg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.head{position:relative;z-index:2;align-self:center;text-align:center;padding:34px 90px 30px;margin:0 0 70px}
+.zone.top .head{margin:70px 0 0}
+.head .num{font-family:'Playfair Display SC';font-weight:700;font-size:36px;letter-spacing:.32em;display:block;margin-bottom:4px}
+.head h2{font-family:'Playfair Display';font-weight:900;font-size:84px;line-height:1.02;letter-spacing:-.005em}
+.head .sub{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-size:44px;display:block;margin-top:6px}
+.head .ts{font-family:'IBM Plex Mono';font-size:25px;letter-spacing:.08em;display:block;margin-top:8px;color:var(--g1)}
+.head.inv{color:#fff}.head.inv .ts{color:#ddd}
+.leaves{position:relative;z-index:1;column-count:2;column-gap:150px;column-fill:balance}
+.leaf{break-inside:avoid;position:relative;margin:0 0 30px;font-size:var(--fs,29px);line-height:1.22;font-weight:500;padding:16px 22px 17px}
+.leaf b{font-weight:700}
+.leaf i{font-style:italic}
+/* text-box styles, one per branch */
+.box-solid .leaf.t{border:1.6px solid #000}
+.box-grey .leaf.t{background:var(--g4)}
+.box-dashed .leaf.t{border:2px dashed #000}
+.box-dotted .leaf.t{border:3px dotted #000}
+.box-shadow .leaf.t{border:2px solid #000;box-shadow:7px 7px 0 #000;background:#fff}
+.box-double .leaf.t{border:5px double #000}
+.box-rounded .leaf.t{border:2px solid #000;border-radius:26px}
+.box-brackets .leaf.t:before,.box-brackets .leaf.t:after{content:"";position:absolute;width:34px;height:34px;border:2.5px solid #000}
+.box-brackets .leaf.t:before{left:0;top:0;border-right:0;border-bottom:0}
+.box-brackets .leaf.t:after{right:0;bottom:0;border-left:0;border-top:0}
+/* key-term */
+.leaf.k{border:1.4px solid #000;outline:1.4px solid #000;outline-offset:5px;margin-top:6px;margin-bottom:36px;background:#fff}
+.leaf.k .h{display:block;font-family:'Cinzel';font-weight:700;font-size:22px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #000}
+/* figure */
+.leaf.n{border-left:12px solid #000;padding:8px 18px 12px 24px;background:#fff}
+.leaf.n .nn{display:block;font-family:'Playfair Display';font-weight:900;font-size:64px;line-height:1;letter-spacing:-.01em}
+.leaf.n .nx{display:block;font-family:'Josefin Sans';font-weight:300;font-size:21px;letter-spacing:.06em;text-transform:uppercase;line-height:1.28;margin-top:6px}
+/* quotation */
+.leaf.q{padding:20px 14px 16px 66px;border-top:1px solid #000;border-bottom:1px solid #000;background:#fff}
+.leaf.q:before{content:"\201C";position:absolute;left:4px;top:-6px;font-family:'Playfair Display';font-weight:900;font-size:110px;line-height:1}
+.leaf.q .qx{font-style:italic;font-weight:600;font-size:calc(var(--fs,29px) * 1.14);line-height:1.18;display:block}
+.leaf.q .qc{display:block;margin-top:8px;font-family:'Josefin Sans';font-weight:300;font-size:19px;letter-spacing:.07em;text-transform:uppercase;line-height:1.3}
+/* centre */
+.centre{grid-area:c;position:relative;display:flex;align-items:center;justify-content:center}
+.medallion{position:relative;z-index:2;text-align:center;width:1720px;padding:0 150px}
+.medallion .kick{font-family:'Josefin Sans';font-weight:600;font-size:32px;letter-spacing:.5em;text-transform:uppercase}
+.medallion h1{font-family:'Playfair Display';font-weight:900;font-size:150px;line-height:.96;margin:18px 0 10px;letter-spacing:-.01em}
+.medallion h1 em{font-style:italic;font-weight:400}
+.medallion .rule{width:420px;height:0;border-top:1.5px solid #000;border-bottom:1.5px solid #000;padding-top:5px;margin:20px auto}
+.medallion .guest{font-family:'Playfair Display SC';font-size:50px;letter-spacing:.12em}
+.medallion .gl{font-style:italic;font-size:33px;font-weight:500;margin-top:4px;line-height:1.25}
+.medallion .thesis{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-size:44px;line-height:1.18;margin:24px auto 0;max-width:1300px}
+.medallion .meta{font-family:'IBM Plex Mono';font-size:22px;letter-spacing:.03em;margin:20px auto 0;line-height:1.5;max-width:1150px}
+.legend{position:absolute;z-index:3;font-family:'Josefin Sans';font-weight:300;font-size:23px;letter-spacing:.05em;text-transform:uppercase;display:flex;gap:30px;align-items:center;white-space:nowrap}
+.legend svg{vertical-align:middle;margin-right:8px}
+.footer{position:absolute;left:0;right:0;bottom:62px;text-align:center;font-family:'Cormorant Garamond';font-style:italic;font-size:30px;font-weight:500;z-index:3}
+.footer span{background:#fff;padding:0 28px}
+/* detail pages */
+.dpage-head{position:absolute;left:90px;right:90px;top:60px;display:flex;justify-content:space-between;font-family:'Josefin Sans';font-weight:300;font-size:30px;letter-spacing:.18em;text-transform:uppercase;border-bottom:2px solid #000;padding-bottom:14px}
+.dpage-foot{position:absolute;left:90px;right:90px;bottom:50px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono';font-size:24px;letter-spacing:.06em;border-top:2px solid #000;padding-top:12px}
+</style></head>
+<body>
+<div id="out"></div>
+<div id="stage" style="position:absolute;left:0;top:0">
+  <div id="canvas">
+    <svg id="gsvg" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="frame"></div>
+    <div class="grid" id="grid"><div class="centre" id="centre"></div></div>
+    <div class="footer" id="footer"></div>
+  </div>
+</div>
+<script>
+const DATA = /*DATA*/null;
+const NS = 'http://www.w3.org/2000/svg';
+const $ = (t, a = {}, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+const LINE = {
+  solid:   {w: 3,   dash: null},
+  double:  {w: 3,   dash: null, double: true},
+  dotted:  {w: 5,   dash: '0 13', cap: 'round'},
+  dashed:  {w: 3.5, dash: '20 12'},
+  heavy:   {w: 6,   dash: null},
+  taper:   {w: 4.5, dash: null},
+  dashdot: {w: 3,   dash: '26 10 3 10'},
+  longdash:{w: 3,   dash: '44 14'},
+};
+
+function defs(svg) {
+  const d = $('defs', {}, svg);
+  const p = $('pattern', {id: 'hatch', width: 14, height: 14, patternUnits: 'userSpaceOnUse', patternTransform: 'rotate(45)'}, d);
+  $('rect', {width: 14, height: 14, fill: '#fff'}, p);
+  $('line', {x1: 0, y1: 0, x2: 0, y2: 14, stroke: '#000', 'stroke-width': 2.2}, p);
+  const p2 = $('pattern', {id: 'dots', width: 16, height: 16, patternUnits: 'userSpaceOnUse'}, d);
+  $('rect', {width: 16, height: 16, fill: '#fff'}, p2);
+  $('circle', {cx: 8, cy: 8, r: 2.2, fill: '#000'}, p2);
+  const p3 = $('pattern', {id: 'cross', width: 18, height: 18, patternUnits: 'userSpaceOnUse'}, d);
+  $('rect', {width: 18, height: 18, fill: '#fff'}, p3);
+  $('path', {d: 'M0 9H18M9 0V18', stroke: '#000', 'stroke-width': 1}, p3);
+  const m = $('marker', {id: 'arrow', viewBox: '0 0 20 20', refX: 17, refY: 10, markerWidth: 22, markerHeight: 22, orient: 'auto-start-reverse', markerUnits: 'userSpaceOnUse'}, d);
+  $('path', {d: 'M2 3 L18 10 L2 17 L7 10 Z', fill: '#000'}, m);
+}
+
+function strokeAttrs(style, scale = 1) {
+  const L = LINE[style];
+  const a = {fill: 'none', stroke: '#000', 'stroke-width': L.w * scale, 'stroke-linecap': L.cap || 'butt'};
+  if (L.dash) a['stroke-dasharray'] = L.dash;
+  return a;
+}
+function drawPath(g, d, style, scale = 1) {
+  const L = LINE[style];
+  if (L.double) {
+    $('path', {d, fill: 'none', stroke: '#000', 'stroke-width': 9 * scale}, g);
+    $('path', {d, fill: 'none', stroke: '#fff', 'stroke-width': 3.4 * scale}, g);
+  } else $('path', Object.assign({d}, strokeAttrs(style, scale)), g);
+}
+
+// tapered brush stroke along a cubic bezier
+function taper(g, p0, p1, p2, p3, w0, w1, fill = '#000') {
+  const N = 60, L = [], R = [];
+  const B = (t, a, b, c, d) => (1 - t) ** 3 * a + 3 * (1 - t) ** 2 * t * b + 3 * (1 - t) * t * t * c + t ** 3 * d;
+  const D = (t, a, b, c, d) => 3 * (1 - t) ** 2 * (b - a) + 6 * (1 - t) * t * (c - b) + 3 * t * t * (d - c);
+  for (let i = 0; i <= N; i++) {
+    const t = i / N, x = B(t, p0[0], p1[0], p2[0], p3[0]), y = B(t, p0[1], p1[1], p2[1], p3[1]);
+    let dx = D(t, p0[0], p1[0], p2[0], p3[0]), dy = D(t, p0[1], p1[1], p2[1], p3[1]);
+    const len = Math.hypot(dx, dy) || 1; dx /= len; dy /= len;
+    const w = (w0 + (w1 - w0) * Math.pow(t, 0.8)) / 2;
+    L.push([x - dy * w, y + dx * w]); R.push([x + dy * w, y - dx * w]);
+  }
+  const pts = L.concat(R.reverse());
+  $('path', {d: 'M' + pts.map(p => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('L') + 'Z', fill}, g);
+}
+
+function marker(g, kind, x, y, s = 13) {
+  const f = {fill: '#000'}, o = {fill: '#fff', stroke: '#000', 'stroke-width': 2.6};
+  switch (kind) {
+    case 'dot': $('circle', Object.assign({cx: x, cy: y, r: s * .62}, f), g); break;
+    case 'ring': $('circle', Object.assign({cx: x, cy: y, r: s * .62}, o), g); $('circle', {cx: x, cy: y, r: s * .22, fill: '#000'}, g); break;
+    case 'diamond': $('path', Object.assign({d: `M${x} ${y - s * .8}L${x + s * .8} ${y}L${x} ${y + s * .8}L${x - s * .8} ${y}Z`}, o), g); break;
+    case 'fdiamond': $('path', Object.assign({d: `M${x} ${y - s * .85}L${x + s * .85} ${y}L${x} ${y + s * .85}L${x - s * .85} ${y}Z`}, f), g); break;
+    case 'square': $('rect', Object.assign({x: x - s * .5, y: y - s * .5, width: s, height: s}, f), g); break;
+    case 'osquare': $('rect', Object.assign({x: x - s * .5, y: y - s * .5, width: s, height: s, transform: `rotate(0)`}, o), g); break;
+    case 'triangle': $('path', Object.assign({d: `M${x} ${y - s * .7}L${x + s * .75} ${y + s * .55}L${x - s * .75} ${y + s * .55}Z`}, f), g); break;
+    case 'star': {
+      let d = ''; for (let i = 0; i < 10; i++) { const r = i % 2 ? s * .36 : s * .85, a = -Math.PI / 2 + i * Math.PI / 5; d += (i ? 'L' : 'M') + (x + r * Math.cos(a)).toFixed(1) + ' ' + (y + r * Math.sin(a)).toFixed(1); }
+      $('path', Object.assign({d: d + 'Z'}, f), g); break;
+    }
+  }
+}
+
+// header shapes drawn around a box (x,y,w,h)
+function headShape(g, kind, x, y, w, hh) {
+  const cx = x + w / 2, cy = y + hh / 2, S = {fill: '#fff', stroke: '#000', 'stroke-width': 4};
+  const poly = pts => 'M' + pts.map(p => p.join(' ')).join('L') + 'Z';
+  switch (kind) {
+    case 'hexagon': {
+      const k = hh / 2 * 0.9;
+      $('path', Object.assign({d: poly([[x - k, cy], [x + 10, y - 6], [x + w - 10, y - 6], [x + w + k, cy], [x + w - 10, y + hh + 6], [x + 10, y + hh + 6]])}, S), g);
+      const i = 14;
+      $('path', {d: poly([[x - k + i * 1.6, cy], [x + 10 + i * .6, y - 6 + i], [x + w - 10 - i * .6, y - 6 + i], [x + w + k - i * 1.6, cy], [x + w - 10 - i * .6, y + hh + 6 - i], [x + 10 + i * .6, y + hh + 6 - i]]), fill: 'none', stroke: '#000', 'stroke-width': 1.2}, g);
+      break;
+    }
+    case 'frame': {
+      $('rect', Object.assign({x: x - 10, y: y - 10, width: w + 20, height: hh + 20}, S, {'stroke-width': 7}), g);
+      $('rect', {x: x + 4, y: y + 4, width: w - 8, height: hh - 8, fill: 'none', stroke: '#000', 'stroke-width': 1.5}, g);
+      for (const [px, py] of [[x - 10, y - 10], [x + w + 10, y - 10], [x - 10, y + hh + 10], [x + w + 10, y + hh + 10]])
+        $('rect', {x: px - 13, y: py - 13, width: 26, height: 26, fill: '#000', transform: `rotate(45 ${px} ${py})`}, g);
+      break;
+    }
+    case 'ellipse': {
+      const rx = w / 2 * 1.13, ry = hh / 2 * 1.2;
+      $('ellipse', {cx, cy, rx: rx + 18, ry: ry + 18, fill: 'url(#dots)', stroke: '#000', 'stroke-width': 1.5}, g);
+      $('ellipse', Object.assign({cx, cy, rx, ry}, S), g);
+      break;
+    }
+    case 'parallelogram': {
+      const k = 60;
+      $('path', {d: poly([[x + k + 16, y - 4 + 16], [x + w + k + 16, y - 4 + 16], [x + w - k + 16, y + hh + 4 + 16], [x - k + 16, y + hh + 4 + 16]]), fill: 'url(#hatch)', stroke: '#000', 'stroke-width': 1.5}, g);
+      $('path', Object.assign({d: poly([[x + k, y - 4], [x + w + k, y - 4], [x + w - k, y + hh + 4], [x - k, y + hh + 4]])}, S), g);
+      break;
+    }
+    case 'octagon': {
+      const c = Math.min(hh * .32, 60), X = x - 14, Y = y - 10, W = w + 28, H = hh + 20;
+      const pts = [[X + c, Y], [X + W - c, Y], [X + W, Y + c], [X + W, Y + H - c], [X + W - c, Y + H], [X + c, Y + H], [X, Y + H - c], [X, Y + c]];
+      $('path', Object.assign({d: poly(pts)}, S, {'stroke-width': 9}), g);
+      $('path', {d: poly(pts), fill: 'none', stroke: '#fff', 'stroke-width': 3}, g);
+      break;
+    }
+    case 'inverse': {
+      $('rect', {x: x - 16, y: y - 16, width: w + 32, height: hh + 32, rx: 46, fill: '#fff', stroke: '#000', 'stroke-width': 2}, g);
+      $('rect', {x: x - 4, y: y - 4, width: w + 8, height: hh + 8, rx: 36, fill: '#000'}, g);
+      $('rect', {x: x + 8, y: y + 8, width: w - 16, height: hh - 16, rx: 26, fill: 'none', stroke: '#fff', 'stroke-width': 1.5, 'stroke-dasharray': '6 6'}, g);
+      break;
+    }
+    case 'rhombus': {
+      const k = hh * .62;
+      $('path', Object.assign({d: poly([[cx, y - k * .55], [x + w + k, cy], [cx, y + hh + k * .55], [x - k, cy]])}, S), g);
+      $('path', {d: poly([[cx, y - k * .55 + 16], [x + w + k - 30, cy], [cx, y + hh + k * .55 - 16], [x - k + 30, cy]]), fill: 'none', stroke: '#000', 'stroke-width': 1.2, 'stroke-dasharray': '2 6'}, g);
+      break;
+    }
+    case 'pennant': {
+      const k = 70;
+      $('path', Object.assign({d: poly([[x - k, y - 6], [x + w, y - 6], [x + w + k, cy], [x + w, y + hh + 6], [x - k, y + hh + 6], [x - k + 50, cy]])}, S, {'stroke-width': 4}), g);
+      $('path', {d: `M${x - k + 50} ${cy}L${x - k} ${y - 6}`, stroke: '#000', 'stroke-width': 1}, g);
+      $('path', {d: `M${x + w - 6} ${y + 10}L${x + w + k - 26} ${cy}L${x + w - 6} ${y + hh - 10}`, fill: 'none', stroke: '#000', 'stroke-width': 1.5}, g);
+      break;
+    }
+  }
+}
+
+function rel(el, base) { const a = el.getBoundingClientRect(), b = base.getBoundingClientRect(); return {x: a.left - b.left, y: a.top - b.top, w: a.width, h: a.height}; }
+
+function buildZone(br) {
+  const z = h('div', 'zone box-' + br.box); z.id = br.id; z.style.gridArea = br.id;
+  if (['b1', 'b2', 'b3'].includes(br.id)) z.classList.add('top');
+  const zs = $('svg', {class: 'zsvg'}); z.appendChild(zs);
+  const head = h('div', 'head' + (br.shape === 'inverse' ? ' inv' : ''));
+  head.innerHTML = `<span class="num">${br.num}</span><h2>${br.title}</h2><span class="sub">${br.sub}</span><span class="ts">${br.ts}</span>`;
+  const lv = h('div', 'leaves');
+  for (const l of br.leaves) {
+    const e = h('div', 'leaf ' + l.t);
+    if (l.t === 'k') e.innerHTML = `<span class="h">${l.h}</span>${l.x}`;
+    else if (l.t === 'n') e.innerHTML = `<span class="nn">${l.n}</span><span class="nx">${l.x}</span>`;
+    else if (l.t === 'q') e.innerHTML = `<span class="qx">${l.x}</span>${l.c ? `<span class="qc">${l.c}</span>` : ''}`;
+    else e.innerHTML = l.x;
+    lv.appendChild(e);
+  }
+  z.appendChild(head); z.appendChild(lv);
+  return z;
+}
+
+function drawZone(z, br) {
+  const zs = z.querySelector('.zsvg'); zs.innerHTML = '';
+  const zr = z.getBoundingClientRect(), sc = zr.width / z.offsetWidth;  // handle scaled clones
+  const R = el => { const r = rel(el, z); return {x: r.x / sc, y: r.y / sc, w: r.w / sc, h: r.h / sc}; };
+  const head = z.querySelector('.head'), lv = z.querySelector('.leaves');
+  const hr = R(head), lr = R(lv);
+  const top = z.classList.contains('top');
+  const g = $('g', {}, zs), gs = $('g', {}, zs);
+  const leaves = [...z.querySelectorAll('.leaf')].map(e => ({e, r: R(e)}));
+  const spineX = lr.x + lr.w / 2;
+  const hy = top ? hr.y : hr.y + hr.h;
+  const ys = leaves.map(l => l.r.y + l.r.h / 2);
+  const yFar = top ? Math.min(...ys) : Math.max(...ys);
+  // spine
+  if (br.line === 'taper') taper(g, [spineX, hy], [spineX, hy + (yFar - hy) * .33], [spineX, hy + (yFar - hy) * .66], [spineX, yFar], 16, 3);
+  else drawPath(g, `M${spineX} ${hy}L${spineX} ${yFar}`, br.line);
+  // ribs
+  for (const l of leaves) {
+    const cy = l.r.y + Math.min(l.r.h / 2, 46);
+    const right = l.r.x > spineX;
+    const ex = right ? l.r.x : l.r.x + l.r.w;
+    const sy = cy + (top ? 34 : -34);
+    const d = `M${spineX} ${sy}C${spineX} ${cy},${(spineX + ex) / 2} ${cy},${ex} ${cy}`;
+    if (br.line === 'taper') taper(g, [spineX, sy], [spineX, cy], [(spineX + ex) / 2, cy], [ex, cy], 7, 2.5);
+    else drawPath(g, d, br.line, .72);
+    marker(gs, br.marker, ex, cy, 18);
+    $('circle', {cx: spineX, cy: sy, r: 5.5, fill: '#000'}, g);
+  }
+  headShape(g, br.shape, hr.x, hr.y, hr.w, hr.h);
+}
+
+function build() {
+  const grid = document.getElementById('grid');
+  defs(document.getElementById('gsvg'));
+  for (const br of DATA.branches) grid.appendChild(buildZone(br));
+  // centre medallion
+  const c = document.getElementById('centre');
+  c.innerHTML = `<div class="medallion" id="med">
+    <div class="kick">${DATA.kicker}</div>
+    <h1>What the UK<br><em>owes</em> to Yemen</h1>
+    <div class="rule"></div>
+    <div class="guest">${DATA.guest}</div>
+    <div class="gl">${DATA.guest_line}</div>
+    <div class="thesis">“${DATA.thesis}”</div>
+    <div class="meta">${DATA.meta}<br>${DATA.report}</div></div>`;
+  document.getElementById('footer').innerHTML = `<span>${DATA.footer}</span>`;
+}
+
+function fit() {
+  // shrink per-zone type until leaves fit within the zone
+  for (const br of DATA.branches) {
+    const z = document.getElementById(br.id);
+    let fs = 46;
+    const setfs = v => { z.style.setProperty('--fs', v + 'px'); z.querySelectorAll('.leaf.n .nn').forEach(e => e.style.fontSize = (v * 2.1) + 'px'); z.querySelectorAll('.leaf.n .nx, .leaf.q .qc').forEach(e => e.style.fontSize = (v * .7) + 'px'); z.querySelectorAll('.leaf.k .h').forEach(e => e.style.fontSize = (v * .74) + 'px'); };
+    const over = () => { const lv = z.querySelector('.leaves'), hd = z.querySelector('.head'); return lv.scrollHeight + hd.offsetHeight + 110 > z.clientHeight || lv.scrollWidth > lv.clientWidth + 2; };
+    setfs(fs);
+    while (over() && fs > 22) { fs -= 0.5; setfs(fs); }
+    z.dataset.fs = fs;
+  }
+}
+
+function drawGlobal() {
+  const svg = document.getElementById('gsvg'), cv = document.getElementById('canvas');
+  const g = $('g', {}, svg);
+  const med = document.getElementById('med'), m = rel(med, cv);
+  const cx = m.x + m.w / 2, cy = m.y + m.h / 2, rx = m.w / 2 + 40, ry = m.h / 2 + 70;
+  // connectors centre → branch heads (tapered brush strokes), routed through the gutters
+  const ce = rel(document.getElementById('centre'), cv);
+  const gxL = ce.x - 55, gxR = ce.x + ce.w + 55, gyT = ce.y - 45, gyB = ce.y + ce.h + 45;
+  const onEllipse = (tx, ty) => { const a = Math.atan2(ty - cy, tx - cx); return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)]; };
+  for (const br of DATA.branches) {
+    const z = document.getElementById(br.id), r = rel(z.querySelector('.head'), cv);
+    const hx = r.x + r.w / 2, hy = r.y + r.h / 2;
+    let S, P1, P2, E;
+    if (br.id === 'b2' || br.id === 'b6') {           // straight up / down
+      E = [hx, br.id === 'b2' ? r.y + r.h : r.y]; S = [cx, br.id === 'b2' ? cy - ry : cy + ry];
+      P1 = [S[0], (S[1] + E[1]) / 2]; P2 = [E[0], (S[1] + E[1]) / 2];
+    } else if (br.id === 'b8' || br.id === 'b4') {    // sideways via the vertical gutter, into the head's inner side
+      const L = br.id === 'b8', gx = L ? gxL : gxR;
+      E = [L ? r.x + r.w + 60 : r.x - 60, hy]; S = onEllipse(gx, hy + (cy - hy) * .45);
+      P1 = [gx + (L ? 40 : -40), S[1]]; P2 = [gx, hy];
+    } else {                                          // corners via the horizontal gutter, into the head's top/bottom
+      const top = br.id === 'b1' || br.id === 'b3', L = br.id === 'b1' || br.id === 'b7', gy = top ? gyT : gyB;
+      E = [hx, top ? r.y + r.h + 4 : r.y - 4]; S = onEllipse(L ? cx - rx * .55 : cx + rx * .55, gy);
+      P1 = [S[0] + (L ? -260 : 260), gy]; P2 = [hx + (L ? 260 : -260), gy];
+    }
+    taper(g, S, P1, P2, E, 26, 8);
+  }
+  // medallion: concentric ellipses, hatched ring
+  $('ellipse', {cx, cy, rx: rx + 34, ry: ry + 34, fill: 'url(#hatch)', stroke: '#000', 'stroke-width': 3}, g);
+  $('ellipse', {cx, cy, rx: rx + 8, ry: ry + 8, fill: '#fff', stroke: '#000', 'stroke-width': 8}, g);
+  $('ellipse', {cx, cy, rx: rx - 10, ry: ry - 10, fill: 'none', stroke: '#000', 'stroke-width': 1.5}, g);
+  $('ellipse', {cx, cy, rx: rx + 58, ry: ry + 58, fill: 'none', stroke: '#000', 'stroke-width': 1.5, 'stroke-dasharray': '3 9', 'stroke-linecap': 'round'}, g);
+  // compass ticks on the outer ring
+  for (let i = 0; i < 72; i++) {
+    const a = i * Math.PI / 36, r1 = 70, r2 = i % 6 ? 82 : 100;
+    $('line', {x1: cx + (rx + r1) * Math.cos(a), y1: cy + (ry + r1) * Math.sin(a), x2: cx + (rx + r2) * Math.cos(a), y2: cy + (ry + r2) * Math.sin(a), stroke: '#000', 'stroke-width': i % 6 ? 1.2 : 3}, g);
+  }
+  // cross-links between branch heads: curved dash-dot double arrows with a pill label
+  const gl = $('g', {}, svg);
+  for (const L of DATA.links) {
+    const ha = rel(document.getElementById(L.from).querySelector('.head'), cv), hb = rel(document.getElementById(L.to).querySelector('.head'), cv);
+    const ac = [ha.x + ha.w / 2, ha.y + ha.h / 2], bc = [hb.x + hb.w / 2, hb.y + hb.h / 2];
+    let p0, p3;
+    if (Math.abs(ac[1] - bc[1]) > Math.abs(ac[0] - bc[0])) { // stacked: leave from top/bottom, offset outward
+      const up = bc[1] < ac[1], side = ac[0] > cx ? 1 : -1;
+      p0 = [ac[0] + side * ha.w * .36, up ? ha.y - 40 : ha.y + ha.h + 40];
+      p3 = [bc[0] + side * hb.w * .36, up ? hb.y + hb.h + 56 : hb.y - 56];
+    } else {
+      const right = bc[0] > ac[0];
+      p0 = [right ? ha.x + ha.w + 110 : ha.x - 110, ac[1] - 70]; p3 = [right ? hb.x - 110 : hb.x + hb.w + 110, bc[1] - 70];
+    }
+    const vx = p3[0] - p0[0], vy = p3[1] - p0[1], len = Math.hypot(vx, vy);
+    let nx = -vy / len, ny = vx / len; if ((p0[0] + p3[0]) / 2 * 0 + nx * (((p0[0] + p3[0]) / 2) - cx) + ny * (((p0[1] + p3[1]) / 2) - cy) < 0) { nx = -nx; ny = -ny; }
+    const off = Math.min(160, len * .22);
+    const p1 = [p0[0] + vx * .2 + nx * off, p0[1] + vy * .2 + ny * off], p2 = [p0[0] + vx * .8 + nx * off, p0[1] + vy * .8 + ny * off];
+    const d = `M${p0[0]} ${p0[1]}C${p1[0]} ${p1[1]},${p2[0]} ${p2[1]},${p3[0]} ${p3[1]}`;
+    $('path', {d, fill: 'none', stroke: '#fff', 'stroke-width': 14}, gl);
+    $('path', {d, fill: 'none', stroke: '#000', 'stroke-width': 2.6, 'stroke-dasharray': '16 8 3 8', 'marker-end': 'url(#arrow)', 'marker-start': 'url(#arrow)'}, gl);
+    const lx = (p0[0] + 3 * p1[0] + 3 * p2[0] + p3[0]) / 8, ly = (p0[1] + 3 * p1[1] + 3 * p2[1] + p3[1]) / 8;
+    const t = $('text', {x: lx, y: ly + 10, 'text-anchor': 'middle', 'font-family': 'Cormorant Garamond', 'font-style': 'italic', 'font-weight': 600, 'font-size': 32}, gl);
+    t.textContent = L.label;
+    const bb = t.getBBox();
+    gl.insertBefore($('rect', {x: bb.x - 16, y: bb.y - 5, width: bb.width + 32, height: bb.height + 10, rx: (bb.height + 10) / 2, fill: '#fff', stroke: '#000', 'stroke-width': 1.4}), t);
+  }
+}
+
+function legend() {
+  const cv = document.getElementById('canvas'), lg = h('div', 'legend');
+  const sw = (fn) => { const s = $('svg', {width: 40, height: 30, viewBox: '0 0 40 30'}); fn(s); return s.outerHTML; };
+  lg.innerHTML = [
+    `${sw(s => { $('rect', {x: 2, y: 4, width: 36, height: 22, fill: '#fff', stroke: '#000', 'stroke-width': 1.5}, s); })}Observation`,
+    `${sw(s => { $('rect', {x: 4, y: 6, width: 32, height: 18, fill: '#fff', stroke: '#000', 'stroke-width': 1.3}, s); $('rect', {x: 1, y: 3, width: 38, height: 24, fill: 'none', stroke: '#000', 'stroke-width': 1.3}, s); })}Key term`,
+    `${sw(s => { $('rect', {x: 4, y: 3, width: 7, height: 24, fill: '#000'}, s); $('text', {x: 15, y: 23, 'font-family': 'Playfair Display', 'font-weight': 900, 'font-size': 20}, s).textContent = '#'; })}Figure`,
+    `${sw(s => { $('text', {x: 2, y: 34, 'font-family': 'Playfair Display', 'font-weight': 900, 'font-size': 46}, s).textContent = '“'; })}Quotation`,
+    `${sw(s => { $('path', {d: 'M2 15 H38', stroke: '#000', 'stroke-width': 2.4, 'stroke-dasharray': '8 4 2 4', 'marker-end': 'url(#arrow)'}, s); })}Cross-link`,
+    `<span style="font-family:'IBM Plex Mono';letter-spacing:.04em">00:00</span>&nbsp;Episode time`
+  ].map(x => `<span>${x}</span>`).join('');
+  cv.appendChild(lg);
+  const ce = rel(document.getElementById('centre'), cv);
+  lg.style.left = (ce.x + ce.w / 2 - lg.offsetWidth / 2) + 'px';
+  lg.style.top = (ce.y + ce.h - 6) + 'px';
+}
+
+// detail page for one branch: the zone at native size, centred on a 4:3 sheet with running head and foot
+function detailPage(id) {
+  const out = document.getElementById('out'), stage = document.getElementById('stage');
+  const br = DATA.branches.find(b => b.id === id), src = document.getElementById(id);
+  const w = src.offsetWidth, hh = src.offsetHeight;
+  const W = Math.round(Math.max(w + 260, (hh + 420) * 4 / 3)), H = Math.round(W * 3 / 4);
+  const pg = h('div', 'page');
+  pg.style.width = W + 'px'; pg.style.height = H + 'px';
+  pg.innerHTML = `<div class="dpage-head"><span>What the UK owes to Yemen · David Wearing</span><span>${br.num} of VIII</span></div>
+    <div class="dpage-foot"><span>Politics Theory Other · 1 October 2026</span><span>${br.ts}</span></div>`;
+  const cl = src.cloneNode(true); cl.id = id + '-d';
+  Object.assign(cl.style, {width: w + 'px', height: hh + 'px', position: 'absolute', left: ((W - w) / 2) + 'px', top: ((H - hh) / 2 + 20) + 'px'});
+  pg.appendChild(cl); out.appendChild(pg);
+  stage.remove();
+  document.body.dataset.w = W; document.body.dataset.h = H;
+}
+
+document.fonts.ready.then(() => {
+  build();
+  fit();
+  for (const br of DATA.branches) drawZone(document.getElementById(br.id), br);
+  drawGlobal();
+  legend();
+  const m = location.hash.match(/^#zone=(b\d)$/);
+  if (m) detailPage(m[1]);
+  document.body.dataset.ready = '1';
+});
+</script>
+</body></html>
