@@ -5,20 +5,20 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-05T23:20:04.966742Z",
+  "generated_at": "2026-10-05T23:37:21.766403Z",
   "n": 2,
   "entries": [
     {
-      "guest": "Officer Chal",
-      "surname": "Chal",
+      "guest": "Charles Finfrock",
+      "surname": "Finfrock",
       "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
       "date": "5 Oct",
       "rumble_views": "1.9K",
       "x_views": null,
       "ig_likes": "2.3K",
       "show": "GU",
-      "canonical_guest_full_name": "Officer Chal",
-      "canonical_surname_upper": "CHAL",
+      "canonical_guest_full_name": "Charles Finfrock",
+      "canonical_surname_upper": "FINFROCK",
       "canonical_episode_id": "99a60854f089",
       "canonical_video_id": "OCnT9QaiJnA",
       "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
@@ -31,7 +31,10 @@
         ]
       },
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "383"
+      "yt_views": "52",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
+      "guest_override_applied_v1": "GUEST_OVERRIDE_REAPPLY_V1_20261005",
+      "rumble_vid": "v7gdd92"
     },
     {
       "guest": "Matthew Hoh",
@@ -55,12 +58,15 @@
           "doTi3weQTaM"
         ]
       },
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "yt_views": "3.0K",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "yt_views": "2.9K",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": "https://rumble.com/v7g9qai-significant-possibility-of-the-use-of-nuclear-weapons-against-iran-ex-state.html",
-      "rumble_vid": "v7g9qai"
+      "rumble_vid": "v7g9qai",
+      "_x_store_tweets": 11,
+      "_x_measured_iso": "2026-10-05T23:20:05Z",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
   "source_feed": "videos.json",
