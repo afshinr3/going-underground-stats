@@ -3726,9 +3726,16 @@ def _emit_videos_health_v1():
                         # Tidbyt, LaMetric, a spreadsheet" coerce it, and handing those
                         # consumers an unfamiliar OBJECT where a string was is the same
                         # class of harm. x_views keeps its type; the age travels beside it.
-                        'x_views_measured_iso': _r.get('_x_measured_iso'),
-                        'x_views_stale': bool(stale_metric_fields(_r)),
                     },
+                    # PROVENANCE_IS_NOT_A_PLATFORM_V1_20261005 — these sat INSIDE metrics
+                    # and that was a defect. `metrics` is the PLATFORM SET: downstream
+                    # consumers (Android, Tidbyt, the LaMetric pushers) iterate it to build
+                    # per-platform rows, so two extra keys read as two extra platforms —
+                    # one of them a bool and one a nullable string. Keeping x_views' TYPE
+                    # stable was not enough; the KEY SET is part of the contract too.
+                    # Provenance belongs beside the metrics, not among them.
+                    'x_views_measured_iso': _r.get('_x_measured_iso'),
+                    'x_views_stale': bool(stale_metric_fields(_r)),
                 })
             _out['episodes'].extend(_clean)
             _out[_bucket] = _clean[:5]
