@@ -113,6 +113,25 @@ def main():
           "'FETCH_FAILED:Exception' alone named no cause and became the dashboard tooltip")
     check("success stamps _x_measured_iso", "_x_measured_iso" in src)
 
+    print("\n7  THE DASHBOARD IS NOT BLIND TO IT EITHER")
+    # _health_metric only downgrades when the VALUE is empty and takes _x_status purely as
+    # tooltip text, so a carried-forward figure reached videos_health_v1.json as a bare
+    # number and the dashboard summed it as fully measured. Provenance now travels as
+    # SIBLING fields: emitting {status:'STALE', value:...} would have fixed the dashboard
+    # and handed Android/LaMetric an unfamiliar object where a string was.
+    check("the health feed carries x_views provenance",
+          "'x_views_stale'" in src and "'x_views_measured_iso'" in src,
+          "sibling fields, so x_views keeps its type")
+    html_path = os.path.join(HERE, "docs", "index.html")
+    html = open(html_path).read() if os.path.exists(html_path) else ""
+    check("the dashboard reads the provenance", "x_views_stale" in html)
+    check("totalParts reports carried-forward separately from excluded",
+          "stale.push('X')" in html and "const { total, unknown, stale }" in html,
+          "one says 'excluded', the other 'at least'")
+    check("a carried-forward total is marked but NOT dropped",
+          "at least this much" in html and "carried forward" in html,
+          "dropping a real 1.3M would be a worse lie than carrying it")
+
     failed = [n for n, ok, _ in _results if not ok]
     print(f"\n  {len(_results) - len(failed)} passed, {len(failed)} failed")
     if failed:

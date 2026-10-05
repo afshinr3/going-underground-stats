@@ -3712,6 +3712,22 @@ def _emit_videos_health_v1():
                         'x_views':      _health_metric(_r.get('x_views'),
                                                        _r.get('_x_status')),
                         'ig_likes':     _r.get('ig_likes'),
+                        # X_STALE_IS_A_LOWER_BOUND_V1_20261005 — provenance for x_views,
+                        # as SIBLING fields rather than a new shape for the value itself.
+                        #
+                        # _health_metric only downgrades when the VALUE is empty; it takes
+                        # _x_status purely as tooltip text. So a figure the run did not
+                        # measure passed through here as a bare number and the dashboard
+                        # summed it as fully measured — the same blindness the Tidbyt had.
+                        #
+                        # Emitting a {status:'STALE', value:...} object instead would have
+                        # fixed the dashboard and broken everything else: this file's own
+                        # note says a bare null lets "every downstream consumer — Android,
+                        # Tidbyt, LaMetric, a spreadsheet" coerce it, and handing those
+                        # consumers an unfamiliar OBJECT where a string was is the same
+                        # class of harm. x_views keeps its type; the age travels beside it.
+                        'x_views_measured_iso': _r.get('_x_measured_iso'),
+                        'x_views_stale': bool(stale_metric_fields(_r)),
                     },
                 })
             _out['episodes'].extend(_clean)

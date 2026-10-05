@@ -343,18 +343,34 @@ function totalParts(v) {
         const n = countOpt(raw);
         if (n === null) unknown.push(label); else total += n;
     }
-    return { total, unknown };
+    // X_STALE_IS_A_LOWER_BOUND_V1_20261005 — a CARRIED-FORWARD figure is real data the
+    // run did not re-measure. It must stay IN the total (dropping a true 1.3M would be a
+    // worse lie than carrying it) but the total is then a lower bound, because views only
+    // grow. Reported separately from `unknown`: one says "excluded", the other "at least".
+    // A feed without the provenance field yields [] and renders exactly as before.
+    const stale = [];
+    if (v.x_views_stale && countOpt(v.x_views) !== null) stale.push('X');
+    return { total, unknown, stale };
 }
 function totalOf(v) { return totalParts(v).total; }
 // A total built on incomplete platform data is marked, never shown as if whole.
 function fmtTotal(v) {
-    const { total, unknown } = totalParts(v);
+    const { total, unknown, stale } = totalParts(v);
     if (unknown.length === 4) {
         return `<em title="no platform returned a measurement" style="color:#888;font-style:normal">N/A</em>`;
     }
     if (unknown.length) {
-        const tip = `partial: ${unknown.join(', ')} unmeasured and excluded from this total`;
+        let tip = `partial: ${unknown.join(', ')} unmeasured and excluded from this total`;
+        if (stale && stale.length) {
+            tip += `; ${stale.join(', ')} carried forward from an earlier measurement`;
+        }
         return `${fmt(total)}<span title="${tip}" style="color:#e6a817"> *</span>`;
+    }
+    if (stale && stale.length) {
+        const when = v.x_views_measured_iso ? ` (last measured ${v.x_views_measured_iso})` : '';
+        const tip = `at least this much: ${stale.join(', ')} carried forward from an earlier `
+                  + `measurement${when}, not re-measured on the latest run`;
+        return `${fmt(total)}<span title="${tip}" style="color:#e6a817"> +</span>`;
     }
     return fmt(total);
 }
@@ -388,6 +404,10 @@ function healthToEntries(h, showCode) {
         yt_views:     ep.metrics && ep.metrics.yt_views,
         x_views:      ep.metrics && ep.metrics.x_views,
         ig_likes:     ep.metrics && ep.metrics.ig_likes,
+        // X_STALE_IS_A_LOWER_BOUND_V1_20261005 — provenance travels beside the value,
+        // never inside it, so x_views keeps the type every other consumer expects.
+        x_views_stale:        ep.metrics && ep.metrics.x_views_stale,
+        x_views_measured_iso: ep.metrics && ep.metrics.x_views_measured_iso,
     }));
 }
 async function fetchAll() {
