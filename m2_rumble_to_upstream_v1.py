@@ -922,9 +922,56 @@ def _recover_interrupted_rebase(stale_s=900):
         print(f"  [INTERRUPTED_REBASE_RECOVERY_V1] check failed: {_e!r}", file=sys.stderr, flush=True)
 
 
+def _reload_repo_code():
+    """CODE_AFTER_PULL_V1_20261005 — run this hour's code, not last hour's.
+
+    fetch_and_push (and what it imports) is imported at MODULE LOAD, which is
+    BEFORE main() pulls. So every code fix merged to main reached the health feed
+    one bridge cycle late — and worse, a fix the cloud had already published got
+    overwritten by the bridge's next commit emitted from the previous code. On
+    2026-10-05 the PROVENANCE_IS_NOT_A_PLATFORM fix (merged 05:41Z) would have been
+    undone by the 06:20Z bridge run, re-polluting the local videos_health_v1.json
+    that the LaMetric pushers read. Reload every module that lives in this repo,
+    dependencies first, then the two entry modules. Failure keeps the old module.
+    """
+    global _FP, _VDF
+    import importlib
+    repo = os.path.realpath(REPO) + os.sep
+    entry = {"fetch_and_push", "verify_derived_feeds_v1"}
+    me = os.path.realpath(__file__)   # never reload the bridge under its own feet
+    mods = []
+    for n, m in list(sys.modules.items()):
+        f = os.path.realpath(getattr(m, "__file__", "") or "")
+        if n != "__main__" and n not in entry and f != me and f.startswith(repo):
+            mods.append(m)
+    reloaded = []
+    for m in mods:
+        try:
+            importlib.reload(m)
+            reloaded.append(m.__name__)
+        except Exception as e:                                   # noqa: BLE001
+            print(f"  [CODE_AFTER_PULL_V1] reload {m.__name__} failed, keeping old: {e!r}",
+                  file=sys.stderr, flush=True)
+    for name in ("fetch_and_push", "verify_derived_feeds_v1"):
+        try:
+            mod = sys.modules.get(name)
+            mod = importlib.reload(mod) if mod is not None else importlib.import_module(name)
+            if name == "fetch_and_push":
+                _FP = mod
+            else:
+                _VDF = mod
+            reloaded.append(name)
+        except Exception as e:                                   # noqa: BLE001
+            print(f"  [CODE_AFTER_PULL_V1] reload {name} failed, keeping old: {e!r}",
+                  file=sys.stderr, flush=True)
+    print(f"  [CODE_AFTER_PULL_V1] pulled new code; reloaded {reloaded}", flush=True)
+    return reloaded
+
+
 def main():
     if not DRY:
         _recover_interrupted_rebase()
+        _head_before = (_git("rev-parse", "HEAD").stdout or "").strip()
         _pull = _git("pull", "--rebase", "--autostash")  # sync with cloud first
         if _pull.returncode != 0 or _in_rebase():
             # An unchecked pull was the whole 2026-10-01 outage: it conflicted,
@@ -937,6 +984,8 @@ def main():
                   f"{_resolve_managed_conflicts()}", file=sys.stderr, flush=True)
             _ensure_on_branch()
         _verify_no_markers()
+        if (_git("rev-parse", "HEAD").stdout or "").strip() != _head_before:
+            _reload_repo_code()
 
     exact, surname, vids = _build_rumble_maps()
     posts = IGM.load_posts()
