@@ -1,7 +1,29 @@
 {
-  "iso": "2026-10-05T05:20:07Z",
-  "last_updated": "2026-10-05T05:20:07Z",
+  "iso": "2026-10-05T06:20:07Z",
+  "last_updated": "2026-10-05T06:20:07Z",
   "episodes": [
+    {
+      "guest": "Finfrock",
+      "surname": "Finfrock",
+      "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
+      "date": "5 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-05T03:00:17Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "940",
+        "yt_views": null,
+        "x_views": "5.6K",
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
+    },
     {
       "guest": "Matthew Hoh",
       "surname": "HOH",
@@ -23,10 +45,10 @@
         "rumble_views": "2.6K",
         "yt_views": "2.7K",
         "x_views": "314.1K",
-        "ig_likes": null,
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Robert Harward",
@@ -46,13 +68,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": "3.3K",
         "yt_views": "2.2K",
         "x_views": "371.9K",
-        "ig_likes": "1.3K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.3K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Joe Kent",
@@ -75,10 +97,10 @@
         "rumble_views": "3.3K",
         "yt_views": "34.1K",
         "x_views": "868.4K",
-        "ig_likes": "2.0K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "2.0K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Steve Hanke",
@@ -101,10 +123,10 @@
         "rumble_views": "3.3K",
         "yt_views": "2.4K",
         "x_views": "318.1K",
-        "ig_likes": "1.4K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.4K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Tucker Carlson",
@@ -127,10 +149,10 @@
         "rumble_views": "6.2K",
         "yt_views": "85.1K",
         "x_views": "1.9M",
-        "ig_likes": "6.7K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "6.7K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Ken Silva",
@@ -153,10 +175,10 @@
         "rumble_views": "4.4K",
         "yt_views": "2.5K",
         "x_views": "228.7K",
-        "ig_likes": "1.2K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.2K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Michael O’Hanlon",
@@ -179,10 +201,10 @@
         "rumble_views": "3.5K",
         "yt_views": "2.2K",
         "x_views": "112.5K",
-        "ig_likes": "760",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "760"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Philip Pilkington",
@@ -205,10 +227,10 @@
         "rumble_views": "4.6K",
         "yt_views": "3.6K",
         "x_views": "440.6K",
-        "ig_likes": "6.4K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "6.4K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Branko Milanović",
@@ -231,10 +253,10 @@
         "rumble_views": "3.5K",
         "yt_views": "5.1K",
         "x_views": "166.9K",
-        "ig_likes": "8.7K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "8.7K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "John Mearsheimer",
@@ -257,10 +279,10 @@
         "rumble_views": "4.1K",
         "yt_views": "43.2K",
         "x_views": "481.0K",
-        "ig_likes": "1.6K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.6K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Hasan Ünal",
@@ -283,10 +305,10 @@
         "rumble_views": "4.1K",
         "yt_views": "8.2K",
         "x_views": "674.7K",
-        "ig_likes": "3.5K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "3.5K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Gabor Maté",
@@ -309,10 +331,10 @@
         "rumble_views": "4.2K",
         "yt_views": "65.8K",
         "x_views": "661.5K",
-        "ig_likes": "5.5K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "5.5K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Robert Barnes",
@@ -335,10 +357,10 @@
         "rumble_views": "16.3K",
         "yt_views": "3.4K",
         "x_views": "1.5M",
-        "ig_likes": "5.8K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "5.8K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Ami Ayalon",
@@ -361,10 +383,10 @@
         "rumble_views": "3.7K",
         "yt_views": "2.0K",
         "x_views": "1.2M",
-        "ig_likes": "11.7K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "11.7K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Daniel Levy",
@@ -387,10 +409,10 @@
         "rumble_views": "3.2K",
         "yt_views": "4.4K",
         "x_views": "634.1K",
-        "ig_likes": "11.6K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "11.6K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Doug Bandow",
@@ -413,10 +435,10 @@
         "rumble_views": "3.3K",
         "yt_views": "3.1K",
         "x_views": "815.6K",
-        "ig_likes": "3.3K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "3.3K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Lawrence Wilkerson",
@@ -439,10 +461,10 @@
         "rumble_views": "3.9K",
         "yt_views": "4.4K",
         "x_views": "1.1M",
-        "ig_likes": "4.6K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "4.6K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Dennis Fritz",
@@ -465,10 +487,10 @@
         "rumble_views": "3.4K",
         "yt_views": "1.1K",
         "x_views": "450.4K",
-        "ig_likes": "605",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "605"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Tobias Ellwood",
@@ -491,10 +513,10 @@
         "rumble_views": "2.5K",
         "yt_views": "1.5K",
         "x_views": "721.6K",
-        "ig_likes": "1.5K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.5K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Lawrence Wilkerson",
@@ -517,10 +539,10 @@
         "rumble_views": "1.1K",
         "yt_views": "12.0K",
         "x_views": "13.7K",
-        "ig_likes": "3.5K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "3.5K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "John Mearsheimer",
@@ -543,10 +565,10 @@
         "rumble_views": "1.1K",
         "yt_views": "13.8K",
         "x_views": "709.6K",
-        "ig_likes": "1.6K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.6K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Anatol Lieven",
@@ -566,13 +588,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "920",
+        "rumble_views": "921",
         "yt_views": "735",
         "x_views": "940.1K",
-        "ig_likes": "423",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "423"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Paulo Nogueira Batista Jr.",
@@ -595,10 +617,10 @@
         "rumble_views": "1.2K",
         "yt_views": "4.8K",
         "x_views": "1.3M",
-        "ig_likes": "1.1K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.1K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "David Monyae",
@@ -621,10 +643,10 @@
         "rumble_views": "1.2K",
         "yt_views": "3.6K",
         "x_views": "483.1K",
-        "ig_likes": "368",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "368"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Sarang Shidore",
@@ -647,10 +669,10 @@
         "rumble_views": "1.2K",
         "yt_views": "163",
         "x_views": "359.3K",
-        "ig_likes": "421",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "421"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Marta Fernandez",
@@ -673,10 +695,10 @@
         "rumble_views": "1.1K",
         "yt_views": "195",
         "x_views": "1.3M",
-        "ig_likes": "1.8K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.8K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Mohammed Baharoon",
@@ -699,10 +721,10 @@
         "rumble_views": "903",
         "yt_views": "113",
         "x_views": "1.3M",
-        "ig_likes": "377",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "377"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Hussein Askary",
@@ -725,10 +747,10 @@
         "rumble_views": "890",
         "yt_views": "246",
         "x_views": "443.2K",
-        "ig_likes": "1.0K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.0K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Peter Schiff",
@@ -751,10 +773,10 @@
         "rumble_views": "923",
         "yt_views": "514",
         "x_views": "941.4K",
-        "ig_likes": "387",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "387"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "John Perkins",
@@ -777,10 +799,10 @@
         "rumble_views": "1.0K",
         "yt_views": "853",
         "x_views": "812.3K",
-        "ig_likes": "291",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "291"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Vikram Sood",
@@ -803,10 +825,10 @@
         "rumble_views": "554",
         "yt_views": "3.3K",
         "x_views": "846.1K",
-        "ig_likes": "1.1K",
-        "x_views_measured_iso": null,
-        "x_views_stale": false
-      }
+        "ig_likes": "1.1K"
+      },
+      "x_views_measured_iso": null,
+      "x_views_stale": false
     },
     {
       "guest": "C. Uday Bhaskar",
@@ -829,13 +851,35 @@
         "rumble_views": "564",
         "yt_views": "139",
         "x_views": "383.0K",
-        "ig_likes": "3.1K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "3.1K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     }
   ],
   "gu": [
+    {
+      "guest": "Finfrock",
+      "surname": "Finfrock",
+      "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
+      "date": "5 Oct",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": null,
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": "2026-10-05T03:00:17Z",
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "940",
+        "yt_views": null,
+        "x_views": "5.6K",
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
+    },
     {
       "guest": "Matthew Hoh",
       "surname": "HOH",
@@ -857,10 +901,10 @@
         "rumble_views": "2.6K",
         "yt_views": "2.7K",
         "x_views": "314.1K",
-        "ig_likes": null,
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Robert Harward",
@@ -880,13 +924,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.2K",
+        "rumble_views": "3.3K",
         "yt_views": "2.2K",
         "x_views": "371.9K",
-        "ig_likes": "1.3K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.3K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Joe Kent",
@@ -909,10 +953,10 @@
         "rumble_views": "3.3K",
         "yt_views": "34.1K",
         "x_views": "868.4K",
-        "ig_likes": "2.0K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "2.0K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Steve Hanke",
@@ -935,36 +979,10 @@
         "rumble_views": "3.3K",
         "yt_views": "2.4K",
         "x_views": "318.1K",
-        "ig_likes": "1.4K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
-    },
-    {
-      "guest": "Tucker Carlson",
-      "surname": "CARLSON",
-      "title": "Tucker Carlson: We Are on the Brink of a WORLD WAR That Ends With The Use of NUCLEAR WEAPONS",
-      "date": "11 Sep",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id": "692029c34641",
-      "canonical_video_id": "JUHl-tQRN7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
-      "pub_iso": "2026-09-11T22:32:20Z",
-      "source_platform_ids": {
-        "youtube": [
-          "JUHl-tQRN7g"
-        ]
+        "ig_likes": "1.4K"
       },
-      "metrics": {
-        "rumble_views": "6.2K",
-        "yt_views": "85.1K",
-        "x_views": "1.9M",
-        "ig_likes": "6.7K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     }
   ],
   "no": [
@@ -989,10 +1007,10 @@
         "rumble_views": "1.1K",
         "yt_views": "12.0K",
         "x_views": "13.7K",
-        "ig_likes": "3.5K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "3.5K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "John Mearsheimer",
@@ -1015,10 +1033,10 @@
         "rumble_views": "1.1K",
         "yt_views": "13.8K",
         "x_views": "709.6K",
-        "ig_likes": "1.6K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.6K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Anatol Lieven",
@@ -1038,13 +1056,13 @@
         ]
       },
       "metrics": {
-        "rumble_views": "920",
+        "rumble_views": "921",
         "yt_views": "735",
         "x_views": "940.1K",
-        "ig_likes": "423",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "423"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "Paulo Nogueira Batista Jr.",
@@ -1067,10 +1085,10 @@
         "rumble_views": "1.2K",
         "yt_views": "4.8K",
         "x_views": "1.3M",
-        "ig_likes": "1.1K",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "1.1K"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     },
     {
       "guest": "David Monyae",
@@ -1093,10 +1111,10 @@
         "rumble_views": "1.2K",
         "yt_views": "3.6K",
         "x_views": "483.1K",
-        "ig_likes": "368",
-        "x_views_measured_iso": "2026-10-05T05:20:05Z",
-        "x_views_stale": false
-      }
+        "ig_likes": "368"
+      },
+      "x_views_measured_iso": "2026-10-05T06:20:05Z",
+      "x_views_stale": false
     }
   ]
 }

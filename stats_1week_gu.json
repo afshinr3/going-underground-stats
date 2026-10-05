@@ -5,9 +5,21 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-05T05:20:05.775486Z",
-  "n": 1,
+  "generated_at": "2026-10-05T06:20:05.613046Z",
+  "n": 2,
   "entries": [
+    {
+      "guest": "Finfrock",
+      "surname": "Finfrock",
+      "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
+      "date": "5 Oct",
+      "rumble_views": "940",
+      "show": "GU",
+      "canonical_guest_full_name": "Finfrock",
+      "pub_iso": "2026-10-05T03:00:17Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3"
+    },
     {
       "guest": "Matthew Hoh",
       "surname": "Hoh",
@@ -37,7 +49,7 @@
       "yt_views": "2.7K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "canonical_episode_id_v2": "ae10a949db2aa421",
-      "_x_measured_iso": "2026-10-05T04:20:06Z"
+      "_x_measured_iso": "2026-10-05T05:20:05Z"
     }
   ],
   "source_feed": "videos.json",
