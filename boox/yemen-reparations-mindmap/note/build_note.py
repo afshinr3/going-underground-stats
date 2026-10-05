@@ -3,8 +3,8 @@
 
 Every box, header, marker, arrow, bracket, arc, wave and frame is a native Boox geometric shape
 (pen_type 40: editable with the lasso/shape tools); connectors are real pen strokes (ballpoint,
-fountain, marker, charcoal, calligraphy, highlighter); text is typeset in Playfair Display,
-Cormorant Garamond, Cinzel, Josefin Sans and IBM Plex Mono and laid down as scanline-fill ink.
+fountain, marker, charcoal, calligraphy, highlighter); text is typeset in IBM Plex Sans
+(regular, italic, condensed) and IBM Plex Mono and laid down as scanline-fill ink.
 
 Usage: python3 build_note.py [--out DIR]   (needs pillow + numpy; fonts are fetched once)
 """
@@ -27,12 +27,12 @@ _fcache = {}
 
 def font(name, size):
     pkg, wt, st = {
-        'title': ('playfair-display', 900, 'normal'), 'titlei': ('playfair-display', 400, 'italic'),
-        'num': ('playfair-display', 900, 'normal'), 'sc': ('playfair-display-sc', 700, 'normal'),
-        'head': ('cinzel', 700, 'normal'), 'body': ('cormorant-garamond', 500, 'normal'),
-        'bodyb': ('cormorant-garamond', 700, 'normal'), 'it': ('cormorant-garamond', 600, 'italic'),
-        'sub': ('cormorant-garamond', 500, 'italic'), 'mono': ('ibm-plex-mono', 400, 'normal'),
-        'caps': ('josefin-sans', 600, 'normal'), 'capsl': ('josefin-sans', 300, 'normal'),
+        'title': ('ibm-plex-sans', 700, 'normal'), 'titlei': ('ibm-plex-sans', 300, 'italic'),
+        'num': ('ibm-plex-sans', 700, 'normal'), 'sc': ('ibm-plex-sans', 600, 'normal'),
+        'head': ('ibm-plex-sans-condensed', 700, 'normal'), 'body': ('ibm-plex-sans', 400, 'normal'),
+        'bodyb': ('ibm-plex-sans', 600, 'normal'), 'it': ('ibm-plex-sans', 400, 'italic'),
+        'sub': ('ibm-plex-sans', 400, 'italic'), 'mono': ('ibm-plex-mono', 400, 'normal'),
+        'caps': ('ibm-plex-sans', 600, 'normal'), 'capsl': ('ibm-plex-sans', 400, 'normal'),
     }[name]
     f = FONT_DIR / f'{pkg}-{wt}-{st}.woff2'
     if not f.exists():
@@ -303,9 +303,9 @@ def node_block(nd, width, fs):
     if 'q' in nd:
         b.add(nd['q'], 'it', fs * 1.22, indent=70, leading=1.16)
         if nd.get('c'):
-            b.add(nd['c'], 'capsl', fs * 0.62, indent=70, before=fs * 0.35, leading=1.35, upper=True)
+            b.add(nd['c'], 'capsl', fs * 0.72, indent=70, before=fs * 0.35, leading=1.35, upper=True)
     else:
-        b.add(nd['h'], 'head', fs * 0.78, before=0, leading=1.3, upper=True)
+        b.add(nd['h'], 'head', fs * 0.88, before=0, leading=1.3, upper=True)
         for i, s in enumerate(nd['b']):
             b.add(s, 'body', fs, indent=34, before=fs * (0.55 if i == 0 else 0.3), leading=1.2)
     return b
@@ -403,7 +403,7 @@ def build(content, out_note, uniform=None):
                             marker(note, st['bullet'], bx0 + 30 + 14, by0 + 26 + ly + fs * 0.62, fs * 0.42)
                     # rule under the node heading
                     hl = [l for l in lines if l[4] == 0]
-                    yl = by0 + 26 + hl[-1][1] + fs * 0.78 * 1.18
+                    yl = by0 + 26 + hl[-1][1] + fs * 0.88 * 1.18
                     note.line(bx0 + 30, yl, bx1 - 30, yl, width=1.2, color=G2)
                 centres.append((bx0, by0, bx1, by1, ci))
                 y += h + 44
@@ -473,12 +473,12 @@ def build(content, out_note, uniform=None):
     for i, (num, lab) in enumerate(content['figures']):
         note.stroke([(fx[i] - 150, yy + 58, 3000), (fx[i] + 150, yy + 54, 3000)], pen=15, width=60, color=G3)
         one_line(note, num, 'num', 78, fx[i], yy, align='c')
-        lb = Block(330).add(lab, 'capsl', 21, align='c', leading=1.3, upper=True)
-        text(note, lb, fx[i] - 165, yy + 104)
+        lb = Block(350).add(lab, 'capsl', 25, align='c', leading=1.25, upper=True)
+        text(note, lb, fx[i] - 175, yy + 104)
         if i:
             note.line(fx[i] - 195, yy + 10, fx[i] - 195, yy + 160, width=1.2)
     yy += 200
-    rb = Block(1150).add(content['report'], 'mono', 19, align='c', leading=1.45)
+    rb = Block(1150).add(content['report'], 'mono', 23, align='c', leading=1.4)
     text(note, rb, ccx - 575, yy, color=G1)
 
     # ---- connectors centre -> heads: tapered fountain-pen strokes routed through the gutters
@@ -544,11 +544,11 @@ def build(content, out_note, uniform=None):
         elif kind == 'ts':
             one_line(note, '00:00', 'mono', 22, x, ly - 12)
             x += 40
-        w = one_line(note, lab, 'capsl', 22, x + 60, ly - 10)
+        w = one_line(note, lab, 'capsl', 26, x + 60, ly - 12)
         x += 60 + w + 70
     foot = ('Native Boox note: every box, header, marker, arrow, arc and frame is an editable Boox shape. '
             'Text typeset from a machine transcript of the episode; figures checked against the CAAT/TSP report.')
-    fb = Block(3600).add(foot, 'sub', 26, align='c')
+    fb = Block(3600).add(foot, 'sub', 30, align='c')
     text(note, fb, W / 2 - 1800, H - 112, color=G1)
 
     size = note.save(out_note)

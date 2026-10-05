@@ -13,7 +13,7 @@ What's inside (589 native objects):
 | Ballpoint / fountain / marker / charcoal / calligraphy strokes | 2 / 5 / 21 / 22 / 61 | A different pen for each branch's spine and ribs; tapered fountain-pen strokes from the centre |
 | Calligraphy brush | 60 | The flourish under the title |
 | Highlighter | 15 | Grey swashes behind the headline figures |
-| Scanline fill | 37 | Text typeset in Playfair Display, Cormorant Garamond, Cinzel, Josefin Sans and IBM Plex Mono |
+| Scanline fill | 37 | Text typeset in IBM Plex Sans (regular, italic, condensed) and IBM Plex Mono, for legibility on e-ink |
 
 `preview.png` is rendered by `preview.py`, which decodes the `.note` back from its ZIP, protobuf and point data.
 
