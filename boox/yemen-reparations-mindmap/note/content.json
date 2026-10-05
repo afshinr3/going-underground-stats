@@ -1,0 +1,197 @@
+{
+  "title": ["What the UK", "owes to Yemen"],
+  "kicker": "POLITICS THEORY OTHER  ·  1 OCTOBER 2026  ·  53 MIN",
+  "guest": "Dr David Wearing",
+  "guest_line": "Assistant Professor of International Relations, University of Sussex. Author of AngloArabia: Why Gulf Wealth Matters to Britain.",
+  "report": "On the report Reparations for Yemen (Campaign Against Arms Trade & Transition Security Project, Sept 2026), co-written with Sam Perlo-Freeman and Khem Rogaly.",
+  "thesis": "Britain enabled one of the most devastating wars of the modern era. What it owes Yemen is not aid but reparations.",
+  "figures": [
+    ["£3.9bn", "arms-firm war profits to confiscate"],
+    ["£7.8bn", "total reparations with state match"],
+    ["377,000", "deaths from the war, direct and indirect"],
+    ["6–7,000", "BAE staff keeping Saudi jets flying"]
+  ],
+  "branches": [
+    {
+      "id": "b1", "num": "I", "title": "The War", "sub": "Origins and shape, 2011–2026", "ts": "02:53 – 05:36",
+      "nodes": [
+        {"h": "Why Yemen matters to Riyadh", "b": [
+          "Seen as Saudi Arabia’s “backyard”: strategic real estate it wants run by friendly people.",
+          "It sits on the Bab el-Mandeb strait at the foot of the Red Sea, a chokepoint the West also cares about."]},
+        {"h": "From uprising to civil war", "b": [
+          "2011: Yemen’s Arab uprising brings down the government, with demands for democracy, rights and an end to corruption.",
+          "No stable successor emerges and rival factions compete for power.",
+          "Ansar Allah (the Houthis), a rebel group from the north, take the capital and the populous north and west."]},
+        {"h": "March 2015: the intervention", "b": [
+          "Saudi Arabia intervenes to restore the “internationally recognised government”: recognised by the world’s governments, not by many Yemenis. It has a thin social base.",
+          "The UAE is the other regional power. On the ground, the coalition is “pretty much everyone who isn’t the Houthis”: government loyalists, southern separatists, assorted militias."]},
+        {"q": "The richest states in the region, backed by Britain and the United States, inflicting misery on one of the poorest states in the world.", "c": "The host’s framing"},
+        {"h": "Attrition, stalemate, relapse", "b": [
+          "Seven years of grinding attrition: the Houthis hold the north and west, the anti-Houthi coalition the rest.",
+          "2022: the UAE gives up and the Saudis lose faith, though they keep backing allies on the ground.",
+          "A cold peace lasts until 2026, when hostilities between Ansar Allah and Saudi Arabia escalate again."]}
+      ]
+    },
+    {
+      "id": "b2", "num": "II", "title": "Britain’s Role", "sub": "Every practical way short of combat", "ts": "05:59 – 11:45",
+      "nodes": [
+        {"h": "An aerial war", "b": [
+          "Yemeni militias on the ground, air cover from the Royal Saudi Air Force.",
+          "Its fleet is roughly half British, half American. The British jets are Tornados and Typhoons."]},
+        {"h": "Forty years of deals", "b": [
+          "Al-Yamamah (1985, Thatcher): a fleet of Tornados plus the Hawk jets Saudi pilots train on.",
+          "More Tornados under Major in the early 1990s; Typhoons under New Labour in the late 2000s.",
+          "The result: scores of British military jets."]},
+        {"h": "A relationship, not a sale", "b": [
+          "Training jets and the training itself.",
+          "Spare parts: “military jets in wartime burn through components at a serious rate.”",
+          "Ammunition, which has to be compatible with a Typhoon or Tornado.",
+          "Deep maintenance, done by 6–7,000 BAE staff in Saudi Arabia (plus around 100 MoD personnel)."]},
+        {"q": "In every practical way short of engaging in combat.", "c": "Philip Hammond, Foreign Secretary, March 2015"},
+        {"h": "Loud, then quiet", "b": [
+          "At first Britain trumpeted its help, expecting a “lightning operation” of a few weeks.",
+          "Once it became a quagmire and the bombing of civilians was documented, Whitehall went quiet.",
+          "“Not combatants” sounds like a Foreign Office lawyer’s line. Questions over targeting, and reports of British special forces in a 2017 ground offensive, were always played down."]},
+        {"h": "Real leverage", "b": [
+          "Withdraw support and the jets are grounded within weeks: no ammunition, no maintenance, no parts.",
+          "Under Obama, a British exit might have made Washington stop or think again: “even the servile British aren’t going along with us.”",
+          "Complicity far deeper than in Gaza: “nothing like.”"]},
+        {"q": "I don’t want to overstate British agency, but I don’t think we should understate it either.", "c": "David Wearing"}
+      ]
+    },
+    {
+      "id": "b3", "num": "III", "title": "A Man-Made Catastrophe", "sub": "Why the Gaza comparison holds", "ts": "12:04 – 16:49",
+      "nodes": [
+        {"h": "Three ways to destroy a country", "b": [
+          "Blockade: an air-and-sea blockade of the region’s poorest, import-dependent state. The outcome was obvious, and doing it anyway signals intent.",
+          "Bombing: ports, airports, roads, cranes; weddings, funerals, hospitals, schools.",
+          "Hunger as a weapon: farms and fishing boats attacked, fishermen terrorised out of Yemeni waters."]},
+        {"h": "War crimes on record", "b": [
+          "Mwatana’s Starvation Makers: both sides used hunger as a method of warfare.",
+          "Free-fire zones in the north amount to “literally saying no distinction,” the core principle of international law.",
+          "The Houthis besieged enemy-held cities too, but the coalition was the leading culprit."]},
+        {"h": "The toll", "b": [
+          "85,000 infants dead of starvation or disease in the early years (Save the Children).",
+          "UNDP estimates 350–377,000 deaths, about half from hunger and disease rather than violence; around 9,000 civilians killed in air raids.",
+          "A historic cholera outbreak. The UN called it “the world’s worst humanitarian crisis.”"]},
+        {"h": "The long tail", "b": [
+          "UNDP (2019): two decades of human development reversed.",
+          "2025: nearly half the population acutely food-insecure; nearly half of under-fives acutely malnourished.",
+          "A $1.8bn UN funding shortfall as of January 2026."]},
+        {"h": "Comparable, not identical", "b": [
+          "Gaza has its own characteristics and its own motive for genocide, but collective punishment, denial of the means of survival and indiscriminate bombing are all present in Yemen.",
+          "It should be discussed “in the same breath as Iraq, Syria, Gaza, Sudan,” yet it gets little attention despite deep British complicity."]}
+      ]
+    },
+    {
+      "id": "b4", "num": "IV", "title": "Britain Now", "sub": "The 2026 escalation", "ts": "16:54 – 21:44",
+      "nodes": [
+        {"h": "Support continues", "b": [
+          "New arms sales and UK military advisers.",
+          "The Burnham government sends an RAF Voyager air-to-air tanker for “Saudi defensive activity in support of the legitimate government of Yemen.”"]},
+        {"h": "£464m in four months", "b": [
+          "Arms licensed to Saudi Arabia in January–April 2026.",
+          "Licensing is opaque: a broad category and a value, never the item. Nothing in that category is worth that much except “a big pile of” air-to-surface missiles.",
+          "It looks like restocking for exactly what is happening now."]},
+        {"q": "A shield is a weapon.", "c": "Defensive cover gives a proven war criminal impunity, and more incentive to strike"},
+        {"h": "Four questions on “defensive only”", "b": [
+          "1. Is it in writing?   2. If not, why not?",
+          "3. How is it monitored and verified?   4. What happens if they don’t comply?",
+          "It is the same lawyerly line as the RAF bases lent to US jets in the war on Iran."]},
+        {"h": "Not small beer", "b": [
+          "Refuelling one sortie that takes out a hospital is not trivial.",
+          "The Saudis are silent, there is no independent reporting and only Houthi claims, set against seven years of proof of systematic attacks."]}
+      ]
+    },
+    {
+      "id": "b5", "num": "V", "title": "Profits & the Courts", "sub": "BAE, Rolls-Royce, CAAT v. Whitehall", "ts": "21:44 – 28:31",
+      "nodes": [
+        {"h": "How the deals work", "b": [
+          "A government-to-government agreement, then the UK contracts BAE Systems as prime contractor.",
+          "BAE subcontracts down the chain. Rolls-Royce, which makes the engines, is the major secondary actor."]},
+        {"h": "The money", "b": [
+          "£22.4bn BAE revenue from the Saudi MoD, 2015–22 (at least £2.3bn every year).",
+          "Profits: BAE £3.56bn + Rolls-Royce £0.33bn = £3.9bn.",
+          "Not even counted: MBDA (Brimstone, Storm Shadow), Raytheon UK (Paveway IV), or sales to the UAE."]},
+        {"h": "They knew from day one", "b": [
+          "Amnesty reported civilian hits about a week in; Amnesty and HRW on the ground within months.",
+          "By early 2016 UN experts told the Security Council the attacks were “widespread, systematic.”",
+          "“Zero sympathy” for “it’s for the government to judge”: “nonsense.”"]},
+        {"h": "What the courts could not ask", "b": [
+          "CAAT’s cases could only test whether Whitehall’s process was rational, never whether Saudi Arabia broke international law.",
+          "The first case was lost. On appeal, key evidence was found to have been ignored and new licences were suspended. Whitehall did its “homework,” called the violations “isolated incidents” and resumed sales. A second challenge was lost and not appealed."]},
+        {"q": "Atrocity after atrocity after atrocity.", "c": "A summer reading every UN and NGO report for his book on Britain’s war in Yemen"}
+      ]
+    },
+    {
+      "id": "b6", "num": "VI", "title": "The Reparations Plan", "sub": "Justice, not charity", "ts": "28:33 – 33:27",
+      "nodes": [
+        {"h": "Step 1 · Windfall tax", "b": [
+          "Confiscate the arms firms’ war profits: an indicative £3.9bn, built from open-source data.",
+          "A sympathetic government could calculate the real figure precisely."]},
+        {"h": "Step 2 · The state matches it", "b": [
+          "Britain isn’t in it only for arms profits; strategy and the state’s own decisions drive it.",
+          "So the Treasury matches the £3.9bn from an aid budget restored to 0.7% of GNI."]},
+        {"h": "Where the money comes from", "b": [
+          "Aid fell from 0.7% of GNI (met from 2013) to 0.5% under the Tories in 2021, then to 0.3% under Starmer from 2027, to fund military spending.",
+          "Restoring 0.7% means about £21.5bn, and 0.7% is “pretty minimal” given centuries of colonial exploitation."]},
+        {"h": "£7.8bn in total", "b": [
+          "Humanitarian relief first, then a Yemeni reconstruction fund.",
+          "Small for Britain, transformative for Yemen. Britain gave at least £1bn in aid in 2014–24 while coordinating £20bn+ of arms sales."]},
+        {"q": "It shouldn’t be aid. It should be reparations.", "c": "An offhand remark at a meeting a year ago that became the report"},
+        {"h": "The law and the wider asks", "b": [
+          "A state that aids an internationally wrongful act owes reparation (Mwatana and Yale, Returned to Zero, 2022).",
+          "Also: a full arms embargo on the coalition, Israel and suppliers of Sudan’s RSF.",
+          "Spread it to US activists, France and Germany; use it as a lever for diplomacy and a precedent against war profiteering."]}
+      ]
+    },
+    {
+      "id": "b7", "num": "VII", "title": "Myth & Memory", "sub": "A force for good?", "ts": "33:27 – 42:44",
+      "nodes": [
+        {"h": "A national religion", "b": [
+          "On BBC One (c. 2017–18), at the height of the bombing, a guest said she was “proud” of UK aid to Yemen.",
+          "Aid debates assume munificence. Even the “progressive” line is “be more generous,” not “stop causing harm.”"]},
+        {"h": "The Israel-lobby trap", "b": [
+          "Mearsheimer and Walt’s thesis comes from realist, centre-right “cold warriors”: American power is good, corrupted only by a lobby.",
+          "It casts the state as innocent. Britain is “a pretty horrible power in its own right” and doesn’t need corrupting."]},
+        {"q": "You’re not going to be surprised by Britain’s role in Gaza if you’ve been following what Britain did in Yemen."},
+        {"h": "Batang Kali, 1948", "b": [
+          "Scots Guards kill 24 unarmed civilians in Malaya: “Britain’s My Lai.”",
+          "No charges, no apology, no redress."]},
+        {"h": "Kenya, the 1950s", "b": [
+          "Collective punishment: round up the population the rebels come from and make their lives hell. Caroline Elkins calls the camps “Britain’s gulag.”",
+          "Testimony and hidden archives forced an out-of-court settlement. A few thousand pounds each is “a joke,” but it was an admission and an expression of regret."]},
+        {"h": "Why make a long-shot demand", "b": [
+          "He isn’t expecting Burnham or Miliband to agree.",
+          "The aim is to hold British militarism to account, build pressure from below, and win other battles on the way."]}
+      ]
+    },
+    {
+      "id": "b8", "num": "VIII", "title": "Sportswashing Backfires", "sub": "Manchester City and Abu Dhabi", "ts": "42:44 – 52:48",
+      "nodes": [
+        {"h": "The verdict", "b": [
+          "UAE-owned Manchester City reportedly found guilty of 114 of 115 Premier League financial charges.",
+          "His proposed sentence: relegation to Division Five of the Manchester League (tier 11), and a fine of the entire GDP of Abu Dhabi."]},
+        {"h": "Why it matters beyond football", "b": [
+          "Football is one of Britain’s biggest cultural exports, worth billions to clubs, towns and media.",
+          "Cheating “vandalised” it: a decade of football now feels fake, and rivals were cheated of titles and Champions League places."]},
+        {"h": "The real strategy", "b": [
+          "Gulf owners aren’t football lovers; they came for hard-headed reasons.",
+          "The aim is to insulate the UK government from pressure from below. Investment in Manchester and Newcastle builds a constituency that would protest if Riyadh threatened trade over arms."]},
+        {"h": "The old playbook was quiet", "b": [
+          "Property, and shareholdings kept below the ~15% that draws attention.",
+          "“When you attract public attention, people start seeing who you are.”"]},
+        {"h": "Backfire", "b": [
+          "Qatar 2022 put human rights into even apolitical football podcasts.",
+          "Monarchies used to impunity at home (“the law is what they say it is”) misjudged independent institutions abroad."]},
+        {"q": "The biggest scandal in English football history.", "c": "Abu Dhabi tainted, and the Gulf’s ties to Britain under scrutiny"}
+      ]
+    }
+  ],
+  "links": [
+    ["b1", "b2", "why Riyadh fights, why London arms"],
+    ["b2", "b3", "British jets, Yemeni dead"],
+    ["b5", "b6", "£3.9bn to confiscate"],
+    ["b7", "b6", "aid as debt, not gift"]
+  ]
+}
