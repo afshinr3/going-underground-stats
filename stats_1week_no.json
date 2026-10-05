@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-05T06:20:05.613719Z",
+  "generated_at": "2026-10-05T06:21:14.701716Z",
   "n": 1,
   "entries": [
     {
@@ -39,7 +39,7 @@
       "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 3,
-      "_x_measured_iso": "2026-10-05T05:20:05Z"
+      "_x_measured_iso": "2026-10-05T06:20:05Z"
     }
   ],
   "source_feed": "videos_neworder.json",
