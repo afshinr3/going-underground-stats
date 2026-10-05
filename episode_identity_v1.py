@@ -189,6 +189,84 @@ def _merge(keep, drop):
     return keep
 
 
+# RE_MINTED_IDENTITY_V1_20261005 ---------------------------------------------------
+# canonical_episode_id is derived from the TITLE. Edit a published title and the next run
+# mints a NEW id, a NEW title hash, and binds the video to the NEW row -- so the previous
+# row shares no identity with it and `identities()` cannot see one episode. The
+# surname|date fallback that would have caught it is suppressed by design whenever a row
+# carries any other identifier ("Only here is surname|date allowed to speak"), and that
+# restriction is itself guarded by test_episode_identity_v1.
+#
+# Measured on the live GU feed 2026-10-04: Matthew Hoh 3 Oct present TWICE --
+# a5df3acf1214 BOUND to video doTi3weQTaM carrying the live YouTube title ("...NUKES..."),
+# and 443de1f604d7 UNBOUND carrying the superseded title ("...NUCLEAR WEAPONS..."),
+# retained by EPISODE_UNION_NEVER_SHRINKS_V1 because it looked like an episode that had
+# vanished. Two correct mechanisms colliding: the never-shrink guard cannot tell "this
+# episode disappeared" from "this episode's identity changed". Identical rumble_views and
+# x_views on both rows, so every aggregate over that date double-counted and the
+# leaderboard rendered Hoh twice.
+#
+# THE EVIDENCE THAT SEPARATES THE TWO CASES IS THE VENUE BINDING, NOT THE AIR DATE.
+# Two rows sharing a guest and a date with NEITHER bound are the case
+# test_episode_identity_v1 case 3 forbids merging -- they may be two real episodes and
+# nothing says otherwise. Two rows bound to DIFFERENT videos are certainly two episodes.
+# Only the asymmetric pair -- exactly one bound -- is the signature of an identity that was
+# re-minted while the episode stayed put, because a second real episode would have its own
+# binding. So this requires that asymmetry and merges nothing else.
+
+
+def venue_ids(row):
+    """Venue bindings this row carries: the YouTube id plus any platform ids."""
+    out = set()
+    v = str(row.get("canonical_video_id") or "").strip()
+    if v:
+        out.add(v)
+    for pid_list in (row.get("source_platform_ids") or {}).values():
+        for pid in (pid_list or []):
+            if pid:
+                out.add(str(pid))
+    return out
+
+
+def air_date_key(row):
+    """SURNAME|air date, or None when either part is missing -- never a half key.
+
+    YEAR_AWARE_AIR_DATE_V1_20261005. `date` is the display string and carries NO YEAR
+    ("18 Jul", "3 Oct"), and GUESTS RECUR -- Mearsheimer appears on GU 10 Aug and on New
+    Order 27 Sep; Wilkerson on GU 18 Jul and New Order 4 Oct. A year-blind key would make
+    one guest's 18 Jul 2026 interview collide with their 18 Jul 2027 one, and this key
+    exists to AUTHORISE a merge, so a collision here conflates two real episodes and their
+    view counts. pub_iso carries the year, so it leads.
+
+    The short-date fallback is NAMESPACED, so a year-aware key can never compare equal to
+    a year-blind one. pub_iso is absent on 4 of 33 live rows (Wilkerson 18 Jul, Fritz
+    13 Jul, Ellwood 6 Jul, Bhaskar 28 Jun), and for those the honest answer is that the
+    year is unknown. The cost is that a re-minted pair where only ONE row has pub_iso is
+    left unmerged -- a visible duplicate, which is the conservative failure. The dangerous
+    failure is merging two distinct episodes, and that is now impossible on a year
+    mismatch.
+    """
+    sn = str(row.get("canonical_surname_upper") or row.get("surname") or "").strip().upper()
+    if not sn or sn in PLACEHOLDERS:
+        return None
+    pub = str(row.get("pub_iso") or "").strip()
+    if len(pub) >= 10 and pub[4] == "-" and pub[7] == "-":
+        return f"{sn}|{pub[:10]}"                 # year-aware: SURNAME|2026-10-03
+    dt = str(row.get("date") or "").strip()
+    if not dt or dt in PLACEHOLDERS:
+        return None
+    return f"{sn}|undated:{dt}"                   # year UNKNOWN; never equal to the above
+
+
+def is_re_minted_pair(a, b):
+    """True only for the asymmetric bound/unbound pair on one air date."""
+    ka, kb = air_date_key(a), air_date_key(b)
+    if not ka or ka != kb:
+        return False
+    va, vb = venue_ids(a), venue_ids(b)
+    return bool(va) != bool(vb)          # exactly one side bound
+
+
 def collapse(rows):
     """Collapse rows that share ANY identity. Returns (collapsed_rows, n_merged).
 
@@ -202,6 +280,17 @@ def collapse(rows):
         r = dict(r)
         ids = identities(r)
         hits = sorted({by_id[i] for i in ids if i in by_id})
+        if not hits:
+            # RE_MINTED_IDENTITY_V1_20261005 — the primary rule found nothing. Before
+            # accepting a new episode, check for the one case it structurally cannot see:
+            # the same episode under a re-minted, title-derived identity. Requires the
+            # bound/unbound asymmetry, so it can never merge two rows that merely share a
+            # guest and a date.
+            for gi, g in enumerate(groups):
+                if g is None or not is_re_minted_pair(g["row"], r):
+                    continue
+                hits = [gi]
+                break
         if not hits:
             by_id.update({i: len(groups) for i in ids})
             groups.append({"row": r, "ids": set(ids)})

@@ -15,6 +15,12 @@ on:
       # generator now.
       - 'gu_guest_from_posts_v1.py'
       - 'gu_guest_from_description_v1.py'
+      # IDENTITY_MODULE_DEPLOY_PATH_V1_20261005 — episode_identity_v1.py is imported BY
+      # fetch_and_push.py exactly as the guest resolvers are, and was the one import left
+      # off this list. It holds the collapse rule that decides whether two rows are one
+      # episode, so a fix to it is precisely the kind that must deploy on the push rather
+      # than wait up to 15 minutes on the cron while the feed publishes a duplicate.
+      - 'episode_identity_v1.py'
       - '.github/workflows/update.yml'
       - 'regression_tests_gu_titles.json'
   workflow_dispatch: {}       # allow manual run

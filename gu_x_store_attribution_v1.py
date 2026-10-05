@@ -111,6 +111,12 @@ def _looks_broken(guest):
     return not sn or len(sn) < 4
 
 
+def _now_iso():
+    """UTC, to the second, in the one format stale_metric_fields parses."""
+    import datetime as _d
+    return _d.datetime.now(_d.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
 def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
     import gu_x_attribution_v1 as ATT
     if not os.path.exists(STORE):
@@ -130,6 +136,7 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
             continue
         rows = json.load(open(path)) or []
         changed = 0
+        confirmed = 0
         for r in rows:
             if not isinstance(r, dict):
                 continue
@@ -162,6 +169,17 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
                 continue
             after = _fmt(views)
             if before == after and r.get("_x_status") == MARKER:
+                # X_MEASURED_STAMP_V1_20261005 — an unchanged value that this pass
+                # independently recomputed is a RE-VERIFICATION, and the staleness check in
+                # fetch_and_push.stale_metric_fields asks when a figure was last verified,
+                # not when it last changed. Without refreshing the stamp here, every row
+                # whose X views have plateaued (an old episode sitting at 1.3M) would age
+                # out and be marked a lower bound forever, which is the always-fires alarm
+                # nobody reads. Counted separately from `changed` so the run's report does
+                # not claim rewrites it did not make.
+                if apply:
+                    r["_x_measured_iso"] = _now_iso()
+                    confirmed += 1
                 continue
             print(f"  SET   {air} {guest:22s} {str(before):>9} -> {after:>9} "
                   f"({n} tweets{', guest repaired' if repaired else ''})")
@@ -169,6 +187,7 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
                 r["x_views"] = after
                 r["_x_status"] = MARKER
                 r["_x_store_tweets"] = n
+                r["_x_measured_iso"] = _now_iso()
                 if repaired:
                     # Persist the repaired name too: the health feed (and therefore the
                     # LaMetric guest frames) renders `guest`, so measuring O'Hanlon's row
@@ -183,12 +202,14 @@ def reattribute(apply=False, max_age_h=MAX_STORE_AGE_H):
                         r["surname"] = _sn
                         r["canonical_surname_upper"] = _sn.upper()
             changed += 1
-        if apply and changed:
+        if apply and (changed or confirmed):
             tmp = path + ".tmp"
             with open(tmp, "w") as fh:
                 json.dump(rows, fh, indent=2, ensure_ascii=False)
             os.replace(tmp, path)
-        print(f"[{MARKER}] {fname}: {changed} row(s) {'rewritten' if apply else 'would change'}")
+        print(f"[{MARKER}] {fname}: {changed} row(s) "
+              f"{'rewritten' if apply else 'would change'}"
+              f"{f', {confirmed} re-verified (value unchanged)' if confirmed else ''}")
         changed_total += changed
     return 0 if (changed_total or True) else 1
 

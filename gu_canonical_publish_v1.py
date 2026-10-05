@@ -2,7 +2,7 @@
 
 GU_CANONICAL_EPISODE_V1_2026_07_11
 
-Reads: /Users/afshin/going-underground-stats/videos.json (local M2 Pro clone)
+Reads: /Users/afshin/going-underground-stats/videos.json (the operator's local clone)
 Writes:
   1. /Users/afshin/going-underground-stats/canonical_episode_v1.json
   2. Patches videos.json in place to add canonical_guest_full_name on top-2 episodes
