@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-05T07:00:19.958858Z",
+  "generated_at": "2026-10-05T08:20:11.416584Z",
   "n": 1,
   "entries": [
     {
@@ -32,14 +32,14 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
-      "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "NO",
       "_yt_upload_iso": "2026-10-02T07:12:53Z",
       "_yt_premiere_iso": "2026-10-04T06:30:00Z",
       "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 3,
-      "_x_measured_iso": "2026-10-05T05:20:05Z"
+      "_x_measured_iso": "2026-10-05T07:20:04Z"
     }
   ],
   "source_feed": "videos_neworder.json",
