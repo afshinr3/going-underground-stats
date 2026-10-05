@@ -1,10 +1,10 @@
 {
-  "iso": "2026-10-05T19:20:07Z",
-  "last_updated": "2026-10-05T19:20:07Z",
+  "iso": "2026-10-05T22:27:46Z",
+  "last_updated": "2026-10-05T22:27:46Z",
   "episodes": [
     {
-      "guest": "Charles Finfrock",
-      "surname": "FINFROCK",
+      "guest": "Officer Chal",
+      "surname": "CHAL",
       "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
       "date": "5 Oct",
       "show": "GU",
@@ -13,19 +13,22 @@
       "canonical_video_id": "OCnT9QaiJnA",
       "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
       "canonical_episode_id_v2": "05f6cf72097cbf3f",
-      "pub_iso": "2026-10-05T03:00:17Z",
+      "pub_iso": "2026-10-05T14:23:40Z",
       "source_platform_ids": {
         "youtube": [
           "OCnT9QaiJnA"
         ]
       },
       "metrics": {
-        "rumble_views": "1.8K",
-        "yt_views": "52",
-        "x_views": "21.4K",
+        "rumble_views": null,
+        "yt_views": "383",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -46,12 +49,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "2.9K",
+        "rumble_views": null,
+        "yt_views": "3.0K",
         "x_views": "324.6K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -72,12 +75,15 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "2.2K",
-        "x_views": "372.5K",
-        "ig_likes": "1.3K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -98,12 +104,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
-        "yt_views": "34.1K",
+        "rumble_views": null,
+        "yt_views": "34.2K",
         "x_views": "869.0K",
-        "ig_likes": "2.0K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -124,12 +130,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "2.5K",
-        "x_views": "318.7K",
-        "ig_likes": "1.4K"
+        "x_views": "661.5K",
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -150,12 +156,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "6.2K",
-        "yt_views": "85.9K",
+        "rumble_views": null,
+        "yt_views": "86.1K",
         "x_views": "1.9M",
-        "ig_likes": "6.7K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -176,12 +182,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.4K",
+        "rumble_views": null,
         "yt_views": "2.5K",
         "x_views": "229.0K",
-        "ig_likes": "1.2K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -202,12 +208,34 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.5K",
+        "rumble_views": null,
         "yt_views": "2.3K",
-        "x_views": "112.5K",
-        "ig_likes": "760"
+        "x_views": "373.3K",
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
+      "x_views_stale": false
+    },
+    {
+      "guest": "Afshin Rattansi CHALLENGES Ex-",
+      "surname": "EX-",
+      "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
+      "date": "22 Aug",
+      "show": "GU",
+      "link": "",
+      "canonical_episode_id": "6f96fd46bb55",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
+      "metrics": {
+        "rumble_views": "?",
+        "yt_views": null,
+        "x_views": "373.3K",
+        "ig_likes": "?"
+      },
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -228,12 +256,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.6K",
+        "rumble_views": null,
         "yt_views": "3.6K",
         "x_views": "441.1K",
-        "ig_likes": "6.4K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -254,12 +282,15 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.5K",
+        "rumble_views": null,
         "yt_views": "5.1K",
-        "x_views": "166.9K",
-        "ig_likes": "8.7K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -280,12 +311,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.1K",
+        "rumble_views": null,
         "yt_views": "43.2K",
-        "x_views": "481.1K",
-        "ig_likes": "1.6K"
+        "x_views": "95.9K",
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -306,12 +337,15 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.1K",
+        "rumble_views": null,
         "yt_views": "8.2K",
-        "x_views": "674.7K",
-        "ig_likes": "3.5K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -332,12 +366,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "4.2K",
+        "rumble_views": null,
         "yt_views": "65.8K",
-        "x_views": "662.0K",
-        "ig_likes": "5.5K"
+        "x_views": "872.9K",
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -358,12 +392,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "16.3K",
+        "rumble_views": null,
         "yt_views": "3.4K",
         "x_views": "1.5M",
-        "ig_likes": "5.8K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -384,38 +418,34 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.7K",
+        "rumble_views": null,
         "yt_views": "2.0K",
         "x_views": "1.2M",
-        "ig_likes": "11.7K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
-      "guest": "Daniel Levy",
+      "guest": "Ex-Israeli Negotiator Daniel Levy",
       "surname": "LEVY",
       "title": "Iran: Israel is USING UP US Power as the Unipolar World Ends— Ex-Israeli Negotiator Daniel Levy",
       "date": "25 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
+      "link": "",
       "canonical_episode_id": "fcee2e52ba61",
-      "canonical_video_id": "IGlM3ZTHIY8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=IGlM3ZTHIY8",
-      "canonical_episode_id_v2": "4a0e3632a2a01b42",
-      "pub_iso": "2026-07-25T13:30:22Z",
-      "source_platform_ids": {
-        "youtube": [
-          "IGlM3ZTHIY8"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.2K",
-        "yt_views": "4.4K",
+        "rumble_views": null,
+        "yt_views": null,
         "x_views": "634.1K",
-        "ig_likes": "11.6K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -424,24 +454,20 @@
       "title": "Donald Trump KNOWS Iran Has WON the War and is Risking a GLOBAL DEPRESSION—Doug Bandow",
       "date": "20 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
+      "link": "",
       "canonical_episode_id": "dfc6afbc2824",
-      "canonical_video_id": "_SVI4UPDX7g",
-      "canonical_video_url": "https://www.youtube.com/watch?v=_SVI4UPDX7g",
-      "canonical_episode_id_v2": "3c04f341a327a14e",
-      "pub_iso": "2026-07-20T20:04:05Z",
-      "source_platform_ids": {
-        "youtube": [
-          "_SVI4UPDX7g"
-        ]
-      },
+      "canonical_video_id": null,
+      "canonical_video_url": null,
+      "canonical_episode_id_v2": null,
+      "pub_iso": null,
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.3K",
-        "yt_views": "3.1K",
+        "rumble_views": null,
+        "yt_views": null,
         "x_views": "816.0K",
-        "ig_likes": "3.3K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -450,76 +476,23 @@
       "title": "Col. Larry Wilkerson: The World Is SLEEPWALKING Into Potential NUCLEAR WAR Over Iran",
       "date": "18 Jul",
       "show": "GU",
-      "link": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "link": "",
       "canonical_episode_id": "40f99fc9eb05",
-      "canonical_video_id": "WlIY7-ovBd8",
-      "canonical_video_url": "https://www.youtube.com/watch?v=WlIY7-ovBd8",
+      "canonical_video_id": null,
+      "canonical_video_url": null,
       "canonical_episode_id_v2": null,
       "pub_iso": null,
-      "source_platform_ids": {
-        "youtube": [
-          "WlIY7-ovBd8"
-        ]
-      },
+      "source_platform_ids": {},
       "metrics": {
-        "rumble_views": "3.9K",
-        "yt_views": "4.4K",
-        "x_views": "1.1M",
-        "ig_likes": "4.6K"
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED"
+        },
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Dennis Fritz",
-      "surname": "FRITZ",
-      "title": "CMSGT. Dennis Fritz: Israel’s Influence Over Trump’s Pentagon Is EVEN WORSE Than Under Bush!",
-      "date": "13 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=grMo8SmAQpU",
-      "canonical_episode_id": "b8e8126f2b5e",
-      "canonical_video_id": "grMo8SmAQpU",
-      "canonical_video_url": "https://www.youtube.com/watch?v=grMo8SmAQpU",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {
-        "youtube": [
-          "grMo8SmAQpU"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.4K",
-        "yt_views": "1.1K",
-        "x_views": "450.4K",
-        "ig_likes": "605"
-      },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Tobias Ellwood",
-      "surname": "ELLWOOD",
-      "title": "Ex-UK Defence Minister Tobias Ellwood Says Trump Won NOTHING in Iran, SLAMS Netanyahu's Endless Wars",
-      "date": "6 Jul",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
-      "canonical_episode_id": "6ca7f65c75da",
-      "canonical_video_id": "SmH-aEMZyqg",
-      "canonical_video_url": "https://www.youtube.com/watch?v=SmH-aEMZyqg",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
-      "source_platform_ids": {
-        "youtube": [
-          "SmH-aEMZyqg"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "2.5K",
-        "yt_views": "1.5K",
-        "x_views": "721.6K",
-        "ig_likes": "1.5K"
-      },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -541,7 +514,7 @@
       },
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "14.7K",
+        "yt_views": "18.5K",
         "x_views": "303.6K",
         "ig_likes": "3.5K"
       },
@@ -593,7 +566,7 @@
       },
       "metrics": {
         "rumble_views": "937",
-        "yt_views": "738",
+        "yt_views": "742",
         "x_views": "940.1K",
         "ig_likes": "423"
       },
@@ -863,8 +836,8 @@
   ],
   "gu": [
     {
-      "guest": "Charles Finfrock",
-      "surname": "FINFROCK",
+      "guest": "Officer Chal",
+      "surname": "CHAL",
       "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
       "date": "5 Oct",
       "show": "GU",
@@ -873,19 +846,22 @@
       "canonical_video_id": "OCnT9QaiJnA",
       "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
       "canonical_episode_id_v2": "05f6cf72097cbf3f",
-      "pub_iso": "2026-10-05T03:00:17Z",
+      "pub_iso": "2026-10-05T14:23:40Z",
       "source_platform_ids": {
         "youtube": [
           "OCnT9QaiJnA"
         ]
       },
       "metrics": {
-        "rumble_views": "1.8K",
-        "yt_views": "52",
-        "x_views": "21.4K",
+        "rumble_views": null,
+        "yt_views": "383",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -906,12 +882,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "2.8K",
-        "yt_views": "2.9K",
+        "rumble_views": null,
+        "yt_views": "3.0K",
         "x_views": "324.6K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -932,12 +908,15 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "2.2K",
-        "x_views": "372.5K",
-        "ig_likes": "1.3K"
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -958,12 +937,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
-        "yt_views": "34.1K",
+        "rumble_views": null,
+        "yt_views": "34.2K",
         "x_views": "869.0K",
-        "ig_likes": "2.0K"
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -984,12 +963,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "3.3K",
+        "rumble_views": null,
         "yt_views": "2.5K",
-        "x_views": "318.7K",
-        "ig_likes": "1.4K"
+        "x_views": "661.5K",
+        "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-05T19:20:06Z",
+      "x_views_measured_iso": null,
       "x_views_stale": false
     }
   ],
@@ -1013,7 +992,7 @@
       },
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "14.7K",
+        "yt_views": "18.5K",
         "x_views": "303.6K",
         "ig_likes": "3.5K"
       },
@@ -1065,7 +1044,7 @@
       },
       "metrics": {
         "rumble_views": "937",
-        "yt_views": "738",
+        "yt_views": "742",
         "x_views": "940.1K",
         "ig_likes": "423"
       },

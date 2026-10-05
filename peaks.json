@@ -208,8 +208,8 @@
   "NO:Wilkerson": {
     "x_views": 303600,
     "x_views_at": "2026-10-05T15:33:10Z",
-    "yt_views": 18200,
-    "yt_views_at": "2026-10-05T22:07:55Z",
+    "yt_views": 18500,
+    "yt_views_at": "2026-10-05T22:27:45Z",
     "ig_likes": 47400,
     "ig_likes_at": "2026-05-12T11:56:38Z",
     "rumble_views": 1730,
@@ -556,8 +556,8 @@
   "GU:Hanke": {
     "x_views": 1700000,
     "x_views_at": "2026-06-29T03:57:11Z",
-    "yt_views": 2400,
-    "yt_views_at": "2026-06-17T16:44:18Z",
+    "yt_views": 2500,
+    "yt_views_at": "2026-10-05T22:27:45Z",
     "rumble_views": 10400,
     "rumble_views_at": "2026-07-26T12:28:46Z",
     "ig_likes": 1900,
@@ -930,8 +930,8 @@
     "yt_views_at": "2026-09-30T09:22:40Z"
   },
   "GU:Carlson": {
-    "yt_views": 85800,
-    "yt_views_at": "2026-10-05T15:33:10Z",
+    "yt_views": 86100,
+    "yt_views_at": "2026-10-05T22:27:45Z",
     "x_views": 2500000,
     "x_views_at": "2026-10-01T11:43:23Z",
     "rumble_views": 6200,
@@ -974,8 +974,8 @@
     "x_views_at": "2026-09-26T05:01:37Z",
     "rumble_views": 188000,
     "rumble_views_at": "2026-09-19T16:46:41Z",
-    "yt_views": 741,
-    "yt_views_at": "2026-10-05T20:57:12Z",
+    "yt_views": 742,
+    "yt_views_at": "2026-10-05T22:27:45Z",
     "ig_likes": 423,
     "ig_likes_at": "2026-10-01T05:14:54Z"
   },
@@ -984,8 +984,8 @@
     "x_views_at": "2026-10-01T11:43:23Z",
     "rumble_views": 3300,
     "rumble_views_at": "2026-10-05T07:00:18Z",
-    "yt_views": 34100,
-    "yt_views_at": "2026-10-05T01:22:31Z",
+    "yt_views": 34200,
+    "yt_views_at": "2026-10-05T22:27:45Z",
     "ig_likes": 2000,
     "ig_likes_at": "2026-09-30T09:22:40Z"
   },
@@ -994,8 +994,8 @@
     "rumble_views_at": "2026-10-05T15:33:10Z",
     "x_views": 324600,
     "x_views_at": "2026-10-05T15:33:10Z",
-    "yt_views": 2900,
-    "yt_views_at": "2026-10-05T15:33:10Z"
+    "yt_views": 3000,
+    "yt_views_at": "2026-10-05T22:27:45Z"
   },
   "GU:Finfrock": {
     "x_views": 21400,
@@ -1005,5 +1005,8 @@
     "rumble_views": 1600,
     "rumble_views_at": "2026-10-05T15:33:10Z"
   },
-  "GU:Chal": {}
+  "GU:Chal": {
+    "yt_views": 383,
+    "yt_views_at": "2026-10-05T22:27:45Z"
+  }
 }
