@@ -91,6 +91,17 @@ FEED_PAIRS = (
 # The only field whose value carries no information about feed CONTENT.
 NON_SEMANTIC_TOP_LEVEL = ("generated_at",)
 
+# NON_SEMANTIC_PER_RECORD_V1_20261005 — the same idea one level down, and it exists
+# because X_MEASURED_STAMP_V1 introduced a field that breaks this check by design.
+# `_x_measured_iso` records WHEN x_views was last verified, and the store-attribution
+# bridge refreshes it hourly even when the value is unchanged. So a regenerated canonical
+# record always carries a NEWER stamp than the published snapshot, and this verifier
+# reported MISMATCH on it every single run — a permanent red that says nothing about
+# whether the feeds agree on CONTENT. An alarm that always fires is one nobody reads, and
+# this verifier is too important to leave in that state. The stamp is excluded from the
+# COMPARISON only; it stays in the data, where it is the whole point.
+NON_SEMANTIC_PER_RECORD = ("_x_measured_iso",)
+
 EXIT_CONSISTENT = 0
 EXIT_MISMATCH = 1
 EXIT_UNVERIFIABLE = 2
@@ -296,6 +307,8 @@ def compare_feed(feed, expected, live, canonical_ids, today, stale):
             continue
         exp_entry = exp_by_id[rid]
         for key in sorted(set(exp_entry) | set(live_entry)):
+            if key in NON_SEMANTIC_PER_RECORD:
+                continue
             if exp_entry.get(key) != live_entry.get(key):
                 findings.append(_finding("field", feed, rid, key))
 

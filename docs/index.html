@@ -406,8 +406,13 @@ function healthToEntries(h, showCode) {
         ig_likes:     ep.metrics && ep.metrics.ig_likes,
         // X_STALE_IS_A_LOWER_BOUND_V1_20261005 — provenance travels beside the value,
         // never inside it, so x_views keeps the type every other consumer expects.
-        x_views_stale:        ep.metrics && ep.metrics.x_views_stale,
-        x_views_measured_iso: ep.metrics && ep.metrics.x_views_measured_iso,
+        // Read from the EPISODE, not from metrics: metrics is the platform set and
+        // provenance is not a platform (PROVENANCE_IS_NOT_A_PLATFORM_V1_20261005).
+        // The `ep.metrics &&` fallbacks keep a feed published before that move working.
+        x_views_stale:        ep.x_views_stale        !== undefined ? ep.x_views_stale
+                              : (ep.metrics && ep.metrics.x_views_stale),
+        x_views_measured_iso: ep.x_views_measured_iso !== undefined ? ep.x_views_measured_iso
+                              : (ep.metrics && ep.metrics.x_views_measured_iso),
     }));
 }
 async function fetchAll() {
