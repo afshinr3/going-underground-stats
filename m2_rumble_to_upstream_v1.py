@@ -304,6 +304,19 @@ def _clean_guest_surname(title):
 # operator asserting a fact, not the parser inventing one.
 RUMBLE_GUEST_OVERRIDES = {
     "v7e5t4c": ("Branko Milanovic", "Milanovic"),
+    # 2026-10-05, operator-supplied. Rumble-first, YouTube had not published it hours later.
+    # Title: "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syr..."
+    # -- names the guest's ROLE, not their name, and the only surname in it is the HOST's, so
+    # _clean_guest_surname returns nothing and the injector correctly refuses to guess. Same
+    # class as the Milanovic entry above.
+    #
+    # The SURNAME is the operator's assertion. The given name is NOT recorded here because
+    # nothing reachable from this repo confirms it: the Rumble page refuses datacenter IPs,
+    # the YouTube feed does not carry the episode, and this table exists precisely so a name
+    # is asserted rather than invented. Completing it to the full name is a one-word edit
+    # the operator can make; until then the feed shows the surname, which is what the Tidbyt
+    # and LaMetric frames render anyway.
+    "v7gdd92": ("Finfrock", "Finfrock"),
 }
 
 
