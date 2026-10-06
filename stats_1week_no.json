@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-06T16:20:07.498554Z",
+  "generated_at": "2026-10-06T16:22:49.073729Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "1.7K",
       "x_views": "1.1M",
       "date": "4 Oct",
-      "yt_views": "21.9K",
+      "yt_views": "23.0K",
       "ig_likes": "3.5K",
       "canonical_guest_full_name": "Lawrence Wilkerson",
       "canonical_surname_upper": "WILKERSON",
@@ -32,7 +32,7 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
       "show": "NO",
       "_yt_upload_iso": "2026-10-02T07:12:53Z",
       "_yt_premiere_iso": "2026-10-04T06:30:00Z",
