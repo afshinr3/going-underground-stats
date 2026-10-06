@@ -5,7 +5,7 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-06T18:20:07.135880Z",
+  "generated_at": "2026-10-06T19:20:07.602439Z",
   "n": 2,
   "entries": [
     {
@@ -31,12 +31,12 @@
         ]
       },
       "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-      "yt_views": "743",
+      "yt_views": "767",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "guest_override_applied_v1": "GUEST_OVERRIDE_REAPPLY_V1_20261005",
       "rumble_vid": "v7gdd92",
       "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-06T17:20:06Z"
+      "_x_measured_iso": "2026-10-06T18:20:07Z"
     },
     {
       "guest": "Matthew Hoh",
@@ -61,13 +61,13 @@
         ]
       },
       "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-      "yt_views": "3.1K",
+      "yt_views": "3.2K",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": "https://rumble.com/v7g9qai-significant-possibility-of-the-use-of-nuclear-weapons-against-iran-ex-state.html",
       "rumble_vid": "v7g9qai",
       "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-06T17:20:06Z",
+      "_x_measured_iso": "2026-10-06T18:20:07Z",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
