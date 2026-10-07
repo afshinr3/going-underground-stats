@@ -1,15 +1,4 @@
 {
-  "updated": "2026-10-07T06:53:43Z",
-  "drops": [
-    {
-      "ts": "2026-10-07T06:53:43Z",
-      "show": "NO",
-      "guest": "Lieven",
-      "platform": "YT",
-      "peak": 1100,
-      "peak_at": "2026-10-06T21:24:26Z",
-      "current": 747,
-      "drop_pct": 32.1
-    }
-  ]
+  "updated": "2026-10-07T10:53:25Z",
+  "drops": []
 }
