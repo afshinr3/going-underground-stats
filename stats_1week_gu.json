@@ -5,8 +5,8 @@
   "window_end": "2026-10-05",
   "window_start_mon": "2026-10-02",
   "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-08T15:20:05.310443Z",
-  "n": 2,
+  "generated_at": "2026-10-08T16:20:04.597263Z",
+  "n": 3,
   "entries": [
     {
       "guest": "Charles Finfrock",
@@ -14,61 +14,41 @@
       "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
       "date": "5 Oct",
       "rumble_views": "2.5K",
-      "x_views": "167.3K",
-      "ig_likes": "2.3K",
+      "x_views": null,
+      "ig_likes": null,
       "show": "GU",
       "canonical_guest_full_name": "Charles Finfrock",
       "canonical_surname_upper": "FINFROCK",
       "canonical_episode_id": "99a60854f089",
-      "canonical_video_id": "OCnT9QaiJnA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "pub_iso": "2026-10-05T14:23:40Z",
-      "canonical_episode_id_v2": "05f6cf72097cbf3f",
-      "link": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "source_platform_ids": {
-        "youtube": [
-          "OCnT9QaiJnA"
-        ]
-      },
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-      "yt_views": "965",
-      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "guest_override_applied_v1": "GUEST_OVERRIDE_REAPPLY_V1_20261005",
-      "rumble_vid": "v7gdd92",
-      "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-08T14:20:06Z"
+      "rumble_vid": "v7gdd92"
     },
     {
       "guest": "Matthew Hoh",
       "surname": "Hoh",
-      "title": "Significant Possibility of NUKES Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
+      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
       "rumble_views": "3.0K",
-      "x_views": "334.7K",
-      "ig_likes": null,
       "show": "GU",
       "canonical_guest_full_name": "Matthew Hoh",
-      "canonical_surname_upper": "HOH",
-      "canonical_episode_id": "a5df3acf1214",
-      "canonical_video_id": "doTi3weQTaM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "pub_iso": "2026-10-03T11:55:31Z",
-      "canonical_episode_id_v2": "ae10a949db2aa421",
-      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-      "yt_views": "3.2K",
+      "pub_iso": "2026-10-03T01:00:29Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": "https://rumble.com/v7g9qai-significant-possibility-of-the-use-of-nuclear-weapons-against-iran-ex-state.html",
-      "rumble_vid": "v7g9qai",
-      "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-08T14:20:06Z",
-      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
+      "rumble_vid": "v7g9qai"
+    },
+    {
+      "guest": "Ex-State Dept. Official Matthew Hoh",
+      "surname": "Hoh",
+      "title": "Significant Possibility of NUKES Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "rumble_views": null,
+      "x_views": "336.8K",
+      "ig_likes": null,
+      "show": "GU",
+      "canonical_guest_full_name": "Ex-State Dept. Official Matthew Hoh",
+      "canonical_surname_upper": "HOH",
+      "canonical_episode_id": "a5df3acf1214"
     }
   ],
   "source_feed": "videos.json",
