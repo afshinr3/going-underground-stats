@@ -1,15 +1,4 @@
 {
-  "updated": "2026-10-08T18:24:58Z",
-  "drops": [
-    {
-      "ts": "2026-10-08T18:24:58Z",
-      "show": "GU",
-      "guest": "Mat\u00e9",
-      "platform": "X",
-      "peak": 873300,
-      "peak_at": "2026-10-08T16:16:15Z",
-      "current": 665100,
-      "drop_pct": 23.8
-    }
-  ]
+  "updated": "2026-10-08T23:17:35Z",
+  "drops": []
 }
