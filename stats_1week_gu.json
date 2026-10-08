@@ -1,74 +1,13 @@
 {
   "show": "GU",
   "window": "fri_to_mon_broadcast_week",
-  "window_start": "2026-10-02",
-  "window_end": "2026-10-05",
-  "window_start_mon": "2026-10-02",
-  "window_end_sun": "2026-10-05",
-  "generated_at": "2026-10-08T18:24:58.264471Z",
-  "n": 2,
-  "entries": [
-    {
-      "guest": "Charles Finfrock",
-      "surname": "Finfrock",
-      "title": "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, False Flags & More",
-      "date": "5 Oct",
-      "rumble_views": "2.5K",
-      "x_views": "169.4K",
-      "ig_likes": null,
-      "show": "GU",
-      "canonical_guest_full_name": "Charles Finfrock",
-      "canonical_surname_upper": "FINFROCK",
-      "canonical_episode_id": "99a60854f089",
-      "guest_override_applied_v1": "GUEST_OVERRIDE_REAPPLY_V1_20261005",
-      "rumble_vid": "v7gdd92",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-08T17:20:08Z",
-      "canonical_video_id": "OCnT9QaiJnA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "link": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "source_platform_ids": {
-        "youtube": [
-          "OCnT9QaiJnA"
-        ]
-      },
-      "yt_views": "969",
-      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-      "pub_iso": "2026-10-05T14:23:40Z",
-      "canonical_episode_id_v2": "05f6cf72097cbf3f"
-    },
-    {
-      "guest": "Matthew Hoh",
-      "surname": "Hoh",
-      "title": "Significant Possibility of NUKES Being Used Against Iran\u2014 Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "rumble_views": "3.0K",
-      "show": "GU",
-      "canonical_guest_full_name": "Matthew Hoh",
-      "pub_iso": "2026-10-03T11:55:31Z",
-      "rumble_only_injected": true,
-      "rumble_prov": "m2_rumble_only_v3",
-      "rumble_url": "https://rumble.com/v7g9qai-significant-possibility-of-the-use-of-nuclear-weapons-against-iran-ex-state.html",
-      "rumble_vid": "v7g9qai",
-      "x_views": "336.8K",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "_x_store_tweets": 11,
-      "_x_measured_iso": "2026-10-08T17:20:08Z",
-      "canonical_video_id": "doTi3weQTaM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": "ae10a949db2aa421",
-      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
-      "yt_views": "3.2K",
-      "canonical_surname_upper": "HOH",
-      "canonical_episode_id": "a5df3acf1214"
-    }
-  ],
+  "window_start": "2026-10-09",
+  "window_end": "2026-10-12",
+  "window_start_mon": "2026-10-09",
+  "window_end_sun": "2026-10-12",
+  "generated_at": "2026-10-08T20:20:05.672560Z",
+  "n": 0,
+  "entries": [],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
