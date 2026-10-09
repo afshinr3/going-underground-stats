@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-09T10:20:06Z",
-  "last_updated": "2026-10-09T10:20:06Z",
+  "iso": "2026-10-09T10:26:12Z",
+  "last_updated": "2026-10-09T10:26:12Z",
   "episodes": [
     {
       "guest": "Charles Finfrock",
@@ -12,8 +12,8 @@
       "canonical_episode_id": "99a60854f089",
       "canonical_video_id": "OCnT9QaiJnA",
       "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "05f6cf72097cbf3f",
+      "pub_iso": "2026-10-05T14:23:40Z",
       "source_platform_ids": {
         "youtube": [
           "OCnT9QaiJnA"
@@ -21,37 +21,15 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "998",
+        "yt_views": "1.0K",
         "x_views": "170.7K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
       "guest": "Matthew Hoh",
-      "surname": "Hoh",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": null,
-        "x_views": "338.6K",
-        "ig_likes": null
-      },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Ex-State Dept. Official Matthew Hoh",
       "surname": "HOH",
       "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
@@ -60,17 +38,46 @@
       "canonical_episode_id": "a5df3acf1214",
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "ae10a949db2aa421",
+      "pub_iso": "2026-10-03T11:55:31Z",
       "source_platform_ids": {
         "youtube": [
           "doTi3weQTaM"
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "3.3K",
         "x_views": "336.8K",
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
+      "x_views_stale": false
+    },
+    {
+      "guest": "Robert Harward",
+      "surname": "HARWARD",
+      "title": "Americans Pay $2 BILLION A DAY for Iran War: Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+      "date": "28 Sep",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
+      "canonical_episode_id": "975e68e09e66",
+      "canonical_video_id": "YWGJXtAjjHA",
+      "canonical_video_url": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
+      "canonical_episode_id_v2": "d2395c6e9178da25",
+      "pub_iso": "2026-09-28T10:19:58Z",
+      "source_platform_ids": {
+        "youtube": [
+          "YWGJXtAjjHA"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "2.2K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       },
       "x_views_measured_iso": null,
@@ -86,8 +93,8 @@
       "canonical_episode_id": "24d1b088669d",
       "canonical_video_id": "-SUo0l498vA",
       "canonical_video_url": "https://www.youtube.com/watch?v=-SUo0l498vA",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "0419df870035b57a",
+      "pub_iso": "2026-09-26T02:34:10Z",
       "source_platform_ids": {
         "youtube": [
           "-SUo0l498vA"
@@ -99,7 +106,7 @@
         "x_views": "874.2K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -112,8 +119,8 @@
       "canonical_episode_id": "ad07f4c2e03c",
       "canonical_video_id": "pdpZyOUSWcs",
       "canonical_video_url": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "66ac525813ac9b56",
+      "pub_iso": "2026-09-21T10:19:37Z",
       "source_platform_ids": {
         "youtube": [
           "pdpZyOUSWcs"
@@ -125,7 +132,7 @@
         "x_views": "322.5K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -138,8 +145,8 @@
       "canonical_episode_id": "692029c34641",
       "canonical_video_id": "JUHl-tQRN7g",
       "canonical_video_url": "https://www.youtube.com/watch?v=JUHl-tQRN7g",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "f9bdbb4afb5f669d",
+      "pub_iso": "2026-09-11T22:32:20Z",
       "source_platform_ids": {
         "youtube": [
           "JUHl-tQRN7g"
@@ -151,7 +158,7 @@
         "x_views": "2.0M",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -164,8 +171,8 @@
       "canonical_episode_id": "f9189e08f1d7",
       "canonical_video_id": "XSlrLlk8WrM",
       "canonical_video_url": "https://www.youtube.com/watch?v=XSlrLlk8WrM",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "028a119cb410b046",
+      "pub_iso": "2026-08-25T22:45:28Z",
       "source_platform_ids": {
         "youtube": [
           "XSlrLlk8WrM"
@@ -177,12 +184,12 @@
         "x_views": "231.3K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
       "guest": "Michael O’Hanlon",
-      "surname": "HANLON",
+      "surname": "O’HANLON",
       "title": "Afshin Rattansi CHALLENGES Ex-CIA Advisor on the Legacy of America’s Wars: Success or Failure?",
       "date": "22 Aug",
       "show": "GU",
@@ -190,8 +197,8 @@
       "canonical_episode_id": "6f96fd46bb55",
       "canonical_video_id": "Eu0Phb99ipg",
       "canonical_video_url": "https://www.youtube.com/watch?v=Eu0Phb99ipg",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "20fc52f5bc97c24f",
+      "pub_iso": "2026-08-22T11:55:34Z",
       "source_platform_ids": {
         "youtube": [
           "Eu0Phb99ipg"
@@ -203,7 +210,7 @@
         "x_views": "112.5K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -216,8 +223,8 @@
       "canonical_episode_id": "93ad76c313d1",
       "canonical_video_id": "w7KXuXugzlA",
       "canonical_video_url": "https://www.youtube.com/watch?v=w7KXuXugzlA",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "6f9f42c60330bac0",
+      "pub_iso": "2026-08-17T10:43:18Z",
       "source_platform_ids": {
         "youtube": [
           "w7KXuXugzlA"
@@ -229,7 +236,36 @@
         "x_views": "444.6K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
+      "x_views_stale": false
+    },
+    {
+      "guest": "Branko Milanović",
+      "surname": "MILANOVIĆ",
+      "title": "Ex-World Bank Lead Economist Says WW3 is Being Made More Likely by Current State of Capitalism",
+      "date": "15 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id": "fd9388b8783d",
+      "canonical_video_id": "eyfC-IBPTOM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=eyfC-IBPTOM",
+      "canonical_episode_id_v2": "833ef9680be61562",
+      "pub_iso": "2026-08-15T16:00:16Z",
+      "source_platform_ids": {
+        "youtube": [
+          "eyfC-IBPTOM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "5.1K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -242,8 +278,8 @@
       "canonical_episode_id": "e664d5dd55a6",
       "canonical_video_id": "TuFMmjBU3Vw",
       "canonical_video_url": "https://www.youtube.com/watch?v=TuFMmjBU3Vw",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "dd4cbedfd850395d",
+      "pub_iso": "2026-08-10T13:10:52Z",
       "source_platform_ids": {
         "youtube": [
           "TuFMmjBU3Vw"
@@ -255,7 +291,36 @@
         "x_views": "481.2K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
+      "x_views_stale": false
+    },
+    {
+      "guest": "Hasan Ünal",
+      "surname": "ÜNAL",
+      "title": "Professor Hasan Ünal: Iran’s Victory Marked a STRATEGIC DEFEAT for Israel and the United States",
+      "date": "7 Aug",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id": "c5f74b00a6fa",
+      "canonical_video_id": "6nISoLoPlO4",
+      "canonical_video_url": "https://www.youtube.com/watch?v=6nISoLoPlO4",
+      "canonical_episode_id_v2": "fb275712144dd36d",
+      "pub_iso": "2026-08-07T12:13:55Z",
+      "source_platform_ids": {
+        "youtube": [
+          "6nISoLoPlO4"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "8.2K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
       "x_views_stale": false
     },
     {
@@ -268,8 +333,8 @@
       "canonical_episode_id": "0d30042528a6",
       "canonical_video_id": "PUw_r6rI5PY",
       "canonical_video_url": "https://www.youtube.com/watch?v=PUw_r6rI5PY",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "5e4fb101123620bc",
+      "pub_iso": "2026-08-03T22:18:20Z",
       "source_platform_ids": {
         "youtube": [
           "PUw_r6rI5PY"
@@ -281,7 +346,7 @@
         "x_views": "665.7K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -294,8 +359,8 @@
       "canonical_episode_id": "c133da20813e",
       "canonical_video_id": "N_ysv6Gh9Ac",
       "canonical_video_url": "https://www.youtube.com/watch?v=N_ysv6Gh9Ac",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "7edf3af7b8798e44",
+      "pub_iso": "2026-08-01T21:22:19Z",
       "source_platform_ids": {
         "youtube": [
           "N_ysv6Gh9Ac"
@@ -307,7 +372,7 @@
         "x_views": "1.6M",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -320,8 +385,8 @@
       "canonical_episode_id": "349527d06a1f",
       "canonical_video_id": "pzEU7fNiXgc",
       "canonical_video_url": "https://www.youtube.com/watch?v=pzEU7fNiXgc",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "86e2d81a08f45d8e",
+      "pub_iso": "2026-07-27T15:50:41Z",
       "source_platform_ids": {
         "youtube": [
           "pzEU7fNiXgc"
@@ -333,7 +398,7 @@
         "x_views": "1.2M",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -359,7 +424,7 @@
         "x_views": "634.1K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -385,7 +450,7 @@
         "x_views": "818.5K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -411,7 +476,7 @@
         "x_views": "1.1M",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -437,7 +502,7 @@
         "x_views": "1.2M",
         "ig_likes": "3.5K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -463,7 +528,7 @@
         "x_views": "731.0K",
         "ig_likes": "1.6K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -485,11 +550,11 @@
       },
       "metrics": {
         "rumble_views": "1.0K",
-        "yt_views": "754",
+        "yt_views": "1.1K",
         "x_views": "940.4K",
         "ig_likes": "423"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -510,12 +575,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.2K",
         "yt_views": "4.8K",
         "x_views": "1.3M",
         "ig_likes": "1.1K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -541,7 +606,7 @@
         "x_views": "483.1K",
         "ig_likes": "368"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -567,7 +632,7 @@
         "x_views": "359.3K",
         "ig_likes": "421"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -593,7 +658,7 @@
         "x_views": "1.3M",
         "ig_likes": "1.8K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -619,7 +684,7 @@
         "x_views": "1.3M",
         "ig_likes": "377"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -645,7 +710,7 @@
         "x_views": "443.3K",
         "ig_likes": "1.0K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -671,7 +736,7 @@
         "x_views": "941.5K",
         "ig_likes": "387"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -697,7 +762,7 @@
         "x_views": "812.4K",
         "ig_likes": "291"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -749,7 +814,7 @@
         "x_views": "383.0K",
         "ig_likes": "3.1K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     }
   ],
@@ -764,8 +829,8 @@
       "canonical_episode_id": "99a60854f089",
       "canonical_video_id": "OCnT9QaiJnA",
       "canonical_video_url": "https://www.youtube.com/watch?v=OCnT9QaiJnA",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "05f6cf72097cbf3f",
+      "pub_iso": "2026-10-05T14:23:40Z",
       "source_platform_ids": {
         "youtube": [
           "OCnT9QaiJnA"
@@ -773,37 +838,15 @@
       },
       "metrics": {
         "rumble_views": "2.5K",
-        "yt_views": "998",
+        "yt_views": "1.0K",
         "x_views": "170.7K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
       "guest": "Matthew Hoh",
-      "surname": "Hoh",
-      "title": "Significant Possibility of NUCLEAR WEAPONS Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-03T01:00:29Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "3.1K",
-        "yt_views": null,
-        "x_views": "338.6K",
-        "ig_likes": null
-      },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Ex-State Dept. Official Matthew Hoh",
       "surname": "HOH",
       "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
       "date": "3 Oct",
@@ -812,17 +855,46 @@
       "canonical_episode_id": "a5df3acf1214",
       "canonical_video_id": "doTi3weQTaM",
       "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "ae10a949db2aa421",
+      "pub_iso": "2026-10-03T11:55:31Z",
       "source_platform_ids": {
         "youtube": [
           "doTi3weQTaM"
         ]
       },
       "metrics": {
-        "rumble_views": null,
+        "rumble_views": "3.1K",
         "yt_views": "3.3K",
         "x_views": "336.8K",
+        "ig_likes": null
+      },
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
+      "x_views_stale": false
+    },
+    {
+      "guest": "Robert Harward",
+      "surname": "HARWARD",
+      "title": "Americans Pay $2 BILLION A DAY for Iran War: Afshin Rattansi Challenges Ex-Deputy CENTCOM Commander",
+      "date": "28 Sep",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
+      "canonical_episode_id": "975e68e09e66",
+      "canonical_video_id": "YWGJXtAjjHA",
+      "canonical_video_url": "https://www.youtube.com/watch?v=YWGJXtAjjHA",
+      "canonical_episode_id_v2": "d2395c6e9178da25",
+      "pub_iso": "2026-09-28T10:19:58Z",
+      "source_platform_ids": {
+        "youtube": [
+          "YWGJXtAjjHA"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "2.2K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
         "ig_likes": null
       },
       "x_views_measured_iso": null,
@@ -838,8 +910,8 @@
       "canonical_episode_id": "24d1b088669d",
       "canonical_video_id": "-SUo0l498vA",
       "canonical_video_url": "https://www.youtube.com/watch?v=-SUo0l498vA",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "0419df870035b57a",
+      "pub_iso": "2026-09-26T02:34:10Z",
       "source_platform_ids": {
         "youtube": [
           "-SUo0l498vA"
@@ -851,7 +923,7 @@
         "x_views": "874.2K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -864,8 +936,8 @@
       "canonical_episode_id": "ad07f4c2e03c",
       "canonical_video_id": "pdpZyOUSWcs",
       "canonical_video_url": "https://www.youtube.com/watch?v=pdpZyOUSWcs",
-      "canonical_episode_id_v2": null,
-      "pub_iso": null,
+      "canonical_episode_id_v2": "66ac525813ac9b56",
+      "pub_iso": "2026-09-21T10:19:37Z",
       "source_platform_ids": {
         "youtube": [
           "pdpZyOUSWcs"
@@ -877,7 +949,7 @@
         "x_views": "322.5K",
         "ig_likes": null
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     }
   ],
@@ -905,7 +977,7 @@
         "x_views": "1.2M",
         "ig_likes": "3.5K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -931,7 +1003,7 @@
         "x_views": "731.0K",
         "ig_likes": "1.6K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -953,11 +1025,11 @@
       },
       "metrics": {
         "rumble_views": "1.0K",
-        "yt_views": "754",
+        "yt_views": "1.1K",
         "x_views": "940.4K",
         "ig_likes": "423"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -978,12 +1050,12 @@
         ]
       },
       "metrics": {
-        "rumble_views": "1.3K",
+        "rumble_views": "1.2K",
         "yt_views": "4.8K",
         "x_views": "1.3M",
         "ig_likes": "1.1K"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     },
     {
@@ -1009,7 +1081,7 @@
         "x_views": "483.1K",
         "ig_likes": "368"
       },
-      "x_views_measured_iso": "2026-10-09T10:20:04Z",
+      "x_views_measured_iso": "2026-10-09T09:20:04Z",
       "x_views_stale": false
     }
   ]
