@@ -10,6 +10,9 @@ from datetime import datetime, timedelta, timezone
 REPO = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(REPO, "followers_history.json")
 ACCOUNTS = ["afshinrattansi", "GUnderground_TV"]
+# IG count is scraped on the M2 Pro (RumbleMonitor/ig_follower_count_v1.py); only
+# successful (ok) readings are recorded, one per day.
+IG_COUNT = os.path.expanduser("~/RumbleMonitor/ig_follower_count.json")
 DAYS = 35
 
 
@@ -48,7 +51,22 @@ def main():
             old = json.load(open(OUT))
         except Exception:
             pass
-    if old and old.get("days") == data["days"] and old.get("accounts") == data["accounts"]:
+    ig = dict((old or {}).get("instagram") or {"handle": "afshinrattansi", "history": {}})
+    ig["history"] = dict(ig.get("history") or {})
+    try:
+        cur = json.load(open(IG_COUNT))
+        if isinstance(cur.get("followers"), int) and cur["followers"] > 0:
+            asof = datetime.fromtimestamp(cur["ts"], timezone.utc)
+            if not ig.get("asof") or asof.strftime("%Y-%m-%dT%H:%M:%SZ") >= ig["asof"]:
+                ig["count"] = cur["followers"]
+                ig["asof"] = asof.strftime("%Y-%m-%dT%H:%M:%SZ")
+                ig["history"][asof.strftime("%Y-%m-%d")] = cur["followers"]
+    except Exception as e:
+        print("ig read failed:", e)
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=DAYS)).strftime("%Y-%m-%d")
+    ig["history"] = {d: c for d, c in sorted(ig["history"].items()) if d >= cutoff}
+    data["instagram"] = ig
+    if old and all(old.get(k) == data[k] for k in ("days", "accounts", "instagram")):
         print("unchanged"); return
     json.dump(data, open(OUT, "w"), indent=1)
     print(f"wrote {len(days)} days {days[0] if days else '-'}..{days[-1] if days else '-'}")
