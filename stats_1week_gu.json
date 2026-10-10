@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-10T19:20:04.076764Z",
+  "generated_at": "2026-10-10T20:43:31.571552Z",
   "n": 1,
   "entries": [
     {
@@ -38,7 +38,8 @@
       "yt_views": "96",
       "canonical_surname_upper": "HRAFNSSON",
       "canonical_episode_id": "6ad4fc65c296",
-      "date_prov": "rumble_scoped_time_only"
+      "date_prov": "rumble_scoped_time_only",
+      "ig_likes": "2.4K"
     }
   ],
   "source_feed": "videos.json",
