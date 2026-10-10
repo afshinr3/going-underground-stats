@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-10T15:42:47.679538Z",
+  "generated_at": "2026-10-10T15:45:13.459099Z",
   "n": 1,
   "entries": [
     {
@@ -20,7 +20,12 @@
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": "https://rumble.com/v7gm5jc-20-years-of-wikileaks-the-biggest-revelations-the-state-of-press-freedom-ju.html",
-      "rumble_vid": "v7gm5jc"
+      "rumble_vid": "v7gm5jc",
+      "x_views": "5.5K",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_store_tweets": 1,
+      "_x_measured_iso": "2026-10-10T15:42:47Z",
+      "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918"
     }
   ],
   "source_feed": "videos.json",
