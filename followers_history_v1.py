@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """FOLLOWERS_HISTORY_V1_20261010 — build followers_history.json (one point per
 day, last 35 days) from the git history of followers.json. Read by the Niblet
-"X Followers" app via raw.githubusercontent.com. Runs hourly from cron after
+"X Followers" app via raw.githubusercontent.com. Runs every 3h from cron after
 the M2 bridge commit; commits only when the file changes.
 """
 import json, os, subprocess, sys
@@ -54,7 +54,8 @@ def main():
     print(f"wrote {len(days)} days {days[0] if days else '-'}..{days[-1] if days else '-'}")
     if "--commit" in sys.argv:
         git("add", "followers_history.json")
-        git("commit", "-m", "followers_history: daily X follower history (30d)")
+        # pathspec commit: never sweeps in anything else that happens to be staged
+        git("commit", "-m", "followers_history: daily X follower history (30d)", "--", "followers_history.json")
         git("push", "-q", "origin", "HEAD")
         print("pushed")
 
