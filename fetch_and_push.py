@@ -3833,6 +3833,9 @@ TIDBYT_EPS_PER_SHOW = 20
 
 
 def push_to_tidbyt():
+    # TIDBYT_OFF_NIBLET_V1_20261010: the Tidbyts now run Niblet firmware; api.tidbyt.com pushes reach
+    # nothing. Niblet apps/alerts live in ~/niblet-notify on the M2 Pro.
+    return 0
     """Build the animation from BOTH shows and push to both Tidbyts."""
     # (label, total_str, show_code) in display order: each show's episodes behind its header.
     sorted_eps = []
