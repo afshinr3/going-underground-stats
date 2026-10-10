@@ -5,9 +5,24 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-10T14:36:03.581466Z",
-  "n": 0,
-  "entries": [],
+  "generated_at": "2026-10-10T15:42:47.679538Z",
+  "n": 1,
+  "entries": [
+    {
+      "guest": "Kristinn Hrafnsson",
+      "surname": "Hrafnsson",
+      "title": "20 Years of WikiLeaks: The Biggest Revelations, The State of Press Freedom, Julian Assange",
+      "date": "10 Oct",
+      "rumble_views": "1.4K",
+      "show": "GU",
+      "canonical_guest_full_name": "Kristinn Hrafnsson",
+      "pub_iso": "2026-10-10T01:00:05Z",
+      "rumble_only_injected": true,
+      "rumble_prov": "m2_rumble_only_v3",
+      "rumble_url": "https://rumble.com/v7gm5jc-20-years-of-wikileaks-the-biggest-revelations-the-state-of-press-freedom-ju.html",
+      "rumble_vid": "v7gm5jc"
+    }
+  ],
   "source_feed": "videos.json",
   "rejected_count": 0,
   "rejected_sample": [],
