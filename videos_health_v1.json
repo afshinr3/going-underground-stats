@@ -1,23 +1,27 @@
 {
-  "iso": "2026-10-10T17:20:08Z",
-  "last_updated": "2026-10-10T17:20:08Z",
+  "iso": "2026-10-10T18:56:53Z",
+  "last_updated": "2026-10-10T18:56:53Z",
   "episodes": [
     {
       "guest": "Kristinn Hrafnsson",
-      "surname": "Hrafnsson",
+      "surname": "HRAFNSSON",
       "title": "20 Years of WikiLeaks: The Biggest Revelations, The State of Press Freedom, Julian Assange",
       "date": "10 Oct",
       "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-10T01:00:05Z",
-      "source_platform_ids": {},
+      "link": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
+      "canonical_episode_id": "6ad4fc65c296",
+      "canonical_video_id": "E3Cldy7Lpgk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
+      "canonical_episode_id_v2": "28bc7b0198d3cf49",
+      "pub_iso": "2026-10-10T16:01:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "E3Cldy7Lpgk"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.6K",
-        "yt_views": null,
+        "yt_views": "96",
         "x_views": "5.5K",
         "ig_likes": null
       },
@@ -43,7 +47,7 @@
       },
       "metrics": {
         "rumble_views": "2.6K",
-        "yt_views": "1.0K",
+        "yt_views": "1.1K",
         "x_views": "171.8K",
         "ig_likes": null
       },
@@ -121,7 +125,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "34.3K",
+        "yt_views": "34.4K",
         "x_views": "875.1K",
         "ig_likes": null
       },
@@ -173,7 +177,7 @@
       },
       "metrics": {
         "rumble_views": "6.4K",
-        "yt_views": "88.7K",
+        "yt_views": "88.8K",
         "x_views": "2.0M",
         "ig_likes": null
       },
@@ -863,20 +867,24 @@
   "gu": [
     {
       "guest": "Kristinn Hrafnsson",
-      "surname": "Hrafnsson",
+      "surname": "HRAFNSSON",
       "title": "20 Years of WikiLeaks: The Biggest Revelations, The State of Press Freedom, Julian Assange",
       "date": "10 Oct",
       "show": "GU",
-      "link": "",
-      "canonical_episode_id": null,
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-10T01:00:05Z",
-      "source_platform_ids": {},
+      "link": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
+      "canonical_episode_id": "6ad4fc65c296",
+      "canonical_video_id": "E3Cldy7Lpgk",
+      "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
+      "canonical_episode_id_v2": "28bc7b0198d3cf49",
+      "pub_iso": "2026-10-10T16:01:50Z",
+      "source_platform_ids": {
+        "youtube": [
+          "E3Cldy7Lpgk"
+        ]
+      },
       "metrics": {
         "rumble_views": "1.6K",
-        "yt_views": null,
+        "yt_views": "96",
         "x_views": "5.5K",
         "ig_likes": null
       },
@@ -902,7 +910,7 @@
       },
       "metrics": {
         "rumble_views": "2.6K",
-        "yt_views": "1.0K",
+        "yt_views": "1.1K",
         "x_views": "171.8K",
         "ig_likes": null
       },
@@ -980,7 +988,7 @@
       },
       "metrics": {
         "rumble_views": "3.5K",
-        "yt_views": "34.3K",
+        "yt_views": "34.4K",
         "x_views": "875.1K",
         "ig_likes": null
       },
