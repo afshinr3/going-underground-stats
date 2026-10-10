@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-10T22:51:56.726384Z",
+  "generated_at": "2026-10-10T23:20:07.620651Z",
   "n": 1,
   "entries": [
     {
@@ -13,7 +13,7 @@
       "surname": "Hrafnsson",
       "title": "20 Years of WikiLeaks: The Biggest Revelations, The State of Press Freedom, Julian Assange",
       "date": "10 Oct",
-      "rumble_views": "1.8K",
+      "rumble_views": "1.9K",
       "show": "GU",
       "canonical_guest_full_name": "Kristinn Hrafnsson",
       "pub_iso": "2026-10-10T01:00:05Z",
@@ -35,11 +35,12 @@
           "E3Cldy7Lpgk"
         ]
       },
-      "yt_views": "392",
+      "yt_views": "349",
       "canonical_surname_upper": "HRAFNSSON",
       "canonical_episode_id": "6ad4fc65c296",
       "date_prov": "rumble_scoped_time_only",
-      "ig_likes": "2.5K"
+      "ig_likes": "2.5K",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
   "source_feed": "videos.json",
