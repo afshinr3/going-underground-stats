@@ -2,4 +2,4 @@ requests>=2.31
 python-dotenv>=1.0
 yt-dlp>=2024.8.6
 # Rednote playwright mode only (then: playwright install chromium)
-playwright==1.47.0         # keep in step with the Dockerfile base image
+playwright==1.63.0         # keep in step with the Dockerfile base image

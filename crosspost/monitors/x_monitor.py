@@ -196,6 +196,7 @@ class XApiMonitor:
 
 
 # =========================================================================== x.com + cookies
+PROFILE_TIMELINE_OPS = ("/UserTweets", "/UserOriginalsTimeline")
 def _norm_cookies(raw: str) -> list[dict]:
     """Accept a browser cookie export (list) or {name: value} dict, as X_COOKIES_JSON in this repo."""
     try:
@@ -308,8 +309,11 @@ class XCookieMonitor:
             ctx.add_cookies(self.cookies)
             page = ctx.new_page()
 
+            # x.com renames the profile-timeline GraphQL op from time to time: it served
+            # UserTweets historically and UserOriginalsTimeline as of 2026-10. Match any of
+            # them, or discovery silently captures nothing while the page renders fine.
             def on_response(resp):
-                if "/UserTweets" in resp.url and resp.status == 200:
+                if resp.status == 200 and any(op in resp.url for op in PROFILE_TIMELINE_OPS):
                     try:
                         payloads.append(resp.json())
                     except Exception:
@@ -318,6 +322,12 @@ class XCookieMonitor:
             page.on("response", on_response)
             try:
                 page.goto(f"https://x.com/{handle}", wait_until="domcontentloaded", timeout=60_000)
+                # Wait on the rendered timeline, the way fetch_and_push.py does, then give the
+                # timeline XHR a moment to land. A bare sleep raced the hydration on a cold run.
+                try:
+                    page.wait_for_selector('article[data-testid="tweet"]', timeout=30_000)
+                except Exception:
+                    pass
                 for _ in range(20):
                     if payloads:
                         break
