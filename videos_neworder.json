@@ -3,11 +3,11 @@
     "guest": "John Bolton",
     "surname": "Bolton",
     "title": "Is the US a THREAT to India? Afshin Rattansi Challenges John Bolton",
-    "rumble_views": "355",
-    "x_views": "82.7K",
+    "rumble_views": "323",
+    "x_views": "199.2K",
     "date": "11 Oct",
-    "yt_views": "3.1K",
-    "ig_likes": "168",
+    "yt_views": "5.1K",
+    "ig_likes": "165",
     "canonical_guest_full_name": "John Bolton",
     "canonical_surname_upper": "BOLTON",
     "canonical_episode_id": "09159e357bd8",
@@ -23,18 +23,22 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=16nJk5ph6CQ",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "MEASURED",
     "show": "NO",
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 7,
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T18:49:33Z",
+    "_x_own_views": 185624,
+    "_x_others_views": 13604,
+    "_x_posts": 45,
+    "_x_passes": null
   },
   {
     "guest": "Lawrence Wilkerson",
     "surname": "Wilkerson",
     "title": "Col. Lawrence Wilkerson: Trump Gave Netanyahu the GREEN LIGHT to use Nuclear Weapons Against Iran",
     "rumble_views": "2.0K",
-    "x_views": "1.2M",
+    "x_views": "1.6M",
     "date": "4 Oct",
     "yt_views": "28.4K",
     "ig_likes": "5.7K",
@@ -53,17 +57,17 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "MEASURED",
     "show": "NO",
     "_yt_upload_iso": "2026-10-02T07:12:53Z",
     "_yt_premiere_iso": "2026-10-04T06:30:00Z",
     "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004",
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 12,
-    "_x_measured_iso": "2026-10-11T18:52:32Z",
-    "_x_own_views": 1446020,
-    "_x_others_views": 172758,
-    "_x_posts": 163,
+    "_x_measured_iso": "2026-10-11T18:50:40Z",
+    "_x_own_views": 1449907,
+    "_x_others_views": 138981,
+    "_x_posts": 83,
     "_x_passes": null
   },
   {
@@ -71,7 +75,7 @@
     "surname": "Mearsheimer",
     "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
     "rumble_views": "1.4K",
-    "x_views": "739.1K",
+    "x_views": "1.7M",
     "date": "27 Sep",
     "yt_views": "14.0K",
     "ig_likes": "1.7K",
@@ -90,15 +94,15 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "MEASURED",
     "show": "NO",
     "_rumble_views_correction": "SURNAME_SCOPE_V1_20260926: was '4.0K', which is the view count of the GOING UNDERGROUND episode 'Prof. John Mearsheimer Explains Why Iran War MUST END' (2026-07-28, 4,010 views), attributed here by a surname-only join. This episode has no Rumble video: its YouTube id premieres 2026-09-27 and Rumble's New Order channel does not carry it.",
     "_x_store_tweets": 10,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z",
-    "_x_own_views": 1154680,
-    "_x_others_views": 533203,
-    "_x_posts": 70,
+    "_x_measured_iso": "2026-10-11T18:51:44Z",
+    "_x_own_views": 1159997,
+    "_x_others_views": 533406,
+    "_x_posts": 58,
     "_x_passes": null
   },
   {
@@ -106,7 +110,7 @@
     "surname": "Lieven",
     "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
     "rumble_views": "1.1K",
-    "x_views": "940.6K",
+    "x_views": "1.8M",
     "date": "20 Sep",
     "yt_views": "763",
     "ig_likes": "425",
@@ -125,15 +129,15 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "MEASURED",
     "show": "NO",
     "_x_store_tweets": 9,
-    "_x_own_views": 1229832,
-    "_x_others_views": 534454,
-    "_x_posts": 72,
+    "_x_own_views": 1230096,
+    "_x_others_views": 522760,
+    "_x_posts": 66,
     "_x_passes": null,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T18:50:41Z"
   },
   {
     "guest": "Paulo Nogueira Batista Jr.",
@@ -159,7 +163,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_store_tweets": 11,
     "_x_own_views": 1498768,
@@ -167,7 +171,7 @@
     "_x_posts": 87,
     "_x_passes": null,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T17:45:18Z"
   },
   {
     "guest": "David Monyae",
@@ -193,14 +197,14 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
     "_x_own_views": 799551,
     "_x_others_views": 95964,
     "_x_posts": 43,
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T17:45:18Z"
   },
   {
     "guest": "Sarang Shidore",
@@ -226,7 +230,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
@@ -234,7 +238,7 @@
     "_x_others_views": 50226,
     "_x_posts": 40,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T17:45:18Z"
   },
   {
     "guest": "Marta Fernandez",
@@ -261,7 +265,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 9,
@@ -269,14 +273,14 @@
     "_x_others_views": 0,
     "_x_posts": 9,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T17:45:18Z"
   },
   {
     "guest": "Mohammed Baharoon",
     "surname": "Baharoon",
     "title": "Between the US & BRICS: The UAE Refuses to be Made to Choose One or The Other (Mohammed Baharoon)",
     "date": "2 Aug",
-    "rumble_views": "905",
+    "rumble_views": "903",
     "show": "NO",
     "canonical_guest_full_name": "Mohammed Baharoon",
     "pub_iso": "2026-08-02T06:30:10Z",
@@ -295,8 +299,8 @@
     "yt_views": "116",
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
-    "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "x_views": "698.6K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 10,
@@ -304,14 +308,14 @@
     "_x_others_views": 0,
     "_x_posts": 9,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T19:01:46Z"
   },
   {
     "guest": "Hussein Askary",
     "surname": "Askary",
     "title": "Global South’s Rise Causes PANIC for West’s Elites as US-Led Unipolar World Declines- Hussein Askary",
     "date": "26 Jul",
-    "rumble_views": "901",
+    "rumble_views": "899",
     "show": "NO",
     "canonical_guest_full_name": "Hussein Askary",
     "pub_iso": "2026-07-26T06:30:22Z",
@@ -330,8 +334,8 @@
     "yt_views": "246",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "443.4K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "x_views": "207.0K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
@@ -339,14 +343,14 @@
     "_x_others_views": 0,
     "_x_posts": 7,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T19:01:35Z"
   },
   {
     "guest": "Peter Schiff",
     "surname": "Schiff",
     "title": "Peter Schiff Explains Why BRICS MUST Reduce Exposure to the US, De-Dollarisation is the Rise of GOLD",
     "date": "19 Jul",
-    "rumble_views": "928",
+    "rumble_views": "926",
     "show": "NO",
     "canonical_guest_full_name": "Peter Schiff",
     "pub_iso": "2026-07-19T06:30:15Z",
@@ -365,13 +369,13 @@
     "yt_views": "516",
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
-    "x_views": "941.6K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "x_views": "394.6K",
+    "_x_status": "MEASURED_LOWER_BOUND",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T19:02:23Z"
   },
   {
     "guest": "John Perkins",
@@ -379,7 +383,7 @@
     "title": "John Perkins: Trump’s ECONOMIC HIT MAN Presidency & Threat to the Global South as US Empire Declines",
     "date": "12 Jul",
     "rumble_views": "1.0K",
-    "x_views": "812.4K",
+    "x_views": "328.4K",
     "yt_views": "877",
     "ig_likes": "291",
     "show": "NO",
@@ -396,14 +400,14 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "_x_passes": 6,
+    "_x_status": "MEASURED",
+    "_x_passes": 5,
     "_x_store_tweets": 9,
     "_x_own_views": 1025394,
     "_x_others_views": 62124,
     "_x_posts": 28,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z"
+    "_x_measured_iso": "2026-10-11T19:02:17Z"
   },
   {
     "guest": "Vikram Sood",
@@ -411,7 +415,7 @@
     "title": "Ex-Indian Foreign Intel. Chief: Russia, China & India Acting Together Would be a FORMIDABLE Bloc",
     "date": "5 Jul",
     "rumble_views": "557",
-    "x_views": "760.2K",
+    "x_views": "1.6M",
     "yt_views": "3.3K",
     "ig_likes": "1.1K",
     "show": "NO",
@@ -428,13 +432,13 @@
         "U_7Y7bkSXfk"
       ]
     },
-    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
-    "_x_passes": 6,
-    "_x_own_views": 846064,
-    "_x_others_views": 0,
-    "_x_posts": 7,
+    "_x_status": "MEASURED",
+    "_x_passes": null,
+    "_x_own_views": 1576665,
+    "_x_others_views": 46293,
+    "_x_posts": 23,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-10T01:52:41Z"
+    "_x_measured_iso": "2026-10-11T19:04:08Z"
   },
   {
     "guest": "C. Uday Bhaskar",
@@ -442,7 +446,7 @@
     "title": "NEW EPISODE OF NEW ORDER \n\nBRICS ‘UP & RUNNING’: How India Will Navigate US-Iran Conflict & Tensions With Trump—C. Uday Bhaskar\n\nHow is India navigating maintaining ties with the US while being the Ch",
     "date": "28 Jun",
     "rumble_views": "566",
-    "x_views": "383.0K",
+    "x_views": "369.0K",
     "yt_views": "140",
     "ig_likes": "3.1K",
     "show": "NO",
@@ -451,7 +455,7 @@
     "canonical_episode_id": "e35a16f2cfd4",
     "_carried_forward_iso": "2026-09-30T00:04:49Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "MEASURED",
     "_x_passes": null,
     "_x_store_tweets": 7,
     "canonical_video_id": "08aeFzW4N2E",
@@ -463,9 +467,9 @@
       ]
     },
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T18:52:32Z",
-    "_x_own_views": 518331,
-    "_x_others_views": 25599,
-    "_x_posts": 21
+    "_x_measured_iso": "2026-10-11T19:04:05Z",
+    "_x_own_views": 369030,
+    "_x_others_views": 0,
+    "_x_posts": 6
   }
 ]
