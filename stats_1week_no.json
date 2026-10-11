@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-11T16:20:04.111467Z",
+  "generated_at": "2026-10-11T16:39:18.211676Z",
   "n": 1,
   "entries": [
     {
@@ -15,8 +15,8 @@
       "rumble_views": "261",
       "x_views": "82.7K",
       "date": "11 Oct",
-      "yt_views": "1.6K",
-      "ig_likes": "155",
+      "yt_views": "3.1K",
+      "ig_likes": "158",
       "canonical_guest_full_name": "John Bolton",
       "canonical_surname_upper": "BOLTON",
       "canonical_episode_id": "09159e357bd8",
@@ -36,7 +36,7 @@
       "show": "NO",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 7,
-      "_x_measured_iso": "2026-10-11T16:04:30Z"
+      "_x_measured_iso": "2026-10-11T16:20:04Z"
     }
   ],
   "source_feed": "videos_neworder.json",
