@@ -1,10 +1,13 @@
 """X (Twitter) extraction: find new posts with native video and download the best MP4.
 
-Two discovery back-ends, selected by env:
+Three discovery back-ends, selected by env (first match wins):
   * XApiMonitor (default): official X API v2 user timeline. Needs X_BEARER_TOKEN
     (app-only, never expires) or X_CLIENT_ID + X_REFRESH_TOKEN (OAuth 2.0 user
     context, refreshed automatically and the rotated refresh token persisted to the
     state DB). Honours x-rate-limit-reset on HTTP 429.
+  * XCookieMonitor: no API — headless Chromium on x.com with a logged-in session
+    (X_COOKIES_JSON or X_COOKIES_FILE, same cookie export fetch_and_push.py uses),
+    capturing the web app's own UserTweets JSON.
   * RssMonitor: any RSS feed of the account (self-hosted RSSHub/Nitter), set
     X_RSS_URL_TEMPLATE="https://rsshub.example.com/twitter/user/{handle}". Each item is
     probed with yt-dlp to decide whether it carries a native video.
@@ -192,6 +195,165 @@ class XApiMonitor:
         }
 
 
+# =========================================================================== x.com + cookies
+def _norm_cookies(raw: str) -> list[dict]:
+    """Accept a browser cookie export (list) or {name: value} dict, as X_COOKIES_JSON in this repo."""
+    try:
+        data = json.loads(raw or "[]")
+    except ValueError:
+        return []
+    if isinstance(data, dict):
+        data = data.get("cookies") or [{"name": k, "value": v} for k, v in data.items()]
+    same = {"no_restriction": "None", "none": "None", "lax": "Lax", "strict": "Strict"}
+    out = []
+    for c in data if isinstance(data, list) else []:
+        if not isinstance(c, dict) or not c.get("name"):
+            continue
+        d = {"name": c["name"], "value": str(c.get("value", "")), "domain": c.get("domain") or ".x.com",
+             "path": c.get("path") or "/", "secure": bool(c.get("secure", True)),
+             "httpOnly": bool(c.get("httpOnly", False))}
+        exp = c.get("expires", c.get("expirationDate"))
+        if isinstance(exp, (int, float)) and exp > 0:
+            d["expires"] = float(exp)
+        if same.get(str(c.get("sameSite", "")).lower()):
+            d["sameSite"] = same[str(c.get("sameSite", "")).lower()]
+        out.append(d)
+    return out
+
+
+def _unwrap(result: dict) -> dict:
+    """TweetWithVisibilityResults wraps the tweet one level deeper."""
+    return result.get("tweet", result) if isinstance(result, dict) else {}
+
+
+def _iter_tweet_results(node):
+    if isinstance(node, dict):
+        if "tweet_results" in node and isinstance(node["tweet_results"], dict):
+            r = _unwrap(node["tweet_results"].get("result") or {})
+            if r.get("legacy"):
+                yield r
+        for v in node.values():
+            yield from _iter_tweet_results(v)
+    elif isinstance(node, list):
+        for v in node:
+            yield from _iter_tweet_results(v)
+
+
+def parse_user_tweets(payload: dict, handle: str) -> list[dict]:
+    """Normalise a x.com UserTweets GraphQL response (the web app's own timeline call)."""
+    out, seen = [], set()
+    for r in _iter_tweet_results(payload):
+        lg = r["legacy"]
+        tid = lg.get("id_str") or r.get("rest_id")
+        if not tid or tid in seen:
+            continue
+        seen.add(tid)
+        author = (((r.get("core") or {}).get("user_results") or {}).get("result") or {})
+        screen = (author.get("legacy") or {}).get("screen_name") or (author.get("core") or {}).get("screen_name") or ""
+        if screen.lower() != handle.lower() or lg.get("retweeted_status_result"):
+            continue  # retweets / other authors (quoted tweets also appear as nested results)
+        uid = lg.get("user_id_str")
+        if lg.get("in_reply_to_user_id_str") and lg["in_reply_to_user_id_str"] != uid:
+            continue
+        vids = [m for m in (lg.get("extended_entities") or {}).get("media", []) if m.get("type") == "video"]
+        if not vids:
+            continue
+        variant = best_mp4_variant({"variants": [
+            {"content_type": v.get("content_type"), "bit_rate": v.get("bitrate"), "url": v.get("url")}
+            for v in (vids[0].get("video_info") or {}).get("variants", [])
+        ]})
+        if not variant:
+            continue
+        note = ((r.get("note_tweet") or {}).get("note_tweet_results") or {}).get("result") or {}
+        text = note.get("text") or lg.get("full_text", "")
+        urls = list(((note.get("entity_set") or {}).get("urls")) or (lg.get("entities") or {}).get("urls") or [])
+        urls += [{"url": m.get("url"), "expanded_url": m.get("expanded_url"), "media_key": m.get("media_key") or "m"}
+                 for m in (lg.get("entities") or {}).get("media", [])]
+        created = lg.get("created_at")
+        try:
+            created = datetime.strptime(created, "%a %b %d %H:%M:%S %z %Y").isoformat()
+        except (TypeError, ValueError):
+            pass
+        out.append({
+            "tweet_id": tid,
+            "handle": handle,
+            "created_at": created,
+            "text": text,
+            "urls": urls,
+            "quoted_ids": [lg["quoted_status_id_str"]] if lg.get("quoted_status_id_str") else [],
+            "video_url": variant[0],
+            "video_bitrate": variant[1],
+            "permalink": f"https://x.com/{handle}/status/{tid}",
+        })
+    return sorted(out, key=lambda p: int(p["tweet_id"]))
+
+
+class XCookieMonitor:
+    """Reads the profile page in headless Chromium with a logged-in session and captures
+    the web app's own UserTweets response — the same approach fetch_and_push.py uses.
+    No paid X API needed. Cookies: X_COOKIES_JSON (inline) or X_COOKIES_FILE (path)."""
+
+    def __init__(self, settings: Settings, state: StateStore, cookies: list[dict]):
+        self.s = settings
+        self.state = state
+        self.cookies = cookies
+
+    def fetch_new(self, handle: str) -> list[dict]:
+        from playwright.sync_api import sync_playwright
+
+        payloads: list[dict] = []
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True)
+            ctx = browser.new_context(viewport={"width": 1280, "height": 2000})
+            ctx.add_cookies(self.cookies)
+            page = ctx.new_page()
+
+            def on_response(resp):
+                if "/UserTweets" in resp.url and resp.status == 200:
+                    try:
+                        payloads.append(resp.json())
+                    except Exception:
+                        pass
+
+            page.on("response", on_response)
+            try:
+                page.goto(f"https://x.com/{handle}", wait_until="domcontentloaded", timeout=60_000)
+                for _ in range(20):
+                    if payloads:
+                        break
+                    page.wait_for_timeout(500)
+                if "/login" in page.url or "/i/flow/login" in page.url:
+                    raise XAuthError("X login wall: X cookies expired; export fresh x.com cookies")
+                page.mouse.wheel(0, 4000)  # pull a second page so a burst of posts isn't missed
+                page.wait_for_timeout(2500)
+            finally:
+                ctx.close()
+                browser.close()
+        if not payloads:
+            raise RuntimeError(f"no UserTweets response captured for @{handle}")
+
+        # First sight of a handle sets a baseline: only posts after it (minus the lookback) count,
+        # so the back catalogue and pinned posts are never republished.
+        key = f"x_cookie_baseline:{handle.lower()}"
+        if not self.state.get(key):
+            self.state.set(key, datetime.now(timezone.utc).isoformat())
+        cutoff = datetime.fromisoformat(self.state.get(key)) - timedelta(hours=self.s.initial_lookback_hours)
+
+        posts, seen = [], set()
+        for pl in payloads:
+            for p in parse_user_tweets(pl, handle):
+                if p["tweet_id"] in seen or self.state.is_known(p["tweet_id"]):
+                    continue
+                seen.add(p["tweet_id"])
+                try:
+                    if datetime.fromisoformat(p["created_at"]) < cutoff:
+                        continue
+                except (TypeError, ValueError):
+                    continue
+                posts.append(p)
+        return sorted(posts, key=lambda p: int(p["tweet_id"]))
+
+
 # =========================================================================== RSS + yt-dlp
 class RssMonitor:
     STATUS_RE = re.compile(r"(?:twitter|x)\.com/([^/]+)/status/(\d+)", re.I)
@@ -290,10 +452,20 @@ def download_video(post: dict, settings: Settings) -> Path:
 
 
 def build_monitor(settings: Settings, state: StateStore):
+    """X API if a token is set, else x.com with session cookies, else RSS."""
+    if settings.x_bearer_token or settings.x_refresh_token:
+        return XApiMonitor(settings, state)
+    raw = os.environ.get("X_COOKIES_JSON", "").strip()
+    path = os.environ.get("X_COOKIES_FILE", "").strip()
+    if not raw and path and Path(path).expanduser().exists():
+        raw = Path(path).expanduser().read_text()
+    cookies = _norm_cookies(raw)
+    if cookies:
+        return XCookieMonitor(settings, state, cookies)
     template = os.environ.get("X_RSS_URL_TEMPLATE", "").strip()
-    if template and not (settings.x_bearer_token or settings.x_refresh_token):
+    if template:
         return RssMonitor(settings, state, template)
-    return XApiMonitor(settings, state)
+    return XApiMonitor(settings, state)  # raises a clear "set credentials" error on first use
 
 
 def handles() -> list[str]:

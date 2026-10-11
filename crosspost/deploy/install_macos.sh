@@ -27,6 +27,7 @@ echo "python: $PY ($("$PY" -V))"
 [ -d .venv ] || "$PY" -m venv .venv
 .venv/bin/pip install -q --upgrade pip
 .venv/bin/pip install -q -r requirements.txt
+.venv/bin/python -m playwright install chromium   # x.com cookie monitor + Rednote
 
 command -v ffprobe >/dev/null 2>&1 || { command -v brew >/dev/null 2>&1 && brew install ffmpeg || echo "warn: ffmpeg not installed (optional)"; }
 

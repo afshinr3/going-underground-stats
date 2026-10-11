@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from db.state import StateStore  # noqa: E402
-from monitors.x_monitor import XApiMonitor, best_mp4_variant  # noqa: E402
+from monitors.x_monitor import XApiMonitor, best_mp4_variant, parse_user_tweets  # noqa: E402
 from publishers.linkedin import to_little_text  # noqa: E402
 from transformers.caption import (  # noqa: E402
     build_caption, build_title, clean_text, fit_caption, strip_trailing_cta, utf16_len,
@@ -121,6 +121,41 @@ class MonitorTests(unittest.TestCase):
     def test_note_tweet_text_preferred(self):
         p = self.norm(attachments={"media_keys": ["7_1"]}, note_tweet={"text": "long form"})
         self.assertEqual(p["text"], "long form")
+
+
+def _gql_tweet(tid, screen="Gunderground_tv", media_type="video", **legacy):
+    lg = {"id_str": tid, "user_id_str": "42", "full_text": "Clip text https://t.co/med",
+          "created_at": "Sun Oct 11 10:00:00 +0000 2026",
+          "entities": {"urls": [], "media": [{"url": "https://t.co/med", "expanded_url": "https://x.com/x/status/1/video/1"}]},
+          "extended_entities": {"media": [{"type": media_type, "video_info": {"variants": [
+              {"content_type": "video/mp4", "bitrate": 256000, "url": "https://v/lo.mp4"},
+              {"content_type": "video/mp4", "bitrate": 2176000, "url": "https://v/hi.mp4"}]}}]}}
+    lg.update(legacy)
+    return {"entryId": f"tweet-{tid}", "content": {"itemContent": {"tweet_results": {"result": {
+        "__typename": "Tweet", "rest_id": tid,
+        "core": {"user_results": {"result": {"legacy": {"screen_name": screen}}}}, "legacy": lg}}}}}
+
+
+class CookieMonitorParseTests(unittest.TestCase):
+    def test_parse_user_tweets(self):
+        wrapped = _gql_tweet("5")
+        res = wrapped["content"]["itemContent"]["tweet_results"]["result"]
+        wrapped["content"]["itemContent"]["tweet_results"]["result"] = {
+            "__typename": "TweetWithVisibilityResults", "tweet": res}
+        payload = {"data": {"user": {"result": {"timeline": {"timeline": {"instructions": [{"entries": [
+            _gql_tweet("3", quoted_status_id_str="99"),
+            _gql_tweet("4", media_type="photo"),
+            _gql_tweet("6", screen="someoneelse"),
+            _gql_tweet("7", retweeted_status_result={"result": {}}),
+            _gql_tweet("8", in_reply_to_user_id_str="77"),
+            wrapped,
+        ]}]}}}}}}
+        posts = parse_user_tweets(payload, "Gunderground_tv")
+        self.assertEqual([p["tweet_id"] for p in posts], ["3", "5"])
+        self.assertEqual(posts[0]["video_url"], "https://v/hi.mp4")
+        self.assertEqual(posts[0]["quoted_ids"], ["99"])
+        self.assertTrue(posts[0]["created_at"].startswith("2026-10-11T10:00:00"))
+        self.assertEqual(build_caption(posts[0]).split("\n")[0], "Clip text")
 
 
 class StateTests(unittest.TestCase):

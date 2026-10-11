@@ -51,11 +51,11 @@ crosspost/
 cd crosspost
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
-playwright install chromium          # only if REDNOTE_ENABLED=true in playwright mode
+playwright install chromium          # x.com cookie monitor and Rednote playwright mode
 brew install ffmpeg  # or apt install ffmpeg — optional; gives Telegram correct aspect/duration
 cp .env.example .env                 # fill in credentials (see below)
 
-python -m unittest discover -s tests # 15 offline tests
+python -m unittest discover -s tests # 16 offline tests
 python main.py --dry-run             # discover + print every platform's caption; posts nothing
 python main.py --once --platforms telegram   # first real run against one platform
 python main.py                       # daemon, polls every POLL_INTERVAL_SECONDS (default 600)
@@ -65,7 +65,7 @@ python main.py                       # daemon, polls every POLL_INTERVAL_SECONDS
 
 | Platform | What you need |
 |---|---|
-| **X** | `X_BEARER_TOKEN` from developer.x.com. **The Free tier cannot read user timelines.** You need Basic or higher. Two other options: OAuth 2.0 (`X_CLIENT_ID`/`X_CLIENT_SECRET`/`X_REFRESH_TOKEN`, refreshed automatically, with the rotated refresh token saved in the DB), or `X_RSS_URL_TEMPLATE`, which points at a self-hosted RSSHub/Nitter and needs yt-dlp. |
+| **X** | `X_BEARER_TOKEN` from developer.x.com. **The Free tier cannot read user timelines.** You need Basic or higher. Two other options: OAuth 2.0 (`X_CLIENT_ID`/`X_CLIENT_SECRET`/`X_REFRESH_TOKEN`, refreshed automatically, with the rotated refresh token saved in the DB), `X_COOKIES_FILE`/`X_COOKIES_JSON`, a logged-in x.com cookie export read with headless Chromium the same way `fetch_and_push.py` reads X, so no paid API is needed, or `X_RSS_URL_TEMPLATE`, which points at a self-hosted RSSHub/Nitter and needs yt-dlp. |
 | **Telegram** | Create a bot with @BotFather, add it as an **admin** of the channel, then set `TELEGRAM_CHANNEL_ID` (`@name` or `-100…`). The cloud Bot API rejects uploads over 50 MB. For larger files, run [telegram-bot-api](https://github.com/tdlib/telegram-bot-api) locally and set `TELEGRAM_API_BASE`. |
 | **Instagram** | The IG account must be Business or Creator and linked to a Facebook Page. You need a Meta app with `instagram_basic` and `instagram_content_publish`, plus a long-lived token, which lasts 60 days: refresh it before then. `INSTAGRAM_USER_ID` is the IG user id. Uploads use Meta's **resumable upload**, so the video never needs public hosting. Reels must be 3 s–15 min long. |
 | **LinkedIn** | You need a LinkedIn app with the Community Management API (organization page) or "Share on LinkedIn" (`w_member_social`, personal profile). Set `LINKEDIN_AUTHOR_URN` to `urn:li:person:…` or `urn:li:organization:…`. Tokens last 60 days. Uploads use the multipart `rest/videos` API, then `rest/posts`. Hashtags become real LinkedIn hashtags. |
