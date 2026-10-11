@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-11T22:58:30.801108Z",
+  "generated_at": "2026-10-11T23:04:32.635548Z",
   "n": 1,
   "entries": [
     {
@@ -16,15 +16,15 @@
       "rumble_views": "2.5K",
       "show": "GU",
       "canonical_guest_full_name": "Kristinn Hrafnsson",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "rumble_only_injected": true,
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": "https://rumble.com/v7gm5jc-20-years-of-wikileaks-the-biggest-revelations-the-state-of-press-freedom-ju.html",
       "rumble_vid": "v7gm5jc",
       "x_views": "163.2K",
-      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "_x_store_tweets": 10,
-      "_x_measured_iso": "2026-10-11T22:20:06Z",
+      "_x_measured_iso": "2026-10-11T21:45:08Z",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
@@ -39,7 +39,7 @@
       "canonical_surname_upper": "HRAFNSSON",
       "canonical_episode_id": "6ad4fc65c296",
       "date_prov": "rumble_scoped_time_only",
-      "ig_likes": "3.3K",
+      "ig_likes": "3.2K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
