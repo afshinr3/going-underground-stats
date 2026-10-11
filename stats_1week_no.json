@@ -5,18 +5,18 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-11T18:20:08.373507Z",
+  "generated_at": "2026-10-11T18:52:32.286705Z",
   "n": 1,
   "entries": [
     {
       "guest": "John Bolton",
       "surname": "Bolton",
       "title": "Is the US a THREAT to India? Afshin Rattansi Challenges John Bolton",
-      "rumble_views": "323",
+      "rumble_views": "355",
       "x_views": "82.7K",
       "date": "11 Oct",
       "yt_views": "3.1K",
-      "ig_likes": "166",
+      "ig_likes": "168",
       "canonical_guest_full_name": "John Bolton",
       "canonical_surname_upper": "BOLTON",
       "canonical_episode_id": "09159e357bd8",
@@ -36,7 +36,7 @@
       "show": "NO",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 7,
-      "_x_measured_iso": "2026-10-11T18:19:36Z"
+      "_x_measured_iso": "2026-10-11T18:20:08Z"
     }
   ],
   "source_feed": "videos_neworder.json",
