@@ -109,6 +109,11 @@ class Settings:
     instagram_user_id: str = field(default_factory=lambda: _env("INSTAGRAM_USER_ID"))
     instagram_access_token: str = field(default_factory=lambda: _env("INSTAGRAM_ACCESS_TOKEN"))
     meta_graph_version: str = field(default_factory=lambda: _env("META_GRAPH_VERSION", "v21.0"))
+    # graph.facebook.com (Facebook Login, needs a linked FB Page) or
+    # graph.instagram.com (Instagram Login, Professional account only, no Page needed)
+    instagram_graph_host: str = field(default_factory=lambda: _env("INSTAGRAM_GRAPH_HOST", "graph.instagram.com"))
+    meta_app_id: str = field(default_factory=lambda: _env("META_APP_ID"))
+    meta_app_secret: str = field(default_factory=lambda: _env("META_APP_SECRET"))
     instagram_share_to_feed: bool = field(default_factory=lambda: _bool("INSTAGRAM_SHARE_TO_FEED", True))
 
     # LinkedIn
@@ -117,6 +122,18 @@ class Settings:
     # urn:li:person:XXXX (personal profile) or urn:li:organization:NNNN (company page)
     linkedin_author_urn: str = field(default_factory=lambda: _env("LINKEDIN_AUTHOR_URN"))
     linkedin_api_version: str = field(default_factory=lambda: _env("LINKEDIN_API_VERSION", "202409"))
+    linkedin_token_expires_at: str = field(default_factory=lambda: _env("LINKEDIN_TOKEN_EXPIRES_AT"))  # YYYY-MM-DD
+    linkedin_client_id: str = field(default_factory=lambda: _env("LINKEDIN_CLIENT_ID"))
+    linkedin_client_secret: str = field(default_factory=lambda: _env("LINKEDIN_CLIENT_SECRET"))
+
+    # Alerts (Telegram DM to the operator) + dead-man's switch
+    alert_telegram_chat_id: str = field(default_factory=lambda: _env("ALERT_TELEGRAM_CHAT_ID"))
+    alert_repeat_hours: float = field(default_factory=lambda: float(_env("ALERT_REPEAT_HOURS") or 12))
+    alert_expiry_days: int = field(default_factory=lambda: _int("ALERT_EXPIRY_DAYS", 7))
+    token_check_hours: float = field(default_factory=lambda: float(_env("TOKEN_CHECK_HOURS") or 6))
+    stale_gap_hours: float = field(default_factory=lambda: float(_env("STALE_GAP_HOURS") or 3))
+    discovery_fail_threshold: int = field(default_factory=lambda: _int("DISCOVERY_FAIL_THRESHOLD", 3))
+    healthcheck_url: str = field(default_factory=lambda: _env("HEALTHCHECK_URL"))
 
     # Rednote / Xiaohongshu
     rednote_enabled: bool = field(default_factory=lambda: _bool("REDNOTE_ENABLED", False))

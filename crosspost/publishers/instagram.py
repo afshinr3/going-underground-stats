@@ -7,8 +7,12 @@ Flow — uses *resumable upload* so no public video URL / hosting is needed:
   3. poll GET /{container-id}?fields=status_code until FINISHED (ERROR → fail)
   4. POST /{ig-user-id}/media_publish  creation_id={container-id}
 
-Requires an Instagram Professional (Business/Creator) account linked to a Facebook
-Page, and a long-lived token with instagram_basic + instagram_content_publish.
+Requires an Instagram Professional (Business/Creator) account and a long-lived token:
+  * INSTAGRAM_GRAPH_HOST=graph.instagram.com — "Instagram API with Instagram Login",
+    scopes instagram_business_basic + instagram_business_content_publish; no FB Page needed.
+  * INSTAGRAM_GRAPH_HOST=graph.facebook.com — Facebook Login, account linked to a Page,
+    scopes instagram_basic + instagram_content_publish.
+alerts/tokens.py renews the token automatically before its 60 days run out.
 Reels must be 3s–15min, 9:16 recommended; Meta rejects other specs at step 3.
 """
 from __future__ import annotations
@@ -23,7 +27,7 @@ class InstagramPublisher(Publisher):
 
     @property
     def graph(self) -> str:
-        return f"https://graph.facebook.com/{self.s.meta_graph_version}"
+        return f"https://{self.s.instagram_graph_host}/{self.s.meta_graph_version}"
 
     def validate(self) -> None:
         if not (self.s.instagram_user_id and self.s.instagram_access_token):

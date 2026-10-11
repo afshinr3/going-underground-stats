@@ -181,5 +181,82 @@ class StateTests(unittest.TestCase):
         self.assertEqual(self.db.delivery("1", "telegram")["remote_id"], "m1")
 
 
+class _Settings:
+    alert_repeat_hours = 12
+    telegram_bot_token = "t"
+    alert_telegram_chat_id = "1"
+
+
+class _RecordingNotifier:
+    """Notifier with send() captured instead of hitting Telegram."""
+
+    def __new__(cls, state):
+        from alerts.notifier import Notifier
+
+        class N(Notifier):
+            def send(self, text):
+                self.sent.append(text)
+                return True
+
+        n = N(_Settings(), state)
+        n.sent = []
+        return n
+
+
+class AlertTests(unittest.TestCase):
+    def setUp(self):
+        self.state = StateStore(":memory:")
+        self.n = _RecordingNotifier(self.state)
+
+    def test_alert_dedup_and_resolve(self):
+        self.n.alert("publish:instagram", "instagram publish failed: (#190) Error validating access token")
+        self.n.alert("publish:instagram", "instagram publish failed again")
+        self.assertEqual(len(self.n.sent), 1)
+        self.assertIn("CREDENTIALS.md §4", self.n.sent[0])
+        self.n.resolve("publish:instagram", "instagram posting works again.")
+        self.n.resolve("publish:instagram", "instagram posting works again.")
+        self.assertEqual(len(self.n.sent), 2)
+        self.n.alert("publish:instagram", "broken again")
+        self.assertEqual(len(self.n.sent), 3)
+
+    def test_resolve_without_alert_is_silent(self):
+        self.n.resolve("discover:gunderground_tv", "ok")
+        self.assertEqual(self.n.sent, [])
+
+    def test_hints(self):
+        from alerts.notifier import hint_for
+
+        self.assertIn("§1", hint_for("X login wall: X cookies expired"))
+        self.assertIn("§5", hint_for("linkedin publish failed: create post: 401 {}"))
+        self.assertIn("§2", hint_for("telegram publish failed: sendVideo failed: 403 Forbidden"))
+        self.assertIsNone(hint_for("something unrelated"))
+
+
+class TokenTests(unittest.TestCase):
+    def test_cookie_expiry_and_linkedin_date(self):
+        import json as _json
+        import time as _time
+
+        from alerts.tokens import _cookie_expiry, _linkedin
+
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "c.json"
+            f.write_text(_json.dumps([{"name": "auth_token", "value": "x", "expirationDate": 1893456000}]))
+            self.assertEqual(_cookie_expiry(f, "auth_token"), 1893456000.0)
+            self.assertIsNone(_cookie_expiry(f, "missing"))
+
+        class S:
+            linkedin_access_token = "tok"
+            linkedin_token_expires_at = "2026-12-10"
+            linkedin_client_id = linkedin_client_secret = ""
+
+        st = StateStore(":memory:")
+        self.assertEqual(_time.strftime("%Y-%m-%d", _time.gmtime(_linkedin(S, st))), "2026-12-10")
+        S.linkedin_token_expires_at = ""
+        first = _linkedin(S, st)
+        self.assertAlmostEqual(first - _time.time(), 60 * 86400, delta=60)
+        self.assertEqual(_linkedin(S, st), first)  # first-seen is remembered
+
+
 if __name__ == "__main__":
     unittest.main()

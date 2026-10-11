@@ -74,7 +74,7 @@ class XApiMonitor:
             return self._access_token  # type: ignore[return-value]
         if self.s.x_bearer_token:
             return self.s.x_bearer_token
-        raise XAuthError("Set X_BEARER_TOKEN, or X_CLIENT_ID + X_REFRESH_TOKEN, or X_RSS_URL_TEMPLATE")
+        raise XAuthError("no X source: set X_COOKIES_FILE (see CREDENTIALS.md §1), X_BEARER_TOKEN or X_RSS_URL_TEMPLATE")
 
     def _refresh(self) -> None:
         refresh = self.state.get("x_refresh_token") or self.s.x_refresh_token

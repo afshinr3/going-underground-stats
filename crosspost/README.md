@@ -55,7 +55,7 @@ playwright install chromium          # x.com cookie monitor and Rednote playwrig
 brew install ffmpeg  # or apt install ffmpeg — optional; gives Telegram correct aspect/duration
 cp .env.example .env                 # fill in credentials (see below)
 
-python -m unittest discover -s tests # 16 offline tests
+python -m unittest discover -s tests # 20 offline tests
 python main.py --dry-run             # discover + print every platform's caption; posts nothing
 python main.py --once --platforms telegram   # first real run against one platform
 python main.py                       # daemon, polls every POLL_INTERVAL_SECONDS (default 600)
@@ -70,6 +70,24 @@ python main.py                       # daemon, polls every POLL_INTERVAL_SECONDS
 | **Instagram** | The IG account must be Business or Creator and linked to a Facebook Page. You need a Meta app with `instagram_basic` and `instagram_content_publish`, plus a long-lived token, which lasts 60 days: refresh it before then. `INSTAGRAM_USER_ID` is the IG user id. Uploads use Meta's **resumable upload**, so the video never needs public hosting. Reels must be 3 s–15 min long. |
 | **LinkedIn** | You need a LinkedIn app with the Community Management API (organization page) or "Share on LinkedIn" (`w_member_social`, personal profile). Set `LINKEDIN_AUTHOR_URN` to `urn:li:person:…` or `urn:li:organization:…`. Tokens last 60 days. Uploads use the multipart `rest/videos` API, then `rest/posts`. Hashtags become real LinkedIn hashtags. |
 | **Rednote** | There is no official API. **Playwright mode** drives creator.xiaohongshu.com with a saved session: run `python -m publishers.rednote login` once on a machine with a screen and scan the QR code. Copy the resulting `config/rednote_cookies.json` to the server. **Webhook mode** posts the video, title and caption to `REDNOTE_WEBHOOK_URL` for a self-hosted connector or a manual-approval queue. Titles are capped at 20 characters, taken from the first sentence. It is disabled by default until you have logged in. |
+
+## Running unattended
+
+- **Alerts.** A Telegram DM goes to `ALERT_TELEGRAM_CHAT_ID` (`alerts/notifier.py`) when:
+  - X can't be read
+  - a platform rejects a post
+  - a post is given up on (with its link)
+  - a platform is enabled but not configured
+  - a cycle crashes
+  - checks resume after a long gap
+
+  Each alert includes the fix. A persisting problem repeats at most every 12 h, and a ✅ message
+  follows when it clears.
+- **Credential upkeep** (`alerts/tokens.py`, every 6 h): the Instagram token is renewed
+  automatically. LinkedIn tokens, X cookies and the Rednote login get a warning 7 days before
+  they expire. `python main.py --check-credentials` prints every expiry date.
+- **Dead-man's switch.** `HEALTHCHECK_URL` is pinged after every cycle. If pings stop (Mac
+  asleep, agent dead), healthchecks.io alerts you.
 
 ## Deploy
 

@@ -26,42 +26,75 @@ When the cookies expire, the log says "X login wall". Export them again.
 4. Test: `.venv/bin/python main.py --once --platforms telegram` (it posts only when a new video
    exists).
 
-## 3. Instagram (20–30 min, one-off)
-Requirements: the IG account must be **Professional** (Creator or Business) and linked to a
-**Facebook Page**. You can do both in the IG app: Settings → Account type / Linked accounts.
-1. Go to developers.facebook.com → **Create app** → type *Business*. Add the **Instagram Graph
-   API** product.
-2. Open **Graph API Explorer**, select the app and ask for these permissions:
-   `instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`.
-   Then **Generate token**.
-3. Make it long-lived (60 days) with the **Access Token Debugger → Extend**.
-4. Get the IG user id: in Explorer, run `me/accounts?fields=instagram_business_account`. The
-   number under `instagram_business_account.id` is the id.
-5. In `.env`, set `INSTAGRAM_USER_ID=` and `INSTAGRAM_ACCESS_TOKEN=`.
+## 3. Alerts to your phone (2 min, uses the bot from step 2)
+1. In Telegram, open your bot and send it any message, e.g. "hi".
+2. Run `.venv/bin/python -m alerts.notifier whoami`. Copy the `ALERT_TELEGRAM_CHAT_ID=…` line it
+   prints into `.env`.
+3. Run `.venv/bin/python -m alerts.notifier test`. You should get a test message.
+4. Optional, but recommended because the Mac can sleep: set up a dead-man's switch.
+   - Create a free check at healthchecks.io. Set the period to 10 min and the grace to 1 h.
+   - Connect its Telegram integration.
+   - Put the ping URL in `HEALTHCHECK_URL=`.
+   - If the Mac stops checking, healthchecks.io alerts you itself.
 
-While the app is in Development mode, posting works for accounts that hold a role on the app,
-which yours does. Put a reminder in your calendar to extend the token every ~50 days.
+What you'll get alerts for:
+- an X login problem
+- a post that failed, with the link so you can post it by hand
+- a platform that isn't configured
+- a token expiring within 7 days
+- a long gap with no checks
 
-## 4. LinkedIn (20 min + possible approval wait)
-1. Go to linkedin.com/developers → **Create app**. It must be tied to a LinkedIn Page; your own is
-   fine.
-2. Under **Products**, add **Share on LinkedIn** to post as you. To post as a company page, add
-   **Community Management API** instead; that one needs LinkedIn's approval.
-3. Use **Auth → OAuth 2.0 tools → Create token** with the scopes `w_member_social` and `openid`
-   and `profile` (for a page, use `w_organization_social`). Copy the token.
-4. Author URN:
-   - For yourself: `urn:li:person:<sub>`. Get `<sub>` from
-     `curl -H "Authorization: Bearer TOKEN" https://api.linkedin.com/v2/userinfo` (the `sub`
-     field).
-   - For a page: `urn:li:organization:<number in the page admin URL>`.
-5. In `.env`, set `LINKEDIN_ACCESS_TOKEN=` and `LINKEDIN_AUTHOR_URN=`. The token lasts 60 days.
+You also get a ✅ message when each problem clears.
 
-## 5. Rednote: optional, last
+## 4. Instagram (≈15 min, one-off)
+Requirement: the account must be **Professional** (Creator or Business). This route, "Instagram
+API with Instagram Login", needs **no Facebook Page**, and the token renews itself.
+1. Go to developers.facebook.com → **Create app** → use case *Manage messaging & content on
+   Instagram*.
+2. Open **Instagram → API setup with Instagram login** and click **Add account**. Log in as your IG
+   account.
+3. Click **Generate token** and copy it. It's long-lived.
+4. The same screen shows the account's **Instagram user ID**.
+5. In `.env`, set:
+   - `INSTAGRAM_GRAPH_HOST=graph.instagram.com`
+   - `INSTAGRAM_USER_ID=`
+   - `INSTAGRAM_ACCESS_TOKEN=`
+6. Check it: run `.venv/bin/python main.py --check-credentials`.
+
+The app stays in Development mode, which is fine for posting to your own account. Renewal is
+automatic. If renewal ever fails, an alert tells you.
+
+## 5. LinkedIn: personal profile (≈10 min)
+1. Go to linkedin.com/developers → **Create app**.
+   - It has to be associated with a LinkedIn Page.
+   - Any page you admin works. If you have none, create a placeholder page; it only owns the app.
+2. Under **Products**, add **Share on LinkedIn** and **Sign In with LinkedIn using OpenID
+   Connect**. Both are instant.
+3. Go to **Auth → OAuth 2.0 tools → Create token**.
+   - Tick `w_member_social`, `openid` and `profile`.
+   - Approve it, then copy the token.
+   - Note the **expiry date** it shows.
+4. Get your member id by running
+   `curl -s -H "Authorization: Bearer TOKEN" https://api.linkedin.com/v2/userinfo`.
+   The id is the `"sub"` value.
+5. In `.env`, set:
+   - `LINKEDIN_ACCESS_TOKEN=`
+   - `LINKEDIN_AUTHOR_URN=urn:li:person:<sub>`
+   - `LINKEDIN_TOKEN_EXPIRES_AT=YYYY-MM-DD`
+
+LinkedIn doesn't let self-serve apps renew tokens. You'll get an alert 7 days before expiry; then
+repeat step 3, which takes about 2 minutes every 60 days.
+
+## 6. Rednote: optional, last
 1. Run `.venv/bin/python -m publishers.rednote login`.
 2. Scan the QR code with the Xiaohongshu app. The session saves itself.
 3. In `.env`, set `REDNOTE_ENABLED=true`.
 
 ## Go live
+0. Keep the Mac awake while it's plugged in: **System Settings → Battery → Options →
+   "Prevent automatic sleeping on power adapter when the display is off"**. The
+   service only runs while you're logged in. With the lid shut and on battery, nothing gets
+   checked; when it wakes, it catches up and tells you how long the gap was.
 1. Run `bash deploy/install_macos.sh --start`.
 2. Logs are in `~/Library/Logs/gu-crosspost.log`.
 3. To turn off one platform, set `<PLATFORM>_ENABLED=false` in `.env`. Then run
