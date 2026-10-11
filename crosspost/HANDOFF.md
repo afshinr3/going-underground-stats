@@ -4,7 +4,7 @@ A later session picks up from here. Keep this file current.
 
 ## Done
 - Full pipeline built and pushed on branch `ccr-400b2c35-sg77nn` (see README.md).
-- 15 offline tests pass: `python -m unittest discover -s tests` from `crosspost/`.
+- 16 offline tests pass: `python -m unittest discover -s tests` from `crosspost/`.
 - Not yet tested against any live API, because no credentials have been provided.
 - 2026-10-11: install on the M2 Pro handed to its Remote Control session (separate clone at
   `~/gu-crosspost`; launchd agent starts only once credentials exist). Afshin will add
@@ -12,10 +12,9 @@ A later session picks up from here. Keep this file current.
 - Nothing is live yet. The existing stats jobs are unaffected; crosspost doesn't touch them.
 
 ## Waiting on Afshin
-1. **Where to run it:** the M2 Pro (launchd plist in `deploy/`) or a small server (Docker Compose).
-   Run exactly one instance per state DB.
-2. **Credentials** go in `.env` on that machine, never in this public repo:
-   - X API Basic+ bearer token, or an RSS feed URL template
+1. **Where to run it:** decided, the M2 Pro. Run exactly one instance per state DB.
+2. **Credentials** go in `.env` on that machine, never in this public repo (see CREDENTIALS.md):
+   - x.com cookie export (X_COOKIES_FILE), or an X API Basic+ token
    - Telegram bot token + channel id
    - Instagram Business user id + long-lived token
    - LinkedIn token + author URN
