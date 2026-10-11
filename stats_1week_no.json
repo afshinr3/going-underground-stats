@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-11T18:19:36.157057Z",
+  "generated_at": "2026-10-11T18:20:08.373507Z",
   "n": 1,
   "entries": [
     {
@@ -36,7 +36,7 @@
       "show": "NO",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 7,
-      "_x_measured_iso": "2026-10-11T17:45:18Z"
+      "_x_measured_iso": "2026-10-11T18:19:36Z"
     }
   ],
   "source_feed": "videos_neworder.json",
