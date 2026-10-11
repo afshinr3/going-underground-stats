@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-11T14:20:07.360928Z",
+  "generated_at": "2026-10-11T14:26:30.632077Z",
   "n": 1,
   "entries": [
     {
@@ -22,9 +22,9 @@
       "rumble_url": "https://rumble.com/v7gm5jc-20-years-of-wikileaks-the-biggest-revelations-the-state-of-press-freedom-ju.html",
       "rumble_vid": "v7gm5jc",
       "x_views": "101.7K",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 9,
-      "_x_measured_iso": "2026-10-11T13:20:07Z",
+      "_x_measured_iso": "2026-10-11T14:20:07Z",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
@@ -39,7 +39,7 @@
       "canonical_surname_upper": "HRAFNSSON",
       "canonical_episode_id": "6ad4fc65c296",
       "date_prov": "rumble_scoped_time_only",
-      "ig_likes": "3.0K",
+      "ig_likes": "3.1K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
