@@ -6,7 +6,10 @@ A later session picks up from here. Keep this file current.
 - Full pipeline built and pushed on branch `ccr-400b2c35-sg77nn` (see README.md).
 - 15 offline tests pass: `python -m unittest discover -s tests` from `crosspost/`.
 - Not yet tested against any live API, because no credentials have been provided.
-- Nothing is deployed yet. The existing stats jobs are unaffected; crosspost doesn't touch them.
+- 2026-10-11: install on the M2 Pro handed to its Remote Control session (separate clone at
+  `~/gu-crosspost`; launchd agent starts only once credentials exist). Afshin will add
+  credentials himself at the M2, guided by CREDENTIALS.md.
+- Nothing is live yet. The existing stats jobs are unaffected; crosspost doesn't touch them.
 
 ## Waiting on Afshin
 1. **Where to run it:** the M2 Pro (launchd plist in `deploy/`) or a small server (Docker Compose).
