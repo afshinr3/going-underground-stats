@@ -1,0 +1,18 @@
+# /etc/systemd/system/gu-crosspost.service
+# sudo systemctl daemon-reload && sudo systemctl enable --now gu-crosspost
+[Unit]
+Description=Going Underground / New Order X -> social cross-poster
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=crosspost
+WorkingDirectory=/opt/gu-crosspost/crosspost
+EnvironmentFile=/opt/gu-crosspost/crosspost/.env
+ExecStart=/opt/gu-crosspost/crosspost/.venv/bin/python main.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

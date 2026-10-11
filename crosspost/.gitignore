@@ -1,0 +1,6 @@
+.env
+temp/
+data/
+config/rednote_cookies.json
+*.part
+__pycache__/

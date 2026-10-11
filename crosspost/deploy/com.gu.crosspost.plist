@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- macOS launchd: cp to ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/com.gu.crosspost.plist
+     Edit the two paths below to your clone. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.gu.crosspost</string>
+  <key>WorkingDirectory</key><string>/Users/afshin/going-underground-stats/crosspost</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/afshin/going-underground-stats/crosspost/.venv/bin/python</string>
+    <string>main.py</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/tmp/gu-crosspost.log</string>
+  <key>StandardErrorPath</key><string>/tmp/gu-crosspost.log</string>
+</dict>
+</plist>

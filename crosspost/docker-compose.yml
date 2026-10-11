@@ -1,0 +1,12 @@
+services:
+  crosspost:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      TEMP_DIR: /app/temp
+      DB_PATH: /app/data/state.sqlite3
+      REDNOTE_COOKIES_FILE: /app/data/rednote_cookies.json
+    volumes:
+      - ./data:/app/data      # SQLite state + Rednote session survive rebuilds
+      - ./temp:/app/temp
