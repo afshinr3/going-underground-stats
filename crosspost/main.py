@@ -69,8 +69,11 @@ def build_publishers(s: Settings, only: list[str] | None, notifier: Notifier | N
     return pubs
 
 
-def discover(monitor, state: StateStore, only_handle: str | None, notifier: Notifier | None = None) -> int:
+def discover(monitor, state: StateStore, only_handle: str | None, notifier: Notifier | None = None,
+             s_cfg: Settings | None = None) -> int:
     new = 0
+    if s_cfg is None:
+        s_cfg = load_settings()
     for handle in handles():
         if only_handle and handle.lower() != only_handle.lstrip("@").lower():
             continue
@@ -90,6 +93,16 @@ def discover(monitor, state: StateStore, only_handle: str | None, notifier: Noti
         if notifier:
             notifier.resolve(f"discover:{handle.lower()}", f"reading @{handle} on X works again.")
         for post in posts:
+            # Full episodes are never crossposted: only clips are. Recorded as skipped so the
+            # post counts as seen and is never queued, downloaded or retried.
+            dur = post.get("video_duration_s")
+            if dur and dur >= s_cfg.max_video_seconds:
+                if state.record_post(post, status="skipped_full_episode"):
+                    log.info("skipped: full episode, not a clip",
+                             extra={"handle": handle, "tweet_id": post["tweet_id"],
+                                    "duration_s": round(dur), "limit_s": s_cfg.max_video_seconds,
+                                    "url": post["permalink"]})
+                continue
             if state.record_post(post):
                 new += 1
                 log.info("new video post", extra={"handle": handle, "tweet_id": post["tweet_id"], "url": post["permalink"]})
@@ -166,7 +179,7 @@ def cycle(monitor, pubs, state, s, notifier: Notifier, only_handle=None) -> None
         maintain_tokens(s, state, notifier)
     except Exception:
         log.exception("credential check crashed")
-    discover(monitor, state, only_handle, notifier)
+    discover(monitor, state, only_handle, notifier, s_cfg=s)
     if not pubs:
         log.warning("no publishers configured; posts stay pending")
         return
@@ -179,7 +192,7 @@ def cycle(monitor, pubs, state, s, notifier: Notifier, only_handle=None) -> None
 def dry_run(s: Settings, only_handle: str | None) -> None:
     state = StateStore(":memory:")  # nothing persisted, since_id untouched
     monitor = build_monitor(s, state)
-    discover(monitor, state, only_handle)
+    discover(monitor, state, only_handle, s_cfg=s)
     for post in state.pending_posts():
         print("=" * 72)
         print(f"{post['permalink']}  video={post.get('video_url')}")

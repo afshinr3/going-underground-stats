@@ -191,6 +191,7 @@ class XApiMonitor:
             "quoted_ids": [r["id"] for r in refs if r["type"] == "quoted"],
             "video_url": variant[0],
             "video_bitrate": variant[1],
+            "video_duration_s": (videos[0].get("duration_ms") or 0) / 1000.0 or None,
             "permalink": f"https://x.com/{handle}/status/{t['id']}",
         }
 
@@ -284,6 +285,7 @@ def parse_user_tweets(payload: dict, handle: str) -> list[dict]:
             "quoted_ids": [lg["quoted_status_id_str"]] if lg.get("quoted_status_id_str") else [],
             "video_url": variant[0],
             "video_bitrate": variant[1],
+            "video_duration_s": ((vids[0].get("video_info") or {}).get("duration_millis") or 0) / 1000.0 or None,
             "permalink": f"https://x.com/{handle}/status/{tid}",
         })
     return sorted(out, key=lambda p: int(p["tweet_id"]))

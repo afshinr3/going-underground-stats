@@ -127,7 +127,8 @@ def _gql_tweet(tid, screen="Gunderground_tv", media_type="video", **legacy):
     lg = {"id_str": tid, "user_id_str": "42", "full_text": "Clip text https://t.co/med",
           "created_at": "Sun Oct 11 10:00:00 +0000 2026",
           "entities": {"urls": [], "media": [{"url": "https://t.co/med", "expanded_url": "https://x.com/x/status/1/video/1"}]},
-          "extended_entities": {"media": [{"type": media_type, "video_info": {"variants": [
+          "extended_entities": {"media": [{"type": media_type, "video_info": {
+              "duration_millis": legacy.pop("duration_millis", 27000), "variants": [
               {"content_type": "video/mp4", "bitrate": 256000, "url": "https://v/lo.mp4"},
               {"content_type": "video/mp4", "bitrate": 2176000, "url": "https://v/hi.mp4"}]}}]}}
     lg.update(legacy)
@@ -156,6 +157,41 @@ class CookieMonitorParseTests(unittest.TestCase):
         self.assertEqual(posts[0]["quoted_ids"], ["99"])
         self.assertTrue(posts[0]["created_at"].startswith("2026-10-11T10:00:00"))
         self.assertEqual(build_caption(posts[0]).split("\n")[0], "Clip text")
+
+
+class FullEpisodeGuardTests(unittest.TestCase):
+    """Only clips are crossposted. A full episode must never go out (operator rule 2026-10-11)."""
+
+    def _posts(self, *durations_ms):
+        entries = [_gql_tweet(str(i + 10), duration_millis=d) for i, d in enumerate(durations_ms)]
+        payload = {"data": {"user": {"result": {"timeline": {"timeline": {
+            "instructions": [{"entries": entries}]}}}}}}
+        return parse_user_tweets(payload, "Gunderground_tv")
+
+    def test_duration_is_captured_in_seconds(self):
+        posts = self._posts(27_000, 1_602_000)
+        self.assertAlmostEqual(posts[0]["video_duration_s"], 27.0)
+        self.assertAlmostEqual(posts[1]["video_duration_s"], 1602.0)
+
+    def test_episode_is_recorded_as_skipped_and_never_queued(self):
+        # 1602 s is a real episode length seen on @neworder_tv; 27 s is a real clip.
+        posts = self._posts(27_000, 1_602_000)
+        state = StateStore(":memory:")
+        limit = 600
+        for p in posts:
+            d = p.get("video_duration_s")
+            if d and d >= limit:
+                state.record_post(p, status="skipped_full_episode")
+            else:
+                state.record_post(p)
+        queued = [p["tweet_id"] for p in state.pending_posts()]
+        self.assertEqual(queued, ["10"])                      # the clip only
+        self.assertTrue(state.is_known("11"))                 # the episode is seen...
+        self.assertNotIn("11", queued)                        # ...but never published
+
+    def test_clip_just_under_the_limit_still_posts(self):
+        posts = self._posts(599_000)
+        self.assertLess(posts[0]["video_duration_s"], 600)
 
 
 class StateTests(unittest.TestCase):

@@ -88,6 +88,9 @@ class Settings:
     # Only consider posts newer than this many hours on first run (avoids back-posting history).
     initial_lookback_hours: int = field(default_factory=lambda: _int("INITIAL_LOOKBACK_HOURS", 6))
     max_video_bytes: int = field(default_factory=lambda: _int("MAX_VIDEO_BYTES", 1024 * 1024 * 1024))
+    # Clips run ~20-120 s; a full episode is 25-30 min. Anything at or above this is an
+    # episode, not a clip, and must never be crossposted (operator rule 2026-10-11).
+    max_video_seconds: int = field(default_factory=lambda: _int("MAX_VIDEO_SECONDS", 600))
 
     # X / Twitter
     x_bearer_token: str = field(default_factory=lambda: _env("X_BEARER_TOKEN"))
