@@ -7,7 +7,7 @@
     "x_views": "4.9K",
     "date": "11 Oct",
     "yt_views": null,
-    "ig_likes": "84",
+    "ig_likes": "82",
     "canonical_guest_full_name": "John Bolton",
     "canonical_surname_upper": "BOLTON",
     "canonical_episode_id": "09159e357bd8",
@@ -23,10 +23,8 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=16nJk5ph6CQ",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
-    "show": "NO",
-    "_x_store_tweets": 1,
-    "_x_measured_iso": "2026-10-11T00:31:51Z"
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
+    "show": "NO"
   },
   {
     "guest": "Lawrence Wilkerson",
@@ -52,14 +50,14 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=-jJol9Qyxoo",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_yt_upload_iso": "2026-10-02T07:12:53Z",
     "_yt_premiere_iso": "2026-10-04T06:30:00Z",
     "_yt_premiere_date_fix_v1": "YT_PREMIERE_DATE_V1_20261004",
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
     "_x_store_tweets": 12,
-    "_x_measured_iso": "2026-10-11T01:20:06Z",
+    "_x_measured_iso": "2026-10-11T00:20:07Z",
     "_x_own_views": 1446020,
     "_x_others_views": 172758,
     "_x_posts": 163,
@@ -70,7 +68,7 @@
     "surname": "Mearsheimer",
     "title": "Prof. John Mearsheimer: GREAT FEAR in the US that China will be the World’s MOST POWERFUL Country",
     "rumble_views": "1.3K",
-    "x_views": "737.0K",
+    "x_views": "733.6K",
     "date": "27 Sep",
     "yt_views": "14.0K",
     "ig_likes": "1.7K",
@@ -89,12 +87,12 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=Vgvd4N3n_Tc",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_rumble_views_correction": "SURNAME_SCOPE_V1_20260926: was '4.0K', which is the view count of the GOING UNDERGROUND episode 'Prof. John Mearsheimer Explains Why Iran War MUST END' (2026-07-28, 4,010 views), attributed here by a surname-only join. This episode has no Rumble video: its YouTube id premieres 2026-09-27 and Rumble's New Order channel does not carry it.",
     "_x_store_tweets": 10,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z",
+    "_x_measured_iso": "2026-10-11T00:20:07Z",
     "_x_own_views": 1154680,
     "_x_others_views": 533203,
     "_x_posts": 70,
@@ -105,7 +103,7 @@
     "surname": "Lieven",
     "title": "The US & Israel Have Shown COMPLETE CONTEMPT for India’s Interests (Prof. Anatol Lieven)",
     "rumble_views": "1.1K",
-    "x_views": "940.6K",
+    "x_views": "940.4K",
     "date": "20 Sep",
     "yt_views": "754",
     "ig_likes": "425",
@@ -124,7 +122,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=5qq_DVNUXvM",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_store_tweets": 9,
     "_x_own_views": 1229832,
@@ -132,7 +130,7 @@
     "_x_posts": 72,
     "_x_passes": null,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Paulo Nogueira Batista Jr.",
@@ -158,7 +156,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=uj4XUktMctY",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_store_tweets": 11,
     "_x_own_views": 1498768,
@@ -166,14 +164,14 @@
     "_x_posts": 87,
     "_x_passes": null,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "David Monyae",
     "surname": "Monyae",
     "title": "Africa in the Multipolar World SHOULD & MUST Speak With ONE VOICE (Prof. David Monyae)",
     "rumble_views": "1.2K",
-    "x_views": "483.2K",
+    "x_views": "483.1K",
     "date": "23 Aug",
     "yt_views": "3.6K",
     "ig_likes": "368",
@@ -192,21 +190,21 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=KhzHRLRRuQE",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
     "_x_own_views": 799551,
     "_x_others_views": 95964,
     "_x_posts": 43,
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Sarang Shidore",
     "surname": "Shidore",
     "title": "BRICS is a SUPER-COALITION in the Making, America’s Missteps Fuel Its Rise (Sarang Shidore)",
     "rumble_views": "1.2K",
-    "x_views": "359.4K",
+    "x_views": "359.3K",
     "date": "16 Aug",
     "yt_views": "166",
     "ig_likes": "421",
@@ -225,7 +223,7 @@
       ]
     },
     "link": "https://www.youtube.com/watch?v=CfY37_DnbIM",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "show": "NO",
     "_x_passes": null,
     "_x_store_tweets": 9,
@@ -233,7 +231,7 @@
     "_x_others_views": 50226,
     "_x_posts": 40,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Marta Fernandez",
@@ -260,7 +258,7 @@
     "canonical_surname_upper": "FERNANDEZ",
     "canonical_episode_id": "b5a688bb5c98",
     "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 9,
@@ -268,7 +266,7 @@
     "_x_others_views": 0,
     "_x_posts": 9,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Mohammed Baharoon",
@@ -295,7 +293,7 @@
     "canonical_surname_upper": "BAHAROON",
     "canonical_episode_id": "c082946ae2ff",
     "x_views": "1.3M",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 10,
@@ -303,7 +301,7 @@
     "_x_others_views": 0,
     "_x_posts": 9,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Hussein Askary",
@@ -329,8 +327,8 @@
     "yt_views": "246",
     "canonical_surname_upper": "ASKARY",
     "canonical_episode_id": "df26e3c0ad57",
-    "x_views": "443.4K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "x_views": "443.3K",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
@@ -338,7 +336,7 @@
     "_x_others_views": 0,
     "_x_posts": 7,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Peter Schiff",
@@ -365,12 +363,12 @@
     "canonical_surname_upper": "SCHIFF",
     "canonical_episode_id": "4d61219d41f9",
     "x_views": "941.5K",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "date_prov": "rumble_video_page_time_datetime",
     "_x_store_tweets": 8,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "John Perkins",
@@ -395,14 +393,14 @@
         "O3jo1u4MhPY"
       ]
     },
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": 6,
     "_x_store_tweets": 9,
     "_x_own_views": 1025394,
     "_x_others_views": 62124,
     "_x_posts": 28,
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z"
+    "_x_measured_iso": "2026-10-11T00:20:07Z"
   },
   {
     "guest": "Vikram Sood",
@@ -450,7 +448,7 @@
     "canonical_episode_id": "e35a16f2cfd4",
     "_carried_forward_iso": "2026-09-30T00:04:49Z",
     "_carried_forward_reason": "absent from this run’s feed; retained under EPISODE_UNION_NEVER_SHRINKS_V1 because a known episode must not disappear on one failed lookup",
-    "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+    "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
     "_x_passes": null,
     "_x_store_tweets": 7,
     "canonical_video_id": "08aeFzW4N2E",
@@ -462,7 +460,7 @@
       ]
     },
     "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
-    "_x_measured_iso": "2026-10-11T01:20:06Z",
+    "_x_measured_iso": "2026-10-11T00:20:07Z",
     "_x_own_views": 518331,
     "_x_others_views": 25599,
     "_x_posts": 21
