@@ -150,6 +150,10 @@ class Settings:
         default_factory=lambda: Path(_env("REDNOTE_COOKIES_FILE") or BASE_DIR / "config" / "rednote_cookies.json")
     )
     rednote_headless: bool = field(default_factory=lambda: _bool("REDNOTE_HEADLESS", True))
+    # dedicated real-Chrome profile used for both login and posting (sessions are browser-bound)
+    rednote_profile_dir: Path = field(
+        default_factory=lambda: Path(_env("REDNOTE_PROFILE_DIR") or BASE_DIR / "data" / "rednote_chrome_profile")
+    )
     # Simplified-Chinese title + caption via the Claude CLI (operator 2026-10-12); English fallback
     rednote_chinese: bool = field(default_factory=lambda: _bool("REDNOTE_CHINESE", True))
     rednote_webhook_url: str = field(default_factory=lambda: _env("REDNOTE_WEBHOOK_URL"))

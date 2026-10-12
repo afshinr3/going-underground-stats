@@ -86,8 +86,13 @@ class RednotePublisher(Publisher):
             # operator 2026-10-12: Rednote captions in Simplified Chinese; English if translation fails
             from config.settings import CAPTION_LIMITS, REDNOTE_TITLE_LIMIT
             from transformers.translate import caption_zh, title_zh
+            limit = CAPTION_LIMITS["rednote"]
             title = title_zh(caption, REDNOTE_TITLE_LIMIT) or title
-            caption = caption_zh(caption, CAPTION_LIMITS["rednote"]) or caption
+            zh = caption_zh(caption, limit)
+            if zh:
+                # operator 2026-10-12: Chinese first, then the original English; cut at the limit
+                both = zh + "\n\n" + caption
+                caption = both if len(both) <= limit else both[: limit - 1] + "…"
         if self.s.rednote_mode == "webhook":
             return self._publish_webhook(video, title, caption, post)
         return self._publish_playwright(video, title, caption)
@@ -119,14 +124,23 @@ class RednotePublisher(Publisher):
         from playwright.sync_api import TimeoutError as PWTimeout
         from playwright.sync_api import sync_playwright
 
-        storage = _load_storage(self.s.rednote_cookies_file)
         with sync_playwright() as pw:
-            browser = pw.chromium.launch(headless=self.s.rednote_headless)
-            ctx = browser.new_context(storage_state=storage, locale="zh-CN", viewport={"width": 1400, "height": 1000})
+            # 2026-10-12: a session injected into another browser is rejected (401 -> login) and
+            # then revoked; Xiaohongshu also bounces Playwright's bundled Chromium. So posting
+            # reuses the SAME real-Chrome profile the operator logged in with (`login`).
+            if self.s.rednote_profile_dir.exists():
+                ctx = pw.chromium.launch_persistent_context(
+                    str(self.s.rednote_profile_dir), channel="chrome", headless=self.s.rednote_headless,
+                    locale="zh-CN", viewport={"width": 1400, "height": 1000})
+                browser = None
+            else:
+                browser = pw.chromium.launch(channel="chrome", headless=self.s.rednote_headless)
+                ctx = browser.new_context(storage_state=_load_storage(self.s.rednote_cookies_file),
+                                          locale="zh-CN", viewport={"width": 1400, "height": 1000})
             page = ctx.new_page()
             try:
                 page.goto(PUBLISH_URL, wait_until="domcontentloaded", timeout=60_000)
-                page.wait_for_timeout(3000)
+                page.wait_for_timeout(10_000)  # the auth check redirects a few seconds after load
                 if "login" in page.url:
                     raise PublishError("Rednote session expired — re-run `python -m publishers.rednote login`")
                 try:
@@ -156,12 +170,13 @@ class RednotePublisher(Publisher):
                         shot = self.s.temp_dir / "rednote_failure.png"
                         page.screenshot(path=str(shot), full_page=True)
                         raise PublishError(f"no publish confirmation (screenshot: {shot})")
-                # refresh the stored session so cookie rotation doesn't log us out
-                self.s.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
+                if browser is not None:  # the persistent profile keeps its own cookies
+                    self.s.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
                 return PublishResult(self.name, None, None)
             finally:
                 ctx.close()
-                browser.close()
+                if browser is not None:
+                    browser.close()
 
 
 def login(settings) -> None:
@@ -175,29 +190,38 @@ def login(settings) -> None:
                   "customer-sso-sid", "customerClientId")
     import time as _t
 
+    # v3: log in inside the dedicated real-Chrome profile that posting reuses, starting from the
+    # publish page so whichever domain Rednote routes this Mac to (xiaohongshu.com or rednote.com)
+    # is the one logged in. Done = the publish page with its upload input, stable for 20 s.
+    settings.rednote_profile_dir.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=False)
-        ctx = browser.new_context(locale="zh-CN")
-        page = ctx.new_page()
-        page.goto(LOGIN_URL)
-        print("Log in to the Xiaohongshu Creator Center in the browser window (scan the QR code)...", flush=True)
-        settings.rednote_cookies_file.parent.mkdir(parents=True, exist_ok=True)
-        saved_at, deadline = None, _t.time() + 15 * 60
+        ctx = pw.chromium.launch_persistent_context(
+            str(settings.rednote_profile_dir), channel="chrome", headless=False, locale="zh-CN",
+            viewport={"width": 1400, "height": 1000})
+        page = ctx.pages[0] if ctx.pages else ctx.new_page()
+        page.goto(PUBLISH_URL)
+        print("Log in to Rednote in the Chrome window (scan the QR code)...", flush=True)
+        ok_since, deadline = None, _t.time() + 15 * 60
         while _t.time() < deadline:
             page.wait_for_timeout(3000)
-            names = {c["name"] for c in ctx.cookies() if "xiaohongshu" in c.get("domain", "")}
-            if names & set(auth_names) or "login" not in page.url:
-                settings.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
-                if saved_at is None:
-                    saved_at = _t.time()
-                    print("Logged in (%s); session saved to %s" % (
-                        ", ".join(sorted(names & set(auth_names))) or "left login page",
-                        settings.rednote_cookies_file), flush=True)
-                if _t.time() - saved_at > 20:  # let late cookies land, then finish
+            on_publish = "/publish/publish" in page.url and "login" not in page.url \
+                and page.locator("input[type='file']").count() > 0
+            if on_publish:
+                ok_since = ok_since or _t.time()
+                if _t.time() - ok_since > 20:
                     break
-        browser.close()
-        if saved_at is None:
-            print("No login detected within 15 minutes; nothing saved", flush=True)
+            else:
+                ok_since = None
+                if "login" not in page.url and "/publish/publish" not in page.url:
+                    page.goto(PUBLISH_URL)  # logged in somewhere else: go to the upload page
+        if ok_since:
+            settings.rednote_cookies_file.parent.mkdir(parents=True, exist_ok=True)
+            settings.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
+            print("Logged in on %s; profile saved in %s" % (page.url.split("/")[2], settings.rednote_profile_dir),
+                  flush=True)
+        ctx.close()
+        if not ok_since:
+            print("No login detected within 15 minutes", flush=True)
             sys.exit(1)
 
 
