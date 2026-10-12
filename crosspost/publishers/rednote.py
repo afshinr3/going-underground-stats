@@ -63,11 +63,17 @@ def _click_publish(page) -> None:
     bar = page.locator("xhs-publish-btn").first
     if bar.count():
         bar.scroll_into_view_if_needed()
-        bb = bar.bounding_box()
-        im = Image.open(io.BytesIO(bar.screenshot())).convert("RGB")
-        y = im.height // 2
-        reds = [x for x in range(im.width)
-                if (lambda c: c[0] > 200 and c[1] < 90 and c[2] < 120)(im.getpixel((x, y)))]
+        # the button stays grey while the upload is still processing (2026-10-13 a retry 13 min
+        # later went through): wait up to 3 min for it to turn red before giving up
+        for _ in range(36):
+            bb = bar.bounding_box()
+            im = Image.open(io.BytesIO(bar.screenshot())).convert("RGB")
+            y = im.height // 2
+            reds = [x for x in range(im.width)
+                    if (lambda c: c[0] > 200 and c[1] < 90 and c[2] < 120)(im.getpixel((x, y)))]
+            if bb and len(reds) >= 20:
+                break
+            page.wait_for_timeout(5000)
         if not bb or len(reds) < 20:
             raise PublishError("publish bar found but no red 发布 button in it")
         page.mouse.click(bb["x"] + (min(reds) + max(reds)) / 2 * bb["width"] / im.width,

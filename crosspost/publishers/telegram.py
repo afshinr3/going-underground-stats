@@ -45,11 +45,20 @@ class TelegramPublisher(Publisher):
 
     def publish(self, video: Path, caption: str, post: dict) -> PublishResult:
         size = video.stat().st_size
+        shrunk = None
         if size > CLOUD_LIMIT and "api.telegram.org" in self.s.telegram_api_base:
-            raise PublishError(
-                f"video is {size / 1e6:.1f} MB; cloud Bot API limit is 50 MB — set TELEGRAM_API_BASE "
-                "to a local telegram-bot-api server"
-            )
+            # TELEGRAM_SHRINK_V1_20261013: a 65.7 MB GU clip was given up after 5 tries. Re-encode a copy
+            # to 720p at a capped bitrate (same encoder as the Instagram path); the original is untouched.
+            from .instagram import _shrink
+            shrunk = video.with_name(video.stem + ".tg720.mp4")
+            _shrink(video, shrunk)
+            if shrunk.stat().st_size > CLOUD_LIMIT:
+                shrunk.unlink(missing_ok=True)
+                raise PublishError(
+                    f"video is {size / 1e6:.1f} MB and still over 50 MB at 720p — set TELEGRAM_API_BASE "
+                    "to a local telegram-bot-api server"
+                )
+            video = shrunk
         url = f"{self.s.telegram_api_base.rstrip('/')}/bot{self.s.telegram_bot_token}/sendVideo"
         data = {
             "chat_id": self.s.telegram_channel_id,
@@ -57,8 +66,12 @@ class TelegramPublisher(Publisher):
             "supports_streaming": "true",
             **{k: str(v) for k, v in _probe(video).items()},
         }
-        with open(video, "rb") as f:
-            r = self.http.post(url, data=data, files={"video": (video.name, f, "video/mp4")}, timeout=900)
+        try:
+            with open(video, "rb") as f:
+                r = self.http.post(url, data=data, files={"video": (video.name, f, "video/mp4")}, timeout=900)
+        finally:
+            if shrunk is not None:
+                shrunk.unlink(missing_ok=True)
         body = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
         if not body.get("ok"):
             raise PublishError(f"sendVideo failed: {r.status_code} {body.get('description') or r.text[:300]}")
