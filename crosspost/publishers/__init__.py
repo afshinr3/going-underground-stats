@@ -1,4 +1,5 @@
 from .base import PublishError, Publisher, PublishResult
+from .facebook_profile import FacebookProfilePublisher
 from .instagram import InstagramPublisher
 from .linkedin import LinkedInPublisher
 from .rednote import RednotePublisher
@@ -9,6 +10,7 @@ REGISTRY: dict[str, type[Publisher]] = {
     "instagram": InstagramPublisher,
     "linkedin": LinkedInPublisher,
     "rednote": RednotePublisher,
+    "facebook_profile": FacebookProfilePublisher,
 }
 
 __all__ = ["REGISTRY", "PublishError", "Publisher", "PublishResult"]

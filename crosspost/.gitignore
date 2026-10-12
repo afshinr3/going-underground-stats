@@ -5,3 +5,4 @@ config/rednote_cookies.json
 *.part
 __pycache__/
 config/x_cookies.json
+config/fb_cookies.json

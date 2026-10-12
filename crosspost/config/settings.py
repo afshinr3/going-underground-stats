@@ -71,6 +71,7 @@ CAPTION_LIMITS = {
     "instagram": 2200,
     "linkedin": 3000,
     "rednote": 1000,
+    "facebook_profile": 5000,
 }
 REDNOTE_TITLE_LIMIT = 20  # Xiaohongshu note titles are capped at 20 characters
 
@@ -152,6 +153,14 @@ class Settings:
     rednote_webhook_url: str = field(default_factory=lambda: _env("REDNOTE_WEBHOOK_URL"))
     rednote_webhook_token: str = field(default_factory=lambda: _env("REDNOTE_WEBHOOK_TOKEN"))
 
+    # Facebook PERSONAL profile via browser automation (operator choice 2026-10-12, accepting the
+    # account risk). Off until FACEBOOK_PROFILE_ENABLED=true and a cookie export exists.
+    facebook_profile_enabled: bool = field(default_factory=lambda: _bool("FACEBOOK_PROFILE_ENABLED", False))
+    fb_cookies_file: Path = field(
+        default_factory=lambda: Path(_env("FB_COOKIES_FILE") or BASE_DIR / "config" / "fb_cookies.json")
+    )
+    fb_headless: bool = field(default_factory=lambda: _bool("FB_HEADLESS", True))
+
     def enabled_platforms(self) -> list[str]:
         out = []
         if self.telegram_enabled:
@@ -162,6 +171,8 @@ class Settings:
             out.append("linkedin")
         if self.rednote_enabled:
             out.append("rednote")
+        if self.facebook_profile_enabled:
+            out.append("facebook_profile")
         return out
 
 
