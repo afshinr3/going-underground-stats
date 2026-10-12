@@ -1,4 +1,35 @@
 {
-  "updated": "2026-10-11T23:04:32Z",
-  "drops": []
+  "updated": "2026-10-12T02:27:34Z",
+  "drops": [
+    {
+      "ts": "2026-10-12T02:27:34Z",
+      "show": "NO",
+      "guest": "Bolton",
+      "platform": "X",
+      "peak": 265300,
+      "peak_at": "2026-10-11T23:04:32Z",
+      "current": 82700,
+      "drop_pct": 68.8
+    },
+    {
+      "ts": "2026-10-12T02:27:34Z",
+      "show": "NO",
+      "guest": "Schiff",
+      "platform": "X",
+      "peak": 1800000,
+      "peak_at": "2026-10-11T23:04:32Z",
+      "current": 941600,
+      "drop_pct": 47.7
+    },
+    {
+      "ts": "2026-10-12T02:27:34Z",
+      "show": "NO",
+      "guest": "Perkins",
+      "platform": "X",
+      "peak": 1400000,
+      "peak_at": "2026-10-11T23:04:32Z",
+      "current": 812400,
+      "drop_pct": 42.0
+    }
+  ]
 }
