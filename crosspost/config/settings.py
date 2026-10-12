@@ -118,6 +118,10 @@ class Settings:
     meta_app_id: str = field(default_factory=lambda: _env("META_APP_ID"))
     meta_app_secret: str = field(default_factory=lambda: _env("META_APP_SECRET"))
     instagram_share_to_feed: bool = field(default_factory=lambda: _bool("INSTAGRAM_SHARE_TO_FEED", True))
+    # Public base URL for the video_url fallback (Instagram Login refuses resumable upload on
+    # this account): the M2's Tailscale Funnel relay serves temp/public/<random>.mp4 at /media/.
+    instagram_public_media_base: str = field(default_factory=lambda: _env(
+        "INSTAGRAM_PUBLIC_MEDIA_BASE", "https://afshins-macbook-pro.tail7830a6.ts.net/media/"))
 
     # LinkedIn
     linkedin_enabled: bool = field(default_factory=lambda: _bool("LINKEDIN_ENABLED", True))
