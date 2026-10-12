@@ -19,6 +19,7 @@ raises PublishError immediately -- it never tries to get past one.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -29,7 +30,8 @@ HOME = "https://www.facebook.com/"
 
 SELECTORS = {
     "composer": re.compile(r"what'?s on your mind", re.I),
-    "photo_video": re.compile(r"^photo/video$", re.I),
+    # no literal "/" in these: it breaks Playwright's selector parser
+    "photo_video": re.compile(r"^(photo.video|add photos or videos)", re.I),
     "dialog_title": re.compile(r"create post", re.I),
     "next": re.compile(r"^next$", re.I),
     "post": re.compile(r"^post$", re.I),
@@ -53,8 +55,27 @@ def _load_storage(path: Path) -> dict:
     return data
 
 
+# Login and posting MUST launch Chrome identically: cookies are encrypted per launch config
+# (normal Chrome uses the real Keychain, which automated Chrome can't read -- measured
+# 2026-10-12), and Facebook refuses to log in when Chrome advertises automation. So the
+# automation banner/flag is removed and the same options are used everywhere.
+_LAUNCH = dict(channel="chrome", locale="en-GB", viewport={"width": 1400, "height": 1000},
+               ignore_default_args=["--enable-automation"],
+               args=["--disable-blink-features=AutomationControlled"])
+
+
+def _profile(settings) -> Path:
+    return settings.db_path.parent / "fb_chrome_profile"
+
+
 def _open(pw, settings, headless=True):
-    browser = pw.chromium.launch(headless=headless)
+    """Same real-Chrome profile for login and posting: sessions are browser-bound (the Rednote
+    QR session was revoked when replayed in another browser, 2026-10-12)."""
+    prof = _profile(settings)
+    if prof.exists():
+        ctx = pw.chromium.launch_persistent_context(str(prof), headless=headless, **_LAUNCH)
+        return None, ctx
+    browser = pw.chromium.launch(channel="chrome", headless=headless)
     ctx = browser.new_context(storage_state=_load_storage(settings.fb_cookies_file), locale="en-GB",
                               viewport={"width": 1400, "height": 1000})
     return browser, ctx
@@ -66,12 +87,31 @@ def _assert_logged_in(page) -> None:
                            "(Cookie-Editor -> Export JSON) to FB_COOKIES_FILE; nothing was posted")
 
 
+def _dismiss_popups(page) -> None:
+    """Close interstitials that grey out the feed ("Remember password", cookie/notification
+    prompts). Only harmless dismiss buttons are pressed -- never anything that posts."""
+    for name in ("Not now", "Close", "Not Now", "Later"):
+        try:
+            b = page.get_by_role("button", name=name, exact=True)
+            if b.count():
+                b.first.click(timeout=2000)
+                page.wait_for_timeout(800)
+        except Exception:
+            pass
+    page.keyboard.press("Escape")
+
+
+def _composer(page):
+    btn = page.get_by_role("button", name=SELECTORS["composer"])
+    return btn if btn.count() else page.get_by_text(SELECTORS["composer"])
+
+
 class FacebookProfilePublisher(Publisher):
     name = "facebook_profile"
 
     def validate(self) -> None:
-        if not self.s.fb_cookies_file.exists():
-            raise PublishError(f"no Facebook session at {self.s.fb_cookies_file}; export facebook.com cookies there")
+        if not (_profile(self.s).exists() or self.s.fb_cookies_file.exists()):
+            raise PublishError("no Facebook session: run `python -m publishers.facebook_profile login` on the Mac")
         try:
             import playwright  # noqa: F401
         except ImportError as e:
@@ -88,32 +128,57 @@ class FacebookProfilePublisher(Publisher):
                 page.goto(HOME, wait_until="domcontentloaded", timeout=60_000)
                 page.wait_for_timeout(4000)
                 _assert_logged_in(page)
+                _dismiss_popups(page)
 
-                page.get_by_role("button", name=SELECTORS["composer"]).first.click(timeout=20_000)
-                dialog = page.get_by_role("dialog").filter(has_text=SELECTORS["dialog_title"]).last
-                dialog.wait_for(timeout=20_000)
-                try:
-                    dialog.get_by_role("button", name=SELECTORS["photo_video"]).first.click(timeout=5000)
-                except PWTimeout:
-                    pass  # some layouts show the drop zone straight away
-                dialog.locator("input[type='file']").first.set_input_files(str(video))
+                _composer(page).first.click(timeout=20_000)
+                # Facebook shows Create Post either as a dialog or as a full page (both seen on
+                # 2026-10-12), so everything is found page-wide by label, never via the dialog.
+                page.get_by_text(SELECTORS["dialog_title"]).first.wait_for(timeout=20_000)
+                page.wait_for_timeout(1500)
 
-                box = dialog.locator("div[role='textbox'][contenteditable='true']").first
-                box.click()
+                # 1. caption FIRST: on 2026-10-12 typing after the upload lost the first line
+                #    (the preview stole focus mid-typing)
+                box = page.get_by_role("textbox", name=SELECTORS["composer"]).last
+                box.click(timeout=15_000)
+                page.keyboard.press("Meta+A")  # Facebook keeps unsent drafts: start from an empty box
+                page.keyboard.press("Backspace")
+                # the editor applies the clear asynchronously: without this pause it wiped the
+                # first typed line (the headline went missing on 2026-10-12)
+                page.wait_for_timeout(800)
                 for i, line in enumerate(caption.split("\n")):
                     if i:
                         page.keyboard.press("Shift+Enter")
                     if line:
                         page.keyboard.insert_text(line)
                 page.wait_for_timeout(1500)
+                head = next((l.strip() for l in caption.split("\n") if l.strip()), "")[:40]
+                typed = page.get_by_role("textbox", name=SELECTORS["composer"]).last.inner_text()
+                if head and head not in typed.replace("\u00a0", " "):
+                    raise PublishError("caption check failed: the first line is not in the composer (box has %r); "
+                                       "nothing posted" % typed[:80])
 
-                # newer composers put audience/extras behind "Next"
-                nxt = dialog.get_by_role("button", name=SELECTORS["next"])
-                if nxt.count():
-                    nxt.first.click()
+                # 2. video through the button's own file chooser (a page-wide input[type=file] hit the
+                #    wrong field on the full-page layout and the post went out as text + link)
+                videos_before = page.locator("video").count()
+                try:
+                    with page.expect_file_chooser(timeout=10_000) as fc:
+                        page.get_by_role("button", name=SELECTORS["photo_video"]).last.click(timeout=10_000)
+                    fc.value.set_files(str(video))
+                except PWTimeout:
+                    raise PublishError("could not open the photo/video picker; nothing posted")
+                for _ in range(60):  # never post without the clip
+                    if page.locator("video").count() > videos_before:
+                        break
                     page.wait_for_timeout(2000)
-                    dialog = page.get_by_role("dialog").last
-                btn = dialog.get_by_role("button", name=SELECTORS["post"]).last
+                else:
+                    raise PublishError("video preview never appeared in the composer; nothing posted")
+
+                # some composers put audience/extras behind "Next"
+                nxt = page.get_by_role("button", name=SELECTORS["next"])
+                if nxt.count():
+                    nxt.last.click()
+                    page.wait_for_timeout(2000)
+                btn = page.get_by_role("button", name=SELECTORS["post"]).last
                 # the button stays disabled until the upload is attached
                 for _ in range(180):
                     if btn.get_attribute("aria-disabled") != "true":
@@ -121,13 +186,17 @@ class FacebookProfilePublisher(Publisher):
                     page.wait_for_timeout(5000)
                 else:
                     raise PublishError("Post button never enabled (upload stuck)")
+                if os.environ.get("FB_DRY_RUN"):
+                    page.screenshot(path=str(self.s.temp_dir / "facebook_profile_dryrun.png"))
+                    raise PublishError("dry run: stopped before Post (nothing posted)")
                 btn.click()
-                # the composer closes once Facebook has accepted the post; the video keeps
+                # accepted = the composer (its "What's on your mind" box) is gone; the video keeps
                 # processing server-side after that
-                page.get_by_role("dialog").filter(has_text=SELECTORS["dialog_title"]).wait_for(
+                page.get_by_role("textbox", name=SELECTORS["composer"]).last.wait_for(
                     state="detached", timeout=20 * 60_000)
                 _assert_logged_in(page)
-                self.s.fb_cookies_file.write_text(json.dumps(ctx.storage_state()))  # keep rotated cookies
+                if browser is not None:
+                    self.s.fb_cookies_file.write_text(json.dumps(ctx.storage_state()))  # keep rotated cookies
                 return PublishResult(self.name, None, None)
             except PublishError:
                 raise
@@ -141,7 +210,8 @@ class FacebookProfilePublisher(Publisher):
                                    f"screenshot {shot}") from e
             finally:
                 ctx.close()
-                browser.close()
+                if browser is not None:
+                    browser.close()
 
 
 def check(settings) -> int:
@@ -158,7 +228,8 @@ def check(settings) -> int:
             except PublishError as e:
                 print("NOT LOGGED IN:", e)
                 return 1
-            found = page.get_by_role("button", name=SELECTORS["composer"]).count()
+            _dismiss_popups(page)
+            found = _composer(page).count()
             print("logged in: yes | composer found:", bool(found), "| url:", page.url)
             if not found:
                 shot = settings.temp_dir / "facebook_profile_check.png"
@@ -167,24 +238,35 @@ def check(settings) -> int:
             return 0 if found else 2
         finally:
             ctx.close()
-            browser.close()
+            if browser is not None:
+                browser.close()
 
 
 def login(settings) -> None:
-    """Visible browser on the Mac: log in by hand, then the session is saved."""
+    """Visible real Chrome (dedicated profile) on the Mac: log in by hand; done when the feed
+    has been logged in (c_user cookie, no password box) for 15 s. 15-minute window."""
+    import time as _t
     from playwright.sync_api import sync_playwright
+    prof = _profile(settings)
+    prof.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=False)
-        ctx = browser.new_context(locale="en-GB")
-        page = ctx.new_page()
+        ctx = pw.chromium.launch_persistent_context(str(prof), headless=False, **_LAUNCH)
+        page = ctx.pages[0] if ctx.pages else ctx.new_page()
         page.goto(HOME)
-        print("Log in to Facebook in the browser window (incl. any 2FA)...")
-        page.wait_for_function("() => !document.querySelector(\"input[name='pass']\")", timeout=10 * 60_000)
-        page.wait_for_timeout(5000)
-        settings.fb_cookies_file.parent.mkdir(parents=True, exist_ok=True)
-        settings.fb_cookies_file.write_text(json.dumps(ctx.storage_state()))
-        print("saved", settings.fb_cookies_file)
-        browser.close()
+        print("Log in to Facebook in the Chrome window (incl. any 2FA)...", flush=True)
+        ok_since, deadline = None, _t.time() + 15 * 60
+        while _t.time() < deadline:
+            page.wait_for_timeout(3000)
+            logged = any(c["name"] == "c_user" for c in ctx.cookies("https://www.facebook.com")) \
+                and not WALL.search(page.url) and page.locator("input[name='pass']").count() == 0
+            ok_since = (ok_since or _t.time()) if logged else None
+            if ok_since and _t.time() - ok_since > 15:
+                break
+        ctx.close()
+        if not ok_since:
+            print("No Facebook login detected within 15 minutes", flush=True)
+            sys.exit(1)
+        print("Facebook logged in; profile saved in", prof, flush=True)
 
 
 if __name__ == "__main__":
