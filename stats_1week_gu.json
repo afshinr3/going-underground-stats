@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-12T09:20:08.472533Z",
+  "generated_at": "2026-10-12T09:22:20.482689Z",
   "n": 2,
   "entries": [
     {
@@ -13,10 +13,10 @@
       "surname": "Sachs",
       "title": "Prof. Jeffrey Sachs: We Are at DIRE RISK of Nuclear War from Russia-NATO Escalation Over Ukraine",
       "rumble_views": null,
-      "x_views": null,
+      "x_views": "24.8K",
       "date": "12 Oct",
-      "yt_views": "5.5K",
-      "ig_likes": "467",
+      "yt_views": "4.2K",
+      "ig_likes": "490",
       "canonical_guest_full_name": "Jeffrey Sachs",
       "canonical_surname_upper": "SACHS",
       "canonical_episode_id": "ce14cb86cc38",
@@ -32,8 +32,11 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=jqcVQG8WuGs",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
-      "show": "GU"
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
+      "show": "GU",
+      "_x_store_tweets": 1,
+      "_x_measured_iso": "2026-10-12T09:20:08Z",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     },
     {
       "guest": "Kristinn Hrafnsson",
@@ -49,9 +52,9 @@
       "rumble_url": "https://rumble.com/v7gm5jc-20-years-of-wikileaks-the-biggest-revelations-the-state-of-press-freedom-ju.html",
       "rumble_vid": "v7gm5jc",
       "x_views": "180.2K",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 10,
-      "_x_measured_iso": "2026-10-12T07:42:10Z",
+      "_x_measured_iso": "2026-10-12T09:20:08Z",
       "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
@@ -66,7 +69,7 @@
       "canonical_surname_upper": "HRAFNSSON",
       "canonical_episode_id": "6ad4fc65c296",
       "date_prov": "rumble_scoped_time_only",
-      "ig_likes": "3.6K",
+      "ig_likes": "3.7K",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
