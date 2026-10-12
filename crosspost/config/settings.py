@@ -150,6 +150,8 @@ class Settings:
         default_factory=lambda: Path(_env("REDNOTE_COOKIES_FILE") or BASE_DIR / "config" / "rednote_cookies.json")
     )
     rednote_headless: bool = field(default_factory=lambda: _bool("REDNOTE_HEADLESS", True))
+    # Simplified-Chinese title + caption via the Claude CLI (operator 2026-10-12); English fallback
+    rednote_chinese: bool = field(default_factory=lambda: _bool("REDNOTE_CHINESE", True))
     rednote_webhook_url: str = field(default_factory=lambda: _env("REDNOTE_WEBHOOK_URL"))
     rednote_webhook_token: str = field(default_factory=lambda: _env("REDNOTE_WEBHOOK_TOKEN"))
 

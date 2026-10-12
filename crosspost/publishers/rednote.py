@@ -82,6 +82,12 @@ class RednotePublisher(Publisher):
 
     def publish(self, video: Path, caption: str, post: dict) -> PublishResult:
         title = build_title(post)
+        if self.s.rednote_chinese:
+            # operator 2026-10-12: Rednote captions in Simplified Chinese; English if translation fails
+            from config.settings import CAPTION_LIMITS, REDNOTE_TITLE_LIMIT
+            from transformers.translate import caption_zh, title_zh
+            title = title_zh(caption, REDNOTE_TITLE_LIMIT) or title
+            caption = caption_zh(caption, CAPTION_LIMITS["rednote"]) or caption
         if self.s.rednote_mode == "webhook":
             return self._publish_webhook(video, title, caption, post)
         return self._publish_playwright(video, title, caption)
