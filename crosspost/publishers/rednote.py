@@ -30,8 +30,10 @@ from transformers.caption import build_title
 
 from .base import PublishError, Publisher, PublishResult
 
-PUBLISH_URL = "https://creator.xiaohongshu.com/publish/publish?source=official&from=tab_switch"
-LOGIN_URL = "https://creator.xiaohongshu.com/login"
+# The international domain: this Mac (UAE) is routed to creator.rednote.com and the operator's
+# login lives there; the same profile is NOT logged in on creator.xiaohongshu.com (2026-10-12).
+PUBLISH_URL = "https://creator.rednote.com/publish/publish?source=official&from=tab_switch"
+LOGIN_URL = "https://creator.rednote.com/login"
 
 SELECTORS = {
     "video_tab": "text=上传视频",
@@ -39,10 +41,39 @@ SELECTORS = {
     "upload_done": "text=/上传成功|重新上传|替换视频/",
     "title": "input[placeholder*='标题']",
     "body": "div.ql-editor, #post-textarea, div[contenteditable='true']",
-    "publish_button": "button:has-text('发布'):not(:has-text('定时'))",
+    # creator.rednote.com: the red bottom-bar 发布 is not a <button>; exact text so it can never
+    # hit 发布笔记 (sidebar), 暂存离开 (save draft) or 定时发布 (scheduled)
+    "publish_button": "text=/^\\s*发布\\s*$/",
     "published": "text=/发布成功|已发布/",
     "login_marker": "text=/扫码登录|短信登录|登录/",
 }
+
+
+def _click_publish(page) -> None:
+    """Click the red 发布 button.
+
+    On creator.rednote.com the bottom bar is <xhs-publish-btn> with a CLOSED shadow root, so
+    neither text nor role selectors can see 发布 or 暂存离开 (save draft). The bar is screenshotted
+    and the click goes to the centre of its red region -- the white 暂存离开 can never be hit.
+    Falls back to the text selector on layouts that expose a normal button."""
+    import io
+
+    from PIL import Image
+
+    bar = page.locator("xhs-publish-btn").first
+    if bar.count():
+        bar.scroll_into_view_if_needed()
+        bb = bar.bounding_box()
+        im = Image.open(io.BytesIO(bar.screenshot())).convert("RGB")
+        y = im.height // 2
+        reds = [x for x in range(im.width)
+                if (lambda c: c[0] > 200 and c[1] < 90 and c[2] < 120)(im.getpixel((x, y)))]
+        if not bb or len(reds) < 20:
+            raise PublishError("publish bar found but no red 发布 button in it")
+        page.mouse.click(bb["x"] + (min(reds) + max(reds)) / 2 * bb["width"] / im.width,
+                         bb["y"] + bb["height"] / 2)
+        return
+    page.locator(SELECTORS["publish_button"]).last.click()
 
 
 def _load_storage(path: Path) -> dict:
@@ -162,7 +193,7 @@ class RednotePublisher(Publisher):
                 page.keyboard.press("Escape")  # dismiss hashtag/topic suggestion popups
                 page.wait_for_timeout(1500)
 
-                page.locator(SELECTORS["publish_button"]).last.click()
+                _click_publish(page)
                 try:
                     page.locator(SELECTORS["published"]).first.wait_for(timeout=120_000)
                 except PWTimeout:
