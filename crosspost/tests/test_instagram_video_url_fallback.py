@@ -83,5 +83,32 @@ class T(unittest.TestCase):
             self.assertFalse(any("video_url" in (c[2] if isinstance(c[2], dict) else {}) for c in http.calls))
 
 
+class Quota(unittest.TestCase):
+    def test_quota_error_while_polling_waits_instead_of_failing(self):
+        import publishers.instagram as ig
+        with tempfile.TemporaryDirectory() as tmp:
+            http = FakeHTTP()
+            n = {"k": 0}
+            real_get = http.get
+
+            def get(url, params=None, **kw):
+                if params.get("fields") == "status_code,status":
+                    n["k"] += 1
+                    if n["k"] == 1:
+                        return Resp(403, {"error": {"message": "Application request limit reached"}})
+                return real_get(url, params=params, **kw)
+            http.get = get
+            orig_sleep = ig.time.sleep
+            ig.time.sleep = lambda *_: None
+            pub = make(tmp, http)
+            pub.wait_until = lambda check, **kw: [check(), check()][-1] or None
+            try:
+                res = pub.publish(T()._video(tmp), "cap", {})
+            finally:
+                ig.time.sleep = orig_sleep
+            self.assertEqual(res.remote_id, "M1")
+            self.assertEqual(n["k"], 2)
+
+
 if __name__ == "__main__":
     unittest.main()

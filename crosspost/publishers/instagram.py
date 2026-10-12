@@ -25,6 +25,7 @@ Reels must be 3s–15min, 9:16 recommended; Meta rejects other specs at step 3.
 from __future__ import annotations
 
 import secrets
+import time
 import shutil
 from pathlib import Path
 
@@ -104,22 +105,30 @@ class InstagramPublisher(Publisher):
             served.unlink(missing_ok=True)
 
     def _finish(self, container_id: str, uid: str, token: str) -> PublishResult:
-        # 3. wait for processing
+        # 3. wait for processing. Polled every 30 s, and a quota error ("Application request
+        # limit reached") only means "ask again later": on 2026-10-12 polling every 10 s across
+        # several clips exhausted the account's hourly Graph quota and failed finished uploads.
         def status():
-            s = self._check(
-                self.http.get(
-                    f"{self.graph}/{container_id}",
-                    params={"fields": "status_code,status", "access_token": token},
-                    timeout=30,
-                ),
-                "container status",
-            )
+            try:
+                s = self._check(
+                    self.http.get(
+                        f"{self.graph}/{container_id}",
+                        params={"fields": "status_code,status", "access_token": token},
+                        timeout=30,
+                    ),
+                    "container status",
+                )
+            except PublishError as e:
+                if "request limit" in str(e).lower():
+                    time.sleep(120)
+                    return False
+                raise
             code = s.get("status_code")
             if code == "ERROR" or code == "EXPIRED":
                 raise PublishError(f"container {code}: {s.get('status')}")
             return code == "FINISHED"
 
-        self.wait_until(status, timeout=900, interval=10, what="instagram video processing")
+        self.wait_until(status, timeout=1800, interval=30, what="instagram video processing")
 
         # 4. publish
         r = self.http.post(
