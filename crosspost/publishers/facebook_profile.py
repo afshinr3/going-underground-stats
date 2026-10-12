@@ -106,6 +106,36 @@ def _composer(page):
     return btn if btn.count() else page.get_by_text(SELECTORS["composer"])
 
 
+ACTIVITY = "https://www.facebook.com/me/allactivity?category_key=MANAGEPOSTSPHOTOSANDVIDEOS"
+
+
+def _norm(t: str) -> str:
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", t.lower()).split())
+
+
+def _wait_until_listed(ctx, caption: str, temp_dir: Path, minutes: int = 20) -> bool:
+    """Proof of posting: the caption's opening words show up in the activity log ("Your posts,
+    photos and videos"). Emoji are dropped on both sides (the log renders flags as images)."""
+    head = _norm(next((l for l in caption.split("\n") if _norm(l)), ""))[:40]
+    if not head:
+        return True
+    chk = ctx.new_page()
+    try:
+        for _ in range(minutes * 2):
+            chk.wait_for_timeout(30_000)
+            try:
+                chk.goto(ACTIVITY, wait_until="domcontentloaded", timeout=60_000)
+                chk.wait_for_timeout(8000)
+                if head in _norm(chk.inner_text("body")):
+                    return True
+            except Exception:
+                pass
+        chk.screenshot(path=str(temp_dir / "facebook_profile_not_listed.png"))
+        return False
+    finally:
+        chk.close()
+
+
 class FacebookProfilePublisher(Publisher):
     name = "facebook_profile"
 
@@ -195,6 +225,12 @@ class FacebookProfilePublisher(Publisher):
                 page.get_by_role("textbox", name=SELECTORS["composer"]).last.wait_for(
                     state="detached", timeout=20 * 60_000)
                 _assert_logged_in(page)
+                # 2026-10-13: four "published" clips never appeared -- the composer closes while the
+                # video is still uploading and closing the browser killed it. Success now means the
+                # post is in the operator's own activity log; this tab stays open meanwhile.
+                if not _wait_until_listed(ctx, caption, self.s.temp_dir):
+                    raise PublishError("composer closed but the post never appeared in the activity log "
+                                       "within 20 min (upload lost?)")
                 if browser is not None:
                     self.s.fb_cookies_file.write_text(json.dumps(ctx.storage_state()))  # keep rotated cookies
                 return PublishResult(self.name, None, None)
