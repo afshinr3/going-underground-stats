@@ -1,7 +1,36 @@
 {
-  "iso": "2026-10-12T08:48:11Z",
-  "last_updated": "2026-10-12T08:48:11Z",
+  "iso": "2026-10-12T08:54:46Z",
+  "last_updated": "2026-10-12T08:54:46Z",
   "episodes": [
+    {
+      "guest": "Jeffrey Sachs",
+      "surname": "SACHS",
+      "title": "Prof. Jeffrey Sachs: We Are at DIRE RISK of Nuclear War from Russia-NATO Escalation Over Ukraine",
+      "date": "12 Oct",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=jqcVQG8WuGs",
+      "canonical_episode_id": "ce14cb86cc38",
+      "canonical_video_id": "jqcVQG8WuGs",
+      "canonical_video_url": "https://www.youtube.com/watch?v=jqcVQG8WuGs",
+      "canonical_episode_id_v2": "b3409952e516208d",
+      "pub_iso": "2026-10-12T01:00:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "jqcVQG8WuGs"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "5.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
+      "x_views_stale": false
+    },
     {
       "guest": "Kristinn Hrafnsson",
       "surname": "HRAFNSSON",
@@ -13,7 +42,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -25,7 +54,7 @@
         "x_views": "180.2K",
         "ig_likes": "3.6K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -51,7 +80,7 @@
         "x_views": "174.1K",
         "ig_likes": "869"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -77,7 +106,7 @@
         "x_views": "345.0K",
         "ig_likes": "2.4K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -103,7 +132,7 @@
         "x_views": "379.1K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -129,7 +158,7 @@
         "x_views": "878.0K",
         "ig_likes": "2.1K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -155,7 +184,7 @@
         "x_views": "326.1K",
         "ig_likes": "378"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -181,7 +210,7 @@
         "x_views": "2.0M",
         "ig_likes": "6.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -207,7 +236,7 @@
         "x_views": "233.2K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -233,7 +262,7 @@
         "x_views": "112.5K",
         "ig_likes": "760"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -259,7 +288,7 @@
         "x_views": "447.6K",
         "ig_likes": "6.4K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -285,7 +314,7 @@
         "x_views": "166.9K",
         "ig_likes": "8.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -311,7 +340,7 @@
         "x_views": "481.7K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -337,7 +366,7 @@
         "x_views": "674.9K",
         "ig_likes": "3.5K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -363,7 +392,7 @@
         "x_views": "668.3K",
         "ig_likes": "5.5K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -389,7 +418,7 @@
         "x_views": "1.6M",
         "ig_likes": "5.8K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -415,7 +444,7 @@
         "x_views": "1.2M",
         "ig_likes": "11.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -441,7 +470,7 @@
         "x_views": "634.1K",
         "ig_likes": "11.6K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -467,7 +496,7 @@
         "x_views": "820.6K",
         "ig_likes": "3.3K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -493,7 +522,7 @@
         "x_views": "1.1M",
         "ig_likes": "5.3K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -515,11 +544,11 @@
       },
       "metrics": {
         "rumble_views": "489",
-        "yt_views": "10.2K",
+        "yt_views": "10.4K",
         "x_views": "225.8K",
-        "ig_likes": "207"
+        "ig_likes": "206"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -545,7 +574,7 @@
         "x_views": "1.2M",
         "ig_likes": "5.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -571,7 +600,7 @@
         "x_views": "739.4K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -597,7 +626,7 @@
         "x_views": "940.7K",
         "ig_likes": "425"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -623,7 +652,7 @@
         "x_views": "1.3M",
         "ig_likes": "3.8K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -649,7 +678,7 @@
         "x_views": "483.2K",
         "ig_likes": "368"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -675,7 +704,7 @@
         "x_views": "359.4K",
         "ig_likes": "421"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -701,7 +730,7 @@
         "x_views": "1.3M",
         "ig_likes": "1.8K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -727,7 +756,7 @@
         "x_views": "1.3M",
         "ig_likes": "377"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -753,7 +782,7 @@
         "x_views": "443.5K",
         "ig_likes": "1.0K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -779,7 +808,7 @@
         "x_views": "941.7K",
         "ig_likes": "387"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -805,7 +834,7 @@
         "x_views": "812.5K",
         "ig_likes": "291"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -857,11 +886,40 @@
         "x_views": "383.0K",
         "ig_likes": "3.1K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     }
   ],
   "gu": [
+    {
+      "guest": "Jeffrey Sachs",
+      "surname": "SACHS",
+      "title": "Prof. Jeffrey Sachs: We Are at DIRE RISK of Nuclear War from Russia-NATO Escalation Over Ukraine",
+      "date": "12 Oct",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=jqcVQG8WuGs",
+      "canonical_episode_id": "ce14cb86cc38",
+      "canonical_video_id": "jqcVQG8WuGs",
+      "canonical_video_url": "https://www.youtube.com/watch?v=jqcVQG8WuGs",
+      "canonical_episode_id_v2": "b3409952e516208d",
+      "pub_iso": "2026-10-12T01:00:06Z",
+      "source_platform_ids": {
+        "youtube": [
+          "jqcVQG8WuGs"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": "5.5K",
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
+      "x_views_stale": false
+    },
     {
       "guest": "Kristinn Hrafnsson",
       "surname": "HRAFNSSON",
@@ -873,7 +931,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -885,7 +943,7 @@
         "x_views": "180.2K",
         "ig_likes": "3.6K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -911,7 +969,7 @@
         "x_views": "174.1K",
         "ig_likes": "869"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -937,7 +995,7 @@
         "x_views": "345.0K",
         "ig_likes": "2.4K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -963,33 +1021,7 @@
         "x_views": "379.1K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Joe Kent",
-      "surname": "KENT",
-      "title": "Joe Kent: How Netanyahu & The Israel Lobby TRAPPED Trump in the War on Iran Quagmire",
-      "date": "26 Sep",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=-SUo0l498vA",
-      "canonical_episode_id": "24d1b088669d",
-      "canonical_video_id": "-SUo0l498vA",
-      "canonical_video_url": "https://www.youtube.com/watch?v=-SUo0l498vA",
-      "canonical_episode_id_v2": "0419df870035b57a",
-      "pub_iso": "2026-09-26T02:34:10Z",
-      "source_platform_ids": {
-        "youtube": [
-          "-SUo0l498vA"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.7K",
-        "yt_views": "34.4K",
-        "x_views": "878.0K",
-        "ig_likes": "2.1K"
-      },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     }
   ],
@@ -1013,11 +1045,11 @@
       },
       "metrics": {
         "rumble_views": "489",
-        "yt_views": "10.2K",
+        "yt_views": "10.4K",
         "x_views": "225.8K",
-        "ig_likes": "207"
+        "ig_likes": "206"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -1043,7 +1075,7 @@
         "x_views": "1.2M",
         "ig_likes": "5.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -1069,7 +1101,7 @@
         "x_views": "739.4K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -1095,7 +1127,7 @@
         "x_views": "940.7K",
         "ig_likes": "425"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     },
     {
@@ -1121,7 +1153,7 @@
         "x_views": "1.3M",
         "ig_likes": "3.8K"
       },
-      "x_views_measured_iso": "2026-10-12T08:48:10Z",
+      "x_views_measured_iso": "2026-10-12T07:42:10Z",
       "x_views_stale": false
     }
   ]
