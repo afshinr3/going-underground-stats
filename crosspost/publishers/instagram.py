@@ -32,6 +32,23 @@ from pathlib import Path
 from .base import PublishError, Publisher, PublishResult
 
 
+SERVE_MAX_BYTES = 20 * 1024 * 1024
+
+
+def _shrink(src: Path, dest: Path) -> None:
+    """720p H.264 at <=1 Mbit/s video + 96 kbit/s AAC, faststart, keeping the aspect ratio."""
+    import subprocess
+    ffmpeg = shutil.which("ffmpeg") or "/opt/homebrew/bin/ffmpeg"
+    cmd = [ffmpeg, "-y", "-loglevel", "error", "-i", str(src),
+           "-vf", "scale='if(gt(iw,ih),-2,720)':'if(gt(iw,ih),720,-2)'",
+           "-c:v", "libx264", "-preset", "veryfast", "-crf", "26", "-maxrate", "1000k", "-bufsize", "2000k",
+           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(dest)]
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=1800)
+    if r.returncode != 0 or not dest.exists() or dest.stat().st_size == 0:
+        dest.unlink(missing_ok=True)
+        raise PublishError(f"could not shrink {src.name} for Instagram: {r.stderr[-300:]}")
+
+
 class InstagramPublisher(Publisher):
     name = "instagram"
 
@@ -92,7 +109,14 @@ class InstagramPublisher(Publisher):
         public.mkdir(parents=True, exist_ok=True)
         name = secrets.token_urlsafe(32) + ".mp4"
         served = public / name
-        shutil.copyfile(video, served)
+        # Meta fetches video_url through the M2's Funnel at ~0.2 MB/s (measured 2026-10-12 under
+        # host load) and abandons the fetch after ~2 min: every clip <=26 MB published, the 40 and
+        # 45 MB ones came back "container ERROR". Large clips are re-encoded to 720p at a capped
+        # bitrate first; the X original is untouched and small clips are served as-is.
+        if video.stat().st_size > SERVE_MAX_BYTES:
+            _shrink(video, served)
+        else:
+            shutil.copyfile(video, served)
         try:
             r = self.http.post(
                 f"{self.graph}/{uid}/media",

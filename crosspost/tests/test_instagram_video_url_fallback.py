@@ -110,5 +110,37 @@ class Quota(unittest.TestCase):
             self.assertEqual(n["k"], 2)
 
 
+class Shrink(unittest.TestCase):
+    def test_large_clip_is_served_shrunk_and_original_untouched(self):
+        import shutil as _sh, subprocess
+        import publishers.instagram as ig
+        if not (_sh.which("ffmpeg") or Path("/opt/homebrew/bin/ffmpeg").exists()):
+            self.skipTest("no ffmpeg")
+        with tempfile.TemporaryDirectory() as tmp:
+            v = Path(tmp) / "999.mp4"
+            subprocess.run([_sh.which("ffmpeg") or "/opt/homebrew/bin/ffmpeg", "-loglevel", "error", "-f", "lavfi",
+                            "-i", "testsrc=size=1920x1080:rate=25", "-f", "lavfi", "-i", "sine", "-t", "3",
+                            "-c:v", "libx264", "-b:v", "8M", "-c:a", "aac", "-shortest", str(v)], check=True)
+            before = v.stat().st_size
+            http = FakeHTTP()
+            sizes = []
+            orig_post = http.post
+
+            def post(url, data=None, **kw):
+                if isinstance(data, dict) and "video_url" in data:
+                    sizes.append((Path(tmp) / "public" / data["video_url"].rsplit("/", 1)[1]).stat().st_size)
+                return orig_post(url, data=data, **kw)
+            http.post = post
+            old = ig.SERVE_MAX_BYTES
+            ig.SERVE_MAX_BYTES = 1000  # force the shrink path
+            try:
+                make(tmp, http).publish(v, "cap", {})
+            finally:
+                ig.SERVE_MAX_BYTES = old
+            self.assertEqual(v.stat().st_size, before, "X original must not change")
+            self.assertTrue(sizes and sizes[0] < before, "served copy must be the shrunk one")
+            self.assertEqual(list((Path(tmp) / "public").iterdir()), [])
+
+
 if __name__ == "__main__":
     unittest.main()
