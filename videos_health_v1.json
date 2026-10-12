@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-12T09:22:22Z",
-  "last_updated": "2026-10-12T09:22:22Z",
+  "iso": "2026-10-12T09:58:39Z",
+  "last_updated": "2026-10-12T09:58:39Z",
   "episodes": [
     {
       "guest": "Jeffrey Sachs",
@@ -21,9 +21,9 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "4.2K",
+        "yt_views": "7.0K",
         "x_views": "24.8K",
-        "ig_likes": "490"
+        "ig_likes": "505"
       },
       "x_views_measured_iso": "2026-10-12T09:20:08Z",
       "x_views_stale": false
@@ -51,7 +51,7 @@
         "x_views": "180.2K",
         "ig_likes": "3.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -77,7 +77,7 @@
         "x_views": "174.1K",
         "ig_likes": "869"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -103,7 +103,7 @@
         "x_views": "345.0K",
         "ig_likes": "2.4K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -129,7 +129,7 @@
         "x_views": "379.1K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -155,7 +155,7 @@
         "x_views": "878.0K",
         "ig_likes": "2.1K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -181,7 +181,7 @@
         "x_views": "326.1K",
         "ig_likes": "378"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -203,11 +203,11 @@
       },
       "metrics": {
         "rumble_views": "6.5K",
-        "yt_views": "89.4K",
+        "yt_views": "89.5K",
         "x_views": "2.0M",
         "ig_likes": "6.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -233,7 +233,7 @@
         "x_views": "233.2K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -259,7 +259,7 @@
         "x_views": "112.5K",
         "ig_likes": "760"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -285,7 +285,7 @@
         "x_views": "447.6K",
         "ig_likes": "6.4K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -311,7 +311,7 @@
         "x_views": "166.9K",
         "ig_likes": "8.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -337,7 +337,7 @@
         "x_views": "481.7K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -363,7 +363,7 @@
         "x_views": "674.9K",
         "ig_likes": "3.5K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -389,7 +389,7 @@
         "x_views": "668.3K",
         "ig_likes": "5.5K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -415,7 +415,7 @@
         "x_views": "1.6M",
         "ig_likes": "5.8K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -441,7 +441,7 @@
         "x_views": "1.2M",
         "ig_likes": "11.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -467,7 +467,7 @@
         "x_views": "634.1K",
         "ig_likes": "11.6K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -493,7 +493,7 @@
         "x_views": "820.6K",
         "ig_likes": "3.3K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -519,7 +519,7 @@
         "x_views": "1.1M",
         "ig_likes": "5.3K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -541,11 +541,11 @@
       },
       "metrics": {
         "rumble_views": "489",
-        "yt_views": "10.2K",
+        "yt_views": "10.7K",
         "x_views": "225.8K",
         "ig_likes": "209"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -571,7 +571,7 @@
         "x_views": "1.2M",
         "ig_likes": "5.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -597,7 +597,7 @@
         "x_views": "739.4K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -619,11 +619,11 @@
       },
       "metrics": {
         "rumble_views": "1.1K",
-        "yt_views": "775",
+        "yt_views": "778",
         "x_views": "940.7K",
         "ig_likes": "425"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -649,7 +649,7 @@
         "x_views": "1.3M",
         "ig_likes": "3.8K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -675,7 +675,7 @@
         "x_views": "483.2K",
         "ig_likes": "368"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -701,7 +701,7 @@
         "x_views": "359.4K",
         "ig_likes": "421"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -727,7 +727,7 @@
         "x_views": "1.3M",
         "ig_likes": "1.8K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -753,7 +753,7 @@
         "x_views": "1.3M",
         "ig_likes": "377"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -779,7 +779,7 @@
         "x_views": "443.5K",
         "ig_likes": "1.0K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -805,7 +805,7 @@
         "x_views": "941.7K",
         "ig_likes": "387"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -831,7 +831,7 @@
         "x_views": "812.5K",
         "ig_likes": "291"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -883,7 +883,7 @@
         "x_views": "383.0K",
         "ig_likes": "3.1K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     }
   ],
@@ -907,9 +907,9 @@
       },
       "metrics": {
         "rumble_views": null,
-        "yt_views": "4.2K",
+        "yt_views": "7.0K",
         "x_views": "24.8K",
-        "ig_likes": "490"
+        "ig_likes": "505"
       },
       "x_views_measured_iso": "2026-10-12T09:20:08Z",
       "x_views_stale": false
@@ -937,7 +937,7 @@
         "x_views": "180.2K",
         "ig_likes": "3.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -963,7 +963,7 @@
         "x_views": "174.1K",
         "ig_likes": "869"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -989,7 +989,7 @@
         "x_views": "345.0K",
         "ig_likes": "2.4K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -1015,7 +1015,7 @@
         "x_views": "379.1K",
         "ig_likes": "1.3K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     }
   ],
@@ -1039,11 +1039,11 @@
       },
       "metrics": {
         "rumble_views": "489",
-        "yt_views": "10.2K",
+        "yt_views": "10.7K",
         "x_views": "225.8K",
         "ig_likes": "209"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -1069,7 +1069,7 @@
         "x_views": "1.2M",
         "ig_likes": "5.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -1095,7 +1095,7 @@
         "x_views": "739.4K",
         "ig_likes": "1.7K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -1117,11 +1117,11 @@
       },
       "metrics": {
         "rumble_views": "1.1K",
-        "yt_views": "775",
+        "yt_views": "778",
         "x_views": "940.7K",
         "ig_likes": "425"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     },
     {
@@ -1147,7 +1147,7 @@
         "x_views": "1.3M",
         "ig_likes": "3.8K"
       },
-      "x_views_measured_iso": "2026-10-12T09:22:20Z",
+      "x_views_measured_iso": "2026-10-12T09:58:37Z",
       "x_views_stale": false
     }
   ]
