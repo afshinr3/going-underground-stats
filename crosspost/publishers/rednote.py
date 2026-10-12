@@ -162,18 +162,37 @@ def login(settings) -> None:
     """Open a visible browser, let the operator scan the QR code, save the session."""
     from playwright.sync_api import sync_playwright
 
+    # 2026-10-12: waiting for the URL to lose "login" never fired although the operator had
+    # logged in, so the session was lost at the timeout. Logged-in is now detected from the
+    # session cookies, and the session is saved every few seconds once they exist.
+    auth_names = ("web_session", "galaxy_creator_session_id", "access-token-creator.xiaohongshu.com",
+                  "customer-sso-sid", "customerClientId")
+    import time as _t
+
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=False)
         ctx = browser.new_context(locale="zh-CN")
         page = ctx.new_page()
         page.goto(LOGIN_URL)
-        print("Log in to the Xiaohongshu Creator Center in the browser window (scan the QR code)...")
-        page.wait_for_url(lambda u: "login" not in u, timeout=5 * 60_000)
-        page.wait_for_timeout(3000)
+        print("Log in to the Xiaohongshu Creator Center in the browser window (scan the QR code)...", flush=True)
         settings.rednote_cookies_file.parent.mkdir(parents=True, exist_ok=True)
-        settings.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
-        print(f"Saved session to {settings.rednote_cookies_file}")
+        saved_at, deadline = None, _t.time() + 15 * 60
+        while _t.time() < deadline:
+            page.wait_for_timeout(3000)
+            names = {c["name"] for c in ctx.cookies() if "xiaohongshu" in c.get("domain", "")}
+            if names & set(auth_names) or "login" not in page.url:
+                settings.rednote_cookies_file.write_text(json.dumps(ctx.storage_state()))
+                if saved_at is None:
+                    saved_at = _t.time()
+                    print("Logged in (%s); session saved to %s" % (
+                        ", ".join(sorted(names & set(auth_names))) or "left login page",
+                        settings.rednote_cookies_file), flush=True)
+                if _t.time() - saved_at > 20:  # let late cookies land, then finish
+                    break
         browser.close()
+        if saved_at is None:
+            print("No login detected within 15 minutes; nothing saved", flush=True)
+            sys.exit(1)
 
 
 if __name__ == "__main__":  # python -m publishers.rednote login
