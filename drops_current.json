@@ -1,25 +1,4 @@
 {
-  "updated": "2026-10-12T18:39:27Z",
-  "drops": [
-    {
-      "ts": "2026-10-12T18:39:27Z",
-      "show": "NO",
-      "guest": "Schiff",
-      "platform": "X",
-      "peak": 1800000,
-      "peak_at": "2026-10-11T23:04:32Z",
-      "current": 941700,
-      "drop_pct": 47.7
-    },
-    {
-      "ts": "2026-10-12T18:39:27Z",
-      "show": "NO",
-      "guest": "Perkins",
-      "platform": "X",
-      "peak": 1400000,
-      "peak_at": "2026-10-11T23:04:32Z",
-      "current": 812500,
-      "drop_pct": 42.0
-    }
-  ]
+  "updated": "2026-10-13T00:42:14Z",
+  "drops": []
 }
