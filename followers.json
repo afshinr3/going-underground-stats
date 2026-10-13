@@ -1,11 +1,11 @@
 {
   "accounts": {
     "afshinrattansi": 130188,
-    "GUnderground_TV": 207841,
+    "GUnderground_TV": 207843,
     "NewOrder_TV": 6313
   },
-  "total": 344342,
-  "updated": "2026-10-13T22:59:39.320041Z",
+  "total": 344344,
+  "updated": "2026-10-13T23:20:08.544641Z",
   "measured": [
     "GUnderground_TV",
     "NewOrder_TV",
