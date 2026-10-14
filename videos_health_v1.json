@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-14T07:20:06Z",
-  "last_updated": "2026-10-14T07:20:06Z",
+  "iso": "2026-10-14T08:32:44Z",
+  "last_updated": "2026-10-14T08:32:44Z",
   "episodes": [
     {
       "guest": "Jeffrey Sachs",
@@ -21,7 +21,7 @@
       },
       "metrics": {
         "rumble_views": "2.9K",
-        "yt_views": "20.3K",
+        "yt_views": "20.9K",
         "x_views": "435.8K",
         "ig_likes": "2.0K"
       },
@@ -39,7 +39,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -541,7 +541,7 @@
       },
       "metrics": {
         "rumble_views": "679",
-        "yt_views": "21.2K",
+        "yt_views": "21.6K",
         "x_views": "882.5K",
         "ig_likes": "291"
       },
@@ -593,7 +593,7 @@
       },
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "14.1K",
+        "yt_views": "4.3K",
         "x_views": "740.2K",
         "ig_likes": "1.7K"
       },
@@ -907,7 +907,7 @@
       },
       "metrics": {
         "rumble_views": "2.9K",
-        "yt_views": "20.3K",
+        "yt_views": "20.9K",
         "x_views": "435.8K",
         "ig_likes": "2.0K"
       },
@@ -925,7 +925,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -1039,7 +1039,7 @@
       },
       "metrics": {
         "rumble_views": "679",
-        "yt_views": "21.2K",
+        "yt_views": "21.6K",
         "x_views": "882.5K",
         "ig_likes": "291"
       },
@@ -1091,7 +1091,7 @@
       },
       "metrics": {
         "rumble_views": "1.4K",
-        "yt_views": "14.1K",
+        "yt_views": "4.3K",
         "x_views": "740.2K",
         "ig_likes": "1.7K"
       },
