@@ -155,15 +155,28 @@ class FacebookProfilePublisher(Publisher):
             browser, ctx = _open(pw, self.s, headless=self.s.fb_headless)
             page = ctx.new_page()
             try:
-                page.goto(HOME, wait_until="domcontentloaded", timeout=60_000)
-                page.wait_for_timeout(4000)
-                _assert_logged_in(page)
-                _dismiss_popups(page)
-
-                _composer(page).first.click(timeout=20_000)
-                # Facebook shows Create Post either as a dialog or as a full page (both seen on
-                # 2026-10-12), so everything is found page-wide by label, never via the dialog.
-                page.get_by_text(SELECTORS["dialog_title"]).first.wait_for(timeout=20_000)
+                # FB_COMPOSER_RETRY_V1_20261014: Facebook sometimes answers the composer click with its own
+                # "This page isn't available at the moment ... try reloading" page (4 times in 3 days); the
+                # post then waited a whole publisher cycle and the operator got an alert. Nothing has been
+                # posted at this stage, so reload and try again here, up to 3 times.
+                for _try in range(3):
+                    page.goto(HOME, wait_until="domcontentloaded", timeout=60_000)
+                    page.wait_for_timeout(4000)
+                    _assert_logged_in(page)
+                    _dismiss_popups(page)
+                    try:
+                        _composer(page).first.click(timeout=20_000)
+                        # Facebook shows Create Post either as a dialog or as a full page (both seen on
+                        # 2026-10-12), so everything is found page-wide by label, never via the dialog.
+                        page.get_by_text(SELECTORS["dialog_title"]).first.wait_for(timeout=20_000)
+                        break
+                    except PWTimeout:
+                        unavailable = page.get_by_text(re.compile(r"isn.t available at the moment", re.I)).count() > 0
+                        print("  facebook: composer did not open (try %d/3%s)" % (
+                            _try + 1, ", Facebook error page" if unavailable else ""), flush=True)
+                        if _try == 2:
+                            raise
+                        page.wait_for_timeout(10_000)
                 page.wait_for_timeout(1500)
 
                 # 1. caption FIRST: on 2026-10-12 typing after the upload lost the first line
