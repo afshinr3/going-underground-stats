@@ -71,12 +71,14 @@ def verify(state, s, notifier) -> dict:
         if not ok:
             with state._tx() as c:
                 c.execute("UPDATE deliveries SET status='removed', last_error=? WHERE tweet_id=? AND platform='instagram'",
-                          ("removed by Instagram after publish (media %s no longer exists)" % media_id, tweet_id))
+                          ("no longer on Instagram after publish (media %s gone: deleted on the account or taken down)" % media_id, tweet_id))
             out["removed"].append(tweet_id)
             log.warning("instagram post removed after publish", extra={"tweet_id": tweet_id, "remote_id": media_id})
     if out["removed"]:
+        # The API cannot tell a reel the operator deleted from one Instagram took down (2026-10-15: the first 5
+        # flagged here had been deleted by the operator), so the alert says only what is known.
         notifier.alert("instagram_removed",
-                       "Instagram REMOVED %d reel(s) after accepting them (tweets %s). They are not on the account. "
-                       "Check Instagram > Settings > Account status for a copyright or content restriction."
+                       "%d reel(s) published earlier are no longer on Instagram (tweets %s): deleted on the account, "
+                       "or taken down by Instagram. If you did not delete them, check Settings > Account status."
                        % (len(out["removed"]), ", ".join(out["removed"][:5])))
     return out
