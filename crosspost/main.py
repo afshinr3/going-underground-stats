@@ -180,6 +180,12 @@ def cycle(monitor, pubs, state, s, notifier: Notifier, only_handle=None) -> None
     except Exception:
         log.exception("credential check crashed")
     discover(monitor, state, only_handle, notifier, s_cfg=s)
+    if "instagram" in (pubs or {}):
+        try:
+            from alerts.ig_verify import verify as ig_verify
+            ig_verify(state, s, notifier)
+        except Exception:
+            log.exception("instagram verify crashed")
     if not pubs:
         log.warning("no publishers configured; posts stay pending")
         return
