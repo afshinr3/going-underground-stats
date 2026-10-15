@@ -5,7 +5,7 @@
   "window_end": "2026-10-12",
   "window_start_mon": "2026-10-09",
   "window_end_sun": "2026-10-12",
-  "generated_at": "2026-10-15T10:30:39.198036Z",
+  "generated_at": "2026-10-15T11:03:23.225766Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "731",
       "x_views": "885.2K",
       "date": "11 Oct",
-      "yt_views": "22.8K",
+      "yt_views": "22.7K",
       "ig_likes": "410",
       "canonical_guest_full_name": "John Bolton",
       "canonical_surname_upper": "BOLTON",
@@ -32,11 +32,11 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=16nJk5ph6CQ",
-      "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "NO",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
       "_x_store_tweets": 12,
-      "_x_measured_iso": "2026-10-15T09:26:35Z",
+      "_x_measured_iso": "2026-10-15T10:30:39Z",
       "_x_own_views": 244585,
       "_x_others_views": 20675,
       "_x_posts": 50,
