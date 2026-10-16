@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-16T18:20:11.461064Z",
+  "generated_at": "2026-10-16T18:26:18.585005Z",
   "n": 1,
   "entries": [
     {
@@ -21,7 +21,8 @@
       "rumble_prov": "m2_rumble_only_v3",
       "rumble_url": null,
       "rumble_vid": null,
-      "ig_likes": "6.7K"
+      "ig_likes": "6.7K",
+      "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918"
     }
   ],
   "source_feed": "videos.json",
