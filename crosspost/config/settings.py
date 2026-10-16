@@ -85,6 +85,9 @@ CAPTION_LIMITS = {
     "linkedin": 3000,
     "rednote": 1000,
     "facebook_profile": 5000,
+    # Threads caps a post at 500 characters -- the tightest destination here. fit_caption
+    # truncates the body and never the CTA, so the show CTA always survives.
+    "threads": 500,
 }
 REDNOTE_TITLE_LIMIT = 20  # Xiaohongshu note titles are capped at 20 characters
 
@@ -180,6 +183,18 @@ class Settings:
     )
     fb_headless: bool = field(default_factory=lambda: _bool("FB_HEADLESS", True))
 
+    # --- Threads (graph.threads.net). A Threads token is NOT an Instagram token, even on the
+    # same Meta app: scopes threads_basic + threads_content_publish. The Threads API has no
+    # resumable upload, so a publicly fetchable video_url is MANDATORY -- it defaults to the
+    # base instagram.py already serves from temp/public on this host.
+    threads_enabled: bool = field(default_factory=lambda: _bool("THREADS_ENABLED", True))
+    threads_user_id: str = field(default_factory=lambda: _env("THREADS_USER_ID"))
+    threads_access_token: str = field(default_factory=lambda: _env("THREADS_ACCESS_TOKEN"))
+    threads_graph_host: str = field(default_factory=lambda: _env("THREADS_GRAPH_HOST", "graph.threads.net"))
+    threads_api_version: str = field(default_factory=lambda: _env("THREADS_API_VERSION", "v1.0"))
+    threads_public_media_base: str = field(default_factory=lambda: (
+        _env("THREADS_PUBLIC_MEDIA_BASE") or _env("INSTAGRAM_PUBLIC_MEDIA_BASE")))
+
     def enabled_platforms(self) -> list[str]:
         out = []
         if self.telegram_enabled:
@@ -192,6 +207,8 @@ class Settings:
             out.append("rednote")
         if self.facebook_profile_enabled:
             out.append("facebook_profile")
+        if self.threads_enabled:
+            out.append("threads")
         return out
 
 
