@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-16T20:20:06.052498Z",
+  "generated_at": "2026-10-16T21:03:46.553385Z",
   "n": 1,
   "entries": [
     {
@@ -13,7 +13,7 @@
       "surname": "Carlson",
       "title": "Tucker Carlson: Trump\u2019s Betrayal of His Voters is the GREATEST BETRAYAL in American History!",
       "date": "16 Oct",
-      "rumble_views": "28",
+      "rumble_views": "24",
       "show": "GU",
       "canonical_guest_full_name": "Tucker Carlson",
       "pub_iso": "2026-10-16T15:52:28Z",
@@ -22,7 +22,11 @@
       "rumble_url": null,
       "rumble_vid": null,
       "ig_likes": "6.7K",
-      "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918"
+      "_carried_forward_v1": "EPISODE_CARRY_FORWARD_V1_20260918",
+      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "yt_views": "90.5K",
+      "canonical_surname_upper": "CARLSON",
+      "canonical_episode_id": "050ee66c8c28"
     }
   ],
   "source_feed": "videos.json",
