@@ -87,10 +87,11 @@ def strip_trailing_cta(text: str) -> str:
 
 
 # SCHEDULED_EPISODE_LINK_V1_20261016: "Don't miss it, follow us on X and follow our Rumble channel, link below in
-# the replies 👇" means nothing on Facebook/Instagram/Telegram -- there are no X replies there. The line is dropped
-# and the CTA carries the real link instead.
+# the replies 👇". Off X there are no replies, but the operator wants the line kept ("It should also say: ..."), so
+# "link below in the replies" becomes "link below" -- the CTA link right under the post is what it now points to.
 _REPLIES_LINK_LINE = re.compile(r"^[^\n]*\blinks?\s+(?:is\s+)?(?:below\s+)?in\s+(?:the\s+)?(?:replies|reply|comments|thread)\b[^\n]*$",
                                 re.IGNORECASE | re.MULTILINE)
+_IN_THE_REPLIES = re.compile(r"\b(links?)\s+(?:is\s+)?(?:below\s+)?in\s+(?:the\s+)?(?:replies|reply|comments|thread)\b", re.IGNORECASE)
 
 
 def mentions_reply_link(raw: str) -> bool:
@@ -99,7 +100,7 @@ def mentions_reply_link(raw: str) -> bool:
 
 def clean_text(raw: str, urls: list[dict] | None = None, quoted_ids: set[str] | None = None) -> str:
     text = html.unescape(raw or "")
-    text = _REPLIES_LINK_LINE.sub("", text)
+    text = _IN_THE_REPLIES.sub(lambda m: m.group(1) + " below", text)
     text = expand_links(text, urls, quoted_ids)
     text = re.sub(r"[ \t]+\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)

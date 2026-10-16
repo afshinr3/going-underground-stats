@@ -14,6 +14,7 @@ def test_caption():
     assert mentions_reply_link(TXT)
     c = build_caption(post, "facebook_profile" if False else None)
     assert "link below in the replies" not in c and "Perkins" in c and "rumble.com/c/GoingUnderground" in c
+    assert "Don’t miss it, follow us on X and follow our Rumble channel, link below 👇" in c
     post["episode_url"] = "https://rumble.com/v7abcde-john-perkins-trump-putin.html"
     c = build_caption(post)
     assert "rumble.com/v7abcde-john-perkins-trump-putin.html" in c and "rumble.com/c/GoingUnderground" not in c
