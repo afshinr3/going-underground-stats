@@ -1,17 +1,18 @@
 {
   "accounts": {
-    "afshinrattansi": 130268,
+    "afshinrattansi": 130272,
     "GUnderground_TV": 207910,
     "NewOrder_TV": 6317
   },
-  "total": 344495,
-  "updated": "2026-10-16T17:49:15.834920Z",
+  "total": 344499,
+  "updated": "2026-10-16T18:20:14.865448Z",
   "measured": [
-    "GUnderground_TV",
-    "NewOrder_TV",
     "afshinrattansi"
   ],
-  "carried_forward": [],
+  "carried_forward": [
+    "GUnderground_TV",
+    "NewOrder_TV"
+  ],
   "_marker": "X_FOLLOWERS_LOCAL_V1",
   "_source": "local GraphQL UserByScreenName (the Action's runner is IP-blocked by X)"
 }
