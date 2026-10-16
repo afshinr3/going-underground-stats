@@ -41,6 +41,19 @@ class SourceAccount:
     handle: str          # without "@", case-insensitive on X
     label: str           # human-readable show name
     rumble_url: str      # CTA destination appended to every caption
+    # SHOW_SPECIFIC_CTA_V1_2026_10_16 — operator: the relay said "Watch the full interview"
+    # on EVERY clip of EVERY show. Two things were wrong with that. (a) Most clips are not
+    # soundbites cut from an interview, so "the full interview" pointed at something that does
+    # not exist for them. (b) It never named the show, so a New Order clip invited people to an
+    # unnamed "interview" and then linked the New Order channel.
+    # Default derives from `label`, so a new show gets correct wording without a code change;
+    # set explicitly only to override one show's phrasing.
+    cta_headline: str | None = None
+
+    @property
+    def cta(self) -> str:
+        """The CTA headline for this show's clips."""
+        return self.cta_headline or f"Watch the latest episode of {self.label} \U0001F447"
 
 
 SOURCE_ACCOUNTS: dict[str, SourceAccount] = {

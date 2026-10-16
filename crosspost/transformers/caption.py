@@ -5,7 +5,7 @@ Pipeline (see `build_caption`):
   2. expand t.co links to their real URL; drop links that only point at the attached
      media or at the quoted post (those mean nothing off X)
   3. strip the trailing "Watch the full interview in the quoted post below. 👇" CTA
-     (and close variants)
+     (and close variants, incl. "latest episode" phrasings the source account now uses)
   4. append the show-specific Rumble CTA
   5. fit to each platform's caption limit, truncating the body — never the CTA
 """
@@ -16,7 +16,11 @@ import re
 
 from config.settings import CAPTION_LIMITS, REDNOTE_TITLE_LIMIT, source_for
 
-CTA_HEADLINE = "Watch the full interview 👇"
+# SHOW_SPECIFIC_CTA_V1_2026_10_16 — the headline is per-show DATA on SourceAccount now
+# (settings.SourceAccount.cta), not one global string. This module's own docstring already
+# promised "the show-specific Rumble CTA" while only the URL was ever show-specific.
+# Kept as the legacy constant ONLY so the stripper below documents what it removes.
+LEGACY_CTA_HEADLINE = "Watch the full interview \U0001F447"
 
 _ARROWS = "👇⬇️⬇🔽👉➡️⤵️"
 _ARROW_CLASS = "[" + re.escape(_ARROWS) + "️]"
@@ -28,7 +32,7 @@ _TRAILING_CTA = re.compile(
     (?:""" + _ARROW_CLASS + r"""\s*)*             # optional leading arrow
     (?:watch|see|catch|view|stream)\s+
     (?:the\s+|our\s+)?
-    (?:full|whole|entire|complete)\s+
+    (?:full|whole|entire|complete|latest|newest)\s+
     (?:interview|episode|show|conversation|video|programme|program|clip|discussion)
     [^\n]*?                                       # "in the quoted post below", "here", ...
     (?:quoted?|below|here|link|thread|replies|👇|⬇)
@@ -91,7 +95,9 @@ def clean_text(raw: str, urls: list[dict] | None = None, quoted_ids: set[str] | 
 
 
 def cta_for(handle: str) -> str:
-    return f"{CTA_HEADLINE}\n{source_for(handle).rumble_url}"
+    """Show-specific CTA: "Watch the latest episode of <show>" + that show's channel."""
+    src = source_for(handle)
+    return f"{src.cta}\n{src.rumble_url}"
 
 
 def _truncate(body: str, budget: int) -> str:

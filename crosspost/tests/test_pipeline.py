@@ -16,8 +16,8 @@ from transformers.caption import (  # noqa: E402
     build_caption, build_title, clean_text, fit_caption, strip_trailing_cta, utf16_len,
 )
 
-GU_CTA = "Watch the full interview 👇\nhttps://rumble.com/c/GoingUnderground"
-NO_CTA = "Watch the full interview 👇\nhttps://rumble.com/c/NewOrderTV"
+GU_CTA = "Watch the latest episode of Going Underground 👇\nhttps://rumble.com/c/GoingUnderground"
+NO_CTA = "Watch the latest episode of New Order 👇\nhttps://rumble.com/c/NewOrderTV"
 
 
 class CaptionTests(unittest.TestCase):
@@ -58,6 +58,26 @@ class CaptionTests(unittest.TestCase):
         no = {"handle": "neworder_tv", "text": "Clip.\n\nWatch the full interview in the quoted post below. 👇"}
         self.assertEqual(build_caption(gu), f"Clip.\n\n{GU_CTA}")
         self.assertEqual(build_caption(no), f"Clip.\n\n{NO_CTA}")
+
+    def test_cta_names_the_show_and_never_says_full_interview(self):
+        """SHOW_SPECIFIC_CTA_V1_2026_10_16 — the reported bug: every clip of every show was
+        captioned "Watch the full interview", which named no show and pointed at something that
+        does not exist for a clip that is not an interview soundbite."""
+        for handle, show, chan in (("Gunderground_tv", "Going Underground", "GoingUnderground"),
+                                   ("neworder_tv", "New Order", "NewOrderTV")):
+            cap = build_caption({"handle": handle, "text": "Clip."})
+            self.assertNotIn("Watch the full interview", cap)
+            self.assertIn(f"Watch the latest episode of {show}", cap)
+            self.assertIn(f"https://rumble.com/c/{chan}", cap)
+
+    def test_source_cta_is_stripped_for_latest_episode_phrasing_too(self):
+        """The source account's own CTA must not survive into our caption, whichever
+        adjective it uses — otherwise the clip carries two competing calls to action."""
+        for phrasing in ("Watch the full interview in the quoted post below. 👇",
+                         "Watch the latest episode in the quoted post below. 👇",
+                         "Watch the newest episode here 👇"):
+            cap = build_caption({"handle": "neworder_tv", "text": f"Clip.\n\n{phrasing}"})
+            self.assertEqual(cap, f"Clip.\n\n{NO_CTA}", f"not stripped: {phrasing!r}")
 
     def test_telegram_truncation_keeps_cta(self):
         post = {"handle": "neworder_tv", "text": ("word " * 400) + "\nWatch the full interview in the quoted post below. 👇"}
