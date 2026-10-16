@@ -14,6 +14,7 @@ import logging
 import signal
 import sys
 import time
+from datetime import datetime
 
 from config.settings import Settings, load_settings
 from db.state import StateStore
@@ -109,6 +110,50 @@ def discover(monitor, state: StateStore, only_handle: str | None, notifier: Noti
     return new
 
 
+EPISODE_WAIT_S = 30 * 60
+EPISODE_RECHECK_S = 5 * 60
+_monitor_cache: dict = {}
+
+
+def _resolve_episode_link(post: dict, state: StateStore, s: Settings) -> bool:
+    """SCHEDULED_EPISODE_LINK_V1_20261016. A post saying "link below in the replies" gets its episode link from the
+    source account's own reply. Returns False to hold the post (re-checked every EPISODE_RECHECK_S, at most
+    EPISODE_WAIT_S after it was posted); after that it goes out with the channel link."""
+    from transformers.caption import mentions_reply_link
+    tid = post["tweet_id"]
+    if post.get("episode_url") or not mentions_reply_link(post.get("text", "")):
+        return True
+    known = state.get(f"episode_url:{tid}")
+    if known:
+        post["episode_url"] = known
+        return True
+    try:
+        age = time.time() - datetime.fromisoformat(post.get("created_at")).timestamp()
+    except Exception:
+        age = EPISODE_WAIT_S
+    last = float(state.get(f"episode_check:{tid}", "0") or 0)
+    if time.time() - last >= EPISODE_RECHECK_S:
+        state.set(f"episode_check:{tid}", str(time.time()))
+        try:
+            from monitors.x_monitor import build_monitor
+            from monitors.x_reply_link import episode_link
+            m = _monitor_cache.get("m") or _monitor_cache.setdefault("m", build_monitor(s, state))
+            url = episode_link(post["handle"], tid, getattr(m, "cookies", []), post.get("author_id"))
+        except Exception:
+            log.exception("episode link lookup failed", extra={"tweet_id": tid})
+            url = None
+        if url:
+            state.set(f"episode_url:{tid}", url)
+            post["episode_url"] = url
+            log.info("episode link found in source reply", extra={"tweet_id": tid, "url": url})
+            return True
+    if age < EPISODE_WAIT_S:
+        log.info("holding post for its episode link", extra={"tweet_id": tid, "age_min": round(age / 60, 1)})
+        return False
+    log.info("no episode link in replies; using the channel link", extra={"tweet_id": tid})
+    return True
+
+
 def process(post: dict, pubs: dict[str, Publisher], state: StateStore, s: Settings, notifier: Notifier) -> None:
     tid = post["tweet_id"]
     platforms = list(pubs)
@@ -116,6 +161,8 @@ def process(post: dict, pubs: dict[str, Publisher], state: StateStore, s: Settin
     if not remaining:
         _finish(post, pubs, state, s, notifier)
         return
+    if not _resolve_episode_link(post, state, s):
+        return   # still waiting for the source's reply with the episode link; retried next cycle
     try:
         video = download_video(post, s)
     except Exception as e:

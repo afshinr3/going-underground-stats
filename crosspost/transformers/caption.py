@@ -86,18 +86,30 @@ def strip_trailing_cta(text: str) -> str:
     return text
 
 
+# SCHEDULED_EPISODE_LINK_V1_20261016: "Don't miss it, follow us on X and follow our Rumble channel, link below in
+# the replies 👇" means nothing on Facebook/Instagram/Telegram -- there are no X replies there. The line is dropped
+# and the CTA carries the real link instead.
+_REPLIES_LINK_LINE = re.compile(r"^[^\n]*\blinks?\s+(?:is\s+)?(?:below\s+)?in\s+(?:the\s+)?(?:replies|reply|comments|thread)\b[^\n]*$",
+                                re.IGNORECASE | re.MULTILINE)
+
+
+def mentions_reply_link(raw: str) -> bool:
+    return bool(_REPLIES_LINK_LINE.search(html.unescape(raw or "")))
+
+
 def clean_text(raw: str, urls: list[dict] | None = None, quoted_ids: set[str] | None = None) -> str:
     text = html.unescape(raw or "")
+    text = _REPLIES_LINK_LINE.sub("", text)
     text = expand_links(text, urls, quoted_ids)
     text = re.sub(r"[ \t]+\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return strip_trailing_cta(text).strip()
 
 
-def cta_for(handle: str) -> str:
-    """Show-specific CTA: "Watch the latest episode of <show>" + that show's channel."""
+def cta_for(handle: str, episode_url: str | None = None) -> str:
+    """Show-specific CTA + the scheduled episode's own Rumble link when known, else that show's channel."""
     src = source_for(handle)
-    return f"{src.cta}\n{src.rumble_url}"
+    return f"{src.cta}\n{episode_url or src.rumble_url}"
 
 
 def _truncate(body: str, budget: int) -> str:
@@ -128,7 +140,7 @@ def fit_caption(body: str, cta: str, limit: int, sep: str = "\n\n") -> str:
 def build_caption(post: dict, platform: str | None = None) -> str:
     """Final caption for `platform` (or the untruncated canonical caption if None)."""
     body = clean_text(post.get("text", ""), post.get("urls"), set(post.get("quoted_ids") or []))
-    cta = cta_for(post["handle"])
+    cta = cta_for(post["handle"], post.get("episode_url"))
     if platform is None:
         return f"{body}\n\n{cta}" if body else cta
     return fit_caption(body, cta, CAPTION_LIMITS[platform])
