@@ -51,6 +51,16 @@ def apply_overrides(s: Settings, state: StateStore) -> None:
         return
     if stored:
         s.instagram_access_token = stored
+    # THREADS_TOKEN_RENEWAL_V1_20261016: same pattern -- a renewed Threads token lives in state; a new .env value wins.
+    t_stored = state.get("token:threads")
+    t_env_hash = state.get("token:threads:env_hash")
+    if s.threads_access_token and _h(s.threads_access_token) != t_env_hash:
+        state.set("token:threads:env_hash", _h(s.threads_access_token))
+        state.set("token:threads", s.threads_access_token)
+        state.set("token:threads:expires", "0")
+        return
+    if t_stored:
+        s.threads_access_token = t_stored
 
 
 # --------------------------------------------------------------------------- Instagram
@@ -106,6 +116,33 @@ def _store_ig(s: Settings, state: StateStore, token: str, expires: float) -> Non
     state.set("token:instagram:expires", str(expires))
 
 
+# --------------------------------------------------------------------------- Threads
+def _threads(s: Settings, state: StateStore) -> float | None:
+    """THREADS_TOKEN_RENEWAL_V1_20261016: long-lived Threads tokens last 60 days and can be refreshed once they are
+    >= 24 h old (th_refresh_token, no app secret). Refresh when < 30 days remain or the expiry is not yet known."""
+    tok = s.threads_access_token
+    if not tok:
+        return None
+    exp = float(state.get("token:threads:expires", "0") or 0)
+    if exp == 0 or exp - time.time() < 30 * DAY:
+        r = requests.get("https://graph.threads.net/refresh_access_token",
+                         params={"grant_type": "th_refresh_token", "access_token": tok}, timeout=30)
+        if r.ok and r.json().get("access_token"):
+            d = r.json()
+            s.threads_access_token = d["access_token"]
+            state.set("token:threads", d["access_token"])
+            state.set("token:threads:expires", str(time.time() + int(d.get("expires_in", 60 * DAY))))
+            log.info("threads token renewed")
+        else:
+            log.warning("threads refresh failed", extra={"status": r.status_code, "body": r.text[:200]})
+            if exp == 0:   # first sight, refresh not yet allowed (< 24 h old): assume a fresh 60-day token
+                key = f"token_seen:threads:{_h(tok)}"
+                if not state.get(key):
+                    state.set(key, str(time.time()))
+                return float(state.get(key)) + 60 * DAY
+    return float(state.get("token:threads:expires", "0") or 0) or None
+
+
 # --------------------------------------------------------------------------- LinkedIn
 def _linkedin(s: Settings, state: StateStore) -> float | None:
     tok = s.linkedin_access_token
@@ -158,11 +195,12 @@ def maintain(s: Settings, state: StateStore, notifier: Notifier, force: bool = F
     checks = {
         "instagram": (lambda: _instagram(s, state)) if "instagram" in s.enabled_platforms() else None,
         "linkedin": (lambda: _linkedin(s, state)) if "linkedin" in s.enabled_platforms() else None,
+        "threads": (lambda: _threads(s, state)) if "threads" in s.enabled_platforms() else None,
         "x_cookies": (lambda: _cookie_expiry(Path(x_file).expanduser(), "auth_token")) if x_file else None,
         "rednote": (lambda: _cookie_expiry(s.rednote_cookies_file, "web_session"))
         if "rednote" in s.enabled_platforms() and s.rednote_mode == "playwright" else None,
     }
-    labels = {"instagram": "Instagram token", "linkedin": "LinkedIn token",
+    labels = {"instagram": "Instagram token", "linkedin": "LinkedIn token", "threads": "Threads token",
               "x_cookies": "X login cookies", "rednote": "Rednote login"}
     out = {}
     for name, fn in checks.items():
