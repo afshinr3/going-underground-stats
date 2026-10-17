@@ -109,9 +109,18 @@ def main():
     # --- 4. the live feeds: every platform measured, and no fabricated zero ------
     for fn in ("videos.json", "videos_neworder.json"):
         rows = json.load(open(os.path.join(ROOT, fn)))
+        # A Rumble-first episode is not on YouTube/X yet: null there is the truth, provided
+        # the row says WHY (YT_SURNAME_PREDATES_EPISODE_V1_20261017). Bare nulls still fail.
+        def _explained(r, k):
+            if k == "x_views":
+                return r.get("_x_status") == "UNMEASURED_NO_POSTS_FOUND"
+            if k == "yt_views":
+                return (r.get("_yt_status") == "YT_SURNAME_PREDATES_EPISODE_V1"
+                        or (r.get("rumble_only_injected") and not r.get("canonical_video_id")))
+            return False
         nulls = [(r.get("date"), k) for r in rows
                  for k in ("yt_views", "x_views", "rumble_views", "ig_likes")
-                 if r.get(k) is None]
+                 if r.get(k) is None and not _explained(r, k)]
         check(f"live_{fn}_has_no_unmeasured_platform", not nulls,
               f"{len(rows)} episodes" if not nulls else str(nulls[:4]))
         zeros = [(r.get("date"), k) for r in rows

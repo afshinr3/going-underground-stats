@@ -168,6 +168,11 @@ def merge_rows(cloud_rows, origin_rows):
         if not o:
             continue
         for f in FIELDS:
+            # YT_SURNAME_PREDATES_EPISODE_V1_20261017 — the cloud cleared yt_views because it
+            # proved the origin figure belongs to an EARLIER episode of the same guest
+            # (Carlson 16 Oct carried 11 Sep's 90.5K). Carrying it forward would undo that.
+            if f == "yt_views" and r.get("_yt_status") == "YT_SURNAME_PREDATES_EPISODE_V1":
+                continue
             if r.get(f) in UNMEASURED and o.get(f) not in UNMEASURED:
                 r[f] = o[f]
                 n += 1

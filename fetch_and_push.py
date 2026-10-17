@@ -24,6 +24,9 @@ import hashlib
 
 import requests
 
+# YT_SURNAME_PREDATES_EPISODE_V1_20261017 — row marker; merge_measured_fields_v1 reads it.
+YT_SURNAME_PREDATES_EPISODE = "YT_SURNAME_PREDATES_EPISODE_V1"
+
 import gu_parser
 from PIL import Image, ImageDraw, ImageFont
 from playwright.async_api import async_playwright
@@ -2886,6 +2889,22 @@ async def update_show(show, ig_clips):
         for surname in _sn_candidates:
             if not surname:
                 continue
+            # YT_SURNAME_PREDATES_EPISODE_V1_20261017 — a returning guest's OLD episode is not
+            # this one. Tucker Carlson 16 Oct (Rumble-first, not yet on YouTube) published
+            # yt_views 90.5K: the 11 Sep Carlson video (JUHl-tQRN7g, 90,527) matched by surname.
+            # yt_dates[surname] is the NEWEST episode-class upload carrying the surname (RSS is
+            # newest-first, setdefault). If even that predates the row by > 7 days, the figure
+            # belongs to an earlier episode: clear it and mark the row so the carry-forward in
+            # merge_measured_fields_v1 does not put the stale number straight back.
+            _yt_sn_date = yt_dates.get(surname)
+            _row_date = short_to_iso(v.get('date', ''))
+            _yt_predates = bool(_yt_sn_date and _row_date and
+                                (datetime.strptime(_row_date, '%Y-%m-%d')
+                                 - datetime.strptime(_yt_sn_date[:10], '%Y-%m-%d')).days > 7)
+            if _yt_predates and not _yt_bound_exactly:
+                v['yt_views'] = None
+                v['_yt_status'] = YT_SURNAME_PREDATES_EPISODE
+                _yt_bound_exactly = True   # answered (as null): no surname figure may follow
             if surname in yt and not _yt_bound_exactly:
                 _new = yt[surname]
                 _cur = v.get('yt_views')
