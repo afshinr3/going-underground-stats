@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T03:15:14.170141Z",
+  "generated_at": "2026-10-17T03:20:05.659277Z",
   "n": 2,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "631",
       "x_views": "8.5K",
       "date": "17 Oct",
-      "yt_views": null,
+      "yt_views": "183",
       "ig_likes": "329",
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
@@ -35,7 +35,8 @@
       "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "GU",
       "_x_store_tweets": 1,
-      "_x_measured_iso": "2026-10-17T02:08:25Z"
+      "_x_measured_iso": "2026-10-17T02:08:25Z",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     },
     {
       "guest": "Tucker Carlson",
