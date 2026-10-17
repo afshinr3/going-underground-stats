@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-17T07:20:07Z",
-  "last_updated": "2026-10-17T07:20:07Z",
+  "iso": "2026-10-17T08:27:10Z",
+  "last_updated": "2026-10-17T08:27:10Z",
   "episodes": [
     {
       "guest": "John Perkins",
@@ -21,12 +21,12 @@
       },
       "metrics": {
         "rumble_views": "994",
-        "yt_views": "183",
+        "yt_views": "1.6K",
         "x_views": "8.5K",
         "ig_likes": "330"
       },
       "x_views_measured_iso": "2026-10-17T02:08:25Z",
-      "x_views_stale": false
+      "x_views_stale": true
     },
     {
       "guest": "Tucker Carlson",
@@ -72,7 +72,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "24.0K",
+        "yt_views": "24.1K",
         "x_views": "573.5K",
         "ig_likes": "2.3K"
       },
@@ -90,7 +90,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -592,7 +592,7 @@
       },
       "metrics": {
         "rumble_views": "799",
-        "yt_views": "24.2K",
+        "yt_views": "24.4K",
         "x_views": "889.4K",
         "ig_likes": "420"
       },
@@ -644,7 +644,7 @@
       },
       "metrics": {
         "rumble_views": "1.5K",
-        "yt_views": "14.1K",
+        "yt_views": "1.7K",
         "x_views": "741.5K",
         "ig_likes": "1.7K"
       },
@@ -958,12 +958,12 @@
       },
       "metrics": {
         "rumble_views": "994",
-        "yt_views": "183",
+        "yt_views": "1.6K",
         "x_views": "8.5K",
         "ig_likes": "330"
       },
       "x_views_measured_iso": "2026-10-17T02:08:25Z",
-      "x_views_stale": false
+      "x_views_stale": true
     },
     {
       "guest": "Tucker Carlson",
@@ -1009,7 +1009,7 @@
       },
       "metrics": {
         "rumble_views": "3.3K",
-        "yt_views": "24.0K",
+        "yt_views": "24.1K",
         "x_views": "573.5K",
         "ig_likes": "2.3K"
       },
@@ -1027,7 +1027,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -1089,7 +1089,7 @@
       },
       "metrics": {
         "rumble_views": "799",
-        "yt_views": "24.2K",
+        "yt_views": "24.4K",
         "x_views": "889.4K",
         "ig_likes": "420"
       },
@@ -1141,7 +1141,7 @@
       },
       "metrics": {
         "rumble_views": "1.5K",
-        "yt_views": "14.1K",
+        "yt_views": "1.7K",
         "x_views": "741.5K",
         "ig_likes": "1.7K"
       },

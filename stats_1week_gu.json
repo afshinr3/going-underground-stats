@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T07:20:05.345735Z",
+  "generated_at": "2026-10-17T08:27:10.943884Z",
   "n": 2,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "994",
       "x_views": "8.5K",
       "date": "17 Oct",
-      "yt_views": "183",
+      "yt_views": "1.6K",
       "ig_likes": "330",
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
@@ -56,7 +56,10 @@
       "_x_status": "UNMEASURED_NO_POSTS_FOUND",
       "yt_views": "90.5K",
       "canonical_surname_upper": "CARLSON",
-      "canonical_episode_id": "050ee66c8c28"
+      "canonical_episode_id": "050ee66c8c28",
+      "_yt_status": "YT_SURNAME_PREDATES_EPISODE_V1",
+      "_yt_views_retained_iso": "2026-10-17T08:02:15Z",
+      "_yt_views_retained_reason": "this run could not measure it; the previous MEASURED value is kept under METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1"
     }
   ],
   "source_feed": "videos.json",
