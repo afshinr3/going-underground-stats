@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T02:05:49.935201Z",
+  "generated_at": "2026-10-17T02:08:25.535418Z",
   "n": 2,
   "entries": [
     {
@@ -16,7 +16,7 @@
       "x_views": null,
       "date": "17 Oct",
       "yt_views": null,
-      "ig_likes": null,
+      "ig_likes": "329",
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
       "canonical_episode_id": "39d0538e15fd",
@@ -40,7 +40,7 @@
       "surname": "Carlson",
       "title": "Tucker Carlson: Trump\u2019s Betrayal of His Voters is the GREATEST BETRAYAL in American History!",
       "date": "16 Oct",
-      "rumble_views": "434",
+      "rumble_views": "1.0K",
       "show": "GU",
       "canonical_guest_full_name": "Tucker Carlson",
       "pub_iso": "2026-10-16T15:52:28Z",
