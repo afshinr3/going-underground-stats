@@ -119,6 +119,14 @@ def carry_forward_rows(cloud_rows, origin_rows, tombs=None):
     not measure). Pure: no I/O.
     """
     tombs = tombs or set()
+    # TOMBSTONE_BOTH_SIDES_V1_20261017 — a tombstone must also remove the row when THIS run
+    # re-publishes it (fetch_and_push carries its checkout's rows forward), not only refuse to
+    # restore it from origin. Otherwise a run that checked out before the removal re-adds it.
+    _n_before = len(cloud_rows or [])
+    cloud_rows = [r for r in (cloud_rows or []) if not (isinstance(r, dict) and _tombstoned(r, tombs))]
+    _dropped = _n_before - len(cloud_rows)
+    if _dropped:
+        print(f"[EPISODE_CARRY_FORWARD_V1] tombstoned, dropped from this run: {_dropped}")
     have_id = {_key_id(r) for r in cloud_rows if isinstance(r, dict) and _key_id(r)}
     have_name = {_key_name(r) for r in cloud_rows if isinstance(r, dict) and _key_name(r)[0]}
     restored = []
@@ -135,13 +143,13 @@ def carry_forward_rows(cloud_rows, origin_rows, tombs=None):
         row.setdefault("_carried_forward_v1", "EPISODE_CARRY_FORWARD_V1_20260918")
         restored.append(row)
     if not restored:
-        return cloud_rows, 0
+        return cloud_rows, _dropped
     out = list(cloud_rows) + restored
     out.sort(key=_sort_key, reverse=True)
     for r in restored:
         print(f"[EPISODE_CARRY_FORWARD_V1] restored {r.get('date')} "
               f"{r.get('guest') or r.get('surname')} (omitted by this run)")
-    return out, len(restored)
+    return out, len(restored) + _dropped
 
 
 def merge_rows(cloud_rows, origin_rows):

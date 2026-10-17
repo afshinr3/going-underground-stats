@@ -362,6 +362,17 @@ def _inject_rumble_only(videos, show_code, vids, fname, changes):
             continue  # undated -> never inject (would fail the 1-week date filter anyway)
         if (now - dt) > datetime.timedelta(days=RECENCY_DAYS_INJECT):
             continue  # only Rumble-FIRST (recent); do not backfill rolled-off history
+        # RUMBLE_ONLY_REQUIRES_VIDEO_URL_V1_20261017 — a listing item with no /v… link is not an
+        # episode we can identify. "Tucker Carlson: Trump's Betrayal of His Voters is the GREATEST
+        # BETRAYAL…" (no url, listing "22 hours ago") was injected as a NEW 16 Oct episode. It is
+        # a clip of the 11 Sep Carlson interview (same quote posted on X/IG 11 Sep), so the feed
+        # showed a phantom episode with "X ?" and a borrowed YouTube figure. Every genuine
+        # Rumble-first injection to date (Hoh, Hrafnsson, Milanović) carried a url. Report, never
+        # inject, a url-less item.
+        if not re.search(r"rumble\.com/v[0-9a-z]+", str(rv.get("url") or ""), re.IGNORECASE):
+            print(f"  [{INJECT_MARKER}] NO_VIDEO_URL Rumble listing item, NOT injected: "
+                  f"{dt.date()} {title[:70]}")
+            continue
         guest, surname = _clean_guest_surname(title)
         # UNATTRIBUTABLE_RUMBLE_EPISODE_V1_20260815 — the bare `continue` below was a SILENT
         # drop, and it is how the Branko Milanovic episode went missing from the dashboard on

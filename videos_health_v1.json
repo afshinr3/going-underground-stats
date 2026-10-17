@@ -1,6 +1,6 @@
 {
-  "iso": "2026-10-17T14:30:30Z",
-  "last_updated": "2026-10-17T14:30:30Z",
+  "iso": "2026-10-17T14:41:27Z",
+  "last_updated": "2026-10-17T14:41:27Z",
   "episodes": [
     {
       "guest": "John Perkins",
@@ -27,31 +27,6 @@
       },
       "x_views_measured_iso": "2026-10-17T02:08:25Z",
       "x_views_stale": true
-    },
-    {
-      "guest": "Tucker Carlson",
-      "surname": "CARLSON",
-      "title": "Tucker Carlson: Trump’s Betrayal of His Voters is the GREATEST BETRAYAL in American History!",
-      "date": "16 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "050ee66c8c28",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-16T15:52:28Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.1K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": "6.7K"
-      },
-      "x_views_measured_iso": null,
-      "x_views_stale": false
     },
     {
       "guest": "Jeffrey Sachs",
@@ -966,31 +941,6 @@
       "x_views_stale": true
     },
     {
-      "guest": "Tucker Carlson",
-      "surname": "CARLSON",
-      "title": "Tucker Carlson: Trump’s Betrayal of His Voters is the GREATEST BETRAYAL in American History!",
-      "date": "16 Oct",
-      "show": "GU",
-      "link": "",
-      "canonical_episode_id": "050ee66c8c28",
-      "canonical_video_id": null,
-      "canonical_video_url": null,
-      "canonical_episode_id_v2": null,
-      "pub_iso": "2026-10-16T15:52:28Z",
-      "source_platform_ids": {},
-      "metrics": {
-        "rumble_views": "1.1K",
-        "yt_views": null,
-        "x_views": {
-          "status": "N/A",
-          "reason": "UNMEASURED_NO_POSTS_FOUND"
-        },
-        "ig_likes": "6.7K"
-      },
-      "x_views_measured_iso": null,
-      "x_views_stale": false
-    },
-    {
       "guest": "Jeffrey Sachs",
       "surname": "SACHS",
       "title": "Prof. Jeffrey Sachs: We Are at DIRE RISK of Nuclear War from Russia-NATO Escalation Over Ukraine",
@@ -1064,6 +1014,32 @@
         "yt_views": "1.2K",
         "x_views": "186.3K",
         "ig_likes": "874"
+      },
+      "x_views_measured_iso": "2026-10-17T14:30:28Z",
+      "x_views_stale": false
+    },
+    {
+      "guest": "Matthew Hoh",
+      "surname": "HOH",
+      "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
+      "date": "3 Oct",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
+      "canonical_episode_id": "a5df3acf1214",
+      "canonical_video_id": "doTi3weQTaM",
+      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
+      "canonical_episode_id_v2": "ae10a949db2aa421",
+      "pub_iso": "2026-10-03T11:55:31Z",
+      "source_platform_ids": {
+        "youtube": [
+          "doTi3weQTaM"
+        ]
+      },
+      "metrics": {
+        "rumble_views": "3.5K",
+        "yt_views": "3.4K",
+        "x_views": "353.2K",
+        "ig_likes": "2.4K"
       },
       "x_views_measured_iso": "2026-10-17T14:30:28Z",
       "x_views_stale": false

@@ -1,0 +1,10 @@
+{
+  "marker": "GU_REMOVED_EPISODES_V1",
+  "by_surname_date": [
+    "carlson|16 Oct"
+  ],
+  "by_canonical_episode_id": [],
+  "notes": {
+    "carlson|16 Oct": "2026-10-17: not an episode. Rumble listing item with no video url ('Trump's Betrayal of His Voters is the GREATEST BETRAYAL...') is a clip of the 11 Sep Tucker Carlson interview (same quote on X/IG 11 Sep). Injected by m2_rumble_to_upstream_v1 before RUMBLE_ONLY_REQUIRES_VIDEO_URL_V1. Operator: 'Carlson was 2 weeks ago'."
+  }
+}
