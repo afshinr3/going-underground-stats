@@ -1,7 +1,36 @@
 {
-  "iso": "2026-10-17T00:57:21Z",
-  "last_updated": "2026-10-17T00:57:21Z",
+  "iso": "2026-10-17T02:05:49Z",
+  "last_updated": "2026-10-17T02:05:49Z",
   "episodes": [
+    {
+      "guest": "John Perkins",
+      "surname": "PERKINS",
+      "title": "Iran War Could be TRUMP’S DOWNFALL: An ENORMOUS Strategic Mistake (Ex-Economic Hit Man John Perkins)",
+      "date": "17 Oct",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=zRdhlXvL3bw",
+      "canonical_episode_id": "39d0538e15fd",
+      "canonical_video_id": "zRdhlXvL3bw",
+      "canonical_video_url": "https://www.youtube.com/watch?v=zRdhlXvL3bw",
+      "canonical_episode_id_v2": "bccbf1f6e4cb270c",
+      "pub_iso": "2026-10-17T01:00:10Z",
+      "source_platform_ids": {
+        "youtube": [
+          "zRdhlXvL3bw"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
+      "x_views_stale": false
+    },
     {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
@@ -64,7 +93,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -914,6 +943,35 @@
   ],
   "gu": [
     {
+      "guest": "John Perkins",
+      "surname": "PERKINS",
+      "title": "Iran War Could be TRUMP’S DOWNFALL: An ENORMOUS Strategic Mistake (Ex-Economic Hit Man John Perkins)",
+      "date": "17 Oct",
+      "show": "GU",
+      "link": "https://www.youtube.com/watch?v=zRdhlXvL3bw",
+      "canonical_episode_id": "39d0538e15fd",
+      "canonical_video_id": "zRdhlXvL3bw",
+      "canonical_video_url": "https://www.youtube.com/watch?v=zRdhlXvL3bw",
+      "canonical_episode_id_v2": "bccbf1f6e4cb270c",
+      "pub_iso": "2026-10-17T01:00:10Z",
+      "source_platform_ids": {
+        "youtube": [
+          "zRdhlXvL3bw"
+        ]
+      },
+      "metrics": {
+        "rumble_views": null,
+        "yt_views": null,
+        "x_views": {
+          "status": "N/A",
+          "reason": "UNMEASURED_NO_POSTS_FOUND"
+        },
+        "ig_likes": null
+      },
+      "x_views_measured_iso": null,
+      "x_views_stale": false
+    },
+    {
       "guest": "Tucker Carlson",
       "surname": "CARLSON",
       "title": "Tucker Carlson: Trump’s Betrayal of His Voters is the GREATEST BETRAYAL in American History!",
@@ -975,7 +1033,7 @@
       "canonical_video_id": "E3Cldy7Lpgk",
       "canonical_video_url": "https://www.youtube.com/watch?v=E3Cldy7Lpgk",
       "canonical_episode_id_v2": "28bc7b0198d3cf49",
-      "pub_iso": "2026-10-10T01:00:05Z",
+      "pub_iso": "2026-10-10T16:01:50Z",
       "source_platform_ids": {
         "youtube": [
           "E3Cldy7Lpgk"
@@ -1012,32 +1070,6 @@
         "yt_views": "1.2K",
         "x_views": "186.0K",
         "ig_likes": "874"
-      },
-      "x_views_measured_iso": "2026-10-17T00:57:20Z",
-      "x_views_stale": false
-    },
-    {
-      "guest": "Matthew Hoh",
-      "surname": "HOH",
-      "title": "Significant Possibility of NUKES Being Used Against Iran— Ex-State Dept. Official Matthew Hoh",
-      "date": "3 Oct",
-      "show": "GU",
-      "link": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id": "a5df3acf1214",
-      "canonical_video_id": "doTi3weQTaM",
-      "canonical_video_url": "https://www.youtube.com/watch?v=doTi3weQTaM",
-      "canonical_episode_id_v2": "ae10a949db2aa421",
-      "pub_iso": "2026-10-03T11:55:31Z",
-      "source_platform_ids": {
-        "youtube": [
-          "doTi3weQTaM"
-        ]
-      },
-      "metrics": {
-        "rumble_views": "3.5K",
-        "yt_views": "3.4K",
-        "x_views": "352.5K",
-        "ig_likes": "2.4K"
       },
       "x_views_measured_iso": "2026-10-17T00:57:20Z",
       "x_views_stale": false

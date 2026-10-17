@@ -698,8 +698,8 @@
     "x_views_at": "2026-10-11T23:04:32Z",
     "rumble_views": 1100,
     "rumble_views_at": "2026-07-26T12:28:46Z",
-    "ig_likes": 302,
-    "ig_likes_at": "2026-08-22T18:28:40Z"
+    "ig_likes": 303,
+    "ig_likes_at": "2026-10-17T02:05:50Z"
   },
   "GU:Carden": {
     "x_views": 1100000,
@@ -1032,5 +1032,6 @@
     "ig_likes_at": "2026-10-16T00:48:11Z",
     "rumble_views": 3300,
     "rumble_views_at": "2026-10-16T18:26:17Z"
-  }
+  },
+  "GU:Perkins": {}
 }
