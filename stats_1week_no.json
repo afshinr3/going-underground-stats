@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T21:08:17.871767Z",
+  "generated_at": "2026-10-17T21:36:57.899243Z",
   "n": 1,
   "entries": [
     {
@@ -13,10 +13,10 @@
       "surname": "Celente",
       "title": "This is the Beginning of the DEATH OF THE DOLLAR, China & India Will LEAD THE WORLD (Gerald Celente)",
       "rumble_views": null,
-      "x_views": "4.0K",
+      "x_views": "14.8K",
       "date": "18 Oct",
       "yt_views": null,
-      "ig_likes": "99",
+      "ig_likes": "103",
       "canonical_guest_full_name": "Gerald Celente",
       "canonical_surname_upper": "CELENTE",
       "canonical_episode_id": "353cfecbbf8f",
@@ -32,11 +32,18 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=YkGCuB0xX4I",
-      "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "NO",
-      "_x_store_tweets": 1,
-      "_x_measured_iso": "2026-10-17T17:43:51Z",
-      "ig_views": "2.4K"
+      "_x_store_tweets": 5,
+      "_x_measured_iso": "2026-10-17T21:20:06Z",
+      "ig_views": "2.4K",
+      "_x_method": "X_ALL_ACCOUNTS_SUM_V1",
+      "_x_by_account": {
+        "GU": 5346,
+        "NO": 4425,
+        "AR": 5056
+      },
+      "_x_unique_views": 5954
     }
   ],
   "source_feed": "videos_neworder.json",
