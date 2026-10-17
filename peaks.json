@@ -188,8 +188,8 @@
   "NO:Bolton": {
     "x_views": 889700,
     "x_views_at": "2026-10-17T10:41:37Z",
-    "yt_views": 24400,
-    "yt_views_at": "2026-10-17T08:27:12Z",
+    "yt_views": 24500,
+    "yt_views_at": "2026-10-17T14:14:22Z",
     "ig_likes": 57700,
     "ig_likes_at": "2026-05-27T05:56:33Z",
     "rumble_views": 60300,
@@ -698,8 +698,8 @@
     "x_views_at": "2026-10-11T23:04:32Z",
     "rumble_views": 1100,
     "rumble_views_at": "2026-07-26T12:28:46Z",
-    "ig_likes": 307,
-    "ig_likes_at": "2026-10-17T10:41:37Z"
+    "ig_likes": 333,
+    "ig_likes_at": "2026-10-17T14:14:22Z"
   },
   "GU:Carden": {
     "x_views": 1100000,
@@ -930,12 +930,12 @@
     "yt_views_at": "2026-09-30T09:22:40Z"
   },
   "GU:Carlson": {
-    "yt_views": 90500,
-    "yt_views_at": "2026-10-16T09:19:19Z",
+    "yt_views": 90600,
+    "yt_views_at": "2026-10-17T14:14:22Z",
     "x_views": 2500000,
     "x_views_at": "2026-10-01T11:43:23Z",
-    "rumble_views": 6700,
-    "rumble_views_at": "2026-10-15T05:33:12Z",
+    "rumble_views": 6800,
+    "rumble_views_at": "2026-10-17T14:14:22Z",
     "ig_likes": 6700,
     "ig_likes_at": "2026-09-28T14:34:34Z"
   },
@@ -1028,19 +1028,19 @@
     "yt_views_at": "2026-10-17T08:27:12Z",
     "x_views": 1100000,
     "x_views_at": "2026-10-16T18:26:17Z",
-    "ig_likes": 2300,
-    "ig_likes_at": "2026-10-16T00:48:11Z",
-    "rumble_views": 3300,
-    "rumble_views_at": "2026-10-16T18:26:17Z"
+    "ig_likes": 2400,
+    "ig_likes_at": "2026-10-17T14:14:22Z",
+    "rumble_views": 3400,
+    "rumble_views_at": "2026-10-17T14:14:22Z"
   },
   "GU:Perkins": {
     "x_views": 8500,
     "x_views_at": "2026-10-17T06:36:22Z",
-    "yt_views": 2500,
-    "yt_views_at": "2026-10-17T10:41:37Z",
-    "ig_likes": 333,
-    "ig_likes_at": "2026-10-17T10:41:37Z",
-    "rumble_views": 1100,
-    "rumble_views_at": "2026-10-17T10:41:37Z"
+    "yt_views": 3000,
+    "yt_views_at": "2026-10-17T14:14:22Z",
+    "ig_likes": 359,
+    "ig_likes_at": "2026-10-17T14:14:22Z",
+    "rumble_views": 1400,
+    "rumble_views_at": "2026-10-17T14:14:22Z"
   }
 }
