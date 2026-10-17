@@ -304,6 +304,9 @@ def _clean_guest_surname(title):
 # operator asserting a fact, not the parser inventing one.
 RUMBLE_GUEST_OVERRIDES = {
     "v7e5t4c": ("Branko Milanovic", "Milanovic"),
+    # 2026-10-10, operator-supplied. Rumble-first; title "20 Years of WikiLeaks: The Biggest
+    # Revelations, The State of Press Freedom, Julian Assange" names no guest.
+    "v7gm5jc": ("Kristinn Hrafnsson", "Hrafnsson"),
     # 2026-10-05, operator-supplied. Rumble-first, YouTube had not published it hours later.
     # Title: "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syr..."
     # -- names the guest's ROLE, not their name, and the only surname in it is the HOST's, so
@@ -326,12 +329,190 @@ RUMBLE_GUEST_OVERRIDES = {
 }
 
 
+def _rumble_vid_of(url):
+    """Rumble video id from a watch URL: https://rumble.com/v7gdd92-some-slug.html -> v7gdd92.
+    Returns None rather than a guess — a wrong id is worse than no id."""
+    m = re.search(r"rumble\.com/(v[0-9a-z]+)", str(url or ""), re.IGNORECASE)
+    return m.group(1) if m else None
+
+
 def _guest_override(url, title):
     u = str(url or "")
     for vid, pair in RUMBLE_GUEST_OVERRIDES.items():
         if vid and vid in u:
             return pair
+    # RUMBLE_EPISODE_DETAILS_V1_20261010 — no manual override: use the guest named in the
+    # episode's own Rumble description ("we speak to <Name>, ..."), captured by the Rumble
+    # scraper's browser session into rumble_episode_details.json. A description is the show's
+    # own statement, not a guess, so it is safe to publish; absent one we still refuse.
+    try:
+        m = re.search(r"rumble\.com/(v[a-z0-9]+)", u)
+        if m:
+            with open(os.path.expanduser("~/RumbleMonitor/rumble_episode_details.json")) as f:
+                g = (json.load(f).get(m.group(1)) or {}).get("guest")
+            if g and len(g.split()) >= 2:
+                return (g, g.split()[-1])
+    except Exception:
+        pass
     return None
+
+
+# GUEST_OVERRIDE_TITLE_KEY_V1_20261006 — AN OVERRIDE MUST OUTLIVE THE RUMBLE FEED WINDOW.
+#
+# `_reapply_guest_overrides` recovers each override's title by scanning the LIVE Rumble records,
+# because the stored row carries no Rumble url. That works only while the episode is still in
+# the feed. Once it scrolls out, `vid_title` has no entry, the title key is None, the row stops
+# matching and the correction silently stops being applied — while the upstream cloud ingestion
+# goes on re-emitting the bad parse on every run. The repair would then be strictly weaker than
+# the defect it repairs ([[change_detector_must_cover_what_it_guards]]).
+#
+# So the title key is also asserted statically here, in the same spirit as the override table:
+# a small explicit fact, not a heuristic. Same `title.lower()[:40]` form the injector uses for
+# de-duplication. The live feed still wins when it has the vid; this is the fallback.
+GUEST_OVERRIDE_TITLE_KEYS = {
+    # "Ex-CIA Operations Officer Challenged by Afshin Rattansi on Ukraine, Iran, Syria, ..."
+    # Published on Rumble AND YouTube (OCnT9QaiJnA); the row the feed keeps is the YouTube one,
+    # whose url therefore never contains the Rumble vid.
+    "v7gdd92": "ex-cia operations officer challenged by ",
+}
+
+
+# GUEST_OVERRIDE_ROLE_FRAGMENT_V1_20261006 — TOKEN COUNT IS NOT A MEASURE OF NAME COMPLETENESS.
+#
+# WHAT WENT WRONG. The Charles Finfrock row reached the public feed as guest "Officer Chal" — a
+# two-token slice of its OWN title, cut mid-word:
+#     "Ex-CIA Operations [Officer Chal]lenged by Afshin Rattansi on Ukraine, Iran, Syria, ..."
+# `canonical_surname_upper` therefore read "CHAL", and that is the field the health/LaMetric
+# renderers prefer (fetch_and_push.py:3692/3860), so the screen showed CHAL. The local parsers
+# are NOT the producer: both `gu_parser.extract_guest` and `fetch_and_push._canonical_from_title`
+# correctly return None on this title, so the fragment arrived from the upstream/cloud
+# ingestion, whose extractor is older than this repo's.
+#
+# WHY THE EXISTING REPAIR COULD NEVER FIRE. `_reapply_guest_overrides` guards against SHORTENING
+# a name by comparing TOKEN COUNTS: `if len(cur.split()) >= want_tokens: continue`. The override
+# holds "Charles Finfrock" (2 tokens) and the fragment "Officer Chal" is ALSO 2 tokens, so the
+# test read `2 >= 2` and the correct name was refused on every pass. A guard whose proxy for
+# "already as complete" is ARITY is defeated by any fragment of the same arity — the measurement
+# form of [[identity_is_a_set_not_a_chain]]. The override was right in the code and wrong in
+# production for a day (hard rule 6).
+#
+# THE RIGHT TEST IS WHETHER cur IS A PERSON NAME AT ALL. Two independent signals, either of which
+# makes a stored value overridable regardless of its token count:
+#   1. it contains a ROLE / OCCUPATION word — no guest is named "Officer" or "Commander"; or
+#   2. one of its tokens is a strict prefix of a LONGER word in the episode title ("Chal" is a
+#      prefix of "Challenged"), i.e. the value was sliced mid-word out of the title.
+# A real name fails both tests, so the original protection still holds and the defect the guard
+# was written to stop ("Charles Finfrock" -> "Finfrock") is still refused.
+_ROLE_TOKENS = {
+    "officer", "officers", "official", "officials", "commander", "commanders", "advisor",
+    "adviser", "advisors", "advisers", "minister", "ministers", "ambassador", "ambassadors",
+    "amb", "director", "directors", "president", "chief", "chiefs", "secretary", "deputy",
+    "negotiator", "negotiators", "analyst", "analysts", "agent", "agents", "operative",
+    "operatives", "colonel", "general", "admiral", "captain", "major", "lieutenant", "sergeant",
+    "senator", "congressman", "congresswoman", "mp", "governor", "mayor", "chairman",
+    "chairwoman", "spokesman", "spokeswoman", "spokesperson", "correspondent", "journalist",
+    "editor", "economist", "lawyer", "attorney", "banker", "diplomat", "whistleblower",
+    "veteran", "insider", "founder", "ceo", "cfo", "cto", "chair", "head", "staffer", "aide",
+    "envoy", "attache", "consul", "commissioner", "inspector", "marshal", "candidate",
+    "nominee", "representative", "delegate", "premier", "chancellor",
+}
+
+
+def _is_role_fragment(cur, title):
+    """True when `cur` is plainly NOT a person's name, so an override may replace it even
+    though it has as many tokens as the override does. Conservative by design: anything that
+    looks like a real name returns False and keeps the never-shorten protection.
+
+    Deliberately does NOT list honorifics that really do precede names on this show
+    ("Prof", "Dr"), because "Prof. Steve Hanke" is a legitimate stored full name."""
+    cur = str(cur or "").strip()
+    if not cur:
+        return True
+    toks = [re.sub(r"[^A-Za-z\-\.']", "", t) for t in cur.split()]
+    toks = [t for t in toks if t]
+    if not toks:
+        return True
+    # 1. a role/occupation word is never part of a guest's name
+    for t in toks:
+        if t.lower().strip(".") in _ROLE_TOKENS:
+            return True
+    # 2. a token cut mid-word out of the title (prefix of a strictly longer title word)
+    words = re.findall(r"[A-Za-z][A-Za-z\-']*", str(title or ""))
+    for t in toks:
+        if len(t) < 3:
+            continue
+        for w in words:
+            if len(w) > len(t) and w.lower().startswith(t.lower()):
+                return True
+    return False
+
+
+# GUEST_OVERRIDE_REAPPLY_V1_20261005 — an override must also CORRECT A ROW THAT ALREADY EXISTS.
+#
+# WHAT WENT WRONG. On 2026-10-05 the Charles Finfrock episode published to the feed as guest
+# "Finfrock" — a bare SURNAME standing in as the full name. The correct full name was added to
+# RUMBLE_GUEST_OVERRIDES the same day from the host's own on-air introduction, and it never
+# reached the feed, because the override is consulted in exactly ONE place: inside
+# `_inject_rumble_only`, under `if not surname`, while CREATING a row. The row already existed,
+# so the injector matched it in `existing` and hit `continue` before any override logic ran. The
+# name was fixed in the code and stayed wrong in production — hard rule 6.
+#
+# TWO KEYS, NOT ONE. `_guest_override` matches a video id inside a URL, and the injected row
+# carries NO url field at all, so even a re-run could not have matched it. Identity is a SET, not
+# a chain ([[identity_is_a_set_not_a_chain]]): this resolves the override's vid against the LIVE
+# Rumble records to recover that episode's title, then matches the stored row on the same
+# `title.lower()[:40]` key the injector itself uses for de-duplication. Injected rows now also
+# carry `rumble_url`/`rumble_vid` so future passes have the strong key directly.
+#
+# IT ONLY EVER COMPLETES A NAME. The override must never shorten or replace a fuller attribution
+# ("Charles Finfrock" -> "Finfrock" is the defect, not the fix), so an upgrade requires strictly
+# more name tokens than the row currently holds. Anything else is left alone and logged.
+def _reapply_guest_overrides(videos, vids, fname, changes):
+    """Upgrade existing rows from RUMBLE_GUEST_OVERRIDES. Returns count corrected."""
+    # override vid -> title, from the live Rumble records (the row has no url to match on)
+    vid_title = {}
+    for rv in (vids or []):
+        u = str(rv.get("url") or "")
+        t = (rv.get("title") or "").strip()
+        if not (u and t):
+            continue
+        for vid in RUMBLE_GUEST_OVERRIDES:
+            if vid and vid in u:
+                vid_title[vid] = t
+    fixed = 0
+    for vid, (full, surname) in RUMBLE_GUEST_OVERRIDES.items():
+        if not full:
+            continue
+        want_tokens = len(str(full).split())
+        title = vid_title.get(vid)
+        key = title.lower()[:40] if title else GUEST_OVERRIDE_TITLE_KEYS.get(vid)
+        for ep in videos:
+            # strong key first (rows injected from now on carry it), then the title key
+            u = str(ep.get("rumble_url") or ep.get("link") or ep.get("canonical_video_url") or "")
+            hit = (vid and vid in u) or (ep.get("rumble_vid") == vid)
+            if not hit and key:
+                hit = (ep.get("title") or "").lower()[:40] == key
+            if not hit:
+                continue
+            cur = str(ep.get("canonical_guest_full_name") or ep.get("guest") or "").strip()
+            if (len(cur.split()) >= want_tokens
+                    and not _is_role_fragment(cur, ep.get("title"))):
+                continue                      # already as complete, or fuller — never shorten
+            ep["guest"] = full
+            ep["surname"] = surname
+            ep["canonical_guest_full_name"] = full
+            # the health feed and LaMetric renderers read canonical_surname_upper FIRST
+            # (fetch_and_push.py:3692/3860), so leaving it stale keeps CHAL on the screen.
+            ep["canonical_surname_upper"] = str(surname).upper()
+            ep["guest_override_applied_v1"] = "GUEST_OVERRIDE_REAPPLY_V1_20261005"
+            if vid and not ep.get("rumble_vid"):
+                ep["rumble_vid"] = vid        # heal the missing identity while we are here
+            print(f"  [{INJECT_MARKER}] override RE-APPLIED: {cur!r} -> {full!r} "
+                  f"({fname}, vid={vid})")
+            changes.append((fname, surname, "EP~", None,
+                            f'{ep.get("date","?")} name {cur} -> {full}'))
+            fixed += 1
+    return fixed
 
 
 def _inject_rumble_only(videos, show_code, vids, fname, changes):
@@ -409,6 +590,11 @@ def _inject_rumble_only(videos, show_code, vids, fname, changes):
             "pub_iso": dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "rumble_only_injected": True,        # provenance so the cloud/operator can audit
             "rumble_prov": "m2_rumble_only_v3",
+            # GUEST_OVERRIDE_REAPPLY_V1_20261005 — carry the Rumble identity. Rows injected
+            # before this carried NO url, so a later name correction had no key to match on and
+            # the Finfrock episode stayed half-named in production. Identity is a set, not a chain.
+            "rumble_url": str(rv.get("url") or "") or None,
+            "rumble_vid": _rumble_vid_of(rv.get("url")),
         }
         videos.append(row)
         existing.add(key)
@@ -741,6 +927,10 @@ def _process_file(path, exact, surname, vids, posts, changes):
     show_code = SHOW_OF.get(path)
     if show_code:
         _inject_rumble_only(videos, show_code, vids, fname, changes)
+        # GUEST_OVERRIDE_REAPPLY_V1_20261005 — injection only ever CREATES rows, so a name
+        # completed in the override table after a row was published never reached the feed.
+        # This corrects rows already in the feed. It only completes a name, never shortens one.
+        _reapply_guest_overrides(videos, vids, fname, changes)
     # `vids` is the raw LIST of Rumble videos; `exact` maps join-key -> views only,
     # so neither carries the full record. Build a join-key -> record map here.
     _by_key = {}
@@ -826,6 +1016,14 @@ def _process_file(path, exact, surname, vids, posts, changes):
                 if str(ep.get("ig_likes")) != newi:
                     changes.append((fname, ep.get("surname"), "ig", ep.get("ig_likes"), newi))
                     ep["ig_likes"] = newi
+            # IG_REEL_PLAYS_V1_20261018 (operator: GU stats must count Instagram VIEWS, not likes) — the
+            # collector now joins Reels-tab play counts to posts; publish their sum. Absent stays absent.
+            views = int(r.get("total_views") or 0)
+            if views > 0:
+                newv = _fmt(views)
+                if str(ep.get("ig_views")) != newv:
+                    changes.append((fname, ep.get("surname"), "igv", ep.get("ig_views"), newv))
+                    ep["ig_views"] = newv
         except Exception as _e:
             pass  # fail-open: never let one episode's IG match abort the bridge
 

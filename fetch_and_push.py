@@ -3300,7 +3300,7 @@ async def update_show(show, ig_clips):
             _old = _prev_by_key.get(_ep_key(_r))
             if not _old:
                 continue
-            for _f in ('x_views', 'yt_views', 'rumble_views', 'ig_likes'):
+            for _f in ('x_views', 'yt_views', 'rumble_views', 'ig_likes', 'ig_views'):
                 # YT_SURNAME_PREDATES_EPISODE_V1_20261017 — this null is not a failed
                 # measurement: the old figure was proven to belong to an EARLIER episode.
                 if _f == 'yt_views' and _r.get('_yt_status') == YT_SURNAME_PREDATES_EPISODE:
@@ -3735,6 +3735,7 @@ def _emit_videos_health_v1():
                         'x_views':      _health_metric(_r.get('x_views'),
                                                        _r.get('_x_status')),
                         'ig_likes':     _r.get('ig_likes'),
+                        'ig_views':     _r.get('ig_views'),   # IG_REEL_PLAYS_V1_20261018
                         # X_STALE_IS_A_LOWER_BOUND_V1_20261005 — provenance for x_views,
                         # as SIBLING fields rather than a new shape for the value itself.
                         #

@@ -41,7 +41,7 @@ import sys
 # know is a row nothing can measure again, which is how these three went dark in the first
 # place — carrying the number forward without the binding would fix one run and lose the
 # next.
-FIELDS = ("rumble_views", "ig_likes", "yt_views", "x_views",
+FIELDS = ("rumble_views", "ig_likes", "ig_views", "yt_views", "x_views",
           "canonical_video_id", "canonical_video_url", "link")
 # EPISODE_CARRY_FORWARD_V1_20260918 — an episode must not vanish because ONE discovery run
 # failed to find it. Measured 2026-09-18: videos.json held 15 GU rows while the published
