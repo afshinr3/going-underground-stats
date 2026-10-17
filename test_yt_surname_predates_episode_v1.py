@@ -35,6 +35,9 @@ def test_marker_matches_writer():
     src = open(os.path.join(HERE, "fetch_and_push.py")).read()
     assert 'YT_SURNAME_PREDATES_EPISODE = "%s"' % MARK in src
     assert "_yt_predates and not _yt_bound_exactly" in src
+    # METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1 restores old figures into nulls; it must skip marked rows
+    i = src.index("_prev_by_key = {}")
+    assert "_yt_status') == YT_SURNAME_PREDATES_EPISODE" in src[i:i + 1500]
 
 
 if __name__ == "__main__":

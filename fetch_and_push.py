@@ -3301,6 +3301,10 @@ async def update_show(show, ig_clips):
             if not _old:
                 continue
             for _f in ('x_views', 'yt_views', 'rumble_views', 'ig_likes'):
+                # YT_SURNAME_PREDATES_EPISODE_V1_20261017 — this null is not a failed
+                # measurement: the old figure was proven to belong to an EARLIER episode.
+                if _f == 'yt_views' and _r.get('_yt_status') == YT_SURNAME_PREDATES_EPISODE:
+                    continue
                 _new_v, _old_v = _r.get(_f), _old.get(_f)
                 _new_unknown = _new_v in (None, '', '?', 'None')
                 _old_known = _old_v not in (None, '', '?', 'None', '0')
