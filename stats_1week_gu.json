@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T19:56:48.768008Z",
+  "generated_at": "2026-10-17T20:20:05.235521Z",
   "n": 1,
   "entries": [
     {
@@ -15,7 +15,7 @@
       "rumble_views": "1.7K",
       "x_views": "51.5K",
       "date": "17 Oct",
-      "yt_views": "3.6K",
+      "yt_views": "3.2K",
       "ig_likes": "463",
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
@@ -32,10 +32,10 @@
         ]
       },
       "link": "https://www.youtube.com/watch?v=zRdhlXvL3bw",
-      "_x_status": "UNMEASURED_NO_POSTS_FOUND",
+      "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "GU",
       "_x_store_tweets": 6,
-      "_x_measured_iso": "2026-10-17T18:20:05Z",
+      "_x_measured_iso": "2026-10-17T19:56:48Z",
       "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
     }
   ],
