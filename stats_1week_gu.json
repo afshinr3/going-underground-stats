@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T08:27:10.943884Z",
+  "generated_at": "2026-10-17T08:27:12.866744Z",
   "n": 2,
   "entries": [
     {
@@ -58,7 +58,7 @@
       "canonical_surname_upper": "CARLSON",
       "canonical_episode_id": "050ee66c8c28",
       "_yt_status": "YT_SURNAME_PREDATES_EPISODE_V1",
-      "_yt_views_retained_iso": "2026-10-17T08:02:15Z",
+      "_yt_views_retained_iso": "2026-10-17T08:02:18Z",
       "_yt_views_retained_reason": "this run could not measure it; the previous MEASURED value is kept under METRIC_NEVER_REGRESSES_TO_UNKNOWN_V1"
     }
   ],
