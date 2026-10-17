@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T20:29:32.264392Z",
+  "generated_at": "2026-10-17T21:08:17.871392Z",
   "n": 1,
   "entries": [
     {
@@ -16,7 +16,7 @@
       "x_views": "51.5K",
       "date": "17 Oct",
       "yt_views": "3.2K",
-      "ig_likes": "468",
+      "ig_likes": "472",
       "canonical_guest_full_name": "John Perkins",
       "canonical_surname_upper": "PERKINS",
       "canonical_episode_id": "39d0538e15fd",
@@ -35,8 +35,9 @@
       "_x_status": "GU_X_STORE_ATTRIBUTION_V1",
       "show": "GU",
       "_x_store_tweets": 6,
-      "_x_measured_iso": "2026-10-17T20:20:05Z",
-      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1"
+      "_x_measured_iso": "2026-10-17T20:29:32Z",
+      "_yt_status": "GU_YT_STORE_ATTRIBUTION_V1",
+      "ig_views": "12.2K"
     }
   ],
   "source_feed": "videos.json",

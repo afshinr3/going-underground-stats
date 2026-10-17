@@ -5,7 +5,7 @@
   "window_end": "2026-10-19",
   "window_start_mon": "2026-10-16",
   "window_end_sun": "2026-10-19",
-  "generated_at": "2026-10-17T20:29:32.265027Z",
+  "generated_at": "2026-10-17T21:08:17.871767Z",
   "n": 1,
   "entries": [
     {
@@ -16,7 +16,7 @@
       "x_views": "4.0K",
       "date": "18 Oct",
       "yt_views": null,
-      "ig_likes": "98",
+      "ig_likes": "99",
       "canonical_guest_full_name": "Gerald Celente",
       "canonical_surname_upper": "CELENTE",
       "canonical_episode_id": "353cfecbbf8f",
@@ -35,7 +35,8 @@
       "_x_status": "FETCH_FAILED:Exception:x_search_results_never_rendered",
       "show": "NO",
       "_x_store_tweets": 1,
-      "_x_measured_iso": "2026-10-17T17:43:51Z"
+      "_x_measured_iso": "2026-10-17T17:43:51Z",
+      "ig_views": "2.4K"
     }
   ],
   "source_feed": "videos_neworder.json",
